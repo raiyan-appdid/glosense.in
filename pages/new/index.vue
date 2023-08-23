@@ -444,7 +444,7 @@ onMounted(() => {
     },
     scrollTrigger: {
       trigger: "#showcase-section",
-      start: "top 100",
+      start: "top 60",
       end: "4500",
       scrub: 1,
       pin: true,
@@ -676,7 +676,7 @@ onMounted(() => {
     rotation: 360,
   }, 17)
 
- 
+
   // tlShowcase.to('.vitamin-custom', {
   //   x: 0,
   //   duration: 6,
@@ -692,13 +692,13 @@ onMounted(() => {
   tlShowcase.from('.vitamin-custom', {
     x: 1000,
     duration: 6,
-    opacity : 0,
+    opacity: 0,
   }, 20)
- 
+
   tlShowcase.from('.calcium-custom', {
     x: -1000,
     duration: 6,
-    opacity : 0,
+    opacity: 0,
   }, 20)
   tlShowcase.from('.a', {
     duration: 6,
@@ -707,22 +707,22 @@ onMounted(() => {
   tlShowcase.to('.vitamin-custom', {
     x: -1000,
     duration: 6,
-    opacity : 0,
+    opacity: 0,
   }, 28)
   tlShowcase.from('.vitamin-custom-2', {
     x: -1000,
     duration: 6,
-    opacity : 0,
+    opacity: 0,
   }, 28)
   tlShowcase.to('.calcium-custom', {
     x: 1000,
     duration: 6,
-    opacity : 0,
+    opacity: 0,
   }, 28)
   tlShowcase.from('.calcium-custom-2', {
     x: 1000,
     duration: 6,
-    opacity : 0,
+    opacity: 0,
   }, 28)
   tlShowcase.from('.a', {
     duration: 6,
@@ -731,16 +731,16 @@ onMounted(() => {
   tlShowcase.to('.vitamin-custom-2', {
     x: 1000,
     duration: 6,
-    opacity : 0,
+    opacity: 0,
   }, 35)
 
   tlShowcase.to('.calcium-custom-2', {
     x: -1000,
     duration: 6,
-    opacity : 0,
+    opacity: 0,
   }, 35)
-  
- 
+
+
 
 
   // tlShowcase.from('.calcium-custom', {
@@ -797,15 +797,16 @@ const updateDotValue = (value) => {
       <img class="w-[25rem] absolute left-0 bottom-0" src="/images/glob-bl.png" alt="" />
       <img class="w-[30rem] absolute right-0 bottom-0" src="/images/glob-br.png" alt="" />
     </div>
-    <div class="landing__main w-full text-center min-h-screen pt-15 bg-no-repeat bg-cover bg-top overflow-hidden relative">
-       <div>
+    <div
+      class="landing__main w-full text-center min-h-screen pt-15 bg-no-repeat bg-cover bg-top overflow-hidden relative">
+      <div>
         <img id="logo-image" src="/images/logo.png" class="w-4/12 inset-x-0 my-0 mx-auto top-[15rem] fixed z-50" alt="" />
       </div>
-     <!-- <div>
+      <!-- <div>
         <img id="jar-image" src="/images/jar.png" class="w-[250px] inset-0 m-auto fixed z-[11] translate-y-[-50rem]"
           alt="" />
-      </div>
-      <div id="shop-section" class="fixed bottom-3 w-full">
+      </div> -->
+    <div id="shop-section" class="fixed bottom-3 w-full">
         <img class="w-[15rem] inset-0 m-auto" src="/images/Asset-26-4x.png" alt="" />
         <img class="w-[7rem] absolute inset-0 m-auto" src="/images/Asset-27-4x.png" alt="" />
         <p class="absolute inset-0 m-auto flex items-center justify-center text-secondary font-bold text-md">
@@ -829,7 +830,7 @@ const updateDotValue = (value) => {
 
       </div>
 
-      <div id="ingredient-section" class="min-h-screen relative border-green-500">
+      <!--   <div id="ingredient-section" class="min-h-screen relative border-green-500">
         <h4 class="text-6xl font-extrabold text-secondary">WHAT'S IN IT</h4>
         <div>
           <div class="h-20 w-20 absolute inset-x-0 m-auto">
@@ -893,7 +894,8 @@ const updateDotValue = (value) => {
       <div id="showcase-section" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
         <div class="elegance-text">
           <!-- <h2 class="elegance-text-1">Let' s begin with Elegance: <br> Our Hair Care Superblend</h2> -->
-        <h4 class="text-6xl font-extrabold text-secondary elegance-text-1">Let' s begin with Elegance: <br> Our Hair Care Superblend</h4>
+          <h4 class="text-6xl font-extrabold text-secondary elegance-text-1">Let' s begin with Elegance: <br> Our Hair
+            Care Superblend</h4>
 
         </div>
         <p class="vitamin-custom">Vitamins</p>
