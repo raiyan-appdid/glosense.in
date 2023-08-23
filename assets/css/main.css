@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Montserrat:wght@100&family=Poppins:wght@300&display=swap');
+
+body{
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.leaves-1 {
+    background-position: -177px -287px;
+    transform: scale(0.5) rotate(240deg);
+    position: absolute;
+    right: 200px;
+    top: 157.8px;
+    z-index: 3;
+}
+
+.leaves-2 {
+    background-position: -180px -10px;
+    transform: scale(0.5) rotate(40deg);
+    position: absolute;
+    left: 320px;
+    top: 473.4px;
+}
+
+.leaves-3 {
+    background-position: -306px -287px;
+    transform: scale(0.25) rotate(120deg);
+    position: absolute;
+    left: 160px;
+    top: 315.6px;
+    opacity: 0.8;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
