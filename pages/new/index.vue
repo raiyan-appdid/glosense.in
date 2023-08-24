@@ -445,7 +445,8 @@ onMounted(() => {
     scrollTrigger: {
       trigger: "#showcase-section",
       start: "top 60",
-      end: "4500",
+      end: "8000",
+      // end: "1000",
       scrub: 1,
       pin: true,
       // markers: true,
@@ -458,104 +459,94 @@ onMounted(() => {
       y: "-2rem",
       scale: 1.2
     });
-  section += 1;
 
+  section += 0;
   tlShowcase.from('.a', {
     y: -400,
     opacity: 0,
+    duration: 3,
     rotate: 360,
-    // duration: 2,
   })
 
-  section += 1;
+
+  section += 3;
   tlShowcase.from('.elegance-text', {
+    duration: 3,
     opacity: 0,
   })
-  // section += 1;
 
+  section += 0;
   tlShowcase.to('.elegance-text', {
+    duration: 3,
     opacity: 0,
   })
-  section += 1;
 
+  section += 0;
   tlShowcase.to('.a', {
     rotation: 720,
     duration: 1,
+    duration: 3,
   })
 
+  section += 1;
   tlShowcase.from(".ingredient-my-1", {
     opacity: 0,
-    duration: 2,
+    duration: 5,
     motionPath: {
       path: "#path-1",
       curviness: 1,
-      // autoRotate: true,
       align: '#path-1'
-      // start: 0.25,
-      // end: 1.5,
     }
-  }, 7.5);
-  tlShowcase.from(".ingredient-my-2", {
-    opacity: 0,
-    duration: 2,
-    motionPath: {
-      path: "#path-2",
-      curviness: 1,
-      // autoRotate: true,
-      align: '#path-2'
-      // start: 0.25,
-      // end: 1.5,
-    }
-  }, 8.5);
-  tlShowcase.from(".ingredient-my-3", {
-    opacity: 0,
-    duration: 2,
-    motionPath: {
-      path: "#path-3",
-      curviness: 1,
-      // autoRotate: true,
-      align: '#path-3'
-      // start: 0.25,
-      // end: 1.5,
-    }
-  }, 9.5);
+  }, "+=1");
   tlShowcase.to(".ingredient-my-4", {
     opacity: 1,
-    duration: 2,
+    duration: 5,
     motionPath: {
       path: "#path-4",
       curviness: 1,
-      // autoRotate: true,
       align: '#path-4'
-      // start: 0.25,
-      // end: 1.5,
     }
-  }, 7.5);
+  }, "<");
+
+  section += 4;
+  tlShowcase.from(".ingredient-my-2", {
+    opacity: 0,
+    duration: 5,
+    motionPath: {
+      path: "#path-2",
+      curviness: 1,
+      align: '#path-2'
+    }
+  }, "+=1");
   tlShowcase.to(".ingredient-my-5", {
     opacity: 1,
-    duration: 2,
+    duration: 5,
     motionPath: {
       path: "#path-5",
       curviness: 1,
-      // autoRotate: true,
       align: '#path-5'
-      // start: 0.25,
-      // end: 1.5,
     }
-  }, 8.5);
+  }, "<");
+
+  section += 2;
+  tlShowcase.from(".ingredient-my-3", {
+    opacity: 0,
+    duration: 5,
+    motionPath: {
+      path: "#path-3",
+      curviness: 1,
+      align: '#path-3'
+    }
+  }, "+=1");
   tlShowcase.to(".ingredient-my-6", {
     opacity: 1,
-    duration: 2,
+    duration: 5,
     motionPath: {
       path: "#path-6",
       curviness: 1,
-      // autoRotate: true,
       align: '#path-6'
-      // start: 0.25,
-      // end: 1.5,
     }
-  }, 9.5);
-
+  }, "<");
 
 
   //reverse
@@ -565,36 +556,27 @@ onMounted(() => {
     motionPath: {
       path: "#path-1",
       curviness: 1,
-      // autoRotate: true,
       align: '#path-1'
-      // start: 0.25,
-      // end: 1.5,
     }
-  }, 12);
+  }, "+=1");
   tlShowcase.to(".ingredient-my-2", {
     opacity: 0,
     duration: 2,
     motionPath: {
       path: "#path-2",
       curviness: 1,
-      // autoRotate: true,
       align: '#path-2'
-      // start: 0.25,
-      // end: 1.5,
     }
-  }, 12);
+  }, "<");
   tlShowcase.to(".ingredient-my-3", {
     opacity: 0,
     duration: 2,
     motionPath: {
       path: "#path-3",
       curviness: 1,
-      // autoRotate: true,
       align: '#path-3'
-      // start: 0.25,
-      // end: 1.5,
     }
-  }, 12);
+  }, "<");
 
 
 
@@ -604,46 +586,37 @@ onMounted(() => {
     motionPath: {
       path: "#path-4",
       curviness: 1,
-      // autoRotate: true,
       align: '#path-4'
-      // start: 0.25,
-      // end: 1.5,
     }
-  }, 12);
+  }, "<");
   tlShowcase.from(".ingredient-my-5", {
     opacity: 1,
     duration: 2,
     motionPath: {
       path: "#path-5",
       curviness: 1,
-      // autoRotate: true,
       align: '#path-5'
-      // start: 0.25,
-      // end: 1.5,
     }
-  }, 12);
+  }, "<");
   tlShowcase.from(".ingredient-my-6", {
     opacity: 1,
     duration: 2,
     motionPath: {
       path: "#path-6",
       curviness: 1,
-      // autoRotate: true,
       align: '#path-6'
-      // start: 0.25,
-      // end: 1.5,
     }
-  }, 12);
+  }, "<");
 
   tlShowcase.from(".ingredient-my-4", {
     opacity: 0,
-  }, 12);
+  }, "<");
   tlShowcase.from(".ingredient-my-5", {
     opacity: 0,
-  }, 12);
+  }, "<");
   tlShowcase.from(".ingredient-my-6", {
     opacity: 0,
-  }, 12);
+  }, "<");
 
 
   tlShowcase.set('.a', {
@@ -654,7 +627,7 @@ onMounted(() => {
   tlShowcase.to('.a', {
     duration: 2,
     rotation: 540,
-  }, 14)
+  }, "+=1")
 
 
   tlShowcase.to('.custom-image', {
@@ -662,83 +635,118 @@ onMounted(() => {
     opacity: 1,
     // rotate: 360,
     duration: 2,
-  }, 14)
+  }, "<")
 
   tlShowcase.to('.custom-image', {
     y: -800,
     opacity: 0,
     // rotate: 360,
     duration: 2,
-  }, 17)
+  }, "+=1")
 
   tlShowcase.to('.a', {
     duration: 2,
     rotation: 360,
-  }, 17)
+  }, "<")
 
-
-  // tlShowcase.to('.vitamin-custom', {
-  //   x: 0,
-  //   duration: 6,
-  // }, 21)
-  // tlShowcase.set('.a', {
-  //   transformOrigin: "50% 50%"
-  // });
   tlShowcase.from('.a', {
     duration: 6,
     rotation: 720,
-  }, 20)
+  }, "+=1")
 
   tlShowcase.from('.vitamin-custom', {
     x: 1000,
     duration: 6,
     opacity: 0,
-  }, 20)
+  }, "<")
 
   tlShowcase.from('.calcium-custom', {
     x: -1000,
     duration: 6,
     opacity: 0,
-  }, 20)
+  }, "<")
   tlShowcase.from('.a', {
     duration: 6,
     rotation: 1080,
-  }, 28)
+  }, "+=1")
   tlShowcase.to('.vitamin-custom', {
     x: -1000,
     duration: 6,
     opacity: 0,
-  }, 28)
+  }, "<")
   tlShowcase.from('.vitamin-custom-2', {
     x: -1000,
     duration: 6,
     opacity: 0,
-  }, 28)
+  }, "<")
   tlShowcase.to('.calcium-custom', {
     x: 1000,
     duration: 6,
     opacity: 0,
-  }, 28)
+  }, "<")
   tlShowcase.from('.calcium-custom-2', {
     x: 1000,
     duration: 6,
     opacity: 0,
-  }, 28)
+  }, "<")
   tlShowcase.from('.a', {
     duration: 6,
     rotation: 1440,
-  }, 35)
+  }, "+=1")
   tlShowcase.to('.vitamin-custom-2', {
     x: 1000,
     duration: 6,
     opacity: 0,
-  }, 35)
+  }, "<")
 
   tlShowcase.to('.calcium-custom-2', {
     x: -1000,
     duration: 6,
     opacity: 0,
-  }, 35)
+  }, "<")
+
+  tlShowcase.from('.a', {
+    duration: 10,
+    rotation: 1800,
+  }, "+=1")
+
+  tlShowcase.to('.circulating-text-1', {
+    opacity: 1,
+    x: 300,
+    yPercent: -100,
+    duration: 5
+  }, "-=8")
+
+  tlShowcase.to('.circulating-text-2', {
+    opacity: 1,
+    x: 300,
+    yPercent: 100,
+    duration: 5
+  }, "-=6");
+  tlShowcase.to('.circulating-text-3', {
+    opacity: 1,
+    x: -300,
+    yPercent: -100,
+    duration: 5
+  }, "-=4");
+  tlShowcase.to('.circulating-text-4', {
+    opacity: 1,
+    x: -300,
+    yPercent: 100,
+    duration: 5
+  }, "-=2");
+
+
+  // tlShowcase.to('.a', {
+  //   x: 10,
+  //   yPercent: 50,
+  //   duration: 5
+  // }, "+=1")
+  // tlShowcase.to('.a', {
+  //   y: 10,
+  //   xPercent: 50,
+  //   duration: 5
+  // }, "<")
 
 
 
@@ -806,7 +814,7 @@ const updateDotValue = (value) => {
         <img id="jar-image" src="/images/jar.png" class="w-[250px] inset-0 m-auto fixed z-[11] translate-y-[-50rem]"
           alt="" />
       </div> -->
-    <div id="shop-section" class="fixed bottom-3 w-full">
+      <div id="shop-section" class="fixed bottom-3 w-full">
         <img class="w-[15rem] inset-0 m-auto" src="/images/Asset-26-4x.png" alt="" />
         <img class="w-[7rem] absolute inset-0 m-auto" src="/images/Asset-27-4x.png" alt="" />
         <p class="absolute inset-0 m-auto flex items-center justify-center text-secondary font-bold text-md">
@@ -891,6 +899,7 @@ const updateDotValue = (value) => {
         </div>
       </div> -->
 
+
       <div id="showcase-section" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
         <div class="elegance-text">
           <!-- <h2 class="elegance-text-1">Let' s begin with Elegance: <br> Our Hair Care Superblend</h2> -->
@@ -898,8 +907,21 @@ const updateDotValue = (value) => {
             Care Superblend</h4>
 
         </div>
-        <p class="vitamin-custom">Vitamins</p>
-        <p class="vitamin-custom-2">Vitamins - 2</p>
+        <!-- <p class="vitamin-custom">Vitamins</p> -->
+        <h1 class="text-[6rem] absolute vitamin-custom font-[900] text-white  bg-transparent inset-x-0 tt-1" style="top: 4rem;
+            text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
+              -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
+          ">
+          Vitamins
+        </h1>
+        <!-- <p class="vitamin-custom-2">Vitamins - 2</p> -->
+
+        <h1 class="text-[6rem] absolute vitamin-custom-2 font-[900] text-white  bg-transparent inset-x-0 tt-2" style="top: 4rem;
+            text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
+              -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
+          ">
+          Vitamins -2
+        </h1>
         <div class="box a flex justify-center"><img class="h-[300px] w-[250px]" src="/images/jar.png" alt="">
         </div>
         <div class="svg-align justify-center">
@@ -961,18 +983,46 @@ const updateDotValue = (value) => {
         <div class="elegance-text">
           <h2 class="elegance-text-2">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
         </div>
-        <h2 class="calcium-custom-2">Calcium - 2</h2>
-        <h2 class="calcium-custom">Calcium</h2>
+        <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
+        <h1 class="text-[6rem] absolute calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2"
+          style="bottom: 12rem;
+            text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
+              -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
+          ">
+          Calcium - 2
+        </h1>
 
+        <!-- <h2 class="calcium-custom">Calcium</h2> -->
+        <h1 class="text-[6rem] absolute calcium-custom font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="bottom: 12rem;
+            text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
+              -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
+          ">
+          Calcium
+        </h1>
+
+        <div class="custom-circulating">
+          <h1
+            class="text-[2rem] circulating-text-1 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-1">
+            IMPROVES <br /> HAIR HEALTH
+          </h1>
+          <h1 class="text-[2rem] absolute font-[1000] text-orange-400 circulating-text-2 opacity-0  inset-x-0 tb-1 ">
+            PROVIDES <br /> NUTRIENTS
+          </h1>
+          <h1 class="text-[2rem] circulating-text-3 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2">
+            DIET <br /> FRIENDLY
+          </h1>
+          <h1 class="text-[2rem] absolute font-[1000] opacity-0 circulating-text-4 text-orange-400  inset-x-0 tb-2 ">
+            HELPS BUILDING <br /> COLLAGEN
+          </h1>
+        </div>
         <div class="custom-image opacity-0">
           <img width="100%" src="/images/raiyan-slider.jpg" alt="">
         </div>
+      </div>
 
 
-
-
-
-        <!-- <div id="showcase-images" class="relative h-[400px] mb-5">
+      <div id="showcase-section-1" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
+        <div id="showcase-images" class="relative h-[400px] mb-5">
           <div
             class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[355deg]">
             <img class="object-cover h-[300px] w-[300px]" src="/images/jar.png" alt="" />
@@ -985,7 +1035,7 @@ const updateDotValue = (value) => {
             <div class="tear"></div>
             <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/F1917B/FFFFFF/png" alt="" />
           </div>
-        </div> -->
+        </div>
         <div style="--fill-till: 0" id="showcase-slider" class="relative flex justify-center">
           <div class="w-[50rem] h-2 relative">
             <div class="h-2 w-full absolute bg-gray-400" id="slide"></div>
@@ -1001,6 +1051,14 @@ const updateDotValue = (value) => {
 </template>
 
 <style>
+.custom-circulating {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 36vh;
+  margin-top: auto;
+}
+
 .custom-image {
   position: absolute;
 }
