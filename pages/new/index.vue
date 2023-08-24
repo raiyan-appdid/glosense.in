@@ -736,6 +736,22 @@ onMounted(() => {
     duration: 5
   }, "-=2");
 
+  tlShowcase.to('.a', {
+    scale: 0
+  }, "+=1")
+  tlShowcase.to('.circulating-text-1', {
+    scale: 0,
+  }, "<")
+  tlShowcase.to('.circulating-text-2', {
+    scale: 0,
+  }, "<")
+  tlShowcase.to('.circulating-text-3', {
+    scale: 0,
+  }, "<")
+  tlShowcase.to('.circulating-text-4', {
+    scale: 0,
+  }, "<")
+
 
   // tlShowcase.to('.a', {
   //   x: 10,
@@ -762,8 +778,34 @@ onMounted(() => {
   // } ,21)
 
 
+  const tlShowcase1 = gsap.timeline({
+    defaults: {
+      duration: 1,
+      ease: "linear",
+    },
+    scrollTrigger: {
+      trigger: "#showcase-section-1",
+      start: "top 60",
+      end: "1000",
+      // end: "1000",
+      scrub: 1,
+      pin: true,
+      // markers: true,
+    },
+  });
 
-
+  tlShowcase1.from('.believe-text', {
+    opacity: 0,
+    duration: 2,
+  })
+  tlShowcase1.to('.believe-text', {
+    opacity: 1,
+    duration: 2,
+  })
+  tlShowcase1.to('.believe-text', {
+    opacity: 0,
+    duration: 2,
+  })
 
 
 
@@ -783,7 +825,7 @@ onMounted(() => {
   tlShowcase.to(
     "#showcase-slider",
     {
-      "--fill-till": "+=100",
+      "--fill-till": "+=50",
     },
     section
   );
@@ -981,7 +1023,7 @@ const updateDotValue = (value) => {
           <img class="opacity-0  ingredient-my-6 h-20" src="/images/Asset-32-4x.png" alt="" />
         </div>
         <div class="elegance-text">
-          <h2 class="elegance-text-2">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
+          <h2 class="elegance-text-2 font-bold text-xl">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
         </div>
         <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
         <h1 class="text-[6rem] absolute calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2"
@@ -1008,7 +1050,8 @@ const updateDotValue = (value) => {
           <h1 class="text-[2rem] absolute font-[1000] text-orange-400 circulating-text-2 opacity-0  inset-x-0 tb-1 ">
             PROVIDES <br /> NUTRIENTS
           </h1>
-          <h1 class="text-[2rem] circulating-text-3 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2">
+          <h1
+            class="text-[2rem] circulating-text-3 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2">
             DIET <br /> FRIENDLY
           </h1>
           <h1 class="text-[2rem] absolute font-[1000] opacity-0 circulating-text-4 text-orange-400  inset-x-0 tb-2 ">
@@ -1022,18 +1065,23 @@ const updateDotValue = (value) => {
 
 
       <div id="showcase-section-1" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
+        <h4 class="text-[2rem] believe-text font-extrabold text-secondary elegance-text-1">We believe in fixing the root
+          cause, <br /> not quick results!</h4>
         <div id="showcase-images" class="relative h-[400px] mb-5">
-          <div
-            class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[355deg]">
-            <img class="object-cover h-[300px] w-[300px]" src="/images/jar.png" alt="" />
-          </div>
+          <!-- <div
+            class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[355deg]"> -->
+          <!-- <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/43A190/FFFFFF/png" alt="" /> -->
+          <!-- </div> -->
           <div class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
             <div class="tear"></div>
-            <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/43A190/FFFFFF/png" alt="" />
+            <div class="object-cover h-[300px] w-[300px]" style="background-color: #43A190;"></div>
+            <!-- <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/43A190/FFFFFF/png" alt="" /> -->
           </div>
           <div class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[5deg]">
             <div class="tear"></div>
-            <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/F1917B/FFFFFF/png" alt="" />
+            <div class="object-cover h-[300px] w-[300px]" style="background-color: #F1917B;"></div>
+
+            <!-- <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/F1917B/FFFFFF/png" alt="" /> -->
           </div>
         </div>
         <div style="--fill-till: 0" id="showcase-slider" class="relative flex justify-center">
@@ -1046,6 +1094,33 @@ const updateDotValue = (value) => {
           </div>
         </div>
       </div>
+
+      <div class="container px-10 mx-auto">
+        <div class="min-h-screen pt-16 relative border-blue-500 grid grid-cols-12 gap-4">
+          <div class="col-span-8">
+            <p class="text-neutral-950 text-2xl p-3 font-bold">Hair You Glo is for those who are looking for solutions to their hair
+              health and want to look confident when they look in the mirror every morning! Hair
+              you glo not only help you with your hair health but also help you regain your confidence in yourseld which
+              has been shadowed by any reason related to hair
+              as your personality is showcased first when you meet someone or present yourself!!
+            </p>
+            <br />
+
+            <p class="text-neutral-950 text-2xl p-3 font-bold">Introducing our innovative hair health betterment product, carefully crafted with a blend of nature's
+              finest ingredients such as Sea buckthorn extract, Gotu kola lead extract,
+              Carrot, Amla, Lemon, Orange, Tomato fruit, Pomegranate extract, Grape seed, Ginger Rhizome extract,
+              Fenugreek seeds extract, Cinnamon bark extract, Biotin: known
+
+            </p>
+          </div>
+          <div class="col-span-4">
+            <div class="h-[500px] w-[400px] bg-emerald-500 rounded-xl" ></div>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
   </div>
 </template>
@@ -1112,5 +1187,4 @@ const updateDotValue = (value) => {
 
 .left0 {
   left: 0 !important;
-}
-</style>
+}</style>
