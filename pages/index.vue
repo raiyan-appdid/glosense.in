@@ -445,7 +445,7 @@ onMounted(() => {
     scrollTrigger: {
       trigger: "#showcase-section",
       start: "top 60",
-      end: "8000",
+      end: "12000",
       // end: "1000",
       scrub: 1,
       pin: true,
@@ -454,11 +454,7 @@ onMounted(() => {
   });
   section = 0;
 
-  tlShowcase.to("#shop-section",
-    {
-      y: "-2rem",
-      scale: 1.2
-    });
+
 
   section += 0;
   tlShowcase.from('.a', {
@@ -807,7 +803,11 @@ onMounted(() => {
     duration: 2,
   })
 
-
+  tlShowcase.to("#shop-section",
+    {
+      y: "-2rem",
+      scale: 1.2
+    }, "+=1");
 
 
 
@@ -857,10 +857,10 @@ const updateDotValue = (value) => {
         <img id="jar-image" src="/images/jar.png" class="w-[250px] inset-0 m-auto fixed z-[11] translate-y-[-50rem]"
           alt="" />
       </div> -->
-      <div id="shop-section" class="fixed bottom-3 w-full">
-        <img class="w-[15rem] inset-0 m-auto" src="/images/Asset-26-4x.png" alt="" />
-        <img class="w-[7rem] absolute inset-0 m-auto" src="/images/Asset-27-4x.png" alt="" />
-        <p class="absolute inset-0 m-auto flex items-center justify-center text-secondary font-bold text-md">
+      <div id="shop-section" class="fixed bottom-0 w-full">
+        <img class="w-[10rem] inset-0 m-auto" src="/images/Asset-26-4x.png" alt="" />
+        <img class="w-[5rem] absolute inset-0 m-auto" src="/images/Asset-27-4x.png" alt="" />
+        <p class="absolute inset-0 m-auto flex items-center justify-center text-secondary font-bold text-sm">
           Shop Now
         </p>
       </div>
@@ -965,9 +965,9 @@ const updateDotValue = (value) => {
           ">
           Vitamins -2
         </h1>
-        <div class="box a flex justify-center"><img class="h-[300px] w-[250px]" src="/images/jar.png" alt="">
+        <div class="box a flex justify-center align-middle"><img class="h-[280px] w-[250px]" src="/images/jar.png" alt="">
         </div>
-        <div class="svg-align justify-center">
+        <div class="svg-align flex justify-center">
           <div class="svg-div-align">
             <svg opacity="0" viewBox="-20 0 557 190" id="svg-1">
               <circle cx="100" cy="100" r="3" />
