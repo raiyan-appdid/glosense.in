@@ -467,22 +467,28 @@ onMounted(() => {
 
   section += 3;
   tlShowcase.from('.elegance-text', {
-    duration: 3,
+    duration: 7,
     opacity: 0,
   })
 
   section += 0;
   tlShowcase.to('.elegance-text', {
-    duration: 3,
+    duration: 7,
     opacity: 0,
   })
 
   section += 0;
   tlShowcase.to('.a', {
     rotation: 720,
-    duration: 1,
+    // duration: 1,
     duration: 3,
   })
+  tlShowcase.to('.what-text', {
+    // rotation: 720,
+    // duration: 1,
+    duration: 3,
+    opacity: 1,
+  }, "+=1")
 
   section += 1;
   tlShowcase.from(".ingredient-my-1", {
@@ -614,6 +620,13 @@ onMounted(() => {
     opacity: 0,
   }, "<");
 
+  tlShowcase.to('.what-text', {
+    // rotation: 720,
+    // duration: 1,
+    // duration: 3,
+    opacity: 0,
+  }, "<")
+
 
   tlShowcase.set('.a', {
     transformOrigin: "50% 50%"
@@ -671,7 +684,7 @@ onMounted(() => {
     opacity: 0,
   }, "<")
   tlShowcase.from('.vitamin-custom-2', {
-    x: -1000,
+    x: 1000,
     duration: 6,
     opacity: 0,
   }, "<")
@@ -681,7 +694,7 @@ onMounted(() => {
     opacity: 0,
   }, "<")
   tlShowcase.from('.calcium-custom-2', {
-    x: 1000,
+    x: -1000,
     duration: 6,
     opacity: 0,
   }, "<")
@@ -690,13 +703,13 @@ onMounted(() => {
     rotation: 1440,
   }, "+=1")
   tlShowcase.to('.vitamin-custom-2', {
-    x: 1000,
+    x: -1000,
     duration: 6,
     opacity: 0,
   }, "<")
 
   tlShowcase.to('.calcium-custom-2', {
-    x: -1000,
+    x: 1000,
     duration: 6,
     opacity: 0,
   }, "<")
@@ -732,6 +745,25 @@ onMounted(() => {
     duration: 5
   }, "-=2");
 
+  
+
+  const tlShowcase1 = gsap.timeline({
+    defaults: {
+      duration: 1,
+      ease: "linear",
+    },
+    scrollTrigger: {
+      trigger: "#showcase-section-1",
+      start: "top 60",
+      end: "1000",
+      // end: "1000",
+      scrub: 1,
+      pin: true,
+      // markers: true,
+    },
+  });
+
+
   tlShowcase.to('.a', {
     scale: 0
   }, "+=1")
@@ -746,6 +778,12 @@ onMounted(() => {
   }, "<")
   tlShowcase.to('.circulating-text-4', {
     scale: 0,
+  }, "<")
+
+  tlShowcase.to('#showcase-section-1', {
+    y:-50,
+    opacity: 1,
+    // duration: 2,
   }, "<")
 
 
@@ -774,21 +812,8 @@ onMounted(() => {
   // } ,21)
 
 
-  const tlShowcase1 = gsap.timeline({
-    defaults: {
-      duration: 1,
-      ease: "linear",
-    },
-    scrollTrigger: {
-      trigger: "#showcase-section-1",
-      start: "top 60",
-      end: "1000",
-      // end: "1000",
-      scrub: 1,
-      pin: true,
-      // markers: true,
-    },
-  });
+
+
 
   tlShowcase1.from('.believe-text', {
     opacity: 0,
@@ -946,8 +971,8 @@ const updateDotValue = (value) => {
       <div id="showcase-section" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
         <div class="elegance-text">
           <!-- <h2 class="elegance-text-1">Let' s begin with Elegance: <br> Our Hair Care Superblend</h2> -->
-          <h4 class="text-6xl font-extrabold text-secondary elegance-text-1">Let' s begin with Elegance: <br> Our Hair
-            Care Superblend</h4>
+          <h4 class="text-6xl font-extrabold text-secondary elegance-text-1">LET' S BEGIN WITH ELEGANCE: <br> OUR HAIR
+            CARE SUPERBLEND</h4>
 
         </div>
         <!-- <p class="vitamin-custom">Vitamins</p> -->
@@ -955,7 +980,7 @@ const updateDotValue = (value) => {
             text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
               -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
           ">
-          Vitamins
+          VITAMINS
         </h1>
         <!-- <p class="vitamin-custom-2">Vitamins - 2</p> -->
 
@@ -963,8 +988,13 @@ const updateDotValue = (value) => {
             text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
               -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
           ">
-          Vitamins -2
+          VITAMINS -2
         </h1>
+
+        <div class="absolute top-[7rem] w-screen">
+          <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
+            WHAT'S IN IT?</h4>
+        </div>
         <div class="box a flex justify-center align-middle"><img class="h-[280px] w-[250px]" src="/images/jar.png" alt="">
         </div>
         <div class="svg-align flex justify-center">
@@ -1027,21 +1057,31 @@ const updateDotValue = (value) => {
           <h2 class="elegance-text-2 font-bold text-xl">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
         </div>
         <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
-        <h1 class="text-[6rem] absolute calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2"
-          style="bottom: 12rem;
+        <div class="absolute bottom-[9rem] w-screen">
+
+          <h1 class="text-[6rem] calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2"
+            style="bottom: 12rem;
             text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
               -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
           ">
-          Calcium - 2
-        </h1>
+            Calcium - 2
+          </h1>
+        </div>
 
         <!-- <h2 class="calcium-custom">Calcium</h2> -->
-        <h1 class="text-[6rem] absolute calcium-custom font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="bottom: 12rem;
-            text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
-              -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
-          ">
-          Calcium
-        </h1>
+        <div class="absolute bottom-[9rem] w-screen">
+          <h1 class="text-[6rem]  calcium-custom font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="
+              text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
+                -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
+            ">
+            Calcium
+          </h1>
+        </div>
+
+        <!-- <div class="absolute w-screen">
+          <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
+            WHAT'S IN IT?</h4>
+        </div> -->
 
         <div class="custom-circulating">
           <h1
@@ -1190,4 +1230,5 @@ const updateDotValue = (value) => {
 
 .left0 {
   left: 0 !important;
-}</style>
+}
+</style>
