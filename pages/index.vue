@@ -745,7 +745,7 @@ onMounted(() => {
     duration: 5
   }, "-=2");
 
-  
+
 
   const tlShowcase1 = gsap.timeline({
     defaults: {
@@ -781,7 +781,7 @@ onMounted(() => {
   }, "<")
 
   tlShowcase.to('#showcase-section-1', {
-    y:-50,
+    y: -50,
     opacity: 1,
     // duration: 2,
   }, "<")
@@ -878,6 +878,10 @@ const updateDotValue = (value) => {
       <div>
         <img id="logo-image" src="/images/logo.png" class="w-4/12 inset-x-0 my-0 mx-auto top-[15rem] fixed z-20" alt="" />
       </div>
+      <div class="home-text h-screen flex align-middle flex-col justify-center mt-[9rem]" style="align-items: center;">
+        <h4 class="text-6xl font-extrabold text-secondary">testinas dg</h4>
+        <h4 class="text-6xl font-extrabold text-secondary">testinas dg</h4>
+      </div>
       <!-- <div>
         <img id="jar-image" src="/images/jar.png" class="w-[250px] inset-0 m-auto fixed z-[11] translate-y-[-50rem]"
           alt="" />
@@ -903,7 +907,6 @@ const updateDotValue = (value) => {
           <img class="absolute w-[8rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png" alt="" />
           <img class="absolute w-auto right-0 top-[10rem]" src="/images/rl-small.png" alt="" />
         </div>
-
       </div>
 
       <!--   <div id="ingredient-section" class="min-h-screen relative border-green-500">
@@ -969,9 +972,28 @@ const updateDotValue = (value) => {
 
 
       <div id="showcase-section" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
+        <div id="hero-section-1"
+          class="hero__section bg-[url('/images/bg.png') w-screen h-screen absolute min-h-screen bg-no-repeat bg-cover bg-top overflow-hidden">
+          <div id="leaves-group-1">
+            <img class="absolute w-[18rem] opacity-[0.5] bottom-[-8rem] left-[5rem]" src="/images/leave-bl.png" alt="" />
+            <img class="absolute w-[10rem] opacity-[0.5] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png" alt="" />
+            <img class="absolute w-[12rem] opacity-[0.5] left-[30%] top-[10%]" src="/images/Asset-25-4x.png" alt="" />
+            <img class="absolute w-[8rem] opacity-[0.5] right-[40%] top-[10%]" src="/images/Asset-24-4x.png" alt="" />
+            <img class="absolute w-[18rem] opacity-[0.5] bottom-[-10rem] left-[15rem]" src="/images/Asset-13-4x.png"
+              alt="" />
+            <img class="absolute w-[6rem] opacity-[0.5] right-[20%] top-[20%]" src="/images/Asset-22-4x.png" alt="" />
+            <img class="absolute w-[40rem] opacity-[0.5] right-[5rem] top-[-5rem]" src="/images/Asset-23-4x.png" alt="" />
+            <img class="absolute w-[15rem] opacity-[0.5] right-[-5rem] bottom-[0rem]" src="/images/Asset-16-4x.png"
+              alt="" />
+            <img class="absolute w-[8rem] opacity-[0.5] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png"
+              alt="" />
+            <img class="absolute w-auto opacity-[0.5] right-0 top-[10rem]" src="/images/rl-small.png" alt="" />
+          </div>
+        </div>
         <div class="elegance-text">
           <!-- <h2 class="elegance-text-1">Let' s begin with Elegance: <br> Our Hair Care Superblend</h2> -->
-          <h4 class="text-6xl font-extrabold text-secondary elegance-text-1">LET' S BEGIN WITH ELEGANCE: <br> OUR HAIR
+          <h4 class="text-6xl font-extrabold text-secondary elegance-text-1 mb-3">LET' S BEGIN WITH ELEGANCE: <br> OUR
+            HAIR
             CARE SUPERBLEND</h4>
 
         </div>
@@ -1054,27 +1076,26 @@ const updateDotValue = (value) => {
           <img class="opacity-0  ingredient-my-6 h-20" src="/images/Asset-32-4x.png" alt="" />
         </div>
         <div class="elegance-text">
-          <h2 class="elegance-text-2 font-bold text-xl">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
+          <h2 class="elegance-text-2 font-bold text-xl mt-3">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
         </div>
         <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
-        <div class="absolute bottom-[9rem] w-screen">
+        <div class="absolute bottom-[8rem] w-screen">
 
-          <h1 class="text-[6rem] calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2"
-            style="bottom: 12rem;
+          <h1 class="text-[6rem] calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="bottom: 12rem;
             text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
               -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
           ">
-            Calcium - 2
+            CALCIUM - 2
           </h1>
         </div>
 
         <!-- <h2 class="calcium-custom">Calcium</h2> -->
-        <div class="absolute bottom-[9rem] w-screen">
+        <div class="absolute bottom-[8rem] w-screen">
           <h1 class="text-[6rem]  calcium-custom font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="
               text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
                 -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
             ">
-            Calcium
+            CALCIUM
           </h1>
         </div>
 
