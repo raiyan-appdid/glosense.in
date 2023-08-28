@@ -29,7 +29,7 @@ onMounted(() => {
     scrollTrigger: {
       trigger: "#hero-section",
       start: "top top",
-      end: "300",
+      end: "600",
       scrub: 2,
       pin: true,
       // markers: true,
@@ -37,10 +37,15 @@ onMounted(() => {
   });
 
   tlHero.to("#logo-image", {
-    duration: 0.1,
+    duration: 6,
     top: "1.5rem",
     width: "10rem",
-  });
+  }, "+=1");
+  tlHero.to(".home-text", {
+    duration: 6,
+    y: -300,
+    opacity: 0
+  }, "-=6");
 
 
 
@@ -878,10 +883,6 @@ const updateDotValue = (value) => {
       <div>
         <img id="logo-image" src="/images/logo.png" class="w-4/12 inset-x-0 my-0 mx-auto top-[15rem] fixed z-20" alt="" />
       </div>
-      <div class="home-text h-screen flex align-middle flex-col justify-center mt-[9rem]" style="align-items: center;">
-        <h4 class="text-6xl font-extrabold text-secondary">testinas dg</h4>
-        <h4 class="text-6xl font-extrabold text-secondary">testinas dg</h4>
-      </div>
       <!-- <div>
         <img id="jar-image" src="/images/jar.png" class="w-[250px] inset-0 m-auto fixed z-[11] translate-y-[-50rem]"
           alt="" />
@@ -907,7 +908,13 @@ const updateDotValue = (value) => {
           <img class="absolute w-[8rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png" alt="" />
           <img class="absolute w-auto right-0 top-[10rem]" src="/images/rl-small.png" alt="" />
         </div>
+        <div class="home-text h-screen flex align-middle flex-col justify-center mt-[6rem]" style="align-items: center;">
+          <h4 class="text-3xl ">Unlock the essence fo self-care</h4>
+          <h4 class="text-3xl ">through the magic of superfoods.</h4>
+          <h4 class="mt-5 text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl">Know more</h4>
+        </div>
       </div>
+
 
       <!--   <div id="ingredient-section" class="min-h-screen relative border-green-500">
         <h4 class="text-6xl font-extrabold text-secondary">WHAT'S IN IT</h4>
@@ -1079,7 +1086,12 @@ const updateDotValue = (value) => {
           <h2 class="elegance-text-2 font-bold text-xl mt-3">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
         </div>
         <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
-        <div class="absolute bottom-[8rem] w-screen">
+        <div class="absolute w-screen" style="    top: 17rem;
+    bottom: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;">
 
           <h1 class="text-[6rem] calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="bottom: 12rem;
             text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
@@ -1090,7 +1102,12 @@ const updateDotValue = (value) => {
         </div>
 
         <!-- <h2 class="calcium-custom">Calcium</h2> -->
-        <div class="absolute bottom-[8rem] w-screen">
+        <div class="absolute w-screen" style="    top: 17rem;
+    bottom: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;">
           <h1 class="text-[6rem]  calcium-custom font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="
               text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
                 -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
