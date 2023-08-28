@@ -643,6 +643,9 @@ onMounted(() => {
     rotation: 540,
   }, "+=1")
 
+  tlShowcase.to('.custom-image', {
+    opacity: 1,
+  }, "-=1");
 
   tlShowcase.to('.custom-image', {
     y: -400,
@@ -652,8 +655,8 @@ onMounted(() => {
   }, "<")
 
   tlShowcase.to('.custom-image', {
-    y: -800,
-    opacity: 0,
+    y: -1500,
+    opacity: 1,
     // rotate: 360,
     duration: 2,
   }, "+=1")
@@ -752,21 +755,6 @@ onMounted(() => {
 
 
 
-  const tlShowcase1 = gsap.timeline({
-    defaults: {
-      duration: 1,
-      ease: "linear",
-    },
-    scrollTrigger: {
-      trigger: "#showcase-section-1",
-      start: "top 60",
-      end: "1000",
-      // end: "1000",
-      scrub: 1,
-      pin: true,
-      // markers: true,
-    },
-  });
 
 
   tlShowcase.to('.a', {
@@ -817,6 +805,23 @@ onMounted(() => {
   // } ,21)
 
 
+  const tlShowcase1 = gsap.timeline({
+    defaults: {
+      duration: 1,
+      ease: "linear",
+    },
+    scrollTrigger: {
+      trigger: "#showcase-section-1",
+      start: "top 60",
+      end: "2000",
+      // end: "1000",
+      scrub: 1,
+      pin: true,
+      // markers: true,
+    },
+  });
+
+
 
 
 
@@ -828,10 +833,76 @@ onMounted(() => {
     opacity: 1,
     duration: 2,
   })
+
+
+  tlShowcase1.to(
+    "#showcase-slider",
+    {
+      "--fill-till": "+=33",
+    },
+    section
+  );
+  tlShowcase1.to(
+    "#showcase-section-1 #showcase-images div:nth-child(3)",
+    {
+      clipPath: "inset(0 0 0 100%)",
+    },
+    section
+  );
+  tlShowcase1.to(
+    "#showcase-section-1 #showcase-images div:nth-child(3) .tear",
+    {
+      className: "tear left-0",
+      transform: "translate(100%, 0)",
+      onComplete: () => { },
+    },
+    section
+  );
+
+
+  section += 1;
+  tlShowcase1.to(
+    "#showcase-slider",
+    {
+      "--fill-till": "+=34",
+    },
+    section
+  );
+  tlShowcase1.to(
+    "#showcase-section-1 #showcase-images div:nth-child(2)",
+    {
+      clipPath: "inset(0 0 0 100%)",
+    },
+    section
+  );
+
+  tlShowcase1.to(
+    "#showcase-section-1 #showcase-images div:nth-child(2) .tear",
+    {
+      className: "tear left-0",
+      transform: "translate(100%, 0)",
+    },
+    section
+  );
+
+  section += 1;
+  tlShowcase1.to(
+    "#showcase-slider",
+    {
+      "--fill-till": "+=34",
+    },
+    section
+  );
+
+
+
   tlShowcase1.to('.believe-text', {
     opacity: 0,
     duration: 2,
   })
+
+
+
 
   tlShowcase.to("#shop-section",
     {
@@ -852,17 +923,17 @@ onMounted(() => {
 
 
   // section += 3;
-  tlShowcase.to(
-    "#showcase-slider",
-    {
-      "--fill-till": "+=50",
-    },
-    section
-  );
+  // tlShowcase.to(
+  //   "#showcase-slider",
+  //   {
+  //     "--fill-till": "+=50",
+  //   },
+  //   section
+  // );
 
 
 
-  // section += 0.5;
+  section += 0.5;
   tlEfffect.to({}, { duration: 1 }, section);
 });
 
@@ -980,7 +1051,7 @@ const updateDotValue = (value) => {
 
       <div id="showcase-section" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
         <div id="hero-section-1"
-          class="hero__section bg-[url('/images/bg.png') w-screen h-screen absolute min-h-screen bg-no-repeat bg-cover bg-top overflow-hidden">
+          class="hero__section bg-[url('/images/bg.png') w-screen h-screen  absolute min-h-screen bg-no-repeat bg-cover bg-top overflow-hidden">
           <div id="leaves-group-1">
             <img class="absolute w-[18rem] opacity-[0.5] bottom-[-8rem] left-[5rem]" src="/images/leave-bl.png" alt="" />
             <img class="absolute w-[10rem] opacity-[0.5] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png" alt="" />
@@ -997,145 +1068,148 @@ const updateDotValue = (value) => {
             <img class="absolute w-auto opacity-[0.5] right-0 top-[10rem]" src="/images/rl-small.png" alt="" />
           </div>
         </div>
-        <div class="elegance-text">
-          <!-- <h2 class="elegance-text-1">Let' s begin with Elegance: <br> Our Hair Care Superblend</h2> -->
-          <h4 class="text-6xl font-extrabold text-secondary elegance-text-1 mb-3">LET' S BEGIN WITH ELEGANCE: <br> OUR
-            HAIR
-            CARE SUPERBLEND</h4>
+        <div class="home-container mt-12">
+          <div class="elegance-text">
+            <!-- <h2 class="elegance-text-1">Let' s begin with Elegance: <br> Our Hair Care Superblend</h2> -->
+            <h4 class="text-6xl font-extrabold text-secondary elegance-text-1 mb-3">LET' S BEGIN WITH ELEGANCE: <br> OUR
+              HAIR
+              CARE SUPERBLEND</h4>
 
-        </div>
-        <!-- <p class="vitamin-custom">Vitamins</p> -->
-        <h1 class="text-[6rem] absolute vitamin-custom font-[900] text-white  bg-transparent inset-x-0 tt-1" style="top: 4rem;
+          </div>
+          <!-- <p class="vitamin-custom">Vitamins</p> -->
+          <h1 class="text-[6rem] absolute vitamin-custom font-[900] text-white top-[7rem]  bg-transparent inset-x-0 tt-1" style="
             text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
               -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
           ">
-          VITAMINS
-        </h1>
-        <!-- <p class="vitamin-custom-2">Vitamins - 2</p> -->
+            VITAMINS
+          </h1>
+          <!-- <p class="vitamin-custom-2">Vitamins - 2</p> -->
 
-        <h1 class="text-[6rem] absolute vitamin-custom-2 font-[900] text-white  bg-transparent inset-x-0 tt-2" style="top: 4rem;
+          <h1 class="text-[6rem] absolute vitamin-custom-2 font-[900] text-white top-[7rem] bg-transparent inset-x-0 tt-2" style="
             text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
               -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
           ">
-          VITAMINS -2
-        </h1>
+            REDUCE
+          </h1>
 
-        <div class="absolute top-[7rem] w-screen">
-          <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
-            WHAT'S IN IT?</h4>
-        </div>
-        <div class="box a flex justify-center align-middle"><img class="h-[280px] w-[250px]" src="/images/jar.png" alt="">
-        </div>
-        <div class="svg-align flex justify-center">
-          <div class="svg-div-align">
-            <svg opacity="0" viewBox="-20 0 557 190" id="svg-1">
-              <circle cx="100" cy="100" r="3" />
-              <circle cx="300" cy="20" r="3" />
-              <path id="path-1"
-                d="M59.611,210.013 C63.486,209.388 29.474,44.449 111.23,44.065 192.941,43.641 190.962,143.104 192.945,148.468 " />
-            </svg>
+          <div class="absolute top-[7rem] w-screen">
+            <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
+              WHAT'S IN IT?</h4>
           </div>
-          <div class="svg-div-align">
-            <svg opacity="0" viewBox="-20 0 557 190" id="svg-2">
-              <circle cx="100" cy="100" r="3" />
-              <circle cx="300" cy="20" r="3" />
-              <path id="path-2"
-                d="M81.738,168.09 C83.016,155.441 123.845,82.157 148.535,81.151 179.763,79.854 178.649,154.247 182.655,162.473 " />
-            </svg>
+          <div class="box a flex justify-center align-middle"><img class="h-[280px] w-[250px]" src="/images/jar.png"
+              alt="">
           </div>
-          <div class="svg-div-align">
-            <svg opacity="0" viewBox="-20 0 557 190" id="svg-3">
-              <circle cx="100" cy="100" r="3" />
-              <circle cx="300" cy="20" r="3" />
-              <path id="path-3"
-                d="M62.761,130.549 C66.964,119.127 114.16,88.558 148.538,87.482 172.831,86.716 187.063,130.003 207.274,166.378  " />
-            </svg>
+          <div class="svg-align flex justify-center">
+            <div class="svg-div-align mt-[10rem] mr-[7rem]">
+              <svg opacity="0" viewBox="-20 0 557 190" id="svg-1">
+                <circle cx="100" cy="100" r="3" />
+                <circle cx="300" cy="20" r="3" />
+                <path id="path-1"
+                  d="M59.611,210.013 C63.486,209.388 29.474,44.449 111.23,44.065 192.941,43.641 190.962,143.104 192.945,148.468 " />
+              </svg>
+            </div>
+            <div class="svg-div-align mt-[7rem]">
+              <svg opacity="0" viewBox="-20 0 557 190" id="svg-2">
+                <circle cx="100" cy="100" r="3" />
+                <circle cx="300" cy="20" r="3" />
+                <path id="path-2"
+                  d="M81.738,168.09 C83.016,155.441 123.845,82.157 148.535,81.151 179.763,79.854 178.649,154.247 182.655,162.473 " />
+              </svg>
+            </div>
+            <div class="svg-div-align">
+              <svg opacity="0" viewBox="-20 0 557 190" id="svg-3">
+                <circle cx="100" cy="100" r="3" />
+                <circle cx="300" cy="20" r="3" />
+                <path id="path-3"
+                  d="M62.761,130.549 C66.964,119.127 114.16,88.558 148.538,87.482 172.831,86.716 187.063,130.003 207.274,166.378  " />
+              </svg>
+            </div>
+            <div class="svg-div-align mt-[10rem] ml-[7rem]">
+              <svg opacity="0" viewBox="-20 0 557 190" id="svg-4">
+                <circle cx="100" cy="100" r="3" />
+                <circle cx="300" cy="20" r="3" />
+                <path id="path-4"
+                  d="M194.562,146.646 C198.437,146.027 191.414,65.184 273.17,64.797 354.881,64.377 355.64,204.907 357.623,210.271 " />
+              </svg>
+            </div>
+            <div class="svg-div-align mt-[7rem]">
+              <svg opacity="0" viewBox="-20 0 557 190" id="svg-5">
+                <circle cx="100" cy="100" r="3" />
+                <circle cx="300" cy="20" r="3" />
+                <path id="path-5"
+                  d="M184.222,159.486 C185.508,146.837 189.184,80.202 213.859,79.196 245.093,77.899 311.252,152.292 315.258,160.518" />
+              </svg>
+            </div>
+            <div class="svg-div-align mt-10">
+              <svg opacity="0" viewBox="-20 0 557 190" id="svg-6">
+                <circle cx="100" cy="100" r="3" />
+                <circle cx="300" cy="20" r="3" />
+                <path id="path-6"
+                  d="M212.575,164.579 C216.778,153.157 249.497,94.42 283.879,93.348 308.167,92.58 336.876,90.479 357.088,126.869" />
+              </svg>
+            </div>
+            <img class="opacity-1  scale-150 ingredient-my-1 h-20" src="/images/Asset-32-4x.png" alt="" />
+            <img class="opacity-1  scale-150 ingredient-my-2 h-20" src="/images/Asset-32-4x.png" alt="" />
+            <img class="opacity-1  scale-150 ingredient-my-3 h-20" src="/images/Asset-32-4x.png" alt="" />
+            <img class="opacity-0  scale-150 ingredient-my-4 h-20" src="/images/Asset-32-4x.png" alt="" />
+            <img class="opacity-0  scale-150 ingredient-my-5 h-20" src="/images/Asset-32-4x.png" alt="" />
+            <img class="opacity-0  scale-150 ingredient-my-6 h-20" src="/images/Asset-32-4x.png" alt="" />
           </div>
-          <div class="svg-div-align">
-            <svg opacity="0" viewBox="-20 0 557 190" id="svg-4">
-              <circle cx="100" cy="100" r="3" />
-              <circle cx="300" cy="20" r="3" />
-              <path id="path-4"
-                d="M194.562,146.646 C198.437,146.027 191.414,65.184 273.17,64.797 354.881,64.377 355.64,204.907 357.623,210.271 " />
-            </svg>
+          <div class="elegance-text">
+            <h2 class="elegance-text-2 font-bold text-xl mt-3">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
           </div>
-          <div class="svg-div-align">
-            <svg opacity="0" viewBox="-20 0 557 190" id="svg-5">
-              <circle cx="100" cy="100" r="3" />
-              <circle cx="300" cy="20" r="3" />
-              <path id="path-5"
-                d="M184.222,159.486 C185.508,146.837 189.184,80.202 213.859,79.196 245.093,77.899 311.252,152.292 315.258,160.518" />
-            </svg>
-          </div>
-          <div class="svg-div-align">
-            <svg opacity="0" viewBox="-20 0 557 190" id="svg-6">
-              <circle cx="100" cy="100" r="3" />
-              <circle cx="300" cy="20" r="3" />
-              <path id="path-6"
-                d="M212.575,164.579 C216.778,153.157 249.497,94.42 283.879,93.348 308.167,92.58 336.876,90.479 357.088,126.869" />
-            </svg>
-          </div>
-          <img class="opacity-1  ingredient-my-1 h-20" src="/images/Asset-32-4x.png" alt="" />
-          <img class="opacity-1  ingredient-my-2 h-20" src="/images/Asset-32-4x.png" alt="" />
-          <img class="opacity-1  ingredient-my-3 h-20" src="/images/Asset-32-4x.png" alt="" />
-          <img class="opacity-0  ingredient-my-4 h-20" src="/images/Asset-32-4x.png" alt="" />
-          <img class="opacity-0  ingredient-my-5 h-20" src="/images/Asset-32-4x.png" alt="" />
-          <img class="opacity-0  ingredient-my-6 h-20" src="/images/Asset-32-4x.png" alt="" />
-        </div>
-        <div class="elegance-text">
-          <h2 class="elegance-text-2 font-bold text-xl mt-3">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
-        </div>
-        <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
-        <div class="absolute w-screen" style="    top: 17rem;
-    bottom: 0px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;">
+          <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
+          <div class="absolute w-screen bottom-[9rem]" style="   
+                /* bottom: 0px; */
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;">
 
-          <h1 class="text-[6rem] calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="bottom: 12rem;
+            <h1 class="text-[6rem] calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="
             text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
               -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
           ">
-            CALCIUM - 2
-          </h1>
-        </div>
+              HAIR FALL
+            </h1>
+          </div>
 
-        <!-- <h2 class="calcium-custom">Calcium</h2> -->
-        <div class="absolute w-screen" style="    top: 17rem;
-    bottom: 0px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;">
-          <h1 class="text-[6rem]  calcium-custom font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="
+          <!-- <h2 class="calcium-custom">Calcium</h2> -->
+          <div class="absolute w-screen bottom-[9rem]" style="
+          /* bottom: 0px; */
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;">
+            <h1 class="text-[6rem] font-extrabold  calcium-custom  text-emerald-800  bg-transparent inset-x-0 tt-2" style="
               text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
                 -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
             ">
-            CALCIUM
-          </h1>
-        </div>
+              CALCIUM
+            </h1>
+          </div>
 
-        <!-- <div class="absolute w-screen">
+          <!-- <div class="absolute w-screen">
           <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
             WHAT'S IN IT?</h4>
         </div> -->
 
-        <div class="custom-circulating">
-          <h1
-            class="text-[2rem] circulating-text-1 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-1">
-            IMPROVES <br /> HAIR HEALTH
-          </h1>
-          <h1 class="text-[2rem] absolute font-[1000] text-orange-400 circulating-text-2 opacity-0  inset-x-0 tb-1 ">
-            PROVIDES <br /> NUTRIENTS
-          </h1>
-          <h1
-            class="text-[2rem] circulating-text-3 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2">
-            DIET <br /> FRIENDLY
-          </h1>
-          <h1 class="text-[2rem] absolute font-[1000] opacity-0 circulating-text-4 text-orange-400  inset-x-0 tb-2 ">
-            HELPS BUILDING <br /> COLLAGEN
-          </h1>
+          <div class="custom-circulating mt-12">
+            <h1
+              class="text-[2rem] circulating-text-1 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-1">
+              IMPROVES <br /> HAIR HEALTH
+            </h1>
+            <h1 class="text-[2rem] absolute font-[1000] text-orange-400 circulating-text-2 opacity-0  inset-x-0 tb-1 ">
+              PROVIDES <br /> NUTRIENTS
+            </h1>
+            <h1
+              class="text-[2rem] circulating-text-3 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2">
+              DIET <br /> FRIENDLY
+            </h1>
+            <h1 class="text-[2rem] absolute font-[1000] opacity-0 circulating-text-4 text-orange-400  inset-x-0 tb-2 ">
+              HELPS BUILDING <br /> COLLAGEN
+            </h1>
+          </div>
         </div>
         <div class="custom-image opacity-0">
           <img width="100%" src="/images/raiyan-slider.jpg" alt="">
@@ -1147,20 +1221,17 @@ const updateDotValue = (value) => {
         <h4 class="text-[2rem] believe-text font-extrabold text-secondary elegance-text-1">We believe in fixing the root
           cause, <br /> not quick results!</h4>
         <div id="showcase-images" class="relative h-[400px] mb-5">
-          <!-- <div
-            class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[355deg]"> -->
-          <!-- <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/43A190/FFFFFF/png" alt="" /> -->
-          <!-- </div> -->
+          <div
+            class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[355deg]">
+            <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/F1917B/FFFFFF/png" alt="" />
+          </div>
           <div class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
             <div class="tear"></div>
-            <div class="object-cover h-[300px] w-[300px]" style="background-color: #43A190;"></div>
-            <!-- <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/43A190/FFFFFF/png" alt="" /> -->
+            <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/43A190/FFFFFF/png" alt="" />
           </div>
           <div class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[5deg]">
             <div class="tear"></div>
-            <div class="object-cover h-[300px] w-[300px]" style="background-color: #F1917B;"></div>
-
-            <!-- <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/F1917B/FFFFFF/png" alt="" /> -->
+            <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/F1917B/FFFFFF/png" alt="" />
           </div>
         </div>
         <div style="--fill-till: 0" id="showcase-slider" class="relative flex justify-center">
@@ -1212,7 +1283,7 @@ const updateDotValue = (value) => {
   position: absolute;
   width: 100%;
   top: 36vh;
-  margin-top: auto;
+  /* margin-top: auto; */
 }
 
 .custom-image {
