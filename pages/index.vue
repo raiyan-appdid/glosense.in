@@ -463,7 +463,7 @@ onMounted(() => {
 
   section += 0;
   tlShowcase.from('.a', {
-    y: -400,
+    y: -500,
     opacity: 0,
     duration: 3,
     rotate: 360,
