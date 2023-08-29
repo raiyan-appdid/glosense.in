@@ -36,10 +36,8 @@ onUnmounted(() => {
 
 <template>
   <div>
-    <div id="sidebar" class="sidebar fixed top-0 w-full flex justify-between sm:py-8 sm:px-20 py-5 px-10 z-10 show-blur"
-      :class="showBlur ? 'show-blur' : ''">
-      <div @click="showSideBar" @mouseover="handleHover" @mouseout="handleHover"
-        class="flex items-center hover:cursor-pointer w-screen">
+    <div id="sidebar" class="sidebar flex justify-between fixed top-0 w-full sm:py-4 sm:px-10 py-2 px-10 z-10 show-blur">
+      <div @click="showSideBar" @mouseover="handleHover" @mouseout="handleHover" class="flex items-center hover:cursor-pointer">
         <span class="rounded-full border border-secondary p-1">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu text-secondary" width="24"
             height="24" viewBox="0 0 24 24" stroke-width="0.7" stroke="currentColor" fill="none" stroke-linecap="round"
@@ -49,14 +47,16 @@ onUnmounted(() => {
             <path :d="d2"></path>
           </svg>
         </span>
-        <p class="ms-5 text-sm font-semibold text-secondary">MENU</p>
-        <div class="m-auto">
-          <p class="text-sm font-semibold text-neutral-900">CONTACT US</p>
-          <!-- <img  src="/images/logo.png" alt=""> -->
-        <!-- <img src="/images/logo.png" class="w-[8rem]" alt="" /> -->
-
-        </div>
+        <p class="ms-2 text-sm font-semibold text-secondary">MENU</p>
       </div>
+      <div class="my-auto mr-5">
+        <!-- <p class="text-sm font-semibold text-neutral-900">CONTACT US</p> -->
+        <!-- <img  src="/images/logo.png" alt=""> -->
+        <img src="/images/logo.png" class="w-[10rem]" alt="" />
+
+      </div>
+      <div></div>
+
 
 
 
@@ -119,7 +119,7 @@ onUnmounted(() => {
             </a>
           </li>
           <li @click="closeSideBar">
-            <a href="/contact" 
+            <a href="/contact"
               class="flex ml-9 items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-[#e3694f] group">
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-neutral-300 group-hover:text-gray-900 dark:group-hover:text-white"
