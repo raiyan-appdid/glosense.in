@@ -37,7 +37,8 @@ onUnmounted(() => {
 <template>
   <div>
     <div id="sidebar" class="sidebar flex justify-between fixed top-0 w-full sm:py-4 sm:px-10 py-2 px-10 z-10 show-blur">
-      <div @click="showSideBar" @mouseover="handleHover" @mouseout="handleHover" class="flex items-center hover:cursor-pointer">
+      <div @click="showSideBar" @mouseover="handleHover" @mouseout="handleHover"
+        class="flex items-center hover:cursor-pointer">
         <span class="rounded-full border border-secondary p-1">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu text-secondary" width="24"
             height="24" viewBox="0 0 24 24" stroke-width="0.7" stroke="currentColor" fill="none" stroke-linecap="round"
@@ -47,7 +48,7 @@ onUnmounted(() => {
             <path :d="d2"></path>
           </svg>
         </span>
-        <p class="ms-2 text-sm font-semibold text-secondary">MENU</p>
+        <p class="ms-2 text-sm font-semibold text-secondary"><span class="hidden md:block">MENU</span></p>
       </div>
       <div class="my-auto mr-5">
         <!-- <p class="text-sm font-semibold text-neutral-900">CONTACT US</p> -->
@@ -57,23 +58,6 @@ onUnmounted(() => {
       </div>
       <div></div>
 
-
-
-
-
-
-
-
-
-      <!-- drawer init and show -->
-      <!-- <div class="text-center">
-      <button
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-        type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
-        aria-controls="drawer-navigation">
-        Show navigation
-      </button>
-    </div> -->
 
       <!-- drawer component -->
     </div>

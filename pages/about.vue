@@ -60,7 +60,7 @@
                 <div class="grid grid-cols-12 gap-4 ">
                     <div class="block rounded-lg col-span-3  bg-white bg-neutral-700">
                         <a href="#!">
-                             <img id="jar-image" src="/images/jar.png" class="w-[250px]" alt="" />
+                            <img id="jar-image" src="/images/jar.png" class="w-[250px]" alt="" />
                         </a>
                         <div class="p-6">
                             <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 text-neutral-50">
@@ -79,7 +79,7 @@
                     </div>
                     <div class="block rounded-lg col-span-3  bg-white bg-neutral-700">
                         <a href="#!">
-                             <img id="jar-image" src="/images/jar.png" class="w-[250px]" alt="" />
+                            <img id="jar-image" src="/images/jar.png" class="w-[250px]" alt="" />
                         </a>
                         <div class="p-6">
                             <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 text-neutral-50">
@@ -98,7 +98,7 @@
                     </div>
                     <div class="block rounded-lg col-span-3  bg-white bg-neutral-700">
                         <a href="#!">
-                             <img id="jar-image" src="/images/jar.png" class="w-[250px]" alt="" />
+                            <img id="jar-image" src="/images/jar.png" class="w-[250px]" alt="" />
                         </a>
                         <div class="p-6">
                             <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 text-neutral-50">
@@ -122,12 +122,18 @@
 
                 <div class="grid grid-cols-12 gap-5 mt-10">
                     <div class="col-span-5">
-                       Image
+                        Image
                     </div>
                     <div class="col-span-7 ">
                         <h2 class="font-bold text-2xl leading-normal">Amelia Rivers</h2>
                         <p>Age: 32</p>
-                        <h6 class="text-xl">Amelia Rivers, a passionate entrepreneur with a love for beauty and innovation, embarked on her journey by founding Glosense. With a background in cosmetic chemistry, she saw a gap in the haircare industry for products that combined science and luxury. Armed with a vision to create effective and sustainable hair solutions, Amelia's dedication led her to tirelessly research and develop formulas that catered to a diverse range of hair types. Her commitment to quality, coupled with her drive to empower individuals to embrace their unique hair textures, propelled Glosense to become a sought-after brand in the haircare market. </h6>
+                        <h6 class="text-xl">Amelia Rivers, a passionate entrepreneur with a love for beauty and innovation,
+                            embarked on her journey by founding Glosense. With a background in cosmetic chemistry, she saw a
+                            gap in the haircare industry for products that combined science and luxury. Armed with a vision
+                            to create effective and sustainable hair solutions, Amelia's dedication led her to tirelessly
+                            research and develop formulas that catered to a diverse range of hair types. Her commitment to
+                            quality, coupled with her drive to empower individuals to embrace their unique hair textures,
+                            propelled Glosense to become a sought-after brand in the haircare market. </h6>
                     </div>
                 </div>
 
@@ -140,20 +146,26 @@
                         <img id="jar-image" src="/images/jar.png" class="w-full p-10" alt="" />
                     </div>
                     <div class="px-4">
-                        <p>Experience the ultimate in haircare luxury with Glosense LuxeLock Shampoo. Formulated by experts, this exquisite shampoo combines advanced scientific innovation with natural ingredients to cleanse, nourish, and enhance your hair.</p>
+                        <p>Experience the ultimate in haircare luxury with Glosense LuxeLock Shampoo. Formulated by experts,
+                            this exquisite shampoo combines advanced scientific innovation with natural ingredients to
+                            cleanse, nourish, and enhance your hair.</p>
                     </div>
 
                     <div class="bg-primary">
                         <!-- <img id="jar-image" src="/images/jar.png" class="w-full p-10" alt="" /> -->
                     </div>
                     <div class="px-4">
-                        <p>Experience the ultimate in haircare luxury with Glosense LuxeLock Shampoo. Formulated by experts, this exquisite shampoo combines advanced scientific innovation with natural ingredients to cleanse, nourish, and enhance your hair.</p>
+                        <p>Experience the ultimate in haircare luxury with Glosense LuxeLock Shampoo. Formulated by experts,
+                            this exquisite shampoo combines advanced scientific innovation with natural ingredients to
+                            cleanse, nourish, and enhance your hair.</p>
                     </div>
                     <div class="bg-secondary">
                         <img id="jar-image" src="/images/jar.png" class="w-full p-10" alt="" />
                     </div>
                     <div class="px-4">
-                        <p>Experience the ultimate in haircare luxury with Glosense LuxeLock Shampoo. Formulated by experts, this exquisite shampoo combines advanced scientific innovation with natural ingredients to cleanse, nourish, and enhance your hair.</p>
+                        <p>Experience the ultimate in haircare luxury with Glosense LuxeLock Shampoo. Formulated by experts,
+                            this exquisite shampoo combines advanced scientific innovation with natural ingredients to
+                            cleanse, nourish, and enhance your hair.</p>
                     </div>
                 </div>
 
