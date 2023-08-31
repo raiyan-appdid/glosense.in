@@ -1077,7 +1077,8 @@ const updateDotValue = (value) => {
 
           </div>
           <!-- <p class="vitamin-custom">Vitamins</p> -->
-          <h1 class="text-[6rem] absolute vitamin-custom font-[900] text-white top-[7rem]  bg-transparent inset-x-0 tt-1" style="
+          <h1 class="text-[6rem] absolute vitamin-custom font-[900] text-white top-[7rem]  bg-transparent inset-x-0 tt-1"
+            style="
             text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
               -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
           ">
@@ -1085,7 +1086,8 @@ const updateDotValue = (value) => {
           </h1>
           <!-- <p class="vitamin-custom-2">Vitamins - 2</p> -->
 
-          <h1 class="text-[6rem] absolute vitamin-custom-2 font-[900] text-white top-[7rem] bg-transparent inset-x-0 tt-2" style="
+          <h1 class="text-[6rem] absolute vitamin-custom-2 font-[900] text-white top-[7rem] bg-transparent inset-x-0 tt-2"
+            style="
             text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
               -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
           ">
@@ -1148,12 +1150,12 @@ const updateDotValue = (value) => {
                   d="M212.575,164.579 C216.778,153.157 249.497,94.42 283.879,93.348 308.167,92.58 336.876,90.479 357.088,126.869" />
               </svg>
             </div>
-            <img class="opacity-1  scale-150 ingredient-my-1 h-20" src="/images/Asset-32-4x.png" alt="" />
-            <img class="opacity-1  scale-150 ingredient-my-2 h-20" src="/images/Asset-32-4x.png" alt="" />
-            <img class="opacity-1  scale-150 ingredient-my-3 h-20" src="/images/Asset-32-4x.png" alt="" />
-            <img class="opacity-0  scale-150 ingredient-my-4 h-20" src="/images/Asset-32-4x.png" alt="" />
-            <img class="opacity-0  scale-150 ingredient-my-5 h-20" src="/images/Asset-32-4x.png" alt="" />
-            <img class="opacity-0  scale-150 ingredient-my-6 h-20" src="/images/Asset-32-4x.png" alt="" />
+            <img class="opacity-1  scale-150 ingredient-my-1 h-20" src="/images/Ingradients-02.png" alt="" />
+            <img class="opacity-1  scale-150 ingredient-my-2 h-20" src="/images/Ingradients-03.png" alt="" />
+            <img class="opacity-1  scale-150 ingredient-my-3 h-20" src="/images/Ingradients-04.png" alt="" />
+            <img class="opacity-0  scale-150 ingredient-my-4 h-20" src="/images/Ingradients-07.png" alt="" />
+            <img class="opacity-0  scale-150 ingredient-my-5 h-20" src="/images/Ingradients-09.png" alt="" />
+            <img class="opacity-0  scale-150 ingredient-my-6 h-20" src="/images/Ingradients-10.png" alt="" />
           </div>
           <div class="elegance-text">
             <h2 class="elegance-text-2 font-bold text-xl mt-3">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
