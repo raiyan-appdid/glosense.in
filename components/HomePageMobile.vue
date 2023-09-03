@@ -14,7 +14,7 @@ onMounted(() => {
         scrollTrigger: {
             trigger: "#top-section",
             start: "top top",
-            end: "8000",
+            end: "10000",
             scrub: 2,
             pin: true,
             // markers: true,
@@ -269,6 +269,10 @@ onMounted(() => {
 
 <template>
     <div class="about-page bg-[#efe8df]">
+        <div>
+            <img id="logo-image-responsive" src="/images/logo.png"
+                class="w-3/4 z-20 inset-x-0 my-0 mx-auto top-[10rem] fixed" alt="" />
+        </div>
         <div class="container h-screen mx-auto fixed flex flex-col items-center justify-center pt-20 pb-20">
             <img class="w-[10rem] absolute left-0 top-0" src="/images/glob-tl.png" alt="" />
             <img class="w-[12rem] absolute left-0 bottom-0" src="/images/glob-bl.png" alt="" />
@@ -276,10 +280,7 @@ onMounted(() => {
         </div>
         <div class="container h-screen mx-auto fixed flex flex-col items-center justify-center pt-20 pb-20"
             id="top-section">
-            <div>
-                <img id="logo-image-responsive" src="/images/logo.png"
-                    class="w-3/4 z-20 inset-x-0 my-0 mx-auto top-[10rem] fixed" alt="" />
-            </div>
+
             <h2 class="px-5 home-text-responsive text-center mt-3">Unlock the essense of self-care through the magic of
                 superfoods.
             </h2>
