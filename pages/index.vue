@@ -754,9 +754,6 @@ onMounted(() => {
   }, "-=2");
 
 
-
-
-
   tlShowcase.to('.a', {
     scale: 0
   }, "+=1")
@@ -778,32 +775,6 @@ onMounted(() => {
     opacity: 1,
     // duration: 2,
   }, "<")
-
-
-  // tlShowcase.to('.a', {
-  //   x: 10,
-  //   yPercent: 50,
-  //   duration: 5
-  // }, "+=1")
-  // tlShowcase.to('.a', {
-  //   y: 10,
-  //   xPercent: 50,
-  //   duration: 5
-  // }, "<")
-
-
-
-
-  // tlShowcase.from('.calcium-custom', {
-  //   x: -1000,
-  //   duration: 6,
-  // }, 21)
-  // tlShowcase.to('.calcium-custom', {
-  //   x: 0,
-  //   duration: 6,
-  //   opacity : 0,
-  // } ,21)
-
 
   const tlShowcase1 = gsap.timeline({
     defaults: {
@@ -893,46 +864,16 @@ onMounted(() => {
     },
     section
   );
-
-
-
   tlShowcase1.to('.believe-text', {
     opacity: 0,
     duration: 2,
   })
-
-
-
 
   tlShowcase.to("#shop-section",
     {
       y: "-2rem",
       scale: 1.2
     }, "+=1");
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // section += 3;
-  // tlShowcase.to(
-  //   "#showcase-slider",
-  //   {
-  //     "--fill-till": "+=50",
-  //   },
-  //   section
-  // );
-
-
-
   section += 0.5;
   tlEfffect.to({}, { duration: 1 }, section);
 });
@@ -943,7 +884,7 @@ const updateDotValue = (value) => {
 </script>
 <template>
   <HeaderForHome />
-  <div>
+  <div class="hidden sm:block">
     <div class="fixed h-screen w-screen bg-[url('/images/bg.png')]" id="blob-group">
       <img class="w-[25rem] absolute left-0 top-0" src="/images/glob-tl.png" alt="" />
       <img class="w-[25rem] absolute left-0 bottom-0" src="/images/glob-bl.png" alt="" />
@@ -1098,7 +1039,8 @@ const updateDotValue = (value) => {
             <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
               WHAT'S IN IT?</h4>
           </div>
-          <div class="box a flex justify-center align-middle"><img class="h-[280px] w-[250px]" src="/images/jar.png"
+          <div class="box a flex justify-center align-middle">
+            <img class="h-[280px] w-[250px]" src="/images/jar.png"
               alt="">
           </div>
           <div class="svg-align flex justify-center">
@@ -1276,6 +1218,10 @@ const updateDotValue = (value) => {
 
 
     </div>
+  </div>
+
+  <div class="sm:hidden">
+    <HomePageMobile />
   </div>
 </template>
 

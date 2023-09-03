@@ -1,6 +1,6 @@
 <template>
     <HeaderCommon />
-    <div class="privacy-policy mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
+    <div class="privacy-policy px-3 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
         <div class="grid grid-cols-12 h-96 bg-secondary gap-4">
             <div class="col-span-6 flex flex-col justify-center items-start mb-7 pl-6 sm:px-28">
                 <h1 class="font-extrabold text-2xl sm:text-5xl">Privacy Policy Update</h1>

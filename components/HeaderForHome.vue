@@ -36,7 +36,7 @@ onUnmounted(() => {
 
 <template>
   <div>
-    <div id="sidebar" class="sidebar fixed top-0 w-full flex justify-between sm:py-8 sm:px-20 py-8 px-10 z-10"
+    <div id="sidebar" class="sidebar fixed top-0 w-full flex justify-between sm:py-8 sm:px-20 py-5 px-10 z-10"
       :class="showBlur ? 'show-blur' : ''">
       <div @click="showSideBar" @mouseover="handleHover" @mouseout="handleHover"
         class="flex items-center hover:cursor-pointer">
@@ -49,7 +49,7 @@ onUnmounted(() => {
             <path :d="d2"></path>
           </svg>
         </span>
-        <p class="ms-5 text-sm font-semibold text-secondary">MENU</p>
+        <p class="ms-5 text-sm font-semibold text-secondary"><span class="hidden sm:block">MENU</span></p>
       </div>
       <div class="flex items-center">
         <!-- <p class="text-sm font-semibold text-white">CONTACT US</p> -->
@@ -116,7 +116,7 @@ onUnmounted(() => {
             </a>
           </li>
           <li @click="closeSideBar">
-            <a href="/contact" 
+            <a href="/contact"
               class="flex ml-9 items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-[#e3694f] group">
               <svg
                 class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-neutral-300 group-hover:text-gray-900 dark:group-hover:text-white"

@@ -7,12 +7,12 @@
             alt="" />
         <img class="absolute opacity-50 md:w-[12rem] w-[6rem] left-[30%] top-[10%]" src="/images/Asset-25-4x.png" alt="" />
         <img class="absolute opacity-50 md:w-[8rem] w-[4rem] right-[40%] top-[10%]" src="/images/Asset-24-4x.png" alt="" />
-        <img class="absolute opacity-50 md:w-[18rem] w-[9rem] bottom-[-10rem] left-[15rem]" src="/images/Asset-13-4x.png"
+        <img class="absolute opacity-50 md:w-[18rem] w-[9rem] bottom-[-10rem] left-[10rem]" src="/images/Asset-13-4x.png"
             alt="" />
         <img class="absolute opacity-50 md:w-[6rem] w-[3rem] right-[20%] top-[20%]" src="/images/Asset-22-4x.png" alt="" />
         <img class="absolute opacity-50 md:w-[40rem] w-[5rem] right-[5rem] top-[-5rem]" src="/images/Asset-23-4x.png"
             alt="" />
-        <img class="absolute opacity-50 md:w-[15rem] w-[7rem] right-[-5rem] bottom-[0rem]" src="/images/Asset-16-4x.png"
+        <img class="absolute opacity-50 md:w-[15rem] w-[7rem] right-[5rem] bottom-[0rem]" src="/images/Asset-16-4x.png"
             alt="" />
         <img class="absolute opacity-50 md:w-[8rem] w-[4rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png"
             alt="" />
