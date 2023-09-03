@@ -14,7 +14,7 @@ onMounted(() => {
         scrollTrigger: {
             trigger: "#top-section",
             start: "top top",
-            end: "4000",
+            end: "8000",
             scrub: 2,
             pin: true,
             // markers: true,
@@ -276,8 +276,10 @@ onMounted(() => {
         </div>
         <div class="container h-screen mx-auto fixed flex flex-col items-center justify-center pt-20 pb-20"
             id="top-section">
-            <img id="logo-image-responsive" src="/images/logo.png"
-                class="w-3/4 z-50 inset-x-0 my-0 mx-auto top-[10rem] fixed" alt="" />
+            <div>
+                <img id="logo-image-responsive" src="/images/logo.png"
+                    class="w-3/4 z-20 inset-x-0 my-0 mx-auto top-[10rem] fixed" alt="" />
+            </div>
             <h2 class="px-5 home-text-responsive text-center mt-3">Unlock the essense of self-care through the magic of
                 superfoods.
             </h2>
@@ -358,7 +360,7 @@ onMounted(() => {
             </div>
         </div>
 
-        
+
 
         <div class="container mx-auto px-10 pb-10">
             <div class="border-blue-500 grid grid-cols-1 ">
