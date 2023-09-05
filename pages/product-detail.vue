@@ -84,7 +84,7 @@
                             follicles, and promotes natural growth.</p>
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:order-2">
-                        <img src="images/product-details-2.png" class="sm:w-2/3 w-full" alt="">
+                        <img src="images/product-details-3.png" class="sm:w-2/3 w-full" alt="">
                     </div>
                 </div>
 

@@ -284,7 +284,9 @@ onMounted(() => {
             <h2 class="px-5 home-text-responsive text-center mt-3">Unlock the essense of self-care through the magic of
                 superfoods.
             </h2>
-            <h4 class="mt-5 home-text-responsive text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl">Know more
+            <h4 class="mt-5 home-text-responsive text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl"><a
+                    href="/product-detail">Know
+                    more</a>
             </h4>
 
             <div class="jar absolute flex flex-col justify-center items-center">

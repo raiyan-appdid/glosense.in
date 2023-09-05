@@ -903,7 +903,7 @@ const updateDotValue = (value) => {
         <img class="w-[10rem] inset-0 m-auto" src="/images/Asset-26-4x.png" alt="" />
         <img class="w-[5rem] absolute inset-0 m-auto" src="/images/Asset-27-4x.png" alt="" />
         <p class="absolute inset-0 m-auto flex items-center justify-center text-secondary font-bold text-sm">
-          Shop Now
+          <a href="">Shop Now</a>
         </p>
       </div>
       <div id="hero-section"
@@ -923,7 +923,8 @@ const updateDotValue = (value) => {
         <div class="home-text h-screen flex align-middle flex-col justify-center mt-[6rem]" style="align-items: center;">
           <h4 class="text-3xl ">Unlock the essence fo self-care</h4>
           <h4 class="text-3xl ">through the magic of superfoods.</h4>
-          <h4 class="mt-5 text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl">Know more</h4>
+          <h4 class="mt-5 text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl"><a href="/product-detail">Know
+              more</a></h4>
         </div>
       </div>
 
@@ -1040,8 +1041,7 @@ const updateDotValue = (value) => {
               WHAT'S IN IT?</h4>
           </div>
           <div class="box a flex justify-center align-middle">
-            <img class="h-[280px] w-[250px]" src="/images/jar.png"
-              alt="">
+            <img class="h-[280px] w-[250px]" src="/images/jar.png" alt="">
           </div>
           <div class="svg-align flex justify-center">
             <div class="svg-div-align mt-[10rem] mr-[7rem]">
