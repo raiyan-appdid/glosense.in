@@ -12,10 +12,10 @@
 
 
                 <div class="grid grid-cols-12 gap-5">
-                    <div class="col-span-12">
+                    <div class="col-span-12 sm:col-span-4">
                         <img src="images/product-review-1.png" alt="">
                     </div>
-                    <div class="col-span-12">
+                    <div class="col-span-12 sm:col-span-8">
                         <h2 class="font-bold text-xl">Hair you glo for Healthy & Strong Hair</h2>
                         <div class="flex my-2">
                             <span class="text-3xl font-extrabold my-auto mr-4">4.2</span>
