@@ -7,16 +7,16 @@
         <div class="container mx-auto">
             <div class="grid grid-cols-12 mt-2">
                 <div class="col-span-12 sm:col-span-5">
-                    <img src="/images/Product-page-top-image.png" class="sm:w-2/3" alt="">
+                    <img src="/images/Product-page-top-image.png" class="sm:w-2/3" alt="" />
                     <div class="flex items-center">
                         <div class="p-2 rounded-xl bg-primary w-1/4 h-1/4 m-2">
-                            <img src="/images/jar.png" alt="">
+                            <img src="/images/jar.png" alt="" />
                         </div>
                         <div class="p-2 rounded-xl bg-primary w-1/4 h-1/4 m-2">
-                            <img src="/images/jar.png" alt="">
+                            <img src="/images/jar.png" alt="" />
                         </div>
                         <div class="p-2 rounded-xl bg-primary w-1/4 h-1/4 m-2">
-                            <img src="/images/jar.png" alt="">
+                            <img src="/images/jar.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -84,13 +84,13 @@
                             follicles, and promotes natural growth.</p>
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:order-2">
-                        <img src="/images/product-details-2.png" class="sm:w-2/3 w-full" alt="">
+                        <img src="/images/product-details-2.png" class="sm:w-2/3 w-full" alt="" />
                     </div>
                 </div>
 
                 <div class="grid grid-cols-12 my-10">
                     <div class="sm:col-span-5 col-span-12">
-                        <img src="/images/product-details-3.png" class="sm:w-2/3 w-full" alt="">
+                        <img src="/images/product-details-3.png" class="sm:w-2/3 w-full" alt="" />
                     </div>
                     <div class="sm:col-span-7 col-span-12 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">How It Work</h2>
@@ -112,13 +112,13 @@
                             follicles, and promotes natural growth.</p>
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:order-2">
-                        <img src="/images/product-details-4.png" class="sm:w-2/3 w-full" alt="">
+                        <img src="/images/product-details-4.png" class="sm:w-2/3 w-full" alt="" />
                     </div>
                 </div>
 
                 <div class="grid grid-cols-12 my-10">
                     <div class="sm:col-span-5 col-span-12">
-                        <img src="/images/product-details-5.png" class="sm:w-2/3 w-full" alt="">
+                        <img src="/images/product-details-5.png" class="sm:w-2/3 w-full" alt="" />
                     </div>
                     <div class="sm:col-span-7 col-span-12 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">What to Expected</h2>
