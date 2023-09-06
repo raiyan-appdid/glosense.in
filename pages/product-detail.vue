@@ -8,7 +8,7 @@
             <div class="grid grid-cols-12 mt-2">
                 <div class="col-span-12 sm:col-span-5">
                     <img src="/images/Product-page-top-image.png" class="sm:w-2/3" alt="" />
-                    <div class="flex items-center">
+                    <div class="flex items-center justify-center sm:justify-start">
                         <div class="p-2 rounded-xl bg-primary w-1/4 h-1/4 m-2">
                             <img src="/images/jar.png" alt="" />
                         </div>
@@ -54,7 +54,9 @@
                     </div>
                     <div class="flex my-6">
                         <!-- <button class="bg-slate-900 text-white py-4 px-10">Add To Cart</button> -->
-                        <button class="bg-white text-black font-bold border border-black py-4 px-10">Buy Now</button>
+                        <button
+                            class="bg-white text-black font-bold border border-black py-4 px-10 transition ease-in-out  hover:-translate-y-1 delay-75 hover:scale-110 hover:bg-black hover:text-white duration-500">Buy
+                            Now</button>
                     </div>
                 </div>
             </div>
