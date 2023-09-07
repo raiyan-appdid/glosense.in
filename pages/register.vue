@@ -1,0 +1,69 @@
+
+<script setup>
+
+
+import { ref } from "vue";
+const name = ref('');
+const email = ref('');
+const phone = ref('');
+const password = ref('');
+const confirm_password = ref('');
+
+const form = ref({
+    email: "raiyan.appdid@gmail.com",
+    password: "1234"
+});
+
+
+
+
+</script>
+
+
+<template>
+    <HeaderCommon />
+    <div class="product-details px-3 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
+        <h2 class="text-secondary text-2xl font-bold text-center py-2">Register</h2>
+
+        <div class="container mx-auto">
+            <form @submit.prevent="handleSubmit">
+                <div class="mb-6">
+                    <label for="text" class="block mb-2 text-md  font-bold text-black ">Name</label>
+                    <input type="text" id="email" v-model="name"
+                        class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
+                        placeholder="Name" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block mb-2 text-md  font-bold text-black ">Your
+                        email</label>
+                    <input type="email" v-model="email" id="email"
+                        class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
+                        placeholder="name@gmail.com" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block mb-2 text-md  font-bold text-black ">Phone</label>
+                    <input type="number" id="email" v-model="phone"
+                        class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
+                        placeholder="Phone" required>
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block mb-2 text-md  font-bold text-black ">Password</label>
+                    <input type="password" id="password" v-model="password"
+                        class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
+                        required>
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block mb-2 text-md  font-bold text-black ">Confirm Password</label>
+                    <input type="password" id="password" v-model="confirm_password"
+                        class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
+                        required>
+                </div>
+                <button type="submit"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center -600 -blue-700 -blue-800">Submit</button>
+            </form>
+
+
+
+        </div>
+    </div>
+</template>

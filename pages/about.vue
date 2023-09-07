@@ -1,3 +1,12 @@
+<script setup>
+
+onMounted(function () {
+    const runtimeConfig = useRuntimeConfig()
+    console.log(runtimeConfig.public.baseUrl);
+})
+
+</script>
+
 <template>
     <HeaderCommon />
     <div class="about-page mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
