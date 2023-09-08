@@ -3,20 +3,93 @@
 
 
 import { ref } from "vue";
+import Swal from 'sweetalert2';
+
 const name = ref('');
 const email = ref('');
 const phone = ref('');
 const password = ref('');
 const confirm_password = ref('');
+const token = ref('');
 
-const form = ref({
-    email: "raiyan.appdid@gmail.com",
-    password: "1234"
-});
-
+const config = useRuntimeConfig();
+const apiUrl = config.public.baseUrl;
 
 
 
+async function getSlider() {
+    console.log(config.auth.loggedIn);
+    config.auth.loginWith('laravelSanctum', {
+        data: {
+            email: '',
+            password: ''
+        }
+    })
+
+    // const data = await useFetch(`${apiUrl}/slider`, {
+    //     headers: {
+    //         "accept": "application/json",
+    //         'token': token.value,
+    //     },
+    //     onResponse({ request, response, options }) {
+    //         console.log(response);
+    //     },
+    //     onRequestError({ request, options, error }) {
+    //         console.log(error);
+    //     },
+    // });
+}
+onMounted(function () {
+    getSlider()
+})
+
+
+async function handleSubmit() {
+
+    // await useFetch("https://glosense.in/sanctum/csrf-cookie");
+    // const token = useCookie('XSRF-TOKEN');
+
+    const { data, error, pending, refresh } = await useFetch(`${apiUrl}/user/register`, {
+        method: "POST",
+        headers: {
+            "accept": "application/json",
+            // 'X-XSRF-TOKEN': token.value,
+        },
+        body: {
+            first_name: name.value,
+            email: email.value,
+            phone: phone.value,
+            password: password.value,
+            password_confirmation: confirm_password.value,
+        },
+        onRequest({ request, options }) { },
+        onRequestError({ request, options, error }) {
+            console.log(error);
+        },
+        onResponse({ request, response, options }) {
+            token.value = response._data.token
+            console.log(response._data.token);
+            useCookie('token', response._data.token);
+            Swal.fire({
+                title: "Registered",
+                icon: 'success',
+                confirmButtonText: 'Cool'
+            });
+            // name.value = "";
+            // email.value = "";
+            // phone.value = "";
+            // password.value = "";
+            // confirm_password.value = "";
+        },
+        onResponseError({ request, response, options }) {
+            Swal.fire({
+                title: response._data.message,
+                icon: 'error',
+                confirmButtonText: 'Error'
+            });
+        },
+    });
+}
 </script>
 
 
@@ -29,7 +102,7 @@ const form = ref({
             <form @submit.prevent="handleSubmit">
                 <div class="mb-6">
                     <label for="text" class="block mb-2 text-md  font-bold text-black ">Name</label>
-                    <input type="text" id="email" v-model="name"
+                    <input type="text" id="name" v-model="name"
                         class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
                         placeholder="Name" required>
                 </div>
@@ -42,7 +115,7 @@ const form = ref({
                 </div>
                 <div class="mb-6">
                     <label for="email" class="block mb-2 text-md  font-bold text-black ">Phone</label>
-                    <input type="number" id="email" v-model="phone"
+                    <input type="number" id="number" v-model="phone"
                         class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
                         placeholder="Phone" required>
                 </div>
@@ -54,16 +127,13 @@ const form = ref({
                 </div>
                 <div class="mb-6">
                     <label for="password" class="block mb-2 text-md  font-bold text-black ">Confirm Password</label>
-                    <input type="password" id="password" v-model="confirm_password"
+                    <input type="password" id="confirm-password" v-model="confirm_password"
                         class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
                         required>
                 </div>
-                <button type="submit"
+                <button type="submit" @click="getSlider"
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center -600 -blue-700 -blue-800">Submit</button>
             </form>
-
-
-
         </div>
     </div>
 </template>
