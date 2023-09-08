@@ -1,7 +1,6 @@
 
 <script setup>
 
-
 import { ref } from "vue";
 import Swal from 'sweetalert2';
 
@@ -10,34 +9,57 @@ const email = ref('');
 const phone = ref('');
 const password = ref('');
 const confirm_password = ref('');
-const token = ref('');
+
+const token = useCookie();
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
 
+definePageMeta({
+
+    middleware: [
+        function (to, from) {
+            const token = useCookie();
+
+            // if (token.value) {
+            //     return navigateTo('product-detail')
+            // }
+        },
+    ],
+});
+
+async function getUser() {
+    console.log(token.value);
+    const data = await useFetch(`${apiUrl}/user/user-detail`, {
+        headers: {
+            "accept": "application/json",
+            'Authorization': "Bearer " + token.value,
+        },
+        onResponse({ request, response, options }) {
+            console.log(response);
+        },
+        onRequestError({ request, options, error }) {
+            console.log(error);
+        },
+    });
+}
 
 
 async function getSlider() {
-    console.log(config.auth.loggedIn);
-    config.auth.loginWith('laravelSanctum', {
-        data: {
-            email: '',
-            password: ''
-        }
-    })
-
-    // const data = await useFetch(`${apiUrl}/slider`, {
-    //     headers: {
-    //         "accept": "application/json",
-    //         'token': token.value,
-    //     },
-    //     onResponse({ request, response, options }) {
-    //         console.log(response);
-    //     },
-    //     onRequestError({ request, options, error }) {
-    //         console.log(error);
-    //     },
-    // });
+    console.log(token.value);
+    const data = await useFetch(`${apiUrl}/slider`, {
+        headers: {
+            "accept": "application/json",
+            'Authorization': "Bearer " + token.value,
+        },
+        onResponse({ request, response, options }) {
+            console.log(response);
+        },
+        onRequestError({ request, options, error }) {
+            console.log(error);
+        },
+    });
+    getUser()
 }
 onMounted(function () {
     getSlider()
@@ -45,15 +67,11 @@ onMounted(function () {
 
 
 async function handleSubmit() {
-
-    // await useFetch("https://glosense.in/sanctum/csrf-cookie");
-    // const token = useCookie('XSRF-TOKEN');
-
+    console.log(token.value);
     const { data, error, pending, refresh } = await useFetch(`${apiUrl}/user/register`, {
         method: "POST",
         headers: {
             "accept": "application/json",
-            // 'X-XSRF-TOKEN': token.value,
         },
         body: {
             first_name: name.value,
@@ -62,14 +80,12 @@ async function handleSubmit() {
             password: password.value,
             password_confirmation: confirm_password.value,
         },
-        onRequest({ request, options }) { },
-        onRequestError({ request, options, error }) {
-            console.log(error);
-        },
         onResponse({ request, response, options }) {
-            token.value = response._data.token
+            if (response._data.token != undefined) {
+                token.value = response._data.token;
+            }
+            console.log(token.value);
             console.log(response._data.token);
-            useCookie('token', response._data.token);
             Swal.fire({
                 title: "Registered",
                 icon: 'success',

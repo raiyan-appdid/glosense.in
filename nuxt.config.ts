@@ -22,8 +22,10 @@ export default defineNuxtConfig({
           url: "https://glosense.in",
         },
       },
+      
     },
   },
+  
   devtools: { enabled: false },
   pages: true,
   css: ["@/assets/css/main.css"],
