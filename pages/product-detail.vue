@@ -6,6 +6,45 @@ function openModal() {
 
 const token = useCookie();
 console.log(token.value);
+
+const config = useRuntimeConfig();
+const apiUrl = config.public.baseUrl;
+
+async function getSlider() {
+    const data = await useFetch(`${apiUrl}/slider`, {
+        headers: {
+            "accept": "application/json",
+            'Authorization': "Bearer " + token.value,
+        },
+        onResponse({ request, response, options }) {
+            console.log(response);
+        },
+        onRequestError({ request, options, error }) {
+            console.log(error);
+        },
+    });
+    getUser()
+}
+
+async function getUser() {
+    const data = await useFetch(`${apiUrl}/user-detail`, {
+        headers: {
+            "accept": "application/json",
+            'Authorization': "Bearer " + token.value,
+        },
+        onResponse({ request, response, options }) {
+            console.log(response);
+        },
+        onRequestError({ request, options, error }) {
+            console.log(error);
+        },
+    });
+}
+
+onMounted(() => {
+    getSlider();
+})
+
 </script>
 
 <template>

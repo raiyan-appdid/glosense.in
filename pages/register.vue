@@ -10,9 +10,6 @@ const phone = ref('');
 const password = ref('');
 const confirm_password = ref('');
 
-const token = useCookie();
-const csrf = useCookie('XSRF-TOKEN');
-
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
 
@@ -20,8 +17,7 @@ definePageMeta({
 
     middleware: [
         function (to, from) {
-            const token = useCookie();
-
+            // const token = useCookie();
             // if (token.value) {
             //     return navigateTo('product-detail')
             // }
@@ -29,65 +25,16 @@ definePageMeta({
     ],
 });
 
-async function getUser() {
-    console.log(csrf.value, 'csrf');
-
-    console.log(token.value);
-    const data = await useFetch(`${apiUrl}/user-detail`, {
-        headers: {
-            "accept": "application/json",
-            'Authorization': "Bearer " + token.value,
-        },
-        onResponse({ request, response, options }) {
-            console.log(response);
-        },
-        onRequestError({ request, options, error }) {
-            console.log(error);
-        },
-    });
-}
-
-
-async function getSlider() {
-    console.log(token.value, 'token');
-    await useFetch("https://glosense.in/sanctum/csrf-cookie")
-    const rr = useCookie('XSRF-TOKEN');
-    console.log(rr, "rr");
-    const csrf = useCookie('glosense_session');
-    console.log(csrf.value, "raiyan cookie");
-    console.log(csrf.value);
-    const data = await useFetch(`${apiUrl}/slider`, {
-        headers: {
-            "accept": "application/json",
-            'Authorization': "Bearer " + token.value,
-        },
-        onResponse({ request, response, options }) {
-            console.log(response);
-        },
-        onRequestError({ request, options, error }) {
-            console.log(error);
-        },
-    });
-    getUser()
-}
-onMounted(function () {
-    getSlider()
-})
-
-
 async function handleSubmit() {
-
-
-
-    const csrfToken = useCookie('XSRF-TOKEN');
-    console.log(csrfToken.value, "raiyan");
-
-    console.log(token.value);
+    await useFetch("https://glosense.in/sanctum/csrf-cookie", {
+        credentials: "include",
+    })
+    const csrf_token = useCookie('XSRF-TOKEN');
     const { data, error, pending, refresh } = await useFetch(`${apiUrl}/user/register`, {
         method: "POST",
         headers: {
             "accept": "application/json",
-            "X-XSRF-TOKEN": token.value,
+            "X-XSRF-TOKEN": csrf_token.value,
         },
         body: {
             first_name: name.value,
@@ -136,32 +83,30 @@ async function handleSubmit() {
                     <label for="text" class="block mb-2 text-md  font-bold text-black ">Name</label>
                     <input type="text" id="name" v-model="name"
                         class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
-                        placeholder="Name" required>
+                        placeholder="Name">
                 </div>
                 <div class="mb-6">
                     <label for="email" class="block mb-2 text-md  font-bold text-black ">Your
                         email</label>
                     <input type="email" v-model="email" id="email"
                         class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
-                        placeholder="name@gmail.com" required>
+                        placeholder="name@gmail.com">
                 </div>
                 <div class="mb-6">
                     <label for="email" class="block mb-2 text-md  font-bold text-black ">Phone</label>
                     <input type="number" id="number" v-model="phone"
                         class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
-                        placeholder="Phone" required>
+                        placeholder="Phone">
                 </div>
                 <div class="mb-6">
                     <label for="password" class="block mb-2 text-md  font-bold text-black ">Password</label>
                     <input type="password" id="password" v-model="password"
-                        class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
-                        required>
+                        class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 ">
                 </div>
                 <div class="mb-6">
                     <label for="password" class="block mb-2 text-md  font-bold text-black ">Confirm Password</label>
                     <input type="password" id="confirm-password" v-model="confirm_password"
-                        class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
-                        required>
+                        class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 ">
                 </div>
                 <button type="submit" @click="getSlider"
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center -600 -blue-700 -blue-800">Submit</button>

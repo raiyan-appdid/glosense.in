@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       strategies: {
         laravelSanctum: {
           provider: "laravel/sanctum",
-          url: "https://glosense.in",
+          url: "http://localhost:3000",
         },
       },
       
