@@ -1,7 +1,7 @@
 
 <script setup>
 
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import Swal from 'sweetalert2';
 
 const name = ref('');
@@ -11,6 +11,7 @@ const password = ref('');
 const confirm_password = ref('');
 
 const token = useCookie();
+const csrf = useCookie('XSRF-TOKEN');
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
@@ -29,8 +30,10 @@ definePageMeta({
 });
 
 async function getUser() {
+    console.log(csrf.value, 'csrf');
+
     console.log(token.value);
-    const data = await useFetch(`${apiUrl}/user/user-detail`, {
+    const data = await useFetch(`${apiUrl}/user-detail`, {
         headers: {
             "accept": "application/json",
             'Authorization': "Bearer " + token.value,
@@ -46,7 +49,13 @@ async function getUser() {
 
 
 async function getSlider() {
-    console.log(token.value);
+    console.log(token.value, 'token');
+    await useFetch("https://glosense.in/sanctum/csrf-cookie")
+    const rr = useCookie('XSRF-TOKEN');
+    console.log(rr, "rr");
+    const csrf = useCookie('glosense_session');
+    console.log(csrf.value, "raiyan cookie");
+    console.log(csrf.value);
     const data = await useFetch(`${apiUrl}/slider`, {
         headers: {
             "accept": "application/json",
@@ -67,11 +76,18 @@ onMounted(function () {
 
 
 async function handleSubmit() {
+
+
+
+    const csrfToken = useCookie('XSRF-TOKEN');
+    console.log(csrfToken.value, "raiyan");
+
     console.log(token.value);
     const { data, error, pending, refresh } = await useFetch(`${apiUrl}/user/register`, {
         method: "POST",
         headers: {
             "accept": "application/json",
+            "X-XSRF-TOKEN": token.value,
         },
         body: {
             first_name: name.value,
