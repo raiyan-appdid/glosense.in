@@ -9,6 +9,8 @@ const email = ref('');
 const phone = ref('');
 const password = ref('');
 const confirm_password = ref('');
+const token = useCookie();
+
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
@@ -30,6 +32,7 @@ async function handleSubmit() {
         credentials: "include",
     })
     const csrf_token = useCookie('XSRF-TOKEN');
+    console.log(csrf_token, "csrf_token");
     const { data, error, pending, refresh } = await useFetch(`${apiUrl}/user/register`, {
         method: "POST",
         headers: {
