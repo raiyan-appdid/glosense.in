@@ -72,6 +72,11 @@ console.log(token.value);
                             class="bg-white text-black font-bold border border-black py-4 px-10 transition ease-in-out  hover:-translate-y-1 delay-75 hover:scale-110 hover:bg-black hover:text-white duration-500">Buy
                             Now</button>
                     </div>
+                    <div class="flex">
+                        <span class="font-extrabold sm:text-4xl text-2xl">Jar-120g (30 servings)</span>
+                        <span class="font-medium sm:text-4xl text-2xl mx-auto"> Rs.899/-
+                        </span>
+                    </div>
                 </div>
             </div>
 
@@ -92,12 +97,12 @@ console.log(token.value);
             <div class="container my-20">
                 <div class="grid grid-cols-12">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl tracking-widest">How to Use</h2>
-                        <p>Introducing Glosense HairRevive Serum, your go-to solution for achieving healthy and strong hair
-                            that shines with vitality. Crafted with care, this serum harnesses the power of nature and
-                            science to rejuvenate your hair from within. Infused with a potent blend of essential oils,
-                            vitamins, and active botanicals, HairRevive Serum nourishes the scalp, stimulates hair
-                            follicles, and promotes natural growth.</p>
+                        <h2 class="font-extrabold text-3xl tracking-widest">Helps in: </h2>
+                        <p>-Maintaining a healthy scalp with improved blood circulation.<br />
+                            -Encouraging better hair growth and helps prevent dandruff.<br />
+                            -Cultivate Optimal Hair Follicle Health.<br />
+                            -Reducing hair loss, and strengthening hair strands.
+                        </p>
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:order-2">
                         <img src="/images/product-details-2.png" class="sm:w-2/3 w-full" alt="" />
@@ -109,23 +114,20 @@ console.log(token.value);
                         <img src="/images/product-details-3.png" class="sm:w-2/3 w-full" alt="" />
                     </div>
                     <div class="sm:col-span-7 col-span-12 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl tracking-widest">How It Work</h2>
-                        <p>Introducing Glosense HairRevive Serum, your go-to solution for achieving healthy and strong hair
-                            that shines with vitality. Crafted with care, this serum harnesses the power of nature and
-                            science to rejuvenate your hair from within. Infused with a potent blend of essential oils,
-                            vitamins, and active botanicals, HairRevive Serum nourishes the scalp, stimulates hair
-                            follicles, and promotes natural growth.</p>
+                        <h2 class="font-extrabold text-3xl tracking-widest">How to use: </h2>
+                        <p>-Blend ½ tablespoon of Hair-you-glo into your water. <br />
+                            -Ensure it's well-mixed,have a sip & revel in the moment 🤙<br /> <br />
+                            This jar contains 30 servings.
+
+                        </p>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-12">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl tracking-widest">What is it</h2>
-                        <p>Introducing Glosense HairRevive Serum, your go-to solution for achieving healthy and strong hair
-                            that shines with vitality. Crafted with care, this serum harnesses the power of nature and
-                            science to rejuvenate your hair from within. Infused with a potent blend of essential oils,
-                            vitamins, and active botanicals, HairRevive Serum nourishes the scalp, stimulates hair
-                            follicles, and promotes natural growth.</p>
+                        <h2 class="font-extrabold text-3xl tracking-widest">WHEN TO USE:</h2>
+                        <p>You can consume it any time of the day, but for better experience we suggest consuming it in the
+                            morning.</p>
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:order-2">
                         <img src="/images/product-details-4.png" class="sm:w-2/3 w-full" alt="" />
@@ -137,16 +139,85 @@ console.log(token.value);
                         <img src="/images/product-details-5.png" class="sm:w-2/3 w-full" alt="" />
                     </div>
                     <div class="sm:col-span-7 col-span-12 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl tracking-widest">What to Expected</h2>
-                        <p>Introducing Glosense HairRevive Serum, your go-to solution for achieving healthy and strong hair
-                            that shines with vitality. Crafted with care, this serum harnesses the power of nature and
-                            science to rejuvenate your hair from within. Infused with a potent blend of essential oils,
-                            vitamins, and active botanicals, HairRevive Serum nourishes the scalp, stimulates hair
-                            follicles, and promotes natural growth.</p>
+                        <h2 class="font-extrabold text-3xl tracking-widest">STORAGE TIP:</h2>
+                        <p>For best results, utilise a dry spoon when dealing with the mix, and be sure to seal the jars
+                            tightly after usage to prevent solidification or lumps.
+                        </p>
                     </div>
                 </div>
             </div>
 
+            <div class="container py-5">
+                <h2 class="text-center text-3xl font-extrabold text-secondary">HOW IT WORKS:</h2>
+                <h3 class=" text-2xl font-bold ">Effectively suppress DHT🌿:</h3>
+                <p>Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood circulation, and
+                    promote hair growth while suppressing DHT.
+                </p>
+                <h3 class=" text-2xl font-bold ">Maintains pH Level 🔗:
+                </h3>
+                <p>Lemon balances scalp pH, prevents dandruff, and fosters a healthy environment for hair follicles where
+                    Fenugreek seeds enhance hair texture, shine, resilience, and support growth.
+                </p>
+                <h3 class=" text-2xl font-bold ">Improves Blood Circulation🧘:
+                </h3>
+                <p>Pomegranate and Orange, with vitamin E and antioxidants, boost scalp blood circulation, delivering
+                    essential nutrients for healthier, thicker hair, while preventing oxidative stress and hair cell damage.
+                </p>
+                <h3 class=" text-2xl font-bold ">Supports Collagen Synthesis💫:
+                </h3>
+                <p>Aids in collagen synthesis, vital for maintaining hair's strength and structure, reducing hair thinning
+                    and breakage.
+                </p>
+            </div>
+
+            <div class="container py-5">
+                <h2 class="text-center text-3xl font-extrabold text-secondary">WHAT’S IN IT?</h2>
+                <h3 class=" text-2xl font-bold ">AMLA:</h3>
+                <p>Indian Gooseberry better known as Amla, contains Vitamin C, which is helpful to boost collagen for
+                    healthy hair and improves blood circulation to prevent dryness.
+                </p>
+                <h3 class=" text-2xl font-bold ">ORANGE
+                </h3>
+                <p>A Citrus Fruit rich in vitamin E, an antioxidant that supports hair follicles, prevents oxidative stress,
+                    and boosts hair health.
+                </p>
+                <h3 class=" text-2xl font-bold ">POMEGRANATE
+                </h3>
+                <p>Enhances hair elasticity, reduces breakage, and promotes growth for healthier hair.
+                </p>
+                <h3 class=" text-2xl font-bold ">SEA BUCKTHORN:
+                </h3>
+                <p>Packed with omega fatty acids, reduces inflammation, nourishes scalp and follicles, promotes hair growth,
+                    and reduces hair loss.
+                </p>
+            </div>
+            <div class="container py-5">
+                <h2 class="text-center text-3xl font-extrabold text-secondary">WHAT TO EXPECT:
+                </h2>
+                <h3 class=" text-2xl font-bold ">After 4 weeks:</h3>
+                <p>Reduces hair fall and dandruff, minimises breakage and itchiness, while nourishing hair strands.
+                </p>
+                <h3 class=" text-2xl font-bold ">After 8 weeks:
+                </h3>
+                <p>Promotes healthy blood circulation, provides hydration to prevent dryness, and encourages the scalp to
+                    maintain optimal oil and moisture levels.
+
+                </p>
+                <h3 class=" text-2xl font-bold ">After 12 weeks:
+                </h3>
+                <p>Reduces scalp inflammation and stress that leads to decreased hair fall, promoting visible root-level
+                    hair growth, and boosts collagen production for enhanced hair elasticity.
+                </p>
+            </div>
+            <div class="container py-5">
+                <h2 class=" text-3xl font-extrabold text-secondary">Disclaimer:
+                </h2>
+                <h3 class=" text-2xl font-bold ">Take 1 serving daily or as directed by a healthcare professional. Store in
+                    a cool, dry, dark place. Keep out of reach of children. Do not exceed recommended daily usage. Not
+                    recommended during pregnancy. This product is not intended to diagnose, treat, cure, or prevent any
+                    disease.
+                </h3>
+            </div>
         </div>
     </div>
 </template>
