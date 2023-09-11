@@ -1,30 +1,41 @@
 <script setup>
+const token = useCookie();
+
 function openModal() {
-    let modal = document.getElementById('authentication-modal')
-    modal.classList.remove('hidden');
+    const token = useCookie();
+    if (!token.value) {
+        let modal = document.getElementById('authentication-modal')
+        modal.classList.remove('hidden');
+    }
+    else {
+        getUser();
+        // gateWayIntegration();
+        //cc avenue gateway.....
+    }
 }
 
-const token = useCookie();
-console.log(token.value);
+function gateWayIntegration(name = null) {
+    alert(`Welcome ${name}! We are in the middle of Payment Gateway Integration.`);
+}
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
 
-async function getSlider() {
-    const data = await useFetch(`${apiUrl}/slider`, {
-        headers: {
-            "accept": "application/json",
-            'Authorization': "Bearer " + token.value,
-        },
-        onResponse({ request, response, options }) {
-            console.log(response);
-        },
-        onRequestError({ request, options, error }) {
-            console.log(error);
-        },
-    });
-    getUser()
-}
+// async function getSlider() {
+//     const data = await useFetch(`${apiUrl}/slider`, {
+//         headers: {
+//             "accept": "application/json",
+//             'Authorization': "Bearer " + token.value,
+//         },
+//         onResponse({ request, response, options }) {
+//             console.log(response);
+//         },
+//         onRequestError({ request, options, error }) {
+//             console.log(error);
+//         },
+//     });
+//     getUser()
+// }
 
 async function getUser() {
     const data = await useFetch(`${apiUrl}/user-detail`, {
@@ -33,7 +44,11 @@ async function getUser() {
             'Authorization': "Bearer " + token.value,
         },
         onResponse({ request, response, options }) {
-            console.log(response);
+            if (response._data.success) {
+                console.log(response._data);
+                const name = response._data.data.first_name;
+                gateWayIntegration(name)
+            }
         },
         onRequestError({ request, options, error }) {
             console.log(error);
@@ -42,7 +57,7 @@ async function getUser() {
 }
 
 onMounted(() => {
-    getSlider();
+    // getSlider();
 })
 
 </script>

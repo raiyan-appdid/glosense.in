@@ -19,10 +19,10 @@ definePageMeta({
 
     middleware: [
         function (to, from) {
-            // const token = useCookie();
-            // if (token.value) {
-            //     return navigateTo('product-detail')
-            // }
+            const token = useCookie();
+            if (token.value) {
+                return navigateTo('product-detail')
+            }
         },
     ],
 });
@@ -49,19 +49,18 @@ async function handleSubmit() {
         onResponse({ request, response, options }) {
             if (response._data.token != undefined) {
                 token.value = response._data.token;
+                Swal.fire({
+                    title: "Registered",
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                });
+                name.value = "";
+                email.value = "";
+                phone.value = "";
+                password.value = "";
+                confirm_password.value = "";
+                return navigateTo('product-detail')
             }
-            console.log(token.value);
-            console.log(response._data.token);
-            Swal.fire({
-                title: "Registered",
-                icon: 'success',
-                confirmButtonText: 'Cool'
-            });
-            // name.value = "";
-            // email.value = "";
-            // phone.value = "";
-            // password.value = "";
-            // confirm_password.value = "";
         },
         onResponseError({ request, response, options }) {
             Swal.fire({
