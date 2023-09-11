@@ -53,8 +53,8 @@ onUnmounted(() => {
       <div class="my-auto mr-5">
         <!-- <p class="text-sm font-semibold text-neutral-900">CONTACT US</p> -->
         <!-- <img  src="/images/logo.png" alt=""> -->
-        <img src="/images/logo.png" class="w-[10rem]" alt="" />
 
+        <a href="/"><img src="/images/logo.png" class="w-[10rem]" alt="" /></a>
       </div>
       <div></div>
 

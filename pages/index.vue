@@ -893,7 +893,8 @@ const updateDotValue = (value) => {
     <div
       class="landing__main w-full text-center min-h-screen pt-15 bg-no-repeat bg-cover bg-top overflow-hidden relative">
       <div>
-        <img id="logo-image" src="/images/logo.png" class="w-4/12 inset-x-0 my-0 mx-auto top-[15rem] fixed z-20" alt="" />
+        <a href="/"><img id="logo-image" src="/images/logo.png"
+            class="w-4/12 inset-x-0 my-0 mx-auto top-[15rem] fixed z-20" alt="" /></a>
       </div>
       <!-- <div>
         <img id="jar-image" src="/images/jar.png" class="w-[250px] inset-0 m-auto fixed z-[11] translate-y-[-50rem]"
@@ -923,7 +924,7 @@ const updateDotValue = (value) => {
         <div class="home-text h-screen flex align-middle flex-col justify-center mt-[6rem]" style="align-items: center;">
           <h4 class="text-3xl ">Unlock the essence fo self-care</h4>
           <h4 class="text-3xl ">through the magic of superfoods.</h4>
-          <h4 class="mt-5 text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl"><a href="/product-detail">Know
+          <h4 class="mt-5 text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl"><a href="/about">Know
               more</a></h4>
         </div>
       </div>
@@ -1092,12 +1093,32 @@ const updateDotValue = (value) => {
                   d="M212.575,164.579 C216.778,153.157 249.497,94.42 283.879,93.348 308.167,92.58 336.876,90.479 357.088,126.869" />
               </svg>
             </div>
-            <img class="opacity-1  scale-150 ingredient-my-1 h-20" src="/images/Ingradients-02.png" alt="" />
-            <img class="opacity-1  scale-150 ingredient-my-2 h-20" src="/images/Ingradients-03.png" alt="" />
-            <img class="opacity-1  scale-150 ingredient-my-3 h-20" src="/images/Ingradients-04.png" alt="" />
-            <img class="opacity-0  scale-150 ingredient-my-4 h-20" src="/images/Ingradients-07.png" alt="" />
-            <img class="opacity-0  scale-150 ingredient-my-5 h-20" src="/images/Ingradients-09.png" alt="" />
-            <img class="opacity-0  scale-150 ingredient-my-6 h-20" src="/images/Ingradients-10.png" alt="" />
+            <div class="ingredient-my-1">
+              <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-02.png" alt="" />
+              <h3 class="mt-5 text-2xl font-bold">Example-1</h3>
+            </div>
+            <div class="ingredient-my-2">
+              <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-03.png" alt="" />
+              <h3 class="mt-5 text-2xl font-bold">Example-2</h3>
+            </div>
+
+            <div class="ingredient-my-3">
+              <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-04.png" alt="" />
+              <h3 class="mt-5 text-2xl font-bold">Example-3</h3>
+            </div>
+
+            <div class="ingredient-my-4 opacity-0">
+              <img class="scale-150  h-20" src="/images/Ingradients-07.png" alt="" />
+              <h3 class="mt-5 text-2xl font-bold">Example-4</h3>
+            </div>
+            <div class="ingredient-my-5 opacity-0">
+              <img class="scale-150  h-20" src="/images/Ingradients-09.png" alt="" />
+              <h3 class="mt-5 text-2xl font-bold">Example-5</h3>
+            </div>
+            <div class="ingredient-my-6 opacity-0">
+              <img class="scale-150  h-20" src="/images/Ingradients-10.png" alt="" />
+              <h3 class="mt-5 text-2xl font-bold">Example-6</h3>
+            </div>
           </div>
           <div class="elegance-text">
             <h2 class="elegance-text-2 font-bold text-xl mt-3">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
@@ -1167,15 +1188,15 @@ const updateDotValue = (value) => {
         <div id="showcase-images" class="relative h-[400px] mb-5">
           <div
             class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[355deg]">
-            <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/F1917B/FFFFFF/png" alt="" />
+            <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-3@4x.png" alt="" />
           </div>
           <div class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
             <div class="tear"></div>
-            <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/43A190/FFFFFF/png" alt="" />
+            <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-2@4x.png" alt="" />
           </div>
           <div class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[5deg]">
             <div class="tear"></div>
-            <img class="object-cover h-[300px] w-[300px]" src="https://placehold.co/300x300/F1917B/FFFFFF/png" alt="" />
+            <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-1@4x.png" alt="" />
           </div>
         </div>
         <div style="--fill-till: 0" id="showcase-slider" class="relative flex justify-center">
