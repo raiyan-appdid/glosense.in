@@ -293,19 +293,19 @@ onMounted(() => {
 
                 <h1 class="text-sm text-center opacity-0 prevent-damage-1 absolute -top-[20px]  text-white  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,-1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
-                    PREVENT DAMAGE
+                    Effectively suppress DHT
                 </h1>
                 <h1 class="text-sm text-center opacity-0 prevent-damage-2 absolute -top-[10px] text-emerald-800  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
-                    PREVENT DAMAGE
+                    Maintains pH Level
                 </h1>
                 <h1 class="text-sm text-center opacity-0 prevent-damage-3 absolute -top-[0px] text-white  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,-1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
-                    PREVENT DAMAGE
+                    Improves Blood Circulation
                 </h1>
                 <h1 class="text-sm text-center opacity-0 prevent-damage-4 absolute top-[10px] text-white  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,-1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
-                    PREVENT DAMAGE
+                    Supports Collagen Synthesis
                 </h1>
 
                 <h4
@@ -337,10 +337,15 @@ onMounted(() => {
                     CALCIUM
                 </h1>
                 <h2 class="text-center absolute -bottom-[100px] elegance-text-responsive font-bold text-sm mt-3">100 %
-                    Natural Actives* -
-                    Plant Based
+                    Easy to use - Plant Based
                     - Strengthen hair
                 </h2>
+                <h4
+                    class="text-sm  -bottom-[200px] text-center absolute opacity-0 what-text-responsive font-extrabold text-secondary w-screen">
+                    Product Info: Hair You Glo contains Amla, sea buckthorn, Lemon powder along with 7 more Superfoods which
+                    have…<br />
+                    (Image about what’s in it & benefits about it)
+                </h4>
 
                 <!-- <div class="ingredients-responsive absolute"> -->
                 <div class="absolute inset-y-36 ingredient-my-1-responsive flex opacity-0 items-center flex-col">

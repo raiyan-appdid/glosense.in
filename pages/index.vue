@@ -1025,7 +1025,7 @@ const updateDotValue = (value) => {
             text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
               -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
           ">
-            VITAMINS
+            Improves -Scalp Health
           </h1>
           <!-- <p class="vitamin-custom-2">Vitamins - 2</p> -->
 
@@ -1034,7 +1034,7 @@ const updateDotValue = (value) => {
             text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
               -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
           ">
-            REDUCE
+            Balance- Hair Growth
           </h1>
 
           <div class="absolute top-[7rem] w-screen">
@@ -1120,8 +1120,16 @@ const updateDotValue = (value) => {
               <h3 class="mt-5 text-2xl font-bold">Gotu Kola Leaf</h3>
             </div>
           </div>
+          <!-- <div class="absolute bottom-[10rem] w-screen">
+            <h4 class="text-xl text-center font-extrabold text-secondary opacity-0 what-text">
+              Product Info: Hair You Glo contains Amla, sea buckthorn, <br />Lemon powder along with 7 more Superfoods
+              which
+              have…<br />
+              (Image about what’s in it & benefits about it)
+            </h4>
+          </div> -->
           <div class="elegance-text">
-            <h2 class="elegance-text-2 font-bold text-xl mt-3">100 % Natural Actives* - Plant Based - Strengthen hair</h2>
+            <h2 class="elegance-text-2 font-bold text-xl mt-3">Easy to use - Plant Based - Strengthen hair</h2>
           </div>
           <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
           <div class="absolute w-screen bottom-[9rem]" style="   
@@ -1135,7 +1143,7 @@ const updateDotValue = (value) => {
             text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
               -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
           ">
-              HAIR FALL
+              Enhance- Follicle Health
             </h1>
           </div>
 
@@ -1150,7 +1158,7 @@ const updateDotValue = (value) => {
               text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
                 -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
             ">
-              CALCIUM
+              Reduce -Hair Loss
             </h1>
           </div>
 
@@ -1162,17 +1170,17 @@ const updateDotValue = (value) => {
           <div class="custom-circulating mt-12">
             <h1
               class="text-[2rem] circulating-text-1 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-1">
-              IMPROVES <br /> HAIR HEALTH
+              Effectively <br /> suppress DHT
             </h1>
             <h1 class="text-[2rem] absolute font-[1000] text-orange-400 circulating-text-2 opacity-0  inset-x-0 tb-1 ">
-              PROVIDES <br /> NUTRIENTS
+              Maintains <br /> pH Level
             </h1>
             <h1
               class="text-[2rem] circulating-text-3 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2">
-              DIET <br /> FRIENDLY
+              Improves Blood <br /> Circulation
             </h1>
             <h1 class="text-[2rem] absolute font-[1000] opacity-0 circulating-text-4 text-orange-400  inset-x-0 tb-2 ">
-              HELPS BUILDING <br /> COLLAGEN
+              Supports <br /> Collagen Synthesis
             </h1>
           </div>
         </div>
