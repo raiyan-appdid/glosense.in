@@ -3,6 +3,7 @@
 
 import { ref, onMounted } from "vue";
 import Swal from 'sweetalert2';
+import Notiflix from 'notiflix';
 
 const name = ref('');
 const email = ref('');
@@ -10,6 +11,10 @@ const phone = ref('');
 const password = ref('');
 const confirm_password = ref('');
 const token = useCookie();
+
+
+
+
 
 
 const config = useRuntimeConfig();
@@ -28,6 +33,9 @@ definePageMeta({
 });
 
 async function handleSubmit() {
+    Notiflix.Loading.pulse('Loading...');
+
+    Notiflix.Notify.success('Sol lucet omnibus');
     await useFetch("https://glosense.in/sanctum/csrf-cookie", {
         credentials: "include",
     })
@@ -47,6 +55,8 @@ async function handleSubmit() {
             password_confirmation: confirm_password.value,
         },
         onResponse({ request, response, options }) {
+            Notiflix.Loading.remove();
+
             if (response._data.token != undefined) {
                 token.value = response._data.token;
                 Swal.fire({
@@ -63,6 +73,8 @@ async function handleSubmit() {
             }
         },
         onResponseError({ request, response, options }) {
+            Notiflix.Loading.remove();
+
             Swal.fire({
                 title: response._data.message,
                 icon: 'error',

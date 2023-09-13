@@ -1093,31 +1093,31 @@ const updateDotValue = (value) => {
                   d="M212.575,164.579 C216.778,153.157 249.497,94.42 283.879,93.348 308.167,92.58 336.876,90.479 357.088,126.869" />
               </svg>
             </div>
-            <div class="ingredient-my-1">
+            <div class="ingredient-my-1 flex items-center flex-col">
               <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-02.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Example-1</h3>
+              <h3 class="mt-5 text-2xl font-bold">Pomegranate</h3>
             </div>
-            <div class="ingredient-my-2">
+            <div class="ingredient-my-2 flex items-center flex-col">
               <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-03.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Example-2</h3>
+              <h3 class="mt-5 text-2xl font-bold">Cinnamon Bark</h3>
             </div>
 
-            <div class="ingredient-my-3">
+            <div class="ingredient-my-3 flex items-center flex-col">
               <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-04.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Example-3</h3>
+              <h3 class="mt-5 text-2xl font-bold">Amla</h3>
             </div>
 
-            <div class="ingredient-my-4 opacity-0">
+            <div class="ingredient-my-4 opacity-0 flex items-center flex-col">
               <img class="scale-150  h-20" src="/images/Ingradients-07.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Example-4</h3>
+              <h3 class="mt-5 text-2xl font-bold">Orange</h3>
             </div>
-            <div class="ingredient-my-5 opacity-0">
+            <div class="ingredient-my-5 opacity-0 flex items-center flex-col">
               <img class="scale-150  h-20" src="/images/Ingradients-09.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Example-5</h3>
+              <h3 class="mt-5 text-2xl font-bold">Sea Buckthom</h3>
             </div>
-            <div class="ingredient-my-6 opacity-0">
+            <div class="ingredient-my-6 opacity-0 flex items-center flex-col">
               <img class="scale-150  h-20" src="/images/Ingradients-10.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Example-6</h3>
+              <h3 class="mt-5 text-2xl font-bold">Gotu Kola Leaf</h3>
             </div>
           </div>
           <div class="elegance-text">
