@@ -345,27 +345,27 @@ onMounted(() => {
                 <!-- <div class="ingredients-responsive absolute"> -->
                 <div class="ingredient-my-1-responsive flex opacity-0 items-center flex-col">
                     <img class=" absolute inset-y-36 w-[60px] " src="/images/Ingradients-02.png" alt="" />
-                    <h3 class="mt-5 text-xl font-bold">Pomegranate</h3>
+                    <h3 class="text-xl font-bold">Pomegranate</h3>
                 </div>
                 <div class="ingredient-my-2-responsive opacity-0 flex items-center flex-col">
                     <img class=" absolute inset-y-36 w-[60px] " src="/images/Ingradients-03.png" alt="" />
-                    <h3 class="mt-5 text-xl font-bold">Cinnamon Bark</h3>
+                    <h3 class="text-xl font-bold">Cinnamon Bark</h3>
                 </div>
                 <div class="ingredient-my-3-responsive opacity-0 flex items-center flex-col">
                     <img class=" absolute inset-y-36 w-[60px] " src="/images/Ingradients-04.png" alt="" />
-                    <h3 class="mt-5 text-xl font-bold">Amla</h3>
+                    <h3 class="text-xl font-bold">Amla</h3>
                 </div>
                 <div class="ingredient-my-4-responsive opacity-0 flex items-center flex-col">
                     <img class="absolute inset-y-36 w-[60px] " src="/images/Ingradients-07.png" alt="" />
-                    <h3 class="mt-5 text-xl font-bold">Orange</h3>
+                    <h3 class="text-xl font-bold">Orange</h3>
                 </div>
                 <div class="ingredient-my-5-responsive opacity-0 flex items-center flex-col">
                     <img class="absolute inset-y-36 w-[60px] " src="/images/Ingradients-09.png" alt="" />
-                    <h3 class="mt-5 text-xl font-bold">Sea Buckthom</h3>
+                    <h3 class="text-xl font-bold">Sea Buckthom</h3>
                 </div>
                 <div class="ingredient-my-6-responsive opacity-0 flex items-center flex-col">
                     <img class="absolute inset-y-36 w-[60px] " src="/images/Ingradients-10.png" alt="" />
-                    <h3 class="mt-5 text-xl font-bold">Gotu Kola Leaf</h3>
+                    <h3 class="text-xl font-bold">Gotu Kola Leaf</h3>
                 </div>
                 <!-- </div> -->
 
