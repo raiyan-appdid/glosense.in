@@ -1120,14 +1120,14 @@ const updateDotValue = (value) => {
               <h3 class="mt-5 text-2xl font-bold">Gotu Kola Leaf</h3>
             </div>
           </div>
-          <!-- <div class="absolute bottom-[10rem] w-screen">
+          <div class="absolute bottom-[10rem] w-screen">
             <h4 class="text-xl text-center font-extrabold text-secondary opacity-0 what-text">
               Product Info: Hair You Glo contains Amla, sea buckthorn, <br />Lemon powder along with 7 more Superfoods
               which
               have…<br />
               (Image about what’s in it & benefits about it)
             </h4>
-          </div> -->
+          </div>
           <div class="elegance-text">
             <h2 class="elegance-text-2 font-bold text-xl mt-3">Easy to use - Plant Based - Strengthen hair</h2>
           </div>
@@ -1216,26 +1216,27 @@ const updateDotValue = (value) => {
             </div>
           </div>
         </div>
+        <h4 class="text-[2rem] believe-text font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
+          Artificial Sweetener-No Added Flavors-Lactose Free-No Allergen</h4>
       </div>
 
       <div class="container px-10 mx-auto">
         <div class="min-h-screen pt-16 relative border-blue-500 grid grid-cols-12 gap-4">
           <div class="col-span-8">
-            <p class="text-neutral-950 text-2xl p-3 font-bold">Hair You Glo is for those who are looking for solutions to
-              their hair
-              health and want to look confident when they look in the mirror every morning! Hair
-              you glo not only help you with your hair health but also help you regain your confidence in yourseld which
-              has been shadowed by any reason related to hair
-              as your personality is showcased first when you meet someone or present yourself!!
+            <p class="text-neutral-950 text-2xl p-3 font-bold">Hair-You-Glo revitalises your hair health and
+              restores lost confidence related to hair concerns. Your hair is a vital part of your presentation
+              and personality, and Hair-You-Glo ensures you radiate self-assurance in every interaction.
+              Introducing our expertly crafted hair health betterment product, carefully with a blend of nature's
+              finest ingredients such as Sea buckthorn extract, Carrot, Amla, Lemon, Orange, Tomato fruit,
+              Pomegranate extract, Grape seed, Fenugreek seeds extract and more.
             </p>
             <br />
 
-            <p class="text-neutral-950 text-2xl p-3 font-bold">Introducing our innovative hair health betterment product,
-              carefully crafted with a blend of nature's
-              finest ingredients such as Sea buckthorn extract, Gotu kola lead extract,
-              Carrot, Amla, Lemon, Orange, Tomato fruit, Pomegranate extract, Grape seed, Ginger Rhizome extract,
-              Fenugreek seeds extract, Cinnamon bark extract, Biotin: known
-
+            <p class="text-neutral-950 text-2xl p-3 font-bold">Hair-You-Glo is a product formulated in such a
+              way that helps you improve your hair health by containing much required nutrients & vitamins in it.
+              Experience the power of nature in every element of Hair-You-Glo. Elevate your hair health with a
+              blend of carefully selected natural ingredients. Make Hair-You-Glo your daily partner in nurturing
+              your hair's vitality. Unlock the secret to radiant, confident hair.
             </p>
           </div>
           <div class="col-span-4">
