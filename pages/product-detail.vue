@@ -74,24 +74,11 @@ onMounted(() => {
     <LoginModal />
 
     <div class="product-details px-3 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
-
-
-        <h2 class="text-secondary text-2xl font-bold text-center py-2">Product</h2>
-        <div class="container mx-auto">
-            <div class="grid grid-cols-12 mt-2">
+        <!-- <h2 class="text-secondary text-2xl font-bold text-center py-2">Product</h2> -->
+        <div class="container mx-auto sm:pt-4">
+            <div class="grid grid-cols-12 mt-2 sm:gap-4">
                 <div class="col-span-12 sm:col-span-5">
-                    <img src="/images/Product-page-top-image.png" class="sm:w-2/3" alt="" />
-                    <div class="flex items-center justify-center sm:justify-start">
-                        <div class="p-2 rounded-xl bg-primary w-1/4 h-1/4 m-2">
-                            <img src="/images/jar.png" alt="" />
-                        </div>
-                        <div class="p-2 rounded-xl bg-primary w-1/4 h-1/4 m-2">
-                            <img src="/images/jar.png" alt="" />
-                        </div>
-                        <div class="p-2 rounded-xl bg-primary w-1/4 h-1/4 m-2">
-                            <img src="/images/jar.png" alt="" />
-                        </div>
-                    </div>
+                    <ProductImage />
                 </div>
                 <div class="col-span-12 sm:col-span-7">
                     <h2 class="font-extrabold text-3xl mt-4">Hair you glo for Healthy & Strong Hair</h2>
@@ -133,8 +120,8 @@ onMounted(() => {
                     </div>
                     <div class="flex">
                         <span class="font-extrabold sm:text-4xl text-2xl">Jar-120g (30 servings)</span>
-                        <span class="font-medium sm:text-4xl text-2xl mx-auto"> Rs.899/-
-                        </span>
+                        <!-- <span class="font-medium sm:text-4xl text-2xl mx-auto"> Rs.899/-
+                        </span> -->
                     </div>
                 </div>
             </div>
