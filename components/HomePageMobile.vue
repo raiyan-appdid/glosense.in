@@ -385,7 +385,9 @@ onMounted(() => {
             <div class="border-blue-500 grid grid-cols-1 ">
                 <div class="">
                     <div class="">
-                        <div class="w-full h-40 bg-emerald-500 rounded-xl"></div>
+                        <!-- <div class="w-full h-40 bg-emerald-500 rounded-xl"></div> -->
+                        <img src="/images/last-image.jpg" alt="">
+
                     </div>
                     <p class="text-neutral-950 text-sm text-center font-bold">Hair-You-Glo revitalises your hair health and
                         restores lost confidence related to hair concerns. Your hair is a vital part of your presentation
@@ -406,4 +408,5 @@ onMounted(() => {
         </div>
 
 
-</div></template>
+    </div>
+</template>

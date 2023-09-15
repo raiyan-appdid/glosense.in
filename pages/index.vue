@@ -852,6 +852,7 @@ onMounted(() => {
     {
       className: "tear left-0",
       transform: "translate(100%, 0)",
+
     },
     section
   );
@@ -861,6 +862,7 @@ onMounted(() => {
     "#showcase-slider",
     {
       "--fill-till": "+=34",
+      duration: 10
     },
     section
   );
@@ -1060,7 +1062,7 @@ const updateDotValue = (value) => {
             </h4>
           </div>
           <div class="elegance-text">
-            <h2 class="elegance-text-2 font-bold text-xl mt-3">Easy to use - Plant Based - Strengthen hair</h2>
+            <h2 class="elegance-text-2 font-bold text-xl mt-3">Simple Plant Based & Healthy Super Blends.</h2>
           </div>
           <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
           <div class="absolute w-screen bottom-[9rem]" style="   
@@ -1116,7 +1118,7 @@ const updateDotValue = (value) => {
           </div>
         </div>
         <div class="custom-image opacity-0">
-          <img width="100%" src="/images/raiyan-slider.jpg" alt="">
+          <img width="100%" src="/images/website-banner-01.jpg" alt="">
         </div>
       </div>
 
@@ -1125,15 +1127,14 @@ const updateDotValue = (value) => {
         <h4 class="text-[2rem] believe-text font-extrabold text-secondary elegance-text-1">We believe in fixing the root
           cause, <br /> not quick results!</h4>
         <div id="showcase-images" class="relative h-[400px] mb-5">
-          <div
-            class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[355deg]">
+          <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[355deg]">
             <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-3@4x.png" alt="" />
           </div>
-          <div class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
+          <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
             <div class="tear"></div>
             <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-2@4x.png" alt="" />
           </div>
-          <div class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[5deg]">
+          <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[5deg]">
             <div class="tear"></div>
             <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-1@4x.png" alt="" />
           </div>
@@ -1147,7 +1148,7 @@ const updateDotValue = (value) => {
             </div>
           </div>
         </div>
-        <h4 class="text-[2rem] believe-text font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
+        <h4 class="text-[1rem] believe-text font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
           Artificial Sweetener-No Added Flavors-Lactose Free-No Allergen</h4>
       </div>
 
@@ -1171,7 +1172,8 @@ const updateDotValue = (value) => {
             </p>
           </div>
           <div class="col-span-4">
-            <div class="h-[500px] w-[400px] bg-emerald-500 rounded-xl"></div>
+            <img src="/images/last-image.jpg" alt="">
+            <!-- <div class="h-[500px] w-[400px] bg-emerald-500 rounded-xl"></div> -->
           </div>
         </div>
       </div>

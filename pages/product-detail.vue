@@ -85,7 +85,7 @@ onMounted(() => {
                     <p class="my-5">Introducing Glosense HairRevive Serum, your go-to solution for achieving healthy and
                         strong hair that
                         shines with vitality</p>
-                    <div class="flex my-5">
+                    <!-- <div class="flex my-5">
                         <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#eab508"
                                     d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
@@ -107,7 +107,7 @@ onMounted(() => {
                                     d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                             </svg></span>
                         <span class="text-2xl font bold my-auto ml-2">10 Reviews</span>
-                    </div>
+                    </div> -->
                     <div class="flex">
                         <span class="font-extrabold text-4xl">Rs. 899</span>
                         <span class="font-medium text-lg bg-red-300 p-2 mx-auto"><s>Rs.999</s> 10% Off</span>
@@ -126,12 +126,12 @@ onMounted(() => {
                 </div>
             </div>
 
-            <div class="my-5">
+            <!-- <div class="my-5">
                 <h2 class="font-bold">Solution For: </h2>
                 <p>Solution For:
                     It looks like your message got cut off. Could you please provide more context or details about the
                     problem or situation you need a solution for?</p>
-            </div>
+            </div> -->
 
             <!-- <div class="flex bg-white justify-between rounded-xl">
                 <input type="text" name="" class="w-2/3 h-9 rounded-xl p-6" placeholder="Type your comments....."
@@ -140,7 +140,7 @@ onMounted(() => {
             </div> -->
 
 
-            <div class="container my-5">
+            <div class="container mx-auto my-5">
                 <div class="grid grid-cols-12">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 leading-8 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">Helps in: </h2>
@@ -150,7 +150,7 @@ onMounted(() => {
                             -Reducing hair loss, and strengthening hair strands.
                         </p>
                     </div>
-                    <div class="sm:col-span-5 col-span-12 order-1 sm:order-2">
+                    <div class="sm:col-span-5 col-span-12 order-1 sm:flex sm:justify-end sm:order-2">
                         <img src="/images/product-details-2.png" class="sm:w-2/3 w-full" alt="" />
                     </div>
                 </div>
@@ -175,7 +175,7 @@ onMounted(() => {
                         <p>You can consume it any time of the day, but for better experience we suggest consuming it in the
                             morning.</p>
                     </div>
-                    <div class="sm:col-span-5 col-span-12 order-1 sm:order-2">
+                    <div class="sm:col-span-5 col-span-12 order-1 sm:flex sm:justify-end sm:order-2">
                         <img src="/images/product-details-4.png" class="sm:w-2/3 w-full" alt="" />
                     </div>
                 </div>
@@ -193,7 +193,7 @@ onMounted(() => {
                 </div>
             </div>
 
-            <div class="container py-5 leading-10">
+            <div class="container mx-auto py-5 leading-10">
                 <h2 class="text-center text-4xl font-extrabold text-secondary">HOW IT WORKS:</h2>
                 <h3 class=" text-2xl font-bold ">-Effectively suppress DHT🌿:</h3>
                 <p>Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood circulation, and
@@ -216,7 +216,7 @@ onMounted(() => {
                 </p>
             </div>
 
-            <div class="container py-5 leading-10">
+            <div class="container mx-auto py-5 leading-10">
                 <h2 class="text-center text-4xl font-extrabold text-secondary">WHAT’S IN IT?</h2>
                 <h3 class=" text-2xl font-bold ">-AMLA:</h3>
                 <p>Indian Gooseberry better known as Amla, contains Vitamin C, which is helpful to boost collagen for
@@ -237,7 +237,7 @@ onMounted(() => {
                     and reduces hair loss.
                 </p>
             </div>
-            <div class="container py-5 leading-10">
+            <div class="container mx-auto py-5 leading-10">
                 <h2 class="text-center text-4xl font-extrabold text-secondary">WHAT TO EXPECT:
                 </h2>
                 <h3 class=" text-2xl font-bold ">-After 4 weeks:</h3>
@@ -281,12 +281,12 @@ onMounted(() => {
 
                     <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-12 sm:col-span-4">
-                            <img src="/images/product-review-1.png" alt="" />
+                            <img class="w-3/4" src="/images/jar2.png" alt="" />
                         </div>
                         <div class="col-span-12 sm:col-span-8 my-auto">
                             <h2 class="font-bold text-xl">Hair you glo for Healthy & Strong Hair</h2>
                             <div class="flex my-2">
-                                <span class="text-3xl font-extrabold my-auto mr-4">4.2</span>
+                                <!-- <span class="text-3xl font-extrabold my-auto mr-4">4.2</span>
                                 <span><svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="#eab508"
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
@@ -306,9 +306,9 @@ onMounted(() => {
                                 <span><svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="#eab508"
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                                    </svg></span>
+                                    </svg></span> -->
                             </div>
-                            <p>27 reviews</p>
+                            <!-- <p>0 reviews</p> -->
 
 
                             <div class="stars-slider w-full flex items-center">
