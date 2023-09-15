@@ -25,63 +25,63 @@ definePageMeta({
     middleware: [
         function (to, from) {
             const token = useCookie();
-            if (token.value) {
-                return navigateTo('product-detail')
-            }
+            // if (token.value) {
+            //     return navigateTo('product-detail')
+            // }
         },
     ],
 });
 
 async function handleSubmit() {
-    Notiflix.Loading.pulse('Loading...');
+    // Notiflix.Loading.pulse('Loading...');
 
-    Notiflix.Notify.success('Sol lucet omnibus');
-    await useFetch("https://glosense.in/sanctum/csrf-cookie", {
-        credentials: "include",
-    })
-    const csrf_token = useCookie('XSRF-TOKEN');
-    console.log(csrf_token, "csrf_token");
-    const { data, error, pending, refresh } = await useFetch(`${apiUrl}/user/register`, {
-        method: "POST",
-        headers: {
-            "accept": "application/json",
-            "X-XSRF-TOKEN": csrf_token.value,
-        },
-        body: {
-            first_name: name.value,
-            email: email.value,
-            phone: phone.value,
-            password: password.value,
-            password_confirmation: confirm_password.value,
-        },
-        onResponse({ request, response, options }) {
-            Notiflix.Loading.remove();
+    // Notiflix.Notify.success('Sol lucet omnibus');
+    // await useFetch("https://glosense.in/sanctum/csrf-cookie", {
+    //     credentials: "include",
+    // })
+    // const csrf_token = useCookie('XSRF-TOKEN');
+    // console.log(csrf_token, "csrf_token");
+    // const { data, error, pending, refresh } = await useFetch(`${apiUrl}/user/register`, {
+    //     method: "POST",
+    //     headers: {
+    //         "accept": "application/json",
+    //         "X-XSRF-TOKEN": csrf_token.value,
+    //     },
+    //     body: {
+    //         first_name: name.value,
+    //         email: email.value,
+    //         phone: phone.value,
+    //         password: password.value,
+    //         password_confirmation: confirm_password.value,
+    //     },
+    //     onResponse({ request, response, options }) {
+    //         Notiflix.Loading.remove();
 
-            if (response._data.token != undefined) {
-                token.value = response._data.token;
-                Swal.fire({
-                    title: "Registered",
-                    icon: 'success',
-                    confirmButtonText: 'Cool'
-                });
-                name.value = "";
-                email.value = "";
-                phone.value = "";
-                password.value = "";
-                confirm_password.value = "";
-                return navigateTo('product-detail')
-            }
-        },
-        onResponseError({ request, response, options }) {
-            Notiflix.Loading.remove();
+    //         if (response._data.token != undefined) {
+    //             token.value = response._data.token;
+    //             Swal.fire({
+    //                 title: "Registered",
+    //                 icon: 'success',
+    //                 confirmButtonText: 'Cool'
+    //             });
+    //             name.value = "";
+    //             email.value = "";
+    //             phone.value = "";
+    //             password.value = "";
+    //             confirm_password.value = "";
+    //             return navigateTo('product-detail')
+    //         }
+    //     },
+    //     onResponseError({ request, response, options }) {
+    //         Notiflix.Loading.remove();
 
-            Swal.fire({
-                title: response._data.message,
-                icon: 'error',
-                confirmButtonText: 'Error'
-            });
-        },
-    });
+    //         Swal.fire({
+    //             title: response._data.message,
+    //             icon: 'error',
+    //             confirmButtonText: 'Error'
+    //         });
+    //     },
+    // });
 }
 </script>
 
