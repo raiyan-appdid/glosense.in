@@ -486,7 +486,7 @@ onMounted(() => {
   tlShowcase.to('.a', {
     rotation: 720,
     // duration: 1,
-    duration: 3,
+    duration: 10,
   })
   tlShowcase.to('.what-text', {
     // rotation: 720,
@@ -921,75 +921,13 @@ const updateDotValue = (value) => {
           <img class="absolute w-[8rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png" alt="" />
           <img class="absolute w-auto right-0 top-[10rem]" src="/images/rl-small.png" alt="" />
         </div>
-        <div class="home-text h-screen flex align-middle flex-col justify-center mt-[6rem]" style="align-items: center;">
-          <h4 class="text-3xl ">Unlock the essence fo self-care</h4>
+        <div class="home-text h-screen flex align-middle flex-col justify-center mt-[10rem]" style="align-items: center;">
+          <h4 class="text-3xl ">Unlock the essence for self-care</h4>
           <h4 class="text-3xl ">through the magic of superfoods.</h4>
           <h4 class="mt-5 text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl"><a href="/about">Know
               more</a></h4>
         </div>
       </div>
-
-
-      <!--   <div id="ingredient-section" class="min-h-screen relative border-green-500">
-        <h4 class="text-6xl font-extrabold text-secondary">WHAT'S IN IT</h4>
-        <div>
-          <div class="h-20 w-20 absolute inset-x-0 m-auto">
-            <img class="opacity-0 absolute ingredient-1 h-20" src="/images/Asset-32-4x.png" alt="" />
-            <img class="opacity-0 absolute ingredient-2 h-20" src="/images/Asset-32-4x.png" alt="" />
-            <img class="opacity-0 absolute ingredient-3 h-20" src="/images/Asset-32-4x.png" alt="" />
-            <img class="opacity-0 absolute ingredient-4 h-20" src="/images/Asset-32-4x.png" alt="" />
-            <img class="opacity-0 absolute ingredient-5 h-20" src="/images/Asset-32-4x.png" alt="" />
-            <img class="opacity-0 absolute ingredient-6 h-20" src="/images/Asset-32-4x.png" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div id="vitamin-section" class="min-h-screen relative border-red-500">
-        <h1
-          class="text-[9rem] absolute moving-text font-[900] text-white  bg-transparent inset-x-0 tt-1 translate-x-[100rem]"
-          style="
-            text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
-              -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
-          ">
-          PROTEIN 1
-        </h1>
-        <h1
-          class="text-[9rem] absolute moving-text font-[900] text-white  bg-transparent inset-x-0 tt-2 translate-x-[100rem]"
-          style="
-            text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
-              -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
-          ">
-          PROTEIN 2
-        </h1>
-
-        <div class="h-[15rem]"></div>
-        <h1
-          class="text-[9rem] absolute bottom-40 moving-text font-[900] text-secondary  inset-x-0 tb-1  translate-x-[-100rem]">
-          VITAMIN C 1
-        </h1>
-        <h1
-          class="text-[9rem] absolute bottom-40 moving-text font-[900] text-secondary  inset-x-0 tb-2  translate-x-[-100rem]">
-          VITAMIN C 2
-        </h1>
-
-      </div>
-
-      <div id="effect-section" class="min-h-screen pt-16 flex justify-center items-center relative mt-10">
-        <div class="relative h-40 w-40 effect-holder">
-          <h4 class="text-[2rem] text-secondary font-extrabold absolute opacity-0 fc-1">
-            Prevent Damage
-          </h4>
-          <h4 class="text-[2rem] text-secondary font-extrabold absolute opacity-0 fc-2">
-            Prevent Damage
-          </h4>
-          <h4 class="text-[2rem] text-secondary font-extrabold absolute opacity-0 fc-3">
-            Prevent Damage
-          </h4>
-          <h4 class="text-[2rem] text-secondary font-extrabold absolute opacity-0 fc-4">
-            Prevent Damage
-          </h4>
-        </div>
-      </div> -->
 
 
       <div id="showcase-section" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
@@ -1020,21 +958,15 @@ const updateDotValue = (value) => {
 
           </div>
           <!-- <p class="vitamin-custom">Vitamins</p> -->
-          <h1 class="text-[6rem] absolute vitamin-custom font-[900] text-white top-[7rem]  bg-transparent inset-x-0 tt-1"
-            style="
-            text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
-              -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
-          ">
-            Improves -Scalp Health
+          <h1
+            class="text-[6rem] absolute vitamin-custom font-[900] text-primary top-[7rem]  bg-transparent inset-x-0 tt-1">
+            Improves
           </h1>
           <!-- <p class="vitamin-custom-2">Vitamins - 2</p> -->
 
-          <h1 class="text-[6rem] absolute vitamin-custom-2 font-[900] text-white top-[7rem] bg-transparent inset-x-0 tt-2"
-            style="
-            text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
-              -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;
-          ">
-            Balance- Hair Growth
+          <h1
+            class="text-[6rem] text-primary absolute vitamin-custom-2 font-[900] top-[7rem] bg-transparent inset-x-0 tt-2">
+            Balance
           </h1>
 
           <div class="absolute top-[7rem] w-screen">
@@ -1042,7 +974,7 @@ const updateDotValue = (value) => {
               WHAT'S IN IT?</h4>
           </div>
           <div class="box a flex justify-center align-middle">
-            <img class="h-[280px] w-[250px]" src="/images/jar.png" alt="">
+            <img class="z-50 h-[280px] w-[250px]" src="/images/jar2.png" alt="">
           </div>
           <div class="svg-align flex justify-center">
             <div class="svg-div-align mt-[10rem] mr-[7rem]">
@@ -1095,37 +1027,36 @@ const updateDotValue = (value) => {
             </div>
             <div class="ingredient-my-1 flex items-center flex-col">
               <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-02.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Pomegranate</h3>
+              <h3 class="mt-5 text-xl text-primary font-bold">Pomegranate</h3>
             </div>
             <div class="ingredient-my-2 flex items-center flex-col">
               <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-03.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Cinnamon Bark</h3>
+              <h3 class="mt-5 text-xl text-primary font-bold">Cinnamon Bark</h3>
             </div>
 
             <div class="ingredient-my-3 flex items-center flex-col">
               <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-04.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Amla</h3>
+              <h3 class="mt-5 text-xl text-primary font-bold">Amla</h3>
             </div>
 
             <div class="ingredient-my-4 opacity-0 flex items-center flex-col">
               <img class="scale-150  h-20" src="/images/Ingradients-07.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Orange</h3>
+              <h3 class="mt-5 text-xl text-primary font-bold">Orange</h3>
             </div>
             <div class="ingredient-my-5 opacity-0 flex items-center flex-col">
               <img class="scale-150  h-20" src="/images/Ingradients-09.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Sea Buckthom</h3>
+              <h3 class="mt-5 text-xl text-primary font-bold">Sea Buckthom</h3>
             </div>
             <div class="ingredient-my-6 opacity-0 flex items-center flex-col">
               <img class="scale-150  h-20" src="/images/Ingradients-10.png" alt="" />
-              <h3 class="mt-5 text-2xl font-bold">Gotu Kola Leaf</h3>
+              <h3 class="mt-5 text-xl text-primary font-bold">Gotu Kola Leaf</h3>
             </div>
           </div>
           <div class="absolute bottom-[10rem] w-screen">
             <h4 class="text-xl text-center font-extrabold text-secondary opacity-0 what-text">
-              Product Info: Hair You Glo contains Amla, sea buckthorn, <br />Lemon powder along with 7 more Superfoods
+              Hair You Glo contains Amla, sea buckthorn, <br />Lemon powder along with 7 more Superfoods
               which
-              have…<br />
-              (Image about what’s in it & benefits about it)
+              have.
             </h4>
           </div>
           <div class="elegance-text">
@@ -1143,7 +1074,7 @@ const updateDotValue = (value) => {
             text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
               -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
           ">
-              Enhance- Follicle Health
+              Hair Growth
             </h1>
           </div>
 
@@ -1158,7 +1089,7 @@ const updateDotValue = (value) => {
               text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
                 -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
             ">
-              Reduce -Hair Loss
+              Scalp Health
             </h1>
           </div>
 
@@ -1169,17 +1100,17 @@ const updateDotValue = (value) => {
 
           <div class="custom-circulating mt-12">
             <h1
-              class="text-[2rem] circulating-text-1 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-1">
+              class="text-[2rem] circulating-text-1 opacity-0 absolute font-[1000] text-secondary  bg-transparent inset-x-0 tt-1">
               Effectively <br /> suppress DHT
             </h1>
-            <h1 class="text-[2rem] absolute font-[1000] text-orange-400 circulating-text-2 opacity-0  inset-x-0 tb-1 ">
+            <h1 class="text-[2rem] absolute font-[1000] text-primary circulating-text-2 opacity-0  inset-x-0 tb-1 ">
               Maintains <br /> pH Level
             </h1>
             <h1
-              class="text-[2rem] circulating-text-3 opacity-0 absolute font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2">
+              class="text-[2rem] circulating-text-3 opacity-0 absolute font-[1000] text-primary  bg-transparent inset-x-0 tt-2">
               Improves Blood <br /> Circulation
             </h1>
-            <h1 class="text-[2rem] absolute font-[1000] opacity-0 circulating-text-4 text-orange-400  inset-x-0 tb-2 ">
+            <h1 class="text-[2rem] absolute font-[1000] opacity-0 circulating-text-4  text-secondary inset-x-0 tb-2 ">
               Supports <br /> Collagen Synthesis
             </h1>
           </div>

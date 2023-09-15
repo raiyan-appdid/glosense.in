@@ -342,9 +342,8 @@ onMounted(() => {
                 </h2>
                 <h4
                     class="text-sm  -bottom-[200px] text-center absolute opacity-0 what-text-responsive font-extrabold text-secondary w-screen">
-                    Product Info: Hair You Glo contains Amla, sea buckthorn, Lemon powder along with 7 more Superfoods which
-                    have…<br />
-                    (Image about what’s in it & benefits about it)
+                    Hair You Glo contains Amla, sea buckthorn, Lemon powder along with 7 more Superfoods which
+                    have.
                 </h4>
 
                 <!-- <div class="ingredients-responsive absolute"> -->

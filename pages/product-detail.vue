@@ -194,22 +194,22 @@ onMounted(() => {
             </div>
 
             <div class="container py-5 leading-10">
-                <h2 class="text-center text-3xl font-extrabold text-secondary">HOW IT WORKS:</h2>
-                <h3 class=" text-2xl font-bold ">Effectively suppress DHT🌿:</h3>
+                <h2 class="text-center text-4xl font-extrabold text-secondary">HOW IT WORKS:</h2>
+                <h3 class=" text-2xl font-bold ">-Effectively suppress DHT🌿:</h3>
                 <p>Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood circulation, and
                     promote hair growth while suppressing DHT.
                 </p>
-                <h3 class=" text-2xl font-bold ">Maintains pH Level 🔗:
+                <h3 class=" text-2xl font-bold ">-Maintains pH Level 🔗:
                 </h3>
                 <p>Lemon balances scalp pH, prevents dandruff, and fosters a healthy environment for hair follicles where
                     Fenugreek seeds enhance hair texture, shine, resilience, and support growth.
                 </p>
-                <h3 class=" text-2xl font-bold ">Improves Blood Circulation🧘:
+                <h3 class=" text-2xl font-bold ">-Improves Blood Circulation🧘:
                 </h3>
                 <p>Pomegranate and Orange, with vitamin E and antioxidants, boost scalp blood circulation, delivering
                     essential nutrients for healthier, thicker hair, while preventing oxidative stress and hair cell damage.
                 </p>
-                <h3 class=" text-2xl font-bold ">Supports Collagen Synthesis💫:
+                <h3 class=" text-2xl font-bold ">-Supports Collagen Synthesis💫:
                 </h3>
                 <p>Aids in collagen synthesis, vital for maintaining hair's strength and structure, reducing hair thinning
                     and breakage.
@@ -217,39 +217,39 @@ onMounted(() => {
             </div>
 
             <div class="container py-5 leading-10">
-                <h2 class="text-center text-3xl font-extrabold text-secondary">WHAT’S IN IT?</h2>
-                <h3 class=" text-2xl font-bold ">AMLA:</h3>
+                <h2 class="text-center text-4xl font-extrabold text-secondary">WHAT’S IN IT?</h2>
+                <h3 class=" text-2xl font-bold ">-AMLA:</h3>
                 <p>Indian Gooseberry better known as Amla, contains Vitamin C, which is helpful to boost collagen for
                     healthy hair and improves blood circulation to prevent dryness.
                 </p>
-                <h3 class=" text-2xl font-bold ">ORANGE
+                <h3 class=" text-2xl font-bold ">-ORANGE
                 </h3>
                 <p>A Citrus Fruit rich in vitamin E, an antioxidant that supports hair follicles, prevents oxidative stress,
                     and boosts hair health.
                 </p>
-                <h3 class=" text-2xl font-bold ">POMEGRANATE
+                <h3 class=" text-2xl font-bold ">-POMEGRANATE
                 </h3>
                 <p>Enhances hair elasticity, reduces breakage, and promotes growth for healthier hair.
                 </p>
-                <h3 class=" text-2xl font-bold ">SEA BUCKTHORN:
+                <h3 class=" text-2xl font-bold ">-SEA BUCKTHORN:
                 </h3>
                 <p>Packed with omega fatty acids, reduces inflammation, nourishes scalp and follicles, promotes hair growth,
                     and reduces hair loss.
                 </p>
             </div>
             <div class="container py-5 leading-10">
-                <h2 class="text-center text-3xl font-extrabold text-secondary">WHAT TO EXPECT:
+                <h2 class="text-center text-4xl font-extrabold text-secondary">WHAT TO EXPECT:
                 </h2>
-                <h3 class=" text-2xl font-bold ">After 4 weeks:</h3>
+                <h3 class=" text-2xl font-bold ">-After 4 weeks:</h3>
                 <p>Reduces hair fall and dandruff, minimises breakage and itchiness, while nourishing hair strands.
                 </p>
-                <h3 class=" text-2xl font-bold ">After 8 weeks:
+                <h3 class=" text-2xl font-bold ">-After 8 weeks:
                 </h3>
                 <p>Promotes healthy blood circulation, provides hydration to prevent dryness, and encourages the scalp to
                     maintain optimal oil and moisture levels.
 
                 </p>
-                <h3 class=" text-2xl font-bold ">After 12 weeks:
+                <h3 class=" text-2xl font-bold ">-After 12 weeks:
                 </h3>
                 <p>Reduces scalp inflammation and stress that leads to decreased hair fall, promoting visible root-level
                     hair growth, and boosts collagen production for enhanced hair elasticity.
@@ -276,7 +276,7 @@ onMounted(() => {
                 </div> -->
 
                 <div class="review">
-                    <h2 class="text-secondary text-center font-bold text-2xl my-10">Customer Review</h2>
+                    <h2 class="text-secondary text-center font-bold text-4xl my-10">Customer Reviews</h2>
 
 
                     <div class="grid grid-cols-12 gap-5">
@@ -379,7 +379,7 @@ onMounted(() => {
                         </div>
                     </div>
 
-                    <h2 class="text-secondary text-center text-2xl font-bold my-10">Comment</h2>
+                    <h2 class="text-secondary text-center text-2xl font-bold my-10">Comments</h2>
                     <div class="container mx-auto">
                         <h5 class="font-bold">All Reviews
                             <span class=" text-md font-medium mr-2 px-2 py-0.5 rounded bg-secondary text-white">23</span>
