@@ -875,7 +875,7 @@ onMounted(() => {
     {
       y: "-2rem",
       scale: 1.2
-    }, "+=1"); 
+    }, "+=1");
   section += 0.5;
   tlEfffect.to({}, { duration: 1 }, section);
 });
@@ -1062,7 +1062,7 @@ const updateDotValue = (value) => {
             </h4>
           </div>
           <div class="elegance-text">
-            <h2 class="elegance-text-2 font-bold text-xl mt-3">Easy to use - Plant Based - Strengthen hair</h2>
+            <h2 class="elegance-text-2 font-bold text-xl mt-3">Simple Plant Based & Healthy Super Blends.</h2>
           </div>
           <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
           <div class="absolute w-screen bottom-[9rem]" style="   
@@ -1127,15 +1127,14 @@ const updateDotValue = (value) => {
         <h4 class="text-[2rem] believe-text font-extrabold text-secondary elegance-text-1">We believe in fixing the root
           cause, <br /> not quick results!</h4>
         <div id="showcase-images" class="relative h-[400px] mb-5">
-          <div
-            class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[355deg]">
+          <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[355deg]">
             <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-3@4x.png" alt="" />
           </div>
-          <div class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
+          <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
             <div class="tear"></div>
             <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-2@4x.png" alt="" />
           </div>
-          <div class="absolute origin-center shadow-xl inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[5deg]">
+          <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[5deg]">
             <div class="tear"></div>
             <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-1@4x.png" alt="" />
           </div>
