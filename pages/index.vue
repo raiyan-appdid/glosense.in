@@ -852,6 +852,7 @@ onMounted(() => {
     {
       className: "tear left-0",
       transform: "translate(100%, 0)",
+
     },
     section
   );
@@ -861,6 +862,7 @@ onMounted(() => {
     "#showcase-slider",
     {
       "--fill-till": "+=34",
+      duration: 10
     },
     section
   );
@@ -873,7 +875,7 @@ onMounted(() => {
     {
       y: "-2rem",
       scale: 1.2
-    }, "+=1");
+    }, "+=1"); 
   section += 0.5;
   tlEfffect.to({}, { duration: 1 }, section);
 });
@@ -1147,7 +1149,7 @@ const updateDotValue = (value) => {
             </div>
           </div>
         </div>
-        <h4 class="text-[2rem] believe-text font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
+        <h4 class="text-[1rem] believe-text font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
           Artificial Sweetener-No Added Flavors-Lactose Free-No Allergen</h4>
       </div>
 
