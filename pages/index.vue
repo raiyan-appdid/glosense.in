@@ -1172,7 +1172,8 @@ const updateDotValue = (value) => {
             </p>
           </div>
           <div class="col-span-4">
-            <div class="h-[500px] w-[400px] bg-emerald-500 rounded-xl"></div>
+            <img src="/images/last-image.jpg" alt="">
+            <!-- <div class="h-[500px] w-[400px] bg-emerald-500 rounded-xl"></div> -->
           </div>
         </div>
       </div>
