@@ -281,7 +281,7 @@ onMounted(() => {
 
                     <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-12 sm:col-span-4">
-                            <img src="/images/jar2.png" alt="" />
+                            <img class="w-3/4" src="/images/jar2.png" alt="" />
                         </div>
                         <div class="col-span-12 sm:col-span-8 my-auto">
                             <h2 class="font-bold text-xl">Hair you glo for Healthy & Strong Hair</h2>
