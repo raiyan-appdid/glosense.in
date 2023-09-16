@@ -140,7 +140,7 @@ onMounted(() => {
             </div> -->
 
 
-            <div class="container my-5">
+            <div class="container mx-auto my-5">
                 <div class="grid grid-cols-12">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 leading-8 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">Helps in: </h2>
@@ -150,7 +150,7 @@ onMounted(() => {
                             -Reducing hair loss, and strengthening hair strands.
                         </p>
                     </div>
-                    <div class="sm:col-span-5 col-span-12 order-1 sm:order-2">
+                    <div class="sm:col-span-5 col-span-12 order-1 sm:flex sm:justify-end sm:order-2">
                         <img src="/images/product-details-2.png" class="sm:w-2/3 w-full" alt="" />
                     </div>
                 </div>
@@ -175,7 +175,7 @@ onMounted(() => {
                         <p>You can consume it any time of the day, but for better experience we suggest consuming it in the
                             morning.</p>
                     </div>
-                    <div class="sm:col-span-5 col-span-12 order-1 sm:order-2">
+                    <div class="sm:col-span-5 col-span-12 order-1 sm:flex sm:justify-end sm:order-2">
                         <img src="/images/product-details-4.png" class="sm:w-2/3 w-full" alt="" />
                     </div>
                 </div>
@@ -193,7 +193,7 @@ onMounted(() => {
                 </div>
             </div>
 
-            <div class="container py-5 leading-10">
+            <div class="container mx-auto py-5 leading-10">
                 <h2 class="text-center text-4xl font-extrabold text-secondary">HOW IT WORKS:</h2>
                 <h3 class=" text-2xl font-bold ">-Effectively suppress DHT🌿:</h3>
                 <p>Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood circulation, and
@@ -216,7 +216,7 @@ onMounted(() => {
                 </p>
             </div>
 
-            <div class="container py-5 leading-10">
+            <div class="container mx-auto py-5 leading-10">
                 <h2 class="text-center text-4xl font-extrabold text-secondary">WHAT’S IN IT?</h2>
                 <h3 class=" text-2xl font-bold ">-AMLA:</h3>
                 <p>Indian Gooseberry better known as Amla, contains Vitamin C, which is helpful to boost collagen for
@@ -237,7 +237,7 @@ onMounted(() => {
                     and reduces hair loss.
                 </p>
             </div>
-            <div class="container py-5 leading-10">
+            <div class="container mx-auto py-5 leading-10">
                 <h2 class="text-center text-4xl font-extrabold text-secondary">WHAT TO EXPECT:
                 </h2>
                 <h3 class=" text-2xl font-bold ">-After 4 weeks:</h3>
@@ -281,7 +281,7 @@ onMounted(() => {
 
                     <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-12 sm:col-span-4">
-                            <img src="/images/product-review-1.png" alt="" />
+                            <img src="/images/jar2.png" alt="" />
                         </div>
                         <div class="col-span-12 sm:col-span-8 my-auto">
                             <h2 class="font-bold text-xl">Hair you glo for Healthy & Strong Hair</h2>
@@ -308,7 +308,7 @@ onMounted(() => {
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                     </svg></span>
                             </div>
-                            <p>27 reviews</p>
+                            <p>0 reviews</p>
 
 
                             <div class="stars-slider w-full flex items-center">

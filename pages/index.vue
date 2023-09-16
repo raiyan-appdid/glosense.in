@@ -1116,7 +1116,7 @@ const updateDotValue = (value) => {
           </div>
         </div>
         <div class="custom-image opacity-0">
-          <img width="100%" src="/images/raiyan-slider.jpg" alt="">
+          <img width="100%" src="/images/Banner-desktop-view.jpg" alt="">
         </div>
       </div>
 
