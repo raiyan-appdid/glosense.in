@@ -85,7 +85,7 @@ onMounted(() => {
                     <p class="my-5">Introducing Glosense HairRevive Serum, your go-to solution for achieving healthy and
                         strong hair that
                         shines with vitality</p>
-                    <div class="flex my-5">
+                    <!-- <div class="flex my-5">
                         <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#eab508"
                                     d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
@@ -107,7 +107,7 @@ onMounted(() => {
                                     d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                             </svg></span>
                         <span class="text-2xl font bold my-auto ml-2">10 Reviews</span>
-                    </div>
+                    </div> -->
                     <div class="flex">
                         <span class="font-extrabold text-4xl">Rs. 899</span>
                         <span class="font-medium text-lg bg-red-300 p-2 mx-auto"><s>Rs.999</s> 10% Off</span>
@@ -126,12 +126,12 @@ onMounted(() => {
                 </div>
             </div>
 
-            <div class="my-5">
+            <!-- <div class="my-5">
                 <h2 class="font-bold">Solution For: </h2>
                 <p>Solution For:
                     It looks like your message got cut off. Could you please provide more context or details about the
                     problem or situation you need a solution for?</p>
-            </div>
+            </div> -->
 
             <!-- <div class="flex bg-white justify-between rounded-xl">
                 <input type="text" name="" class="w-2/3 h-9 rounded-xl p-6" placeholder="Type your comments....."
@@ -286,7 +286,7 @@ onMounted(() => {
                         <div class="col-span-12 sm:col-span-8 my-auto">
                             <h2 class="font-bold text-xl">Hair you glo for Healthy & Strong Hair</h2>
                             <div class="flex my-2">
-                                <span class="text-3xl font-extrabold my-auto mr-4">4.2</span>
+                                <!-- <span class="text-3xl font-extrabold my-auto mr-4">4.2</span>
                                 <span><svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="#eab508"
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
@@ -306,9 +306,9 @@ onMounted(() => {
                                 <span><svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="#eab508"
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                                    </svg></span>
+                                    </svg></span> -->
                             </div>
-                            <p>0 reviews</p>
+                            <!-- <p>0 reviews</p> -->
 
 
                             <div class="stars-slider w-full flex items-center">
