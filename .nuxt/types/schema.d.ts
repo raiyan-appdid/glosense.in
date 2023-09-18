@@ -14,8 +14,6 @@ declare module 'nuxt/schema' {
       cdnURL: string,
    },
 
-   modules: Array<string>,
-
    axios: {
       proxy: boolean,
 
