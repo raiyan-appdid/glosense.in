@@ -1,1 +1,0 @@
-{"version":3,"file":"logout-bece9ef1.js","sources":["../../../../pages/logout.vue"],"sourcesContent":["<script setup>\r\n\r\nconst token = useCookie();\r\ntoken.value = \"\";\r\n\r\n</script>\r\n\r\n<template>\r\n    log out\r\n</template>"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;AAEA,UAAM,QAAQ,UAAS;AACvB,UAAM,QAAQ;;;;;;;;;;;;"}
