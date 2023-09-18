@@ -1,5 +1,5 @@
 
-import { defuFn } from 'D:/projects/glow-sense/new-site/node_modules/defu/dist/defu.mjs'
+import { defuFn } from 'C:/Users/raiya/Appdid Live Projects/glow-sense/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 

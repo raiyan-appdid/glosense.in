@@ -165,7 +165,7 @@ export default {
     ],
     "dynamicImports": [
       "layouts/default.vue",
-      "virtual:nuxt:D:/projects/glow-sense/new-site/.nuxt/error-component.mjs"
+      "virtual:nuxt:C:/Users/raiya/Appdid Live Projects/glow-sense/.nuxt/error-component.mjs"
     ],
     "file": "entry.4c1a212c.js",
     "isEntry": true,
@@ -347,7 +347,7 @@ export default {
     "isDynamicEntry": true,
     "src": "pages/register.vue"
   },
-  "virtual:nuxt:D:/projects/glow-sense/new-site/.nuxt/error-component.mjs": {
+  "virtual:nuxt:C:/Users/raiya/Appdid Live Projects/glow-sense/.nuxt/error-component.mjs": {
     "resourceType": "script",
     "module": true,
     "dynamicImports": [
@@ -359,6 +359,6 @@ export default {
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
-    "src": "virtual:nuxt:D:/projects/glow-sense/new-site/.nuxt/error-component.mjs"
+    "src": "virtual:nuxt:C:/Users/raiya/Appdid Live Projects/glow-sense/.nuxt/error-component.mjs"
   }
 }
