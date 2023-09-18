@@ -114,7 +114,7 @@
                                     d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165h29.825" />
                             </svg>
                         </a>
-                        <a href="">
+                        <a target="_blank" href="https://www.instagram.com/glowing.essence/?igshid=YTQwZjQ0NmI0OA%3D%3D">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
                                 <g fill="none">
                                     <rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60" />
@@ -142,6 +142,12 @@
                             </svg>
                         </a>
                     </div>
+                    <h5 class="text-xl font-bold mt-6 sm:text-center xl:text-left">
+                        Contact Us
+                    </h5>
+                    <p>Email:<a class="underline text-secondary font-bold"
+                            href="mailto:connect@glosense.in">connect@glosense.in</a>
+                    </p>
                 </div>
             </div>
 
