@@ -4,7 +4,6 @@ export default defineNuxtConfig({
     public: {
       baseUrl: "https://glosense.in/api/v1",
     },
-    modules: ["@nuxtjs/axios", "@nuxtjs/auth-next"],
     axios: {
       proxy: true,
       credentials: true,
