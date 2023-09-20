@@ -101,7 +101,7 @@ onMounted(function () {
                     <img src="/images/shop-all.png" class="" alt="" />
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <img src="/images/blog.png" class="" alt="" />
+                    <a href="/blogs"> <img src="/images/blog.png" class="" alt="" /></a>
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
                     <img src="/images/recipes.png" class="" alt="" />
