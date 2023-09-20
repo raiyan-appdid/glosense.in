@@ -94,7 +94,6 @@ onMounted(function () {
                     </div>
                 </div>
             </div>
-            <!-- <div class=" bg-secondary my-4 p-0 h-3"></div> -->
             <h6 class="text-center text-4xl font-bold my-9">Where can we take you next?</h6>
             <div class=" text-center mx-auto flex justify-center gap-4">
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center sm:py-4">
