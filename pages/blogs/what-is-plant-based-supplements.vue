@@ -45,9 +45,9 @@
                     </li>
                 </ol>
             </nav>
-            <h2 class="text-primary text-3xl md:text-6xl py-10 font-bold">WHAT IS PLANT BASED SUPPLEMENTS?</h2>
+            <h2 class="text-primary text-3xl md:text-4xl py-10 font-bold">WHAT IS PLANT BASED SUPPLEMENTS?</h2>
             <img src="/images/blog-1.png" alt="">
-            <p class="my-10 md:text-3xl">In recent years, the term "plant-based" has taken the health and wellness world by
+            <p class="my-10 md:text-xl">In recent years, the term "plant-based" has taken the health and wellness world by
                 storm. From
                 plant-based
                 diets to supplements, this trend has gained immense popularity for all the right reasons.<br />
@@ -56,7 +56,7 @@
                 place in your daily routine.
             </p>
             <p class="text-xl md:text-4xl font-bold my-10">Why Plant-Based?</p>
-            <p class="my-10 md:text-3xl">In a world where we are bombarded with options, choosing the right supplements can
+            <p class="my-10 md:text-xl">In a world where we are bombarded with options, choosing the right supplements can
                 be overwhelming. So, why should you consider plant-based supplements? The answer lies in the purity and
                 effectiveness of these products.<br /><br />
                 Plant-based supplements are derived from natural sources like fruits, vegetables, herbs, and superfoods.
@@ -67,7 +67,7 @@
             <p class="text-xl md:text-4xl font-bold my-10">Why is it Important to consume Plant-Based Supplements for Your
                 Hair?
             </p>
-            <p class="my-10 md:text-3xl">-Nutrient-Rich Goodness: Plant-based supplements are packed with essential
+            <p class="my-10 md:text-xl">-Nutrient-Rich Goodness: Plant-based supplements are packed with essential
                 nutrients like vitamins, minerals, and antioxidants. These nourish your hair follicles, promoting healthy
                 growth and strength.<br /><br />
                 -Reduced Side Effects: Unlike some synthetic supplements, plant-based options are less likely to cause side
@@ -79,7 +79,7 @@
             </p>
             <p class="text-xl md:text-4xl font-bold my-10">WHY YOU SHOULD INCORPORATE PLANT BASED SUPPLEMENT??
             </p>
-            <p class="my-10 md:text-3xl">By now, you might be wondering how you can start benefiting from plant-based
+            <p class="my-10 md:text-xl">By now, you might be wondering how you can start benefiting from plant-based
                 supplements. Look no further than our very own Glosense. Our Hair Care Natural Supplement Powder is a
                 testament to the power of plant-based ingredients. Crafted with a blend of superfoods known for their
                 hair-boosting properties, our product is designed to provide your hair with the care it

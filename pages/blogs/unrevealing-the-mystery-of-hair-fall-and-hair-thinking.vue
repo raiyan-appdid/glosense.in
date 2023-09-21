@@ -46,19 +46,19 @@
                     </li>
                 </ol>
             </nav>
-            <h2 class="text-primary text-3xl md:text-6xl py-10 font-bold">UNREVEALING THE MYSTERY OF HAIR FALL & HAIR
+            <h2 class="text-primary text-3xl md:text-4xl py-10 font-bold">UNREVEALING THE MYSTERY OF HAIR FALL & HAIR
                 THINNING!!
             </h2>
             <img src="/images/blog-1.png" alt="">
-            <p class="my-10 md:text-3xl">In the hustle and bustle of daily life, it's not uncommon to notice changes in our
+            <p class="my-10 md:text-xl">In the hustle and bustle of daily life, it's not uncommon to notice changes in our
                 hair health. The mirror reflects hair that's not as voluminous as it used to be, or we find a little more
                 hair than usual on our brushes and in the shower drain. Hair thinning and fall can be distressing, but they
                 are often symptoms of underlying issues that may have gone unattended for too long. In this blog, we dive
                 deep into the reasons behind hair thinning, explore the often-overlooked problems, and offer a natural
                 solution to rejuvenate your locks.
             </p>
-            <p class="text-xl md:text-4xl font-bold my-10">The Root Causes of Hair Thinning and Fall:-</p>
-            <p class="my-10 md:text-3xl">Hair thinning and fall can be attributed to various factors, some of which are
+            <p class="text-xl md:text-3xl font-bold my-10">The Root Causes of Hair Thinning and Fall:-</p>
+            <p class="my-10 md:text-xl">Hair thinning and fall can be attributed to various factors, some of which are
                 often ignored or underestimated. Chronic stress, a common issue in modern life, can disrupt the hair growth
                 cycle, resulting in thinning and hair fall. Additionally, poor diet choices or a lack of essential nutrients
                 can weaken hair follicles, making them more prone to breakage. Fluctuations in hormones, often seen in
@@ -68,9 +68,9 @@
                 Excessive use of heat styling tools, harsh chemicals, and tight hairstyles can weaken and break hair
                 strands.
             </p>
-            <p class="text-xl md:text-4xl font-bold my-10">The Unattended Problems:-
+            <p class="text-xl md:text-3xl font-bold my-10">The Unattended Problems:-
             </p>
-            <p class="my-10 md:text-3xl">Amid our busy lives, we often overlook these problems, which gradually contribute
+            <p class="my-10 md:text-xl">Amid our busy lives, we often overlook these problems, which gradually contribute
                 to hair thinning and fall. Ignoring stress management can have a detrimental impact on your hair. Finding
                 effective stress-reduction techniques like meditation, yoga, or hobbies can help protect your hair. Balanced
                 nutrition is also key. A well-rounded diet rich in vitamins, minerals, and proteins is crucial for hair
@@ -80,22 +80,22 @@
                 Incorporating a scalp-care routine can make a significant difference. Lastly, be mindful of the hair
                 products you use. Opt for natural, gentle, and nourishing options to protect your hair.
             </p>
-            <p class="my-10 md:text-3xl">Now that we've explored the underlying problems contributing to hair thinning and
+            <p class="my-10 md:text-xl">Now that we've explored the underlying problems contributing to hair thinning and
                 fall, it's time to introduce a natural solution HAIR-YOU-GLO. Our healthy hair care supplement powder is
                 designed to address these issues effectively. Packed with a blend of essential nutrients, vitamins, and
                 plant-based ingredients, it promotes hair growth, strengthens follicles, and nourishes your hair from
                 within.
             </p>
-            <p class="my-10 md:text-3xl">Say goodbye to the unattended problems causing hair woes and embrace a holistic
+            <p class="my-10 md:text-xl">Say goodbye to the unattended problems causing hair woes and embrace a holistic
                 solution that cares for your hair's health. Discover the power of nature with HAIR-YOU-GLO and embark on
                 your journey to healthier, fuller hair.
             </p>
-            <p class="my-10 md:text-3xl">Don't let hair thinning and fall go unattended any longer. Take charge of your hair
+            <p class="my-10 md:text-xl">Don't let hair thinning and fall go unattended any longer. Take charge of your hair
                 health by addressing the root causes and making conscious choices. With Hair-you-glo, you can complement
                 your efforts and achieve the hair you've always wanted. Say hello to healthier, more vibrant hair and
                 goodbye to unattended problems. Start your journey today.
             </p>
-            <!-- <p class="text-xl md:text-4xl font-bold my-10">WHY YOU SHOULD INCORPORATE PLANT BASED SUPPLEMENT??
+            <!-- <p class="text-xl md:text-3xl font-bold my-10">WHY YOU SHOULD INCORPORATE PLANT BASED SUPPLEMENT??
             </p>
             <p class="my-10 md:text-3xl">By now, you might be wondering how you can start benefiting from plant-based
                 supplements. Look no further than our very own Glosense. Our Hair Care Natural Supplement Powder is a

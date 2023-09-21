@@ -24,6 +24,19 @@ const showBlur = ref(false);
 const handleScroll = () => {
   showBlur.value = window.scrollY > 300;
 };
+function openModal() {
+  closeSideBar()
+  const token = useCookie();
+  // if (!token.value) {
+  let modal = document.getElementById('authentication-modal')
+  modal.classList.remove('hidden');
+  // }
+  // else {
+  // getUser();
+  // gateWayIntegration();
+  //cc avenue gateway.....
+  // }
+}
 
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
@@ -35,6 +48,7 @@ onUnmounted(() => {
 </script>
 
 <template>
+  <LoginModal />
   <div>
     <div id="sidebar" class="sidebar fixed top-0 w-full flex justify-between sm:py-8 sm:px-20 py-5 px-10 z-10"
       :class="showBlur ? 'show-blur' : ''">
@@ -52,6 +66,11 @@ onUnmounted(() => {
         <p class="ms-5 text-sm font-semibold text-secondary"><span class="hidden sm:block">MENU</span></p>
       </div>
       <div class="flex items-center">
+        <div class="hidden sm:block">
+          <button @click="openModal"
+            class="px-4 py-1 rounded-md bg-primary text-white hover:bg-[#915446fc]">Login</button>
+          <a href="/register"><button class="px-4 py-1 rounded-md bg-secondary text-white ml-2">Register</button></a>
+        </div>
         <!-- <p class="text-sm font-semibold text-white">CONTACT US</p> -->
       </div>
 
@@ -91,6 +110,16 @@ onUnmounted(() => {
       </button>
       <div class="py-4 mt-2 overflow-y-auto">
         <ul class="space-y-2 font-medium">
+          <div class="sm:hidden flex">
+            <a href="#" @click="openModal"
+              class="flex ml-9 bg-secondary w-fit items-center p-2 text-bold  rounded-lg text-neutral-50  hover:bg-[#e3694f] group">
+              Login
+            </a>
+            <a href="/register"
+              class="flex ml-2 bg-[#e3694f] w-fit items-center p-2 text-bold  rounded-lg text-neutral-50  hover:bg-[#e3694f] group">
+              Register
+            </a>
+          </div>
           <li @click="closeSideBar">
             <a href="/"
               class="flex ml-9 items-center p-2 text-bold text-gray-900 rounded-lg dark:text-neutral-50  dark:hover:bg-[#e3694f] group">

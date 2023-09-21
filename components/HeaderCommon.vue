@@ -19,6 +19,20 @@ function closeSideBar() {
   value.classList.remove('transform-none');
 }
 
+function openModal() {
+  closeSideBar()
+  const token = useCookie();
+  // if (!token.value) {
+  let modal = document.getElementById('authentication-modal')
+  modal.classList.remove('hidden');
+  // }
+  // else {
+  // getUser();
+  // gateWayIntegration();
+  //cc avenue gateway.....
+  // }
+}
+
 const showBlur = ref(false);
 
 const handleScroll = () => {
@@ -35,6 +49,8 @@ onUnmounted(() => {
 </script>
 
 <template>
+  <LoginModal />
+
   <div>
     <div id="sidebar" class="sidebar flex justify-between fixed top-0 w-full sm:py-4 sm:px-10 py-2 px-10 z-10 show-blur">
       <div @click="showSideBar" @mouseover="handleHover" @mouseout="handleHover"
@@ -56,7 +72,14 @@ onUnmounted(() => {
 
         <a href="/"><img src="/images/logo.png" class="w-[10rem]" alt="" /></a>
       </div>
-      <div></div>
+      <div class="my-auto">
+        <div class="hidden sm:block">
+          <button @click="openModal"
+            class="px-4 py-1 rounded-md bg-primary text-white hover:bg-[#915446fc]">Login</button>
+          <a href="/register"><button class="px-4 py-1 rounded-md bg-secondary text-white ml-2">Register</button></a>
+        </div>
+      </div>
+
 
 
       <!-- drawer component -->
@@ -78,6 +101,22 @@ onUnmounted(() => {
       </button>
       <div class="py-4 mt-2 overflow-y-auto">
         <ul class="space-y-2 font-medium">
+          <div class="sm:hidden flex">
+
+            <!-- <li> -->
+            <a href="#" @click="openModal"
+              class="flex ml-9 bg-secondary w-fit items-center p-2 text-bold  rounded-lg text-neutral-50  hover:bg-[#e3694f] group">
+              Login
+            </a>
+            <!-- </li> -->
+            <!-- <li class="mt-2"> -->
+            <a href="/register"
+              class="flex ml-2 bg-[#e3694f] w-fit items-center p-2 text-bold  rounded-lg text-neutral-50  hover:bg-[#e3694f] group">
+              Register
+            </a>
+          </div>
+
+
           <li @click="closeSideBar">
             <a href="/"
               class="flex ml-9 items-center p-2 text-bold text-gray-900 rounded-lg dark:text-neutral-50  dark:hover:bg-[#e3694f] group">

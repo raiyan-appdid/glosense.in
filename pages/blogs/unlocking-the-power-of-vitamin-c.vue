@@ -45,26 +45,26 @@
                     </li>
                 </ol>
             </nav>
-            <h2 class="text-primary text-3xl md:text-6xl py-10 font-bold">Unlocking the Power of Vitamin C: A Key to Healthy
+            <h2 class="text-primary text-3xl md:text-4xl py-10 font-bold">Unlocking the Power of Vitamin C: A Key to Healthy
                 Hair</h2>
             <img src="/images/blog-1.png" alt="">
-            <p class="my-10 md:text-3xl">In the pursuit of healthy, vibrant hair, we often turn to various products and
+            <p class="my-10 md:text-xl">In the pursuit of healthy, vibrant hair, we often turn to various products and
                 treatments. However, the key to achieving luscious locks might be simpler than you think. At [Your
                 Nutraceutical Brand], we understand the importance of nourishing your hair from within, and that's why we're
                 diving deep into the wonders of Vitamin C in this blog.
 
             </p>
-            <p class="text-xl md:text-4xl font-bold my-10">Why Vitamin C?
+            <p class="text-xl md:text-3xl font-bold my-10">Why Vitamin C?
             </p>
-            <p class="my-10 md:text-3xl">Before we explore the fantastic advantages of Vitamin C, it's essential to
+            <p class="my-10 md:text-xl">Before we explore the fantastic advantages of Vitamin C, it's essential to
                 understand why it's worth our attention. Vitamin C, also known as ascorbic acid, is a vital nutrient for
                 overall health. It plays a significant role in maintaining the health of your hair, skin, and nails, making
                 it a natural choice for our hair care supplement powder.
 
             </p>
-            <p class="text-xl md:text-4xl font-bold my-10">The Advantages of Vitamin C for Your Hair
+            <p class="text-xl md:text-3xl font-bold my-10">The Advantages of Vitamin C for Your Hair
             </p>
-            <p class="my-10 md:text-3xl">Collagen Production: Vitamin C is a key player in collagen production, a protein
+            <p class="my-10 md:text-xl">Collagen Production: Vitamin C is a key player in collagen production, a protein
                 that provides strength and structure to your hair. When your body has sufficient Vitamin C, it can produce
                 collagen more effectively, leading to stronger and healthier hair follicles.<br /><br />
 
@@ -76,9 +76,9 @@
                 growth. It also helps in preventing hair loss by strengthening the hair shafts.
 
             </p>
-            <p class="text-xl md:text-4xl font-bold my-10">How to Get Your Daily Dose of Vitamin C
+            <p class="text-xl md:text-3xl font-bold my-10">How to Get Your Daily Dose of Vitamin C
             </p>
-            <p class="my-10 md:text-3xl">You can incorporate Vitamin C into your diet in various delicious ways:<br /><br />
+            <p class="my-10 md:text-xl">You can incorporate Vitamin C into your diet in various delicious ways:<br /><br />
 
                 Citrus Fruits: Oranges, lemons, and grapefruits are well-known sources of Vitamin C.<br /><br />
 
@@ -91,9 +91,9 @@
                 Product Name] in your routine. Our supplement powder combines the power of Vitamin C with other superfoods
                 to provide optimal nourishment for your hair.
             </p>
-            <p class="text-xl md:text-4xl font-bold my-10">The Essence of Vitamin C
+            <p class="text-xl md:text-3xl font-bold my-10">The Essence of Vitamin C
             </p>
-            <p class="my-10 md:text-3xl">In conclusion, Vitamin C is not only essential for your overall well-being but also
+            <p class="my-10 md:text-xl">In conclusion, Vitamin C is not only essential for your overall well-being but also
                 a key player in maintaining the health and beauty of your hair. Its role in collagen production, antioxidant
                 protection, and hair growth cannot be overstated.<br /><br />
 
