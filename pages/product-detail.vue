@@ -1,8 +1,8 @@
 <script setup>
-const token = useCookie();
+const token = useCookie('token');
 
 function openModal() {
-    const token = useCookie();
+    const token = useCookie('token');
     if (!token.value) {
         let modal = document.getElementById('authentication-modal')
         modal.classList.remove('hidden');
