@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 
 const email = ref("");
 const password = ref("");
-const token = useCookie();
+const token = useCookie('token');
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;

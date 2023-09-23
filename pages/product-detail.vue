@@ -9,12 +9,13 @@ function openModal() {
     }
     else {
         getUser();
-        // gateWayIntegration();
+        gateWayIntegration();
         //cc avenue gateway.....
     }
 }
 
 function gateWayIntegration(name = null) {
+    return navigateTo('billing-details')
     // alert(`Welcome ${name}! We are in the middle of Payment Gateway Integration.`);
 
 

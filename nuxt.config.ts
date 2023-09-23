@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      baseUrl: "https://glosense.in/api/v1",
+      baseUrl: "https://admin.glosense.in/api/v1",
     },
     axios: {
       proxy: true,
@@ -28,5 +28,5 @@ export default defineNuxtConfig({
   pages: true,
   css: ["@/assets/css/main.css"],
 
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
 });

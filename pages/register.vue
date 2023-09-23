@@ -4,18 +4,20 @@
 import { ref, onMounted } from "vue";
 import Swal from 'sweetalert2';
 import Notiflix from 'notiflix';
+import { useUserStore } from '@/stores/user'
+const store = useUserStore();
+const { getUser } = store;
+
+// const todos = computed(() => store.todos)
+
+
 
 const name = ref('');
 const email = ref('');
 const phone = ref('');
 const password = ref('');
 const confirm_password = ref('');
-const token = useCookie();
-
-
-
-
-
+const token = useCookie('token');
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
@@ -25,63 +27,70 @@ definePageMeta({
     middleware: [
         function (to, from) {
             const token = useCookie();
-            // if (token.value) {
-            //     return navigateTo('product-detail')
-            // }
+            if (token.value) {
+                // return navigateTo('product-detail')
+            }
         },
     ],
 });
 
-async function handleSubmit() {
-    // Notiflix.Loading.pulse('Loading...');
+await getUser();
 
-    // Notiflix.Notify.success('Sol lucet omnibus');
-    // await useFetch("https://glosense.in/sanctum/csrf-cookie", {
+async function handleSubmit() {
+
+
+    await getUser();
+
+
+    Notiflix.Loading.pulse('Loading...');
+
+    Notiflix.Notify.success('Sol lucet omnibus');
+    // await useFetch("https://admin.glosense.in/sanctum/csrf-cookie", {
     //     credentials: "include",
     // })
-    // const csrf_token = useCookie('XSRF-TOKEN');
-    // console.log(csrf_token, "csrf_token");
-    // const { data, error, pending, refresh } = await useFetch(`${apiUrl}/user/register`, {
-    //     method: "POST",
-    //     headers: {
-    //         "accept": "application/json",
-    //         "X-XSRF-TOKEN": csrf_token.value,
-    //     },
-    //     body: {
-    //         first_name: name.value,
-    //         email: email.value,
-    //         phone: phone.value,
-    //         password: password.value,
-    //         password_confirmation: confirm_password.value,
-    //     },
-    //     onResponse({ request, response, options }) {
-    //         Notiflix.Loading.remove();
+    const csrf_token = useCookie('XSRF-TOKEN');
+    console.log(csrf_token, "csrf_token");
+    const { data, error, pending, refresh } = await useFetch(`${apiUrl}/user/register`, {
+        method: "POST",
+        headers: {
+            "accept": "application/json",
+            "X-XSRF-TOKEN": csrf_token.value,
+        },
+        body: {
+            first_name: name.value,
+            email: email.value,
+            phone: phone.value,
+            password: password.value,
+            password_confirmation: confirm_password.value,
+        },
+        onResponse({ request, response, options }) {
+            Notiflix.Loading.remove();
 
-    //         if (response._data.token != undefined) {
-    //             token.value = response._data.token;
-    //             Swal.fire({
-    //                 title: "Registered",
-    //                 icon: 'success',
-    //                 confirmButtonText: 'Cool'
-    //             });
-    //             name.value = "";
-    //             email.value = "";
-    //             phone.value = "";
-    //             password.value = "";
-    //             confirm_password.value = "";
-    //             return navigateTo('product-detail')
-    //         }
-    //     },
-    //     onResponseError({ request, response, options }) {
-    //         Notiflix.Loading.remove();
+            if (response._data.token != undefined) {
+                token.value = response._data.token;
+                Swal.fire({
+                    title: "Registered",
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                });
+                name.value = "";
+                email.value = "";
+                phone.value = "";
+                password.value = "";
+                confirm_password.value = "";
+                return navigateTo('product-detail')
+            }
+        },
+        onResponseError({ request, response, options }) {
+            Notiflix.Loading.remove();
 
-    //         Swal.fire({
-    //             title: response._data.message,
-    //             icon: 'error',
-    //             confirmButtonText: 'Error'
-    //         });
-    //     },
-    // });
+            Swal.fire({
+                title: response._data.message,
+                icon: 'error',
+                confirmButtonText: 'Error'
+            });
+        },
+    });
 }
 </script>
 
@@ -89,7 +98,7 @@ async function handleSubmit() {
 <template>
     <HeaderCommon />
     <div class="product-details px-3 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
-        <h2 class="text-secondary text-2xl font-bold text-center py-2">Register</h2>
+        <h2 class="text-secondary text-2xl font-bold text-center py-2">Register {{ store.name }}</h2>
 
         <div class="container mx-auto">
             <form @submit.prevent="handleSubmit">

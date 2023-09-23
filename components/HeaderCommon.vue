@@ -3,6 +3,15 @@ const d1 = ref("M4 9.5l16 0");
 const d2 = ref("M4 14.5l16 0");
 const isHovered = ref(false);
 
+import { useUserStore } from '@/stores/user'
+const store = useUserStore();
+const { getUser } = store;
+
+const loggedIn = store.name == "";
+console.log(loggedIn);
+
+await getUser();
+
 function handleHover() {
   isHovered.value = !isHovered.value;
   d1.value = isHovered.value ? "M4 8l16 0" : "M4 9.5l16 0";
@@ -74,9 +83,11 @@ onUnmounted(() => {
       </div>
       <div class="my-auto">
         <div class="hidden sm:block">
-          <button @click="openModal"
+          <p v-show="!loggedIn">{{ store.name }}</p>
+          <button @click="openModal" v-show="loggedIn"
             class="px-4 py-1 rounded-md bg-primary text-white hover:bg-[#915446fc]">Login</button>
-          <a href="/register"><button class="px-4 py-1 rounded-md bg-secondary text-white ml-2">Register</button></a>
+          <a v-show="loggedIn" href="/register"><button
+              class="px-4 py-1 rounded-md bg-secondary text-white ml-2">Register</button></a>
         </div>
       </div>
 
@@ -102,18 +113,15 @@ onUnmounted(() => {
       <div class="py-4 mt-2 overflow-y-auto">
         <ul class="space-y-2 font-medium">
           <div class="sm:hidden flex">
-
-            <!-- <li> -->
-            <a href="#" @click="openModal"
+            <a href="#" @click="openModal" v-show="loggedIn"
               class="flex ml-9 bg-secondary w-fit items-center p-2 text-bold  rounded-lg text-neutral-50  hover:bg-[#e3694f] group">
               Login
             </a>
-            <!-- </li> -->
-            <!-- <li class="mt-2"> -->
-            <a href="/register"
+            <a href="/register" v-show="loggedIn"
               class="flex ml-2 bg-[#e3694f] w-fit items-center p-2 text-bold  rounded-lg text-neutral-50  hover:bg-[#e3694f] group">
               Register
             </a>
+            <p v-show="!loggedIn">{{ store.name }}</p>
           </div>
 
 

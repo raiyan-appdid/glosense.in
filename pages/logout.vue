@@ -1,6 +1,6 @@
 <script setup>
 
-const token = useCookie();
+const token = useCookie('token');
 token.value = "";
 
 </script>
