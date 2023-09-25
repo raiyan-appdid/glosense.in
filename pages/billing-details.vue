@@ -28,25 +28,25 @@ definePageMeta({
 });
 
 async function storeBilling(e) {
-    e.preventDefault();
-    Notiflix.Loading.pulse();
-    await useFetch(`${apiUrl}/order/store`, {
-        method: "POST",
+    // e.preventDefault();
+    // Notiflix.Loading.pulse();
+    await useFetch(`${apiUrl}/order/store?name=${name.value}&email=${email.value}&city=${city.value}&state=${state.value}&number=${number.value}&address=${address.value}&pincode=${pincode.value}&country=${country.value}&total_price=${total_price.value}`, {
+        method: "GET",
         headers: {
             Authorization: "Bearer " + token.value,
             accept: "application/json"
         },
-        body: {
-            name: name.value,
-            email: email.value,
-            city: city.value,
-            state: state.value,
-            number: number.value,
-            address: address.value,
-            pincode: pincode.value,
-            country: country.value,
-            total_price: total_price.value,
-        },
+        // body: {
+        //     name: name.value,
+        //     email: email.value,
+        //     city: city.value,
+        //     state: state.value,
+        //     number: number.value,
+        //     address: address.value,
+        //     pincode: pincode.value,
+        //     country: country.value,
+        //     total_price: total_price.value,
+        // },
         onResponse({ request, response, options }) {
             Notiflix.Loading.remove();
             console.log(response._data);
