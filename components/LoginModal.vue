@@ -5,6 +5,10 @@ const email = ref("");
 const password = ref("");
 const token = useCookie('token');
 
+import { useUserStore } from '@/stores/user'
+const store = useUserStore();
+const { getUser } = store;
+
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
 
@@ -15,36 +19,36 @@ function closeModal() {
 }
 
 async function login() {
-    // await useFetch(`${apiUrl}/user/login`, {
-    //     method: 'POST',
-    //     headers: {
-    //         accept: "application/json",
-    //     },
-    //     body: {
-    //         email: email.value,
-    //         password: password.value,
-    //     },
-    //     onResponse({ request, response, options }) {
-    //         if (response._data.success) {
-    //             closeModal();
-    //             token.value = response._data.token;
-    //             Swal.fire({
-    //                 title: "Logged In",
-    //                 icon: 'success',
-    //                 confirmButtonText: 'Cool'
-    //             });
-    //         } else {
-    //             Swal.fire({
-    //                 title: response._data.message,
-    //                 icon: 'error',
-    //                 confirmButtonText: 'Try Again Or Create Account'
-    //             });
-    //         }
-    //     },
-    //     onRequestError({ request, options, error }) {
-    //         console.log(error);
-    //     },
-    // })
+    await useFetch(`${apiUrl}/user/login`, {
+        method: 'POST',
+        headers: {
+            accept: "application/json",
+        },
+        body: {
+            email: email.value,
+            password: password.value,
+        },
+        onResponse({ request, response, options }) {
+            if (response._data.success) {
+                token.value = response._data.token;
+                closeModal();
+                Swal.fire({
+                    title: "Logged In",
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                });
+                window.location.reload(true)
+
+            } else {
+                Swal.fire({
+                    title: response._data.message,
+                    icon: 'error',
+                    confirmButtonText: 'Try Again Or Create Account'
+                });
+            }
+        },
+    })
+    await getUser();
 }
 </script>
 

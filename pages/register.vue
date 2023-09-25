@@ -54,7 +54,7 @@ async function handleSubmit() {
         method: "POST",
         headers: {
             "accept": "application/json",
-            "X-XSRF-TOKEN": csrf_token.value,
+            // "X-XSRF-TOKEN": csrf_token.value,
         },
         body: {
             first_name: name.value,
@@ -99,7 +99,7 @@ async function handleSubmit() {
 <template>
     <HeaderCommon />
     <div class="product-details px-3 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
-        <h2 class="text-secondary text-2xl font-bold text-center py-2">Register {{ store.name }}</h2>
+        <h2 class="text-secondary text-2xl font-bold text-center py-2">Register</h2>
 
         <div class="container mx-auto">
             <form @submit.prevent="handleSubmit">

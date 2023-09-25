@@ -8,8 +8,6 @@ const store = useUserStore();
 const { getUser } = store;
 
 const loggedIn = store.name == "";
-console.log(loggedIn);
-
 await getUser();
 
 function handleHover() {
@@ -30,7 +28,7 @@ function closeSideBar() {
 
 function openModal() {
   closeSideBar()
-  const token = useCookie();
+  const token = useCookie("token");
   // if (!token.value) {
   let modal = document.getElementById('authentication-modal')
   modal.classList.remove('hidden');
