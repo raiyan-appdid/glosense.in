@@ -26,9 +26,9 @@ definePageMeta({
 
     middleware: [
         function (to, from) {
-            const token = useCookie();
+            const token = useCookie('token');
             if (token.value) {
-                // return navigateTo('product-detail')
+                return navigateTo('product-detail')
             }
         },
     ],
@@ -78,6 +78,7 @@ async function handleSubmit() {
                 phone.value = "";
                 password.value = "";
                 confirm_password.value = "";
+                window.location.reload(true)
                 return navigateTo('product-detail')
             }
         },

@@ -1,6 +1,16 @@
 <script setup>
 const name = ref('');
 
+definePageMeta({
+    middleware: [
+        function (to, from) {
+            const token = useCookie('token');
+            if (!token.value) {
+                return navigateTo('register')
+            }
+        },
+    ],
+});
 
 function storeBilling() {
 
