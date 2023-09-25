@@ -3,6 +3,13 @@ const d1 = ref("M4 9.5l16 0");
 const d2 = ref("M4 14.5l16 0");
 const isHovered = ref(false);
 
+import { useUserStore } from '@/stores/user'
+const store = useUserStore();
+const { getUser } = store;
+
+const loggedIn = store.name == "";
+await getUser();
+
 function handleHover() {
   isHovered.value = !isHovered.value;
   d1.value = isHovered.value ? "M4 8l16 0" : "M4 9.5l16 0";
@@ -67,9 +74,11 @@ onUnmounted(() => {
       </div>
       <div class="flex items-center">
         <div class="hidden sm:block">
-          <button @click="openModal"
+          <p v-show="!loggedIn">{{ store.name }}</p>
+          <button @click="openModal" v-show="loggedIn"
             class="px-4 py-1 rounded-md bg-primary text-white hover:bg-[#915446fc]">Login</button>
-          <a href="/register"><button class="px-4 py-1 rounded-md bg-secondary text-white ml-2">Register</button></a>
+          <a v-show="loggedIn" href="/register"><button
+              class="px-4 py-1 rounded-md bg-secondary text-white ml-2">Register</button></a>
         </div>
         <!-- <p class="text-sm font-semibold text-white">CONTACT US</p> -->
       </div>
