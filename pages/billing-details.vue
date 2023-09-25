@@ -4,6 +4,8 @@ import Notiflix from 'notiflix';
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
 
+
+
 const token = useCookie('token');
 
 const name = ref('');
@@ -28,7 +30,16 @@ definePageMeta({
 });
 
 async function storeBilling(e) {
+
     // e.preventDefault();
+    // await useFetch("https://admin.glosense.in/sanctum/csrf-cookie", {
+    //     onResponse({ request, response, options }) {
+    //         console.log(response);
+    //     }
+    // })
+    // console.log(csrf.value);
+
+    // console.log(token);
     // Notiflix.Loading.pulse();
     await useFetch(`${apiUrl}/order/store?name=${name.value}&email=${email.value}&city=${city.value}&state=${state.value}&number=${number.value}&address=${address.value}&pincode=${pincode.value}&country=${country.value}&total_price=${total_price.value}`, {
         method: "GET",
@@ -50,6 +61,9 @@ async function storeBilling(e) {
         onResponse({ request, response, options }) {
             Notiflix.Loading.remove();
             console.log(response._data);
+
+
+
             const error = response._data.errors
             const res = response._data
             console.log(response);
@@ -66,66 +80,60 @@ async function storeBilling(e) {
         },
     })
 }
-
 </script>
-
-
 <template>
     <HeaderCommon />
     <div class="product-details px-3 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
         <h2 class="text-secondary text-2xl font-bold text-center py-10">Billing Page</h2>
-
-
-
-
         <div class="grid grid-cols-12">
             <div class="container mx-auto col-span-12 sm:col-span-6 mt-10 sm:mt-0 order-2 sm:order-1">
-                <form>
+                <form action="https://admin.glosense.in/api/v1/order/store">
                     <div class="grid grid-cols-2 gap-5">
                         <div class="">
                             <label for="text" class="block mb-2 text-md  font-bold text-black ">Billing name</label>
-                            <input type="text" id="name" v-model="name"
+                            <input name="name" type="text" id="name" v-model="name"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Name">
                         </div>
                         <div class="">
                             <label for="address" class="block mb-2 text-md  font-bold text-black ">Billing Address</label>
-                            <input v-model="address" id="address"
+                            <input name="addresss" v-model="address" id="address"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Address">
                         </div>
                         <div class="">
                             <label for="city" class="block mb-2 text-md  font-bold text-black ">Billing City</label>
-                            <input id="city" v-model="city"
+                            <input name="city" id="city" v-model="city"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Phone">
                         </div>
                         <div class="">
                             <label for="state" class="block mb-2 text-md  font-bold text-black ">Billing State</label>
-                            <input id="state" v-model="state"
+                            <input name="state" id="state" v-model="state"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
                             <label for="pincode" class="block mb-2 text-md  font-bold text-black ">Pincode</label>
-                            <input id="pincode" v-model="pincode"
+                            <input name="pincode" id="pincode" v-model="pincode"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
                             <label for="country" class="block mb-2 text-md  font-bold text-black ">Country</label>
-                            <input id="country" v-model="country"
+                            <input name="country" id="country" v-model="country"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
                             <label for="phone" class="block mb-2 text-md  font-bold text-black ">Conctact Number</label>
-                            <input id="phone" v-model="number"
+                            <input name="number" id="phone" v-model="number"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
                             <label for="email" class="block mb-2 text-md  font-bold text-black ">Email</label>
-                            <input id="email" type="email" v-model="email"
+                            <input name="email" id="email" type="email" v-model="email"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                            <input type="hidden" name="total_price" value="1">
                         </div>
-                        <button type="submit" @click="storeBilling"
+                        <button type="submit"
                             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center -600 -blue-700 -blue-800">Submit</button>
                     </div>
                 </form>
