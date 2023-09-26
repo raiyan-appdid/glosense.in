@@ -487,13 +487,45 @@ onMounted(() => {
     rotation: 720,
     // duration: 1,
     duration: 10,
-  })
+  }, "+=1")
+
+
+
   tlShowcase.to('.what-text', {
     // rotation: 720,
     // duration: 1,
     duration: 3,
     opacity: 1,
   }, "+=1")
+
+  tlShowcase.to('.jar-without-lid', {
+    opacity: 1,
+  }, "-=1")
+  tlShowcase.to('.a', {
+    opacity: 0,
+  }, "-=1")
+
+  tlShowcase.to('.lid-of-jar', {
+    opacity: 1,
+  }, "<")
+
+
+
+  tlShowcase.to('.lid-of-jar', {
+    duration: 3,
+    y: -100,
+    opacity: 0
+  }, "<")
+
+  // tlShowcase.to(".lid-of-jar", {
+  //   duration: 2,
+  //   motionPath: {
+  //     path: "#path-of-lid",
+  //     align: '#path-of-lid',
+  //     alignOrigin: [0.5, 0.5],
+  //     autoRotate: 90
+  //   }
+  // }, "+=1");
 
   section += 1;
   tlShowcase.from(".ingredient-my-1", {
@@ -632,6 +664,22 @@ onMounted(() => {
     opacity: 0,
   }, "<")
 
+  tlShowcase.to('.lid-of-jar', {
+    duration: 3,
+    y: 0,
+    opacity: 1,
+  }, "+=1")
+  tlShowcase.to('.jar-without-lid', {
+    opacity: 0,
+  }, "-=1")
+  tlShowcase.to('.a', {
+    opacity: 1,
+  }, "-=1")
+
+  tlShowcase.to('.lid-of-jar', {
+    opacity: 0,
+  }, "<")
+
 
   tlShowcase.set('.a', {
     transformOrigin: "50% 50%"
@@ -723,16 +771,87 @@ onMounted(() => {
   }, "<")
 
   tlShowcase.from('.a', {
-    duration: 10,
+    duration: 6,
     rotation: 1800,
+  }, "<")
+
+  tlShowcase.from('.vitamin-custom-3', {
+    x: 1000,
+    duration: 6,
+    opacity: 0,
+  }, "<")
+  tlShowcase.from('.calcium-custom-3', {
+    x: -1000,
+    duration: 6,
+    opacity: 0,
+  }, "<")
+
+  tlShowcase.from('.a', {
+    duration: 6,
+    rotation: 2160,
   }, "+=1")
+
+  tlShowcase.to('.vitamin-custom-3', {
+    x: -1000,
+    duration: 6,
+    opacity: 0,
+  }, "<")
+  tlShowcase.to('.calcium-custom-3', {
+    x: 1000,
+    duration: 6,
+    opacity: 0,
+  }, "<")
+
+
+
+
+
+
+  tlShowcase.from('.a', {
+    duration: 6,
+    rotation: 2520,
+  }, "<")
+
+  tlShowcase.from('.vitamin-custom-4', {
+    x: 1000,
+    duration: 6,
+    opacity: 0,
+  }, "<")
+  tlShowcase.from('.calcium-custom-4', {
+    x: -1000,
+    duration: 6,
+    opacity: 0,
+  }, "<")
+
+  tlShowcase.from('.a', {
+    duration: 6,
+    rotation: 2880,
+  }, "+=1")
+
+  tlShowcase.to('.vitamin-custom-4', {
+    x: -1000,
+    duration: 6,
+    opacity: 0,
+  }, "<")
+  tlShowcase.to('.calcium-custom-4', {
+    x: 1000,
+    duration: 6,
+    opacity: 0,
+  }, "<")
+
+
+
+
+
+
+
 
   tlShowcase.to('.circulating-text-1', {
     opacity: 1,
     x: 300,
     yPercent: -100,
     duration: 5
-  }, "-=8")
+  }, "+=1")
 
   tlShowcase.to('.circulating-text-2', {
     opacity: 1,
@@ -809,62 +928,69 @@ onMounted(() => {
   tlShowcase1.to(
     "#showcase-slider",
     {
+      duration: 5,
       "--fill-till": "+=33",
     },
-    section
+    "+=1"
   );
   tlShowcase1.to(
     "#showcase-section-1 #showcase-images div:nth-child(3)",
     {
+      duration: 5,
       clipPath: "inset(0 0 0 100%)",
     },
-    section
+    "<"
   );
   tlShowcase1.to(
     "#showcase-section-1 #showcase-images div:nth-child(3) .tear",
     {
+      duration: 5,
+
       className: "tear left-0",
       transform: "translate(100%, 0)",
       onComplete: () => { },
     },
-    section
+    "<"
   );
+
+
 
 
   section += 1;
   tlShowcase1.to(
     "#showcase-slider",
     {
+      duration: 5,
       "--fill-till": "+=34",
     },
-    section
   );
   tlShowcase1.to(
     "#showcase-section-1 #showcase-images div:nth-child(2)",
     {
+      duration: 5,
       clipPath: "inset(0 0 0 100%)",
     },
-    section
+    "<"
   );
 
   tlShowcase1.to(
     "#showcase-section-1 #showcase-images div:nth-child(2) .tear",
     {
+      duration: 5,
       className: "tear left-0",
       transform: "translate(100%, 0)",
-
     },
-    section
+    "<"
   );
+
+
 
   section += 1;
   tlShowcase1.to(
     "#showcase-slider",
     {
       "--fill-till": "+=34",
-      duration: 10
     },
-    section
   );
   tlShowcase1.to('.believe-text', {
     opacity: 0,
@@ -970,14 +1096,49 @@ const updateDotValue = (value) => {
             class="text-[6rem] text-primary absolute vitamin-custom-2 font-[900] top-[7rem] bg-transparent inset-x-0 tt-2">
             Balance
           </h1>
+          <h1
+            class="text-[6rem] text-primary absolute vitamin-custom-3 font-[900] top-[7rem] bg-transparent inset-x-0 tt-3">
+            Enhance
+          </h1>
+          <h1
+            class="text-[6rem] text-primary absolute vitamin-custom-4 font-[900] top-[7rem] bg-transparent inset-x-0 tt-3">
+            Reduce
+          </h1>
 
           <div class="absolute top-[7rem] w-screen">
             <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
               WHAT'S IN IT?</h4>
           </div>
-          <div class="box a flex justify-center align-middle">
-            <img class="z-50 h-[280px] w-[250px]" src="/images/jar2.png" alt="">
+
+
+
+
+          <div class="absolute jar-without-lid opacity-0 flex items-start justify-center w-screen h-screen">
+            <img class=" h-[280px] w-[250px] mr-4" src="/images/jar-without-lid.png" alt="">
           </div>
+
+          <div class="absolute lid-of-jar flex opacity-0 items-start justify-center w-screen h-screen">
+            <img class="w-[250px] mr-4" src="/images/lid.png" alt="">
+          </div>
+          <!-- <div class="absolute">
+            <svg opacity="0" viewBox="-20 0 557 190" id="svg-2">
+              <circle cx="100" cy="100" r="3" />
+              <circle cx="300" cy="20" r="3" />
+              <path id="path-of-lid" d="M401.096,45.731 C476.096,45.731 455.391,136.725 456.807,121.81 " />
+            </svg>
+
+
+
+          </div> -->
+
+
+
+          <div class="box a flex justify-center align-middle">
+            <img class="z-40 h-[280px] w-[250px]" src="/images/jar2.png" alt="">
+          </div>
+
+
+
           <div class="svg-align flex justify-center">
             <div class="svg-div-align mt-[10rem] mr-[7rem]">
               <svg opacity="0" viewBox="-20 0 557 190" id="svg-1">
@@ -1094,6 +1255,34 @@ const updateDotValue = (value) => {
               Scalp Health
             </h1>
           </div>
+          <div class="absolute w-screen bottom-[9rem]" style="
+          /* bottom: 0px; */
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;">
+            <h1 class="text-[6rem] font-extrabold  calcium-custom-3  text-emerald-800  bg-transparent inset-x-0 tt-2"
+              style="
+              text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
+                -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
+            ">
+              Follicle Health
+            </h1>
+          </div>
+          <div class="absolute w-screen bottom-[9rem]" style="
+          /* bottom: 0px; */
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;">
+            <h1 class="text-[6rem] font-extrabold  calcium-custom-4  text-emerald-800  bg-transparent inset-x-0 tt-2"
+              style="
+              text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
+                -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
+            ">
+              Hair Loss
+            </h1>
+          </div>
 
           <!-- <div class="absolute w-screen">
           <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
@@ -1148,9 +1337,10 @@ const updateDotValue = (value) => {
             </div>
           </div>
         </div>
-        <h4 class="text-[1rem] believe-text font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
-          Artificial Sweetener-No Added Flavors-Lactose Free-No Allergen</h4>
+
       </div>
+      <h4 class="text-3xl font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
+        Artificial Sweetener-No Added Flavors-Lactose Free-No Allergen</h4>
 
       <div class="container px-10 mx-auto">
         <div class="min-h-screen pt-16 relative border-blue-500 grid grid-cols-12 gap-4">
