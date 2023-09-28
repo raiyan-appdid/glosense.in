@@ -500,14 +500,15 @@ onMounted(() => {
 
   tlShowcase.to('.jar-without-lid', {
     opacity: 1,
-  }, "-=1")
+  }, "<-0.5")
+  tlShowcase.to('.lid-of-jar', {
+    opacity: 1,
+  }, "<-0.5")
   tlShowcase.to('.a', {
     opacity: 0,
   }, "-=1")
 
-  tlShowcase.to('.lid-of-jar', {
-    opacity: 1,
-  }, "<")
+
 
 
 
@@ -669,12 +670,14 @@ onMounted(() => {
     y: 0,
     opacity: 1,
   }, "+=1")
-  tlShowcase.to('.jar-without-lid', {
-    opacity: 0,
-  }, "-=1")
+
   tlShowcase.to('.a', {
     opacity: 1,
-  }, "-=1")
+  }, "-=0.75")
+
+  tlShowcase.to('.jar-without-lid', {
+    opacity: 0,
+  }, "+=1")
 
   tlShowcase.to('.lid-of-jar', {
     opacity: 0,
@@ -687,30 +690,30 @@ onMounted(() => {
 
 
   tlShowcase.to('.a', {
-    duration: 2,
+    duration: 11,
     rotation: 540,
   }, "+=1")
 
-  tlShowcase.to('.custom-image', {
-    opacity: 1,
-  }, "-=1");
+  // tlShowcase.to('.custom-image', {
+  //   opacity: 1,
+  // }, "-=1");
 
   tlShowcase.to('.custom-image', {
-    y: -400,
+    y: -1000,
     opacity: 1,
     // rotate: 360,
-    duration: 2,
+    duration: 10,
   }, "<")
 
   tlShowcase.to('.custom-image', {
-    y: -1500,
+    y: -2000,
     opacity: 1,
     // rotate: 360,
-    duration: 2,
+    duration: 10,
   }, "+=1")
 
   tlShowcase.to('.a', {
-    duration: 2,
+    duration: 10,
     rotation: 360,
   }, "<")
 
@@ -1021,8 +1024,8 @@ const updateDotValue = (value) => {
     <div
       class="landing__main w-full text-center min-h-screen pt-15 bg-no-repeat bg-cover bg-top overflow-hidden relative">
       <div>
-        <a href="/"><img id="logo-image" src="/images/logo.png"
-            class="w-4/12 inset-x-0 my-0 mx-auto top-[15rem] fixed z-20" alt="" /></a>
+        <a href="/"><img id="logo-image" src="/images/logo.png" class="w-4/12 inset-x-0 my-0 mx-auto top-[25%] fixed z-20"
+            alt="" /></a>
       </div>
       <!-- <div>
         <img id="jar-image" src="/images/jar.png" class="w-[250px] inset-0 m-auto fixed z-[11] translate-y-[-50rem]"
@@ -1049,7 +1052,8 @@ const updateDotValue = (value) => {
           <img class="absolute w-[8rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png" alt="" />
           <img class="absolute w-auto right-0 top-[10rem]" src="/images/rl-small.png" alt="" />
         </div>
-        <div class="home-text h-screen flex align-middle flex-col justify-center mt-[10rem]" style="align-items: center;">
+        <div class="home-text flex absolute top-[100px] items-center flex-col w-screen h-screen justify-center"
+          style="align-items: center;">
           <h4 class="text-3xl ">Unlock the essence for self-care</h4>
           <h4 class="text-3xl ">through the magic of superfoods.</h4>
           <h4 class="mt-5 text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl"><a href="/about">Know
@@ -1078,68 +1082,55 @@ const updateDotValue = (value) => {
           </div>
         </div>
         <div class="home-container mt-12">
-          <div class="elegance-text">
+          <div class="elegance-text absolute top-[-200px] flex items-center justify-center w-screen h-screen">
             <!-- <h2 class="elegance-text-1">Let' s begin with Elegance: <br> Our Hair Care Superblend</h2> -->
-            <h4 class="text-6xl font-extrabold text-secondary elegance-text-1 mb-3">LET' S BEGIN WITH ELEGANCE: <br> OUR
+            <h4 class="text-6xl font-extrabold text-secondary elegance-text-1">LET' S BEGIN WITH ELEGANCE: <br> OUR
               HAIR
               CARE SUPERBLEND</h4>
 
           </div>
           <!-- <p class="vitamin-custom">Vitamins</p> -->
           <h1
-            class="text-[6rem] absolute vitamin-custom font-[900] text-primary top-[7rem]  bg-transparent inset-x-0 tt-1">
+            class="text-[6rem] absolute h-screen top-[-200px] flex items-center justify-center  w-screen vitamin-custom font-[900] text-primary  bg-transparent inset-x-0 tt-1">
             Improves
           </h1>
           <!-- <p class="vitamin-custom-2">Vitamins - 2</p> -->
 
           <h1
-            class="text-[6rem] text-primary absolute vitamin-custom-2 font-[900] top-[7rem] bg-transparent inset-x-0 tt-2">
+            class="text-[6rem] text-primary absolute vitamin-custom-2 font-[900] h-screen top-[-200px] flex items-center justify-center  w-screen bg-transparent inset-x-0 tt-2">
             Balance
           </h1>
           <h1
-            class="text-[6rem] text-primary absolute vitamin-custom-3 font-[900] top-[7rem] bg-transparent inset-x-0 tt-3">
+            class="text-[6rem] text-primary  vitamin-custom-3 font-[900] absolute h-screen top-[-200px] flex items-center justify-center  w-screen bg-transparent inset-x-0 tt-3">
             Enhance
           </h1>
           <h1
-            class="text-[6rem] text-primary absolute vitamin-custom-4 font-[900] top-[7rem] bg-transparent inset-x-0 tt-3">
+            class="text-[6rem] text-primary vitamin-custom-4 font-[900] absolute h-screen top-[-200px] flex items-center justify-center  w-screen bg-transparent inset-x-0 tt-3">
             Reduce
           </h1>
 
-          <div class="absolute top-[7rem] w-screen">
+          <div class="absolute flex h-screen justify-center items-center top-[-200px] w-screen">
             <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
               WHAT'S IN IT?</h4>
           </div>
 
-
-
-
-          <div class="absolute jar-without-lid opacity-0 flex items-start justify-center w-screen h-screen">
-            <img class=" h-[280px] w-[250px] mr-4" src="/images/jar-without-lid.png" alt="">
+          <div class="absolute jar-without-lid top-0 opacity-0 flex items-center justify-center w-screen h-screen">
+            <img class=" h-[280px] w-[250px]" src="/images/jar-without-lid.png" alt="">
           </div>
 
-          <div class="absolute lid-of-jar flex opacity-0 items-start justify-center w-screen h-screen">
-            <img class="w-[250px] mr-4" src="/images/lid.png" alt="">
+          <div class="absolute lid-of-jar flex top-[-100px] opacity-0 items-center justify-center w-screen h-screen">
+            <img class="w-[250px]" src="/images/lid.png" alt="">
           </div>
-          <!-- <div class="absolute">
-            <svg opacity="0" viewBox="-20 0 557 190" id="svg-2">
-              <circle cx="100" cy="100" r="3" />
-              <circle cx="300" cy="20" r="3" />
-              <path id="path-of-lid" d="M401.096,45.731 C476.096,45.731 455.391,136.725 456.807,121.81 " />
-            </svg>
 
 
 
-          </div> -->
-
-
-
-          <div class="box a flex justify-center align-middle">
+          <div class="box absolute a flex items-center top-0 justify-center w-screen h-screen ">
             <img class="z-40 h-[280px] w-[250px]" src="/images/jar2.png" alt="">
           </div>
 
 
 
-          <div class="svg-align flex justify-center">
+          <div class="svg-align absolute h-screen flex items-center justify-center  w-screen">
             <div class="svg-div-align mt-[10rem] mr-[7rem]">
               <svg opacity="0" viewBox="-20 0 557 190" id="svg-1">
                 <circle cx="100" cy="100" r="3" />
@@ -1215,18 +1206,18 @@ const updateDotValue = (value) => {
               <h3 class="mt-5 text-xl text-primary font-bold">Gotu Kola Leaf</h3>
             </div>
           </div>
-          <div class="absolute bottom-[10rem] w-screen">
+          <div class="absolute h-screen top-[170px] flex items-center justify-center  w-screen">
             <h4 class="text-xl text-center font-extrabold text-secondary opacity-0 what-text">
               Hair You Glo contains Amla, sea buckthorn, <br />Lemon powder along with 7 more Superfoods
               which
               have.
             </h4>
           </div>
-          <div class="elegance-text">
-            <h2 class="elegance-text-2 font-bold text-xl mt-3">Simple Plant Based & Healthy Super Blends.</h2>
+          <div class="elegance-text absolute top-[150px] flex justify-center items-center w-screen h-screen">
+            <h2 class="elegance-text-2 font-bold text-xl">Simple, Plant Based & Healthy Super Blends.</h2>
           </div>
           <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
-          <div class="absolute w-screen bottom-[9rem]" style="   
+          <div class="absolute h-screen top-[180px] flex items-center justify-center  w-screen" style="   
                 /* bottom: 0px; */
                 margin: auto;
                 display: flex;
@@ -1242,7 +1233,7 @@ const updateDotValue = (value) => {
           </div>
 
           <!-- <h2 class="calcium-custom">Calcium</h2> -->
-          <div class="absolute w-screen bottom-[9rem]" style="
+          <div class="absolute h-screen top-[180px] flex items-center justify-center  w-screen" style="
           /* bottom: 0px; */
           margin: auto;
           display: flex;
@@ -1255,7 +1246,7 @@ const updateDotValue = (value) => {
               Scalp Health
             </h1>
           </div>
-          <div class="absolute w-screen bottom-[9rem]" style="
+          <div class="absolute h-screen top-[180px] flex items-center justify-center  w-screen" style="
           /* bottom: 0px; */
           margin: auto;
           display: flex;
@@ -1269,7 +1260,7 @@ const updateDotValue = (value) => {
               Follicle Health
             </h1>
           </div>
-          <div class="absolute w-screen bottom-[9rem]" style="
+          <div class="absolute h-screen top-[180px] flex items-center justify-center  w-screen" style="
           /* bottom: 0px; */
           margin: auto;
           display: flex;
@@ -1306,24 +1297,26 @@ const updateDotValue = (value) => {
             </h1>
           </div>
         </div>
-        <div class="custom-image opacity-0">
+        <div class="custom-image absolute top-[1000px] flex justify-center items-center w-screen h-screen  opacity-0">
           <img width="100%" src="/images/website-banner-01.jpg" alt="">
         </div>
       </div>
+      <h4 class="text-3xl font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
+        Artificial Sweetener-No Added Flavors-Lactose Free-No Allergen</h4>
 
 
       <div id="showcase-section-1" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
         <h4 class="text-[2rem] believe-text font-extrabold text-secondary elegance-text-1">We believe in fixing the root
           cause, <br /> not quick results!</h4>
         <div id="showcase-images" class="relative h-[400px] mb-5">
-          <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[355deg]">
+          <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
             <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-3@4x.png" alt="" />
           </div>
           <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
             <div class="tear"></div>
             <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-2@4x.png" alt="" />
           </div>
-          <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden rotate-[5deg]">
+          <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden ">
             <div class="tear"></div>
             <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-1@4x.png" alt="" />
           </div>
@@ -1339,13 +1332,12 @@ const updateDotValue = (value) => {
         </div>
 
       </div>
-      <h4 class="text-3xl font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
-        Artificial Sweetener-No Added Flavors-Lactose Free-No Allergen</h4>
+
 
       <div class="container px-10 mx-auto">
         <div class="min-h-screen pt-16 relative border-blue-500 grid grid-cols-12 gap-4">
           <div class="col-span-8">
-            <p class="text-neutral-950 text-2xl p-3 font-bold">Hair-You-Glo revitalises your hair health and
+            <p class="text-primary text-xl p-3 font-semibold">Hair-You-Glo revitalises your hair health and
               restores lost confidence related to hair concerns. Your hair is a vital part of your presentation
               and personality, and Hair-You-Glo ensures you radiate self-assurance in every interaction.
               Introducing our expertly crafted hair health betterment product, carefully with a blend of nature's
@@ -1354,7 +1346,7 @@ const updateDotValue = (value) => {
             </p>
             <br />
 
-            <p class="text-neutral-950 text-2xl p-3 font-bold">Hair-You-Glo is a product formulated in such a
+            <p class="text-primary text-xl p-3 font-semibold">Hair-You-Glo is a product formulated in such a
               way that helps you improve your hair health by containing much required nutrients & vitamins in it.
               Experience the power of nature in every element of Hair-You-Glo. Elevate your hair health with a
               blend of carefully selected natural ingredients. Make Hair-You-Glo your daily partner in nurturing
@@ -1385,10 +1377,6 @@ const updateDotValue = (value) => {
   width: 100%;
   top: 36vh;
   /* margin-top: auto; */
-}
-
-.custom-image {
-  position: absolute;
 }
 
 .svg-align {

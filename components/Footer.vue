@@ -37,30 +37,7 @@
                         </li>
                     </ul>
                 </div> -->
-                <!-- <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
-                    <h5 class="text-xl font-bold mb-6">Resources</h5>
-                    <ul class="list-none footer-links">
-                        <li class="mb-2">
-                            <a href="#"
-                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Resource</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#"
-                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Resource
-                                name</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#"
-                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Another
-                                resource</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#"
-                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Final
-                                resource</a>
-                        </li>
-                    </ul>
-                </div> -->
+
                 <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
                     <h5 class="text-xl font-bold mb-6">About</h5>
                     <ul class="list-none footer-links">
@@ -98,6 +75,31 @@
                             <a href="#"
                                 class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Contact
                                 Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
+                    <h5 class="text-xl font-bold mb-6">Certificate</h5>
+                    <ul class="list-none footer-links">
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Certificate
+                                1</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Certificate
+                                2</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Certificate
+                                3</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Certificate
+                                4</a>
                         </li>
                     </ul>
                 </div>
@@ -152,7 +154,7 @@
             </div>
 
             <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-gray-700  border-t">
-                <div class="px-4 w-1/2 md:mt-0">
+                <div class="px-4 w-10/12 md:mt-0">
                     <p class="text-sm">
                         <strong class="font-bold">Disclaimer :</strong>
                         Take 1 serving daily or as directed by a healthcare professional. Store in
@@ -161,8 +163,8 @@
                         disease.
                     </p>
                 </div>
-                <div class="px-4 w-1/2 text-end">
-                    <img class=" w-20 inline" src="/images/fssai.png" alt="">
+                <div class="px-4 w-2/12 text-end">
+                    <img class="w-20 inline" src="/images/fssai.png" alt="">
                 </div>
             </div>
         </div>
