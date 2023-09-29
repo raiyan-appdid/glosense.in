@@ -46,6 +46,14 @@ onMounted(() => {
         duration: 7,
         opacity: 0,
     })
+
+    tlHeroResponsive.to('.jar-without-lid-responsive', {
+        y: 130,
+    }, "<")
+    tlHeroResponsive.to('.lid-of-jar-responsive', {
+        y: 130,
+    }, "<")
+
     tlHeroResponsive.to('#jar-image-responsive', {
         y: 130,
         opacity: 1,
@@ -55,6 +63,29 @@ onMounted(() => {
         opacity: 1,
         duration: 3,
     })
+
+
+
+
+
+    tlHeroResponsive.to('.jar-without-lid-responsive', {
+        opacity: 1,
+    }, "<-0.5")
+    tlHeroResponsive.to('.lid-of-jar-responsive', {
+        opacity: 1,
+    }, "<-0.5")
+    tlHeroResponsive.to('#jar-image-responsive', {
+        opacity: 0,
+    }, "-=1")
+
+
+    tlHeroResponsive.to('.lid-of-jar-responsive', {
+        duration: 3,
+        y: -100,
+        opacity: 0
+    }, "<")
+
+
 
 
     tlHeroResponsive.to('.ingredient-my-1-responsive', {
@@ -137,6 +168,24 @@ onMounted(() => {
         opacity: 0,
         duration: 3,
     })
+
+    tlHeroResponsive.to('.lid-of-jar-responsive', {
+        duration: 3,
+        y: 130,
+        opacity: 1,
+    }, "+=1")
+
+    tlHeroResponsive.to('#jar-image-responsive', {
+        opacity: 1,
+    }, "-=0.75")
+
+    tlHeroResponsive.to('.jar-without-lid-responsive', {
+        opacity: 0,
+    }, "+=1")
+
+    tlHeroResponsive.to('.lid-of-jar-responsive', {
+        opacity: 0,
+    }, "<")
 
     tlHeroResponsive.to('#jar-image-responsive', {
         y: 0,
@@ -327,7 +376,23 @@ onMounted(() => {
               -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
                     REDUCE
                 </h1>
-                <img id="jar-image-responsive" class="h-[160px] w-[150px]" src="/images/jar.png" alt="">
+
+
+
+                <div
+                    class="absolute jar-without-lid-responsive  opacity-0 flex items-center justify-center w-screen h-screen">
+                    <img class=" h-[160px] w-[150px]" src="/images/jar-without-lid.png" alt="">
+                </div>
+
+                <div
+                    class="absolute lid-of-jar-responsive mb-[115px] flex  opacity-0 items-center justify-center w-screen h-screen">
+                    <img class="w-[150px]" src="/images/lid.png" alt="">
+                </div>
+
+
+                <img id="jar-image-responsive" class="h-[160px] w-[150px]" src="/images/jar2.png" alt="">
+
+
                 <h1 class="text-3xl absolute -bottom-[100px] calcium-custom-2-responsive text-emerald-800  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     HAIR FALL
