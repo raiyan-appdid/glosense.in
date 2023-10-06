@@ -37,21 +37,24 @@ onMounted(function () {
             </div>
             <div class=" text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center sm:py-4">
-                    <!-- <img src="/images/shop-all.png" class="" alt="" /> -->
                     <div class="w-52 h-52 flex justify-center items-center bg-white">
-                        <h2 class="text-primary">Discovering Wellness from Within</h2>
+                        <img src="/images/aboutus/discover-wellness.jpg" class="object-fill h-52 w-80" alt="" />
+                        <!-- <h2 class="text-primary">Discovering Wellness from Within</h2> -->
                     </div>
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <!-- <img src="/images/blog.png" class="" alt="" /> -->
                     <div class="w-52 h-52 flex justify-center items-center bg-white">
-                        <h2 class="text-primary">Plant Based Super Blends</h2>
+                        <img src="/images/aboutus/plant-based.jpg" class="object-fill h-52 w-80" alt="" />
+                        <!-- <img src="/images/blog.png" class="" alt="" /> -->
+                        <!-- <h2 class="text-primary">Plant Based Super Blends</h2> -->
                     </div>
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <!-- <img src="/images/recipes.png" class="" alt="" /> -->
                     <div class="w-52 h-52 flex justify-center items-center bg-white">
-                        <h2 class="text-primary">Exactly what you need</h2>
+                        <img src="/images/aboutus/what-you-need.jpg" class="object-fill h-52 w-80" alt="" />
+
+                        <!-- <img src="/images/recipes.png" class="" alt="" /> -->
+                        <!-- <h2 class="text-primary">Exactly what you need</h2> -->
                     </div>
                 </div>
             </div>
@@ -100,7 +103,8 @@ onMounted(function () {
                     <img src="/images/shop-all.png" class="" alt="" />
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <a href="/blogs"> <img src="/images/blog.png" class="" alt="" /></a>
+                    <a href="/blogs"> <img src="/images/aboutus/blogs.jpg" class="object-fill h-52 w-80" alt="" /></a>
+                    <!-- <img src="/images/aboutus/blogs.jpg" class="object-fill h-52 w-80" alt="" /> -->
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
                     <img src="/images/recipes.png" class="" alt="" />

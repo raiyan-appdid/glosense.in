@@ -16,7 +16,17 @@ const pincode = ref('');
 const country = ref('');
 const number = ref('');
 const email = ref('');
+const user_id = ref('');
 const total_price = ref(1);
+
+
+const { data } = await useFetch(`${apiUrl}/user-detail`, {
+    headers: {
+        accept: "application/json",
+        Authorization: "Bearer " + token.value,
+    },
+});
+user_id.value = data.value.data.id;
 
 definePageMeta({
     middleware: [
@@ -41,7 +51,12 @@ async function storeBilling(e) {
 
     // console.log(token);
     // Notiflix.Loading.pulse();
-    await useFetch(`${apiUrl}/order/store?name=${name.value}&email=${email.value}&city=${city.value}&state=${state.value}&number=${number.value}&address=${address.value}&pincode=${pincode.value}&country=${country.value}&total_price=${total_price.value}`, {
+
+
+
+
+
+    await useFetch(`${apiUrl}/order/store?name=${name.value}&user_id=${data.value.data.id}&email=${email.value}&city=${city.value}&state=${state.value}&number=${number.value}&address=${address.value}&pincode=${pincode.value}&country=${country.value}&total_price=${total_price.value}`, {
         method: "GET",
         headers: {
             Authorization: "Bearer " + token.value,
@@ -94,6 +109,7 @@ async function storeBilling(e) {
                             <input name="name" type="text" id="name" v-model="name"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Name">
+                            <input type="hidden" name="user_id" v-model="user_id" id="">
                         </div>
                         <div class="">
                             <label for="address" class="block mb-2 text-md  font-bold text-black ">Billing Address</label>
@@ -145,26 +161,26 @@ async function storeBilling(e) {
                     </div>
                     <div>
                         <h4>Fiar Glow sense ( 200 g )</h4>
-                        <p>x 1 Rs 990</p>
-                        <p>Rs 1350</p>
+                        <p>x 1 Rs 899</p>
+                        <p>Rs 899</p>
                     </div>
                 </div>
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
                 <div>
                     <div class="flex justify-around">
                         <p>Sub Total</p>
-                        <p>20000</p>
+                        <p>899</p>
                     </div>
                     <div class="flex justify-around">
                         <p>Shipping</p>
-                        <p>20000</p>
+                        <p>0</p>
                     </div>
                 </div>
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
                 <div>
                     <div class="flex justify-around">
                         <p>Total</p>
-                        <p>20000</p>
+                        <p>899</p>
                     </div>
                 </div>
             </div>
