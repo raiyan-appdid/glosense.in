@@ -89,6 +89,7 @@ onMounted(function () {
                         <h6 class="text-xl leading-10">Introduce Glosense in your life, where your journey to well-being
                             begins. Together, let's take charge of our lives, health, and future.
                         </h6>
+                        <br />
                         <h6 class="text-xl">In pursuit of wellness,<br />
                             Sagar Gaikwad<br />
                             Glosense<br />
@@ -97,17 +98,19 @@ onMounted(function () {
                     </div>
                 </div>
             </div>
-            <h6 class="text-center text-4xl font-bold my-9">Where can we take you next?</h6>
-            <div class=" text-center mx-auto flex justify-center gap-4">
-                <div class=" col-span-4 lg:col-span-2 flex justify-center items-center sm:py-4">
-                    <img src="/images/shop-all.png" class="" alt="" />
+            <h6 class="text-center text-secondary text-4xl font-bold my-9">Where can we take you next?</h6>
+            <div class=" text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
+                <div class="  lg:col-span-2 flex  justify-center items-center sm:py-4">
+                    <p class="absolute text-4xl font-semibold">Shop All</p>
+                    <img src="/images/aboutus/shop-all.jpg" class="object-fill h-52 w-80" alt="" />
                 </div>
-                <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
+                <div class="  lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
+                    <a href="/blogs" class="absolute text-4xl font-semibold">Blogs</a>
                     <a href="/blogs"> <img src="/images/aboutus/blogs.jpg" class="object-fill h-52 w-80" alt="" /></a>
-                    <!-- <img src="/images/aboutus/blogs.jpg" class="object-fill h-52 w-80" alt="" /> -->
                 </div>
-                <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <img src="/images/recipes.png" class="" alt="" />
+                <div class="  lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
+                    <p class="absolute text-4xl font-semibold">Recipes</p>
+                    <img src="/images/aboutus/recepies.jpg" class="object-fill h-52 w-80" alt="" />
                 </div>
             </div>
 

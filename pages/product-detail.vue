@@ -83,7 +83,7 @@ onMounted(() => {
                 </div>
                 <div class="col-span-12 sm:col-span-7">
                     <h2 class="font-extrabold text-3xl mt-4">Hair you glo for Healthy & Strong Hair</h2>
-                    <p class="my-5">Introducing Glosense HairRevive Serum, your go-to solution for achieving healthy and
+                    <p class="my-5">Introducing Glosense, your go-to solution for achieving healthy and
                         strong hair that
                         shines with vitality</p>
                     <!-- <div class="flex my-5">
@@ -141,28 +141,28 @@ onMounted(() => {
             </div> -->
 
 
-            <div class="container mx-auto my-5">
+            <div class="container mx-auto my-10 sm:my-5">
                 <div class="grid grid-cols-12">
-                    <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 leading-8 sm:my-auto">
+                    <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">Helps in: </h2>
-                        <p>-Maintaining a healthy scalp with improved blood circulation.<br />
+                        <p class="leading-8 text-2xl">-Maintaining a healthy scalp with improved blood circulation.<br />
                             -Encouraging better hair growth and helps prevent dandruff.<br />
                             -Cultivate Optimal Hair Follicle Health.<br />
                             -Reducing hair loss, and strengthening hair strands.
                         </p>
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:flex sm:justify-end sm:order-2">
-                        <img src="/images/product-details-2.png" class="sm:w-2/3 w-full" alt="" />
+                        <img src="/images/product/product-details-1.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
                     </div>
                 </div>
 
-                <div class="grid grid-cols-12 my-1">
+                <div class="grid grid-cols-12 my-10 sm:my-1">
                     <div class="sm:col-span-5 col-span-12">
-                        <img src="/images/product-details-3.png" class="sm:w-2/3 w-full" alt="" />
+                        <img src="/images/product/product-details-3.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
                     </div>
-                    <div class="sm:col-span-7 col-span-12 sm:my-auto leading-8">
+                    <div class="sm:col-span-7 col-span-12 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">How to use: </h2>
-                        <p>-Blend ½ tablespoon of Hair-you-glo into your water. <br />
+                        <p class="leading-8 text-2xl">-Blend ½ tablespoon of Hair-you-glo into your water. <br />
                             -Ensure it's well-mixed,have a sip & revel in the moment 🤙<br /> <br />
                             This jar contains 30 servings.
 
@@ -171,88 +171,100 @@ onMounted(() => {
                 </div>
 
                 <div class="grid grid-cols-12">
-                    <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto leading-8">
+                    <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">WHEN TO USE:</h2>
-                        <p>You can consume it any time of the day, but for better experience we suggest consuming it in the
+                        <p class="leading-8 text-2xl">You can consume it any time of the day, but for better experience we
+                            suggest consuming it in the
                             morning.</p>
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:flex sm:justify-end sm:order-2">
-                        <img src="/images/product-details-4.png" class="sm:w-2/3 w-full" alt="" />
+                        <img src="/images/product/product-details-4.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
                     </div>
                 </div>
 
-                <div class="grid grid-cols-12 my-1">
+                <div class="grid grid-cols-12 my-10 sm:my-1">
                     <div class="sm:col-span-5 col-span-12">
-                        <img src="/images/product-details-5.png" class="sm:w-2/3 w-full" alt="" />
+                        <img src="/images/product/product-details-5.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
                     </div>
-                    <div class="sm:col-span-7 col-span-12 sm:my-auto leading-8">
+                    <div class="sm:col-span-7 col-span-12 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">STORAGE TIP:</h2>
-                        <p>For best results, utilise a dry spoon when dealing with the mix, and be sure to seal the jars
+                        <p class="leading-8 text-2xl">For best results, utilise a dry spoon when dealing with the mix, and
+                            be sure to seal the jars
                             tightly after usage to prevent solidification or lumps.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="container mx-auto py-5 leading-10">
-                <h2 class="text-center text-4xl font-extrabold text-secondary">HOW IT WORKS:</h2>
+            <div class="container mx-auto py-5">
+                <h2 class="text-center text-4xl font-extrabold text-secondary mb-10">HOW IT WORKS:</h2>
                 <h3 class=" text-2xl font-bold ">-Effectively suppress DHT🌿:</h3>
-                <p>Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood circulation, and
+                <p class="text-xl">Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood
+                    circulation, and
                     promote hair growth while suppressing DHT.
                 </p>
-                <h3 class=" text-2xl font-bold ">-Maintains pH Level 🔗:
+                <h3 class=" text-2xl font-bold mt-4">-Maintains pH Level 🔗:
                 </h3>
-                <p>Lemon balances scalp pH, prevents dandruff, and fosters a healthy environment for hair follicles where
+                <p class="text-xl">Lemon balances scalp pH, prevents dandruff, and fosters a healthy environment for hair
+                    follicles where
                     Fenugreek seeds enhance hair texture, shine, resilience, and support growth.
                 </p>
-                <h3 class=" text-2xl font-bold ">-Improves Blood Circulation🧘:
+                <h3 class=" text-2xl font-bold mt-4">-Improves Blood Circulation🧘:
                 </h3>
-                <p>Pomegranate and Orange, with vitamin E and antioxidants, boost scalp blood circulation, delivering
+                <p class="text-xl">Pomegranate and Orange, with vitamin E and antioxidants, boost scalp blood circulation,
+                    delivering
                     essential nutrients for healthier, thicker hair, while preventing oxidative stress and hair cell damage.
                 </p>
-                <h3 class=" text-2xl font-bold ">-Supports Collagen Synthesis💫:
+                <h3 class=" text-2xl font-bold mt-4">-Supports Collagen Synthesis💫:
                 </h3>
-                <p>Aids in collagen synthesis, vital for maintaining hair's strength and structure, reducing hair thinning
+                <p class="text-xl">Aids in collagen synthesis, vital for maintaining hair's strength and structure, reducing
+                    hair thinning
                     and breakage.
                 </p>
             </div>
 
-            <div class="container mx-auto py-5 leading-10">
-                <h2 class="text-center text-4xl font-extrabold text-secondary">WHAT’S IN IT?</h2>
-                <h3 class=" text-2xl font-bold ">-AMLA:</h3>
-                <p>Indian Gooseberry better known as Amla, contains Vitamin C, which is helpful to boost collagen for
+            <div class="container mx-auto py-5">
+                <h2 class="text-center text-4xl font-extrabold text-secondary mb-10">WHAT’S IN IT?</h2>
+                <h3 class=" text-2xl font-bold mt-4">-AMLA:</h3>
+                <p class="text-xl">Indian Gooseberry better known as Amla, contains Vitamin C, which is helpful to boost
+                    collagen for
                     healthy hair and improves blood circulation to prevent dryness.
                 </p>
-                <h3 class=" text-2xl font-bold ">-ORANGE
+                <h3 class=" text-2xl font-bold mt-4">-ORANGE
                 </h3>
-                <p>A Citrus Fruit rich in vitamin E, an antioxidant that supports hair follicles, prevents oxidative stress,
+                <p class="text-xl">A Citrus Fruit rich in vitamin E, an antioxidant that supports hair follicles, prevents
+                    oxidative stress,
                     and boosts hair health.
                 </p>
-                <h3 class=" text-2xl font-bold ">-POMEGRANATE
+                <h3 class=" text-2xl font-bold mt-4">-POMEGRANATE
                 </h3>
-                <p>Enhances hair elasticity, reduces breakage, and promotes growth for healthier hair.
+                <p class="text-xl">Enhances hair elasticity, reduces breakage, and promotes growth for healthier hair.
                 </p>
-                <h3 class=" text-2xl font-bold ">-SEA BUCKTHORN:
+                <h3 class=" text-2xl font-bold mt-4">-SEA BUCKTHORN:
                 </h3>
-                <p>Packed with omega fatty acids, reduces inflammation, nourishes scalp and follicles, promotes hair growth,
+                <p class="text-xl">Packed with omega fatty acids, reduces inflammation, nourishes scalp and follicles,
+                    promotes hair growth,
                     and reduces hair loss.
                 </p>
             </div>
-            <div class="container mx-auto py-5 leading-10">
-                <h2 class="text-center text-4xl font-extrabold text-secondary">WHAT TO EXPECT:
+            <div class="container mx-auto py-5">
+                <h2 class="text-center text-4xl font-extrabold text-secondary mb-10">WHAT TO EXPECT:
                 </h2>
-                <h3 class=" text-2xl font-bold ">-After 4 weeks:</h3>
-                <p>Reduces hair fall and dandruff, minimises breakage and itchiness, while nourishing hair strands.
+                <h3 class=" text-2xl font-bold mt-4">-After 4 weeks:</h3>
+                <p class="text-xl">Reduces hair fall and dandruff, minimises breakage and itchiness, while nourishing hair
+                    strands.
                 </p>
-                <h3 class=" text-2xl font-bold ">-After 8 weeks:
+                <h3 class=" text-2xl font-bold mt-4">-After 8 weeks:
                 </h3>
-                <p>Promotes healthy blood circulation, provides hydration to prevent dryness, and encourages the scalp to
+                <p class="text-xl">Promotes healthy blood circulation, provides hydration to prevent dryness, and encourages
+                    the scalp to
                     maintain optimal oil and moisture levels.
 
                 </p>
-                <h3 class=" text-2xl font-bold ">-After 12 weeks:
+                <h3 class=" text-2xl font-bold mt-4">-After 12 weeks:
                 </h3>
-                <p>Reduces scalp inflammation and stress that leads to decreased hair fall, promoting visible root-level
+                <p class="text-xl">Reduces scalp inflammation and stress that leads to decreased hair fall, promoting
+                    visible root-level
                     hair growth, and boosts collagen production for enhanced hair elasticity.
                 </p>
             </div>

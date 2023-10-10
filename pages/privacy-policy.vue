@@ -7,7 +7,9 @@
                 <p class="mt-4 font-bold">Effective May 25, 2018</p>
             </div>
             <div class="col-span-3 flex flex-col justify-end">
-                <div class="box h-3/4 bg-white"></div>
+                <div class="box h-4/4 bg-white">
+                    <img src="/images/product/jar-with-box.jpg" class="overflow-hidden" alt="" />
+                </div>
             </div>
         </div>
 

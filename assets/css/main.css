@@ -45,3 +45,9 @@ body {
   opacity: 0;
   filter: blur(1rem);
 }
+
+/* @media screen and (min-width: 998px) {
+  html {
+    zoom: 80%;
+  }
+} */

@@ -844,7 +844,10 @@ onMounted(() => {
 
 
 
-
+  tlShowcase.from('.a', {
+    duration: 15,
+    rotation: 3240,
+  }, "+=1")
 
 
 
@@ -854,7 +857,7 @@ onMounted(() => {
     x: 300,
     yPercent: -100,
     duration: 5
-  }, "+=1")
+  }, "-=8")
 
   tlShowcase.to('.circulating-text-2', {
     opacity: 1,
@@ -1032,9 +1035,9 @@ const updateDotValue = (value) => {
           alt="" />
       </div> -->
       <div id="shop-section" class="fixed bottom-0 w-full">
-        <img class="w-[10rem] inset-0 m-auto" src="/images/Asset-26-4x.png" alt="" />
-        <img class="w-[5rem] absolute inset-0 m-auto" src="/images/Asset-27-4x.png" alt="" />
-        <p class="absolute inset-0 m-auto flex items-center justify-center text-secondary font-bold text-sm">
+        <img class="w-[7rem] inset-0 m-auto" src="/images/Asset-26-4x.png" alt="" />
+        <img class="w-[4rem] absolute inset-0 m-auto" src="/images/Asset-27-4x.png" alt="" />
+        <p class="absolute inset-0 m-auto flex items-center justify-center text-secondary font-bold text-xs">
           <a href="">Shop Now</a>
         </p>
       </div>
@@ -1084,48 +1087,48 @@ const updateDotValue = (value) => {
         <div class="home-container mt-12">
           <div class="elegance-text absolute top-[-200px] flex items-center justify-center w-screen h-screen">
             <!-- <h2 class="elegance-text-1">Let' s begin with Elegance: <br> Our Hair Care Superblend</h2> -->
-            <h4 class="text-6xl font-extrabold text-secondary elegance-text-1">LET' S BEGIN WITH ELEGANCE: <br> OUR
+            <h4 class="text-5xl font-extrabold text-secondary elegance-text-1">LET' S BEGIN WITH ELEGANCE: <br> OUR
               HAIR
               CARE SUPERBLEND</h4>
 
           </div>
           <!-- <p class="vitamin-custom">Vitamins</p> -->
           <h1
-            class="text-[6rem] absolute h-screen top-[-200px] flex items-center justify-center  w-screen vitamin-custom font-[900] text-primary  bg-transparent inset-x-0 tt-1">
+            class="text-[5rem] absolute h-screen top-[-170px] flex items-center justify-center  w-screen vitamin-custom font-[900] text-primary  bg-transparent inset-x-0 tt-1">
             Improves
           </h1>
           <!-- <p class="vitamin-custom-2">Vitamins - 2</p> -->
 
           <h1
-            class="text-[6rem] text-primary absolute vitamin-custom-2 font-[900] h-screen top-[-200px] flex items-center justify-center  w-screen bg-transparent inset-x-0 tt-2">
+            class="text-[5rem] text-primary absolute vitamin-custom-2 font-[900] h-screen top-[-170px] flex items-center justify-center  w-screen bg-transparent inset-x-0 tt-2">
             Balance
           </h1>
           <h1
-            class="text-[6rem] text-primary  vitamin-custom-3 font-[900] absolute h-screen top-[-200px] flex items-center justify-center  w-screen bg-transparent inset-x-0 tt-3">
+            class="text-[5rem] text-primary  vitamin-custom-3 font-[900] absolute h-screen top-[-170px] flex items-center justify-center  w-screen bg-transparent inset-x-0 tt-3">
             Enhance
           </h1>
           <h1
-            class="text-[6rem] text-primary vitamin-custom-4 font-[900] absolute h-screen top-[-200px] flex items-center justify-center  w-screen bg-transparent inset-x-0 tt-3">
+            class="text-[5rem] text-primary vitamin-custom-4 font-[900] absolute h-screen top-[-170px] flex items-center justify-center  w-screen bg-transparent inset-x-0 tt-3">
             Reduce
           </h1>
 
-          <div class="absolute flex h-screen justify-center items-center top-[-200px] w-screen">
+          <div class="absolute flex h-screen justify-center items-center top-[-170px] w-screen">
             <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
               WHAT'S IN IT?</h4>
           </div>
 
           <div class="absolute jar-without-lid top-0 opacity-0 flex items-center justify-center w-screen h-screen">
-            <img class=" h-[280px] w-[250px]" src="/images/jar-without-lid.png" alt="">
+            <img class=" h-[220px] w-[200px]" src="/images/jar-without-lid.png" alt="">
           </div>
 
-          <div class="absolute lid-of-jar flex top-[-100px] opacity-0 items-center justify-center w-screen h-screen">
-            <img class="w-[250px]" src="/images/lid.png" alt="">
+          <div class="absolute lid-of-jar flex top-[-80px] opacity-0 items-center justify-center w-screen h-screen">
+            <img class="w-[200px]" src="/images/lid.png" alt="">
           </div>
 
 
 
           <div class="box absolute a flex items-center top-0 justify-center w-screen h-screen ">
-            <img class="z-40 h-[280px] w-[250px]" src="/images/jar2.png" alt="">
+            <img class="z-40 h-[220px] w-[200px]" src="/images/jar2.png" alt="">
           </div>
 
 
@@ -1206,25 +1209,25 @@ const updateDotValue = (value) => {
               <h3 class="mt-5 text-xl text-primary font-bold">Gotu Kola Leaf</h3>
             </div>
           </div>
-          <div class="absolute h-screen top-[170px] flex items-center justify-center  w-screen">
+          <div class="absolute h-screen top-[130px] flex items-center justify-center  w-screen">
             <h4 class="text-xl text-center font-extrabold text-secondary opacity-0 what-text">
               Hair You Glo contains Amla, sea buckthorn, <br />Lemon powder along with 7 more Superfoods
               which
               have.
             </h4>
           </div>
-          <div class="elegance-text absolute top-[150px] flex justify-center items-center w-screen h-screen">
+          <div class="elegance-text absolute top-[130px] flex justify-center items-center w-screen h-screen">
             <h2 class="elegance-text-2 font-bold text-xl">Simple, Plant Based & Healthy Super Blends.</h2>
           </div>
           <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
-          <div class="absolute h-screen top-[180px] flex items-center justify-center  w-screen" style="   
+          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen" style="   
                 /* bottom: 0px; */
                 margin: auto;
                 display: flex;
                 align-items: center;
                 justify-content: center;">
 
-            <h1 class="text-[6rem] calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="
+            <h1 class="text-[5rem] calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="
             text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
               -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
           ">
@@ -1233,26 +1236,26 @@ const updateDotValue = (value) => {
           </div>
 
           <!-- <h2 class="calcium-custom">Calcium</h2> -->
-          <div class="absolute h-screen top-[180px] flex items-center justify-center  w-screen" style="
+          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen" style="
           /* bottom: 0px; */
           margin: auto;
           display: flex;
           align-items: center;
           justify-content: center;">
-            <h1 class="text-[6rem] font-extrabold  calcium-custom  text-emerald-800  bg-transparent inset-x-0 tt-2" style="
+            <h1 class="text-[5rem] font-extrabold  calcium-custom  text-emerald-800  bg-transparent inset-x-0 tt-2" style="
               text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
                 -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
             ">
               Scalp Health
             </h1>
           </div>
-          <div class="absolute h-screen top-[180px] flex items-center justify-center  w-screen" style="
+          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen" style="
           /* bottom: 0px; */
           margin: auto;
           display: flex;
           align-items: center;
           justify-content: center;">
-            <h1 class="text-[6rem] font-extrabold  calcium-custom-3  text-emerald-800  bg-transparent inset-x-0 tt-2"
+            <h1 class="text-[5rem] font-extrabold  calcium-custom-3  text-emerald-800  bg-transparent inset-x-0 tt-2"
               style="
               text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
                 -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
@@ -1260,13 +1263,13 @@ const updateDotValue = (value) => {
               Follicle Health
             </h1>
           </div>
-          <div class="absolute h-screen top-[180px] flex items-center justify-center  w-screen" style="
+          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen" style="
           /* bottom: 0px; */
           margin: auto;
           display: flex;
           align-items: center;
           justify-content: center;">
-            <h1 class="text-[6rem] font-extrabold  calcium-custom-4  text-emerald-800  bg-transparent inset-x-0 tt-2"
+            <h1 class="text-[5rem] font-extrabold  calcium-custom-4  text-emerald-800  bg-transparent inset-x-0 tt-2"
               style="
               text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
                 -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
@@ -1302,7 +1305,7 @@ const updateDotValue = (value) => {
         </div>
       </div>
       <h4 class="text-3xl font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
-        Artificial Sweetener-No Added Flavors-Lactose Free-No Allergen</h4>
+        Artificial Sweetener <br /> No Added Flavors-Lactose Free-No Allergen</h4>
 
 
       <div id="showcase-section-1" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
@@ -1337,7 +1340,7 @@ const updateDotValue = (value) => {
       <div class="container px-10 mx-auto">
         <div class="min-h-screen pt-16 relative border-blue-500 grid grid-cols-12 gap-4">
           <div class="col-span-8">
-            <p class="text-primary text-xl p-3 font-semibold">Hair-You-Glo revitalises your hair health and
+            <p class="text-secondary text-xl p-3 font-semibold">Hair-You-Glo revitalises your hair health and
               restores lost confidence related to hair concerns. Your hair is a vital part of your presentation
               and personality, and Hair-You-Glo ensures you radiate self-assurance in every interaction.
               Introducing our expertly crafted hair health betterment product, carefully with a blend of nature's
@@ -1346,7 +1349,7 @@ const updateDotValue = (value) => {
             </p>
             <br />
 
-            <p class="text-primary text-xl p-3 font-semibold">Hair-You-Glo is a product formulated in such a
+            <p class="text-secondary text-xl p-3 font-semibold">Hair-You-Glo is a product formulated in such a
               way that helps you improve your hair health by containing much required nutrients & vitamins in it.
               Experience the power of nature in every element of Hair-You-Glo. Elevate your hair health with a
               blend of carefully selected natural ingredients. Make Hair-You-Glo your daily partner in nurturing
