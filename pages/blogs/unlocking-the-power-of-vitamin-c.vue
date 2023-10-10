@@ -47,7 +47,7 @@
             </nav>
             <h2 class="text-primary text-3xl md:text-4xl py-10 font-bold">Unlocking the Power of Vitamin C: A Key to Healthy
                 Hair</h2>
-            <img src="/images/blog-1.png" alt="">
+            <img src="/images/vitamin-c.jpg" alt="">
             <p class="my-10 md:text-xl">In the pursuit of healthy, vibrant hair, we often turn to various products and
                 treatments. However, the key to achieving luscious locks might be simpler than you think. At [Your
                 Nutraceutical Brand], we understand the importance of nourishing your hair from within, and that's why we're

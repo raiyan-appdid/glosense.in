@@ -46,7 +46,7 @@
                 </ol>
             </nav>
             <h2 class="text-primary text-3xl md:text-4xl py-10 font-bold">WHAT IS PLANT BASED SUPPLEMENTS?</h2>
-            <img src="/images/blog-1.png" alt="">
+            <img src="/images/plant-based.jpg" alt="">
             <p class="my-10 md:text-xl">In recent years, the term "plant-based" has taken the health and wellness world by
                 storm. From
                 plant-based

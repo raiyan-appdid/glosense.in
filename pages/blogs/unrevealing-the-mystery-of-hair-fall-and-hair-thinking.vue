@@ -49,7 +49,7 @@
             <h2 class="text-primary text-3xl md:text-4xl py-10 font-bold">UNREVEALING THE MYSTERY OF HAIR FALL & HAIR
                 THINNING!!
             </h2>
-            <img src="/images/blog-1.png" alt="">
+            <img src="/images/hair-thinning.jpg" alt="">
             <p class="my-10 md:text-xl">In the hustle and bustle of daily life, it's not uncommon to notice changes in our
                 hair health. The mirror reflects hair that's not as voluminous as it used to be, or we find a little more
                 hair than usual on our brushes and in the shower drain. Hair thinning and fall can be distressing, but they

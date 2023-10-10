@@ -9,7 +9,7 @@
             <div class="sm:p-10">
                 <div>
                     <a href="/blogs/what-is-plant-based-supplements">
-                        <img src="/images/blog-1.png" alt="">
+                        <img src="/images/plant-based.jpg" class="w-full" alt="">
                     </a>
                 </div>
                 <div>
@@ -32,7 +32,7 @@
             <div class="sm:p-10 mt-8 sm:mt-0">
                 <div>
                     <a href="/blogs/unlocking-the-power-of-vitamin-c">
-                        <img src="/images/blog-1.png" alt="">
+                        <img src="/images/vitamin-c.jpg" class="w-full sm:w-5/6" alt="">
                     </a>
                 </div>
                 <div>
@@ -58,7 +58,7 @@
             <div class="sm:p-10 mt-8 sm:mt-0">
                 <div>
                     <a href="/blogs/unrevealing-the-mystery-of-hair-fall-and-hair-thinking">
-                        <img src="/images/blog-1.png" alt="">
+                        <img src="/images/hair-thinning.jpg" class="w-full sm:w-5/6" alt="">
                     </a>
                 </div>
                 <div>
