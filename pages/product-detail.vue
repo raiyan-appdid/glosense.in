@@ -153,6 +153,8 @@ onMounted(() => {
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:flex sm:justify-end sm:order-2">
                         <!-- <img src="/images/product-details1.png" class="sm:w-2/4 w-4/6 mx-auto" alt=" " /> -->
+                        <img src="/images/product/product-details-5.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
+
                     </div>
                 </div>
 
