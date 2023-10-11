@@ -9,26 +9,24 @@ onMounted(function () {
 
 <template>
     <HeaderCommon />
-    <div class="about-page mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
-        <img class="absolute opacity-50 md:w-[18rem] w-[10rem] bottom-[-8rem] left-[5rem]" src="/images/leave-bl.png"
-            alt="" />
-        <img class="absolute opacity-50 md:w-[10rem] w-[5rem] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png"
-            alt="" />
-        <img class="absolute opacity-50 md:w-[12rem] w-[6rem] left-[30%] top-[10%]" src="/images/Asset-25-4x.png" alt="" />
-        <img class="absolute opacity-50 md:w-[8rem] w-[4rem] right-[40%] top-[10%]" src="/images/Asset-24-4x.png" alt="" />
-        <img class="absolute opacity-50 md:w-[18rem] w-[9rem] bottom-[-10rem] left-[10rem]" src="/images/Asset-13-4x.png"
-            alt="" />
-        <img class="absolute opacity-50 md:w-[6rem] w-[3rem] right-[20%] top-[20%]" src="/images/Asset-22-4x.png" alt="" />
-        <img class="absolute opacity-50 md:w-[40rem] w-[5rem] right-[5rem] top-[-5rem]" src="/images/Asset-23-4x.png"
-            alt="" />
-        <img class="absolute opacity-50 md:w-[15rem] w-[7rem] right-[5rem] bottom-[0rem]" src="/images/Asset-16-4x.png"
-            alt="" />
-        <img class="absolute opacity-50 md:w-[8rem] w-[4rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png"
-            alt="" />
-        <img class="absolute opacity-50 md:w-auto right-0 top-[10rem]" src="/images/rl-small.png" alt="" />
-        <div class="container mx-auto">
+    <img class="absolute opacity-50 md:w-[18rem] w-[10rem] bottom-[-8rem] left-[5rem] z-30" src="/images/leave-bl.png"
+        alt="" />
+    <img class="absolute opacity-50 md:w-[10rem] w-[5rem] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png" alt="" />
+    <img class="absolute opacity-50 md:w-[12rem] w-[6rem] left-[30%] top-[10%]" src="/images/Asset-25-4x.png" alt="" />
+    <img class="absolute opacity-50 md:w-[8rem] w-[4rem] right-[40%] top-[10%]" src="/images/Asset-24-4x.png" alt="" />
+    <img class="absolute opacity-50 md:w-[18rem] w-[9rem] bottom-[-10rem] left-[10rem]" src="/images/Asset-13-4x.png"
+        alt="" />
+    <img class="absolute opacity-50 md:w-[6rem] w-[3rem] right-[20%] top-[20%]" src="/images/Asset-22-4x.png" alt="" />
+    <img class="absolute opacity-50 md:w-[40rem] w-[5rem] right-[5rem] top-[-5rem]" src="/images/Asset-23-4x.png" alt="" />
+    <img class="absolute opacity-50 md:w-[15rem] w-[7rem] right-[5rem] bottom-[0rem]" src="/images/Asset-16-4x.png"
+        alt="" />
+    <img class="absolute opacity-50 md:w-[8rem] w-[4rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png"
+        alt="" />
+    <img class="absolute opacity-50 md:w-auto right-0 top-[10rem]" src="/images/rl-small.png" alt="" />
+    <div class="about-page mt-20 sm:mt-24 pb-20 bg-[#efe8df] z-20">
+        <div class="mx-auto">
             <div class="slider">
-                <img src="/images/about-us-banner.webp" class="w-screen" alt="" />
+                <img src="/images/about-us-banner.webp" class="w-screen z-50" alt="" />
             </div>
             <div class="header">
                 <h2 class="text-center text-2xl md:5xl font-bold text-secondary mt-6">Simple, Plant Based & Healthy Super
@@ -37,20 +35,20 @@ onMounted(function () {
             </div>
             <div class=" text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center sm:py-4">
-                    <div class="w-52 h-52 flex justify-center items-center bg-white">
+                    <div class=" flex justify-center items-center bg-white">
                         <img src="/images/aboutus/discover-wellness.jpg" class="object-fill h-52 w-80" alt="" />
                         <!-- <h2 class="text-primary">Discovering Wellness from Within</h2> -->
                     </div>
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <div class="w-52 h-52 flex justify-center items-center bg-white">
+                    <div class=" flex justify-center items-center bg-white">
                         <img src="/images/aboutus/plant-based.jpg" class="object-fill h-52 w-80" alt="" />
                         <!-- <img src="/images/blog.png" class="" alt="" /> -->
                         <!-- <h2 class="text-primary">Plant Based Super Blends</h2> -->
                     </div>
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <div class="w-52 h-52 flex justify-center items-center bg-white">
+                    <div class=" flex justify-center items-center bg-white">
                         <img src="/images/aboutus/what-you-need.jpg" class="object-fill h-52 w-80" alt="" />
 
                         <!-- <img src="/images/recipes.png" class="" alt="" /> -->

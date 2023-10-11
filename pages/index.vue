@@ -484,9 +484,9 @@ onMounted(() => {
 
   section += 0;
   tlShowcase.to('.a', {
-    rotation: 720,
+    rotation: 360,
     // duration: 1,
-    duration: 10,
+    duration: 5,
   }, "+=1")
 
 
@@ -876,7 +876,7 @@ onMounted(() => {
     x: -300,
     yPercent: 100,
     duration: 5
-  }, "-=2");
+  }, "-=4");
 
 
   tlShowcase.to('.a', {
@@ -1003,13 +1003,13 @@ onMounted(() => {
     duration: 2,
   })
 
-  tlShowcase.to("#shop-section",
-    {
-      y: "-2rem",
-      scale: 1.2
-    }, "+=1");
-  section += 0.5;
-  tlEfffect.to({}, { duration: 1 }, section);
+  // tlShowcase.to("#shop-section",
+  //   {
+  //     y: "-2rem",
+  //     scale: 1.2
+  //   }, "+=1");
+  // section += 0.5;
+  // tlEfffect.to({}, { duration: 1 }, section);
 });
 
 const updateDotValue = (value) => {
@@ -1035,11 +1035,11 @@ const updateDotValue = (value) => {
           alt="" />
       </div> -->
       <div id="shop-section" class="fixed bottom-0 w-full">
-        <img class="w-[7rem] inset-0 m-auto" src="/images/Asset-26-4x.png" alt="" />
+        <!-- <img class="w-[7rem] inset-0 m-auto" src="/images/Asset-26-4x.png" alt="" />
         <img class="w-[4rem] absolute inset-0 m-auto" src="/images/Asset-27-4x.png" alt="" />
         <p class="absolute inset-0 m-auto flex items-center justify-center text-secondary font-bold text-xs">
           <a href="">Shop Now</a>
-        </p>
+        </p> -->
       </div>
       <div id="hero-section"
         class="hero__section bg-[url('/images/bg.png') relative min-h-screen bg-no-repeat bg-cover bg-top overflow-hidden">
@@ -1190,7 +1190,6 @@ const updateDotValue = (value) => {
               <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-03.png" alt="" />
               <h3 class="mt-5 text-xl text-primary font-bold">Cinnamon Bark</h3>
             </div>
-
             <div class="ingredient-my-3 flex items-center flex-col">
               <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-04.png" alt="" />
               <h3 class="mt-5 text-xl text-primary font-bold">Amla</h3>
@@ -1220,55 +1219,32 @@ const updateDotValue = (value) => {
             <h2 class="elegance-text-2 font-bold text-xl">Simple, Plant Based & Healthy Super Blends.</h2>
           </div>
           <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
-          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen" style="   
-                /* bottom: 0px; */
-                margin: auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;">
+          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen">
 
             <h1 class="text-[5rem] calcium-custom-2 font-[1000] text-emerald-800  bg-transparent inset-x-0 tt-2" style="
             text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
-              -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
-          ">
+              -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
               Hair Growth
             </h1>
           </div>
 
           <!-- <h2 class="calcium-custom">Calcium</h2> -->
-          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen" style="
-          /* bottom: 0px; */
-          margin: auto;
-          display: flex;
-          align-items: center;
-          justify-content: center;">
+          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen">
             <h1 class="text-[5rem] font-extrabold  calcium-custom  text-emerald-800  bg-transparent inset-x-0 tt-2" style="
               text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
-                -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
-            ">
+                -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
               Scalp Health
             </h1>
           </div>
-          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen" style="
-          /* bottom: 0px; */
-          margin: auto;
-          display: flex;
-          align-items: center;
-          justify-content: center;">
+          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen">
             <h1 class="text-[5rem] font-extrabold  calcium-custom-3  text-emerald-800  bg-transparent inset-x-0 tt-2"
               style="
               text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
-                -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
-            ">
+                -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
               Follicle Health
             </h1>
           </div>
-          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen" style="
-          /* bottom: 0px; */
-          margin: auto;
-          display: flex;
-          align-items: center;
-          justify-content: center;">
+          <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen">
             <h1 class="text-[5rem] font-extrabold  calcium-custom-4  text-emerald-800  bg-transparent inset-x-0 tt-2"
               style="
               text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
@@ -1278,30 +1254,32 @@ const updateDotValue = (value) => {
             </h1>
           </div>
 
+          <div class="absolute flex top-0 items-center justify-center w-screen h-screen -z-10">
+            <h1 class="text-[2rem] circulating-text-1 opacity-0 absolute font-[1000] text-secondary  bg-transparent">
+              Effectively <br /> suppress DHT
+            </h1>
+            <h1 class="text-[2rem] absolute font-[1000] text-primary circulating-text-2 opacity-0 ">
+              Maintains <br /> pH Level
+            </h1>
+            <h1 class="text-[2rem] circulating-text-3 opacity-0 absolute font-[1000] text-primary  bg-transparent">
+              Improves Blood <br /> Circulation
+            </h1>
+            <h1 class="text-[2rem] absolute font-[1000] opacity-0 circulating-text-4  text-secondary  ">
+              Supports <br /> Collagen Synthesis
+            </h1>
+          </div>
+
           <!-- <div class="absolute w-screen">
           <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
             WHAT'S IN IT?</h4>
         </div> -->
-
-          <div class="custom-circulating mt-12">
-            <h1
-              class="text-[2rem] circulating-text-1 opacity-0 absolute font-[1000] text-secondary  bg-transparent inset-x-0 tt-1">
-              Effectively <br /> suppress DHT
-            </h1>
-            <h1 class="text-[2rem] absolute font-[1000] text-primary circulating-text-2 opacity-0  inset-x-0 tb-1 ">
-              Maintains <br /> pH Level
-            </h1>
-            <h1
-              class="text-[2rem] circulating-text-3 opacity-0 absolute font-[1000] text-primary  bg-transparent inset-x-0 tt-2">
-              Improves Blood <br /> Circulation
-            </h1>
-            <h1 class="text-[2rem] absolute font-[1000] opacity-0 circulating-text-4  text-secondary inset-x-0 tb-2 ">
-              Supports <br /> Collagen Synthesis
-            </h1>
-          </div>
         </div>
-        <div class="custom-image absolute top-[1000px] flex justify-center items-center w-screen h-screen  opacity-0">
-          <img width="100%" src="/images/website-banner-01.jpg" alt="">
+
+        <div class="custom-image absolute top-[1100px] flex justify-center items-center w-screen h-fit  opacity-0">
+          <img width="100%" src="/images/website-banner.jpg" alt="">
+          <h4 class="mt-5 text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4 absolute bottom-16 rounded-3xl"><a
+              href="/about">Know
+              more</a></h4>
         </div>
       </div>
       <h4 class="text-3xl font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
@@ -1317,14 +1295,14 @@ const updateDotValue = (value) => {
           </div>
           <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
             <div class="tear"></div>
-            <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-2@4x.png" alt="" />
+            <img class="object-cover h-[270px] mt-3 ml-3  w-[270px]" src="/images/Asset-2@4x.png" alt="" />
           </div>
           <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden ">
             <div class="tear"></div>
             <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-1@4x.png" alt="" />
           </div>
         </div>
-        <div style="--fill-till: 0" id="showcase-slider" class="relative flex justify-center">
+        <!-- <div style="--fill-till: 0" id="showcase-slider" class="relative flex justify-center">
           <div class="w-[50rem] h-2 relative">
             <div class="h-2 w-full absolute bg-gray-400" id="slide"></div>
             <div class="h-2 w-[calc(var(--fill-till)*1%)] absolute bg-primary" id="slide-full">
@@ -1332,7 +1310,7 @@ const updateDotValue = (value) => {
                 class="h-7 w-7 rounded-full inset-y-0 m-auto absolute bg-primary right-0" id="slide-dot"></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -1374,14 +1352,6 @@ const updateDotValue = (value) => {
 </template>
 
 <style>
-.custom-circulating {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  top: 36vh;
-  /* margin-top: auto; */
-}
-
 .svg-align {
   position: absolute;
   bottom: 30vh;

@@ -111,7 +111,7 @@ onMounted(() => {
                     </div> -->
                     <div class="flex">
                         <span class="font-extrabold text-4xl">Rs. 899</span>
-                        <span class="font-medium text-lg bg-red-300 p-2 mx-auto"><s>Rs.999</s> 10% Off</span>
+                        <span class="font-medium text-lg bg-red-300 p-2 mx-auto"><s>Rs.1300</s> 30% Off</span>
                     </div>
                     <div class="flex my-6">
                         <!-- <button class="bg-slate-900 text-white py-4 px-10">Add To Cart</button> -->
@@ -199,7 +199,7 @@ onMounted(() => {
             </div>
 
             <div class="container mx-auto py-5">
-                <h2 class="text-center text-4xl font-extrabold text-secondary mb-10">HOW IT WORKS:</h2>
+                <h2 class="text-center text-4xl font-extrabold text-secondary mt-14 mb-10">HOW IT WORKS:</h2>
                 <h3 class=" text-2xl font-bold ">-Effectively suppress DHT🌿:</h3>
                 <p class="text-xl">Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood
                     circulation, and
@@ -226,7 +226,7 @@ onMounted(() => {
             </div>
 
             <div class="container mx-auto py-5">
-                <h2 class="text-center text-4xl font-extrabold text-secondary mb-10">WHAT’S IN IT?</h2>
+                <h2 class="text-center text-4xl font-extrabold text-secondary mt-20 mb-10">WHAT’S IN IT?</h2>
                 <h3 class=" text-2xl font-bold mt-4">-AMLA:</h3>
                 <p class="text-xl">Indian Gooseberry better known as Amla, contains Vitamin C, which is helpful to boost
                     collagen for
@@ -250,7 +250,7 @@ onMounted(() => {
                 </p>
             </div>
             <div class="container mx-auto py-5">
-                <h2 class="text-center text-4xl font-extrabold text-secondary mb-10">WHAT TO EXPECT:
+                <h2 class="text-center text-4xl font-extrabold text-secondary mt-20 mb-10">WHAT TO EXPECT:
                 </h2>
                 <h3 class=" text-2xl font-bold mt-4">-After 4 weeks:</h3>
                 <p class="text-xl">Reduces hair fall and dandruff, minimises breakage and itchiness, while nourishing hair
@@ -291,8 +291,7 @@ onMounted(() => {
                 </div> -->
 
                 <div class="review">
-                    <h2 class="text-secondary text-center font-bold text-4xl my-10">Customer Reviews</h2>
-
+                    <!-- <h2 class="text-secondary text-center font-bold text-4xl my-10">Customer Reviews</h2>
 
                     <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-12 sm:col-span-4 ">
@@ -301,31 +300,7 @@ onMounted(() => {
                         <div class="col-span-12 sm:col-span-8 my-auto">
                             <h2 class="font-bold text-xl">Hair you glo for Healthy & Strong Hair</h2>
                             <div class="flex my-2">
-                                <!-- <span class="text-3xl font-extrabold my-auto mr-4">4.2</span>
-                                <span><svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#eab508"
-                                            d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                                    </svg></span>
-                                <span><svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#eab508"
-                                            d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                                    </svg></span>
-                                <span><svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#eab508"
-                                            d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                                    </svg></span>
-                                <span><svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#eab508"
-                                            d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                                    </svg></span>
-                                <span><svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#eab508"
-                                            d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                                    </svg></span> -->
                             </div>
-                            <!-- <p>0 reviews</p> -->
-
-
                             <div class="stars-slider w-full flex items-center">
                                 <span class="my-auto text-xs font-bold">5</span>
                                 <span class="my-auto ml-1 mr-2"><svg width="20" height="20" viewBox="0 0 24 24"
@@ -627,7 +602,7 @@ onMounted(() => {
                                     and I'm not sure if I'll be using it again.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <h2 class="text-secondary text-center text-2xl font-bold my-10">FAQ's</h2>
                     <div class="container mx-auto">
