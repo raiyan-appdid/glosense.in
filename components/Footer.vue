@@ -50,8 +50,8 @@
                                 class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Locations</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#"
-                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Privacy</a>
+                            <a href="/privacy-policy"
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Privacy Policy</a>
                         </li>
                         <li class="mb-2">
                             <a href="#"
