@@ -4,18 +4,18 @@
     <div class="contact mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
         <h2 class="py-10 text-secondary text-4xl font-bold text-center">Contact Us</h2>
 
-        <img class="absolute opacity-50 w-[10rem] bottom-[-8rem] left-[5rem]" src="/images/leave-bl.png" alt="" />
+        <!-- <img class="absolute opacity-50 w-[10rem] bottom-[-8rem] left-[5rem]" src="/images/leave-bl.png" alt="" /> -->
         <!-- <img class="absolute opacity-50 w-[10rem] top-[0%] inset-[35%] right-[2rem]" src="/images/Asset-15-4x.png"
             alt="" /> -->
-        <img class="absolute opacity-50 w-[12rem] left-[30%] top-[10%]" src="/images/Asset-25-4x.png" alt="" />
+        <!-- <img class="absolute opacity-50 w-[12rem] left-[30%] top-[10%]" src="/images/Asset-25-4x.png" alt="" /> -->
         <!--  <img class="absolute opacity-50 w-[8rem] right-[40%] top-[120%]" src="/images/Asset-24-4x.png" alt="" />
         <img class="absolute opacity-50 w-[7rem] bottom-[10rem] top-[230%] left-[15rem]" src="/images/Asset-13-4x.png"
             alt="" />
         <img class="absolute opacity-50 w-[6rem] right-[20%] top-[200%]" src="/images/Asset-22-4x.png" alt="" />
         <img class="absolute opacity-50 w-[40rem] right-[5rem] top-[210%]" src="/images/Asset-23-4x.png" alt="" /> -->
-        <img class="absolute opacity-50 w-[15rem] right-[5rem] bottom-[0rem]" src="/images/Asset-16-4x.png" alt="" />
+        <!-- <img class="absolute opacity-50 w-[15rem] right-[5rem] bottom-[0rem]" src="/images/Asset-16-4x.png" alt="" />
         <img class="absolute opacity-50 w-[8rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png" alt="" />
-        <img class="absolute opacity-50 w-auto right-0 top-[90%]" src="/images/rl-small.png" alt="" />
+        <img class="absolute opacity-50 w-auto right-0 top-[90%]" src="/images/rl-small.png" alt="" /> -->
 
         <div class="grid grid-cols-12">
             <div class="col-span-12 lg:col-span-6 px-5 lg:px-20">

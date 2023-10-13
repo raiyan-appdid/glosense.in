@@ -60,6 +60,11 @@ onUnmounted(() => {
 
   <div>
     <div id="sidebar" class="sidebar flex justify-between fixed top-0 w-full sm:py-4 sm:px-10 py-2 px-10 z-10 show-blur">
+
+      <div>
+        <p class="text-black">raiyan</p>
+      </div>
+
       <div @click="showSideBar" @mouseover="handleHover" @mouseout="handleHover"
         class="flex items-center hover:cursor-pointer">
         <span class="rounded-full border border-secondary p-1">

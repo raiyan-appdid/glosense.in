@@ -7,7 +7,7 @@ function openModal() {
         let modal = document.getElementById('authentication-modal')
         modal.classList.remove('hidden');
     }
-    else {
+    else {``
         getUser();
         gateWayIntegration();
         //cc avenue gateway.....
