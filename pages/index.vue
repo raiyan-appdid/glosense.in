@@ -38,7 +38,7 @@ onMounted(() => {
 
   tlHero.to("#logo-image", {
     duration: 6,
-    top: "1.5rem",
+    top: "2.7rem",
     width: "10rem",
   }, "+=1");
   tlHero.to(".home-text", {
@@ -807,7 +807,31 @@ onMounted(() => {
 
 
 
+  tlShowcase.to('.circulating-text-5', {
+    opacity: 0,
+    x: 300,
+    yPercent: -100,
+    duration: 5
+  }, "<")
 
+  tlShowcase.to('.circulating-text-6', {
+    opacity: 0,
+    x: 300,
+    yPercent: 100,
+    duration: 5
+  }, "<");
+  tlShowcase.to('.circulating-text-7', {
+    opacity: 0,
+    x: -300,
+    yPercent: -100,
+    duration: 5
+  }, "<");
+  tlShowcase.to('.circulating-text-8', {
+    opacity: 0,
+    x: -300,
+    yPercent: 100,
+    duration: 5
+  }, "<");
 
 
   tlShowcase.from('.a', {
@@ -879,12 +903,12 @@ onMounted(() => {
   }, "-=4");
 
 
-  tlShowcase.to('.a', {
-    scale: 0
-  }, "+=1")
+  // tlShowcase.to('.a', {
+  //   scale: 0
+  // }, "+=1")
   tlShowcase.to('.circulating-text-1', {
     scale: 0,
-  }, "<")
+  }, "+=1")
   tlShowcase.to('.circulating-text-2', {
     scale: 0,
   }, "<")
@@ -894,6 +918,69 @@ onMounted(() => {
   tlShowcase.to('.circulating-text-4', {
     scale: 0,
   }, "<")
+
+
+
+  // tlShowcase.to('.a', {
+  //   duration: 7,
+  //   rotation: 3240,
+  // }, "+=1")
+
+
+
+
+
+
+
+  tlShowcase.to('.circulating-text-5', {
+    opacity: 1,
+    x: 300,
+    yPercent: -100,
+    duration: 5
+  }, "+=1")
+
+  tlShowcase.to('.circulating-text-6', {
+    opacity: 1,
+    x: 300,
+    yPercent: 100,
+    duration: 5
+  }, "-=6");
+  tlShowcase.to('.circulating-text-7', {
+    opacity: 1,
+    x: -300,
+    yPercent: -100,
+    duration: 5
+  }, "-=4");
+  tlShowcase.to('.circulating-text-8', {
+    opacity: 1,
+    x: -300,
+    yPercent: 100,
+    duration: 5
+  }, "-=4");
+
+
+
+
+
+
+  tlShowcase.to('.a', {
+    scale: 0
+  }, "+=1")
+  tlShowcase.to('.circulating-text-5', {
+    scale: 0,
+  }, "+=1")
+  tlShowcase.to('.circulating-text-6', {
+    scale: 0,
+  }, "<")
+  tlShowcase.to('.circulating-text-7', {
+    scale: 0,
+  }, "<")
+  tlShowcase.to('.circulating-text-8', {
+    scale: 0,
+  }, "<")
+
+
+
 
   tlShowcase.to('#showcase-section-1', {
     y: -50,
@@ -1269,6 +1356,21 @@ const updateDotValue = (value) => {
             </h1>
           </div>
 
+          <div class="absolute flex top-0 items-center justify-center w-screen h-screen -z-10">
+            <h1 class="text-[2rem] circulating-text-5 opacity-0 absolute font-[1000] text-secondary  bg-transparent">
+              Plant based <br /> Gluten free
+            </h1>
+            <h1 class="text-[2rem] absolute font-[1000] text-primary circulating-text-6 opacity-0 ">
+              No Artificial <br /> Sweetener
+            </h1>
+            <h1 class="text-[2rem] circulating-text-7 opacity-0 absolute font-[1000] text-primary  bg-transparent">
+              No Added <br /> Flavors
+            </h1>
+            <h1 class="text-[2rem] absolute font-[1000] opacity-0 circulating-text-8  text-secondary  ">
+              Lactose Free <br /> No Allergen
+            </h1>
+          </div>
+
           <!-- <div class="absolute w-screen">
           <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
             WHAT'S IN IT?</h4>
@@ -1282,8 +1384,8 @@ const updateDotValue = (value) => {
               more</a></h4>
         </div>
       </div>
-      <h4 class="text-3xl font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
-        Artificial Sweetener <br /> No Added Flavors-Lactose Free-No Allergen</h4>
+      <!-- <h4 class="text-3xl font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
+        Artificial Sweetener <br /> No Added Flavors-Lactose Free-No Allergen</h4> -->
 
 
       <div id="showcase-section-1" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
@@ -1318,7 +1420,7 @@ const updateDotValue = (value) => {
       <div class="container px-10 mx-auto">
         <div class="min-h-screen pt-16 relative border-blue-500 grid grid-cols-12 gap-4">
           <div class="col-span-8">
-            <p class="text-secondary text-xl p-3 font-semibold">Hair-You-Glo revitalises your hair health and
+            <p class="text-secondary text-justify text-xl p-3 font-semibold">Hair-You-Glo revitalises your hair health and
               restores lost confidence related to hair concerns. Your hair is a vital part of your presentation
               and personality, and Hair-You-Glo ensures you radiate self-assurance in every interaction.
               Introducing our expertly crafted hair health betterment product, carefully with a blend of nature's
@@ -1327,7 +1429,8 @@ const updateDotValue = (value) => {
             </p>
             <br />
 
-            <p class="text-secondary text-xl p-3 font-semibold">Hair-You-Glo is a product formulated in such a
+            <p class="text-secondary text-justify text-xl p-3 font-semibold">Hair-You-Glo is a product formulated in such
+              a
               way that helps you improve your hair health by containing much required nutrients & vitamins in it.
               Experience the power of nature in every element of Hair-You-Glo. Elevate your hair health with a
               blend of carefully selected natural ingredients. Make Hair-You-Glo your daily partner in nurturing

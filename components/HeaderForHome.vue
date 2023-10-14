@@ -57,7 +57,10 @@ onUnmounted(() => {
 <template>
   <LoginModal />
   <div>
-    <div id="sidebar" class="sidebar fixed top-0 w-full flex justify-between sm:py-8 sm:px-20 py-5 px-10 z-10"
+    <div class="fixed top-0 w-screen bg-secondary z-10">
+      <p class="p-0 m-0 text-center font-bold">GET 10% OFF WITH CODE MYFIRSTJAR</p>
+    </div>
+    <div id="sidebar" class="sidebar fixed top-6 w-full flex justify-between sm:py-8 sm:px-20 py-5 px-10 z-10"
       :class="showBlur ? 'show-blur' : ''">
       <div @click="showSideBar" @mouseover="handleHover" @mouseout="handleHover"
         class="flex items-center hover:cursor-pointer">

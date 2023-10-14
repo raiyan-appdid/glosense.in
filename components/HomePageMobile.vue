@@ -23,7 +23,7 @@ onMounted(() => {
 
     tlHeroResponsive.to("#logo-image-responsive", {
         duration: 4,
-        top: "1rem",
+        top: "2.5rem",
         width: "8rem",
     }, "+=1");
 

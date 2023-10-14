@@ -23,7 +23,7 @@ onMounted(function () {
     <img class="absolute opacity-50 md:w-[8rem] w-[4rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png"
         alt="" />
     <img class="absolute opacity-50 md:w-auto right-0 top-[10rem]" src="/images/rl-small.png" alt="" /> -->
-    <div class="about-page mt-20 sm:mt-24 pb-20 bg-[#efe8df] z-20">
+    <div class="about-page mt-28 sm:mt-30 pb-20 bg-[#efe8df] z-20">
         <div class="mx-auto">
             <div class="slider">
                 <img src="/images/about-us-banner.webp" class="w-screen z-50" alt="" />
