@@ -82,7 +82,7 @@ onMounted(() => {
                     <ProductImage />
                 </div>
                 <div class="col-span-12 sm:col-span-7">
-                    <h2 class="font-extrabold text-3xl mt-4">Hair you glo for Healthy & Strong Hair</h2>
+                    <h2 class="font-extrabold text-4xl mt-4">HAIR YOU GLO FOR HEALTHY & STRONG HAIR</h2>
                     <p class="my-5">Introducing Glosense, your go-to solution for achieving healthy and
                         strong hair that
                         shines with vitality</p>
