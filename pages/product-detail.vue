@@ -116,7 +116,7 @@ onMounted(() => {
                     <div class="flex my-6">
                         <!-- <button class="bg-slate-900 text-white py-4 px-10">Add To Cart</button> -->
                         <button @click="openModal"
-                            class="bg-white text-black font-bold border border-black py-4 px-10 transition ease-in-out  hover:-translate-y-1 delay-75 hover:scale-110 hover:bg-black hover:text-white duration-500">Buy
+                            class="bg-secondary text-white font-bold border border-black py-4 px-10 transition ease-in-out  hover:-translate-y-1 delay-75 hover:scale-110 hover:bg-black hover:text-white duration-500">Buy
                             Now</button>
                     </div>
                     <div class="flex">
