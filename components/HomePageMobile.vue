@@ -245,6 +245,38 @@ onMounted(() => {
 
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 6,
+        rotation: 1800,
+    }, "<")
+
+    tlHeroResponsive.from('.vitamin-custom-3-responsive', {
+        x: 1000,
+        duration: 6,
+        opacity: 0,
+    }, "<")
+    tlHeroResponsive.from('.calcium-custom-3-responsive', {
+        x: -1000,
+        duration: 6,
+        opacity: 0,
+    }, "<")
+
+    tlHeroResponsive.from('#jar-image-responsive', {
+        duration: 6,
+        rotation: 2160,
+    }, "+=1")
+
+    tlHeroResponsive.to('.vitamin-custom-3-responsive', {
+        x: -1000,
+        duration: 6,
+        opacity: 0,
+    }, "<")
+    tlHeroResponsive.to('.calcium-custom-3-responsive', {
+        x: 1000,
+        duration: 6,
+        opacity: 0,
+    }, "<")
+
+    tlHeroResponsive.from('#jar-image-responsive', {
+        duration: 6,
         rotation: 1080,
     }, "+=1")
 
@@ -373,9 +405,19 @@ onMounted(() => {
                 </h1>
                 <h1 class="text-3xl inline-block absolute -top-[100px] vitamin-custom-2-responsive text-white bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
-              -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
+                     -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
                     REDUCE
                 </h1>
+                <h1 class="text-3xl inline-block absolute -top-[100px] vitamin-custom-3-responsive text-white bg-transparent inset-x-0"
+                    style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
+                     -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
+                    REDUCE - 3
+                </h1>
+                <!-- <h1 class="text-3xl inline-block absolute -top-[100px] vitamin-custom-4-responsive text-white bg-transparent inset-x-0"
+                    style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
+                     -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
+                    REDUCE - 4
+                </h1> -->
 
 
 
@@ -397,6 +439,14 @@ onMounted(() => {
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     HAIR FALL
                 </h1>
+                <h1 class="text-3xl absolute -bottom-[100px] calcium-custom-3-responsive text-emerald-800  bg-transparent inset-x-0"
+                    style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
+                    HAIR FALL -3
+                </h1>
+                <!-- <h1 class="text-3xl absolute -bottom-[100px] calcium-custom-4-responsive text-emerald-800  bg-transparent inset-x-0"
+                    style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
+                    HAIR FALL -4
+                </h1> -->
                 <h1 class="text-3xl absolute -bottom-[100px] font-extrabold calcium-custom-responsive text-emerald-800  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     CALCIUM
@@ -439,8 +489,12 @@ onMounted(() => {
                 <!-- </div> -->
 
             </div>
-            <div class="absolute -bottom-36">
-                <img width="100%" class="" id="slider-image-responsive" src="/images/raiyan-slider.jpg" alt="">
+            <div class="absolute -bottom-36 flex justify-center" id="slider-image-responsive">
+                <img width="130%" src="/images/website-banner.jpg" alt="">
+                <p
+                    class=" text-xs bg-[#ef8f7b] text-neutral-50 bottom-0 mx-auto text-center py-1 px-4 absolute rounded-3xl">
+                    <a href="/about">Know more</a>
+                </p>
             </div>
         </div>
 

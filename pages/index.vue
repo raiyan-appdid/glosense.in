@@ -903,12 +903,12 @@ onMounted(() => {
   }, "-=4");
 
 
-  // tlShowcase.to('.a', {
-  //   scale: 0
-  // }, "+=1")
+  tlShowcase.to('.a', {
+    scale: 0
+  }, "+=1")
   tlShowcase.to('.circulating-text-1', {
     scale: 0,
-  }, "+=1")
+  }, "<")
   tlShowcase.to('.circulating-text-2', {
     scale: 0,
   }, "<")
@@ -925,59 +925,6 @@ onMounted(() => {
   //   duration: 7,
   //   rotation: 3240,
   // }, "+=1")
-
-
-
-
-
-
-
-  tlShowcase.to('.circulating-text-5', {
-    opacity: 1,
-    x: 300,
-    yPercent: -100,
-    duration: 5
-  }, "+=1")
-
-  tlShowcase.to('.circulating-text-6', {
-    opacity: 1,
-    x: 300,
-    yPercent: 100,
-    duration: 5
-  }, "-=6");
-  tlShowcase.to('.circulating-text-7', {
-    opacity: 1,
-    x: -300,
-    yPercent: -100,
-    duration: 5
-  }, "-=4");
-  tlShowcase.to('.circulating-text-8', {
-    opacity: 1,
-    x: -300,
-    yPercent: 100,
-    duration: 5
-  }, "-=4");
-
-
-
-
-
-
-  tlShowcase.to('.a', {
-    scale: 0
-  }, "+=1")
-  tlShowcase.to('.circulating-text-5', {
-    scale: 0,
-  }, "+=1")
-  tlShowcase.to('.circulating-text-6', {
-    scale: 0,
-  }, "<")
-  tlShowcase.to('.circulating-text-7', {
-    scale: 0,
-  }, "<")
-  tlShowcase.to('.circulating-text-8', {
-    scale: 0,
-  }, "<")
 
 
 
@@ -1333,10 +1280,8 @@ const updateDotValue = (value) => {
           </div>
           <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen">
             <h1 class="text-[5rem] font-extrabold  calcium-custom-4  text-emerald-800  bg-transparent inset-x-0 tt-2"
-              style="
-              text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
-                -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
-            ">
+              style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
+                -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
               Hair Loss
             </h1>
           </div>
@@ -1355,26 +1300,6 @@ const updateDotValue = (value) => {
               Supports <br /> Collagen Synthesis
             </h1>
           </div>
-
-          <div class="absolute flex top-0 items-center justify-center w-screen h-screen -z-10">
-            <h1 class="text-[2rem] circulating-text-5 opacity-0 absolute font-[1000] text-secondary  bg-transparent">
-              Plant based <br /> Gluten free
-            </h1>
-            <h1 class="text-[2rem] absolute font-[1000] text-primary circulating-text-6 opacity-0 ">
-              No Artificial <br /> Sweetener
-            </h1>
-            <h1 class="text-[2rem] circulating-text-7 opacity-0 absolute font-[1000] text-primary  bg-transparent">
-              No Added <br /> Flavors
-            </h1>
-            <h1 class="text-[2rem] absolute font-[1000] opacity-0 circulating-text-8  text-secondary  ">
-              Lactose Free <br /> No Allergen
-            </h1>
-          </div>
-
-          <!-- <div class="absolute w-screen">
-          <h4 class="text-6xl  font-extrabold text-secondary opacity-0 what-text">
-            WHAT'S IN IT?</h4>
-        </div> -->
         </div>
 
         <div class="custom-image absolute top-[1100px] flex justify-center items-center w-screen h-fit  opacity-0">
