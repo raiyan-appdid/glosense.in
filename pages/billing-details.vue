@@ -17,6 +17,9 @@ const country = ref('');
 const number = ref('');
 const email = ref('');
 const user_id = ref('');
+const promocode = ref('');
+const promocodeVerified = ref(false);
+const promocodeDiscount = ref(0);
 const total_price = ref(1);
 
 
@@ -41,44 +44,15 @@ definePageMeta({
 
 async function storeBilling(e) {
 
-    // e.preventDefault();
-    // await useFetch("https://admin.glosense.in/sanctum/csrf-cookie", {
-    //     onResponse({ request, response, options }) {
-    //         console.log(response);
-    //     }
-    // })
-    // console.log(csrf.value);
-
-    // console.log(token);
-    // Notiflix.Loading.pulse();
-
-
-
-
-
-    await useFetch(`${apiUrl}/order/store?name=${name.value}&user_id=${data.value.data.id}&email=${email.value}&city=${city.value}&state=${state.value}&number=${number.value}&address=${address.value}&pincode=${pincode.value}&country=${country.value}&total_price=${total_price.value}`, {
+    await useFetch(`${apiUrl}/order/store?name=${name.value}&user_id=${data.value.data.id}&email=${email.value}&city=${city.value}&state=${state.value}&number=${number.value}&address=${address.value}&pincode=${pincode.value}&country=${country.value}&total_price=${total_price.value}&promocode=${promocode.value}`, {
         method: "GET",
         headers: {
             Authorization: "Bearer " + token.value,
             accept: "application/json"
         },
-        // body: {
-        //     name: name.value,
-        //     email: email.value,
-        //     city: city.value,
-        //     state: state.value,
-        //     number: number.value,
-        //     address: address.value,
-        //     pincode: pincode.value,
-        //     country: country.value,
-        //     total_price: total_price.value,
-        // },
         onResponse({ request, response, options }) {
             Notiflix.Loading.remove();
             console.log(response._data);
-
-
-
             const error = response._data.errors
             const res = response._data
             console.log(response);
@@ -95,6 +69,28 @@ async function storeBilling(e) {
         },
     })
 }
+
+async function verifyPromoCode() {
+    await useFetch(`${apiUrl}/promo-code`, {
+        method: "POST",
+        body: {
+            promocode: promocode.value
+        },
+        headers: {
+            accept: "application/json"
+        },
+        onResponse({ request, response, options }) {
+            console.log(response._data);
+            const verified = response._data.verified;
+            promocodeVerified.value = verified;
+            if (verified) {
+                promocodeDiscount.value = response._data.data.discount;
+            } else {
+                promocodeDiscount.value = 0;
+            }
+        },
+    })
+}
 </script>
 <template>
     <HeaderCommon />
@@ -105,52 +101,87 @@ async function storeBilling(e) {
                 <form action="https://admin.glosense.in/api/v1/order/store">
                     <div class="grid grid-cols-2 gap-5">
                         <div class="">
-                            <label for="text" class="block mb-2 text-md  font-bold text-black ">Billing name</label>
+                            <label for="text" class="block mb-2 text-md  font-bold text-black ">Billing name <span
+                                    class="text-red-500">*</span></label>
                             <input name="name" type="text" id="name" v-model="name"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Name">
                             <input type="hidden" name="user_id" v-model="user_id" id="">
                         </div>
                         <div class="">
-                            <label for="address" class="block mb-2 text-md  font-bold text-black ">Billing Address</label>
+                            <label for="address" class="block mb-2 text-md  font-bold text-black ">Billing Address <span
+                                    class="text-red-500">*</span></label>
                             <input name="addresss" v-model="address" id="address"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Address">
                         </div>
                         <div class="">
-                            <label for="city" class="block mb-2 text-md  font-bold text-black ">Billing City</label>
+                            <label for="city" class="block mb-2 text-md  font-bold text-black ">Billing City <span
+                                    class="text-red-500">*</span></label>
                             <input name="city" id="city" v-model="city"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Phone">
                         </div>
                         <div class="">
-                            <label for="state" class="block mb-2 text-md  font-bold text-black ">Billing State</label>
+                            <label for="state" class="block mb-2 text-md  font-bold text-black ">Billing State <span
+                                    class="text-red-500">*</span></label>
                             <input name="state" id="state" v-model="state"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
-                            <label for="pincode" class="block mb-2 text-md  font-bold text-black ">Pincode</label>
+                            <label for="pincode" class="block mb-2 text-md  font-bold text-black ">Pincode <span
+                                    class="text-red-500">*</span></label>
                             <input name="pincode" id="pincode" v-model="pincode"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
-                            <label for="country" class="block mb-2 text-md  font-bold text-black ">Country</label>
+                            <label for="country" class="block mb-2 text-md  font-bold text-black ">Country <span
+                                    class="text-red-500">*</span></label>
                             <input name="country" id="country" v-model="country"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
-                            <label for="phone" class="block mb-2 text-md  font-bold text-black ">Conctact Number</label>
+                            <label for="phone" class="block mb-2 text-md  font-bold text-black ">Conctact Number <span
+                                    class="text-red-500">*</span></label>
                             <input name="number" id="phone" v-model="number"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
-                            <label for="email" class="block mb-2 text-md  font-bold text-black ">Email</label>
+                            <label for="email" class="block mb-2 text-md  font-bold text-black ">Email <span
+                                    class="text-red-500">*</span></label>
                             <input name="email" id="email" type="email" v-model="email"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                             <input type="hidden" name="total_price" value="1">
                         </div>
-                        <button type="submit"
-                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center -600 -blue-700 -blue-800">Submit</button>
+                        <div class="flex">
+                            <div class="flex flex-col">
+                                <label for="promocode" class="block mb-2 text-md font-bold text-black ">Promo Code
+                                    (Optional)</label>
+                                <input @keyup="verifyPromoCode" name="promocode" id="promocode" type="promocode"
+                                    v-model="promocode"
+                                    class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5">
+                            </div>
+                            <span v-if="promocodeVerified" class="inline-block my-auto"><svg width="30" height="30"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#22c55e"
+                                        d="m8.6 22.5l-1.9-3.2l-3.6-.8l.35-3.7L1 12l2.45-2.8l-.35-3.7l3.6-.8l1.9-3.2L12 2.95l3.4-1.45l1.9 3.2l3.6.8l-.35 3.7L23 12l-2.45 2.8l.35 3.7l-3.6.8l-1.9 3.2l-3.4-1.45l-3.4 1.45Zm2.35-6.95L16.6 9.9l-1.4-1.45l-4.25 4.25l-2.15-2.1L7.4 12l3.55 3.55Z" />
+                                </svg></span>
+                            <span v-else class="inline-block my-auto">
+                                <svg width="30" height="30" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="#ef4444">
+                                        <path
+                                            d="M16.222 31.778a1 1 0 0 1 0-1.414L22.586 24l-6.364-6.364a1 1 0 0 1 1.414-1.414L24 22.586l6.364-6.364a1 1 0 0 1 1.414 1.414L25.414 24l6.364 6.364a1 1 0 0 1-1.414 1.414L24 25.414l-6.364 6.364a1 1 0 0 1-1.414 0Z" />
+                                        <path fill-rule="evenodd"
+                                            d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Zm0-2c9.941 0 18-8.059 18-18S33.941 6 24 6S6 14.059 6 24s8.059 18 18 18Z"
+                                            clip-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </span>
+                        </div><br />
+                        <div>
+                            <button type="submit"
+                                class="text-white bg-blue-700 my-auto hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center -600 -blue-700 -blue-800">Submit</button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -166,22 +197,32 @@ async function storeBilling(e) {
                     </div>
                 </div>
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
-                <div>
-                    <div class="flex justify-around">
+                <div class="grid grid-cols-2">
+
+                    <div class="text-end">Sub Total</div>
+                    <div class="mx-auto">899</div>
+                    <div class="text-end">Shipping</div>
+                    <div class="mx-auto">0</div>
+                    <div class="text-end">Promo Code Discount</div>
+                    <div class="mx-auto">{{ promocodeDiscount }}</div>
+
+                    <!-- <div class="mx-auto">
                         <p>Sub Total</p>
                         <p>899</p>
                     </div>
-                    <div class="flex justify-around">
+                    <div class="mx-auto">
                         <p>Shipping</p>
                         <p>0</p>
                     </div>
+                    <div class="mx-auto">
+                        <p>Promo Code Discount</p>
+                        <p>0</p>
+                    </div> -->
                 </div>
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
-                <div>
-                    <div class="flex justify-around">
-                        <p>Total</p>
-                        <p>899</p>
-                    </div>
+                <div class="grid grid-cols-2">
+                    <div class="text-end">Total</div>
+                    <div class="mx-auto">{{ 899 - promocodeDiscount }} ₹</div>
                 </div>
             </div>
         </div>
