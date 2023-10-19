@@ -220,7 +220,7 @@ onMounted(() => {
     }, "<")
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 6,
-        rotation: 1440,
+        rotation: 1080,
     }, "+=1")
     tlHeroResponsive.to('.vitamin-custom-responsive', {
         x: 500,
@@ -243,25 +243,37 @@ onMounted(() => {
         opacity: 1,
     }, "<")
 
+
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 6,
-        rotation: 1800,
+        rotation: 1440,
+    }, "+=1")
+
+    tlHeroResponsive.to('.vitamin-custom-2-responsive', {
+        x: 500,
+        duration: 6,
+        opacity: 1,
+    }, "<")
+    tlHeroResponsive.to('.calcium-custom-2-responsive', {
+        x: -500,
+        duration: 6,
+        opacity: 1,
     }, "<")
 
     tlHeroResponsive.from('.vitamin-custom-3-responsive', {
-        x: 1000,
+        x: -500,
         duration: 6,
         opacity: 0,
     }, "<")
     tlHeroResponsive.from('.calcium-custom-3-responsive', {
-        x: -1000,
+        x: 500,
         duration: 6,
         opacity: 0,
     }, "<")
 
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 6,
-        rotation: 2160,
+        rotation: 1800,
     }, "+=1")
 
     tlHeroResponsive.to('.vitamin-custom-3-responsive', {
@@ -275,26 +287,49 @@ onMounted(() => {
         opacity: 0,
     }, "<")
 
+    // tlHeroResponsive.from('.a', {
+    //     duration: 6,
+    //     rotation: 2520,
+    // }, "<")
+
+    tlHeroResponsive.from('.vitamin-custom-4-responsive', {
+        x: 1000,
+        duration: 6,
+        opacity: 0,
+    }, "<")
+    tlHeroResponsive.from('.calcium-custom-4-responsive', {
+        x: -1000,
+        duration: 6,
+        opacity: 0,
+    }, "<")
+
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 6,
-        rotation: 1080,
+        rotation: 2160,
     }, "+=1")
 
-    tlHeroResponsive.to('.vitamin-custom-2-responsive', {
-        x: 500,
+    tlHeroResponsive.to('.vitamin-custom-4-responsive', {
+        x: -1000,
         duration: 6,
-        opacity: 1,
+        opacity: 0,
     }, "<")
-    tlHeroResponsive.to('.calcium-custom-2-responsive', {
-        x: -500,
+    tlHeroResponsive.to('.calcium-custom-4-responsive', {
+        x: 1000,
         duration: 6,
-        opacity: 1,
+        opacity: 0,
     }, "<")
+
+
+
     tlHeroResponsive.to('#jar-image-responsive', {
         y: 130,
         opacity: 1,
         duration: 3,
     })
+
+
+
+
     tlHeroResponsive.to('.prevent-damage-1', {
         y: -60,
         opacity: 1,
@@ -401,23 +436,23 @@ onMounted(() => {
                     CARE SUPERBLEND</h4>
                 <h1 class="text-3xl inline-block absolute -top-[100px] text-white vitamin-custom-responsive  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,-1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
-                    VITAMINS
+                    Improves
                 </h1>
                 <h1 class="text-3xl inline-block absolute -top-[100px] vitamin-custom-2-responsive text-white bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
                      -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
-                    REDUCE
+                    Balance
                 </h1>
                 <h1 class="text-3xl inline-block absolute -top-[100px] vitamin-custom-3-responsive text-white bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
                      -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
-                    REDUCE - 3
+                    Enhance
                 </h1>
-                <!-- <h1 class="text-3xl inline-block absolute -top-[100px] vitamin-custom-4-responsive text-white bg-transparent inset-x-0"
+                <h1 class="text-3xl inline-block absolute -top-[100px] vitamin-custom-4-responsive text-white bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
                      -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
-                    REDUCE - 4
-                </h1> -->
+                    Reduce
+                </h1>
 
 
 
@@ -435,21 +470,21 @@ onMounted(() => {
                 <img id="jar-image-responsive" class="h-[160px] w-[150px]" src="/images/jar2.png" alt="">
 
 
-                <h1 class="text-3xl absolute -bottom-[100px] calcium-custom-2-responsive text-emerald-800  bg-transparent inset-x-0"
+                <h1 class="text-3xl w-screen absolute -bottom-[100px] calcium-custom-2-responsive text-emerald-800  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
-                    HAIR FALL
+                    Hair Growth
                 </h1>
-                <h1 class="text-3xl absolute -bottom-[100px] calcium-custom-3-responsive text-emerald-800  bg-transparent inset-x-0"
+                <h1 class="text-3xl absolute w-screen -bottom-[100px] calcium-custom-3-responsive text-emerald-800  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
-                    HAIR FALL -3
+                    Follicle Health
                 </h1>
-                <!-- <h1 class="text-3xl absolute -bottom-[100px] calcium-custom-4-responsive text-emerald-800  bg-transparent inset-x-0"
+                <h1 class="text-3xl absolute w-screen -bottom-[100px] calcium-custom-4-responsive text-emerald-800  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
-                    HAIR FALL -4
-                </h1> -->
-                <h1 class="text-3xl absolute -bottom-[100px] font-extrabold calcium-custom-responsive text-emerald-800  bg-transparent inset-x-0"
+                    Hair Loss
+                </h1>
+                <h1 class="text-3xl w-screen absolute -bottom-[100px] font-extrabold calcium-custom-responsive text-emerald-800  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
-                    CALCIUM
+                    Scalp Health
                 </h1>
                 <h2 class="text-center absolute -bottom-[100px] elegance-text-responsive font-bold text-sm mt-3">100 %
                     Easy to use - Plant Based

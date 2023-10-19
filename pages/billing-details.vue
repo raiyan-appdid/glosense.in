@@ -103,7 +103,7 @@ async function verifyPromoCode() {
                         <div class="">
                             <label for="text" class="block mb-2 text-md  font-bold text-black ">Billing name <span
                                     class="text-red-500">*</span></label>
-                            <input name="name" type="text" id="name" v-model="name"
+                            <input name="name" required type="text" id="name" v-model="name"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Name">
                             <input type="hidden" name="user_id" v-model="user_id" id="">
@@ -111,45 +111,45 @@ async function verifyPromoCode() {
                         <div class="">
                             <label for="address" class="block mb-2 text-md  font-bold text-black ">Billing Address <span
                                     class="text-red-500">*</span></label>
-                            <input name="addresss" v-model="address" id="address"
+                            <input name="addresss" required v-model="address" id="address"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Address">
                         </div>
                         <div class="">
                             <label for="city" class="block mb-2 text-md  font-bold text-black ">Billing City <span
                                     class="text-red-500">*</span></label>
-                            <input name="city" id="city" v-model="city"
+                            <input name="city" required id="city" v-model="city"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Phone">
                         </div>
                         <div class="">
                             <label for="state" class="block mb-2 text-md  font-bold text-black ">Billing State <span
                                     class="text-red-500">*</span></label>
-                            <input name="state" id="state" v-model="state"
+                            <input name="state" required id="state" v-model="state"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
                             <label for="pincode" class="block mb-2 text-md  font-bold text-black ">Pincode <span
                                     class="text-red-500">*</span></label>
-                            <input name="pincode" id="pincode" v-model="pincode"
+                            <input name="pincode" required id="pincode" v-model="pincode"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
                             <label for="country" class="block mb-2 text-md  font-bold text-black ">Country <span
                                     class="text-red-500">*</span></label>
-                            <input name="country" id="country" v-model="country"
+                            <input name="country" required id="country" v-model="country"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
                             <label for="phone" class="block mb-2 text-md  font-bold text-black ">Conctact Number <span
                                     class="text-red-500">*</span></label>
-                            <input name="number" id="phone" v-model="number"
+                            <input name="number" required id="phone" v-model="number"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
                             <label for="email" class="block mb-2 text-md  font-bold text-black ">Email <span
                                     class="text-red-500">*</span></label>
-                            <input name="email" id="email" type="email" v-model="email"
+                            <input name="email" required id="email" type="email" v-model="email"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                             <input type="hidden" name="total_price" value="1">
                         </div>
