@@ -540,23 +540,19 @@ onMounted(() => {
                     ELEGANCE: OUR
                     HAIR
                     CARE SUPERBLEND</h4>
-                <h1 class="text-6xl absolute font-extrabold flex justify-center -top-[100px] text-white vitamin-custom-responsive  bg-transparent inset-x-0"
-                    style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,-1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
+                <h1
+                    class="text-6xl text-primary absolute font-extrabold flex justify-center -top-[100px] vitamin-custom-responsive  bg-transparent inset-x-0">
                     Improves
                 </h1>
-                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-2-responsive text-white bg-transparent inset-x-0"
-                    style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
-                     -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
+                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-2-responsive text-primary bg-transparent inset-x-0">
                     Balance
                 </h1>
-                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-3-responsive text-white bg-transparent inset-x-0"
-                    style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
-                     -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
+                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-3-responsive text-primary bg-transparent inset-x-0"
+                   >
                     Enhance
                 </h1>
-                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-4-responsive text-white bg-transparent inset-x-0"
-                    style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
-                     -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
+                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-4-responsive text-primary bg-transparent inset-x-0"
+                    >
                     Reduce
                 </h1>
 
