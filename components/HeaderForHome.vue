@@ -156,7 +156,7 @@ onUnmounted(() => {
               <span class="flex-1 ml-3 whitespace-nowrap">About Us</span>
             </a>
           </li>
-          <li @click="closeSideBar">
+          <!-- <li @click="closeSideBar">
             <a href="/contact"
               class="flex ml-9 items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-[#e3694f] group">
               <svg
@@ -167,7 +167,7 @@ onUnmounted(() => {
               </svg>
               <span class="flex-1 ml-3 whitespace-nowrap">Contact Us</span>
             </a>
-          </li>
+          </li> -->
           <!-- <li @click="closeSideBar">
             <a href="/privacy-policy"
               class="flex ml-9 items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-[#e3694f] group">

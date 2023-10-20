@@ -67,28 +67,32 @@ onMounted(function () {
                     <div class="col-span-12 lg:col-span-6 mx-3">
                         <h2 class="font-bold text-2xl text-black leading-normal">Greetings SuperBeings🌷
                         </h2>
-                        <h6 class="text-xl leading-10">I embarked on a transformative journey that ultimately led to the
+                        <h6 class="text-lg mt-3 text-justify">I embarked on a transformative journey that ultimately led to
+                            the
                             creation of Glosense—an unwavering commitment to your holistic well-being.
                         </h6>
-                        <h6 class="text-xl leading-10">Formerly an engineer turned government employee, I comfortably
+                        <h6 class="text-lg mt-3 text-justify ">Formerly an engineer turned government employee, I
+                            comfortably
                             coasted through life until the pandemic shook the world. The extended hours indoors led me to
                             disregard my health and self-care. It served as a wake-up call that demanded my attention. I
                             made a resolute decision to change.
                         </h6>
-                        <h6 class="text-xl leading-10">It almost took me six months to undergo a profound
+                        <h6 class="text-lg mt-3 text-justify ">It almost took me six months to undergo a profound
                             transformation—physically, mentally, and emotionally. This personal journey laid the foundation
                             for Glosense, a brand deeply rooted in the conviction that inner well-being is the base wall of
                             overall health.
                         </h6>
-                        <h6 class="text-xl leading-10">Here at Glosense, we help you empower your wellness journey. We
+                        <h6 class="text-lg mt-3 text-justify ">Here at Glosense, we help you empower your wellness journey.
+                            We
                             provide unwavering support, guidance, and natural products meticulously crafted to prioritise
                             your inner health. We firmly believe that the power to effect change resides within each of us.
                         </h6>
-                        <h6 class="text-xl leading-10">Introduce Glosense in your life, where your journey to well-being
+                        <h6 class="text-lg mt-3 text-justify ">Introduce Glosense in your life, where your journey to
+                            well-being
                             begins. Together, let's take charge of our lives, health, and future.
                         </h6>
                         <br />
-                        <h6 class="text-xl">In pursuit of wellness,<br />
+                        <h6 class="text-lg mt-3 text-justify">In pursuit of wellness,<br />
                             Sagar Gaikwad<br />
                             Glosense<br />
 
@@ -112,6 +116,5 @@ onMounted(function () {
                 </div>
             </div>
 
-        </div>
     </div>
-</template>
+</div></template>

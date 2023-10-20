@@ -193,14 +193,14 @@ onMounted(() => {
         duration: 3,
     }, "+=1")
     tlHeroResponsive.to('#slider-image-responsive', {
-        y: -400,
+        y: -700,
         opacity: 1,
-        duration: 3,
+        duration: 10,
     }, "+=1")
     tlHeroResponsive.to('#slider-image-responsive', {
-        y: -1000,
+        y: -1500,
         opacity: 1,
-        duration: 3,
+        duration: 10,
     }, "+=1")
 
     tlHeroResponsive.from('#jar-image-responsive', {
@@ -379,6 +379,112 @@ onMounted(() => {
     }), "+=1"
 
 
+
+
+
+
+
+    tlHeroResponsive.to('#showcase-section-1-responsive', {
+        y: -50,
+        opacity: 1,
+        // duration: 2,
+    }, "<")
+
+    const tlShowcase1_responsive = gsap.timeline({
+        defaults: {
+            duration: 1,
+            ease: "linear",
+        },
+        scrollTrigger: {
+            trigger: "#showcase-section-1-responsive",
+            start: "top 60",
+            end: "2000",
+            // end: "1000",
+            scrub: 1,
+            pin: true,
+            // markers: true,
+        },
+    });
+
+
+
+
+
+    tlShowcase1_responsive.from('.believe-text-responsive', {
+        opacity: 0,
+        duration: 2,
+    })
+    tlShowcase1_responsive.to('.believe-text-responsive', {
+        opacity: 1,
+        duration: 2,
+    })
+
+
+    tlShowcase1_responsive.to(
+        "#showcase-slider",
+        {
+            duration: 5,
+            "--fill-till": "+=33",
+        },
+        "+=1"
+    );
+    tlShowcase1_responsive.to(
+        "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(3)",
+        {
+            duration: 5,
+            clipPath: "inset(0 0 0 100%)",
+        },
+        "+=1"
+    );
+    tlShowcase1_responsive.to(
+        "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(3) .tear",
+        {
+            duration: 5,
+
+            className: "tear left-0",
+            transform: "translate(100%, 0)",
+            onComplete: () => { },
+        },
+        "<"
+    );
+
+    tlShowcase1_responsive.to(
+        "#showcase-slider",
+        {
+            duration: 5,
+            "--fill-till": "+=34",
+        },
+    );
+    tlShowcase1_responsive.to(
+        "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(2)",
+        {
+            duration: 5,
+            clipPath: "inset(0 0 0 100%)",
+        },
+        "<"
+    );
+
+    tlShowcase1_responsive.to(
+        "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(2) .tear",
+        {
+            duration: 5,
+            className: "tear left-0",
+            transform: "translate(100%, 0)",
+        },
+        "<"
+    );
+
+    tlShowcase1_responsive.to(
+        "#showcase-slider",
+        {
+            "--fill-till": "+=34",
+        },
+    );
+    tlShowcase1_responsive.to('.believe-text-responsive', {
+        opacity: 0,
+        duration: 2,
+    })
+
 })
 
 </script>
@@ -406,49 +512,48 @@ onMounted(() => {
             </h4>
 
             <div class="jar absolute flex flex-col justify-center items-center">
-
-                <h1 class="text-sm text-center opacity-0 prevent-damage-1 absolute -top-[20px]  text-white  bg-transparent inset-x-0"
-                    style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,-1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
-                    Effectively suppress DHT
-                </h1>
-                <h1 class="text-sm text-center opacity-0 prevent-damage-2 absolute -top-[10px] text-emerald-800  bg-transparent inset-x-0"
-                    style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
-                    Maintains pH Level
-                </h1>
-                <h1 class="text-sm text-center opacity-0 prevent-damage-3 absolute -top-[0px] text-white  bg-transparent inset-x-0"
-                    style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,-1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
+                <h1
+                    class="text-2xl font-bold flex justify-center items-center w-screen text-center text-primary opacity-0 prevent-damage-1 absolute -top-[25px]  bg-transparent ">
                     Improves Blood Circulation
                 </h1>
-                <h1 class="text-sm text-center opacity-0 prevent-damage-4 absolute top-[10px] text-white  bg-transparent inset-x-0"
-                    style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,-1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
+                <h1
+                    class="text-2xl font-bold flex justify-center w-screen text-center opacity-0 text-secondary prevent-damage-2 absolute -top-[15px]  bg-transparent ">
+                    Effectively Suppress DHT
+                </h1>
+                <h1
+                    class="text-2xl font-bold flex justify-center w-screen text-center opacity-0 text-primary prevent-damage-3 absolute -top-[5px]  bg-transparent ">
                     Supports Collagen Synthesis
+                </h1>
+                <h1
+                    class="text-2xl font-bold flex justify-center w-screen text-center opacity-0 prevent-damage-4 text-secondary absolute top-[5px]  bg-transparent ">
+                    Maintains pH Level
                 </h1>
 
                 <h4
-                    class="text-sm  -top-[150px] text-center absolute opacity-0 what-text-responsive font-extrabold text-secondary mb-3">
+                    class="text-3xl w-screen -top-[150px] text-center absolute opacity-0 what-text-responsive font-extrabold text-secondary mb-3">
                     What's in it ?</h4>
                 <h4
-                    class="text-sm  -top-[100px] text-center absolute elegance-text-responsive font-extrabold text-secondary mb-3">
+                    class=" w-screen px-5 -top-[100px] text-center text-2xl absolute elegance-text-responsive font-extrabold text-secondary mb-3">
                     LET' S BEGIN
                     WITH
                     ELEGANCE: OUR
                     HAIR
                     CARE SUPERBLEND</h4>
-                <h1 class="text-3xl inline-block absolute -top-[100px] text-white vitamin-custom-responsive  bg-transparent inset-x-0"
+                <h1 class="text-6xl absolute font-extrabold flex justify-center -top-[100px] text-white vitamin-custom-responsive  bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,-1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
                     Improves
                 </h1>
-                <h1 class="text-3xl inline-block absolute -top-[100px] vitamin-custom-2-responsive text-white bg-transparent inset-x-0"
+                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-2-responsive text-white bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
                      -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
                     Balance
                 </h1>
-                <h1 class="text-3xl inline-block absolute -top-[100px] vitamin-custom-3-responsive text-white bg-transparent inset-x-0"
+                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-3-responsive text-white bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
                      -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
                     Enhance
                 </h1>
-                <h1 class="text-3xl inline-block absolute -top-[100px] vitamin-custom-4-responsive text-white bg-transparent inset-x-0"
+                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-4-responsive text-white bg-transparent inset-x-0"
                     style="text-shadow: -1px -1px 0 #f1917b, 1px -1px 0 #f1917b,
                      -1px 1px 0 #f1917b, 1px 1px 0 #f1917b;">
                     Reduce
@@ -470,31 +575,36 @@ onMounted(() => {
                 <img id="jar-image-responsive" class="h-[160px] w-[150px]" src="/images/jar2.png" alt="">
 
 
-                <h1 class="text-3xl w-screen absolute -bottom-[100px] calcium-custom-2-responsive text-emerald-800  bg-transparent inset-x-0"
+                <h1 class="text-6xl font-extrabold flex justify-center w-screen absolute -bottom-[100px] calcium-custom-2-responsive text-emerald-800  bg-transparent "
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     Hair Growth
                 </h1>
-                <h1 class="text-3xl absolute w-screen -bottom-[100px] calcium-custom-3-responsive text-emerald-800  bg-transparent inset-x-0"
+                <h1 class="text-6xl font-extrabold flex justify-center absolute w-screen -bottom-[100px] calcium-custom-3-responsive text-emerald-800  bg-transparent "
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     Follicle Health
                 </h1>
-                <h1 class="text-3xl absolute w-screen -bottom-[100px] calcium-custom-4-responsive text-emerald-800  bg-transparent inset-x-0"
+                <h1 class="text-6xl font-extrabold flex justify-center absolute w-screen -bottom-[100px] calcium-custom-4-responsive text-emerald-800  bg-transparent "
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     Hair Loss
                 </h1>
-                <h1 class="text-3xl w-screen absolute -bottom-[100px] font-extrabold calcium-custom-responsive text-emerald-800  bg-transparent inset-x-0"
+                <h1 class="text-6xl font-extrabold flex justify-center w-screen absolute -bottom-[100px] calcium-custom-responsive text-emerald-800  bg-transparent "
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     Scalp Health
                 </h1>
-                <h2 class="text-center absolute -bottom-[100px] elegance-text-responsive font-bold text-sm mt-3">100 %
-                    Easy to use - Plant Based
-                    - Strengthen hair
+                <h2 class="text-center absolute -bottom-[100px] elegance-text-responsive w-screen font-bold text-xl mt-3">
+                    Simple,
+                    Plant Based & Healthy Super Blend.
                 </h2>
+
+
                 <h4
-                    class="text-sm  -bottom-[200px] text-center absolute opacity-0 what-text-responsive font-extrabold text-secondary w-screen">
-                    Hair You Glo contains Amla, sea buckthorn, Lemon powder along with 7 more Superfoods which
-                    have.
+                    class="text-sm  -bottom-[200px] text-center absolute opacity-0 what-text-responsive flex justify-center font-extrabold text-secondary w-screen">
+                    <p
+                        class=" text-xs bg-[#ef8f7b] text-neutral-50 bottom-0 mx-auto text-center py-1 px-4 absolute rounded-3xl">
+                        <a href="/about">Know more</a>
+                    </p>
                 </h4>
+
 
                 <!-- <div class="ingredients-responsive absolute"> -->
                 <div class="absolute inset-y-36 ingredient-my-1-responsive flex opacity-0 items-center flex-col">
@@ -524,12 +634,37 @@ onMounted(() => {
                 <!-- </div> -->
 
             </div>
-            <div class="absolute -bottom-36 flex justify-center" id="slider-image-responsive">
-                <img width="130%" src="/images/website-banner.jpg" alt="">
+            <div class="absolute -bottom-2/4 flex items-center justify-center" id="slider-image-responsive">
+                <img width="130%" src="/images/Mobile-home-screen-banner.jpg" alt="">
                 <p
-                    class=" text-xs bg-[#ef8f7b] text-neutral-50 bottom-0 mx-auto text-center py-1 px-4 absolute rounded-3xl">
+                    class=" text-xs bg-[#ef8f7b] text-neutral-50 bottom-12 mx-auto text-center py-1 px-4 absolute rounded-3xl">
                     <a href="/about">Know more</a>
                 </p>
+            </div>
+        </div>
+
+
+        <div id="showcase-section-1-responsive" style="--text-offset: 100rem"
+            class="min-h-screen pt-16 relative border-blue-500">
+            <h4
+                class="text-2xl w-screen text-center believe-text-responsive font-extrabold text-secondary elegance-text-1-responsive">
+                We
+                believe in
+                fixing the
+                root
+                cause, <br /> not quick results!</h4>
+            <div id="showcase-images-responsive" class="relative h-[400px] mb-5">
+                <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
+                    <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-3@4x.png" alt="" />
+                </div>
+                <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
+                    <div class="tear"></div>
+                    <img class="object-cover h-[270px] mt-3 ml-3  w-[270px]" src="/images/Asset-2@4x.png" alt="" />
+                </div>
+                <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden ">
+                    <div class="tear"></div>
+                    <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-1@4x.png" alt="" />
+                </div>
             </div>
         </div>
 
@@ -543,7 +678,7 @@ onMounted(() => {
                         <img src="/images/last-image.jpg" alt="">
 
                     </div>
-                    <p class="text-neutral-950 text-sm text-center font-bold">Hair-You-Glo revitalises your hair health and
+                    <p class="text-secondary text-justify text-sm font-bold">Hair-You-Glo revitalises your hair health and
                         restores lost confidence related to hair concerns. Your hair is a vital part of your presentation
                         and personality, and Hair-You-Glo ensures you radiate self-assurance in every interaction.
                         Introducing our expertly crafted hair health betterment product, carefully with a blend of nature's
@@ -551,7 +686,7 @@ onMounted(() => {
                         Pomegranate extract, Grape seed, Fenugreek seeds extract and more.
                     </p>
                     <br />
-                    <p class="text-neutral-950 text-sm text-center font-bold">Hair-You-Glo is a product formulated in such a
+                    <p class="text-secondary text-sm text-justify font-bold">Hair-You-Glo is a product formulated in such a
                         way that helps you improve your hair health by containing much required nutrients & vitamins in it.
                         Experience the power of nature in every element of Hair-You-Glo. Elevate your hair health with a
                         blend of carefully selected natural ingredients. Make Hair-You-Glo your daily partner in nurturing

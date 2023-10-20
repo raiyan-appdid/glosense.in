@@ -73,7 +73,7 @@
                                 Center</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#"
+                            <a href="/contact"
                                 class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Contact
                                 Us</a>
                         </li>
