@@ -1243,10 +1243,10 @@ const updateDotValue = (value) => {
             </div>
           </div>
           <div class="absolute h-screen top-[130px] flex items-center justify-center  w-screen">
-            <h4 class="text-xl text-center font-extrabold text-secondary opacity-0 what-text">
-              Hair You Glo contains Amla, sea buckthorn, <br />Lemon powder along with 7 more Superfoods
-              which
-              have.
+            <h4
+              class="mt-16 text-1xl opacity-0 what-text font-extrabold text-center bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl">
+              <a href="/about">Know
+                more</a>
             </h4>
           </div>
           <div class="elegance-text absolute top-[130px] flex justify-center items-center w-screen h-screen">
