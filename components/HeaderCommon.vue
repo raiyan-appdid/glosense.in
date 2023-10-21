@@ -74,7 +74,7 @@ onUnmounted(() => {
             <path :d="d2"></path>
           </svg>
         </span>
-        <p class="ms-2 text-sm font-semibold text-secondary"><span class="hidden md:block">MENU</span></p>
+        <p class="ms-2 text-sm font-semibold text-secondary"><span class="hidden text-black md:block">MENU</span></p>
       </div>
       <div class="my-auto mr-5">
         <!-- <p class="text-sm font-semibold text-neutral-900">CONTACT US</p> -->

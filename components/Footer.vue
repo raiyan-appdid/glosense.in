@@ -84,23 +84,28 @@
                     <ul class="list-none footer-links">
                         <li class="mb-2">
                             <a href="#"
-                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">GMP Certified</a>
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">GMP
+                                Certified</a>
                         </li>
                         <li class="mb-2">
                             <a href="#"
-                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">HALAL Certified</a>
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">HALAL
+                                Certified</a>
                         </li>
                         <li class="mb-2">
                             <a href="#"
-                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">HACCP Certified</a>
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">HACCP
+                                Certified</a>
                         </li>
                         <li class="mb-2">
                             <a href="#"
-                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">ISO Certified</a>
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">ISO
+                                Certified</a>
                         </li>
                         <li class="mb-2">
                             <a href="#"
-                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">FSSAI Certified</a>
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">FSSAI
+                                Certified</a>
                         </li>
                     </ul>
                 </div>

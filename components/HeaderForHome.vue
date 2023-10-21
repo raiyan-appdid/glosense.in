@@ -73,7 +73,7 @@ onUnmounted(() => {
             <path :d="d2"></path>
           </svg>
         </span>
-        <p class="ms-5 text-sm font-semibold text-secondary"><span class="hidden sm:block">MENU</span></p>
+        <p class="ms-5 text-sm font-semibold text-secondary"><span class="hidden text-black sm:block">MENU</span></p>
       </div>
       <div class="flex items-center">
         <div class="hidden sm:block">

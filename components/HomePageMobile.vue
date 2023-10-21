@@ -89,19 +89,19 @@ onMounted(() => {
 
 
     tlHeroResponsive.to('.ingredient-my-1-responsive', {
-        y: -200,
+        y: -220,
         x: -120,
         opacity: 1,
         duration: 3,
     }, "+=1")
     tlHeroResponsive.to('.ingredient-my-2-responsive', {
-        y: -210,
+        y: -230,
         x: 0,
         opacity: 1,
         duration: 3,
     }, "<")
     tlHeroResponsive.to('.ingredient-my-3-responsive', {
-        y: -200,
+        y: -220,
         x: 120,
         opacity: 1,
         duration: 3,
@@ -201,7 +201,7 @@ onMounted(() => {
         y: -1500,
         opacity: 1,
         duration: 10,
-    }, "+=1")
+    }, "+=7")
 
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 6,
@@ -491,6 +491,7 @@ onMounted(() => {
 
 <template>
     <div class="about-page bg-[#efe8df]">
+
         <div>
             <img id="logo-image-responsive" src="/images/logo.png"
                 class="w-3/4 z-20 inset-x-0 my-0 mx-auto top-[10rem] fixed" alt="" />
@@ -502,8 +503,14 @@ onMounted(() => {
         </div>
         <div class="container h-screen mx-auto fixed flex flex-col items-center justify-center pt-20 pb-20"
             id="top-section">
+            <img class="absolute w-40 opacity-[0.5] bottom-[-8rem] left-0" src="/images/leave-bl.png" alt="" />
+            <img class="absolute w-40 opacity-[0.5] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png" alt="" />
+            <img class="absolute w-40 opacity-[0.5] left-0 top-[10%]" src="/images/Asset-25-4x.png" alt="" />
+            <img class="absolute w-40 opacity-[0.5] right-0 top-[10%]" src="/images/Asset-24-4x.png" alt="" />
+            <img class="absolute w-[6rem] opacity-[0.5] right-[5%] top-[50%]" src="/images/Asset-22-4x.png" alt="" />
 
-            <h2 class="px-5 home-text-responsive text-center mt-3">Unlock the essense of self-care through the <br /> magic
+            <h2 class="px-10 text-xl home-text-responsive text-center mt-3">Unlock the essense of self-care through the
+                magic
                 of
                 superfoods.
             </h2>
@@ -514,15 +521,15 @@ onMounted(() => {
 
             <div class="jar absolute flex flex-col justify-center items-center">
                 <h1
-                    class="text-2xl font-bold flex justify-center items-center w-screen text-center text-primary opacity-0 prevent-damage-1 absolute -top-[25px]  bg-transparent ">
+                    class="text-2xl font-bold flex justify-center items-center w-screen text-center text-primary opacity-0 prevent-damage-1 absolute -top-[45px]  bg-transparent ">
                     Improves Blood Circulation
                 </h1>
                 <h1
-                    class="text-2xl font-bold flex justify-center w-screen text-center opacity-0 text-secondary prevent-damage-2 absolute -top-[15px]  bg-transparent ">
+                    class="text-2xl font-bold flex justify-center w-screen text-center opacity-0 text-secondary prevent-damage-2 absolute -top-[30px]  bg-transparent ">
                     Effectively Suppress DHT
                 </h1>
                 <h1
-                    class="text-2xl font-bold flex justify-center w-screen text-center opacity-0 text-primary prevent-damage-3 absolute -top-[5px]  bg-transparent ">
+                    class="text-2xl font-bold flex justify-center w-screen text-center opacity-0 text-primary prevent-damage-3 absolute -top-[15px]  bg-transparent ">
                     Supports Collagen Synthesis
                 </h1>
                 <h1
@@ -534,25 +541,26 @@ onMounted(() => {
                     class="text-3xl w-screen -top-[150px] text-center absolute opacity-0 what-text-responsive font-extrabold text-secondary mb-3">
                     What's in it ?</h4>
                 <h4
-                    class=" w-screen px-5 -top-[100px] text-center text-2xl absolute elegance-text-responsive font-extrabold text-secondary mb-3">
+                    class=" w-screen px-10 -top-[100px] text-center text-2xl absolute elegance-text-responsive font-extrabold text-secondary mb-3">
                     LET' S BEGIN
                     WITH
                     ELEGANCE: OUR
                     HAIR
                     CARE SUPERBLEND</h4>
                 <h1
-                    class="text-6xl text-primary absolute font-extrabold flex justify-center -top-[100px] vitamin-custom-responsive  bg-transparent inset-x-0">
+                    class="text-5xl text-primary absolute font-extrabold flex justify-center -top-[100px] vitamin-custom-responsive  bg-transparent inset-x-0">
                     Improves
                 </h1>
-                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-2-responsive text-primary bg-transparent inset-x-0">
+                <h1
+                    class="text-5xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-2-responsive text-primary bg-transparent inset-x-0">
                     Balance
                 </h1>
-                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-3-responsive text-primary bg-transparent inset-x-0"
-                   >
+                <h1
+                    class="text-5xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-3-responsive text-primary bg-transparent inset-x-0">
                     Enhance
                 </h1>
-                <h1 class="text-6xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-4-responsive text-primary bg-transparent inset-x-0"
-                    >
+                <h1
+                    class="text-5xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-4-responsive text-primary bg-transparent inset-x-0">
                     Reduce
                 </h1>
 
@@ -572,23 +580,24 @@ onMounted(() => {
                 <img id="jar-image-responsive" class="h-[160px] w-[150px]" src="/images/jar2.png" alt="">
 
 
-                <h1 class="text-6xl font-extrabold flex justify-center w-screen absolute -bottom-[100px] calcium-custom-2-responsive text-emerald-800  bg-transparent "
+                <h1 class="text-5xl font-extrabold flex justify-center w-screen absolute -bottom-[100px] calcium-custom-2-responsive text-emerald-800  bg-transparent "
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     Hair Growth
                 </h1>
-                <h1 class="text-6xl font-extrabold flex justify-center absolute w-screen -bottom-[100px] calcium-custom-3-responsive text-emerald-800  bg-transparent "
+                <h1 class="text-5xl font-extrabold flex justify-center absolute w-screen -bottom-[100px] calcium-custom-3-responsive text-emerald-800  bg-transparent "
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     Follicle Health
                 </h1>
-                <h1 class="text-6xl font-extrabold flex justify-center absolute w-screen -bottom-[100px] calcium-custom-4-responsive text-emerald-800  bg-transparent "
+                <h1 class="text-5xl font-extrabold flex justify-center absolute w-screen -bottom-[100px] calcium-custom-4-responsive text-emerald-800  bg-transparent "
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     Hair Loss
                 </h1>
-                <h1 class="text-6xl font-extrabold flex justify-center w-screen absolute -bottom-[100px] calcium-custom-responsive text-emerald-800  bg-transparent "
+                <h1 class="text-5xl font-extrabold flex justify-center w-screen absolute -bottom-[100px] calcium-custom-responsive text-emerald-800  bg-transparent "
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     Scalp Health
                 </h1>
-                <h2 class="text-center absolute -bottom-[100px] elegance-text-responsive w-screen font-bold text-xl mt-3">
+                <h2
+                    class="text-center px-10 absolute -bottom-[100px] elegance-text-responsive w-screen font-bold text-xl mt-3">
                     Simple,
                     Plant Based & Healthy Super Blend.
                 </h2>
@@ -643,13 +652,18 @@ onMounted(() => {
 
         <div id="showcase-section-1-responsive" style="--text-offset: 100rem"
             class="min-h-screen pt-16 relative border-blue-500">
+            <!-- <img class="absolute w-40 opacity-[0.5] bottom-[-8rem] left-0" src="/images/leave-bl.png" alt="" />
+            <img class="absolute w-40 opacity-[0.5] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png" alt="" />
+            <img class="absolute w-40 opacity-[0.5] left-0 top-[10%]" src="/images/Asset-25-4x.png" alt="" />
+            <img class="absolute w-40 opacity-[0.5] right-0 top-[10%]" src="/images/Asset-24-4x.png" alt="" />
+            <img class="absolute w-[6rem] opacity-[0.5] right-[5%] top-[50%]" src="/images/Asset-22-4x.png" alt="" /> -->
             <h4
-                class="text-2xl w-screen text-center believe-text-responsive font-extrabold text-secondary elegance-text-1-responsive">
+                class="text-2xl w-screen text-center px-10 believe-text-responsive font-extrabold text-secondary elegance-text-1-responsive">
                 We
                 believe in
                 fixing the
                 root
-                cause, <br /> not quick results!</h4>
+                cause, not quick results!</h4>
             <div id="showcase-images-responsive" class="relative h-[400px] mb-5">
                 <div class="absolute origin-center inset-0 m-auto h-[300px] w-[300px] overflow-hidden">
                     <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-3@4x.png" alt="" />
@@ -668,11 +682,11 @@ onMounted(() => {
 
 
         <div class="container mx-auto px-10 pb-10">
-            <div class="border-blue-500 grid grid-cols-1 ">
+            <div class="border-blue-500 grid grid-cols-1 relative">
                 <div class="">
                     <div class="">
                         <!-- <div class="w-full h-40 bg-emerald-500 rounded-xl"></div> -->
-                        <img src="/images/last-image.jpg" alt="">
+                        <img class="rounded-xl" src="/images/last-image.jpg" alt="">
 
                     </div>
                     <p class="text-secondary text-justify text-sm font-bold">Hair-You-Glo revitalises your hair health and
