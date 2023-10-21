@@ -15,7 +15,7 @@ onMounted(() => {
             trigger: "#top-section",
             start: "top top",
             end: "10000",
-            scrub: 2,
+            scrub: 0,
             pin: true,
             // markers: true,
         },
@@ -497,9 +497,9 @@ onMounted(() => {
                 class="w-3/4 z-20 inset-x-0 my-0 mx-auto top-[10rem] fixed" alt="" />
         </div>
         <div class="container h-screen mx-auto fixed flex flex-col items-center justify-center pt-20 pb-20">
-            <img class="w-[10rem] absolute left-0 top-0" src="/images/glob-tl.png" alt="" />
-            <img class="w-[12rem] absolute left-0 bottom-0" src="/images/glob-bl.png" alt="" />
-            <img class="w-[12rem] absolute opacity-50 right-0 bottom-0" src="/images/glob-br.png" alt="" />
+            <img class="w-[5rem] absolute left-0 top-0" src="/images/glob-tl.png" alt="" />
+            <img class="w-[6rem] absolute left-0 bottom-0" src="/images/glob-bl.png" alt="" />
+            <img class="w-[6rem] absolute opacity-50 right-0 bottom-0" src="/images/glob-br.png" alt="" />
         </div>
         <div class="container h-screen mx-auto fixed flex flex-col items-center justify-center pt-20 pb-20"
             id="top-section">
@@ -640,7 +640,7 @@ onMounted(() => {
                 <!-- </div> -->
 
             </div>
-            <div class="absolute -bottom-2/4 flex items-center justify-center" id="slider-image-responsive">
+            <div class="absolute -bottom-[30rem] flex items-center justify-center" id="slider-image-responsive">
                 <img width="130%" src="/images/Mobile-home-screen-banner.jpg" alt="">
                 <p
                     class=" text-xs bg-[#ef8f7b] text-neutral-50 bottom-12 mx-auto text-center py-1 px-4 absolute rounded-3xl">
