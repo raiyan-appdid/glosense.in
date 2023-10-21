@@ -32,17 +32,14 @@ onMounted(function () {
                 <img src="/images/aboutus/About-us-banner-Desktop.jpg" class="w-screen z-50" alt="" />
             </div>
             <div class="header">
-                <h2 class="text-center text-xl md:5xl px-10 font-bold text-secondary mt-6 mb-5">Simple, Plant Based &
-                    Healthy
-                    Super
-                    Blends!
+                <h2 class="text-center text-xl md:5xl px-10 font-bold text-secondary mt-6 mb-5">We deeply have faith in..
                 </h2>
             </div>
             <div class=" text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center sm:py-4">
                     <div class=" flex justify-center items-center bg-white">
                         <a href="/blogs/what-is-plant-based-supplements">
-                            <img src="/images/aboutus/discover-wellness.jpg" class="object-fill h-52 w-80" alt="" />
+                            <img src="/images/aboutus/top-1.jpg" class="object-fill  w-80" alt="" />
                         </a>
                         <!-- <h2 class="text-primary">Discovering Wellness from Within</h2> -->
                     </div>
@@ -50,7 +47,7 @@ onMounted(function () {
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
                     <div class=" flex justify-center items-center bg-white">
                         <a href="/blogs/unlocking-the-power-of-vitamin-c">
-                            <img src="/images/aboutus/plant-based.jpg" class="object-fill h-52 w-80" alt="" />
+                            <img src="/images/aboutus/top-2.jpg" class="object-fill  w-80" alt="" />
                         </a>
                         <!-- <img src="/images/blog.png" class="" alt="" /> -->
                         <!-- <h2 class="text-primary">Plant Based Super Blends</h2> -->
@@ -59,7 +56,7 @@ onMounted(function () {
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
                     <div class=" flex justify-center items-center bg-white">
                         <a href="/blogs/unrevealing-the-mystery-of-hair-fall-and-hair-thinking">
-                            <img src="/images/aboutus/what-you-need.jpg" class="object-fill h-52 w-80" alt="" />
+                            <img src="/images/aboutus/top-3.jpg" class="object-fill w-80" alt="" />
                         </a>
                         <!-- <img src="/images/recipes.png" class="" alt="" /> -->
                         <!-- <h2 class="text-primary">Exactly what you need</h2> -->
@@ -72,7 +69,7 @@ onMounted(function () {
             <div class="founder-details container mx-auto">
                 <div class="grid grid-cols-12 gap-5 mt-10">
                     <div class="col-span-12 lg:col-span-6 mx-auto">
-                        <img src="/images/founder-image.png" class="w-3/4 mx-auto" alt="">
+                        <img src="/images/aboutus/Founder-photo.png" class="w-3/4 mx-auto" alt="">
                     </div>
                     <div class="col-span-12 lg:col-span-6 mx-3">
                         <h2 class="font-bold text-2xl text-black leading-normal px-7">Greetings SuperBeings🌷
