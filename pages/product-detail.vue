@@ -126,6 +126,14 @@ onMounted(() => {
                     </div>
                 </div>
             </div>
+            <div class="my-10 sm:block hidden">
+                <!-- <h2>raiyan</h2> -->
+                <img src="/images/product/Desktop-product-page-banner.png" alt="" />
+            </div>
+            <div class="my-10 sm:hidden block">
+                <!-- <h2>raiyan</h2> -->
+                <img src="/images/product/Mobile-product-page-banner.png" alt="" />
+            </div>
 
             <!-- <div class="my-5">
                 <h2 class="font-bold">Solution For: </h2>
