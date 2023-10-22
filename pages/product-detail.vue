@@ -109,8 +109,8 @@ onMounted(() => {
                         <span class="text-2xl font bold my-auto ml-2">10 Reviews</span>
                     </div> -->
                     <div class="flex">
-                        <span class="font-extrabold text-4xl">Rs. 899</span>
-                        <span class="font-medium text-lg bg-red-300 p-2 mx-auto"><s>Rs.1300</s> 30% Off</span>
+                        <span class="font-extrabold text-4xl">Rs. 870</span>
+                        <span class="font-medium text-lg bg-red-300 p-2 mx-auto"><s>Rs.1300</s> 33% Off</span>
                     </div>
                     <div class="flex my-6">
                         <!-- <button class="bg-slate-900 text-white py-4 px-10">Add To Cart</button> -->

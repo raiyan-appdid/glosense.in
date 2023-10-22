@@ -14,7 +14,7 @@ onMounted(() => {
         scrollTrigger: {
             trigger: "#top-section",
             start: "top top",
-            end: "10000",
+            end: "13000",
             scrub: 0,
             pin: true,
             // markers: true,
@@ -192,8 +192,8 @@ onMounted(() => {
         opacity: 1,
         duration: 3,
     }, "+=1")
-    tlHeroResponsive.to('#slider-image-responsive', {
-        y: -700,
+    tlHeroResponsive.from('#slider-image-responsive', {
+        y: 800,
         opacity: 1,
         duration: 10,
     }, "+=1")
@@ -277,12 +277,12 @@ onMounted(() => {
     }, "+=1")
 
     tlHeroResponsive.to('.vitamin-custom-3-responsive', {
-        x: -1000,
+        x: 1000,
         duration: 6,
         opacity: 0,
     }, "<")
     tlHeroResponsive.to('.calcium-custom-3-responsive', {
-        x: 1000,
+        x: -1000,
         duration: 6,
         opacity: 0,
     }, "<")
@@ -293,12 +293,12 @@ onMounted(() => {
     // }, "<")
 
     tlHeroResponsive.from('.vitamin-custom-4-responsive', {
-        x: 1000,
+        x: -1000,
         duration: 6,
         opacity: 0,
     }, "<")
     tlHeroResponsive.from('.calcium-custom-4-responsive', {
-        x: -1000,
+        x: 1000,
         duration: 6,
         opacity: 0,
     }, "<")
@@ -306,15 +306,15 @@ onMounted(() => {
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 6,
         rotation: 2160,
-    }, "+=1")
+    })
 
     tlHeroResponsive.to('.vitamin-custom-4-responsive', {
-        x: -1000,
+        x: 1000,
         duration: 6,
         opacity: 0,
     }, "<")
     tlHeroResponsive.to('.calcium-custom-4-responsive', {
-        x: 1000,
+        x: -1000,
         duration: 6,
         opacity: 0,
     }, "<")
@@ -384,11 +384,11 @@ onMounted(() => {
 
 
 
-    tlHeroResponsive.to('#showcase-section-1-responsive', {
-        y: -50,
-        opacity: 1,
-        // duration: 2,
-    }, "<")
+    // tlHeroResponsive.to('#showcase-section-1-responsive', {
+    //     y: -50,
+    //     opacity: 1,
+    //     // duration: 2,
+    // }, "<")
 
     const tlShowcase1_responsive = gsap.timeline({
         defaults: {
@@ -503,11 +503,11 @@ onMounted(() => {
         </div>
         <div class="container h-screen mx-auto fixed flex flex-col items-center justify-center pt-20 pb-20"
             id="top-section">
-            <img class="absolute w-40 opacity-[0.5] bottom-[-8rem] left-0" src="/images/leave-bl.png" alt="" />
-            <img class="absolute w-40 opacity-[0.5] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png" alt="" />
-            <img class="absolute w-40 opacity-[0.5] left-0 top-[10%]" src="/images/Asset-25-4x.png" alt="" />
-            <img class="absolute w-40 opacity-[0.5] right-0 top-[10%]" src="/images/Asset-24-4x.png" alt="" />
-            <img class="absolute w-[6rem] opacity-[0.5] right-[5%] top-[50%]" src="/images/Asset-22-4x.png" alt="" />
+            <img class="absolute w-20 opacity-[0.5] bottom-[-8rem] left-0" src="/images/leave-bl.png" alt="" />
+            <img class="absolute w-20 opacity-[0.5] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png" alt="" />
+            <img class="absolute w-20 opacity-[0.5] left-0 top-[10%]" src="/images/Asset-25-4x.png" alt="" />
+            <img class="absolute w-20 opacity-[0.5] right-0 top-[10%]" src="/images/Asset-24-4x.png" alt="" />
+            <img class="absolute w-20 opacity-[0.5] right-[1%] top-[50%]" src="/images/Asset-22-4x.png" alt="" />
 
             <h2 class="px-10 text-xl home-text-responsive text-center mt-3">Unlock the essense of self-care through the
                 magic
@@ -640,8 +640,8 @@ onMounted(() => {
                 <!-- </div> -->
 
             </div>
-            <div class="absolute -bottom-[30rem] flex items-center justify-center" id="slider-image-responsive">
-                <img width="130%" src="/images/Mobile-home-screen-banner.jpg" alt="">
+            <div class="absolute  flex items-center justify-center" id="slider-image-responsive">
+                <img width="100%" src="/images/Mobile-home-screen-banner.jpg" alt="">
                 <p
                     class=" text-xs bg-[#ef8f7b] text-neutral-50 bottom-12 mx-auto text-center py-1 px-4 absolute rounded-3xl">
                     <a href="/about">Know more</a>
@@ -689,7 +689,7 @@ onMounted(() => {
                         <img class="rounded-xl" src="/images/last-image.jpg" alt="">
 
                     </div>
-                    <p class="text-secondary text-justify text-sm font-bold">Hair-You-Glo revitalises your hair health and
+                    <p class="text-secondary text-justify text-xl font-bold">Hair-You-Glo revitalises your hair health and
                         restores lost confidence related to hair concerns. Your hair is a vital part of your presentation
                         and personality, and Hair-You-Glo ensures you radiate self-assurance in every interaction.
                         Introducing our expertly crafted hair health betterment product, carefully with a blend of nature's
@@ -697,7 +697,7 @@ onMounted(() => {
                         Pomegranate extract, Grape seed, Fenugreek seeds extract and more.
                     </p>
                     <br />
-                    <p class="text-secondary text-sm text-justify font-bold">Hair-You-Glo is a product formulated in such a
+                    <p class="text-secondary text-xl text-justify font-bold">Hair-You-Glo is a product formulated in such a
                         way that helps you improve your hair health by containing much required nutrients & vitamins in it.
                         Experience the power of nature in every element of Hair-You-Glo. Elevate your hair health with a
                         blend of carefully selected natural ingredients. Make Hair-You-Glo your daily partner in nurturing

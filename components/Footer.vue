@@ -41,26 +41,27 @@
                 <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
                     <h5 class="text-xl font-bold mb-6">About</h5>
                     <ul class="list-none footer-links">
-                        <li class="mb-2">
+                        <!-- <li class="mb-2">
                             <a href="#"
                                 class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Team</a>
-                        </li>
-                        <li class="mb-2">
+                        </li> -->
+                        <!-- <li class="mb-2">
                             <a href="#"
                                 class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Locations</a>
-                        </li>
+                        </li> -->
                         <li class="mb-2">
                             <a href="/privacy-policy"
                                 class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Privacy
                                 Policy</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#"
-                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Terms</a>
+                            <a href="/privacy-policy"
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Terms
+                                & Conditions</a>
                         </li>
                     </ul>
                 </div>
-                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+                <!-- <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
                     <h5 class="text-xl font-bold mb-6">Help</h5>
                     <ul class="list-none footer-links">
                         <li class="mb-2">
@@ -78,7 +79,7 @@
                                 Us</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
                     <h5 class="text-xl font-bold mb-6">Certificate</h5>
                     <ul class="list-none footer-links">
