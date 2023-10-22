@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <img class="absolute opacity-50 w-[10rem] bottom-[-8rem] left-[5rem]" src="/images/leave-bl.png" alt="" />
+        <!-- <img class="absolute opacity-50 w-[10rem] bottom-[-8rem] left-[5rem]" src="/images/leave-bl.png" alt="" />
         <img class="absolute opacity-50 w-[10rem] top-[250%] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png"
             alt="" />
         <img class="absolute opacity-50 w-[12rem] left-[30%] top-[150%]" src="/images/Asset-25-4x.png" alt="" />
@@ -24,7 +24,7 @@
         <img class="absolute opacity-50 w-[40rem] right-[5rem] top-[210%]" src="/images/Asset-23-4x.png" alt="" />
         <img class="absolute opacity-50 w-[15rem] right-[5rem] bottom-[0rem]" src="/images/Asset-16-4x.png" alt="" />
         <img class="absolute opacity-50 w-[8rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png" alt="" />
-        <img class="absolute opacity-50 w-auto right-0 top-[90%]" src="/images/rl-small.png" alt="" />
+        <img class="absolute opacity-50 w-auto right-0 top-[90%]" src="/images/rl-small.png" alt="" /> -->
 
         <div class="container mx-auto">
             <h1 class="font-bold text-3xl md:text-4xl my-5">General Data Protection Regulation</h1>

@@ -39,7 +39,7 @@
                 </div> -->
 
                 <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-                    <h5 class="text-xl font-bold mb-6">About</h5>
+                    <!-- <h5 class="text-xl font-bold mb-6">About</h5> -->
                     <ul class="list-none footer-links">
                         <!-- <li class="mb-2">
                             <a href="#"
@@ -55,7 +55,7 @@
                                 Policy</a>
                         </li>
                         <li class="mb-2">
-                            <a href="/privacy-policy"
+                            <a href="/terms-and-conditions"
                                 class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Terms
                                 & Conditions</a>
                         </li>
