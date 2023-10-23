@@ -640,8 +640,8 @@ onMounted(() => {
                 <!-- </div> -->
 
             </div>
-            <div class="absolute  flex items-center justify-center" id="slider-image-responsive">
-                <img width="100%" src="/images/Mobile-home-screen-banner.jpg" alt="">
+            <div class="absolute w-screen flex items-center justify-center" id="slider-image-responsive">
+                <img width="w-screen" class=" text-center" src="/images/Mobile-home-screen-banner.jpg" alt="">
                 <p
                     class=" text-xs bg-[#ef8f7b] text-neutral-50 bottom-12 mx-auto text-center py-1 px-4 absolute rounded-3xl">
                     <a href="/about">Know more</a>
