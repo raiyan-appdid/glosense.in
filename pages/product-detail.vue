@@ -74,7 +74,7 @@ onMounted(() => {
     <!-- Main modal -->
     <LoginModal />
 
-    <div class="product-details px-3 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
+    <div class="product-details px-6 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
         <!-- <h2 class="text-secondary text-2xl font-bold text-center py-2">Product</h2> -->
         <div class="container mx-auto sm:pt-4">
             <div class="grid grid-cols-12 mt-2 sm:gap-4">
@@ -82,9 +82,10 @@ onMounted(() => {
                     <ProductImage />
                 </div>
                 <div class="col-span-12 sm:col-span-7">
-                    <h2 class="font-extrabold text-4xl mt-4">HAIR YOU GLO</h2>
-                    <h2 class="font-extrabold text-xl mt-4">FOR HEALTHY & STRONG HAIR</h2>
-                    <p class="my-5">INTRODUCING HAIR YOU GLO, YOUR GO-TO SOLUTION FOR HEALTHY & STRONG HAIR</p>
+                    <h2 class="font-extrabold text-secondary text-4xl mt-4 ">HAIR YOU GLO</h2>
+                    <h2 class="font-semibold text-primary text-xl">FOR HEALTHY & STRONG HAIR</h2>
+                    <p class="font-semibold my-2">INTRODUCING HAIR YOU GLO, YOUR GO-TO SOLUTION FOR HEALTHY & STRONG HAIR
+                    </p>
                     <!-- <div class="flex my-5">
                         <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#eab508"
@@ -109,20 +110,24 @@ onMounted(() => {
                         <span class="text-2xl font bold my-auto ml-2">10 Reviews</span>
                     </div> -->
                     <div class="flex">
-                        <span class="font-extrabold text-4xl">Rs. 870</span>
-                        <span class="font-medium text-lg bg-red-300 p-2 mx-auto"><s>Rs.1300</s> 33% Off</span>
-                    </div>
-                    <div class="flex my-6">
-                        <!-- <button class="bg-slate-900 text-white py-4 px-10">Add To Cart</button> -->
-                        <button @click="openModal"
-                            class="bg-secondary text-white font-bold border border-black py-4 px-10 transition ease-in-out  hover:-translate-y-1 delay-75 hover:scale-110 hover:bg-black hover:text-white duration-500">Buy
-                            Now</button>
+                        <span class="sm:text-2xl  ">Jar-120g (30 servings)</span>
                     </div>
                     <div class="flex">
-                        <span class="font-extrabold sm:text-4xl text-2xl">Jar-120g (30 servings)</span>
-                        <!-- <span class="font-medium sm:text-4xl text-2xl mx-auto"> Rs.899/-
-                        </span> -->
+                        <span class="font-extrabold text-secondary mt-6 text-4xl">Rs. 1299</span>
                     </div>
+                    <div class="flex">
+                        <span class="font-medium text-primary text-lg">( Flat 33% Off on First jar )</span>
+                    </div>
+                    <div class="flex">
+                        <p class="text-primary font-medium text-lg">( After Discount Rs. 870 )</p>
+                    </div>
+                    <div class="flex mt-6">
+                        <!-- <button class="bg-slate-900 text-white py-4 px-10">Add To Cart</button> -->
+                        <button @click="openModal"
+                            class="bg-secondary text-white text-xl font-bold border  py-3 px-7 transition ease-in-out  hover:-translate-y-1 delay-75 hover:scale-110 hover:bg-black hover:text-white duration-500">BUY
+                            NOW</button>
+                    </div>
+
                 </div>
             </div>
             <div class="my-10 sm:block hidden">
@@ -149,13 +154,18 @@ onMounted(() => {
 
 
             <div class="container mx-auto my-10 sm:my-5">
-                <div class="grid grid-cols-12">
+                <div class="grid grid-cols-12 mb-9 sm:mb-0">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl tracking-widest">Helps in: </h2>
-                        <p class="leading-8 text-2xl">-Maintaining a healthy scalp with improved blood circulation.<br />
-                            -Encouraging better hair growth and helps prevent dandruff.<br />
-                            -Cultivate Optimal Hair Follicle Health.<br />
-                            -Reducing hair loss, and strengthening hair strands.
+                        <h2 class="font-extrabold text-3xl tracking-widest ">HELPS IN: </h2>
+                        <p class="leading-2 text-xl sm:text-2xl text-justify">-Maintaining a healthy scalp with improved
+                            blood
+                            circulation.
+                        <p class="leading-2 text-xl sm:text-2xl text-justify my-3">-Encouraging better hair growth and helps
+                            prevent dandruff.</p>
+                        <p class="leading-2 text-xl sm:text-2xl text-justify">-Cultivate Optimal Hair Follicle Health.</p>
+                        <p class="leading-2 text-xl sm:text-2xl text-justify my-3">-Reducing hair loss, and strengthening
+                            hair
+                            strands.</p>
                         </p>
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:flex sm:justify-end sm:order-2">
@@ -170,10 +180,14 @@ onMounted(() => {
                         <img src="/images/product/product-details-3.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
                     </div>
                     <div class="sm:col-span-7 col-span-12 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl tracking-widest">How to use: </h2>
-                        <p class="leading-8 text-2xl">-Blend ½ tablespoon of Hair-you-glo into your water. <br />
-                            -Ensure it's well-mixed,have a sip & revel in the moment 🤙<br /> <br />
-                            This jar contains 30 servings.
+                        <h2 class="font-extrabold text-3xl tracking-widest">HOW TO USE: </h2>
+                        <p class="leading-2 text-xl text-justify sm:text-2xl">-Blend ½ tablespoon of Hair-you-glo into your
+                            water.
+                        <p class="leading-2 text-xl text-justify sm:text-2xl my-3">-Ensure it's well-mixed,have a sip &
+                            revel in
+                            the moment 🤙</p>
+
+                        <p class="leading-2 text-xl text-justify sm:text-2xl"></p>
 
                         </p>
                     </div>
@@ -182,7 +196,8 @@ onMounted(() => {
                 <div class="grid grid-cols-12">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">WHEN TO USE:</h2>
-                        <p class="leading-8 text-2xl">You can consume it any time of the day, but for better experience we
+                        <p class="leading-2 text-xl text-justify sm:text-2xl">You can consume it any time of the day, but
+                            for better experience we
                             suggest consuming it in the
                             morning.</p>
                     </div>
@@ -197,7 +212,8 @@ onMounted(() => {
                     </div>
                     <div class="sm:col-span-7 col-span-12 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">STORAGE TIP:</h2>
-                        <p class="leading-8 text-2xl">For best results, utilise a dry spoon when dealing with the mix, and
+                        <p class="leading-2 text-xl text-justify sm:text-2xl">For best results, utilise a dry spoon when
+                            dealing with the mix, and
                             be sure to seal the jars
                             tightly after usage to prevent solidification or lumps.
                         </p>
@@ -205,8 +221,8 @@ onMounted(() => {
                 </div>
             </div>
 
-            <div class="container mx-auto py-5">
-                <h2 class="text-center text-4xl font-extrabold text-secondary mt-14 mb-10">HOW IT WORKS:</h2>
+            <div class="container mx-auto">
+                <h2 class="text-center text-3xl font-extrabold text-secondary mt-10 mb-3">HOW IT WORKS:</h2>
                 <h3 class=" text-2xl font-bold ">-Effectively suppress DHT🌿:</h3>
                 <p class="text-xl">Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood
                     circulation, and
@@ -232,8 +248,8 @@ onMounted(() => {
                 </p>
             </div>
 
-            <div class="container mx-auto py-5">
-                <h2 class="text-center text-4xl font-extrabold text-secondary mt-20 mb-10">WHAT’S IN IT?</h2>
+            <div class="container mx-auto">
+                <h2 class="text-center text-3xl font-extrabold text-secondary mt-10 mb-3">WHAT’S IN IT?</h2>
                 <h3 class=" text-2xl font-bold mt-4">-AMLA:</h3>
                 <p class="text-xl">Indian Gooseberry better known as Amla, contains Vitamin C, which is helpful to boost
                     collagen for
@@ -256,10 +272,10 @@ onMounted(() => {
                     and reduces hair loss.
                 </p>
             </div>
-            <div class="container mx-auto py-5">
-                <h2 class="text-center text-4xl font-extrabold text-secondary mt-20 mb-10">WHAT TO EXPECT:
+            <div class="container mx-auto">
+                <h2 class="text-center text-3xl font-extrabold text-secondary mt-10">WHAT TO EXPECT:
                 </h2>
-                <h3 class=" text-2xl font-bold mt-4">-After 4 weeks:</h3>
+                <h3 class=" text-2xl font-bold">-After 4 weeks:</h3>
                 <p class="text-xl">Reduces hair fall and dandruff, minimises breakage and itchiness, while nourishing hair
                     strands.
                 </p>
@@ -611,11 +627,11 @@ onMounted(() => {
                         </div>
                     </div> -->
 
-                    <h2 class="text-secondary text-center text-4xl font-bold mt-14 mb-10">HAVE DOUBT’S? <br />
+                    <h2 class="text-secondary text-center text-3xl font-bold mt-10 mb-2">HAVE DOUBT’S? <br />
                         WE HAVE GOT ANSWERS TO THEM!!
                     </h2>
                     <div class="container mx-auto">
-                        <p class="leading-10">◆ <span class="font-bold text-xl"> Will my hair fall reduce by using
+                        <p class="">◆ <span class="font-bold text-xl"> Will my hair fall reduce by using
                                 Hair-You-Glo? How
                                 will it work?</span><br />
                         <p class="mb-6">Yes, Hair-You-Glo is crafted in such a way that will help those who are experiencing
@@ -663,27 +679,30 @@ onMounted(() => {
                         </span><br />
                         <p class="mb-6">Our parcels are packed carefully for every order, however shipping can increase a
                             slight chance that some might get damaged.Please read our return/refund policy,take an unboxing
-                            video, and write to us at connect@glosense.in for further assistance.
+                            video, and write to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a> for
+                            further assistance.
                         </p>
                         ◆ <span class="font-bold text-xl"> What do I do if some items in my order are missing?
                         </span><br />
                         <p class="mb-6">We undergo a strict quality control procedure for every order before being
                             dispatched. However, if the items are different from what you ordered or if some items are
                             missing, please read our return/refund policy, take an unboxing video, and write to us at
-                            connect@glosense.in for further assistance.
+                            <a href="mailto:connect@glosense.in">connect@glosense.in</a> for further assistance.
                         </p>
                         ◆ <span class="font-bold text-xl"> Who should I contact for queries/concerns related to products or
                             delivery?
                         </span><br />
                         <p class="mb-6">You will be sent an order confirmation email along with your tracking details once
                             dispatched. However, if you have any concerns over your order status, please feel free to reach
-                            out to us at connect@glosense.in and our customer support team will be happy to help you!
+                            out to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a> and our customer
+                            support team will be happy to help you!
                         </p>
                         ◆ <span class="font-bold text-xl"> What to do if my payment has gone through but I haven’t received
                             an order confirmation email?
                         </span><br />
                         <p class="mb-6">In case your payment has gone through, please check your spam folder for an order
-                            confirmation email. If you do not find the email, please reach out to us at connect@glosense.in
+                            confirmation email. If you do not find the email, please reach out to us at <a
+                                href="mailto:connect@glosense.in">connect@glosense.in</a>
                             and our customer support team will be happy to help you!
                         </p>
                         ◆ <span class="font-bold text-xl"> When will my order be dispatched?
@@ -700,7 +719,8 @@ onMounted(() => {
                         </span><br />
                         <p class="mb-6">It is important to keep in mind that as a company in the food industry, we have
                             strict return/refund policies. So please go through our return/refund policy here. If you feel
-                            like you need more assistance, please feel free to drop in an email to connect@glosense.in :)
+                            like you need more assistance, please feel free to drop in an email to <a
+                                href="mailto:connect@glosense.in">connect@glosense.in</a> :)
                         </p>
                         ◆ <span class="font-bold text-xl"> Is Glosense vegan/vegetarian-friendly?
                         </span><br />
@@ -710,7 +730,7 @@ onMounted(() => {
                         </span><br />
                         <p class="mb-6">At Glosense, we care about your well-being. Our Glosense is plant-based and designed
                             for a healthy lifestyle.But incarse if you ever experience discomfort, contact us at
-                            connect@glosense.in. We're here to help.
+                            <a href="mailto:connect@glosense.in">connect@glosense.in</a>. We're here to help.
                         </p>
                         ◆ <span class="font-bold text-xl">Can Glosense be used by both men and women?
                         </span><br />

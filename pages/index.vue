@@ -1250,7 +1250,7 @@ const updateDotValue = (value) => {
             </h4>
           </div>
           <div class="elegance-text absolute top-[130px] flex justify-center items-center w-screen h-screen">
-            <h2 class="elegance-text-2 font-bold text-xl">Simple, Plant Based & Healthy Super Blends.</h2>
+            <h2 class="elegance-text-2 font-bold text-xl">Simple, Plant Based & Healthy SuperBlends.</h2>
           </div>
           <!-- <h2 class="calcium-custom-2">Calcium - 2</h2> -->
           <div class="absolute h-screen top-[140px] flex items-center justify-center  w-screen">

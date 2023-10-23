@@ -32,7 +32,8 @@ onMounted(function () {
                 <img src="/images/aboutus/About-us-banner-Desktop.jpg" class="w-screen z-50" alt="" />
             </div>
             <div class="header">
-                <h2 class="text-center text-xl md:5xl px-10 font-bold text-secondary mt-6 mb-5">We deeply have faith in..
+                <h2 class="text-center text-3xl md:5xl px-5 font-bold text-secondary mt-6 mb-5">We deeply have faith
+                    in..
                 </h2>
             </div>
             <div class=" text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
@@ -63,7 +64,7 @@ onMounted(function () {
                     </div>
                 </div>
             </div>
-            <h2 class="text-secondary text-xl font-bold mt-10 text-center">Founder's Insights</h2>
+            <h2 class="text-secondary text-3xl font-bold mt-10 text-center">Founder's Insights</h2>
             <!-- <p class="text-center">Unveiling the Mastermind Behind Glosense's Innovative Journey in Revolutionizing</p> -->
 
             <div class="founder-details container mx-auto">
@@ -72,36 +73,77 @@ onMounted(function () {
                         <img src="/images/aboutus/Founder-photo.png" class="w-3/4 mx-auto" alt="">
                     </div>
                     <div class="col-span-12 lg:col-span-6 mx-3">
-                        <h2 class="font-bold text-2xl text-black leading-normal px-7">Greetings SuperBeings🌷
+                        <h2 class="font-bold text-2xl text-black leading-normal px-5">Greetings SuperBeings🌷
                         </h2>
-                        <h6 class="text-lg mt-3 px-7 text-justify">I embarked on a transformative journey that ultimately
+                        <h6 class="text-lg mt-3 px-5 text-justify">I embarked on a transformative journey that ultimately
                             led to
                             the
                             creation of Glosense—an unwavering commitment to your holistic well-being.
                         </h6>
-                        <h6 class="text-lg mt-3 px-7 text-justify ">Formerly an engineer turned government employee, I
+                        <h6 class="text-lg mt-3 px-5 text-justify ">Formerly an engineer turned government employee, I
                             comfortably
                             coasted through life until the pandemic shook the world. The extended hours indoors led me to
                             disregard my health and self-care. It served as a wake-up call that demanded my attention. I
                             made a resolute decision to change.
                         </h6>
-                        <h6 class="text-lg mt-3 px-7 text-justify ">It almost took me six months to undergo a profound
+                        <h6 class="text-lg mt-3 px-5 text-justify ">It almost took me six months to undergo a profound
                             transformation—physically, mentally, and emotionally. This personal journey laid the foundation
                             for Glosense, a brand deeply rooted in the conviction that inner well-being is the base wall of
                             overall health.
                         </h6>
-                        <h6 class="text-lg mt-3 px-7 text-justify ">Here at Glosense, we help you empower your wellness
+                        <h6 class="text-lg mt-3 px-5 text-justify ">Here at Glosense, we help you empower your wellness
                             journey.
                             We
                             provide unwavering support, guidance, and natural products meticulously crafted to prioritise
                             your inner health. We firmly believe that the power to effect change resides within each of us.
                         </h6>
-                        <h6 class="text-lg mt-3 px-7 text-justify ">Introduce Glosense in your life, where your journey to
+                        <h6 class="text-lg mt-3 px-5 text-justify ">Introduce Glosense in your life, where your journey to
                             well-being
                             begins. Together, let's take charge of our lives, health, and future.
                         </h6>
                         <br />
-                        <h6 class="text-lg mt-3 px-7 text-justify">In pursuit of wellness,<br />
+                        <h6 class="text-lg mt-3 px-5 text-justify">In pursuit of wellness,<br />
+                            Sagar Gaikwad<br />
+                            Glosense<br />
+
+                        </h6>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-5 mt-10">
+                    <div class="col-span-12 lg:col-span-6 mx-auto">
+                        <img src="/images/aboutus/Founder-photo.png" class="w-3/4 mx-auto" alt="">
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 mx-3">
+                        <h2 class="font-bold text-2xl text-black leading-normal px-5">Greetings SuperBeings🌷
+                        </h2>
+                        <h6 class="text-lg mt-3 px-5 text-justify">I embarked on a transformative journey that ultimately
+                            led to
+                            the
+                            creation of Glosense—an unwavering commitment to your holistic well-being.
+                        </h6>
+                        <h6 class="text-lg mt-3 px-5 text-justify ">Formerly an engineer turned government employee, I
+                            comfortably
+                            coasted through life until the pandemic shook the world. The extended hours indoors led me to
+                            disregard my health and self-care. It served as a wake-up call that demanded my attention. I
+                            made a resolute decision to change.
+                        </h6>
+                        <h6 class="text-lg mt-3 px-5 text-justify ">It almost took me six months to undergo a profound
+                            transformation—physically, mentally, and emotionally. This personal journey laid the foundation
+                            for Glosense, a brand deeply rooted in the conviction that inner well-being is the base wall of
+                            overall health.
+                        </h6>
+                        <h6 class="text-lg mt-3 px-5 text-justify ">Here at Glosense, we help you empower your wellness
+                            journey.
+                            We
+                            provide unwavering support, guidance, and natural products meticulously crafted to prioritise
+                            your inner health. We firmly believe that the power to effect change resides within each of us.
+                        </h6>
+                        <h6 class="text-lg mt-3 px-5 text-justify ">Introduce Glosense in your life, where your journey to
+                            well-being
+                            begins. Together, let's take charge of our lives, health, and future.
+                        </h6>
+                        <br />
+                        <h6 class="text-lg mt-3 px-5 text-justify">In pursuit of wellness,<br />
                             Sagar Gaikwad<br />
                             Glosense<br />
 
@@ -109,19 +151,21 @@ onMounted(function () {
                     </div>
                 </div>
             </div>
-            <h6 class="text-center text-secondary text-xl font-bold mt-24 mb-5">Where can we take you next?</h6>
+            <h6 class="text-center text-secondary text-3xl font-bold mt-24 mb-5">Where can we take you next?</h6>
             <div class=" text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
                 <div class="  lg:col-span-2 flex  justify-center items-center sm:py-4">
-                    <p class="absolute text-4xl font-semibold text-secondary">Shop All</p>
-                    <img src="/images/aboutus/shop-all.jpg" class="object-fill h-52 w-80" alt="" />
+                    <p class="absolute text-4xl font-bold  text-secondary">SHOP</p>
+                    <img src="/images/aboutus/shop-all.jpg" class="object-fill rounded-2xl h-52 w-80" alt="" />
                 </div>
                 <div class="  lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <a href="/blogs" class="absolute text-4xl font-semibold text-secondary">Blogs</a>
-                    <a href="/blogs"> <img src="/images/aboutus/blogs.jpg" class="object-fill h-52 w-80" alt="" /></a>
+                    <a href="/blogs" class="absolute text-4xl font-bold  text-secondary">BLOGS</a>
+                    <a href="/blogs"> <img src="/images/aboutus/blogs.jpg" class="object-fill rounded-2xl h-52 w-80"
+                            alt="" /></a>
                 </div>
                 <div class="  lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <a href="/recepies" class="absolute text-4xl font-semibold text-secondary">Recepies</a>
-                    <a href="/recepies"> <img src="/images/aboutus/recepies.jpg" class="object-fill h-52 w-80" alt="" /></a>
+                    <a href="/recepies" class="absolute text-4xl font-bold  text-secondary">RECEPIES</a>
+                    <a href="/recepies"> <img src="/images/aboutus/recepies.jpg" class="object-fill rounded-2xl h-52 w-80"
+                            alt="" /></a>
                 </div>
             </div>
 

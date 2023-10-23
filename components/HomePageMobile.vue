@@ -15,7 +15,7 @@ onMounted(() => {
             trigger: "#top-section",
             start: "top top",
             end: "13000",
-            scrub: 0,
+            scrub: 1,
             pin: true,
             // markers: true,
         },
@@ -195,7 +195,7 @@ onMounted(() => {
     tlHeroResponsive.from('#slider-image-responsive', {
         y: 800,
         opacity: 1,
-        duration: 10,
+        duration: 5,
     }, "+=1")
     tlHeroResponsive.to('#slider-image-responsive', {
         y: -1500,
@@ -204,42 +204,42 @@ onMounted(() => {
     }, "+=7")
 
     tlHeroResponsive.from('#jar-image-responsive', {
-        duration: 6,
+        duration: 3,
         rotation: 720,
     }, "+=1")
 
     tlHeroResponsive.from('.vitamin-custom-responsive', {
         x: -500,
-        duration: 6,
+        duration: 3,
         opacity: 1,
     }, "<")
     tlHeroResponsive.from('.calcium-custom-responsive', {
         x: 500,
-        duration: 6,
+        duration: 3,
         opacity: 1,
     }, "<")
     tlHeroResponsive.from('#jar-image-responsive', {
-        duration: 6,
+        duration: 3,
         rotation: 1080,
-    }, "+=1")
+    }, "+=5")
     tlHeroResponsive.to('.vitamin-custom-responsive', {
         x: 500,
-        duration: 6,
+        duration: 2,
         opacity: 1,
     }, "<")
     tlHeroResponsive.to('.calcium-custom-responsive', {
         x: -500,
-        duration: 6,
+        duration: 2,
         opacity: 1,
     }, "<")
     tlHeroResponsive.from('.vitamin-custom-2-responsive', {
         x: -500,
-        duration: 6,
+        duration: 2,
         opacity: 1,
     }, "<")
     tlHeroResponsive.from('.calcium-custom-2-responsive', {
         x: 500,
-        duration: 6,
+        duration: 2,
         opacity: 1,
     }, "<")
 
@@ -247,7 +247,7 @@ onMounted(() => {
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 6,
         rotation: 1440,
-    }, "+=1")
+    }, "+=5")
 
     tlHeroResponsive.to('.vitamin-custom-2-responsive', {
         x: 500,
@@ -272,18 +272,18 @@ onMounted(() => {
     }, "<")
 
     tlHeroResponsive.from('#jar-image-responsive', {
-        duration: 6,
+        duration: 2,
         rotation: 1800,
-    }, "+=1")
+    }, "+=5")
 
     tlHeroResponsive.to('.vitamin-custom-3-responsive', {
         x: 1000,
-        duration: 6,
+        duration: 2,
         opacity: 0,
     }, "<")
     tlHeroResponsive.to('.calcium-custom-3-responsive', {
         x: -1000,
-        duration: 6,
+        duration: 2,
         opacity: 0,
     }, "<")
 
@@ -294,28 +294,28 @@ onMounted(() => {
 
     tlHeroResponsive.from('.vitamin-custom-4-responsive', {
         x: -1000,
-        duration: 6,
+        duration: 2,
         opacity: 0,
     }, "<")
     tlHeroResponsive.from('.calcium-custom-4-responsive', {
         x: 1000,
-        duration: 6,
+        duration: 2,
         opacity: 0,
     }, "<")
 
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 6,
         rotation: 2160,
-    })
+    }, "+=5")
 
     tlHeroResponsive.to('.vitamin-custom-4-responsive', {
         x: 1000,
-        duration: 6,
+        duration: 2,
         opacity: 0,
     }, "<")
     tlHeroResponsive.to('.calcium-custom-4-responsive', {
         x: -1000,
-        duration: 6,
+        duration: 2,
         opacity: 0,
     }, "<")
 
@@ -503,7 +503,7 @@ onMounted(() => {
         </div>
         <div class="container h-screen mx-auto fixed flex flex-col items-center justify-center pt-20 pb-20"
             id="top-section">
-            <img class="absolute w-20 opacity-[0.5] bottom-[-8rem] left-0" src="/images/leave-bl.png" alt="" />
+            <img class="absolute w-40 opacity-[0.3] bottom-[-8rem] left-0" src="/images/leave-bl.png" alt="" />
             <img class="absolute w-20 opacity-[0.5] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png" alt="" />
             <img class="absolute w-20 opacity-[0.5] left-0 top-[10%]" src="/images/Asset-25-4x.png" alt="" />
             <img class="absolute w-20 opacity-[0.5] right-0 top-[10%]" src="/images/Asset-24-4x.png" alt="" />
@@ -599,7 +599,7 @@ onMounted(() => {
                 <h2
                     class="text-center px-10 absolute -bottom-[100px] elegance-text-responsive w-screen font-bold text-xl mt-3">
                     Simple,
-                    Plant Based & Healthy Super Blend.
+                    Plant Based & Healthy SuperBlend.
                 </h2>
 
 
@@ -613,27 +613,27 @@ onMounted(() => {
 
 
                 <!-- <div class="ingredients-responsive absolute"> -->
-                <div class="absolute inset-y-36 ingredient-my-1-responsive flex opacity-0 items-center flex-col">
+                <div class="absolute inset-y-36 -z-10 ingredient-my-1-responsive flex opacity-0 items-center flex-col">
                     <img class="  w-[60px] " src="/images/Ingradients-02.png" alt="" />
                     <h3 class="text-sm font-bold">Pomegranate</h3>
                 </div>
-                <div class="absolute inset-y-36 ingredient-my-2-responsive opacity-0 flex items-center flex-col">
+                <div class="absolute inset-y-36 -z-10 ingredient-my-2-responsive opacity-0 flex items-center flex-col">
                     <img class="  w-[60px] " src="/images/Ingradients-03.png" alt="" />
                     <h3 class="text-sm font-bold">Cinnamon Bark</h3>
                 </div>
-                <div class="absolute inset-y-36 ingredient-my-3-responsive opacity-0 flex items-center flex-col">
+                <div class="absolute inset-y-36 -z-10 ingredient-my-3-responsive opacity-0 flex items-center flex-col">
                     <img class="  w-[60px] " src="/images/Ingradients-04.png" alt="" />
                     <h3 class="text-sm font-bold">Amla</h3>
                 </div>
-                <div class="absolute inset-y-36 ingredient-my-4-responsive opacity-0 flex items-center flex-col">
+                <div class="absolute inset-y-36 -z-10 ingredient-my-4-responsive opacity-0 flex items-center flex-col">
                     <img class=" w-[60px] " src="/images/Ingradients-07.png" alt="" />
                     <h3 class="text-sm font-bold">Orange</h3>
                 </div>
-                <div class="absolute inset-y-36 ingredient-my-5-responsive opacity-0 flex items-center flex-col">
+                <div class="absolute inset-y-36 -z-10 ingredient-my-5-responsive opacity-0 flex items-center flex-col">
                     <img class=" w-[60px] " src="/images/Ingradients-09.png" alt="" />
                     <h3 class="text-sm font-bold">Sea Buckthom</h3>
                 </div>
-                <div class="absolute inset-y-36 ingredient-my-6-responsive opacity-0 flex items-center flex-col">
+                <div class="absolute inset-y-36 -z-10 ingredient-my-6-responsive opacity-0 flex items-center flex-col">
                     <img class=" w-[60px] " src="/images/Ingradients-10.png" alt="" />
                     <h3 class="text-sm font-bold">Gotu Kola Leaf</h3>
                 </div>

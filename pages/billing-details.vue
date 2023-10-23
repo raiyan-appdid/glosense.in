@@ -178,6 +178,13 @@ async function verifyPromoCode() {
                                 </svg>
                             </span>
                         </div><br />
+                        <div class="w-screen">
+                            <p>
+                                <input type="checkbox" required class="mr-3" name="" id="tnc">
+                                <label for="tnc">Accepting <a class=" text-secondary" href="/terms-and-conditions">Terms and
+                                        Conditions</a> *</label>
+                            </p>
+                        </div><br />
                         <div>
                             <button type="submit"
                                 class="text-white bg-blue-700 my-auto hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center -600 -blue-700 -blue-800">Submit</button>
@@ -191,16 +198,17 @@ async function verifyPromoCode() {
                         <img src="/images/jar2.png" alt="">
                     </div>
                     <div>
-                        <h4>Fiar Glow sense ( 200 g )</h4>
-                        <p>x 1 Rs 899</p>
-                        <p>Rs 899</p>
+                        <h4>Hair You Glo ( 200 g )</h4>
+                        <p>x 1 Rs 1299</p>
+                        <p>Rs 1299</p>
+                        <!-- <p>Discoun</p> -->
                     </div>
                 </div>
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
                 <div class="grid grid-cols-2">
 
                     <div class="text-end">Sub Total</div>
-                    <div class="mx-auto">899</div>
+                    <div class="mx-auto">1299</div>
                     <div class="text-end">Shipping</div>
                     <div class="mx-auto">0</div>
                     <div class="text-end">Promo Code Discount</div>
@@ -222,7 +230,7 @@ async function verifyPromoCode() {
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
                 <div class="grid grid-cols-2">
                     <div class="text-end">Total</div>
-                    <div class="mx-auto">{{ 899 - promocodeDiscount }} ₹</div>
+                    <div class="mx-auto">Rs {{ 1299 - promocodeDiscount }}</div>
                 </div>
             </div>
         </div>
