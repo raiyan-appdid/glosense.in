@@ -111,41 +111,29 @@ onMounted(function () {
                 </div>
                 <div class="grid grid-cols-12 gap-5 mt-10">
                     <div class="col-span-12 lg:col-span-6 mx-auto">
-                        <img src="/images/aboutus/Founder-photo.png" class="w-3/4 mx-auto" alt="">
+                        <img src="/images/aboutus/Founder-photo2.png" class="w-3/4 mx-auto" alt="">
                     </div>
                     <div class="col-span-12 lg:col-span-6 mx-3">
-                        <h2 class="font-bold text-2xl text-black leading-normal px-5">Greetings SuperBeings🌷
+                        <h2 class="font-bold text-2xl text-black leading-normal px-5">Hello Beautiful souls🌻
                         </h2>
-                        <h6 class="text-lg mt-3 px-5 text-justify">I embarked on a transformative journey that ultimately
-                            led to
-                            the
-                            creation of Glosense—an unwavering commitment to your holistic well-being.
+                        <h6 class="text-lg mt-3 px-5 text-justify">I am Dr. Snehal, the Co-founder of Glosense on the
+                            journey to wellness. As an MD, nutritionist, counselor, and weight loss coach, I have tried to
+                            bring my expertise and heart to our new mission.
                         </h6>
-                        <h6 class="text-lg mt-3 px-5 text-justify ">Formerly an engineer turned government employee, I
-                            comfortably
-                            coasted through life until the pandemic shook the world. The extended hours indoors led me to
-                            disregard my health and self-care. It served as a wake-up call that demanded my attention. I
-                            made a resolute decision to change.
+                        <h6 class="text-lg mt-3 px-5 text-justify ">From my early struggles with diets to overcoming an
+                            eating disorder and PCOD, I understand the complexities of the wellness journey.
+                            Today, I am on a mission to impact the lives of one million women, guiding them toward health
+                            and happiness. Through my signature program, 'Desi Diet,' our team already empowered over 24,000
+                            women worldwide to achieve lasting weight loss.
                         </h6>
-                        <h6 class="text-lg mt-3 px-5 text-justify ">It almost took me six months to undergo a profound
-                            transformation—physically, mentally, and emotionally. This personal journey laid the foundation
-                            for Glosense, a brand deeply rooted in the conviction that inner well-being is the base wall of
-                            overall health.
-                        </h6>
-                        <h6 class="text-lg mt-3 px-5 text-justify ">Here at Glosense, we help you empower your wellness
-                            journey.
-                            We
-                            provide unwavering support, guidance, and natural products meticulously crafted to prioritise
-                            your inner health. We firmly believe that the power to effect change resides within each of us.
-                        </h6>
-                        <h6 class="text-lg mt-3 px-5 text-justify ">Introduce Glosense in your life, where your journey to
-                            well-being
-                            begins. Together, let's take charge of our lives, health, and future.
+                        <h6 class="text-lg mt-3 px-5 text-justify ">As we embark on the path to wellness, Glosense invites
+                            you to join us in this journey and experience a healthier, happier & new you. Together, we'll
+                            create balance between well-being and beauty, the Glosense way!!
                         </h6>
                         <br />
-                        <h6 class="text-lg mt-3 px-5 text-justify">In pursuit of wellness,<br />
-                            Sagar Gaikwad<br />
-                            Glosense<br />
+                        <h6 class="text-lg mt-3 px-5 text-justify">In pursuit of health & wellness,<br />
+                            Dr.Snehal<br />
+                            Co-founder<br />
 
                         </h6>
                     </div>
