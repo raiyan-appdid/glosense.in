@@ -514,11 +514,24 @@ onMounted(() => {
                 of
                 superfoods.
             </h2>
-            <h4 class="mt-5 home-text-responsive text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl"><a
+            <h4 class="mt-5 home-text-responsive text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4 z-20 rounded-3xl"><a
                     href="/about">Know
                     more</a>
             </h4>
-
+            <h4
+                class="home-text-responsive mt-12 bg-white text-primary cursor-pointer outline px-5 py-10 z-20 rounded-full">
+                <a href="/product-detail" class="text-2xl">Shop Now</a>
+            </h4>
+            <!-- <div class="absolute flex flex-col justify-center w-screen h-screen">
+                <img class="w-[4rem]" src="/images/Asset-27-4x.png" alt="" />
+                <p class="absolute text-secondary font-bold text-xs mx-auto">
+                    <a href="">Shop Now</a>
+                </p>
+            </div> -->
+            <h2 class="px-10 absolute bottom-10 flex justify-center flex-col home-text-responsive mt-3">
+                <img src="/images/gif/glosense-animation.gif" class="w-1/2 text-center mx-auto" alt="">
+                <p class="text-sm inline-block text-center">Scroll Down</p>
+            </h2>
             <div class="jar absolute flex flex-col justify-center items-center">
                 <h1
                     class="text-2xl font-bold flex justify-center items-center w-screen text-center text-primary opacity-0 prevent-damage-1 absolute -top-[45px]  bg-transparent ">

@@ -1,14 +1,15 @@
 <script setup>
 const token = useCookie('token');
 const count = ref(1);
+const counter = useCounter()
 
 function incrementCount() {
-    count.value++;
+    counter.value++;
 }
 
 function decrementCount() {
-    if (count.value > 1) {
-        count.value--;
+    if (counter.value > 1) {
+        counter.value--;
     }
 }
 
@@ -79,7 +80,7 @@ onMounted(() => {
     <!-- Main modal -->
     <LoginModal />
 
-    <div class="product-details px-6 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
+    <div class="product-details px-6 md:px-8  mt-24 pt-4 sm:mt-24 pb-20 bg-[#efe8df]">
         <!-- <h2 class="text-secondary text-2xl font-bold text-center py-2">Product</h2> -->
         <div class="container mx-auto sm:pt-4">
             <div class="grid grid-cols-12 mt-2 sm:gap-4">
@@ -137,7 +138,7 @@ onMounted(() => {
                             NOW</button>
                         <span class="my-auto bg-primary px-3 text-white py-1 ml-1 cursor-pointer"
                             @click="decrementCount">-</span>
-                        <input type="number" v-model="count"
+                        <input type="number" v-model="counter"
                             class="w-[3rem] text-2xl text-center border bg-secondary text-white hover:border-secondary border-3 focus:outline-none"
                             name="" id="">
                         <span class="my-auto bg-primary px-3 cursor-pointer text-white py-1 mr-1"

@@ -3,6 +3,8 @@ import Notiflix from 'notiflix';
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
+const counter = useCounter()
+
 
 
 
@@ -44,7 +46,7 @@ definePageMeta({
 
 async function storeBilling(e) {
 
-    await useFetch(`${apiUrl}/order/store?name=${name.value}&user_id=${data.value.data.id}&email=${email.value}&city=${city.value}&state=${state.value}&number=${number.value}&address=${address.value}&pincode=${pincode.value}&country=${country.value}&total_price=${total_price.value}&promocode=${promocode.value}`, {
+    await useFetch(`${apiUrl}/order/store?name=${name.value}&user_id=${data.value.data.id}&email=${email.value}&city=${city.value}&state=${state.value}&number=${number.value}&address=${address.value}&pincode=${pincode.value}&country=${country.value}&=${total_price.value}&promocode=${promocode.value}`, {
         method: "GET",
         headers: {
             Authorization: "Bearer " + token.value,
@@ -151,9 +153,9 @@ async function verifyPromoCode() {
                                     class="text-red-500">*</span></label>
                             <input name="email" required id="email" type="email" v-model="email"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
-                            <input type="hidden" name="total_price" value="1">
+                            <!-- <input type="hidden" name="total_price" value="1"> -->
                         </div>
-                        <div class="">
+                        <!-- <div class="">
                             <label for="phone" class="block mb-2 text-md  font-bold text-black ">Password <span
                                     class="text-red-500">*</span></label>
                             <input name="number" required id="phone" v-model="number"
@@ -165,7 +167,7 @@ async function verifyPromoCode() {
                             <input name="email" required id="email" type="email" v-model="email"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                             <input type="hidden" name="total_price" value="1">
-                        </div>
+                        </div> -->
                         <div class="flex justify-center">
                             <div class="flex flex-col justify-center">
                                 <label for="promocode" class="block mb-2 text-md font-bold text-black ">Promo Code
@@ -211,13 +213,16 @@ async function verifyPromoCode() {
                 <div class="grid grid-cols-2">
 
                     <div class="text-end font-bold">Units</div>
-                    <div class="mx-auto font-bold">1</div>
+                    <div class="mx-auto font-bold">{{ counter }}</div>
+                    <input type="hidden" :value="counter" name="units" form="store-billing-form" id="">
                     <div class="text-end font-bold">Sub Total</div>
-                    <div class="mx-auto font-bold">1299 /-</div>
+                    <div class="mx-auto font-bold"> {{ 1299 * counter }}/-</div>
+                    <input type="hidden" form="store-billing-form" name="sub_total" :value="1299 * counter" id="">
                     <div class="text-end font-bold">Delivery Charges</div>
                     <div class="mx-auto font-bold">free</div>
                     <div class="text-end font-bold">Promo Code Discount</div>
                     <div class="mx-auto font-bold">{{ promocodeDiscount }} /-</div>
+                    <input type="hidden" form="store-billing-form" :value="promocodeDiscount" name="discount" id="">
 
                     <!-- <div class="mx-auto">
                         <p>Sub Total</p>
@@ -235,7 +240,9 @@ async function verifyPromoCode() {
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
                 <div class="grid grid-cols-2">
                     <div class="text-end font-bold">Total</div>
-                    <div class="mx-auto font-bold">Rs. {{ 1299 - promocodeDiscount }} /-</div>
+                    <div class="mx-auto font-bold">Rs. {{ 1299 * counter - promocodeDiscount }} /-</div>
+                    <input type="hidden" form="store-billing-form" :value="(1299 * counter - promocodeDiscount)"
+                        name="total" id="">
                 </div>
 
             </div>

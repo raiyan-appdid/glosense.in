@@ -4,6 +4,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin.js";
 import { Loading } from 'notiflix/build/notiflix-loading-aio';
 import Notiflix from 'notiflix';
+const nuxtApp = useNuxtApp();
+
+
+onBeforeRouteLeave(() => {
+  Loading.pulse();
+})
+
+// nuxtApp.hook('page:finish', () => { Loading.pulse(); })
 
 
 onMounted(() => {
@@ -1040,7 +1048,7 @@ onMounted(() => {
     opacity: 0,
     duration: 2,
   })
-
+  Loading.remove()
   // tlShowcase.to("#shop-section",
   //   {
   //     y: "-2rem",
@@ -1053,9 +1061,31 @@ onMounted(() => {
 const updateDotValue = (value) => {
   document.getElementById("slide-dot").textContent = value;
 };
+
 </script>
 <template>
   <HeaderForHome />
+  <div id="NotiflixLoadingWrap"
+    class="notiflix-loading nx-with-animation w-screen h-screen absolute backdrop-blur-xl bg-primary"
+    style="z-index: 4000; background: #efe8df; animation-duration: 400ms; font-family: Quicksand, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif; display: flex; flex-flow: column wrap; align-items: center; justify-content: center;">
+    <div style="width:80px; height:80px;" class="notiflix-loading-icon z-50"><svg xmlns="http://www.w3.org/2000/svg"
+        stroke="#32c682" width="80px" height="80px" viewBox="0 0 44 44">
+        <g fill="none" fill-rule="evenodd" stroke-width="2">
+          <circle cx="22" cy="22" r="1">
+            <animate attributeName="r" begin="0s" calcMode="spline" dur="1.8s" keySplines="0.165, 0.84, 0.44, 1"
+              keyTimes="0; 1" repeatCount="indefinite" values="1; 20"></animate>
+            <animate attributeName="stroke-opacity" begin="0s" calcMode="spline" dur="1.8s"
+              keySplines="0.3, 0.61, 0.355, 1" keyTimes="0; 1" repeatCount="indefinite" values="1; 0"></animate>
+          </circle>
+          <circle cx="22" cy="22" r="1">
+            <animate attributeName="r" begin="-0.9s" calcMode="spline" dur="1.8s" keySplines="0.165, 0.84, 0.44, 1"
+              keyTimes="0; 1" repeatCount="indefinite" values="1; 20"></animate>
+            <animate attributeName="stroke-opacity" begin="-0.9s" calcMode="spline" dur="1.8s"
+              keySplines="0.3, 0.61, 0.355, 1" keyTimes="0; 1" repeatCount="indefinite" values="1; 0"></animate>
+          </circle>
+        </g>
+      </svg></div>
+  </div>
   <div class="hidden sm:block">
     <div class="fixed h-screen w-screen bg-[url('/images/bg.png')]" id="blob-group">
       <img class="w-[25rem] absolute left-0 top-0" src="/images/glob-tl.png" alt="" />
@@ -1222,28 +1252,28 @@ const updateDotValue = (value) => {
             </div>
             <div class="ingredient-my-1 flex items-center flex-col">
               <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-02.png" alt="" />
-              <h3 class="mt-5 text-xl text-primary font-bold">Pomegranate</h3>
+              <h3 class="mt-5 text-xl font-bold">Pomegranate</h3>
             </div>
             <div class="ingredient-my-2 flex items-center flex-col">
               <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-03.png" alt="" />
-              <h3 class="mt-5 text-xl text-primary font-bold">Cinnamon Bark</h3>
+              <h3 class="mt-5 text-xl font-bold">Cinnamon Bark</h3>
             </div>
             <div class="ingredient-my-3 flex items-center flex-col">
               <img class="opacity-1  scale-150  h-20" src="/images/Ingradients-04.png" alt="" />
-              <h3 class="mt-5 text-xl text-primary font-bold">Amla</h3>
+              <h3 class="mt-5 text-xl font-bold">Amla</h3>
             </div>
 
             <div class="ingredient-my-4 opacity-0 flex items-center flex-col">
               <img class="scale-150  h-20" src="/images/Ingradients-07.png" alt="" />
-              <h3 class="mt-5 text-xl text-primary font-bold">Orange</h3>
+              <h3 class="mt-5 text-xl font-bold">Orange</h3>
             </div>
             <div class="ingredient-my-5 opacity-0 flex items-center flex-col">
               <img class="scale-150  h-20" src="/images/Ingradients-09.png" alt="" />
-              <h3 class="mt-5 text-xl text-primary font-bold">Sea Buckthom</h3>
+              <h3 class="mt-5 text-xl font-bold">Sea Buckthom</h3>
             </div>
             <div class="ingredient-my-6 opacity-0 flex items-center flex-col">
               <img class="scale-150  h-20" src="/images/Ingradients-10.png" alt="" />
-              <h3 class="mt-5 text-xl text-primary font-bold">Gotu Kola Leaf</h3>
+              <h3 class="mt-5 text-xl font-bold">Gotu Kola Leaf</h3>
             </div>
           </div>
           <div class="absolute h-screen top-[130px] flex items-center justify-center  w-screen">
