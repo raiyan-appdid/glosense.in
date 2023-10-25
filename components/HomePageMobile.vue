@@ -518,8 +518,7 @@ onMounted(() => {
                     href="/about">Know
                     more</a>
             </h4>
-            <h4
-                class="home-text-responsive mt-12 bg-white text-primary cursor-pointer outline px-5 py-10 z-20 rounded-full">
+            <h4 class="home-text-responsive mt-8 bg-white text-primary cursor-pointer outline px-2 py-6 z-20 rounded-full">
                 <a href="/product-detail" class="text-2xl">Shop Now</a>
             </h4>
             <!-- <div class="absolute flex flex-col justify-center w-screen h-screen">
