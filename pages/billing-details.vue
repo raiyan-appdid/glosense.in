@@ -122,7 +122,7 @@ async function verifyPromoCode() {
                                     class="text-red-500">*</span></label>
                             <input name="city" required id="city" v-model="city"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                                placeholder="Phone">
+                                placeholder="City">
                         </div>
                         <div class="">
                             <label for="state" class="block mb-2 text-md  font-bold text-black ">State <span
