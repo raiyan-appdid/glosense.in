@@ -2,19 +2,20 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin.js";
-import { Loading } from 'notiflix/build/notiflix-loading-aio';
+import Loading from 'notiflix/build/notiflix-loading-aio';
 import Notiflix from 'notiflix';
 const nuxtApp = useNuxtApp();
 
 
-onBeforeRouteLeave(() => {
-  Loading.pulse();
+nuxtApp.hook('page:finish', () => {
+  Notiflix.Loading.remove();
 })
 
-// nuxtApp.hook('page:finish', () => { Loading.pulse(); })
 
 
 onMounted(() => {
+  // Loading.remove();
+
   const blurSidebar = () => {
 
     const sidebar = document.getElementById("sidebar");
@@ -1048,7 +1049,7 @@ onMounted(() => {
     opacity: 0,
     duration: 2,
   })
-  Loading.remove()
+  // Loading.remove();
   // tlShowcase.to("#shop-section",
   //   {
   //     y: "-2rem",
