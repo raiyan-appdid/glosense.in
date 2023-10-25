@@ -110,10 +110,10 @@ onMounted(function () {
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-5 mt-10">
-                    <div class="col-span-12 lg:col-span-6 mx-auto">
+                    <div class="col-span-12 lg:col-span-6 mx-auto sm:order-2">
                         <img src="/images/aboutus/Founder-photo2.png" class="w-3/4 mx-auto" alt="">
                     </div>
-                    <div class="col-span-12 lg:col-span-6 mx-3">
+                    <div class="col-span-12 lg:col-span-6 mx-3 sm:order-1">
                         <h2 class="font-bold text-2xl text-black leading-normal px-5">Hello Beautiful souls🌻
                         </h2>
                         <h6 class="text-lg mt-3 px-5 text-justify">I am Dr. Snehal, the Co-founder of Glosense on the
@@ -143,16 +143,16 @@ onMounted(function () {
             <div class=" text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
                 <div class="  lg:col-span-2 flex  justify-center items-center sm:py-4">
                     <p class="absolute text-4xl font-bold  text-secondary">SHOP</p>
-                    <img src="/images/aboutus/shop-all.jpg" class="object-fill rounded-2xl h-52 w-80" alt="" />
+                    <img src="/images/aboutus/bottom-1.png" class="object-fill rounded-2xl h-52 w-80" alt="" />
                 </div>
                 <div class="  lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
                     <a href="/blogs" class="absolute text-4xl font-bold  text-secondary">BLOGS</a>
-                    <a href="/blogs"> <img src="/images/aboutus/blogs.jpg" class="object-fill rounded-2xl h-52 w-80"
+                    <a href="/blogs"> <img src="/images/aboutus/bottom-2.png" class="object-fill rounded-2xl h-52 w-80"
                             alt="" /></a>
                 </div>
                 <div class="  lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
                     <a href="/recepies" class="absolute text-4xl font-bold  text-secondary">RECEPIES</a>
-                    <a href="/recepies"> <img src="/images/aboutus/recepies.jpg" class="object-fill rounded-2xl h-52 w-80"
+                    <a href="/recepies"> <img src="/images/aboutus/bottom-3.png" class="object-fill rounded-2xl h-52 w-80"
                             alt="" /></a>
                 </div>
             </div>

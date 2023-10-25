@@ -272,7 +272,7 @@ onMounted(() => {
     }, "<")
 
     tlHeroResponsive.from('#jar-image-responsive', {
-        duration: 2,
+        duration: 4,
         rotation: 1800,
     }, "+=5")
 
@@ -294,12 +294,12 @@ onMounted(() => {
 
     tlHeroResponsive.from('.vitamin-custom-4-responsive', {
         x: -1000,
-        duration: 2,
+        duration: 3,
         opacity: 0,
     }, "<")
     tlHeroResponsive.from('.calcium-custom-4-responsive', {
         x: 1000,
-        duration: 2,
+        duration: 3,
         opacity: 0,
     }, "<")
 
@@ -310,12 +310,12 @@ onMounted(() => {
 
     tlHeroResponsive.to('.vitamin-custom-4-responsive', {
         x: 1000,
-        duration: 2,
+        duration: 6,
         opacity: 0,
     }, "<")
     tlHeroResponsive.to('.calcium-custom-4-responsive', {
         x: -1000,
-        duration: 2,
+        duration: 6,
         opacity: 0,
     }, "<")
 
@@ -333,22 +333,22 @@ onMounted(() => {
     tlHeroResponsive.to('.prevent-damage-1', {
         y: -60,
         opacity: 1,
-        duration: 3,
+        duration: 6,
     })
     tlHeroResponsive.to('.prevent-damage-2', {
         y: -30,
         opacity: 1,
-        duration: 3,
+        duration: 6,
     })
     tlHeroResponsive.to('.prevent-damage-3', {
         y: 0,
         opacity: 1,
-        duration: 3,
+        duration: 6,
     })
     tlHeroResponsive.to('.prevent-damage-4', {
         y: 30,
         opacity: 1,
-        duration: 3,
+        duration: 6,
     })
 
     tlHeroResponsive.to('.prevent-damage-1', {
@@ -515,7 +515,7 @@ onMounted(() => {
                 superfoods.
             </h2>
             <h4 class="mt-5 home-text-responsive text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl"><a
-                    href="/product-detail">Know
+                    href="/about">Know
                     more</a>
             </h4>
 
@@ -607,7 +607,7 @@ onMounted(() => {
                     class="text-sm  -bottom-[200px] text-center absolute opacity-0 what-text-responsive flex justify-center font-extrabold text-secondary w-screen">
                     <p
                         class=" text-xs bg-[#ef8f7b] text-neutral-50 bottom-0 mx-auto text-center py-1 px-4 absolute rounded-3xl">
-                        <a href="/about">Know more</a>
+                        <a href="/product-detail">Know more</a>
                     </p>
                 </h4>
 
@@ -644,7 +644,7 @@ onMounted(() => {
                 <img width="w-screen" class=" text-center" src="/images/Mobile-home-screen-banner.jpg" alt="">
                 <p
                     class=" text-xs bg-[#ef8f7b] text-neutral-50 bottom-12 mx-auto text-center py-1 px-4 absolute rounded-3xl">
-                    <a href="/about">Know more</a>
+                    <a href="/product-detail">Know more</a>
                 </p>
             </div>
         </div>
