@@ -60,7 +60,7 @@ onUnmounted(() => {
 
   <div>
     <div class="fixed top-0 w-screen bg-secondary z-10">
-      <p class="p-0 m-0 text-white text-center font-bold sm:mr-28">GET 33% OFF WITH CODE - MYFIRSTJAR</p>
+      <p class="p-0 m-0 text-white text-center font-bold sm:mr-28">GET 33% OFF WITH CODE - FIRSTJAR</p>
     </div>
     <div id="sidebar" class="sidebar flex justify-between fixed top-6 w-full sm:py-4 sm:px-10 py-2 px-10 z-10 show-blur">
       <div @click="showSideBar" @mouseover="handleHover" @mouseout="handleHover"

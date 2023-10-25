@@ -97,11 +97,11 @@ async function verifyPromoCode() {
     <div class="product-details px-3 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
         <h2 class="text-secondary text-2xl font-bold text-center py-10">Billing Page</h2>
         <div class="grid grid-cols-12">
-            <div class="container mx-auto col-span-12 sm:col-span-6 mt-10 sm:mt-0 order-2 sm:order-1">
-                <form action="https://admin.glosense.in/api/v1/order/store">
+            <div class="container mx-auto col-span-12 sm:col-span-6 mt-0 sm:mt-0 sm:order-1">
+                <form id="store-billing-form" action="https://admin.glosense.in/api/v1/order/store">
                     <div class="grid grid-cols-2 gap-5">
                         <div class="">
-                            <label for="text" class="block mb-2 text-md  font-bold text-black ">Billing name <span
+                            <label for="text" class="block mb-2 text-md  font-bold text-black ">Name <span
                                     class="text-red-500">*</span></label>
                             <input name="name" required type="text" id="name" v-model="name"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -109,21 +109,21 @@ async function verifyPromoCode() {
                             <input type="hidden" name="user_id" v-model="user_id" id="">
                         </div>
                         <div class="">
-                            <label for="address" class="block mb-2 text-md  font-bold text-black ">Billing Address <span
+                            <label for="address" class="block mb-2 text-md  font-bold text-black ">Address <span
                                     class="text-red-500">*</span></label>
                             <input name="addresss" required v-model="address" id="address"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Address">
                         </div>
                         <div class="">
-                            <label for="city" class="block mb-2 text-md  font-bold text-black ">Billing City <span
+                            <label for="city" class="block mb-2 text-md  font-bold text-black ">City <span
                                     class="text-red-500">*</span></label>
                             <input name="city" required id="city" v-model="city"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Phone">
                         </div>
                         <div class="">
-                            <label for="state" class="block mb-2 text-md  font-bold text-black ">Billing State <span
+                            <label for="state" class="block mb-2 text-md  font-bold text-black ">State <span
                                     class="text-red-500">*</span></label>
                             <input name="state" required id="state" v-model="state"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
@@ -141,7 +141,7 @@ async function verifyPromoCode() {
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
-                            <label for="phone" class="block mb-2 text-md  font-bold text-black ">Conctact Number <span
+                            <label for="phone" class="block mb-2 text-md  font-bold text-black ">Contact Number <span
                                     class="text-red-500">*</span></label>
                             <input name="number" required id="phone" v-model="number"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
@@ -153,10 +153,23 @@ async function verifyPromoCode() {
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                             <input type="hidden" name="total_price" value="1">
                         </div>
-                        <div class="flex">
-                            <div class="flex flex-col">
+                        <div class="">
+                            <label for="phone" class="block mb-2 text-md  font-bold text-black ">Password <span
+                                    class="text-red-500">*</span></label>
+                            <input name="number" required id="phone" v-model="number"
+                                class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                        </div>
+                        <div class="">
+                            <label for="email" class="block mb-2 text-md  font-bold text-black ">Confirm Password <span
+                                    class="text-red-500">*</span></label>
+                            <input name="email" required id="email" type="email" v-model="email"
+                                class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                            <input type="hidden" name="total_price" value="1">
+                        </div>
+                        <div class="flex justify-center">
+                            <div class="flex flex-col justify-center">
                                 <label for="promocode" class="block mb-2 text-md font-bold text-black ">Promo Code
-                                    (Optional)</label>
+                                    <span class="text-red-500">*</span></label>
                                 <input @keyup="verifyPromoCode" name="promocode" id="promocode" type="promocode"
                                     v-model="promocode"
                                     class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5">
@@ -178,41 +191,33 @@ async function verifyPromoCode() {
                                 </svg>
                             </span>
                         </div><br />
-                        <div class="w-screen">
-                            <p>
-                                <input type="checkbox" required class="mr-3" name="" id="tnc">
-                                <label for="tnc">Accepting <a class=" text-secondary" href="/terms-and-conditions">Terms and
-                                        Conditions</a> *</label>
-                            </p>
-                        </div><br />
-                        <div>
-                            <button type="submit"
-                                class="text-white bg-blue-700 my-auto hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center -600 -blue-700 -blue-800">Submit</button>
-                        </div>
+
                     </div>
                 </form>
             </div>
-            <div class="col-span-12 sm:col-span-6 m-auto order-1 sm:order-2">
+            <div class="col-span-12 sm:col-span-6 m-auto mt-4 sm:order-2 border border-white rounded-3xl p-6 bg-gray-100">
                 <div class="flex items-center justify-center">
-                    <div class="w-1/4">
+                    <div class="w-1/4 mr-9">
                         <img src="/images/jar2.png" alt="">
                     </div>
                     <div>
-                        <h4>Hair You Glo ( 200 g )</h4>
-                        <p>x 1 Rs 1299</p>
-                        <p>Rs 1299</p>
+                        <h4 class="font-bold">Hair You Glo</h4>
+                        <p class="font-bold">x 1 Rs. 1299 /-</p>
+                        <p class="font-bold">Rs. 1299 /-</p>
                         <!-- <p>Discoun</p> -->
                     </div>
                 </div>
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
                 <div class="grid grid-cols-2">
 
-                    <div class="text-end">Sub Total</div>
-                    <div class="mx-auto">1299</div>
-                    <div class="text-end">Shipping</div>
-                    <div class="mx-auto">0</div>
-                    <div class="text-end">Promo Code Discount</div>
-                    <div class="mx-auto">{{ promocodeDiscount }}</div>
+                    <div class="text-end font-bold">Units</div>
+                    <div class="mx-auto font-bold">1</div>
+                    <div class="text-end font-bold">Sub Total</div>
+                    <div class="mx-auto font-bold">1299 /-</div>
+                    <div class="text-end font-bold">Delivery Charges</div>
+                    <div class="mx-auto font-bold">free</div>
+                    <div class="text-end font-bold">Promo Code Discount</div>
+                    <div class="mx-auto font-bold">{{ promocodeDiscount }} /-</div>
 
                     <!-- <div class="mx-auto">
                         <p>Sub Total</p>
@@ -229,10 +234,24 @@ async function verifyPromoCode() {
                 </div>
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
                 <div class="grid grid-cols-2">
-                    <div class="text-end">Total</div>
-                    <div class="mx-auto">Rs {{ 1299 - promocodeDiscount }}</div>
+                    <div class="text-end font-bold">Total</div>
+                    <div class="mx-auto font-bold">Rs. {{ 1299 - promocodeDiscount }} /-</div>
+                </div>
+
+            </div>
+            <div class="flex flex-col w-screen">
+                <div class="text-center my-4">
+                    <input form="store-billing-form" type="checkbox" required class="mr-3" name="" id="tnc">
+                    <label for="tnc">Accepting <a class=" text-secondary" href="/terms-and-conditions">Terms and
+                            Conditions</a> *</label>
+                </div>
+                <div class="text-center">
+                    <button type="submit" form="store-billing-form"
+                        class="text-white bg-blue-700 my-auto hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm  sm:w-auto px-5 py-2.5 text-center">Checkout</button>
                 </div>
             </div>
+
+
         </div>
 
 

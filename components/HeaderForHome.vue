@@ -34,15 +34,8 @@ const handleScroll = () => {
 function openModal() {
   closeSideBar()
   const token = useCookie();
-  // if (!token.value) {
   let modal = document.getElementById('authentication-modal')
   modal.classList.remove('hidden');
-  // }
-  // else {
-  // getUser();
-  // gateWayIntegration();
-  //cc avenue gateway.....
-  // }
 }
 
 onMounted(() => {
@@ -58,7 +51,7 @@ onUnmounted(() => {
   <LoginModal />
   <div>
     <div class="fixed top-0 w-screen bg-secondary z-10">
-      <p class="p-0 m-0 text-center text-white font-bold">GET 33% OFF WITH CODE - MYFIRSTJAR</p>
+      <p class="p-0 m-0 text-center text-white font-bold">GET 33% OFF WITH CODE - FIRSTJAR</p>
     </div>
     <div id="sidebar" class="sidebar fixed top-6 w-full flex justify-between sm:py-8 sm:px-20 py-5 px-10 z-10"
       :class="showBlur ? 'show-blur' : ''">

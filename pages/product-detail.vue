@@ -1,5 +1,16 @@
 <script setup>
 const token = useCookie('token');
+const count = ref(1);
+
+function incrementCount() {
+    count.value++;
+}
+
+function decrementCount() {
+    if (count.value > 1) {
+        count.value--;
+    }
+}
 
 function openModal() {
     const token = useCookie('token');
@@ -16,12 +27,6 @@ function openModal() {
 
 function gateWayIntegration(name = null) {
     return navigateTo('billing-details')
-    // alert(`Welcome ${name}! We are in the middle of Payment Gateway Integration.`);
-
-
-
-
-
 }
 
 const config = useRuntimeConfig();
@@ -83,8 +88,8 @@ onMounted(() => {
                 </div>
                 <div class="col-span-12 sm:col-span-7">
                     <h2 class="font-extrabold text-secondary text-4xl mt-4 ">HAIR YOU GLO</h2>
-                    <h2 class="font-semibold text-primary text-xl">FOR HEALTHY & STRONG HAIR</h2>
-                    <p class="font-semibold my-2">INTRODUCING HAIR YOU GLO, YOUR GO-TO SOLUTION FOR HEALTHY & STRONG HAIR
+                    <!-- <h2 class="font-semibold text-black text-xl">FOR HEALTHY & STRONG HAIR</h2> -->
+                    <p class="font-semibold text-lg my-2">YOUR GO-TO SOLUTION FOR HEALTHY & STRONGER HAIR
                     </p>
                     <!-- <div class="flex my-5">
                         <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -113,19 +118,31 @@ onMounted(() => {
                         <span class="sm:text-2xl  ">Jar-120g (30 servings)</span>
                     </div>
                     <div class="flex">
-                        <span class="font-extrabold text-secondary mt-6 text-4xl">Rs. 1299</span>
+                        <span class="font-extrabold text-secondary mt-6 text-3xl mr-9">Rs. 1299 /-</span>
+                        <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
                     </div>
                     <div class="flex">
-                        <span class="font-medium text-primary text-lg">( Flat 33% Off on First jar )</span>
+                        <!-- <span class="font-medium text-primary text-lg">( Flat 33% Off on First jar )</span> -->
                     </div>
                     <div class="flex">
-                        <p class="text-primary font-medium text-lg">( After Discount Rs. 870 )</p>
+                        <p class="text-primary font-medium text-lg mt-3">( Get it at <span class="text-secondary">Rs.
+                                870</span> - apply "FIRSTJAR" promo code)</p>
+                        <!-- <p class="text-primary font-medium text-lg mt-3">( Apply "MYFIRSTJAR" to get it for <span
+                                class="text-secondary">Rs. 870</span> )</p> -->
                     </div>
                     <div class="flex mt-6">
                         <!-- <button class="bg-slate-900 text-white py-4 px-10">Add To Cart</button> -->
                         <button @click="openModal"
-                            class="bg-secondary text-white text-xl font-bold border  py-3 px-7 transition ease-in-out  hover:-translate-y-1 delay-75 hover:scale-110 hover:bg-black hover:text-white duration-500">BUY
+                            class="bg-secondary mr-5 text-white text-xl font-bold border  py-3 px-7 transition ease-in-out  hover:-translate-y-1 delay-75 hover:scale-110 hover:bg-black hover:text-white duration-500">BUY
                             NOW</button>
+                        <span class="my-auto bg-primary px-3 text-white py-1 ml-1 cursor-pointer"
+                            @click="decrementCount">-</span>
+                        <input type="number" v-model="count"
+                            class="w-[3rem] text-2xl text-center border bg-secondary text-white hover:border-secondary border-3 focus:outline-none"
+                            name="" id="">
+                        <span class="my-auto bg-primary px-3 cursor-pointer text-white py-1 mr-1"
+                            @click="incrementCount">+</span>
+
                     </div>
 
                 </div>
@@ -195,7 +212,7 @@ onMounted(() => {
 
                 <div class="grid grid-cols-12">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl tracking-widest">WHEN TO USE:</h2>
+                        <h2 class="font-extrabold text-3xl my-3 tracking-widest">WHEN TO USE:</h2>
                         <p class="leading-2 text-xl text-justify sm:text-2xl">You can consume it any time of the day, but
                             for better experience we
                             suggest consuming it in the
@@ -211,7 +228,7 @@ onMounted(() => {
                         <img src="/images/product/product-details-5.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
                     </div>
                     <div class="sm:col-span-7 col-span-12 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl tracking-widest">STORAGE TIP:</h2>
+                        <h2 class="font-extrabold text-3xl tracking-widest my-3">STORAGE TIP:</h2>
                         <p class="leading-2 text-xl text-justify sm:text-2xl">For best results, utilise a dry spoon when
                             dealing with the mix, and
                             be sure to seal the jars

@@ -2,7 +2,7 @@
 
 import { ref } from "vue";
 // const image = ref("/images/Product-page-top-image.png");
-const image = ref("/images/product/jar-with-box.jpg");
+const image = ref("/images/product/Product-01.jpg");
 
 
 function changeImage(myImage) {
@@ -15,29 +15,30 @@ function changeImage(myImage) {
         <img :src="image" class="sm:w-3/4" alt="" />
     </div>
     <div class="flex items-center justify-center sm:justify-start sm:ml-11">
+
         <div class="p-1 hover:p-0 hover:outline-dashed outline-primary rounded-xl  w-16 m-1 cursor-pointer"
-            @mouseover="changeImage('/images/product/advantages.jpg')">
-            <img src="/images/product/advantages.jpg" alt="" />
+            @mouseover="changeImage('/images/product/Product-01.jpg')">
+            <img src="/images/product/Product-01.jpg" alt="" />
         </div>
         <div class="p-1 hover:p-0 hover:outline-dashed outline-primary rounded-xl  w-16 m-1 cursor-pointer"
-            @mouseover="changeImage('/images/product/boss.jpg')">
-            <img src="/images/product/boss.jpg" alt="" />
+            @mouseover="changeImage('/images/product/Product-03.jpg')">
+            <img src="/images/product/Product-03.jpg" alt="" />
         </div>
         <div class="p-1 hover:p-0 hover:outline-dashed outline-primary rounded-xl  w-16 m-1 cursor-pointer"
-            @mouseover="changeImage('/images/product/info.jpg')">
-            <img src="/images/product/info.jpg" alt="" />
+            @mouseover="changeImage('/images/product/Product-04.jpg')">
+            <img src="/images/product/Product-04.jpg" alt="" />
         </div>
         <div class="p-1 hover:p-0 hover:outline-dashed outline-primary rounded-xl  w-16 m-1 cursor-pointer"
-            @mouseover="changeImage('/images/product/jar-with-box.jpg')">
-            <img src="/images/product/jar-with-box.jpg" alt="" />
+            @mouseover="changeImage('/images/product/Product-06.jpg')">
+            <img src="/images/product/Product-06.jpg" alt="" />
         </div>
         <div class="p-1 hover:p-0 hover:outline-dashed outline-primary rounded-xl  w-16 m-1 cursor-pointer"
-            @mouseover="changeImage('/images/product/jar-with-ingradients.jpg')">
-            <img src="/images/product/jar-with-ingradients.jpg" alt="" />
+            @mouseover="changeImage('/images/product/Product-05.jpg')">
+            <img src="/images/product/Product-05.jpg" alt="" />
         </div>
         <div class="p-1 hover:p-0 hover:outline-dashed outline-primary rounded-xl  w-16 m-1 cursor-pointer"
-            @mouseover="changeImage('/images/product/suplement.jpg')">
-            <img src="/images/product/suplement.jpg" alt="" />
+            @mouseover="changeImage('/images/product/Product-02.jpg')">
+            <img src="/images/product/Product-02.jpg" alt="" />
         </div>
     </div>
 </template>

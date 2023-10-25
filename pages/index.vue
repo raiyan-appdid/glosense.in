@@ -2,9 +2,13 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin.js";
+import { Loading } from 'notiflix/build/notiflix-loading-aio';
+import Notiflix from 'notiflix';
+
 
 onMounted(() => {
   const blurSidebar = () => {
+
     const sidebar = document.getElementById("sidebar");
     sidebar.classList.add("show-blur");
   };
