@@ -32,6 +32,9 @@ const { data } = await useFetch(`${apiUrl}/user-detail`, {
     },
 });
 user_id.value = data.value.data.id;
+email.value = data.value.data.email;
+name.value = data.value.data.first_name;
+number.value = data.value.data.phone;
 
 definePageMeta({
     middleware: [
@@ -136,10 +139,10 @@ async function verifyPromoCode() {
                             <input name="pincode" required id="pincode" v-model="pincode"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
-                        <div class="">
+                        <div class="hidden">
                             <label for="country" class="block mb-2 text-md  font-bold text-black ">Country <span
                                     class="text-red-500">*</span></label>
-                            <input name="country" required id="country" v-model="country"
+                            <input name="country" value="India" id="country"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <div class="">
@@ -258,7 +261,7 @@ async function verifyPromoCode() {
 
         </div>
 
-        
+
 
     </div>
 </template>

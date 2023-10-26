@@ -37,7 +37,8 @@ async function login() {
                     icon: 'success',
                     confirmButtonText: 'Cool'
                 });
-                window.location.reload(true)
+                // window.location.reload(true)
+                window.location.href = 'billing-details'
 
             } else {
                 Swal.fire({

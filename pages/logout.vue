@@ -14,8 +14,7 @@ async function logout() {
             console.log(response);
             if (response.status == 200) {
                 token.value = "";
-                // history.back();
-                window.location.reload(true)
+                window.location.reload();
             }
         },
         onRequestError({ request, response, options }) {
