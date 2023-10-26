@@ -82,6 +82,73 @@
                     </a>
                 </div>
             </div>
+            <div class="sm:p-10 mt-8 sm:mt-0">
+                <div>
+                    <a href="/blogs/discovering-wellness-from-within">
+                        <img src="/images/aboutus/top-1.jpg" class="w-full sm:w-5/6" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="/blogs/discovering-wellness-from-within">
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Discovering Wellness from
+                            Within
+                        </h2>
+                        <p class="text-xl leading-7">Hey there, lovely souls! 😊
+                            Welcome to our wellness journey. At Glosense, we're all about celebrating wellness in its full,
+                            beautiful spectrum. It's not just about looking good; it's about feeling fantastic inside and
+                            out. So, join us on this adventure as we uncover the secret to discovering wellness from within
+                            and embracing a life that truly shines....
+                        </p>
+                        <p class="underline text-primary text-xl mt-8"><a
+                                href="/blogs/discovering-wellness-from-within">Read
+                                More</a>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="sm:p-10 mt-8 sm:mt-0">
+                <div>
+                    <a href="/blogs/plant-based-super-blends">
+                        <img src="/images/aboutus/top-2.jpg" class="w-full sm:w-5/6" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="/blogs/plant-based-super-blends">
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Plant based, Super blends
+                        </h2>
+                        <p class="text-xl leading-7">Hey there, lovely souls! 😊
+                            Welcome to our wellness journey. At Glosense, we're all about celebrating wellness in its full,
+                            beautiful spectrum. It's not just about looking good; it's about feeling fantastic inside and
+                            out. So, join us on this adventure as we uncover the secret to discovering wellness from within
+                            and embracing a life that truly shines....
+                        </p>
+                        <p class="underline text-primary text-xl mt-8"><a href="/blogs/plant-based-super-blends">Read
+                                More</a>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="sm:p-10 mt-8 sm:mt-0">
+                <div>
+                    <a href="/blogs/exactly-what-you-need">
+                        <img src="/images/aboutus/top-3.jpg" class="w-full sm:w-5/6" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="/blogs/exactly-what-you-need">
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Exactly what you need
+                        </h2>
+                        <p class="text-xl leading-7">In the hustle and bustle of modern life, it's easy to get swept away by
+                            the latest trends and technology. We're bombarded with messages about products and services that
+                            promise to change our lives, but do we really need them all? Let's embark on a journey to
+                            explore what we truly need in our lives....
+                        </p>
+                        <p class="underline text-primary text-xl mt-8"><a href="/blogs/exactly-what-you-need">Read
+                                More</a>
+                        </p>
+                    </a>
+                </div>
+            </div>
             <!-- <div class="sm:p-10 mt-8 sm:mt-0">
                 <div>
                     <img src="/images/blog-1.png" alt="">

@@ -168,7 +168,7 @@ async function verifyPromoCode() {
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                             <input type="hidden" name="total_price" value="1">
                         </div> -->
-                        <div class="flex justify-center">
+                        <div class="flex">
                             <div class="flex flex-col justify-center">
                                 <label for="promocode" class="block mb-2 text-md font-bold text-black ">Promo Code
                                     <span class="text-red-500">*</span></label>
@@ -193,11 +193,22 @@ async function verifyPromoCode() {
                                 </svg>
                             </span>
                         </div><br />
-
+                        <div class="hidden flex-col sm:flex">
+                            <div class="text-center my-4">
+                                <input form="store-billing-form" type="checkbox" class="mr-3" name="tnc" id="tnc">
+                                <label for="tnc">Accepting <a class=" text-secondary" href="/terms-and-conditions">Terms and
+                                        Conditions</a> *</label>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" form="store-billing-form"
+                                    class="text-white bg-blue-700 my-auto hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm  sm:w-auto px-5 py-2.5 text-center">Checkout</button>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
-            <div class="col-span-12 sm:col-span-6 m-auto mt-4 sm:order-2 border border-white rounded-3xl p-6 bg-gray-100">
+            <div
+                class="col-span-12 sm:ml-6 sm:col-span-6 m-auto mt-4 sm:order-2 border border-white rounded-3xl p-6 bg-gray-100">
                 <div class="flex items-center justify-center">
                     <div class="w-1/4 mr-9">
                         <img src="/images/jar2.png" alt="">
@@ -211,7 +222,6 @@ async function verifyPromoCode() {
                 </div>
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
                 <div class="grid grid-cols-2">
-
                     <div class="text-end font-bold">Units</div>
                     <div class="mx-auto font-bold">{{ counter }}</div>
                     <input type="hidden" :value="counter" name="units" form="store-billing-form" id="">
@@ -223,19 +233,6 @@ async function verifyPromoCode() {
                     <div class="text-end font-bold">Promo Code Discount</div>
                     <div class="mx-auto font-bold">{{ promocodeDiscount }} /-</div>
                     <input type="hidden" form="store-billing-form" :value="promocodeDiscount" name="discount" id="">
-
-                    <!-- <div class="mx-auto">
-                        <p>Sub Total</p>
-                        <p>899</p>
-                    </div>
-                    <div class="mx-auto">
-                        <p>Shipping</p>
-                        <p>0</p>
-                    </div>
-                    <div class="mx-auto">
-                        <p>Promo Code Discount</p>
-                        <p>0</p>
-                    </div> -->
                 </div>
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
                 <div class="grid grid-cols-2">
@@ -246,9 +243,9 @@ async function verifyPromoCode() {
                 </div>
 
             </div>
-            <div class="flex flex-col w-screen">
+            <div class="flex flex-col w-screen sm:hidden">
                 <div class="text-center my-4">
-                    <input form="store-billing-form" type="checkbox" required class="mr-3" name="" id="tnc">
+                    <input form="store-billing-form" type="checkbox" class="mr-3" name="tnc" id="tnc">
                     <label for="tnc">Accepting <a class=" text-secondary" href="/terms-and-conditions">Terms and
                             Conditions</a> *</label>
                 </div>
@@ -261,8 +258,7 @@ async function verifyPromoCode() {
 
         </div>
 
-
-
+        
 
     </div>
 </template>

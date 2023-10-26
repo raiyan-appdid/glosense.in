@@ -84,7 +84,9 @@ onUnmounted(() => {
       </div>
       <div class="my-auto">
         <div class="hidden sm:block">
-          <p v-show="!loggedIn">{{ store.name }}</p>
+          <p class="flex items-center" v-show="!loggedIn">{{ store.name }}
+            <LogOut />
+          </p>
           <button @click="openModal" v-show="loggedIn"
             class="px-4 py-1 rounded-md bg-primary text-white hover:bg-[#915446fc]">Login</button>
           <a v-show="loggedIn" href="/register"><button
@@ -122,7 +124,9 @@ onUnmounted(() => {
               class="flex ml-2 bg-[#e3694f] w-fit items-center p-2 text-bold  rounded-lg text-neutral-50  hover:bg-[#e3694f] group">
               Register
             </a>
-            <p v-show="!loggedIn">{{ store.name }}</p>
+            <p class="flex ml-10 items-center" v-show="!loggedIn">{{ store.name }}
+              <LogOut />
+            </p>
           </div>
 
 

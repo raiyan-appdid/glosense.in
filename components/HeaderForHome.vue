@@ -70,7 +70,9 @@ onUnmounted(() => {
       </div>
       <div class="flex items-center">
         <div class="hidden sm:block">
-          <p v-show="!loggedIn">{{ store.name }}</p>
+          <p class="flex items-center" v-show="!loggedIn">{{ store.name }}
+            <LogOut />
+          </p>
           <button @click="openModal" v-show="loggedIn"
             class="px-4 py-1 rounded-md bg-primary text-white hover:bg-[#915446fc]">Login</button>
           <a v-show="loggedIn" href="/register"><button
@@ -116,14 +118,17 @@ onUnmounted(() => {
       <div class="py-4 mt-2 overflow-y-auto">
         <ul class="space-y-2 font-medium">
           <div class="sm:hidden flex">
-            <a href="#" @click="openModal"
+            <a href="#" @click="openModal" v-show="loggedIn"
               class="flex ml-9 bg-secondary w-fit items-center p-2 text-bold  rounded-lg text-neutral-50  hover:bg-[#e3694f] group">
               Login
             </a>
-            <a href="/register"
+            <a href="/register" v-show="loggedIn"
               class="flex ml-2 bg-[#e3694f] w-fit items-center p-2 text-bold  rounded-lg text-neutral-50  hover:bg-[#e3694f] group">
               Register
             </a>
+            <p class="flex ml-10 items-center" v-show="!loggedIn">{{ store.name }}
+              <LogOut />
+            </p>
           </div>
           <li @click="closeSideBar">
             <a href="/"

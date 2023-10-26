@@ -39,7 +39,7 @@ onMounted(function () {
             <div class=" text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center sm:py-4">
                     <div class=" flex justify-center items-center bg-white">
-                        <a href="/blogs/what-is-plant-based-supplements">
+                        <a href="/blogs/discovering-wellness-from-within">
                             <img src="/images/aboutus/top-1.jpg" class="object-fill w-80" alt="" />
                         </a>
                         <!-- <h2 class="text-primary">Discovering Wellness from Within</h2> -->
@@ -47,7 +47,7 @@ onMounted(function () {
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
                     <div class=" flex justify-center items-center bg-white">
-                        <a href="/blogs/unlocking-the-power-of-vitamin-c">
+                        <a href="/blogs/plant-based-super-blends">
                             <img src="/images/aboutus/top-2.jpg" class="object-fill  w-80" alt="" />
                         </a>
                         <!-- <img src="/images/blog.png" class="" alt="" /> -->
@@ -56,7 +56,7 @@ onMounted(function () {
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
                     <div class=" flex justify-center items-center bg-white">
-                        <a href="/blogs/unrevealing-the-mystery-of-hair-fall-and-hair-thinking">
+                        <a href="/blogs/exactly-what-you-need">
                             <img src="/images/aboutus/top-3.jpg" class="object-fill w-80" alt="" />
                         </a>
                         <!-- <img src="/images/recipes.png" class="" alt="" /> -->
@@ -105,7 +105,6 @@ onMounted(function () {
                         <h6 class="text-lg mt-3 px-5 text-justify">In pursuit of wellness,<br />
                             Sagar Gaikwad<br />
                             Glosense<br />
-
                         </h6>
                     </div>
                 </div>

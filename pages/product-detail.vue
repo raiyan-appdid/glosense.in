@@ -648,132 +648,238 @@ onMounted(() => {
                     <h2 class="text-secondary text-center text-3xl font-bold mt-10 mb-2">HAVE DOUBT’S? <br />
                         WE HAVE GOT ANSWERS TO THEM!!
                     </h2>
+
                     <div class="container mx-auto">
-                        <p class="">◆ <span class="font-bold text-xl"> Will my hair fall reduce by using
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                Will my hair fall reduce by using
                                 Hair-You-Glo? How
-                                will it work?</span><br />
-                        <p class="mb-6">Yes, Hair-You-Glo is crafted in such a way that will help those who are experiencing
-                            hair
-                            fall/hair loss.Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve
-                            blood circulation, and promote hair growth while suppressing DHT.<br />
-                            Gotu Kola Leaf Extract & Fenugreek Seed Extract aids in collagen synthesis, vital for
-                            maintaining hair's strength and structure, reducing hair thinning and breakage.
-                            Sea Buckthorn Extract is a powerhouse of omega fatty acids that nourish hair follicles,
-                            promoting healthy hair growth and reducing hair loss.
-                        </p>
-                        </p>
-                        ◆ <span class="font-bold text-xl"> Can I mix two mixes together?</span><br />
-                        <p class="mb-6">Dandruff is often caused by dry skin or skin conditions. Since the hair follicle
-                            forms from the
-                            surface of your skin, skin health is equally important when it comes to healthier hair.<br />
-                            Hair-You-Glo combats this by including ingredients high in antioxidants such as Amla which keeps
-                            the skin hydrated.Cinnamon Bark Extract & Gotu Kola Leaf Extract which contains antimicrobial
-                            properties that maintain a healthy scalp environment, reducing the risk of dandruff and
-                            infections
-                        </p>
-                        ◆ <span class="font-bold text-xl"> Will my hair fall come back if I stop consuming Hair-You-Glo?
-                        </span><br />
-                        <p class="mb-6">This may be different for each individual. If this superblend helps you with your
-                            hair fall and you’re looking to discontinue usage of this product while maintaining your hair
-                            health, we would recommend slowly decreasing the dose of Hair-You-Glo after experiencing visible
-                            positive changes.<br />
-                            If you are maintaining a healthy diet, lifestyle, managing stress effectively, and still
-                            experiencing hair fall after discontinuing this product, you might be experiencing a chronic,
-                            auto-immune, or hormone-related condition, and as a result, experiencing hair fall as a symptom.
-                            Hair-You-Glo is a safe product for long-term use and while some only need it temporarily, it is
-                            safe to consume daily.
-                        </p>
-                        ◆ <span class="font-bold text-xl"> What is the best time to consume?
-                        </span><br />
-                        <p class="mb-6">You can consume it any time of the day, but for better experience we suggest
-                            consuming it in the morning as your first drink.
-                        </p>
-                        ◆ <span class="font-bold text-xl"> Can I consume products while pregnant or breastfeeding?
-                        </span><br />
-                        <p class="mb-6">No,we don’t recommend & suggest consuming our products while being pregnant or
-                            breastfeeding.
-                        </p>
-                        ◆ <span class="font-bold text-xl"> What do I do if my package has been damaged?
-                        </span><br />
-                        <p class="mb-6">Our parcels are packed carefully for every order, however shipping can increase a
-                            slight chance that some might get damaged.Please read our return/refund policy,take an unboxing
-                            video, and write to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a> for
-                            further assistance.
-                        </p>
-                        ◆ <span class="font-bold text-xl"> What do I do if some items in my order are missing?
-                        </span><br />
-                        <p class="mb-6">We undergo a strict quality control procedure for every order before being
-                            dispatched. However, if the items are different from what you ordered or if some items are
-                            missing, please read our return/refund policy, take an unboxing video, and write to us at
-                            <a href="mailto:connect@glosense.in">connect@glosense.in</a> for further assistance.
-                        </p>
-                        ◆ <span class="font-bold text-xl"> Who should I contact for queries/concerns related to products or
-                            delivery?
-                        </span><br />
-                        <p class="mb-6">You will be sent an order confirmation email along with your tracking details once
-                            dispatched. However, if you have any concerns over your order status, please feel free to reach
-                            out to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a> and our customer
-                            support team will be happy to help you!
-                        </p>
-                        ◆ <span class="font-bold text-xl"> What to do if my payment has gone through but I haven’t received
-                            an order confirmation email?
-                        </span><br />
-                        <p class="mb-6">In case your payment has gone through, please check your spam folder for an order
-                            confirmation email. If you do not find the email, please reach out to us at <a
-                                href="mailto:connect@glosense.in">connect@glosense.in</a>
-                            and our customer support team will be happy to help you!
-                        </p>
-                        ◆ <span class="font-bold text-xl"> When will my order be dispatched?
-                        </span><br />
-                        <p class="mb-6">Your order will be dispatched 24 to 48 hours after placing your order post which you
-                            will receive an email with your tracking details.
-                        </p>
-                        ◆ <span class="font-bold text-xl"> How long will the shipping take?
-                        </span><br />
-                        <p class="mb-6">You can expect a standard shipping time of 2 to 8 business days as mentioned during
-                            checkout!
-                        </p>
-                        ◆ <span class="font-bold text-xl"> What is the refund and return policy?
-                        </span><br />
-                        <p class="mb-6">It is important to keep in mind that as a company in the food industry, we have
-                            strict return/refund policies. So please go through our return/refund policy here. If you feel
-                            like you need more assistance, please feel free to drop in an email to <a
-                                href="mailto:connect@glosense.in">connect@glosense.in</a> :)
-                        </p>
-                        ◆ <span class="font-bold text-xl"> Is Glosense vegan/vegetarian-friendly?
-                        </span><br />
-                        <p class="mb-6">As our product is 100% plant based it is safe to say it is vegetarian friendly.
-                        </p>
-                        ◆ <span class="font-bold text-xl"> Are there any side effects associated with Glosense?
-                        </span><br />
-                        <p class="mb-6">At Glosense, we care about your well-being. Our Glosense is plant-based and designed
-                            for a healthy lifestyle.But incarse if you ever experience discomfort, contact us at
-                            <a href="mailto:connect@glosense.in">connect@glosense.in</a>. We're here to help.
-                        </p>
-                        ◆ <span class="font-bold text-xl">Can Glosense be used by both men and women?
-                        </span><br />
-                        <p class="mb-6">Yes, Our product is crafted in such a way which is useful for both men & women.
-                        </p>
-                        ◆ <span class="font-bold text-xl">When can I expect to see results?
-                        </span><br />
-                        <p class="mb-6">The journey to experiencing the benefits of Hair-you-glo can be unique for each
-                            person. We encourage you to use our product consistently to discover the results that align with
-                            your personal wellness goals.One can see results within 8-10 weeks of regular use.
-                        </p>
-                        ◆ <span class="font-bold text-xl">Is Glosense safe to use?
-                        </span><br />
-                        <p class="mb-6">As our product is all plant based with 100% natural ingredients used,we can conclude
-                            that all products of glosense are safe to use:)
-                        </p>
-                        ◆ <span class="font-bold text-xl">What is Glosense, and how does it work?
-                        </span><br />
-                        <p class="mb-6">At Glosense we are a nutraceutical brand, we're all about enhancing your well-being
-                            through nature's gifts. Our plant-based superblends offer a holistic approach to health,
-                            elevating your hair, skin, gut, and stress management.We encourage you to explore the world of
-                            plant-based superblends and discover how they can transform your life.Embrace the power of
-                            plant-based superblends, and experience the incredible transformation they can bring to your
-                            life.
-                        </p>
+                                will it work?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>Yes, Hair-You-Glo is crafted in such a way that will help those who are experiencing
+                                    hair
+                                    fall/hair loss.Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness,
+                                    improve
+                                    blood circulation, and promote hair growth while suppressing DHT.<br />
+                                    Gotu Kola Leaf Extract & Fenugreek Seed Extract aids in collagen synthesis, vital for
+                                    maintaining hair's strength and structure, reducing hair thinning and breakage.
+                                    Sea Buckthorn Extract is a powerhouse of omega fatty acids that nourish hair follicles,
+                                    promoting healthy hair growth and reducing hair loss.</p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                Can I mix two mixes together?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>Dandruff is often caused by dry skin or skin conditions. Since the hair follicle
+                                    forms from the
+                                    surface of your skin, skin health is equally important when it comes to healthier
+                                    hair.<br />
+                                    Hair-You-Glo combats this by including ingredients high in antioxidants such as Amla
+                                    which keeps
+                                    the skin hydrated.Cinnamon Bark Extract & Gotu Kola Leaf Extract which contains
+                                    antimicrobial
+                                    properties that maintain a healthy scalp environment, reducing the risk of dandruff and
+                                    infections</p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                Will my hair fall come back if I stop consuming Hair-You-Glo?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>This may be different for each individual. If this superblend helps you with your
+                                    hair fall and you’re looking to discontinue usage of this product while maintaining your
+                                    hair
+                                    health, we would recommend slowly decreasing the dose of Hair-You-Glo after experiencing
+                                    visible
+                                    positive changes.<br />
+                                    If you are maintaining a healthy diet, lifestyle, managing stress effectively, and still
+                                    experiencing hair fall after discontinuing this product, you might be experiencing a
+                                    chronic,
+                                    auto-immune, or hormone-related condition, and as a result, experiencing hair fall as a
+                                    symptom.
+                                    Hair-You-Glo is a safe product for long-term use and while some only need it
+                                    temporarily, it is
+                                    safe to consume daily.</p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                What is the best time to consume?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>You can consume it any time of the day, but for better experience we suggest
+                                    consuming it in the morning as your first drink.</p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                Can I consume products while pregnant or breastfeeding?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>No,we don’t recommend & suggest consuming our products while being pregnant or
+                                    breastfeeding.</p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                What do I do if my package has been damaged?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>Our parcels are packed carefully for every order, however shipping can increase a
+                                    slight chance that some might get damaged.Please read our return/refund policy,take an
+                                    unboxing
+                                    video, and write to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a>
+                                    for
+                                    further assistance.</p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                What do I do if some items in my order are missing?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>We undergo a strict quality control procedure for every order before being
+                                    dispatched. However, if the items are different from what you ordered or if some items
+                                    are
+                                    missing, please read our return/refund policy, take an unboxing video, and write to us
+                                    at
+                                    <a href="mailto:connect@glosense.in">connect@glosense.in</a> for further assistance.
+                                </p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                Who should I contact for queries/concerns related to products or
+                                delivery?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>You will be sent an order confirmation email along with your tracking details once
+                                    dispatched. However, if you have any concerns over your order status, please feel free
+                                    to reach
+                                    out to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a> and our
+                                    customer
+                                    support team will be happy to help you!
+                                </p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                What to do if my payment has gone through but I haven’t received
+                                an order confirmation email?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>In case your payment has gone through, please check your spam folder for an order
+                                    confirmation email. If you do not find the email, please reach out to us at <a
+                                        href="mailto:connect@glosense.in">connect@glosense.in</a>
+                                    and our customer support team will be happy to help you!
+                                </p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                When will my order be dispatched?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>Your order will be dispatched 24 to 48 hours after placing your order post which you
+                                    will receive an email with your tracking details.
+                                </p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                How long will the shipping take?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>You can expect a standard shipping time of 2 to 8 business days as mentioned during
+                                    checkout!
+                                </p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                What is the refund and return policy?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>It is important to keep in mind that as a company in the food industry, we have
+                                    strict return/refund policies. So please go through our return/refund policy here. If
+                                    you feel
+                                    like you need more assistance, please feel free to drop in an email to <a
+                                        href="mailto:connect@glosense.in">connect@glosense.in</a> :)
+                                </p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                Is Glosense vegan/vegetarian-friendly?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>As our product is 100% plant based it is safe to say it is vegetarian friendly.
+                                </p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                Are there any side effects associated with Glosense?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>At Glosense, we care about your well-being. Our Glosense is plant-based and designed
+                                    for a healthy lifestyle.But incarse if you ever experience discomfort, contact us at
+                                    <a href="mailto:connect@glosense.in">connect@glosense.in</a>. We're here to help.
+                                </p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                Can Glosense be used by both men and women?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>Yes, Our product is crafted in such a way which is useful for both men & women.
+                                </p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                When can I expect to see results?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>The journey to experiencing the benefits of Hair-you-glo can be unique for each
+                                    person. We encourage you to use our product consistently to discover the results that
+                                    align with
+                                    your personal wellness goals.One can see results within 8-10 weeks of regular use.
+                                </p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                Is Glosense safe to use?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>As our product is all plant based with 100% natural ingredients used,we can conclude
+                                    that all products of glosense are safe to use:)
+                                </p>
+                            </div>
+                        </details>
+                        <details class=" rounded-lg mb-3">
+                            <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
+                                What is Glosense, and how does it work?
+                            </summary>
+                            <div class="mt-1 leading-6 text-black">
+                                <p>At Glosense we are a nutraceutical brand, we're all about enhancing your well-being
+                                    through nature's gifts. Our plant-based superblends offer a holistic approach to health,
+                                    elevating your hair, skin, gut, and stress management.We encourage you to explore the
+                                    world of
+                                    plant-based superblends and discover how they can transform your life.Embrace the power
+                                    of
+                                    plant-based superblends, and experience the incredible transformation they can bring to
+                                    your
+                                    life.
+                                </p>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
