@@ -1130,6 +1130,13 @@ const updateDotValue = (value) => {
           <h4 class="text-3xl ">through the magic of superfoods.</h4>
           <h4 class="mt-5 text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl"><a href="/about">Know
               more</a></h4>
+          <h4 class="home-text-responsive mt-8 bg-white text-primary cursor-pointer outline px-2 py-6 z-20 rounded-full">
+            <a href="/product-detail" class="text-2xl">Shop Now</a>
+          </h4>
+          <h2 class="absolute flex justify-center bottom-28 items-center flex-col home-text-responsive">
+            <img src="/images/gif/glosense-animation.gif" class="w-1/2 text-center mx-auto" alt="">
+            <p class="text-sm inline-block text-center">Scroll Down</p>
+          </h2>
         </div>
       </div>
 
