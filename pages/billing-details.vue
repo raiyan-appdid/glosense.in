@@ -47,6 +47,15 @@ definePageMeta({
     ],
 });
 
+const nuxtApp = useNuxtApp();
+
+
+nuxtApp.hook('page:finish', () => {
+    promocode.value = "firstjar";
+    verifyPromoCode();
+})
+
+
 async function storeBilling(e) {
 
     await useFetch(`${apiUrl}/order/store?name=${name.value}&user_id=${data.value.data.id}&email=${email.value}&city=${city.value}&state=${state.value}&number=${number.value}&address=${address.value}&pincode=${pincode.value}&country=${country.value}&=${total_price.value}&promocode=${promocode.value}`, {
@@ -178,6 +187,7 @@ async function verifyPromoCode() {
                                 <input @keyup="verifyPromoCode" name="promocode" id="promocode" type="promocode"
                                     v-model="promocode"
                                     class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5">
+                                    (Promo Code Already Applied)
                             </div>
                             <span v-if="promocodeVerified" class="inline-block my-auto"><svg width="30" height="30"
                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
