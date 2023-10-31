@@ -19,6 +19,28 @@
                 events as laid out hereinafter, we shall keep you informed of such inability to deliver and cancel your
                 order, followed by complete refund.
             </p><br />
+
+            <h2 class="text-2xl font-bold">Product Results:</h2>
+            <p class="text-justify">Our products are crafted using natural ingredients known for their potential benefits.
+                Claims made here are grounded in the scientific properties of these ingredients. It's important to note that
+                individual results and effectiveness may vary.
+            </p><br />
+            <h2 class="text-2xl font-bold">Health Conditions:</h2>
+            <p class="text-justify">If you have pre-existing health conditions or require professional medical guidance, we
+                recommend consulting a healthcare expert before using our products. Different medical conditions, genetics,
+                and hormonal factors can influence product outcomes. We encourage you to consider these factors before
+                making a purchase.
+            </p><br />
+            <h2 class="text-2xl font-bold">Results:</h2>
+            <p class="text-justify">Product results can vary based on individual factors. Any timelines or expectations
+                provided on our website are general observations and may not be applicable to everyone.
+            </p><br />
+            <h2 class="text-2xl font-bold">Intellectual Property:</h2>
+            <p class="text-justify">All content, intellectual property, and brand materials showcased on our website are the
+                exclusive property of Glosense. This encompasses copyrights, trademarks, and branding elements. Unauthorised
+                use or reproduction of these materials is strictly prohibited.
+            </p><br />
+
             <h2 class="text-2xl font-bold">Cancellations-</h2>
             <p class="text-justify">We will be able to accept a cancellation request any time before we ship your order. In
                 case your credit
@@ -50,10 +72,11 @@
             <h2 class="text-2xl font-bold">Currency Transactions-</h2>
             <p class="text-justify">All transactions are processed in Indian Rupees (INR).
             </p><br />
-        <h2 class="text-2xl font-bold">Processing Orders-</h2>
-        <p class="text-justify">Our business hours are 10 am to 6 pm Indian Standard Time (IST), Monday to Friday. If
-            you need to contact us
-            outside our business hours, please email us at connect@glosense.in and we will respond as soon as possible.
-        </p>
+            <h2 class="text-2xl font-bold">Processing Orders-</h2>
+            <p class="text-justify">Our business hours are 10 am to 6 pm Indian Standard Time (IST), Monday to Friday. If
+                you need to contact us
+                outside our business hours, please email us at connect@glosense.in and we will respond as soon as possible.
+            </p>
+        </div>
     </div>
-</div></template>
+</template>
