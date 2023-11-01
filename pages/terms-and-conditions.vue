@@ -76,6 +76,19 @@
             <p class="text-justify">Our business hours are 10 am to 6 pm Indian Standard Time (IST), Monday to Friday. If
                 you need to contact us
                 outside our business hours, please email us at connect@glosense.in and we will respond as soon as possible.
+            </p><br />
+            <h2 class="text-2xl font-bold">Disclaimer-</h2>
+            <p class="text-justify">We do not guarantee the absolute accuracy, currentness, or error-free nature of product
+                descriptions, colours, and information. If you are uncertain about the suitability of our products for your
+                specific needs, we strongly recommend consulting your physician or a medical professional before use. The
+                website may contain typographical errors, inaccuracies, or may lack completeness and currentness. Product
+                images are indicative and may not precisely match the actual product. We retain the right to rectify,
+                modify, or update information, errors, inaccuracies, or omissions at any time, even after order submission,
+                without prior notice. Such corrections may extend to product pricing and availability.
+            </p><br />
+            <p class="text-justify">We further reserve the right to revise these Terms of Use, as well as any website
+                policies or guidelines, at any time and at our sole discretion. We urge you to periodically review the Terms
+                for changes.
             </p>
         </div>
     </div>

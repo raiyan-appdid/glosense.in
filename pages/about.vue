@@ -38,26 +38,26 @@ onMounted(function () {
             </div>
             <div class=" text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center sm:py-4">
-                    <div class=" flex justify-center items-center bg-white">
+                    <div class=" flex justify-center items-center">
                         <a href="/blogs/discovering-wellness-from-within">
-                            <img src="/images/aboutus/top-1.jpg" class="object-fill w-80" alt="" />
+                            <img src="/images/aboutus/top-1.jpg" class="object-fill rounded-2xl w-80" alt="" />
                         </a>
                         <!-- <h2 class="text-primary">Discovering Wellness from Within</h2> -->
                     </div>
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <div class=" flex justify-center items-center bg-white">
+                    <div class=" flex justify-center items-center">
                         <a href="/blogs/plant-based-super-blends">
-                            <img src="/images/aboutus/top-2.jpg" class="object-fill  w-80" alt="" />
+                            <img src="/images/aboutus/top-2.jpg" class="object-fill rounded-2xl  w-80" alt="" />
                         </a>
                         <!-- <img src="/images/blog.png" class="" alt="" /> -->
                         <!-- <h2 class="text-primary">Plant Based Super Blends</h2> -->
                     </div>
                 </div>
                 <div class=" col-span-4 lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <div class=" flex justify-center items-center bg-white">
+                    <div class=" flex justify-center items-center">
                         <a href="/blogs/exactly-what-you-need">
-                            <img src="/images/aboutus/top-3.jpg" class="object-fill w-80" alt="" />
+                            <img src="/images/aboutus/top-3.jpg" class="object-fill rounded-2xl w-80" alt="" />
                         </a>
                         <!-- <img src="/images/recipes.png" class="" alt="" /> -->
                         <!-- <h2 class="text-primary">Exactly what you need</h2> -->
@@ -73,8 +73,10 @@ onMounted(function () {
                         <img src="/images/aboutus/founder-image_600.png" class="w-3/4 mx-auto" alt="">
                     </div>
                     <div class="col-span-12 lg:col-span-6 mx-3">
-                        <h2 class="font-bold text-2xl text-black leading-normal px-5">Greetings SuperBeings🌷
-                        </h2>
+                        <h2 class="font-bold text-2xl text-secondary leading-normal px-5">Hello SuperBeings🌷</h2>
+                        <h6 class="text-lg font-semibold px-5 text-justify">
+                            Mr. Sagar
+                        </h6>
                         <h6 class="text-lg mt-3 px-5 text-justify">I embarked on a transformative journey that ultimately
                             led to
                             the
@@ -102,10 +104,10 @@ onMounted(function () {
                             begins. Together, let's take charge of our lives, health, and future.
                         </h6>
                         <br />
-                        <h6 class="text-lg mt-3 px-5 text-justify">In pursuit of wellness,<br />
+                        <!-- <h6 class="text-lg mt-3 px-5 text-justify">In pursuit of wellness,<br />
                             Sagar Gaikwad<br />
                             Glosense<br />
-                        </h6>
+                        </h6> -->
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-5 mt-10">
@@ -115,7 +117,8 @@ onMounted(function () {
                     <div class="col-span-12 lg:col-span-6 mx-3 sm:order-1">
                         <h2 class="font-bold text-2xl text-black leading-normal px-5">Hello Beautiful souls🌻
                         </h2>
-                        <h6 class="text-lg mt-3 px-5 text-justify">I am Dr. Snehal, the Co-founder of Glosense on the
+                        <h6 class="text-lg mt-5 px-5 text-justify">I am Dr. Snehal Adsule
+                            , the Co-founder of Glosense on the
                             journey to wellness. As an MD, nutritionist, counselor, and weight loss coach, I have tried to
                             bring my expertise and heart to our new mission.
                         </h6>
@@ -130,19 +133,19 @@ onMounted(function () {
                             create balance between well-being and beauty, the Glosense way!!
                         </h6>
                         <br />
-                        <h6 class="text-lg mt-3 px-5 text-justify">In pursuit of health & wellness,<br />
+                        <!-- <h6 class="text-lg mt-3 px-5 text-justify">In pursuit of health & wellness,<br />
                             Dr.Snehal<br />
                             Co-founder<br />
-
-                        </h6>
+                        </h6> -->
                     </div>
                 </div>
             </div>
             <h6 class="text-center text-secondary text-3xl font-bold mt-24 mb-5">Where can we take you next?</h6>
             <div class=" text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
                 <div class="  lg:col-span-2 flex  justify-center items-center sm:py-4">
-                    <p class="absolute text-4xl font-bold  text-white">SHOP</p>
-                    <img src="/images/aboutus/bottom-1.png" class="object-fill rounded-2xl h-52 w-80" alt="" />
+                    <a href="/product-detail" class="absolute text-4xl font-bold  text-white">SHOP</a>
+                    <a href="/product-detail"> <img src="/images/aboutus/bottom-1.png"
+                            class="object-fill rounded-2xl h-52 w-80" alt="" /></a>
                 </div>
                 <div class="  lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
                     <a href="/blogs" class="absolute text-4xl font-bold  text-white">BLOGS</a>
@@ -150,9 +153,10 @@ onMounted(function () {
                             alt="" /></a>
                 </div>
                 <div class="  lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <a href="/recepies" class="absolute text-4xl font-bold  text-white">RECIPES</a>
-                    <a href="/recepies"> <img src="/images/aboutus/bottom-3.png" class="object-fill rounded-2xl h-52 w-80"
-                            alt="" /></a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=YFFP_bfTyBk"
+                        class="absolute text-4xl font-bold  text-white">RECIPES</a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=YFFP_bfTyBk"> <img
+                            src="/images/aboutus/bottom-3.png" class="object-fill rounded-2xl h-52 w-80" alt="" /></a>
                 </div>
             </div>
 
