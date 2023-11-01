@@ -51,7 +51,7 @@ const nuxtApp = useNuxtApp();
 
 
 nuxtApp.hook('page:finish', () => {
-    promocode.value = "firstjar";
+    // promocode.value = "firstjar";
     verifyPromoCode();
 })
 
@@ -180,7 +180,7 @@ async function verifyPromoCode() {
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                             <input type="hidden" name="total_price" value="1">
                         </div> -->
-                        <div class="flex">
+                        <!-- <div class="flex">
                             <div class="flex flex-col justify-center">
                                 <label for="promocode" class="block mb-2 text-md font-bold text-black ">Promo Code
                                     <span class="text-red-500">*</span></label>
@@ -205,7 +205,7 @@ async function verifyPromoCode() {
                                     </g>
                                 </svg>
                             </span>
-                        </div><br />
+                        </div><br /> -->
                         <div class="hidden flex-col sm:flex">
                             <div class="text-center my-4">
                                 <input form="store-billing-form" type="checkbox" class="mr-3" name="tnc" id="tnc">
@@ -243,8 +243,8 @@ async function verifyPromoCode() {
                     <input type="hidden" form="store-billing-form" name="sub_total" :value="1299 * counter" id="">
                     <div class="text-end font-bold">Delivery Charges</div>
                     <div class="mx-auto font-bold">free</div>
-                    <div class="text-end font-bold">Promo Code Discount</div>
-                    <div class="mx-auto font-bold">{{ promocodeDiscount }} /-</div>
+                    <!-- <div class="text-end font-bold">Promo Code Discount</div>
+                    <div class="mx-auto font-bold">{{ promocodeDiscount }} /-</div> -->
                     <input type="hidden" form="store-billing-form" :value="promocodeDiscount" name="discount" id="">
                 </div>
                 <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>

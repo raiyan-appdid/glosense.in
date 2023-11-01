@@ -122,17 +122,11 @@ onMounted(() => {
                         <span class="font-extrabold text-secondary mt-6 text-3xl mr-9">Rs. 1299 /-</span>
                         <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
                     </div>
-                    <div class="flex">
-                        <!-- <span class="font-medium text-primary text-lg">( Flat 33% Off on First jar )</span> -->
-                    </div>
-                    <div class="flex">
+                    <!-- <div class="flex">
                         <p class="text-primary font-medium text-lg mt-3">( Get it at <span class="text-secondary">Rs.
                                 870</span> - apply "FIRSTJAR" promo code)</p>
-                        <!-- <p class="text-primary font-medium text-lg mt-3">( Apply "MYFIRSTJAR" to get it for <span
-                                class="text-secondary">Rs. 870</span> )</p> -->
-                    </div>
+                    </div> -->
                     <div class="flex mt-6">
-                        <!-- <button class="bg-slate-900 text-white py-4 px-10">Add To Cart</button> -->
                         <button @click="openModal"
                             class="bg-secondary mr-5 text-white text-xl font-bold border  py-3 px-7 transition ease-in-out  hover:-translate-y-1 delay-75 hover:scale-110 hover:bg-black hover:text-white duration-500">BUY
                             NOW</button>
