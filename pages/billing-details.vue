@@ -258,8 +258,8 @@ async function verifyPromoCode() {
                 </div>
                 <div class="h-0.5 bg-gray-500 w-3/3 sm:w-2/3 mx-auto my-2"></div>
                 <div class="grid grid-cols-2">
-                    <div class="text-end font-bold">Final Total</div>
-                    <div class="ml-10 text-primary font-extrabold">Rs. {{ 1299 * counter - promocodeDiscount }} /-</div>
+                    <div class="text-end font-bold text-secondary">Final Total</div>
+                    <div class="ml-10 text-secondary font-extrabold">Rs. {{ 1299 * counter - promocodeDiscount }} /-</div>
                     <input type="hidden" form="store-billing-form" :value="(1299 * counter - promocodeDiscount)"
                         name="total" id="">
                 </div>
