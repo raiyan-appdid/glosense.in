@@ -233,29 +233,33 @@ async function verifyPromoCode() {
                     </div>
                     <div>
                         <h4 class="font-bold">Hair You Glo</h4>
-                        <p class="font-bold">x 1 Rs. 1299 /-</p>
-                        <p class="font-bold">Rs. 1299 /-</p>
+                        <h4 class="font-semibold text-sm mb-2">For Healthy and Stronger<br /> Hair</h4>
+                        <!-- <p class="font-bold">x 1 Rs. 1299 /-</p> -->
+                        <div class="font-bold flex justify-between">
+                            <p>Rs. 1299 /-</p>
+                            <p>Qty: {{ counter }}</p>
+                        </div>
                         <!-- <p>Discoun</p> -->
                     </div>
                 </div>
-                <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
+                <div class="h-0.5 bg-gray-500 w-3/3 sm:w-2/3 mx-auto my-2"></div>
                 <div class="grid grid-cols-2">
-                    <div class="text-end font-bold">Units</div>
-                    <div class="mx-auto font-bold">{{ counter }}</div>
+                    <!-- <div class="text-end font-bold">Units</div>
+                    <div class="mx-auto font-bold">{{ counter }}</div> -->
                     <input type="hidden" :value="counter" name="units" form="store-billing-form" id="">
-                    <div class="text-end font-bold">Sub Total</div>
-                    <div class="mx-auto font-bold"> {{ 1299 * counter }}/-</div>
+                    <div class="text-end font-bold">Total MRP</div>
+                    <div class="ml-10 font-bold">Rs. {{ 1299 * counter }}/-</div>
                     <input type="hidden" form="store-billing-form" name="sub_total" :value="1299 * counter" id="">
+                    <div class="text-end font-bold">Discount</div>
+                    <div class="ml-10 font-bold">Rs. {{ promocodeDiscount }} /-</div>
                     <div class="text-end font-bold">Delivery Charges</div>
-                    <div class="mx-auto font-bold">free</div>
-                    <div class="text-end font-bold">Promo Code Discount</div>
-                    <div class="mx-auto font-bold">{{ promocodeDiscount }} /-</div>
+                    <div class="ml-10 font-bold"><s>Rs.100</s> free</div>
                     <input type="hidden" form="store-billing-form" :value="promocodeDiscount" name="discount" id="">
                 </div>
-                <div class="h-0.5 bg-gray-500 w-2/3 mx-auto my-2"></div>
+                <div class="h-0.5 bg-gray-500 w-3/3 sm:w-2/3 mx-auto my-2"></div>
                 <div class="grid grid-cols-2">
-                    <div class="text-end font-bold">Total</div>
-                    <div class="mx-auto font-bold">Rs. {{ 1299 * counter - promocodeDiscount }} /-</div>
+                    <div class="text-end font-bold">Final Total</div>
+                    <div class="ml-10 text-primary font-extrabold">Rs. {{ 1299 * counter - promocodeDiscount }} /-</div>
                     <input type="hidden" form="store-billing-form" :value="(1299 * counter - promocodeDiscount)"
                         name="total" id="">
                 </div>
