@@ -27,6 +27,7 @@
     "notiflix": "^3.2.6",
     "pinia": "^2.1.6",
     "sweetalert2": "^11.7.27",
-    "swiper": "^10.2.0"
+    "swiper": "^10.2.0",
+    "vue-analytics": "^5.22.1"
   }
 }
