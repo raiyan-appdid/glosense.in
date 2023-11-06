@@ -191,9 +191,9 @@ async function verifyPromoCode() {
                                 <input @keyup="verifyPromoCode" name="promocode" id="promocode" type="promocode"
                                     v-model="promocode"
                                     class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5">
-                                <span v-if="promocodeVerified" class="inline-block cursor-pointer">(PromoCode Applied
-                                    Successfully. You got Rs. {{
-                                        promocodeDiscount }} OFF)</span>
+                                <span v-if="promocodeVerified" class="inline-block cursor-pointer my-4">PromoCode Applied
+                                    Successfully. You got <span class="text-primary">Rs. {{
+                                        promocodeDiscount }} OFF</span></span>
 
                                 <div class="mt-3"><span @click="applyPromoCode"
                                         class="p-2 text-secondary border border-3 border-secondary cursor-pointer border-dashed">
@@ -201,7 +201,7 @@ async function verifyPromoCode() {
                                     </span><span class="ml-3">Save Rs. 429</span></div>
                             </div>
                             <span v-if="promocodeVerified" class="inline-block my-auto"><span
-                                    class="mx-auto">Verified</span><svg class="mx-auto" width="30" height="30"
+                                    class="mx-auto">Applied</span><svg class="mx-auto" width="30" height="30"
                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="#22c55e"
                                         d="m8.6 22.5l-1.9-3.2l-3.6-.8l.35-3.7L1 12l2.45-2.8l-.35-3.7l3.6-.8l1.9-3.2L12 2.95l3.4-1.45l1.9 3.2l3.6.8l-.35 3.7L23 12l-2.45 2.8l.35 3.7l-3.6.8l-1.9 3.2l-3.4-1.45l-3.4 1.45Zm2.35-6.95L16.6 9.9l-1.4-1.45l-4.25 4.25l-2.15-2.1L7.4 12l3.55 3.55Z" />
@@ -265,8 +265,9 @@ async function verifyPromoCode() {
                 </div>
                 <div class="h-0.5 bg-gray-500 w-3/3 sm:w-2/3 mx-auto my-2"></div>
                 <div class="grid grid-cols-2">
-                    <div class="text-end font-bold text-secondary">Final Total</div>
-                    <div class="ml-10 text-secondary font-extrabold">Rs. {{ 1299 * counter - promocodeDiscount }} /-</div>
+                    <div class="text-end text-xl font-bold text-secondary">Final Total</div>
+                    <div class="ml-10 text-xl text-secondary font-extrabold">Rs. {{ 1299 * counter - promocodeDiscount }} /-
+                    </div>
                     <input type="hidden" form="store-billing-form" :value="(1299 * counter - promocodeDiscount)"
                         name="total" id="">
                 </div>
