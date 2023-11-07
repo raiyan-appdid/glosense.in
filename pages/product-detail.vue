@@ -339,7 +339,7 @@ onMounted(() => {
                     maintain optimal oil and moisture levels.
 
                 </p>
-                <h3 class=" text-2xl font-bold mt-4">-After 12 weeks:
+                <h3 class=" text-2xl font-bold mt-4" id="faq-redirect">-After 12 weeks:
                 </h3>
                 <p class="text-xl">Reduces scalp inflammation and stress that leads to decreased hair fall, promoting
                     visible root-level
@@ -680,7 +680,7 @@ onMounted(() => {
                         </div>
                     </div> -->
 
-                    <h2 class="text-secondary text-center text-3xl font-bold mt-10 mb-2">HAVE DOUBT’S? <br />
+                    <h2  class="text-secondary text-center text-3xl font-bold mt-10 mb-2">HAVE DOUBT’S? <br />
                         WE HAVE GOT ANSWERS TO THEM!!
                     </h2>
 

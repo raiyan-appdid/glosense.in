@@ -133,11 +133,11 @@
                             <p class="border-b border-solid border-transparent hover:border-primary hover:text-primary">ISO
                                 Certified</p>
                         </li>
-                        <li class="mb-2">
+                        <!-- <li class="mb-2">
                             <p class="border-b border-solid border-transparent hover:border-primary hover:text-primary">
                                 FSSAI
                                 Certified</p>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
@@ -204,7 +204,7 @@
             </div>
 
             <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-gray-700  border-t">
-                <div class="px-4 w-12/12 md:mt-0">
+                <div class="px-4 sm:w-10/12 w-12/12 md:mt-0">
                     <p class="text-sm text-justify">
                         <strong class="font-bold">Disclaimer :</strong>
                         Take 1 serving daily or as directed by a healthcare professional. Store in
@@ -213,8 +213,9 @@
                         disease.
                     </p>
                 </div>
-                <div class="px-4 w-2/12 text-end">
-                    <img class="w-20 inline" src="/images/fssai.png" alt="">
+                <div class="">
+                    <img class="w-20 inline ml-2" src="/images/fssai.png" alt="">
+                    <p class="ml-5">239847382</p>
                 </div>
             </div>
         </div>
