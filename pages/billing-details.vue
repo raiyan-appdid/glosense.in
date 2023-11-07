@@ -23,6 +23,7 @@ const promocode = ref('');
 const promocodeVerified = ref(false);
 const promocodeDiscount = ref(0);
 const total_price = ref(1);
+const promocodeid = ref("");
 
 
 const { data } = await useFetch(`${apiUrl}/user-detail`, {
@@ -103,8 +104,10 @@ async function verifyPromoCode() {
             promocodeVerified.value = verified;
             if (verified) {
                 promocodeDiscount.value = response._data.data.discount;
+                promocodeid.value = response._data.data.id;
             } else {
                 promocodeDiscount.value = 0;
+                promocodeid.value = "";
             }
         },
     })
@@ -119,6 +122,7 @@ async function verifyPromoCode() {
                 <form id="store-billing-form" action="https://admin.glosense.in/api/v1/order/store">
                     <div class="grid grid-cols-2 gap-5">
                         <div class="">
+                            <input type="hidden" :value="promocodeid" name="promocode_id" id="">
                             <label for="text" class="block mb-2 text-md  font-bold text-black ">Name <span
                                     class="text-red-500">*</span></label>
                             <input name="name" required type="text" id="name" v-model="name"
@@ -184,22 +188,18 @@ async function verifyPromoCode() {
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                             <input type="hidden" name="total_price" value="1">
                         </div> -->
-                        <div class="flex">
-                            <div class="flex flex-col justify-center">
-                                <label for="promocode" class="block mb-2 text-md font-bold text-black ">Promo Code
-                                </label>
-                                <input @keyup="verifyPromoCode" name="promocode" id="promocode" type="promocode"
-                                    v-model="promocode"
-                                    class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5">
-                                <span v-if="promocodeVerified" class="inline-block cursor-pointer my-4">PromoCode Applied
-                                    Successfully. You got <span class="text-primary">Rs. {{
-                                        promocodeDiscount }} OFF</span></span>
+                    </div>
 
-                                <div class="mt-3"><span @click="applyPromoCode"
-                                        class="p-2 text-secondary border border-3 border-secondary cursor-pointer border-dashed">
-                                        FIRSTJAR
-                                    </span><span class="ml-3">Save Rs. 429</span></div>
-                            </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-3">
+                        <div>
+                            <label for="promocode" class="block mb-2 text-md font-bold text-black ">Promo Code
+                            </label>
+                            <input @keyup="verifyPromoCode" name="promocode" id="promocode" type="promocode"
+                                v-model="promocode"
+                                class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
+                        </div>
+                        <div class="my-auto">
                             <span v-if="promocodeVerified" class="inline-block my-auto"><span
                                     class="mx-auto">Applied</span><svg class="mx-auto" width="30" height="30"
                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -217,17 +217,36 @@ async function verifyPromoCode() {
                                     </g>
                                 </svg>
                             </span>
-                        </div><br />
-                        <div class="hidden flex-col sm:flex">
-                            <div class="text-center my-4">
-                                <input form="store-billing-form" type="checkbox" class="mr-3" name="tnc" id="tnc">
-                                <label for="tnc">Accepting <a class=" text-secondary" href="/terms-and-conditions">Terms and
-                                        Conditions</a> *</label>
+                        </div>
+                    </div>
+                    <span v-if="promocodeVerified" class="inline-block my-1">PromoCode Applied
+                        Successfully. You got <span class="text-primary">Rs. {{
+                            promocodeDiscount }} OFF</span></span>
+
+
+                    <div class="flex">
+                        <div class="flex flex-col justify-center">
+                            <div class="mt-3">
+                                <span
+                                    class="p-2 text-secondary border border-3 border-secondary cursor-pointer border-dashed">
+                                    FIRSTJAR
+                                </span>
+                                <span @click="applyPromoCode"
+                                    class="ml-3 my-auto py-1 px-2 bg-green-400 rounded-xl cursor-pointer">Apply</span>
                             </div>
-                            <div class="text-center">
-                                <button type="submit" form="store-billing-form"
-                                    class="text-white bg-blue-700 my-auto hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm  sm:w-auto px-5 py-2.5 text-center">Checkout</button>
-                            </div>
+                            <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 429 /-</span>
+                        </div>
+
+                    </div>
+                    <div class="hidden flex-col sm:flex">
+                        <div class="text-center my-4">
+                            <input form="store-billing-form" type="checkbox" class="mr-3" name="tnc" id="tnc">
+                            <label for="tnc">Accepting <a class=" text-secondary" href="/terms-and-conditions">Terms and
+                                    Conditions</a> *</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" form="store-billing-form"
+                                class="text-white bg-blue-700 my-auto hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm  sm:w-auto px-5 py-2.5 text-center">Checkout</button>
                         </div>
                     </div>
                 </form>
