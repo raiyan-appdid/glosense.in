@@ -122,6 +122,9 @@ onMounted(() => {
                         <span class="font-extrabold text-secondary mt-6 text-3xl mr-9">Rs. 1299 /-</span>
                         <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
                     </div>
+                    <div>
+                        <p>(Apply Promo code: DIWALI33 to get at Rs. 870 /-)</p>
+                    </div>
                     <!-- <div class="flex">
                         <p class="text-primary font-medium text-lg mt-3">( Get it at <span class="text-secondary">Rs.
                                 870</span> - apply "FIRSTJAR" promo code)</p>

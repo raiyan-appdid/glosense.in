@@ -73,11 +73,12 @@ onMounted(function () {
                         <img src="/images/aboutus/founder-image_600.png" class="w-3/4 mx-auto" alt="">
                     </div>
                     <div class="col-span-12 lg:col-span-6 mx-3">
-                        <h2 class="font-bold text-2xl text-secondary leading-normal px-5">Hello SuperBeings🌷</h2>
+                        <h2 class="font-bold text-2xl text-secondary leading-normal px-5">Hello SuperBeings,</h2>
                         <h6 class="text-lg font-semibold px-5 text-justify">
-                            Mr. Sagar
+
                         </h6>
-                        <h6 class="text-lg mt-3 px-5 text-justify">I embarked on a transformative journey that ultimately
+                        <h6 class="text-lg mt-3 px-5 text-justify">I Mr. Sagar embarked on a transformative journey that
+                            ultimately
                             led to
                             the
                             creation of Glosense—an unwavering commitment to your holistic well-being.
@@ -143,20 +144,15 @@ onMounted(function () {
             <h6 class="text-center text-secondary text-3xl font-bold mt-24 mb-5">Where can we take you next?</h6>
             <div class=" text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
                 <div class="  lg:col-span-2 flex  justify-center items-center sm:py-4">
-                    <!-- <a href="/product-detail" class="absolute text-4xl font-bold  text-white">SHOP</a> -->
-                    <a href="/product-detail"> <img src="/images/aboutus/bottom-1.png"
-                            class="object-fill rounded-2xl h-52 w-80" alt="" /></a>
-                </div>
-                <div class="  lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <!-- <a href="/blogs" class="absolute text-4xl font-bold  text-white">BLOGS</a> -->
-                    <a href="/blogs"> <img src="/images/aboutus/bottom-2.png" class="object-fill rounded-2xl h-52 w-80"
+                    <a href="/product-detail"> <img src="/images/aboutus/bottom-1.png" class=" rounded-2xl  w-80"
                             alt="" /></a>
                 </div>
                 <div class="  lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
-                    <!-- <a target="_blank" href="https://www.youtube.com/watch?v=YFFP_bfTyBk"
-                        class="absolute text-4xl font-bold  text-white">RECIPES</a> -->
+                    <a href="/blogs"> <img src="/images/aboutus/bottom-2.png" class=" rounded-2xl  w-80" alt="" /></a>
+                </div>
+                <div class="  lg:col-span-2 flex justify-center items-center mt-3 lg:mt-0 sm:py-4">
                     <a target="_blank" href="https://www.youtube.com/watch?v=YFFP_bfTyBk"> <img
-                            src="/images/aboutus/bottom-3.png" class="object-fill rounded-2xl h-52 w-80" alt="" /></a>
+                            src="/images/aboutus/bottom-3.png" class=" rounded-2xl  w-80" alt="" /></a>
                 </div>
             </div>
 
