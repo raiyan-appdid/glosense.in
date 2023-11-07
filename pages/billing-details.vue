@@ -51,7 +51,7 @@ definePageMeta({
 const nuxtApp = useNuxtApp();
 
 function applyPromoCode() {
-    promocode.value = "firstjar";
+    promocode.value = "diwali33";
     verifyPromoCode();
 }
 
@@ -229,7 +229,7 @@ async function verifyPromoCode() {
                             <div class="mt-3">
                                 <span
                                     class="p-2 text-secondary border border-3 border-secondary cursor-pointer border-dashed">
-                                    FIRSTJAR
+                                    DIWALI33
                                 </span>
                                 <span @click="applyPromoCode"
                                     class="ml-3 my-auto py-1 px-2 bg-green-400 rounded-xl cursor-pointer">Apply</span>
