@@ -215,7 +215,7 @@
                 </div>
                 <div class="">
                     <img class="w-20 inline ml-2" src="/images/fssai.png" alt="">
-                    <p class="ml-5">239847382</p>
+                    <!-- <p class="ml-5">239847382</p> -->
                 </div>
             </div>
         </div>
