@@ -197,7 +197,7 @@ async function verifyPromoCode() {
                             </label>
                             <input @keyup="verifyPromoCode" name="promocode" id="promocode" type="promocode"
                                 v-model="promocode"
-                                class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
+                                class="bg-gray-50 uppercase border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
                         </div>
                         <div class="my-auto">
                             <span v-if="promocodeVerified" class="inline-block my-auto"><span
