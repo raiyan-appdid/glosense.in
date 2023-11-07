@@ -122,7 +122,7 @@ async function verifyPromoCode() {
                 <form id="store-billing-form" action="https://admin.glosense.in/api/v1/order/store">
                     <div class="grid grid-cols-2 gap-5">
                         <div class="">
-                            <input type="hidden" :value="promocodeid" name="promocode_id" id="">
+                            <input type="hidden"  v-model="promocodeid" name="promocode_id" id="">
                             <label for="text" class="block mb-2 text-md  font-bold text-black ">Name <span
                                     class="text-red-500">*</span></label>
                             <input name="name" required type="text" id="name" v-model="name"
