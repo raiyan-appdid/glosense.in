@@ -123,7 +123,7 @@ onMounted(() => {
                         <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
                     </div>
                     <div>
-                        <p>(Apply Promo code: DIWALI33 to get at Rs. 870 /-)</p>
+                        <p class="font-semibold">(Apply Promo code: DIWALI33 to get at Rs. 870 /-)</p>
                     </div>
                     <!-- <div class="flex">
                         <p class="text-primary font-medium text-lg mt-3">( Get it at <span class="text-secondary">Rs.
@@ -171,7 +171,7 @@ onMounted(() => {
             <div class="container mx-auto my-10 sm:my-5">
                 <div class="grid grid-cols-12 mb-9 sm:mb-0">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl tracking-widest ">HELPS IN: </h2>
+                        <h2 class="font-extrabold text-3xl tracking-widest text-secondary">HELPS IN: </h2>
                         <p class="leading-2 text-xl sm:text-2xl text-justify">-Maintaining a healthy scalp with improved
                             blood
                             circulation.
@@ -185,8 +185,7 @@ onMounted(() => {
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:flex sm:justify-end sm:order-2">
                         <!-- <img src="/images/product-details1.png" class="sm:w-2/4 w-4/6 mx-auto" alt=" " /> -->
-                        <img src="/images/product/product-details-5.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
-
+                        <img src="/images/product/product-details-4.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
                     </div>
                 </div>
 
@@ -195,7 +194,7 @@ onMounted(() => {
                         <img src="/images/product/product-details-3.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
                     </div>
                     <div class="sm:col-span-7 col-span-12 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl tracking-widest">HOW TO USE: </h2>
+                        <h2 class="font-extrabold text-3xl text-secondary tracking-widest">HOW TO USE: </h2>
                         <p class="leading-2 text-xl text-justify sm:text-2xl">-Blend ½ tablespoon of Hair-you-glo into your
                             water.
                         <p class="leading-2 text-xl text-justify sm:text-2xl my-3">-Ensure it's well-mixed,have a sip &
@@ -210,24 +209,27 @@ onMounted(() => {
 
                 <div class="grid grid-cols-12">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl my-3 tracking-widest">WHEN TO USE:</h2>
+                        <h2 class="font-extrabold text-3xl my-3 text-secondary tracking-widest">WHEN TO USE:</h2>
                         <p class="leading-2 text-xl text-justify sm:text-2xl">You can consume it any time of the day, but
                             for better experience we
                             suggest consuming it in the
                             morning.</p>
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:flex sm:justify-end sm:order-2">
-                        <img src="/images/product/product-details-4.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
+                        <img src="/images/product/product-details-5.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
+
                     </div>
                 </div>
 
-                <div class="grid grid-cols-12 my-10 sm:my-1">
-                    <div class="sm:col-span-5 col-span-12">
+                <div class="my-10 sm:my-1">
+                    <!-- <div class="sm:col-span-5 col-span-12">
                         <img src="/images/product/product-details-5.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
-                    </div>
-                    <div class="sm:col-span-7 col-span-12 sm:my-auto">
-                        <h2 class="font-extrabold text-3xl tracking-widest my-3">STORAGE TIP:</h2>
-                        <p class="leading-2 text-xl text-justify sm:text-2xl">For best results, utilise a dry spoon when
+                    </div> -->
+                    <div class="">
+                        <h2 class="font-extrabold text-3xl tracking-widest text-secondary text-center my-3">STORAGE TIP:
+                        </h2>
+                        <p class="leading-2 text-xl text-center sm:text-2xl">For best results, utilise a dry
+                            spoon when
                             dealing with the mix, and
                             be sure to seal the jars
                             tightly after usage to prevent solidification or lumps.
