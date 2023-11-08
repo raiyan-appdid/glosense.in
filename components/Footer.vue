@@ -208,7 +208,7 @@
                     <p class="text-sm text-justify">
                         <strong class="font-bold">Disclaimer :</strong>
                         Take 1 serving daily or as directed by a healthcare professional. Store in
-                        a cool, dry, dark place. Keep out of reach of children. Do not exceed recommended daily usage. Not
+                        a cool, dry, dark place. Keep out of reach of children. Do not exceed recommended daily usage. Not  
                         recommended during pregnancy. This product is not intended to diagnose, treat, cure, or prevent any
                         disease.
                     </p>
