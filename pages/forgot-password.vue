@@ -30,7 +30,7 @@ async function handleSubmit() {
                 Swal.fire({
                     title: "Password Changed Successfully Try Log In again!",
                     icon: 'success',
-                    confirmButtonText: 'Try Again'
+                    confirmButtonText: 'Done'
                 });
             } else {
                 Swal.fire({
