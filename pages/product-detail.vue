@@ -159,7 +159,7 @@ onMounted(() => {
                         <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
                     </div>
                     <div>
-                        <p class="font-semibold">(Apply Promo code: DIWALI33 to get at Rs. 870 /-)</p>
+                        <p class="font-semibold">(Apply Promo code: SUPER10 to get at Rs. 1169 /-)</p>
                     </div>
                     <!-- <div class="flex">
                         <p class="text-primary font-medium text-lg mt-3">( Get it at <span class="text-secondary">Rs.
@@ -680,7 +680,7 @@ onMounted(() => {
                         </div>
                     </div> -->
 
-                    <h2  class="text-secondary text-center text-3xl font-bold mt-10 mb-2">HAVE DOUBT’S? <br />
+                    <h2 class="text-secondary text-center text-3xl font-bold mt-10 mb-2">HAVE DOUBT’S? <br />
                         WE HAVE GOT ANSWERS TO THEM!!
                     </h2>
 

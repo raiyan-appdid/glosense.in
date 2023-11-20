@@ -52,7 +52,7 @@ onUnmounted(() => {
   <div>
     <div class="fixed top-0 w-screen bg-secondary z-10">
       <!-- <p class="p-0 m-0 text-white text-center font-bold ">GLO FROM WITHIN, HAPPILY!!</p> -->
-      <p class="p-0 m-0 text-center text-white font-bold">GET 33% OFF WITH PROMO CODE - DIWALI33</p>
+      <p class="p-0 m-0 text-center text-white font-bold">GET 10% OFF WITH PROMO CODE - SUPER10</p>
     </div>
     <div id="sidebar" class="sidebar fixed top-6 w-full flex justify-between sm:py-8 sm:px-20 py-5 px-10 z-10"
       :class="showBlur ? 'show-blur' : ''">
