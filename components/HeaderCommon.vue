@@ -218,6 +218,16 @@ onUnmounted(() => {
               <span class="flex-1 ml-3 whitespace-nowrap">FAQ's</span>
             </a>
           </li>
+          <li @click="closeSideBar">
+            <a href="/my-order"
+              class="flex ml-9 items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-[#e3694f] group">
+              <svg width="23" height="23" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor"
+                  d="M16.25 20h1v-4h-1v4Zm2.5 0h1v-4h-1v4ZM6 9h12V7H6v2Zm12 14q-2.075 0-3.538-1.463T13 18q0-2.075 1.463-3.538T18 13q2.075 0 3.538 1.463T23 18q0 2.075-1.463 3.538T18 23ZM3 22V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v6.675q-.7-.35-1.463-.513T18 11H6v2h7.1q-.425.425-.787.925T11.675 15H6v2h5.075q-.05.25-.063.488T11 18q0 1.05.288 2.013t.862 1.837L12 22l-1.5-1.5L9 22l-1.5-1.5L6 22l-1.5-1.5L3 22Z" />
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">My Order</span>
+            </a>
+          </li>
           <!-- <li @click="closeSideBar">
             <a href="/product-review"
               class="flex ml-9 items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-[#e3694f] group">
