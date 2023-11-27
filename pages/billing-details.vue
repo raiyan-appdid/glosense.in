@@ -175,6 +175,12 @@ async function verifyPromoCode() {
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                             <!-- <input type="hidden" name="total_price" value="1"> -->
                         </div>
+                        <div class="">
+                            <label for="gst" class="block mb-2 text-md  font-bold text-black ">Gst (Optional)</label>
+                            <input name="gst" required id="gst" type="gst" v-model="gst"
+                                class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                            <!-- <input type="hidden" name="total_price" value="1"> -->
+                        </div>
                         <!-- <div class="">
                             <label for="phone" class="block mb-2 text-md  font-bold text-black ">Password <span
                                     class="text-red-500">*</span></label>

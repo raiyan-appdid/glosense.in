@@ -1,3 +1,32 @@
+<script setup>
+
+const config = useRuntimeConfig();
+const apiUrl = config.public.baseUrl;
+const token = useCookie('token');
+
+
+async function getOrder() {
+    await useFetch(`${apiUrl}/get-order`, {
+        headers: {
+            accept: "application/json",
+            Authorization: "Bearer " + token.value,
+        },
+        onResponse({ request, response, options }) {
+            console.log(response);
+        },
+    });
+}
+    
+onMounted(() => {
+   setTimeout(() => {
+    getOrder();
+   }, 1000);
+    
+})
+
+
+</script>
+
 <template>
     <HeaderCommon />
 
