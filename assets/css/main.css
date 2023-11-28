@@ -19,6 +19,20 @@ body {
   z-index: 3;
 }
 
+.wa-whatsapp {
+  position: fixed !important;
+  right: 35px;
+  bottom: 50px;
+  height: 60px;
+  width: 60px;
+  background: #2BB741;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999999999;
+}
+
 .leaves-2 {
   background-position: -180px -10px;
   transform: scale(0.5) rotate(40deg);
