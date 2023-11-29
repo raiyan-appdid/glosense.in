@@ -56,7 +56,7 @@ onMounted(function () {
     <img class="absolute opacity-50 md:w-[8rem] w-[4rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png"
         alt="" />
     <img class="absolute opacity-50 md:w-auto right-0 top-[10rem]" src="/images/rl-small.png" alt="" /> -->
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=918591926235">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=8097750991">
         <span class="wa-whatsapp"><svg aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="whatsapp"
                 class="svg-inline--fa fa-whatsapp fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512">
