@@ -206,7 +206,7 @@ onMounted(() => {
     </div>
     <div v-else="order_status != 'failed'" class="my-order px-6 md:px-8 bg-[#efe8df]  mt-24 pt-4 sm:mt-24 pb-20">
         <div class="h-[80vh] flex justify-center items-center">
-            Issue With Your Payment...
+            Error While Fetching Order...
         </div>
     </div>
 
