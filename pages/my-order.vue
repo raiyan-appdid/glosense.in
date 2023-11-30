@@ -3,7 +3,20 @@
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
 const token = useCookie('token');
-
+const order_status = ref('pending');
+const order_id = ref();
+const created_at = ref();
+const customer_name = ref();
+const customer_email = ref();
+const customer_address = ref();
+const customer_state = ref();
+const customer_city = ref();
+const customer_pincode = ref();
+const customer_phone = ref();
+const price = ref();
+const units = ref();
+const sub_total = ref();
+const discount = ref();
 
 async function getOrder() {
     await useFetch(`${apiUrl}/get-order`, {
@@ -12,7 +25,33 @@ async function getOrder() {
             Authorization: "Bearer " + token.value,
         },
         onResponse({ request, response, options }) {
-            console.log(response);
+            // console.log(response);
+            if (response._data.fetch_order_code == 200) {
+                order_status.value = 'success';
+
+                const orderData = response._data.response.data;
+
+                order_id.value = orderData.id;
+                created_at.value = orderData.created_at;
+                customer_name.value = orderData.customer_name;
+                customer_email.value = orderData.customer_email;
+                customer_address.value = orderData.customer_address;
+                customer_state.value = orderData.customer_state;
+                customer_city.value = orderData.customer_city;
+                customer_pincode.value = orderData.customer_pincode;
+                customer_phone.value = orderData.customer_phone;
+
+                const productData = response._data.order_data;
+                console.log(productData);
+                price.value = productData.price;
+                units.value = productData.units;
+                sub_total.value = productData.sub_total;
+                discount.value = productData.discount;
+
+            } else {
+                order_status.value = 'failed';
+            }
+
         },
     });
 }
@@ -41,12 +80,12 @@ onMounted(() => {
                     fill="currentColor"></path>
             </svg></span>
     </a>
-    <div class="my-order px-6 md:px-8 bg-[#efe8df]  mt-24 pt-4 sm:mt-24 pb-20">
+    <div v-if="order_status == 'success'" class="my-order px-6 md:px-8 bg-[#efe8df] mt-24 pt-4 sm:mt-24 pb-20">
         <div class="py-14 px-4 md:px-6 2xl:px-20 2xl:container 2xl:mx-auto">
             <div class="flex justify-start item-start space-y-2 flex-col">
                 <h1 class="text-3xl lg:text-4xl font-semibold leading-7 lg:leading-9 text-gray-800">Order
-                    #13432</h1>
-                <p class="text-base  font-medium leading-6 text-gray-600">21st Mart 2021 at 10:34 PM</p>
+                    #{{ order_id }}</h1>
+                <p class="text-base  font-medium leading-6 text-gray-600">{{ created_at }}</p>
             </div>
             <div
                 class="mt-10 flex flex-col xl:flex-row jusitfy-center items-stretch w-full xl:space-x-8 space-y-4 md:space-y-6 xl:space-y-0">
@@ -68,16 +107,14 @@ onMounted(() => {
                                     <div class="flex justify-start items-start flex-col space-y-2">
                                         <p class="text-sm  leading-none text-gray-800"> For Healthy and Stronger Hair </p>
                                         <p class="text-sm  leading-none text-gray-800">Jar-120g (30 servings)</p>
-                                        <!-- <p class="text-sm  leading-none text-gray-800"><span class=" text-gray-300">Color:
-                                            </span> Light Blue</p> -->
                                     </div>
                                 </div>
                                 <div class="flex justify-between space-x-8 items-start w-full">
-                                    <p class="text-base  xl:text-lg leading-6">Rs. 899 <span
-                                            class="text-red-300 line-through"> Rs. 1299</span></p>
-                                    <p class="text-base  xl:text-lg leading-6 text-gray-800">01</p>
-                                    <p class="text-base  xl:text-lg font-semibold leading-6 text-gray-800">
-                                        Rs. 899</p>
+                                    <p class="text-base  xl:text-lg leading-6">Rs. {{ sub_total / units }} <span
+                                            class="text-red-300 line-through"> Rs. {{ price / units }}</span></p>
+                                    <p class="text-base  xl:text-lg leading-6 text-gray-800">Pcs : {{ units }}</p>
+                                    <!-- <p class="text-base  xl:text-lg font-semibold leading-6 text-gray-800">
+                                        Rs. 899</p> -->
                                 </div>
                             </div>
                         </div>
@@ -90,12 +127,12 @@ onMounted(() => {
                                 class="flex justify-center items-center w-full space-y-4 flex-col border-gray-200 border-b pb-4">
                                 <div class="flex justify-between w-full">
                                     <p class="text-base  leading-4 text-gray-800">Subtotal</p>
-                                    <p class="text-base  leading-4 text-gray-600">Rs. 1299</p>
+                                    <p class="text-base  leading-4 text-gray-600">Rs. {{ price }}</p>
                                 </div>
                                 <div class="flex justify-between items-center w-full">
                                     <p class="text-base  leading-4 text-gray-800">Discount
                                     </p>
-                                    <p class="text-base  leading-4 text-gray-600">Rs. 300</p>
+                                    <p class="text-base  leading-4 text-gray-600">Rs. {{ discount }}</p>
                                 </div>
                                 <div class="flex justify-between items-center w-full">
                                     <p class="text-base  leading-4 text-gray-800">Shipping</p>
@@ -104,29 +141,9 @@ onMounted(() => {
                             </div>
                             <div class="flex justify-between items-center w-full">
                                 <p class="text-base  font-semibold leading-4 text-gray-800">Total</p>
-                                <p class="text-base  font-semibold leading-4 text-gray-600">Rs. 899</p>
+                                <p class="text-base  font-semibold leading-4 text-gray-600">Rs. {{ sub_total }}</p>
                             </div>
                         </div>
-                        <!-- <div class="flex flex-col justify-center px-4 py-6 md:p-6 xl:p-8 w-full bg-gray-50  space-y-6">
-                            <h3 class="text-xl  font-semibold leading-5 text-gray-800">Shipping</h3>
-                            <div class="flex justify-between items-start w-full">
-                                <div class="flex justify-center items-center space-x-4">
-                                    <div class="w-8 h-8">
-                                        <img class="w-full h-full" alt="logo" src="https://i.ibb.co/L8KSdNQ/image-3.png" />
-                                    </div>
-                                    <div class="flex flex-col justify-start items-center">
-                                        <p class="text-lg leading-6  font-semibold text-gray-800">DPD
-                                            Delivery<br /><span class="font-normal">Delivery with 24 Hours</span></p>
-                                    </div>
-                                </div>
-                                <p class="text-lg font-semibold leading-6  text-gray-800">$8.00</p>
-                            </div>
-                            <div class="w-full flex justify-center items-center">
-                                <button
-                                    class="hover:bg-black    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 py-5 w-96 md:w-full bg-gray-800 text-base font-medium leading-4 text-white">View
-                                    Carrier Details</button>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <div
@@ -140,19 +157,11 @@ onMounted(() => {
                                 <!-- <img src="https://i.ibb.co/5TSg7f6/Rectangle-18.png" alt="avatar" /> -->
                                 <div class="flex justify-start items-start flex-col space-y-2">
                                     <p class="text-base  font-semibold leading-4 text-left text-gray-800">
-                                        Test Name</p>
-                                    <p class="text-sm  leading-5 text-gray-600">test@gmail.com</p>
+                                        {{ customer_name }}</p>
+                                    <p class="text-sm  leading-5 text-gray-600">{{ customer_email }}</p>
+                                    <p class="text-sm  leading-5 text-gray-600">{{ customer_phone }}</p>
                                 </div>
                             </div>
-
-                            <!-- <div
-                                class="flex justify-center text-gray-800  md:justify-start items-center space-x-4 py-4 border-b border-gray-200 w-full">
-
-                                <img class=""
-                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/order-summary-3-svg1dark.svg"
-                                    alt="email">
-                                <p class="cursor-pointer text-sm leading-5 ">david89@gmail.com</p>
-                            </div> -->
                         </div>
                         <div class="flex justify-between xl:h-full items-stretch w-full flex-col mt-6 md:mt-0">
                             <div
@@ -160,31 +169,49 @@ onMounted(() => {
                                 <div
                                     class="flex justify-center md:justify-start items-center md:items-start flex-col space-y-4 xl:mt-8">
                                     <p class="text-base  font-semibold leading-4 text-center md:text-left text-gray-800">
-                                        Shipping Address</p>
+                                        Billing & Shipping Address</p>
                                     <p
                                         class="w-48 lg:w-full  xl:w-48 text-center md:text-left text-sm leading-5 text-gray-600">
-                                        180 North King Street, Northhampton MA 1060</p>
+                                        {{ customer_address }}</p>
+                                    <p
+                                        class="w-48 lg:w-full  xl:w-48 text-center md:text-left text-sm leading-5 text-gray-600">
+                                        State : {{ customer_state }}</p>
+                                    <p
+                                        class="w-48 lg:w-full  xl:w-48 text-center md:text-left text-sm leading-5 text-gray-600">
+                                        City : {{ customer_city }}</p>
+                                    <p
+                                        class="w-48 lg:w-full  xl:w-48 text-center md:text-left text-sm leading-5 text-gray-600">
+                                        Pincode : {{ customer_pincode }}</p>
                                 </div>
-                                <div
+                                <!-- <div
                                     class="flex justify-center md:justify-start items-center md:items-start flex-col space-y-4">
                                     <p class="text-base  font-semibold leading-4 text-center md:text-left text-gray-800">
                                         Billing Address</p>
                                     <p
                                         class="w-48 lg:w-full  xl:w-48 text-center md:text-left text-sm leading-5 text-gray-600">
                                         180 North King Street, Northhampton MA 1060</p>
-                                </div>
+                                </div> -->
                             </div>
-                            <!-- <div class="flex w-full justify-center items-center md:justify-start md:items-start">
-                                <button
-                                    class="mt-6 md:mt-0   py-5 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 border border-gray-800 font-medium w-96 2xl:w-full text-base font-medium leading-4 text-gray-800">Edit
-                                    Details</button>
-                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div v-else-if="order_status == 'pending'" class="my-order px-6 md:px-8 bg-[#efe8df]  mt-24 pt-4 sm:mt-24 pb-20">
+        <div class="h-[80vh] flex justify-center items-center">
+            Fetching Your Order Please Wait ....
+        </div>
+    </div>
+    <div v-else="order_status != 'failed'" class="my-order px-6 md:px-8 bg-[#efe8df]  mt-24 pt-4 sm:mt-24 pb-20">
+        <div class="h-[80vh] flex justify-center items-center">
+            Issue With Your Payment...
+        </div>
+    </div>
+
+    <!-- <button v-if="loading">raiyan</button>
+    <button v-else="loading">memon</button> -->
 </template>
   
 <script>
