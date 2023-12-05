@@ -1,3 +1,12 @@
+<script setup>
+const nuxtApp = useNuxtApp();
+onMounted(function () {
+    console.log(nuxtApp.$fb)
+    nuxtApp.$fb.enable()
+});
+
+</script>
+
 <template>
     <HeaderCommon />
     <a target="_blank" href="https://api.whatsapp.com/send?phone=8097750991">
