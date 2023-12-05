@@ -28,5 +28,11 @@ export default defineNuxtConfig({
   pages: true,
   css: ["@/assets/css/main.css"],
 
-  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt3-meta-pixel", "@pinia/nuxt"],
+  facebook: {
+    track: "PageView",
+    pixelId: "207758315679521",
+    autoPageView: true,
+    disabled: false,
+  },
 });
