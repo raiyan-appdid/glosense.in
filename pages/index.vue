@@ -981,14 +981,14 @@ onMounted(() => {
   })
 
 
-  // tlShowcase1.to(
-  //   "#showcase-slider",
-  //   {
-  //     duration: 5,
-  //     "--fill-till": "+=33",
-  //   },
-  //   "+=1"
-  // );
+  tlShowcase1.to(
+    "#showcase-slider",
+    {
+      duration: 5,
+      "--fill-till": "+=33",
+    },
+    "+=1"
+  );
   tlShowcase1.to(
     "#showcase-section-1 #showcase-images div:nth-child(3)",
     {
@@ -1012,14 +1012,14 @@ onMounted(() => {
 
 
 
-  // section += 1;
-  // tlShowcase1.to(
-  //   "#showcase-slider",
-  //   {
-  //     duration: 5,
-  //     "--fill-till": "+=34",
-  //   },
-  // );
+  section += 1;
+  tlShowcase1.to(
+    "#showcase-slider",
+    {
+      duration: 5,
+      "--fill-till": "+=34",
+    },
+  );
   tlShowcase1.to(
     "#showcase-section-1 #showcase-images div:nth-child(2)",
     {
@@ -1042,12 +1042,12 @@ onMounted(() => {
 
 
   section += 1;
-  // tlShowcase1.to(
-  //   "#showcase-slider",
-  //   {
-  //     "--fill-till": "+=34",
-  //   },
-  // );
+  tlShowcase1.to(
+    "#showcase-slider",
+    {
+      "--fill-till": "+=34",
+    },
+  );
   tlShowcase1.to('.believe-text', {
     opacity: 0,
     duration: 2,
@@ -1090,7 +1090,7 @@ const updateDotValue = (value) => {
         </g>
       </svg></div>
   </div>
-  <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267">
+  <a target="_blank" href="https://api.whatsapp.com/send?phone=8097750991">
     <span class="wa-whatsapp">
       <svg width="63.51" height="64" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
         <defs>
