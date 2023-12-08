@@ -34,7 +34,7 @@ body {
 }
 
 .wa-whatsapp {
-  animation: 0.15s up-down-shake infinite alternate;
+  animation: 0.50s up-down-shake infinite alternate;
   display: inline-block;
 }
 
