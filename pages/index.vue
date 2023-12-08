@@ -18,9 +18,6 @@ nuxtApp.hook('page:finish', () => {
 
 
 onMounted(() => {
-  console.log(nuxtApp.$fb)
-  nuxtApp.$fb.enable()
-  // Loading.remove();
 
   const blurSidebar = () => {
 
@@ -1152,7 +1149,7 @@ const updateDotValue = (value) => {
           <img class="absolute w-[8rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png" alt="" />
           <img class="absolute w-auto right-0 top-[10rem]" src="/images/rl-small.png" alt="" />
         </div>
-        <div class="home-text flex absolute top-[120px] items-center flex-col w-screen h-screen justify-center"
+        <div class="home-text flex absolute top-[110px] items-center flex-col w-screen h-screen justify-center"
           style="align-items: center;">
           <h4 class="text-3xl ">Unlock the essence for self-care</h4>
           <h4 class="text-3xl ">through the magic of superfoods.</h4>
