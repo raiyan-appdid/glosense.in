@@ -981,14 +981,14 @@ onMounted(() => {
   })
 
 
-  tlShowcase1.to(
-    "#showcase-slider",
-    {
-      duration: 5,
-      "--fill-till": "+=33",
-    },
-    "+=1"
-  );
+  // tlShowcase1.to(
+  //   "#showcase-slider",
+  //   {
+  //     duration: 5,
+  //     "--fill-till": "+=33",
+  //   },
+  //   "+=1"
+  // );
   tlShowcase1.to(
     "#showcase-section-1 #showcase-images div:nth-child(3)",
     {
@@ -1012,14 +1012,14 @@ onMounted(() => {
 
 
 
-  section += 1;
-  tlShowcase1.to(
-    "#showcase-slider",
-    {
-      duration: 5,
-      "--fill-till": "+=34",
-    },
-  );
+  // section += 1;
+  // tlShowcase1.to(
+  //   "#showcase-slider",
+  //   {
+  //     duration: 5,
+  //     "--fill-till": "+=34",
+  //   },
+  // );
   tlShowcase1.to(
     "#showcase-section-1 #showcase-images div:nth-child(2)",
     {
@@ -1042,12 +1042,12 @@ onMounted(() => {
 
 
   section += 1;
-  tlShowcase1.to(
-    "#showcase-slider",
-    {
-      "--fill-till": "+=34",
-    },
-  );
+  // tlShowcase1.to(
+  //   "#showcase-slider",
+  //   {
+  //     "--fill-till": "+=34",
+  //   },
+  // );
   tlShowcase1.to('.believe-text', {
     opacity: 0,
     duration: 2,
