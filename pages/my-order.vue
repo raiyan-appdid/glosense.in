@@ -24,7 +24,7 @@ async function getOrder() {
             accept: "application/json",
             Authorization: "Bearer " + token.value,
         },
-        onResponse({ request, response, options }) {f
+        onResponse({ request, response, options }) {
             // console.log(response);
             if (response._data.fetch_order_code == 200) {
                 order_status.value = 'success';
