@@ -3,7 +3,7 @@
 const nuxtApp = useNuxtApp();
 onMounted(function () {
     nuxtApp.$fb.enable()
-    nuxtApp.$fb.track();
+    nuxtApp.$fb.track('Purchase', { currency: 'USD', value: 30.00 });
 })
 
 
