@@ -1,10 +1,10 @@
 <script setup>
 const nuxtApp = useNuxtApp();
 onMounted(function () {
-    console.log(nuxtApp.$fb)
     nuxtApp.$fb.enable()
     const runtimeConfig = useRuntimeConfig()
-    console.log(runtimeConfig.public.baseUrl);
+    nuxtApp.$fb.track();
+    console.log(nuxtApp.$fb)
 })
 
 </script>

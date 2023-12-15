@@ -1,5 +1,12 @@
 <script setup>
 
+const nuxtApp = useNuxtApp();
+onMounted(function () {
+    nuxtApp.$fb.enable()
+    nuxtApp.$fb.track();
+})
+
+
 </script>
 
 <template>
