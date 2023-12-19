@@ -1121,7 +1121,7 @@ const updateDotValue = (value) => {
     <div
       class="landing__main w-full text-center min-h-screen pt-15 bg-no-repeat bg-cover bg-top overflow-hidden relative">
       <div>
-        <a href="/"><img id="logo-image" src="/images/logo.png" class="w-4/12 inset-x-0 my-0 mx-auto top-[25%] fixed z-20"
+        <a href="/"><img id="logo-image" src="/images/logo.png" class="w-3/12 inset-x-0 my-0 mx-auto top-[25%] fixed z-20"
             alt="" /></a>
       </div>
       <!-- <div>
