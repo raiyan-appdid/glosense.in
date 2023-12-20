@@ -49,8 +49,8 @@
                 Hair</h2>
             <img src="/images/vitamin-c.jpg" alt="">
             <p class="my-10 md:text-xl">In the pursuit of healthy, vibrant hair, we often turn to various products and
-                treatments. However, the key to achieving luscious locks might be simpler than you think. At [Your
-                Nutraceutical Brand], we understand the importance of nourishing your hair from within, and that's why we're
+                treatments. However, the key to achieving luscious locks might be simpler than you think. At Glosense , we
+                understand the importance of nourishing your hair from within, and that's why we're
                 diving deep into the wonders of Vitamin C in this blog.
 
             </p>
@@ -87,8 +87,8 @@
                 Leafy Greens: Spinach, kale, and broccoli are not only rich in Vitamin C but also offer other essential
                 nutrients for your hair.<br /><br />
 
-                Supplements: To ensure you're getting an adequate amount of Vitamin C daily, you can include our [Your
-                Product Name] in your routine. Our supplement powder combines the power of Vitamin C with other superfoods
+                Supplements: To ensure you're getting an adequate amount of Vitamin C daily, you can include our
+                HAIR-YOU-GLO in your routine. Our supplement powder combines the power of Vitamin C with other superfoods
                 to provide optimal nourishment for your hair.
             </p>
             <p class="text-xl md:text-3xl font-bold my-10">The Essence of Vitamin C
@@ -97,8 +97,8 @@
                 a key player in maintaining the health and beauty of your hair. Its role in collagen production, antioxidant
                 protection, and hair growth cannot be overstated.<br /><br />
 
-                At [Your Nutraceutical Brand], we believe in the transformative power of natural ingredients. If you're
-                looking to enhance your hair's vitality and shine, consider incorporating our [Your Product Name] into your
+                At Glosense, we believe in the transformative power of natural ingredients. If you're
+                looking to enhance your hair's vitality and shine, consider incorporating our HAIR-YOU-GLO into your
                 daily routine. It's a convenient and effective way to ensure you're getting the Vitamin C your hair
                 craves.<br /><br />
 
