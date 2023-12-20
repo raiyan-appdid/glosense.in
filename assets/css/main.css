@@ -34,8 +34,33 @@ body {
 }
 
 .wa-whatsapp {
-  animation: 0.50s up-down-shake infinite alternate;
+  animation: 0.5s up-down-shake infinite alternate;
   display: inline-block;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  overflow-x: hidden;
+}
+
+.fa-snowflake {
+  color: white !important;
+  position: absolute;
+  top: -20px;
+  z-index: 999999 !important;
+  animation: fall linear forwards;
+  overflow-x: hidden;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
 }
 
 @keyframes up-down-shake {
