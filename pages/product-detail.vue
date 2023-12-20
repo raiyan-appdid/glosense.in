@@ -1,5 +1,10 @@
 <script setup>
 
+import Notiflix from 'notiflix';
+import Loading from 'notiflix/build/notiflix-loading-aio';
+
+
+
 const nuxtApp = useNuxtApp();
 onMounted(function () {
     console.log(nuxtApp.$fb)
@@ -13,6 +18,16 @@ const counter = useCounter()
 function incrementCount() {
     counter.value++;
 }
+
+nuxtApp.hook('page:finish', () => {
+    Notiflix.Loading.remove();
+})
+
+onMounted(() => {
+    Notiflix.Loading.standard();
+})
+
+
 
 function decrementCount() {
     if (counter.value > 1) {
@@ -79,6 +94,30 @@ async function getUser() {
 </script>
 
 <template>
+    <div id="NotiflixLoadingWrap"
+        class="notiflix-loading top-0 nx-with-animation w-screen h-screen absolute backdrop-blur-xl bg-primary"
+        style="z-index: 4000; background: #efe8df; animation-duration: 400ms; font-family: Quicksand, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif; display: flex; flex-flow: column wrap; align-items: center; justify-content: center;">
+        <div style="width:80px; height:80px;" class="notiflix-loading-icon z-50"><svg xmlns="http://www.w3.org/2000/svg"
+                stroke="#32c682" width="80px" height="80px" viewBox="0 0 44 44">
+                <g fill="none" fill-rule="evenodd" stroke-width="2">
+                    <circle cx="22" cy="22" r="1">
+                        <animate attributeName="r" begin="0s" calcMode="spline" dur="1.8s" keySplines="0.165, 0.84, 0.44, 1"
+                            keyTimes="0; 1" repeatCount="indefinite" values="1; 20"></animate>
+                        <animate attributeName="stroke-opacity" begin="0s" calcMode="spline" dur="1.8s"
+                            keySplines="0.3, 0.61, 0.355, 1" keyTimes="0; 1" repeatCount="indefinite" values="1; 0">
+                        </animate>
+                    </circle>
+                    <circle cx="22" cy="22" r="1">
+                        <animate attributeName="r" begin="-0.9s" calcMode="spline" dur="1.8s"
+                            keySplines="0.165, 0.84, 0.44, 1" keyTimes="0; 1" repeatCount="indefinite" values="1; 20">
+                        </animate>
+                        <animate attributeName="stroke-opacity" begin="-0.9s" calcMode="spline" dur="1.8s"
+                            keySplines="0.3, 0.61, 0.355, 1" keyTimes="0; 1" repeatCount="indefinite" values="1; 0">
+                        </animate>
+                    </circle>
+                </g>
+            </svg></div>
+    </div>
     <HeaderCommon />
 
     <!-- Main modal -->
