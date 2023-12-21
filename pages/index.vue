@@ -1330,13 +1330,13 @@ const updateDotValue = (value) => {
               <h3 class="mt-5 text-xl font-bold">Gotu Kola Leaf</h3>
             </div>
           </div>
-          <div class="absolute h-screen top-[130px] flex items-center justify-center  w-screen">
+          <!-- <div class="absolute h-screen top-[130px] flex items-center justify-center  w-screen">
             <h4
               class="mt-16 text-1xl opacity-0 what-text font-extrabold text-center bg-[#ef8f7b] text-neutral-50 py-1 px-4  rounded-3xl">
               <a href="/about">Know
                 more</a>
             </h4>
-          </div>
+          </div> -->
           <div class="elegance-text absolute top-[130px] flex justify-center items-center w-screen h-screen">
             <h2 class="elegance-text-2 font-bold text-xl">Simple, Plant Based & Healthy SuperBlends.</h2>
           </div>
@@ -1401,7 +1401,7 @@ const updateDotValue = (value) => {
         Artificial Sweetener <br /> No Added Flavors-Lactose Free-No Allergen</h4> -->
 
 
-      <div id="showcase-section-1" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
+      <!-- <div id="showcase-section-1" style="--text-offset: 100rem" class="min-h-screen pt-16 relative border-blue-500">
         <h4 class="text-[2rem] believe-text font-extrabold text-secondary elegance-text-1">We believe in fixing the root
           cause, <br /> not quick results!</h4>
         <div id="showcase-images" class="relative h-[400px] mb-5">
@@ -1417,7 +1417,9 @@ const updateDotValue = (value) => {
             <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-1@4x.png" alt="" />
           </div>
         </div>
-        <!-- <div style="--fill-till: 0" id="showcase-slider" class="relative flex justify-center">
+
+
+        <div style="--fill-till: 0" id="showcase-slider" class="relative flex justify-center">
           <div class="w-[50rem] h-2 relative">
             <div class="h-2 w-full absolute bg-gray-400" id="slide"></div>
             <div class="h-2 w-[calc(var(--fill-till)*1%)] absolute bg-primary" id="slide-full">
@@ -1425,9 +1427,9 @@ const updateDotValue = (value) => {
                 class="h-7 w-7 rounded-full inset-y-0 m-auto absolute bg-primary right-0" id="slide-dot"></div>
             </div>
           </div>
-        </div> -->
+        </div>
 
-      </div>
+      </div> -->
 
 
       <div class="container px-10 mx-auto">
