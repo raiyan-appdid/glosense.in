@@ -70,7 +70,7 @@ function openModal() {
 }
 
 function gateWayIntegration(name = null) {
-    return navigateTo('billing-details')
+    window.location.href = 'billing-details?count=' + counter.value;
 }
 
 const config = useRuntimeConfig();

@@ -3,11 +3,9 @@ import Notiflix from 'notiflix';
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
-const counter = useCounter()
-
-
-
-
+// const counter = useCounter()
+const route = useRoute()
+const counter = ref(route.query.count);
 const token = useCookie('token');
 
 const name = ref('');
@@ -25,6 +23,11 @@ const promocodeDiscount = ref(0);
 const total_price = ref(1);
 const promocodeid = ref("");
 
+
+onMounted(() => {
+    console.log();
+
+})
 
 const { data } = await useFetch(`${apiUrl}/user-detail`, {
     headers: {
