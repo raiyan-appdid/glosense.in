@@ -662,13 +662,8 @@ onMounted(() => {
         </div>
 
 
-        <div id="showcase-section-1-responsive" style="--text-offset: 100rem"
+        <!-- <div id="showcase-section-1-responsive" style="--text-offset: 100rem"
             class="min-h-screen pt-16 relative border-blue-500">
-            <!-- <img class="absolute w-40 opacity-[0.5] bottom-[-8rem] left-0" src="/images/leave-bl.png" alt="" />
-            <img class="absolute w-40 opacity-[0.5] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png" alt="" />
-            <img class="absolute w-40 opacity-[0.5] left-0 top-[10%]" src="/images/Asset-25-4x.png" alt="" />
-            <img class="absolute w-40 opacity-[0.5] right-0 top-[10%]" src="/images/Asset-24-4x.png" alt="" />
-            <img class="absolute w-[6rem] opacity-[0.5] right-[5%] top-[50%]" src="/images/Asset-22-4x.png" alt="" /> -->
             <h4
                 class="text-2xl w-screen text-center px-10 believe-text-responsive font-extrabold text-secondary elegance-text-1-responsive">
                 We
@@ -689,6 +684,10 @@ onMounted(() => {
                     <img class="object-cover h-[300px] w-[300px]" src="/images/Asset-1@4x.png" alt="" />
                 </div>
             </div>
+        </div> -->
+
+        <div class="container mx-auto mb-10">
+            <img class="px-10 " src="/images/mobile timeline@2x.png" alt="" />
         </div>
 
 

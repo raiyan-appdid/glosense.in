@@ -67,7 +67,7 @@ onMounted(() => {
             </svg>
         </span>
     </a>
-    <div class="conteiner">
+    <div class="conteiner" style="overflow-x: hidden;">
     </div>
     <div class="about-page mt-28 sm:mt-30 pb-20 bg-[#efe8df] z-20">
         <div class="mx-auto">

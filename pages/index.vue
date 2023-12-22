@@ -1397,6 +1397,9 @@ const updateDotValue = (value) => {
               more</a></h4>
         </div>
       </div>
+      <div class="container mx-auto">
+        <img class="" src="/images/timeline@2x.png" alt="" />
+      </div>
       <!-- <h4 class="text-3xl font-extrabold text-secondary elegance-text-1">Plant based-Gluten free-No
         Artificial Sweetener <br /> No Added Flavors-Lactose Free-No Allergen</h4> -->
 
