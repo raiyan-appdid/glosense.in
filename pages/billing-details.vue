@@ -54,7 +54,7 @@ definePageMeta({
 const nuxtApp = useNuxtApp();
 
 function applyPromoCode() {
-    promocode.value = "SUPERGLO";
+    promocode.value = "SUPER10";
     verifyPromoCode();
 }
 
@@ -238,12 +238,12 @@ async function verifyPromoCode() {
                             <div class="mt-3">
                                 <span
                                     class="p-2 text-secondary border border-3 border-secondary cursor-pointer border-dashed">
-                                    SUPERGLO
+                                    SUPER10
                                 </span>
                                 <span @click="applyPromoCode"
                                     class="ml-3 my-auto py-1 px-2 bg-green-400 rounded-xl cursor-pointer">Apply</span>
                             </div>
-                            <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 329 /-</span>
+                            <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 130 /-</span>
                         </div>
 
                     </div>
