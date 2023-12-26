@@ -49,10 +49,9 @@
                 Hair</h2>
             <img src="/images/vitamin-c.jpg" alt="">
             <p class="my-10 md:text-xl">In the pursuit of healthy, vibrant hair, we often turn to various products and
-                treatments. However, the key to achieving luscious locks might be simpler than you think. At Glosense , we
-                understand the importance of nourishing your hair from within, and that's why we're
-                diving deep into the wonders of Vitamin C in this blog.
-
+                treatments. However, the key to achieving luscious locks might be simpler than you think. At Glosense, we
+                understand the importance of nourishing your hair from within, and that's why we're diving deep into the
+                wonders of Vitamin C in this blog.
             </p>
             <p class="text-xl md:text-3xl font-bold my-10">Why Vitamin C?
             </p>
@@ -60,51 +59,45 @@
                 understand why it's worth our attention. Vitamin C, also known as ascorbic acid, is a vital nutrient for
                 overall health. It plays a significant role in maintaining the health of your hair, skin, and nails, making
                 it a natural choice for our hair care supplement powder.
-
             </p>
             <p class="text-xl md:text-3xl font-bold my-10">The Advantages of Vitamin C for Your Hair
             </p>
             <p class="my-10 md:text-xl">Collagen Production: Vitamin C is a key player in collagen production, a protein
                 that provides strength and structure to your hair. When your body has sufficient Vitamin C, it can produce
-                collagen more effectively, leading to stronger and healthier hair follicles.<br /><br />
-
+                collagen more effectively, leading to stronger and healthier hair follicles.
+                <br /><br />
                 Antioxidant Protection: Vitamin C is a powerful antioxidant that helps protect your hair and scalp from
-                oxidative stress caused by free radicals. This protection can prevent hair damage and premature
-                aging.<br /><br />
-
+                oxidative stress caused by free radicals. This protection can prevent hair damage and premature aging.
+                <br /><br />
                 Improved Hair Growth: Adequate Vitamin C intake supports the development of new hair cells and promotes hair
                 growth. It also helps in preventing hair loss by strengthening the hair shafts.
-
             </p>
             <p class="text-xl md:text-3xl font-bold my-10">How to Get Your Daily Dose of Vitamin C
             </p>
             <p class="my-10 md:text-xl">You can incorporate Vitamin C into your diet in various delicious ways:<br /><br />
-
-                Citrus Fruits: Oranges, lemons, and grapefruits are well-known sources of Vitamin C.<br /><br />
-
-                Berries: Strawberries, blueberries, and raspberries are packed with Vitamin C and antioxidants.<br /><br />
-
+                Citrus Fruits: Oranges, lemons, and grapefruits are well-known sources of Vitamin C.
+                <br /><br />
+                Berries: Strawberries, blueberries, and raspberries are packed with Vitamin C and antioxidants.
+                <br /><br />
                 Leafy Greens: Spinach, kale, and broccoli are not only rich in Vitamin C but also offer other essential
-                nutrients for your hair.<br /><br />
-
+                nutrients for your hair.
+                <br /><br />
                 Supplements: To ensure you're getting an adequate amount of Vitamin C daily, you can include our
-                HAIR-YOU-GLO in your routine. Our supplement powder combines the power of Vitamin C with other superfoods
-                to provide optimal nourishment for your hair.
+                HAIR-YOU-GLO in your routine. Our supplement powder combines the power of Vitamin C with other superfoods to
+                provide optimal nourishment for your hair.
             </p>
             <p class="text-xl md:text-3xl font-bold my-10">The Essence of Vitamin C
             </p>
             <p class="my-10 md:text-xl">In conclusion, Vitamin C is not only essential for your overall well-being but also
                 a key player in maintaining the health and beauty of your hair. Its role in collagen production, antioxidant
-                protection, and hair growth cannot be overstated.<br /><br />
-
-                At Glosense, we believe in the transformative power of natural ingredients. If you're
-                looking to enhance your hair's vitality and shine, consider incorporating our HAIR-YOU-GLO into your
-                daily routine. It's a convenient and effective way to ensure you're getting the Vitamin C your hair
-                craves.<br /><br />
-
+                protection, and hair growth cannot be overstated.
+                <br /><br />
+                At Glosense, we believe in the transformative power of natural ingredients. If you're looking to enhance
+                your hair's vitality and shine, consider incorporating our HAIR-YOU-GLO into your daily routine. It's a
+                convenient and effective way to ensure you're getting the Vitamin C your hair craves.
+                <br /><br />
                 Let's embrace the beauty of healthy hair, starting with the magic of Vitamin C. Your hair deserves the best,
                 and we're here to help you achieve it.
-
             </p>
         </div>
 

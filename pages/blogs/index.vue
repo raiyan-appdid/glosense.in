@@ -204,6 +204,101 @@ onMounted(() => {
                     </a>
                 </div>
             </div>
+            <div class="sm:p-10 mt-8 sm:mt-0">
+                <div>
+                    <a href="/blogs/things-no-one-tells-about-hormonal-hair-loss">
+                        <img src="/images/aboutus/top-3.jpg" class="w-full sm:w-5/6" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="/blogs/things-no-one-tells-about-hormonal-hair-loss">
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Things no one tells about
+                            hormonal hair loss:-
+                        </h2>
+                        <p class="text-xl leading-7">Alright, let's get real about something most of us don't like to talk
+                            about:
+                            hormonal hair loss. It's like this big secret in the world of haircare, and it's time we shed
+                            some light on
+                            it. In this blog, we're going to uncover the mysteries around hormonal hair loss and give you
+                            the inside
+                            scoop on what's really going on with your locks....
+                        </p>
+                        <p class="underline text-primary text-xl mt-8"><a
+                                href="/blogs/things-no-one-tells-about-hormonal-hair-loss">Read
+                                More</a>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="sm:p-10 mt-8 sm:mt-0">
+                <div>
+                    <a href="/blogs/can-superfoods-help-with-my-hair-fall">
+                        <img src="/images/aboutus/top-3.jpg" class="w-full sm:w-5/6" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="/blogs/can-superfoods-help-with-my-hair-fall">
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Can superfoods help with my
+                            hair fall?
+                        </h2>
+                        <p class="text-xl leading-7">In a world of quick fixes, we often overlook the power of what we eat.
+                            You've
+                            heard the buzzword "superfoods," but what makes them so super? These nutrient-packed ingredients
+                            are
+                            nature's treasures, brimming with goodness that transcends mere sustenance. While many revel in
+                            their
+                            potential to enhance our overall health....
+                        </p>
+                        <p class="underline text-primary text-xl mt-8"><a
+                                href="/blogs/can-superfoods-help-with-my-hair-fall">Read
+                                More</a>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="sm:p-10 mt-8 sm:mt-0">
+                <div>
+                    <a href="/blogs/this-is-how-your-state-of-mind-is-affecting-your-hair">
+                        <img src="/images/aboutus/top-3.jpg" class="w-full sm:w-5/6" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="/blogs/this-is-how-your-state-of-mind-is-affecting-your-hair">
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">This is how your state of mind
+                            is affecting your hair!!
+                        </h2>
+                        <p class="text-xl leading-7">In today's fast-paced world, the daily grind can often leave us feeling
+                            overwhelmed and stressed. Those lingering concerns, even the seemingly minor ones, can
+                            significantly impact our overall well-being, including the health of our hair....
+                        </p>
+                        <p class="underline text-primary text-xl mt-8"><a
+                                href="/blogs/this-is-how-your-state-of-mind-is-affecting-your-hair">Read
+                                More</a>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="sm:p-10 mt-8 sm:mt-0">
+                <div>
+                    <a href="/blogs/daily-facing-huge-hair-fall">
+                        <img src="/images/aboutus/top-3.jpg" class="w-full sm:w-5/6" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="/blogs/daily-facing-huge-hair-fall">
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Daily facing huge hair fall: Is
+                            that normal?
+                        </h2>
+                        <p class="text-xl leading-7">To all the lovely readers who've clicked onto this page,If you've ever
+                            had a moment of concern in the morning when you spot those extra hairs on your pillow or tangled
+                            in your comb, this blog is for you. We're....
+                        </p>
+                        <p class="underline text-primary text-xl mt-8"><a href="/blogs/daily-facing-huge-hair-fall">Read
+                                More</a>
+                        </p>
+                    </a>
+                </div>
+            </div>
             <!-- <div class="sm:p-10 mt-8 sm:mt-0">
                 <div>
                     <img src="/images/blog-1.png" alt="">
