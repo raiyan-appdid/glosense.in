@@ -38,7 +38,7 @@ async function login() {
                     confirmButtonText: 'Cool'
                 });
                 // window.location.reload(true)
-                window.location.href = 'billing-details'
+                window.location.href = 'billing-details?count=1';
 
             } else {
                 Swal.fire({
@@ -99,7 +99,8 @@ async function login() {
                                         account</a>
                                 </div>
                             </div>
-                            <a href="/forgot-password" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Forgot
+                            <a href="/forgot-password"
+                                class="text-sm text-blue-700 hover:underline dark:text-blue-500">Forgot
                                 Password?</a>
                         </div>
                     </form>
