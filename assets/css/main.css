@@ -59,7 +59,7 @@ body {
 
 @keyframes fall {
   to {
-    transform: translateY(705vh);
+    transform: translateY(505vh);
   }
 }
 
