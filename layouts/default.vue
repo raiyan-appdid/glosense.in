@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <SnowFall />
+      <!-- <SnowFall /> -->
       <slot />
     </div>
     <Footer />

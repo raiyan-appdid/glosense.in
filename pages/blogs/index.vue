@@ -112,12 +112,12 @@ onMounted(() => {
             </div>
             <div class="sm:p-10 mt-8 sm:mt-0">
                 <div>
-                    <a href="/blogs/unrevealing-the-mystery-of-hair-fall-and-hair-thinking">
+                    <a href="/blogs/can-superfoods-help-with-my-hair-fall">
                         <img src="/images/hair-thinning.jpg" class="w-full sm:w-5/6" alt="">
                     </a>
                 </div>
                 <div>
-                    <a href="/blogs/unrevealing-the-mystery-of-hair-fall-and-hair-thinking">
+                    <a href="/blogs/can-superfoods-help-with-my-hair-fall">
                         <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">UNREVEALING THE MYSTERY OF HAIR
                             FALL & HAIR THINNING!!
                         </h2>
@@ -131,7 +131,7 @@ onMounted(() => {
                             too
                             long...</p>
                         <p class="underline text-primary text-xl mt-8"><a
-                                href="/blogs/unrevealing-the-mystery-of-hair-fall-and-hair-thinking">Read
+                                href="/blogs/can-superfoods-help-with-my-hair-fall">Read
                                 More</a>
                         </p>
                     </a>
