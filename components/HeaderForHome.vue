@@ -54,11 +54,11 @@ onUnmounted(() => {
       <!-- <p class="p-0 m-0 text-white text-center font-bold ">GLO FROM WITHIN, HAPPILY!!</p> -->
       <p class="p-0 m-0 text-center text-white font-bold">
         <span class="inline-block">
-          <ChristmasBell />
+          <!-- <ChristmasBell /> -->
         </span>
         <span class="my-auto py-auto">GET 10% OFF WITH PROMO CODE - SUPER10</span>
         <span class="inline-block">
-          <ChristmasBell />
+          <!-- <ChristmasBell /> -->
         </span>
       </p>
     </div>

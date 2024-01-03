@@ -78,7 +78,7 @@ onMounted(function () {
                         <p class="text-xl leading-7">In the pursuit of healthy, vibrant hair, we often turn to various
                             products
                             and treatments. However, the key to achieving luscious locks might be simpler than you think. At
-                            [Your Nutraceutical Brand], we understand the importance of nourishing your hair from within,
+                            Glosense, we understand the importance of nourishing your hair from within,
                             and
                             that's why we're diving deep into the wonders of Vitamin C in this blog....</p>
                         <p class="underline text-primary text-xl mt-8"><a
