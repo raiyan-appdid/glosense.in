@@ -6,6 +6,7 @@ const apiUrl = config.public.baseUrl;
 // const counter = useCounter()
 const route = useRoute()
 const counter = ref(route.query.count);
+const hasPromoApplied = ref(route.query.promo);
 const token = useCookie('token');
 
 const name = ref('');
@@ -25,8 +26,11 @@ const promocodeid = ref("");
 
 
 onMounted(() => {
-    console.log();
+    console.log(hasPromoApplied.value);
 
+    if (hasPromoApplied.value) {
+        applyPromoCode()
+    }
 })
 
 const { data } = await useFetch(`${apiUrl}/user-detail`, {
@@ -54,7 +58,7 @@ definePageMeta({
 const nuxtApp = useNuxtApp();
 
 function applyPromoCode() {
-    promocode.value = "SUPER10";
+    promocode.value = "GET970";
     verifyPromoCode();
 }
 
@@ -238,14 +242,15 @@ async function verifyPromoCode() {
                             <div class="mt-3">
                                 <span
                                     class="p-2 text-secondary border border-3 border-secondary cursor-pointer border-dashed">
-                                    SUPER10
+                                    GET970
                                 </span>
-                                <span @click="applyPromoCode"
+                                <span v-if="!promocodeVerified" @click="applyPromoCode"
                                     class="ml-3 my-auto py-1 px-2 bg-green-400 rounded-xl cursor-pointer">Apply</span>
+                                <span v-else
+                                    class="ml-3 my-auto py-1 px-2 bg-green-400 rounded-xl cursor-pointer">Applied</span>
                             </div>
-                            <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 130 /-</span>
+                            <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 329 /-</span>
                         </div>
-
                     </div>
                     <div class="hidden flex-col sm:flex">
                         <div class="text-center my-4">

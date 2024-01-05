@@ -65,7 +65,7 @@ onUnmounted(() => {
         <span class="inline-block">
           <!-- <ChristmasBell /> -->
         </span>
-        <span class="my-auto py-auto">GET 10% OFF WITH PROMO CODE - SUPER10</span>
+        <span class="my-auto py-auto">GET 30% OFF WITH PROMO CODE - GET970</span>
         <span class="inline-block">
           <!-- <ChristmasBell /> -->
         </span>

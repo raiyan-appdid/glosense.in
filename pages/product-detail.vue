@@ -3,6 +3,10 @@
 import Notiflix from 'notiflix';
 import Loading from 'notiflix/build/notiflix-loading-aio';
 
+const promocodeDiscount = ref(0);
+const promocodeid = ref(0);
+const promocode = ref("GET970");
+const promocodeVerified = ref(false);
 
 
 const nuxtApp = useNuxtApp();
@@ -48,8 +52,48 @@ function openModal() {
 }
 
 function gateWayIntegration(name = null) {
+
+    console.log(promocodeVerified.value);
+    if (promocodeVerified.value == true) {
+        window.location.href = 'billing-details?count=' + counter.value + '&promo=1';
+        return true;
+    }
     window.location.href = 'billing-details?count=' + counter.value;
 }
+
+
+function applyPromoCode() {
+    promocode.value = "GET970";
+    promocodeVerified.value = true;
+    verifyPromoCode();
+}
+
+async function verifyPromoCode() {
+    await useFetch(`${apiUrl}/promo-code`, {
+        method: "POST",
+        body: {
+            promocode: promocode.value
+        },
+        headers: {
+            accept: "application/json"
+        },
+        onResponse({ request, response, options }) {
+            console.log(response._data);
+            const verified = response._data.verified;
+            promocodeVerified.value = verified;
+            if (verified) {
+                console.log(response._data.data.discount);
+                promocodeDiscount.value = response._data.data.discount;
+                promocodeid.value = response._data.data.id;
+            } else {
+                promocodeDiscount.value = 0;
+                promocodeid.value = "";
+            }
+        },
+    })
+    console.log(promocodeDiscount.value);
+}
+
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
@@ -183,14 +227,28 @@ async function getUser() {
                         <span class="text-2xl font bold my-auto ml-2">10 Reviews</span>
                     </div> -->
                     <div class="flex">
-                        <span class="sm:text-2xl  ">Jar-120g (30 servings)</span>
+                        <span class="sm:text-2xl  sm:font-semibold ">Jar-120g (30 servings)</span>
                     </div>
                     <div class="flex">
-                        <span class="font-extrabold text-secondary mt-6 text-3xl mr-9">Rs. 1299 /-</span>
+                        <span class="font-extrabold text-secondary mt-6 text-3xl mr-9">Rs. {{ 1299 - promocodeDiscount }}
+                            /-</span>
                         <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
                     </div>
                     <div>
-                        <p class="font-semibold">(Apply Promo code: SUPER10 to get at Rs. 1169 /-)</p>
+                        <p class="font-semibold">(Apply Promo code: GET970 to get at Rs. 970 /-)</p>
+                    </div>
+                    <div class="flex">
+                        <div class="flex flex-col justify-center">
+                            <div class="mt-3">
+                                <span
+                                    class="p-2 text-secondary border border-3 border-secondary cursor-pointer border-dashed">
+                                    GET970
+                                </span>
+                                <span @click="applyPromoCode"
+                                    class="ml-3 my-auto py-1 px-2 bg-green-400 rounded-xl cursor-pointer">Apply</span>
+                            </div>
+                            <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 329 /-</span>
+                        </div>
                     </div>
                     <!-- <div class="flex">
                         <p class="text-primary font-medium text-lg mt-3">( Get it at <span class="text-secondary">Rs.
