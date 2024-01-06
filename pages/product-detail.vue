@@ -227,7 +227,7 @@ async function getUser() {
                         <span class="text-2xl font bold my-auto ml-2">10 Reviews</span>
                     </div> -->
                     <div class="flex">
-                        <span class="sm:text-2xl  sm:font-semibold ">Jar-120g (30 servings)</span>
+                        <span class="sm:text-xl  sm:font-semibold ">Jar-120g (30 servings)</span>
                     </div>
                     <div class="flex">
                         <span class="font-extrabold text-secondary mt-6 text-3xl mr-9">Rs. {{ 1299 - promocodeDiscount }}
