@@ -230,7 +230,9 @@ async function getUser() {
                         <span class="sm:text-xl  sm:font-semibold ">Jar-120g (30 servings)</span>
                     </div>
                     <div class="flex">
-                        <span class="font-extrabold text-secondary mt-6 text-3xl mr-9">Rs. {{ 1299 - promocodeDiscount }}
+                        <span v-if="!promocodeVerified" class="font-extrabold text-primary mt-6 text-3xl mr-9">Rs. {{ 1299 - promocodeDiscount }}
+                            /-</span>
+                        <span v-else class="font-extrabold text-secondary mt-6 text-3xl mr-9">Rs. {{ 1299 - promocodeDiscount }}
                             /-</span>
                         <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
                     </div>
@@ -244,8 +246,10 @@ async function getUser() {
                                     class="p-2 text-secondary border border-3 border-secondary cursor-pointer border-dashed">
                                     GET970
                                 </span>
-                                <span @click="applyPromoCode"
-                                    class="ml-3 my-auto py-1 px-2 bg-green-400 rounded-xl cursor-pointer">Apply</span>
+                                <span v-if="!promocodeVerified" @click="applyPromoCode"
+                                    class="ml-3 my-auto py-1 px-2 bg-primary rounded-xl cursor-pointer">Apply</span>
+                                <span v-else @click="applyPromoCode"
+                                    class="ml-3 my-auto py-1 px-2 bg-secondary rounded-xl cursor-pointer">Apply</span>
                             </div>
                             <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 329 /-</span>
                         </div>
