@@ -235,7 +235,7 @@ async function getUser() {
                         <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
                     </div>
                     <div>
-                        <p class="font-semibold">(Apply Promo code: GET970 to get at Rs. 970 /-)</p>
+                        <p class="font-semibold">(Apply Promo code)</p>
                     </div>
                     <div class="flex">
                         <div class="flex flex-col justify-center">
