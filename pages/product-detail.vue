@@ -64,7 +64,6 @@ function gateWayIntegration(name = null) {
 
 function applyPromoCode() {
     promocode.value = "GET970";
-    promocodeVerified.value = true;
     verifyPromoCode();
 }
 
@@ -237,7 +236,7 @@ async function getUser() {
                         <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
                     </div>
                     <div>
-                        <p class="font-semibold">(Apply Promo code)</p>
+                        <p class="font-semibold">(Apply Promo code to Save Rs. 329 /-)</p>
                     </div>
                     <div class="flex">
                         <div class="flex flex-col justify-center">
@@ -251,7 +250,7 @@ async function getUser() {
                                 <span v-else @click="applyPromoCode"
                                     class="ml-3 my-auto py-1 px-2 bg-secondary rounded-xl cursor-pointer">Apply</span>
                             </div>
-                            <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 329 /-</span>
+                            <!-- <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 329 /-</span> -->
                         </div>
                     </div>
                     <!-- <div class="flex">
