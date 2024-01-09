@@ -247,8 +247,8 @@ async function getUser() {
                                 </span>
                                 <span v-if="!promocodeVerified" @click="applyPromoCode"
                                     class="ml-3 my-auto py-1 px-2 bg-primary rounded-xl cursor-pointer">Apply</span>
-                                <span v-else @click="applyPromoCode"
-                                    class="ml-3 my-auto py-1 px-2 bg-secondary rounded-xl cursor-pointer">Apply</span>
+                                <span v-else
+                                    class="ml-3 my-auto py-1 px-2 bg-secondary rounded-xl cursor-pointer">Applied</span>
                             </div>
                             <!-- <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 329 /-</span> -->
                         </div>
