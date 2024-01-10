@@ -7,7 +7,8 @@ const promocodeDiscount = ref(0);
 const promocodeid = ref(0);
 const promocode = ref("GET970");
 const promocodeVerified = ref(false);
-
+const review = ref([]);
+const reviewCount = ref(0);
 
 const nuxtApp = useNuxtApp();
 onMounted(function () {
@@ -25,12 +26,31 @@ function incrementCount() {
 
 nuxtApp.hook('page:finish', () => {
     Notiflix.Loading.remove();
+    getReviews();
 })
 
 onMounted(() => {
     Notiflix.Loading.standard();
 })
 
+async function getReviews() {
+    await useFetch(`${apiUrl}/reviews`, {
+        method: "GET",
+        headers: {
+            accept: "application/json"
+        },
+        onResponse({ request, response, options }) {
+            if (response._data.success) {
+                console.log(response._data.data.length);
+                review.value = response._data.data;
+                reviewCount.value = response._data.data.length;
+            }
+        },
+    })
+
+    console.log(review.value);
+
+}
 
 function decrementCount() {
     if (counter.value > 1) {
@@ -229,9 +249,11 @@ async function getUser() {
                         <span class="sm:text-xl  sm:font-semibold ">Jar-120g (30 servings)</span>
                     </div>
                     <div class="flex">
-                        <span v-if="!promocodeVerified" class="font-extrabold text-primary mt-6 text-3xl mr-9">Rs. {{ 1299 - promocodeDiscount }}
+                        <span v-if="!promocodeVerified" class="font-extrabold text-primary mt-6 text-3xl mr-9">Rs. {{ 1299 -
+                            promocodeDiscount }}
                             /-</span>
-                        <span v-else class="font-extrabold text-secondary mt-6 text-3xl mr-9">Rs. {{ 1299 - promocodeDiscount }}
+                        <span v-else class="font-extrabold text-secondary mt-6 text-3xl mr-9">Rs. {{ 1299 -
+                            promocodeDiscount }}
                             /-</span>
                         <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
                     </div>
@@ -459,9 +481,9 @@ async function getUser() {
                 </div> -->
 
                 <div class="review">
-                    <!-- <h2 class="text-secondary text-center font-bold text-4xl my-10">Customer Reviews</h2>
+                    <h2 class="text-secondary text-center font-bold text-4xl my-10">Customer Reviews</h2>
 
-                    <div class="grid grid-cols-12 gap-5">
+                    <!-- <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-12 sm:col-span-4 ">
                             <img class="w-3/4 mx-auto" src="/images/jar2.png" alt="" />
                         </div>
@@ -535,46 +557,36 @@ async function getUser() {
                                 <span class="text-xs font-bold">Vote</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <h2 class="text-secondary text-center text-2xl font-bold my-10">Comments</h2>
+                    <!-- <h2 class="text-secondary text-center text-2xl font-bold my-10">Comments</h2> -->
+
+
+
                     <div class="container mx-auto">
+                        <!-- <div v-for="data in review">
+                            {{ data.title }}
+                            {{ data.description }}
+                        </div> -->
                         <h5 class="font-bold">All Reviews
-                            <span class=" text-md font-medium mr-2 px-2 py-0.5 rounded bg-secondary text-white">23</span>
+                            <span class=" text-md font-medium mr-2 px-2 py-0.5 rounded bg-secondary text-white">{{
+                                reviewCount }}</span>
                         </h5>
                         <hr class="bg-black my-5" />
-
-
-
-                        <div class="grid grid-cols-12 pb-4">
+                        <div v-for="data in review" class="grid grid-cols-12 pb-4">
                             <div class="col-span-12 sm:col-span-5">
                                 <div class="flex">
-                                    <img src="https://i.pravatar.cc/40" class="rounded-full" alt="">
+                                    <!-- <img src="https://i.pravatar.cc/40" class="rounded-full" alt=""> -->
                                     <div class="ml-4">
-                                        <h5 class="font-bold text-lg">Raiyan Memon</h5>
+                                        <h5 class="font-bold text-lg">{{ data.title }}</h5>
                                         <div class="flex">
-                                            <span><svg width="15" height="15" viewBox="0 0 24 24"
-                                                    xmlns="http://www.w3.org/2000/svg">
+                                            <span v-for="count in parseInt(data.star)"><svg width="15" height="15"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill="orange"
                                                         d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                                 </svg></span>
-                                            <span><svg width="15" height="15" viewBox="0 0 24 24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill="orange"
-                                                        d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                                                </svg></span>
-                                            <span><svg width="15" height="15" viewBox="0 0 24 24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill="orange"
-                                                        d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                                                </svg></span>
-                                            <span><svg width="15" height="15" viewBox="0 0 24 24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill="orange"
-                                                        d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                                                </svg></span>
-                                            <span><svg width="15" height="15" viewBox="0 0 24 24"
-                                                    xmlns="http://www.w3.org/2000/svg">
+                                            <span v-for="count in (5 - parseInt(data.star))"><svg width="15" height="15"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill="white"
                                                         d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                                 </svg></span>
@@ -583,15 +595,10 @@ async function getUser() {
                                 </div>
                             </div>
                             <div class="col-span-12 sm:col-span-7">
-                                <p class="pt-3 sm:pt-0">Had a fantastic experience using this service. The user interface
-                                    was
-                                    intuitive,
-                                    and everything worked seamlessly. The only reason I'm not giving it a full 5 stars is
-                                    because I encountered a minor bug that delayed my task by a few minutes. Overall, great
-                                    platform!</p>
+                                <p class="pt-3 sm:pt-0">{{ data.description }}</p>
                             </div>
                         </div>
-                        <div class="grid grid-cols-12 border-dashed border-t-2 py-4 border-secondary">
+                        <!-- <div class="grid grid-cols-12 border-dashed border-t-2 py-4 border-secondary">
                             <div class="col-span-12 sm:col-span-5">
                                 <div class="flex">
                                     <img src="https://i.pravatar.cc/41" class="rounded-full" alt="">
@@ -635,7 +642,6 @@ async function getUser() {
                                     improvement in terms of user-friendliness.</p>
                             </div>
                         </div>
-
                         <div class="grid grid-cols-12 border-dashed border-t-2 py-4 border-secondary">
                             <div class="col-span-12 sm:col-span-5">
                                 <div class="flex">
@@ -769,8 +775,8 @@ async function getUser() {
                                     experience,
                                     and I'm not sure if I'll be using it again.</p>
                             </div>
-                        </div>
-                    </div> -->
+                        </div> -->
+                    </div>
 
                     <h2 class="text-secondary text-center text-3xl font-bold mt-10 mb-2">HAVE DOUBT’S? <br />
                         WE HAVE GOT ANSWERS TO THEM!!
