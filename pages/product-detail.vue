@@ -9,6 +9,7 @@ const promocode = ref("GET970");
 const promocodeVerified = ref(false);
 const review = ref([]);
 const reviewCount = ref(0);
+const globalStar = ref(5)
 
 const nuxtApp = useNuxtApp();
 onMounted(function () {
@@ -42,6 +43,8 @@ async function getReviews() {
         onResponse({ request, response, options }) {
             if (response._data.success) {
                 console.log(response._data.data.length);
+                globalStar.value = response._data.data[0]['global_star'];
+                console.log(globalStar.value);
                 review.value = response._data.data;
                 reviewCount.value = response._data.data.length;
             }
@@ -222,34 +225,57 @@ async function getUser() {
                     <!-- <h2 class="font-semibold text-black text-xl">FOR HEALTHY & STRONG HAIR</h2> -->
                     <p class="font-semibold text-lg my-2">YOUR GO-TO SOLUTION FOR HEALTHY & STRONGER HAIR
                     </p>
-                    <!-- <div class="flex my-5">
-                        <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#eab508"
-                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                            </svg></span>
-                        <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#eab508"
-                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                            </svg></span>
-                        <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#eab508"
-                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                            </svg></span>
-                        <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#eab508"
-                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                            </svg></span>
-                        <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#eab508"
-                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                            </svg></span>
-                        <span class="text-2xl font bold my-auto ml-2">10 Reviews</span>
-                    </div> -->
                     <div class="flex">
                         <span class="sm:text-xl  sm:font-semibold ">Jar-120g (30 servings)</span>
                     </div>
+                    <div class="flex my-0">
+
+                        <span v-for="index in parseInt(globalStar)"><svg width="45" height="45" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#eab508"
+                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                            </svg></span>
+                        <span v-for="index1 in parseInt(5 - globalStar)"><svg width="45" height="45" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="white"
+                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                            </svg></span>
+
+                        <!-- <span v-for="index in globalStar"><svg width="45" height="45" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="orange"
+                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                            </svg></span>
+                        <span v-for="index in (5 - globalStar)"><svg width="45" height="45" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="white"
+                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                            </svg></span> -->
+
+                        <!-- <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#eab508"
+                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                            </svg></span>
+                        <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#eab508"
+                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                            </svg></span>
+                        <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#eab508"
+                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                            </svg></span>
+                        <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#eab508"
+                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                            </svg></span>
+                        <span><svg width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#eab508"
+                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                            </svg></span> -->
+                        <!-- <span class="text-2xl font bold my-auto ml-2">10 Reviews</span> -->
+                    </div>
                     <div class="flex">
-                        <span v-if="!promocodeVerified" class="font-extrabold text-primary mt-6 text-3xl mr-9">Rs. {{ 1299 -
+                        <span v-if="!promocodeVerified" class="font-extrabold text-primary mt-3 text-3xl mr-9">Rs. {{ 1299 -
                             promocodeDiscount }}
                             /-</span>
                         <span v-else class="font-extrabold text-secondary mt-6 text-3xl mr-9">Rs. {{ 1299 -
