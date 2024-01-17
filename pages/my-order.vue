@@ -1,4 +1,5 @@
 <script setup>
+import Notiflix from 'notiflix';
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
@@ -17,6 +18,8 @@ const price = ref();
 const units = ref();
 const sub_total = ref();
 const discount = ref();
+const review = ref();
+const star = ref(5);
 
 async function getOrder() {
     await useFetch(`${apiUrl}/get-order`, {
@@ -52,6 +55,35 @@ async function getOrder() {
                 order_status.value = 'failed';
             }
 
+        },
+    });
+}
+
+async function storeReview() {
+    Notiflix.Loading.standard();
+    const { data, error, pending, refresh } = await useFetch(`${apiUrl}/store-review`, {
+        method: "POST",
+        headers: {
+            accept: "application/json",
+            Authorization: "Bearer " + token.value,
+        },
+        body: {
+            review: review.value,
+            star: star.value,
+        },
+        onResponse({ request, response, options }) {
+            Notiflix.Loading.remove();
+            Notiflix.Notify.success("Your Review Saved");
+            review.value = "";
+        },
+        onResponseError({ request, response, options }) {
+            Notiflix.Loading.remove();
+
+            Swal.fire({
+                title: response._data.message,
+                icon: 'error',
+                confirmButtonText: 'Error'
+            });
         },
     });
 }
@@ -210,6 +242,33 @@ onMounted(() => {
                 </div>
             </div>
         </div>
+
+        <form @submit.prevent="storeReview">
+            <div class="mb-6">
+                <label for="text" class="block mb-2 text-md  font-bold text-black ">Give Review</label>
+                <input type="text" id="review" v-model="review"
+                    class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
+                    placeholder="Review">
+            </div>
+            <div class="mb-6">
+                <label for="text" class="block mb-2 text-md  font-bold text-black ">Stars</label>
+                <select type="text" id="review" v-model="star"
+                    class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
+                    placeholder="Review">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+
+
+            </div>
+            <button type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center -600 -blue-700 -blue-800">Submit</button>
+        </form>
+
     </div>
 
     <div v-else-if="order_status == 'pending'" class="my-order px-6 md:px-8 bg-[#efe8df]  mt-24 pt-4 sm:mt-24 pb-20">
