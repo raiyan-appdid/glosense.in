@@ -60,7 +60,8 @@
                 locks. Stress isn't just a mental or emotional issue; it's a holistic experience affecting our physical
                 health.
             </p>
-            <p class="my-10 md:text-xl">Here at Glosense, we believe in taking a comprehensive approach to well-being. Our
+            <p class="my-10 md:text-xl">Here at Glosense Lifecare Pvt Ltd, we believe in taking a comprehensive approach to
+                well-being. Our
                 mission is not only to provide the means for healthier, more beautiful hair but also to support you on your
                 journey to inner peace. While we can't eliminate life's stresses, we can offer a simple solution to ensure
                 your hair remains a shining testament to your overall well-being. Our natural superfood supplement powder is

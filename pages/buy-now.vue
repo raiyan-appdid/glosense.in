@@ -7,7 +7,8 @@ function openModal() {
         let modal = document.getElementById('authentication-modal')
         modal.classList.remove('hidden');
     }
-    else {``
+    else {
+        ``
         getUser();
         gateWayIntegration();
         //cc avenue gateway.....
@@ -83,7 +84,7 @@ onMounted(() => {
                 </div>
                 <div class="col-span-12 sm:col-span-7">
                     <h2 class="font-extrabold text-3xl mt-4">Hair you glo for Healthy & Strong Hair</h2>
-                    <p class="my-5">Introducing Glosense, your go-to solution for achieving healthy and
+                    <p class="my-5">Introducing Glosense Lifecare Pvt Ltd, your go-to solution for achieving healthy and
                         strong hair that
                         shines with vitality</p>
                     <!-- <div class="flex my-5">
@@ -623,12 +624,14 @@ onMounted(() => {
                             ◆ <span class="font-bold"> When will my order be dispatched?</span><br />
                             ◆ <span class="font-bold"> How long will the shipping take?</span><br />
                             ◆ <span class="font-bold"> What is the refund and return policy at ?</span><br />
-                            ◆ <span class="font-bold"> Is Glosense vegan/vegetarian-friendly?</span><br />
-                            ◆ <span class="font-bold"> Are there any side effects associated with Glosense?</span><br />
-                            ◆ <span class="font-bold"> Can Glosense be used by both men and women?</span><br />
+                            ◆ <span class="font-bold"> Is Glosense Lifecare Pvt Ltd vegan/vegetarian-friendly?</span><br />
+                            ◆ <span class="font-bold"> Are there any side effects associated with Glosense Lifecare Pvt
+                                Ltd?</span><br />
+                            ◆ <span class="font-bold"> Can Glosense Lifecare Pvt Ltd be used by both men and
+                                women?</span><br />
                             ◆ <span class="font-bold"> When can I expect to see results?</span><br />
-                            ◆ <span class="font-bold"> Is Glosense safe to use?</span><br />
-                            ◆ <span class="font-bold"> What is Glosense, and how does it work?</span><br />
+                            ◆ <span class="font-bold"> Is Glosense Lifecare Pvt Ltd safe to use?</span><br />
+                            ◆ <span class="font-bold"> What is Glosense Lifecare Pvt Ltd, and how does it work?</span><br />
 
                         </p>
                     </div>

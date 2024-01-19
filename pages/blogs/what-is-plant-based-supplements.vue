@@ -50,7 +50,8 @@
             <p class="my-10 md:text-xl">In recent years, the term "plant-based" has taken the health and wellness world by
                 storm. From plant-based diets to supplements, this trend has gained immense popularity for all the right
                 reasons.<br />
-                At Glosense, we are passionate about harnessing the incredible benefits of nature to enhance your health and
+                At Glosense Lifecare Pvt Ltd, we are passionate about harnessing the incredible benefits of nature to
+                enhance your health and
                 well-being. We here search into the hype surrounding plant-based products and why they deserve a special
                 place in your daily routine.
             </p>
@@ -81,7 +82,8 @@
             <p class="text-xl md:text-4xl font-bold my-10">WHY YOU SHOULD INCORPORATE PLANT BASED SUPPLEMENT??
             </p>
             <p class="my-10 md:text-xl">By now, you might be wondering how you can start benefiting from plant-based
-                supplements. Look no further than our very own Glosense. Our Hair Care Natural Supplement Powder is a
+                supplements. Look no further than our very own Glosense Lifecare Pvt Ltd. Our Hair Care Natural Supplement
+                Powder is a
                 testament to the power of plant-based ingredients. Crafted with a blend of superfoods known for their
                 hair-boosting properties, our product is designed to provide your hair with the care it deserves.
                 <br /><br />

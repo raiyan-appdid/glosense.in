@@ -64,7 +64,7 @@
             <p class="my-10 md:text-xl">In a world full of distractions and temptations, finding what you truly need can be
                 a profound journey. It's about quality, simplicity, and mindful choices. We hope this blog has helped you
                 explore what you need in your life, and if you're interested in a product that aligns with these values, we
-                invite you to explore HAIR-YOU-GLO by Glosense.
+                invite you to explore HAIR-YOU-GLO by Glosense Lifecare Pvt Ltd.
             </p>
         </div>
 

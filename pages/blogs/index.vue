@@ -78,7 +78,7 @@ onMounted(function () {
                         <p class="text-xl leading-7">In the pursuit of healthy, vibrant hair, we often turn to various
                             products
                             and treatments. However, the key to achieving luscious locks might be simpler than you think. At
-                            Glosense, we understand the importance of nourishing your hair from within,
+                            Glosense Lifecare Pvt Ltd, we understand the importance of nourishing your hair from within,
                             and
                             that's why we're diving deep into the wonders of Vitamin C in this blog....</p>
                         <p class="underline text-primary text-xl mt-8"><a
@@ -127,7 +127,8 @@ onMounted(function () {
                             Within
                         </h2>
                         <p class="text-xl leading-7">Hey there, lovely souls! 😊
-                            Welcome to our wellness journey. At Glosense, we're all about celebrating wellness in its full,
+                            Welcome to our wellness journey. At Glosense Lifecare Pvt Ltd, we're all about celebrating
+                            wellness in its full,
                             beautiful spectrum. It's not just about looking good; it's about feeling fantastic inside and
                             out. So, join us on this adventure as we uncover the secret to discovering wellness from within
                             and embracing a life that truly shines....
@@ -150,7 +151,8 @@ onMounted(function () {
                         <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Plant based, Super blends
                         </h2>
                         <p class="text-xl leading-7">Hey there, lovely souls! 😊
-                            Welcome to our wellness journey. At Glosense, we're all about celebrating wellness in its full,
+                            Welcome to our wellness journey. At Glosense Lifecare Pvt Ltd, we're all about celebrating
+                            wellness in its full,
                             beautiful spectrum. It's not just about looking good; it's about feeling fantastic inside and
                             out. So, join us on this adventure as we uncover the secret to discovering wellness from within
                             and embracing a life that truly shines....

@@ -985,7 +985,7 @@ async function getUser() {
                         </details>
                         <details class=" rounded-lg mb-3">
                             <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
-                                Is Glosense vegan/vegetarian-friendly?
+                                Is Glosense Lifecare Pvt Ltd vegan/vegetarian-friendly?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
                                 <p>As our product is 100% plant based it is safe to say it is vegetarian friendly.
@@ -994,10 +994,10 @@ async function getUser() {
                         </details>
                         <details class=" rounded-lg mb-3">
                             <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
-                                Are there any side effects associated with Glosense?
+                                Are there any side effects associated with Glosense Lifecare Pvt Ltd?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
-                                <p>At Glosense, we care about your well-being. Our Glosense is plant-based and designed
+                                <p>At Glosense Lifecare Pvt Ltd, we care about your well-being. Our Glosense Lifecare Pvt Ltd is plant-based and designed
                                     for a healthy lifestyle.But incarse if you ever experience discomfort, contact us at
                                     <a href="mailto:connect@glosense.in">connect@glosense.in</a>. We're here to help.
                                 </p>
@@ -1030,16 +1030,16 @@ async function getUser() {
                             </summary>
                             <div class="mt-1 leading-6 text-black">
                                 <p>As our product is all plant based with 100% natural ingredients used,we can conclude
-                                    that all products of glosense are safe to use:)
+                                    that all products of Glosense Lifecare Pvt Ltd are safe to use:)
                                 </p>
                             </div>
                         </details>
                         <details class=" rounded-lg mb-3">
                             <summary class="font-bold text-xl leading-6 text-black cursor-pointer">
-                                What is Glosense, and how does it work?
+                                What is Glosense Lifecare Pvt Ltd, and how does it work?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
-                                <p>At Glosense we are a nutraceutical brand, we're all about enhancing your well-being
+                                <p>At Glosense Lifecare Pvt Ltd we are a nutraceutical brand, we're all about enhancing your well-being
                                     through nature's gifts. Our plant-based superblends offer a holistic approach to health,
                                     elevating your hair, skin, gut, and stress management.We encourage you to explore the
                                     world of

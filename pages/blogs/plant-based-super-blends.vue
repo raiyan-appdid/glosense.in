@@ -66,7 +66,8 @@
             <p class="my-10 md:text-xl">Incorporating plant-based super blends into your lifestyle is not just a trend; it's
                 a commitment to your health and the planet. As you explore this green revolution, remember to be kind to
                 yourself and to the world we call home.
-                At Glosense, we're passionate about promoting holistic well-being and eco-conscious living. While we've
+                At Glosense Lifecare Pvt Ltd, we're passionate about promoting holistic well-being and eco-conscious living.
+                While we've
                 enjoyed this journey through the world of plant-based super blends with you, we encourage you to explore
                 this incredible lifestyle at your own pace. If you're interested in discovering how our products can
                 complement your journey, feel free to explore our website and see how we've harnessed the power of nature in

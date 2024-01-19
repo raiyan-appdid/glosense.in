@@ -20,7 +20,8 @@
                     <img src="/images/jar.png" class="w-2/4 mx-auto" alt="">
                 </div>
                 <div class="text flex flex-col justify-center items-center mb-3">
-                    <p class="p-2 leading-relaxed">Glosense: Elevate Your Hair Care Experience with Luxurious Brilliance.
+                    <p class="p-2 leading-relaxed">Glosense Lifecare Pvt Ltd: Elevate Your Hair Care Experience with
+                        Luxurious Brilliance.
                         Discover a World
                         of
                         Radiance and Beauty Through Our Expertly Crafted Hair Products. Unveil the True Potential of Your
@@ -35,7 +36,8 @@
                     <img src="/images/jar.png" class="w-2/4 mx-auto" alt="">
                 </div>
                 <div class="text flex flex-col justify-center items-center mb-3">
-                    <p class="p-2 leading-relaxed">Glosense: Elevate Your Hair Care Experience with Luxurious Brilliance.
+                    <p class="p-2 leading-relaxed">Glosense Lifecare Pvt Ltd: Elevate Your Hair Care Experience with
+                        Luxurious Brilliance.
                         Discover a World
                         of
                         Radiance and Beauty Through Our Expertly Crafted Hair Products. Unveil the True Potential of Your
@@ -50,7 +52,8 @@
                     <img src="/images/jar.png" class="w-2/4 mx-auto" alt="">
                 </div>
                 <div class="text flex flex-col justify-center items-center mb-3">
-                    <p class="p-2 leading-relaxed">Glosense: Elevate Your Hair Care Experience with Luxurious Brilliance.
+                    <p class="p-2 leading-relaxed">Glosense Lifecare Pvt Ltd: Elevate Your Hair Care Experience with
+                        Luxurious Brilliance.
                         Discover a World
                         of
                         Radiance and Beauty Through Our Expertly Crafted Hair Products. Unveil the True Potential of Your
@@ -65,7 +68,8 @@
                     <img src="/images/jar.png" class="w-2/4 mx-auto" alt="">
                 </div>
                 <div class="text flex flex-col justify-center items-center mb-3">
-                    <p class="p-2 leading-relaxed">Glosense: Elevate Your Hair Care Experience with Luxurious Brilliance.
+                    <p class="p-2 leading-relaxed">Glosense Lifecare Pvt Ltd: Elevate Your Hair Care Experience with
+                        Luxurious Brilliance.
                         Discover a World
                         of
                         Radiance and Beauty Through Our Expertly Crafted Hair Products. Unveil the True Potential of Your
@@ -80,7 +84,8 @@
                     <img src="/images/jar.png" class="w-2/4 mx-auto" alt="">
                 </div>
                 <div class="text flex flex-col justify-center items-center mb-3">
-                    <p class="p-2 leading-relaxed">Glosense: Elevate Your Hair Care Experience with Luxurious Brilliance.
+                    <p class="p-2 leading-relaxed">Glosense Lifecare Pvt Ltd: Elevate Your Hair Care Experience with
+                        Luxurious Brilliance.
                         Discover a World
                         of
                         Radiance and Beauty Through Our Expertly Crafted Hair Products. Unveil the True Potential of Your
@@ -95,7 +100,8 @@
                     <img src="/images/jar.png" class="w-2/4 mx-auto" alt="">
                 </div>
                 <div class="text flex flex-col justify-center items-center mb-3">
-                    <p class="p-2 leading-relaxed">Glosense: Elevate Your Hair Care Experience with Luxurious Brilliance.
+                    <p class="p-2 leading-relaxed">Glosense Lifecare Pvt Ltd: Elevate Your Hair Care Experience with
+                        Luxurious Brilliance.
                         Discover a World
                         of
                         Radiance and Beauty Through Our Expertly Crafted Hair Products. Unveil the True Potential of Your

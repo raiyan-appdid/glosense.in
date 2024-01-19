@@ -48,13 +48,15 @@
             <h2 class="text-primary text-3xl md:text-4xl py-10 font-bold">Discovering Wellness from Within</h2>
             <img src="/images/aboutus/top-1.jpg" alt="">
             <p class="my-10 md:text-xl">Hey there, lovely souls! 😊 <br />
-                Welcome to our wellness journey. At Glosense, we're all about celebrating wellness in its full, beautiful
+                Welcome to our wellness journey. At Glosense Lifecare Pvt Ltd, we're all about celebrating wellness in its
+                full, beautiful
                 spectrum. It's not just about looking good; it's about feeling fantastic inside and out. So, join us on this
                 adventure as we uncover the secret to discovering wellness from within and embracing a life that truly
                 shines.
             </p>
             <p class="my-10 md:text-xl">Wellness isn't just a word; it's a whole vibe. It's about feeling amazing in your
-                body, rocking a clear and positive mindset, and having a heart that's bursting with joy. At Glosense, we're
+                body, rocking a clear and positive mindset, and having a heart that's bursting with joy. At Glosense
+                Lifecare Pvt Ltd, we're
                 totally on board with this holistic approach to wellness. We're all about nurturing well-being that's
                 authentic and real, without relying solely on outside factors.
             </p>
@@ -62,7 +64,8 @@
                 journey to wellness should feel like a thrilling adventure, full of self-discovery, and growth. It's all
                 about discovering your potential and setting it free, so you can lead a life that's brimming with happiness
                 and positivity.<br />
-                Here at Glosense, we're right there with you. Our products may not wear capes, but they're designed to
+                Here at Glosense Lifecare Pvt Ltd, we're right there with you. Our products may not wear capes, but they're
+                designed to
                 subtly supercharge your wellness journey, supporting your quest for personal growth without being in your
                 face about it.
             </p>
@@ -76,10 +79,12 @@
                 with the tools and resources you need to keep that balance just right.
             </p>
             <p class="my-10 md:text-xl">Mindful living is like a golden key to wellness. It's the art of living in the
-                moment and making every second count. At Glosense, we're all about mindful living, and our products are your
+                moment and making every second count. At Glosense Lifecare Pvt Ltd, we're all about mindful living, and our
+                products are your
                 trusty companions in embracing this wonderful way of life.
                 Your wellness journey is your own personal saga, a narrative that never ends. It's a journey of constant
-                self-discovery and growth. At Glosense, we're not just a brand; we're your partners on this adventure,
+                self-discovery and growth. At Glosense Lifecare Pvt Ltd, we're not just a brand; we're your partners on this
+                adventure,
                 quietly offering our support and resources to help you thrive in every aspect of life.
             </p>
             <p class="my-10 md:text-xl">Wellness from within is a personal, soul-nourishing journey. We hope this blog post
@@ -94,4 +99,5 @@
         </div>
 
 
-</div></template>
+    </div>
+</template>

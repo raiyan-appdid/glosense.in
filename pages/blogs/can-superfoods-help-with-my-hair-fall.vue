@@ -6,8 +6,7 @@
             <nav class="flex py-4" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-1 md:space-x-3">
                     <li class="inline-flex items-center">
-                        <a href="/"
-                            class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600">
+                        <a href="/" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600">
                             <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 20 20">
                                 <path
@@ -18,10 +17,10 @@
                     </li>
                     <li>
                         <div class="flex items-center">
-                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m1 9 4-4-4-4" />
                             </svg>
                             <a href="/blogs"
                                 class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2">Blogs</a>
@@ -29,10 +28,10 @@
                     </li>
                     <li aria-current="page">
                         <div class="flex items-center">
-                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m1 9 4-4-4-4" />
                             </svg>
                             <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2">Can superfoods help with my
                                 hair fall?
@@ -74,7 +73,8 @@
                 turn your hair care routine around? Well, you're not alone. It's time to re-evaluate our approach to
                 haircare.
             </p>
-            <p class="my-10 md:text-xl">At Glosense, we're inspired by nature's potent ingredients. As the days rush by,
+            <p class="my-10 md:text-xl">At Glosense Lifecare Pvt Ltd, we're inspired by nature's potent ingredients. As the
+                days rush by,
                 and the world outside poses challenges to our hair, we believe that a wholesome approach to haircare is
                 the key. Our product, meticulously crafted with the essence of these superfoods, brings a touch of
                 nature into your daily routine. But don't take our word for it - why not embark on your own journey of

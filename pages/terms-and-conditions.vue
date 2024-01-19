@@ -6,15 +6,15 @@
 
         <div class="px-5">
             <h2 class="text-2xl font-bold">Shipping-</h2>
-            <p class="text-justify">At GLOSENSE, we offer free shipping all over India.</p><br />
-            <p class="text-justify">We only make use of reliable courier companies and/or Speed Post. Glosense is not liable
+            <p class="text-justify">At Glosense Lifecare Pvt Ltd, we offer free shipping all over India.</p><br />
+            <p class="text-justify">We only make use of reliable courier companies and/or Speed Post. Glosense Lifecare Pvt Ltd is not liable
                 for any delays in
                 delivery by the Courier Company/ Speed Post or on account of any factors that cannot be controlled by
-                Glosense. We shall strive to ensure timely delivery of your order within the estimated time as mentioned in
+                Glosense Lifecare Pvt Ltd. We shall strive to ensure timely delivery of your order within the estimated time as mentioned in
                 the order confirmation.
             </p><br />
             <p class="text-justify">In the unlikely event that delivery is not possible for any reasons beyond the control
-                of Glosense, including
+                of Glosense Lifecare Pvt Ltd, including
                 but not limited to poor courier services in delivery area, inaccessibility of delivery area, force major
                 events as laid out hereinafter, we shall keep you informed of such inability to deliver and cancel your
                 order, followed by complete refund.
@@ -37,7 +37,7 @@
             </p><br />
             <h2 class="text-2xl font-bold">Intellectual Property:</h2>
             <p class="text-justify">All content, intellectual property, and brand materials showcased on our website are the
-                exclusive property of Glosense. This encompasses copyrights, trademarks, and branding elements. Unauthorised
+                exclusive property of Glosense Lifecare Pvt Ltd. This encompasses copyrights, trademarks, and branding elements. Unauthorised
                 use or reproduction of these materials is strictly prohibited.
             </p><br />
 
@@ -54,7 +54,7 @@
                 dispatch. The likelihood of damage is very small. However, in case there is any damage, here’s how you can
                 get a replacement:
             </p><br />
-            <p class="text-justify">Glosense offers a replacement guarantee for all products ordered online. Products will
+            <p class="text-justify">Glosense Lifecare Pvt Ltd offers a replacement guarantee for all products ordered online. Products will
                 be replaced only in
                 case of a manufacturing defect or damage due to transportation.
             </p><br />

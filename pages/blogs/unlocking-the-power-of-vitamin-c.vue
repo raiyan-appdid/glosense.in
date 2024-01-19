@@ -49,7 +49,8 @@
                 Hair</h2>
             <img src="/images/vitamin-c.jpg" alt="">
             <p class="my-10 md:text-xl">In the pursuit of healthy, vibrant hair, we often turn to various products and
-                treatments. However, the key to achieving luscious locks might be simpler than you think. At Glosense, we
+                treatments. However, the key to achieving luscious locks might be simpler than you think. At Glosense
+                Lifecare Pvt Ltd, we
                 understand the importance of nourishing your hair from within, and that's why we're diving deep into the
                 wonders of Vitamin C in this blog.
             </p>
@@ -92,7 +93,8 @@
                 a key player in maintaining the health and beauty of your hair. Its role in collagen production, antioxidant
                 protection, and hair growth cannot be overstated.
                 <br /><br />
-                At Glosense, we believe in the transformative power of natural ingredients. If you're looking to enhance
+                At Glosense Lifecare Pvt Ltd, we believe in the transformative power of natural ingredients. If you're
+                looking to enhance
                 your hair's vitality and shine, consider incorporating our HAIR-YOU-GLO into your daily routine. It's a
                 convenient and effective way to ensure you're getting the Vitamin C your hair craves.
                 <br /><br />
