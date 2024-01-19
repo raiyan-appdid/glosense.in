@@ -4,7 +4,7 @@
         <div class="grid grid-cols-12 h-96 bg-secondary gap-4">
             <div class="col-span-6 flex flex-col justify-center items-start mb-7 pl-6 sm:px-28">
                 <h1 class="font-extrabold text-2xl sm:text-5xl">Privacy Policy Update</h1>
-                <p class="mt-4 font-bold">Effective May 25, 2018</p>
+                <p class="mt-4 font-bold">Effective October 1st, 2023</p>
             </div>
             <div class="col-span-3 flex flex-col justify-end">
                 <div class="box h-4/4 bg-white">

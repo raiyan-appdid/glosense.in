@@ -251,7 +251,7 @@ onMounted(() => {
                     placeholder="Review">
             </div>
             <div class="mb-6">
-                <label for="text" class="block mb-2 text-md  font-bold text-black ">Stars</label>
+                <!-- <label for="text" class="block mb-2 text-md  font-bold text-black ">Stars</label>
                 <select type="text" id="review" v-model="star"
                     class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
                     placeholder="Review">
@@ -260,7 +260,25 @@ onMounted(() => {
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
-                </select>
+                </select> -->
+
+
+                <div class="container">
+                    <div class="feedback" style="max-width: fit-content !important;">
+                        <div class="rating">
+                            <input type="radio" name="rating" value="5" v-model="star" id="rating-5">
+                            <label for="rating-5"></label>
+                            <input type="radio" name="rating" value="4" v-model="star" id="rating-4">
+                            <label for="rating-4"></label>
+                            <input type="radio" name="rating" value="3" v-model="star" id="rating-3">
+                            <label for="rating-3"></label>
+                            <input type="radio" name="rating" value="2" v-model="star" id="rating-2">
+                            <label for="rating-2"></label>
+                            <input type="radio" name="rating" value="1" v-model="star" id="rating-1">
+                            <label for="rating-1"></label>
+                        </div>
+                    </div>
+                </div>
 
 
 

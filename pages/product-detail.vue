@@ -232,7 +232,13 @@ async function getUser() {
                     </div>
                     <div class="flex my-0">
                         <span class="text-lg font-semibold mr-2">{{ globalStar }}</span>
-                        <span v-for="index in parseInt(globalStar)"><svg width="25" height="25" viewBox="0 0 24 24"
+
+
+                        <div class="Stars block" :style="{ '--rating': globalStar }"
+                            aria-label="Rating of this product is 2.3 out of 5.">
+                        </div>
+
+                        <!-- <span v-for="index in parseInt(globalStar)"><svg width="25" height="25" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#eab508" stroke="black" stroke-width="0.3"
                                     d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
@@ -241,8 +247,9 @@ async function getUser() {
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill="white" stroke="black" stroke-width="0.3"
                                     d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                            </svg></span>
+                            </svg></span> -->
                         <span class="text-lg font-semibold ml-2"> {{ globalReviews }} Reviews</span>
+
 
 
                         <!-- <span v-for="index in globalStar"><svg width="45" height="45" viewBox="0 0 24 24"
@@ -279,7 +286,8 @@ async function getUser() {
                         <!-- <span class="text-2xl font bold my-auto ml-2">10 Reviews</span> -->
                     </div>
                     <div class="flex">
-                        <span v-if="!promocodeVerified" class="font-extrabold text-primary mt-3 text-3xl mr-9">Rs. {{ 1299 -
+                        <span v-if="!promocodeVerified" class="font-extrabold text-primary mt-3 text-3xl mr-9">Rs. {{ 1299
+                            -
                             promocodeDiscount }}
                             /-</span>
                         <span v-else class="font-extrabold text-secondary mt-3 text-3xl mr-9">Rs. {{ 1299 -
@@ -603,20 +611,20 @@ async function getUser() {
                                 reviewCount }}</span>
                         </h5>
                         <hr class="bg-black my-5" />
-                        <div v-for="data in review" class="grid grid-cols-12 pb-4">
+                        <div v-for="    data     in     review    " class="grid grid-cols-12 pb-4">
                             <div class="col-span-12 sm:col-span-5">
                                 <div class="flex">
                                     <!-- <img src="https://i.pravatar.cc/40" class="rounded-full" alt=""> -->
                                     <div class="ml-4">
                                         <h5 class="font-bold text-lg">{{ data.title }}</h5>
                                         <div class="flex">
-                                            <span v-for="count in parseInt(data.star)"><svg width="15" height="15"
-                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <span v-for="    count     in     parseInt(data.star)    "><svg width="15"
+                                                    height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill="orange"
                                                         d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                                 </svg></span>
-                                            <span v-for="count in (5 - parseInt(data.star))"><svg width="15" height="15"
-                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <span v-for="    count     in     (5 - parseInt(data.star))    "><svg width="15"
+                                                    height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill="white"
                                                         d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                                 </svg></span>
@@ -1051,10 +1059,64 @@ async function getUser() {
     </div>
 </template>
 
-<style>
+<style type="scss">
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+:root {
+    --star-size: 30px;
+    --star-color: #fff;
+    --star-background: #fc0;
+    --star-stroke-color: #000;
+    /* Define the color of the stroke */
+    --star-stroke-width: 1px;
+    /* Define the width of the stroke */
+}
+
+.Stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+
+    display: inline-block;
+    font-size: 0;
+    /* Set font size to zero to remove extra space */
+    position: relative;
+}
+
+.Stars::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    color: var(--star-stroke-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px black !important;
+    /* text-shadow:
+        0px 0px 0 var(--star-stroke-color),
+        0px 0px 0 var(--star-stroke-color),
+        0px 0px 0 var(--star-stroke-color),
+        0px 0px 0 var(--star-stroke-color); */
+}
+
+.Stars::after {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
 }
 </style>

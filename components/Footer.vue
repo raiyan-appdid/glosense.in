@@ -91,6 +91,21 @@
                                 class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Terms
                                 & Conditions</a>
                         </li>
+                        <li class="mb-2">
+                            <a href="/refund-and-cancellation-policy"
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Refund
+                                and Cancellation Policy</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="/ship-and-delivery-policy"
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Ship
+                                and Delivery Policy</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="/contact-us"
+                                class="border-b border-solid border-transparent hover:border-primary hover:text-primary">Contact
+                                Us</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
@@ -208,7 +223,7 @@
                     <p class="text-sm text-justify">
                         <strong class="font-bold">Disclaimer :</strong>
                         Take 1 serving daily or as directed by a healthcare professional. Store in
-                        a cool, dry, dark place. Keep out of reach of children. Do not exceed recommended daily usage. Not  
+                        a cool, dry, dark place. Keep out of reach of children. Do not exceed recommended daily usage. Not
                         recommended during pregnancy. This product is not intended to diagnose, treat, cure, or prevent any
                         disease.
                     </p>
