@@ -17,6 +17,9 @@ const email = ref('');
 const phone = ref('');
 const password = ref('');
 const confirm_password = ref('');
+const otp = ref('');
+const otpVerified = ref(false);
+const otpInputEnable = ref(false);
 const token = useCookie('token');
 
 const config = useRuntimeConfig();
@@ -36,6 +39,62 @@ definePageMeta({
 
 await getUser();
 
+async function sendOtp() {
+    await useFetch(`${apiUrl}/sms`, {
+        method: "POST",
+        body: {
+            number: phone.value
+        },
+        headers: {
+            accept: "application/json"
+        },
+        onResponse({ request, response, options }) {
+            console.log(response._data.message);
+            const statusCode = response.status;
+            if (statusCode == 200) {
+                Notiflix.Notify.success("Otp Sent To your Mobile Number");
+                otpInputEnable.value = true;
+            }
+            else {
+                Notiflix.Notify.failure(response._data.message);
+            }
+        },
+    })
+}
+
+async function verifyOtp() {
+
+
+    await useFetch(`${apiUrl}/verify-sms-otp`, {
+        method: "POST",
+        body: {
+            number: phone.value,
+            otp: otp.value
+        },
+        headers: {
+            accept: "application/json"
+        },
+        onResponse({ request, response, options }) {
+            console.log(response._data);
+            const statusCode = response.status;
+            if (statusCode == 200) {
+                if (response._data.valid) {
+                    Notiflix.Notify.success("Otp Verified");
+                    otpVerified.value = true;
+                } else {
+                    Notiflix.Notify.failure("Otp is not valid");
+                }
+            }
+        },
+    })
+
+
+
+
+
+
+}
+
 async function handleSubmit() {
 
 
@@ -44,7 +103,6 @@ async function handleSubmit() {
 
     Notiflix.Loading.pulse('Loading...');
 
-    Notiflix.Notify.success('Sol lucet omnibus');
     // await useFetch("https://admin.glosense.in/sanctum/csrf-cookie", {
     //     credentials: "include",
     // })
@@ -118,9 +176,23 @@ async function handleSubmit() {
                 </div>
                 <div class="mb-6">
                     <label for="email" class="block mb-2 text-md  font-bold text-black ">Phone</label>
-                    <input type="number" id="number" v-model="phone"
-                        class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 "
-                        placeholder="Phone">
+                    <div class="flex">
+                        <input type="number" id="number" v-model="phone"
+                            class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block md:w-[50%] sm:w-[70%] p-2.5 -700 -600 -400 "
+                            placeholder="Phone">
+                        <p class="inline text-md my-auto ml-4 cursor-pointer  font-bold text-black" @click="sendOtp">Send
+                            Otp</p>
+                    </div>
+                </div>
+                <div class="mb-6" v-if="otpInputEnable">
+                    <label for="number" class="block mb-2 text-md  font-bold text-black ">Enter OTP</label>
+                    <div class="flex">
+                        <input type="number" v-model="otp" id="email"
+                            class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[50%]] p-2.5 -700 -600 -400 "
+                            placeholder="">
+                        <p class="inline text-md my-auto ml-4 cursor-pointer  font-bold text-black" @click="verifyOtp">
+                            Verify</p>
+                    </div>
                 </div>
                 <div class="mb-6">
                     <label for="password" class="block mb-2 text-md  font-bold text-black ">Password</label>
@@ -132,7 +204,7 @@ async function handleSubmit() {
                     <input type="password" id="confirm-password" v-model="confirm_password"
                         class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 -600 -400 ">
                 </div>
-                <button type="submit" @click="getSlider"
+                <button v-if="otpVerified" type="submit" @click="getSlider"
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center -600 -blue-700 -blue-800">Submit</button>
             </form>
         </div>
