@@ -237,7 +237,7 @@ async function verifyPromoCode() {
                             promocodeDiscount }} OFF</span></span>
 
 
-                    <div class="flex">
+                    <!-- <div class="flex">
                         <div class="flex flex-col justify-center">
                             <div class="mt-3">
                                 <span
@@ -251,7 +251,7 @@ async function verifyPromoCode() {
                             </div>
                             <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 329 /-</span>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="hidden flex-col sm:flex">
                         <div class="text-center my-4">
                             <input form="store-billing-form" type="checkbox" class="mr-3" name="tnc" id="tnc">
