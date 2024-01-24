@@ -93,7 +93,7 @@ onUnmounted(() => {
               Register
             </button></a>
         </div>
-        <a href="/product-detail"><span class="text-sm sm:hidden font-semibold text-black"><svg width="20" height="20"
+        <a href="/product-detail"><span class="text-sm sm:hidden font-semibold text-black"><svg width="30" height="30"
               viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
               <circle cx="10" cy="28" r="2" fill="#43a190" />
               <circle cx="24" cy="28" r="2" fill="#43a190" />
