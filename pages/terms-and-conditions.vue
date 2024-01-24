@@ -60,6 +60,12 @@
                 and conditions. If you have any questions or concerns, please contact our customer support.
             </p>
 
+            <h2 class="text-2xl font-bold">Return Policy:</h2>
+            <p class="text-justify">Our return policy stipulates that we only accept returns for orders in the event of
+                breakage, non-compliance with the product description, or if the item is received in a defective condition.
+                Customers must notify us within a specific timeframe, usually within 2-3 days, provide evidence of the
+                issue, and return the item in its original condition with packaging and proof of purchase for resolution.
+            </p>
             <h2 class="text-2xl font-bold">Company Address:</h2>
             <p class="text-justify">1701, 17Flr, Neumec Elegance, Veer Santaji Lane, opp peninsula
                 park, Mumbai,
