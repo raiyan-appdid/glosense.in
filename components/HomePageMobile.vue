@@ -398,7 +398,7 @@ onMounted(() => {
         scrollTrigger: {
             trigger: "#showcase-section-1-responsive",
             start: "top 60",
-            end: "2000",
+            end: "10000",
             // end: "1000",
             scrub: 1,
             pin: true,
