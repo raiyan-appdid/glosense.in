@@ -126,7 +126,7 @@ async function verifyPromoCode() {
         <h2 class="text-secondary text-2xl font-bold text-center py-10">1</h2>
         <div class="grid grid-cols-12">
             <div class="container mx-auto col-span-12 sm:col-span-6 mt-0 sm:mt-0 sm:order-1">
-                <form id="store-billing-form" action="https://admin.glosense.in/api/v2/order/store">
+                <form id="store-billing-form" action="https://admin.glosense.in/api/v1/order/store">
                     <div class="grid grid-cols-2 gap-5">
                         <div class="">
                             <input type="hidden" v-model="promocodeid" name="promocode_id" id="">
