@@ -68,33 +68,33 @@ nuxtApp.hook('page:finish', () => {
 })
 
 
-async function storeBilling(e) {
+// async function storeBilling(e) {
 
-    await useFetch(`${apiUrl}/order/store?name=${name.value}&user_id=${data.value.data.id}&email=${email.value}&city=${city.value}&state=${state.value}&number=${number.value}&address=${address.value}&pincode=${pincode.value}&country=${country.value}&=${total_price.value}&promocode=${promocode.value}`, {
-        method: "GET",
-        headers: {
-            Authorization: "Bearer " + token.value,
-            accept: "application/json"
-        },
-        onResponse({ request, response, options }) {
-            Notiflix.Loading.remove();
-            console.log(response._data);
-            const error = response._data.errors
-            const res = response._data
-            console.log(response);
-            if (response.status == 200) {
-                Notiflix.Notify.success(res.message);
-            } else if (error) {
-                for (const value in error) {
-                    Notiflix.Notify.failure(error[value][0]);
-                }
-            }
-            else {
-                Notiflix.Notify.failure(response.statusText);
-            }
-        },
-    })
-}
+//     await useFetch(`${apiUrl}/order/store?name=${name.value}&user_id=${data.value.data.id}&email=${email.value}&city=${city.value}&state=${state.value}&number=${number.value}&address=${address.value}&pincode=${pincode.value}&country=${country.value}&=${total_price.value}&promocode=${promocode.value}`, {
+//         method: "GET",
+//         headers: {
+//             Authorization: "Bearer " + token.value,
+//             accept: "application/json"
+//         },
+//         onResponse({ request, response, options }) {
+//             Notiflix.Loading.remove();
+//             console.log(response._data);
+//             const error = response._data.errors
+//             const res = response._data
+//             console.log(response);
+//             if (response.status == 200) {
+//                 Notiflix.Notify.success(res.message);
+//             } else if (error) {
+//                 for (const value in error) {
+//                     Notiflix.Notify.failure(error[value][0]);
+//                 }
+//             }
+//             else {
+//                 Notiflix.Notify.failure(response.statusText);
+//             }
+//         },
+//     })
+// }
 
 async function verifyPromoCode() {
     await useFetch(`${apiUrl}/promo-code`, {
@@ -123,10 +123,10 @@ async function verifyPromoCode() {
 <template>
     <HeaderCommon />
     <div class="product-details px-3 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
-        <h2 class="text-secondary text-2xl font-bold text-center py-10">Billing Page</h2>
+        <h2 class="text-secondary text-2xl font-bold text-center py-10">1</h2>
         <div class="grid grid-cols-12">
             <div class="container mx-auto col-span-12 sm:col-span-6 mt-0 sm:mt-0 sm:order-1">
-                <form id="store-billing-form" action="https://admin.glosense.in/api/v1/order/store">
+                <form id="store-billing-form" action="https://admin.glosense.in/api/v2/order/store">
                     <div class="grid grid-cols-2 gap-5">
                         <div class="">
                             <input type="hidden" v-model="promocodeid" name="promocode_id" id="">
