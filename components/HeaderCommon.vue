@@ -103,9 +103,9 @@ onUnmounted(() => {
             class="px-4 py-1 rounded-md bg-primary text-white hover:bg-[#915446fc]">
             Login
           </button>
-          <a v-show="loggedIn" href="/register"><button class="px-4 py-1 rounded-md bg-secondary text-white ml-2">
+          <!-- <a v-show="loggedIn" href="/register"><button class="px-4 py-1 rounded-md bg-secondary text-white ml-2">
               Register
-            </button></a>
+            </button></a> -->
         </div>
         <a href="/product-detail"><span class="text-sm sm:hidden font-semibold text-black"><svg width="30" height="30"
               viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

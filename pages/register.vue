@@ -63,8 +63,6 @@ async function sendOtp() {
 }
 
 async function verifyOtp() {
-
-
     await useFetch(`${apiUrl}/verify-sms-otp`, {
         method: "POST",
         body: {
@@ -87,12 +85,6 @@ async function verifyOtp() {
             }
         },
     })
-
-
-
-
-
-
 }
 
 async function handleSubmit() {

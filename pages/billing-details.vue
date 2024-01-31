@@ -123,7 +123,7 @@ async function verifyPromoCode() {
 <template>
     <HeaderCommon />
     <div class="product-details px-3 md:px-8  mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
-        <h2 class="text-secondary text-2xl font-bold text-center py-10">1</h2>
+        <h2 class="text-secondary text-2xl font-bold text-center py-10">Billing Page</h2>
         <div class="grid grid-cols-12">
             <div class="container mx-auto col-span-12 sm:col-span-6 mt-0 sm:mt-0 sm:order-1">
                 <form id="store-billing-form" action="https://admin.glosense.in/api/v1/order/store">

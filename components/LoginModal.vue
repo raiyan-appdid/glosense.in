@@ -1,7 +1,12 @@
 <script setup>
 import Swal from 'sweetalert2';
+import Notiflix from 'notiflix';
 
 const email = ref("");
+const phone = ref();
+const otp = ref();
+const otpVerified = ref(false);
+const otpSent = ref(false);
 const password = ref("");
 const token = useCookie('token');
 
@@ -12,6 +17,63 @@ const { getUser } = store;
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
 
+async function sendOtp() {
+    await useFetch(`${apiUrl}/sms`, {
+        method: "POST",
+        body: {
+            phone: phone.value
+        },
+        headers: {
+            accept: "application/json"
+        },
+        onResponse({ request, response, options }) {
+            console.log(response._data.message);
+            const statusCode = response.status;
+            if (statusCode == 200) {
+                Notiflix.Notify.success("Otp Sent To your Mobile Number");
+                otpSent.value = true;
+                otpInputEnable.value = true;
+            }
+            else {
+                Notiflix.Notify.failure(response._data.message);
+            }
+        },
+    })
+}
+
+async function verifyOtp() {
+
+    if (otp.value.toString().length > 5) {
+        await useFetch(`${apiUrl}/verify-sms-otp`, {
+            method: "POST",
+            body: {
+                phone: phone.value,
+                otp: otp.value
+            },
+            headers: {
+                accept: "application/json"
+            },
+            onResponse({ request, response, options }) {
+                console.log(response._data);
+                const statusCode = response.status;
+                if (statusCode == 200) {
+                    if (response._data.valid) {
+                        Notiflix.Notify.success("Otp Verified");
+                        login();
+                        // otpVerified.value = true;
+                        Notiflix.loading.standard();
+
+                    } else {
+                        otpVerified.value = false;
+                        Notiflix.Notify.failure("Otp is not valid");
+                    }
+                }
+            },
+        })
+    } else {
+        otpVerified.value = false;
+    }
+}
 
 function closeModal() {
     let modal = document.getElementById('authentication-modal')
@@ -19,14 +81,14 @@ function closeModal() {
 }
 
 async function login() {
-    await useFetch(`${apiUrl}/user/login`, {
+    await useFetch(`${apiUrl}/user/login-sms`, {
         method: 'POST',
         headers: {
             accept: "application/json",
         },
         body: {
-            email: email.value,
-            password: password.value,
+            phone: phone.value,
+            // password: password.value,
         },
         onResponse({ request, response, options }) {
             if (response._data.success) {
@@ -74,23 +136,29 @@ async function login() {
                     <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h3>
                     <form class="space-y-6" @submit.prevent="login">
                         <div>
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                                email</label>
-                            <input type="email" name="email" id="email" v-model="email"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                                placeholder="name@company.com" required>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile
+                                Number</label>
+                            <!-- <div class="flex"> -->
+                            <input type="number" name="phone" id="phone" v-model="phone"
+                                class="bg-gray-50 border border-gray-300 w-full text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                required>
+                            <button @click="sendOtp" type="button"
+                                class="text-white w-full  bg-primary rounded-lg px-4 mt-3 py-2">send
+                                otp</button>
+                            <!-- </div> -->
                         </div>
-                        <div>
-                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                                password</label>
-                            <input type="password" name="password" id="password" placeholder="••••••••" v-model="password"
+                        <div v-if="otpSent">
+                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter
+                                OTP</label>
+                            <input type="number" name="otp" id="otp" v-model="otp" @keyup="verifyOtp"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                 required>
                         </div>
                         <button type="submit"
-                            class="w-full text-white  bg-secondary  font-medium rounded-lg text-sm px-5 py-2.5 text-center">Login
+                            class="w-full text-white  bg-secondary  font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                            v-show="otpVerified">Login
                             to your account</button>
-                        <div class="flex justify-between">
+                        <!-- <div class="flex justify-between">
                             <div class="flex items-start">
                                 <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
                                     Not registered? <a href="/register"
@@ -102,7 +170,7 @@ async function login() {
                             <a href="/forgot-password"
                                 class="text-sm text-blue-700 hover:underline dark:text-blue-500">Forgot
                                 Password?</a>
-                        </div>
+                        </div> -->
                     </form>
                 </div>
             </div>
