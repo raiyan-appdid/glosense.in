@@ -141,10 +141,10 @@ onUnmounted(() => {
               class="flex ml-9 bg-secondary w-fit items-center p-2 text-bold rounded-lg text-neutral-50 hover:bg-[#e3694f] group">
               Login
             </a>
-            <a href="/register" v-show="loggedIn"
+            <!-- <a href="/register" v-show="loggedIn"
               class="flex ml-2 bg-[#e3694f] w-fit items-center p-2 text-bold rounded-lg text-neutral-50 hover:bg-[#e3694f] group">
               Register
-            </a>
+            </a> -->
             <p class="flex ml-10 items-center" v-show="!loggedIn">
               {{ store.name }}
               <LogOut :loggedIn="loggedIn" />
