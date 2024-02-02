@@ -248,6 +248,8 @@ async function login() {
                     <span class="sr-only">Close modal</span>
                 </button>
                 <div class="px-6 py-6 lg:px-8">
+                    <h3 class=" text-4xl font-bold mb-4 text-primary text-center">Login
+                    </h3>
                     <h3 class=" text-xl font-medium text-gray-900 text-center" v-if="!otpSent">Welcome To Glosense !
                     </h3>
                     <h6 class="mb-4 text-md font-medium text-gray-900  text-center" v-if="!otpSent">Enter your mobile number
