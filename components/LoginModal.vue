@@ -314,8 +314,12 @@ async function login() {
                                 </div>
                                 <input type="number" pattern="[0-9]*" maxlength="10" placeholder="Mobile Number"
                                     v-model="phone"
-                                    class="block mb-10 w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
+                                    class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
                                     required>
+                            </div>
+
+                            <div class="relative text-end my-4 flex justify-end" v-if="!otpSent">
+                                <GoogleLoginButton />
                             </div>
 
 

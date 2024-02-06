@@ -295,10 +295,10 @@ async function getUser() {
                             /-</span>
                         <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
                     </div>
-                    <div>
+                    <!-- <div>
                         <p class="font-semibold">(Apply Promo code to Save Rs. 329 /-)</p>
-                    </div>
-                    <div class="flex">
+                    </div> -->
+                    <!-- <div class="flex">
                         <div class="flex flex-col justify-center">
                             <div class="mt-3">
                                 <span
@@ -310,9 +310,8 @@ async function getUser() {
                                 <span v-else
                                     class="ml-3 my-auto py-1 px-2 bg-secondary rounded-xl cursor-pointer">Applied</span>
                             </div>
-                            <!-- <span class="py-0.5 px-2  mt-3 rounded-lg bg-white inline-block w-fit">Save Rs. 329 /-</span> -->
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <div class="flex">
                         <p class="text-primary font-medium text-lg mt-3">( Get it at <span class="text-secondary">Rs.
                                 870</span> - apply "FIRSTJAR" promo code)</p>
@@ -997,7 +996,8 @@ async function getUser() {
                                 Are there any side effects associated with Glosense Lifecare Pvt Ltd?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
-                                <p>At Glosense Lifecare Pvt Ltd, we care about your well-being. Our Glosense Lifecare Pvt Ltd is plant-based and designed
+                                <p>At Glosense Lifecare Pvt Ltd, we care about your well-being. Our Glosense Lifecare Pvt
+                                    Ltd is plant-based and designed
                                     for a healthy lifestyle.But incarse if you ever experience discomfort, contact us at
                                     <a href="mailto:connect@glosense.in">connect@glosense.in</a>. We're here to help.
                                 </p>
@@ -1039,7 +1039,8 @@ async function getUser() {
                                 What is Glosense Lifecare Pvt Ltd, and how does it work?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
-                                <p>At Glosense Lifecare Pvt Ltd we are a nutraceutical brand, we're all about enhancing your well-being
+                                <p>At Glosense Lifecare Pvt Ltd we are a nutraceutical brand, we're all about enhancing your
+                                    well-being
                                     through nature's gifts. Our plant-based superblends offer a holistic approach to health,
                                     elevating your hair, skin, gut, and stress management.We encourage you to explore the
                                     world of

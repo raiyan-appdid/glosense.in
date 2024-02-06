@@ -84,11 +84,16 @@ onUnmounted(() => {
           <p class="flex items-center" v-show="!loggedIn">
             {{ store.name }}
             <LogOut :loggedIn="loggedIn" />
+          <p class="bg-secondary text-white rounded-md p-1 ml-2 cursor-pointer"><a href="/product-detail">Shop Now</a>
           </p>
-          <button @click="openModal" v-show="loggedIn"
-            class="px-4 py-1 rounded-md bg-primary text-white hover:bg-[#915446fc]">
-            Login
-          </button>
+          </p>
+          <div class="flex" v-show="loggedIn">
+            <button @click="openModal" class="px-4 py-1 rounded-md bg-primary text-white hover:bg-[#915446fc]">
+              Login
+            </button>
+            <p class="bg-secondary text-white rounded-md p-1 ml-2 cursor-pointer"><a href="/product-detail">Shop Now</a>
+            </p>
+          </div>
           <!-- <a v-show="loggedIn" href="/register"><button class="px-4 py-1 rounded-md bg-secondary text-white ml-2">
               Register
             </button></a> -->

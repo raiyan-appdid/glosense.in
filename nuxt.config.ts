@@ -24,11 +24,38 @@ export default defineNuxtConfig({
     },
   },
 
+  head: {
+    script: [
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-697HG0FS5T",
+        async: true,
+      },
+      {
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-697HG0FS5T');
+        `,
+        type: "text/javascript",
+      },
+    ],
+  },
+
   devtools: { enabled: false },
   pages: true,
   css: ["@/assets/css/main.css"],
 
-  modules: ["@nuxtjs/tailwindcss", "nuxt3-meta-pixel", "@pinia/nuxt"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "nuxt3-meta-pixel",
+    "@pinia/nuxt",
+    "nuxt-vue3-google-signin",
+  ],
+  googleSignIn: {
+    clientId:
+      "33151309923-ra30at2ld1r630d742p7k4lfgmc6d3bc.apps.googleusercontent.com",
+  },
   facebook: {
     track: "PageView",
     pixelId: "207758315679521",
