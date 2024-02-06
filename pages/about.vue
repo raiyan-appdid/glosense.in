@@ -56,7 +56,7 @@ onMounted(function () {
       </div>
       <div class="header">
         <h2 class="text-center text-3xl md:5xl px-5 font-bold text-secondary mt-6 mb-5">
-          We deeply have faith in.. sedf
+          We deeply have faith in..
         </h2>
       </div>
       <div class="text-center mx-auto flex flex-col lg:flex-row justify-center gap-4">
