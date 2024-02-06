@@ -24,24 +24,6 @@ export default defineNuxtConfig({
     },
   },
 
-  head: {
-    script: [
-      {
-        src: "https://www.googletagmanager.com/gtag/js?id=G-697HG0FS5T",
-        async: true,
-      },
-      {
-        innerHTML: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-697HG0FS5T');
-        `,
-        type: "text/javascript",
-      },
-    ],
-  },
-
   devtools: { enabled: false },
   pages: true,
   css: ["@/assets/css/main.css"],
