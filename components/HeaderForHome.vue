@@ -56,7 +56,9 @@ onUnmounted(() => {
         <span class="inline-block">
           <!-- <ChristmasBell /> -->
         </span>
-        <span class="my-auto py-auto">NEW YEAR OFFER IS ON✨</span>
+        <span class="my-auto py-auto">
+          <HeadingText />
+        </span>
         <span class="inline-block">
           <!-- <ChristmasBell /> -->
         </span>

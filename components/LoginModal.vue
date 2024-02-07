@@ -318,7 +318,10 @@ async function login() {
                                     required>
                             </div>
 
-                            <div class="relative text-end my-4 flex justify-end" v-if="!otpSent">
+                            <p class="my-2 text-center" v-if="!otpSent">- or-</p>
+                            <div class="relative text-end my-4 flex justify-center" v-if="!otpSent">
+
+
                                 <GoogleLoginButton />
                             </div>
 

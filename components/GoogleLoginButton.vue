@@ -51,8 +51,8 @@ async function loginWithEmail(myToken: string) {
 </script>
 
 <template>
-    <button :disabled="!isReady" type="button" @click="() => login()" class="my-auto flex text-end border p-2">
-    <!-- <button :disabled="!isReady" type="button" class="my-auto flex text-end border p-2 "> -->
+    <button :disabled="!isReady" type="button" @click="() => login()" class="my-auto flex text-end border p-2 rounded-xl">
+        <!-- <button :disabled="!isReady" type="button" class="my-auto flex text-end border p-2 "> -->
         <span class="inline-block my-auto">
             <svg width="30" height="30" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#fff"
