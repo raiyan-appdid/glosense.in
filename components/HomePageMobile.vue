@@ -260,32 +260,32 @@ onMounted(() => {
         opacity: 1,
     }, "<")
 
-    tlHeroResponsive.from('.vitamin-custom-3-responsive', {
-        x: -500,
-        duration: 6,
-        opacity: 0,
-    }, "<")
-    tlHeroResponsive.from('.calcium-custom-3-responsive', {
-        x: 500,
-        duration: 6,
-        opacity: 0,
-    }, "<")
+    // tlHeroResponsive.from('.vitamin-custom-3-responsive', {
+    //     x: -500,
+    //     duration: 6,
+    //     opacity: 0,
+    // }, "<")
+    // tlHeroResponsive.from('.calcium-custom-3-responsive', {
+    //     x: 500,
+    //     duration: 6,
+    //     opacity: 0,
+    // }, "<")
 
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 4,
         rotation: 1800,
     }, "+=5")
 
-    tlHeroResponsive.to('.vitamin-custom-3-responsive', {
-        x: 1000,
-        duration: 2,
-        opacity: 0,
-    }, "<")
-    tlHeroResponsive.to('.calcium-custom-3-responsive', {
-        x: -1000,
-        duration: 2,
-        opacity: 0,
-    }, "<")
+    // tlHeroResponsive.to('.vitamin-custom-3-responsive', {
+    //     x: 1000,
+    //     duration: 2,
+    //     opacity: 0,
+    // }, "<")
+    // tlHeroResponsive.to('.calcium-custom-3-responsive', {
+    //     x: -1000,
+    //     duration: 2,
+    //     opacity: 0,
+    // }, "<")
 
     // tlHeroResponsive.from('.a', {
     //     duration: 6,
@@ -567,10 +567,10 @@ onMounted(() => {
                     class="text-5xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-2-responsive text-primary bg-transparent inset-x-0">
                     Balance
                 </h1>
-                <h1
+                <!-- <h1
                     class="text-5xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-3-responsive text-primary bg-transparent inset-x-0">
                     Enhance
-                </h1>
+                </h1> -->
                 <h1
                     class="text-5xl font-extrabold flex justify-center absolute -top-[100px] vitamin-custom-4-responsive text-primary bg-transparent inset-x-0">
                     Reduce
@@ -596,10 +596,10 @@ onMounted(() => {
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     Hair Growth
                 </h1>
-                <h1 class="text-5xl font-extrabold flex justify-center absolute w-screen -bottom-[100px] calcium-custom-3-responsive text-emerald-800  bg-transparent "
+                <!-- <h1 class="text-5xl font-extrabold flex justify-center absolute w-screen -bottom-[100px] calcium-custom-3-responsive text-emerald-800  bg-transparent "
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     Follicle Health
-                </h1>
+                </h1> -->
                 <h1 class="text-5xl font-extrabold flex justify-center absolute w-screen -bottom-[100px] calcium-custom-4-responsive text-emerald-800  bg-transparent "
                     style="text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),-1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);">
                     Hair Loss
@@ -700,7 +700,7 @@ onMounted(() => {
                         <img class="rounded-xl" src="/images/last-image.jpg" alt="">
 
                     </div>
-                    <p class="text-secondary text-justify text-xl font-bold">Hair-You-Glo revitalises your hair health and
+                    <p class="text-secondary text-justify font-bold">Hair-You-Glo revitalises your hair health and
                         restores lost confidence related to hair concerns. Your hair is a vital part of your presentation
                         and personality, and Hair-You-Glo ensures you radiate self-assurance in every interaction.
                         Introducing our expertly crafted hair health betterment product, carefully with a blend of nature's
@@ -708,7 +708,7 @@ onMounted(() => {
                         Pomegranate extract, Grape seed, Fenugreek seeds extract and more.
                     </p>
                     <br />
-                    <p class="text-secondary text-xl text-justify font-bold">Hair-You-Glo is a product formulated in such a
+                    <p class="text-secondary text-justify font-bold">Hair-You-Glo is a product formulated in such a
                         way that helps you improve your hair health by containing much required nutrients & vitamins in it.
                         Experience the power of nature in every element of Hair-You-Glo. Elevate your hair health with a
                         blend of carefully selected natural ingredients. Make Hair-You-Glo your daily partner in nurturing

@@ -215,7 +215,7 @@ async function getUser() {
         </span>
     </a>
 
-    <div class="product-details px-6 md:px-8  mt-24 pt-4 sm:mt-24 pb-20 bg-[#efe8df]">
+    <div class="product-details px-6 md:px-8  mt-24 pt-4 sm:mt-24 pb-0 bg-[#efe8df]">
         <!-- <h2 class="text-secondary text-2xl font-bold text-center py-2">Product</h2> -->
         <div class="container mx-auto sm:pt-4">
             <div class="grid grid-cols-12 mt-2 sm:gap-4">
@@ -223,17 +223,13 @@ async function getUser() {
                     <ProductImage />
                 </div>
                 <div class="col-span-12 sm:col-span-7">
-                    <h2 class="font-extrabold text-secondary text-4xl mt-4 ">HAIR YOU GLO</h2>
-                    <!-- <h2 class="font-semibold text-black text-xl">FOR HEALTHY & STRONG HAIR</h2> -->
-                    <p class="font-semibold text-lg my-2">YOUR GO-TO SOLUTION FOR HEALTHY & STRONGER HAIR
+                    <p class="font-bold sm:text-lg text-xs my-3">YOUR GO-TO SOLUTION FOR HEALTHY & STRONGER HAIR
                     </p>
-                    <div class="flex">
-                        <span class="">Jar-120g (30 servings)</span>
-                    </div>
+                    <h2 class="font-extrabold text-secondary sm:text-4xl text-xl  ">HAIR-YOU-GLO</h2>
+                    <!-- <h2 class="font-semibold text-black text-xl">FOR HEALTHY & STRONG HAIR</h2> -->
+
                     <div class="flex my-0">
-                        <span class="text-lg font-semibold mr-2">{{ globalStar }}</span>
-
-
+                        <!-- <span class="text-lg font-semibold mr-2">{{ globalStar }}</span> -->
                         <div class="Stars block" :style="{ '--rating': globalStar }"
                             aria-label="Rating of this product is 2.3 out of 5.">
                         </div>
@@ -248,7 +244,7 @@ async function getUser() {
                                 <path fill="white" stroke="black" stroke-width="0.3"
                                     d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                             </svg></span> -->
-                        <span class="text-lg font-semibold ml-2"> {{ globalReviews }} Reviews</span>
+                        <span class="text-sm font-semibold ml-1"> {{ globalReviews }} reviews</span>
 
 
 
@@ -285,15 +281,28 @@ async function getUser() {
                             </svg></span> -->
                         <!-- <span class="text-2xl font bold my-auto ml-2">10 Reviews</span> -->
                     </div>
+
+
+                    <div class="mt-4">
+                        <p class=""><s>₹ 1299.00</s></p>
+                    </div>
                     <div class="flex">
-                        <span v-if="!promocodeVerified" class="font-extrabold text-primary mt-3 text-3xl mr-9">Rs. {{ 1299
+                        <span class=" text-primary text-3xl"><span class="font-semibold">₹</span> <span
+                                class="font-extrabold">970.00</span></span>
+                        <span class="my-auto text-sm bg-secondary text-white ml-1 px-1">25% off</span>
+                        <!-- <span v-if="!promocodeVerified" class="font-extrabold text-primary mt-3 text-3xl mr-9">Rs. {{ 1299
                             -
                             promocodeDiscount }}
                             /-</span>
                         <span v-else class="font-extrabold text-secondary mt-3 text-3xl mr-9">Rs. {{ 1299 -
                             promocodeDiscount }}
                             /-</span>
-                        <!-- <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
+                        <span class="font-extrabold text-secondary mt-6 text-3xl">870</span> -->
+                    </div>
+
+
+                    <div class="flex">
+                        <span class="text-gray-500">Jar-120g (30 servings)</span>
                     </div>
                     <!-- <div>
                         <p class="font-semibold">(Apply Promo code to Save Rs. 329 /-)</p>
@@ -317,19 +326,19 @@ async function getUser() {
                                 870</span> - apply "FIRSTJAR" promo code)</p>
                     </div> -->
                     <div class="flex mt-6">
-                        <button @click="openModal"
-                            class="bg-secondary mr-5 text-white text-xl font-bold border  py-3 px-7 transition ease-in-out  hover:-translate-y-1 delay-75 hover:scale-110 hover:bg-black hover:text-white duration-500">BUY
-                            NOW</button>
-                        <span class="my-auto bg-primary px-3 text-white py-1 ml-1 cursor-pointer"
-                            @click="decrementCount">-</span>
+                        <button
+                            class="my-auto bg-white text-secondary ml-4 px-4 font-extrabold rounded-l-lg border-r-0 border-2 border-secondary text-2xl py-2 cursor-pointer"
+                            @click="decrementCount">-</button>
                         <input type="number" v-model="counter"
-                            class="w-[3rem] text-2xl text-center border bg-secondary text-white hover:border-secondary border-3 focus:outline-none"
+                            class="w-[2rem] text-xl font-bold text-center border-r-0 border-l-0 border-2 border-secondary bg-white text-secondary hover:border-secondary focus:outline-none"
                             name="" id="">
-                        <span class="my-auto bg-primary px-3 cursor-pointer text-white py-1 mr-1"
-                            @click="incrementCount">+</span>
-
+                        <button
+                            class="my-auto bg-white px-4 cursor-pointer rounded-r-lg text-secondary border-l-0 border-2 border-secondary py-2 mr-4 font-bold text-2xl"
+                            @click="incrementCount">+</button>
+                        <button @click="openModal"
+                            class="bg-secondary mr-5 rounded-lg text-white text-xl  font-bold border  py-2 px-7 transition ease-in-out w-full sm:w-fit  hover:-translate-y-1 delay-75 hover:scale-110 hover:bg-black hover:text-white duration-500">BUY
+                            NOW</button>
                     </div>
-
                 </div>
             </div>
             <div class="my-10 sm:block hidden">
@@ -353,9 +362,10 @@ async function getUser() {
                     id=""><button class="bg-white text-black my-auto text-sm font-extrabold p-2">ADD
                     COMMENT</button>
             </div> -->
+            <Accordion />
 
 
-            <div class="container mx-auto my-10 sm:my-5">
+            <!-- <div class="container mx-auto my-10 sm:my-5">
                 <div class="grid grid-cols-12 mb-9 sm:mb-0">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest text-secondary">HELPS IN: </h2>
@@ -371,7 +381,6 @@ async function getUser() {
                         </p>
                     </div>
                     <div class="sm:col-span-5 col-span-12 order-1 sm:flex sm:justify-end sm:order-2">
-                        <!-- <img src="/images/product-details1.png" class="sm:w-2/4 w-4/6 mx-auto" alt=" " /> -->
                         <img src="/images/product/product-details-4.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
                     </div>
                 </div>
@@ -409,9 +418,6 @@ async function getUser() {
                 </div>
 
                 <div class="my-10 sm:my-1">
-                    <!-- <div class="sm:col-span-5 col-span-12">
-                        <img src="/images/product/product-details-5.png" class="sm:w-2/4 w-4/6 mx-auto" alt="" />
-                    </div> -->
                     <div class="">
                         <h2 class="font-extrabold text-3xl tracking-widest text-secondary text-center my-3">STORAGE TIP:
                         </h2>
@@ -423,9 +429,9 @@ async function getUser() {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="container mx-auto">
+            <!-- <div class="container mx-auto">
                 <h2 class="text-center text-3xl font-extrabold text-secondary mt-10 mb-3">HOW IT WORKS:</h2>
                 <h3 class=" text-2xl font-bold ">-Effectively suppress DHT🌿:</h3>
                 <p class="text-xl">Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood
@@ -450,7 +456,7 @@ async function getUser() {
                     hair thinning
                     and breakage.
                 </p>
-            </div>
+            </div> -->
 
             <div class="container mx-auto">
                 <h2 class="text-center text-3xl font-extrabold text-secondary mt-10 mb-3">WHAT’S IN IT?</h2>
@@ -497,15 +503,6 @@ async function getUser() {
                     hair growth, and boosts collagen production for enhanced hair elasticity.
                 </p>
             </div>
-            <!-- <div class="container py-5">
-                <h2 class=" text-3xl font-extrabold text-secondary">Disclaimer:
-                </h2>
-                <h3 class=" text-2xl font-bold ">Take 1 serving daily or as directed by a healthcare professional. Store in
-                    a cool, dry, dark place. Keep out of reach of children. Do not exceed recommended daily usage. Not
-                    recommended during pregnancy. This product is not intended to diagnose, treat, cure, or prevent any
-                    disease.
-                </h3>
-            </div> -->
         </div>
 
 
@@ -520,13 +517,21 @@ async function getUser() {
                 <div class="review">
                     <h2 class="text-secondary text-center font-bold text-4xl my-10">Customer Reviews</h2>
 
-                    <!-- <div class="grid grid-cols-12 gap-5">
-                        <div class="col-span-12 sm:col-span-4 ">
-                            <img class="w-3/4 mx-auto" src="/images/jar2.png" alt="" />
+                    <div class="grid grid-cols-12 gap-5">
+                        <div class="col-span-3 sm:col-span-3 m-auto">
+                            <div class="flex justify-center"> <span
+                                    class="text-secondary font-extrabold text-xl sm:text-2xl">{{ globalStar }}</span>
+                                <span class="inline"><svg width="25" height="25" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#f1917b" stroke="#f1917b" stroke-width="0.3"
+                                            d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                                    </svg></span>
+                            </div>
+                            <span class="text-xs sm:text-lg font-semibold">{{ reviewCount }} Reviews</span>
+                            <!-- <img class="w-3/4 mx-auto" src="/images/jar2.png" alt="" /> -->
                         </div>
-                        <div class="col-span-12 sm:col-span-8 my-auto">
-                            <h2 class="font-bold text-xl">Hair you glo for Healthy & Strong Hair</h2>
-                            <div class="flex my-2">
+                        <div class="col-span-6 sm:col-span-6">
+                            <div class="flex">
                             </div>
                             <div class="stars-slider w-full flex items-center">
                                 <span class="my-auto text-xs font-bold">5</span>
@@ -538,8 +543,8 @@ async function getUser() {
                                 <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
                                     <div class="h-2 w-4/4 my-auto bg-primary rounded-lg"></div>
                                 </div>
-                                <span class="text-xs ml-3 mr-1">4000+</span>
-                                <span class="text-xs font-bold">Vote</span>
+                                <span class="text-xs ml-3 mr-1">23</span>
+                                <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
                                 <span class="my-auto text-xs font-bold">4</span>
@@ -551,8 +556,8 @@ async function getUser() {
                                 <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
                                     <div class="h-2 w-3/4 my-auto bg-primary rounded-lg"></div>
                                 </div>
-                                <span class="text-xs ml-3 mr-1">3500+</span>
-                                <span class="text-xs font-bold">Vote</span>
+                                <span class="text-xs ml-3 mr-1">12</span>
+                                <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
                                 <span class="my-auto text-xs font-bold">3</span>
@@ -564,8 +569,8 @@ async function getUser() {
                                 <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
                                     <div class="h-2 w-2/4 my-auto bg-primary rounded-lg"></div>
                                 </div>
-                                <span class="text-xs ml-3 mr-1">2000+</span>
-                                <span class="text-xs font-bold">Vote</span>
+                                <span class="text-xs ml-3 mr-1">20</span>
+                                <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
                                 <span class="my-auto text-xs font-bold">2</span>
@@ -577,8 +582,8 @@ async function getUser() {
                                 <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
                                     <div class="h-2 w-1/3 my-auto bg-primary rounded-lg"></div>
                                 </div>
-                                <span class="text-xs ml-3 mr-1">1200+</span>
-                                <span class="text-xs font-bold">Vote</span>
+                                <span class="text-xs ml-3 mr-1">36</span>
+                                <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
                                 <span class="my-auto text-xs font-bold">1</span>
@@ -590,17 +595,28 @@ async function getUser() {
                                 <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
                                     <div class="h-2 w-1/5 my-auto bg-primary rounded-lg"></div>
                                 </div>
-                                <span class="text-xs ml-3 mr-1">400+</span>
-                                <span class="text-xs font-bold">Vote</span>
+                                <span class="text-xs ml-3 mr-1">54</span>
+                                <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                         </div>
-                    </div> -->
+                        <div class="col-span-3 sm:col-span-3 ">
+                            <!-- <img class="w-3/4 mx-auto" src="/images/jar2.png" alt="" /> -->
+                            <div class="flex flex-col justify-center items-center my-auto">
+                                <span
+                                    class="text-white bg-primary text-xs sm:text-md  sm:px-2 text-center py-1 rounded w-fit">Write
+                                    a
+                                    review</span>
+                                <textarea type="text" placeholder="Type something"
+                                    class="h-12 sm:w-3/4 rounded mt-4 p-2 text-sm w-full" name="" id=""></textarea>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- <h2 class="text-secondary text-center text-2xl font-bold my-10">Comments</h2> -->
 
 
 
-                    <div class="container mx-auto">
+                    <div class="container mx-auto mt-10">
                         <!-- <div v-for="data in review">
                             {{ data.title }}
                             {{ data.description }}
@@ -614,8 +630,8 @@ async function getUser() {
                             <div class="col-span-12 sm:col-span-5">
                                 <div class="flex">
                                     <!-- <img src="https://i.pravatar.cc/40" class="rounded-full" alt=""> -->
-                                    <div class="ml-4">
-                                        <h5 class="font-bold text-lg">{{ data.title }}</h5>
+                                    <span class="w-10 h-10 rounded-full bg-secondary my-auto"></span>
+                                    <div class="ml-1">
                                         <div class="flex">
                                             <span v-for="    count     in     parseInt(data.star)    "><svg width="15"
                                                     height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -628,6 +644,7 @@ async function getUser() {
                                                         d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                                 </svg></span>
                                         </div>
+                                        <h5 class="font-bold text-md">{{ data.title }}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -815,7 +832,9 @@ async function getUser() {
                         </div> -->
                     </div>
 
-                    <h2 class="text-secondary text-center text-3xl font-bold mt-10 mb-2">HAVE DOUBT’S? <br />
+
+
+                    <!-- <h2 class="text-secondary text-center text-3xl font-bold mt-10 mb-2">HAVE DOUBT’S? <br />
                         WE HAVE GOT ANSWERS TO THEM!!
                     </h2>
 
@@ -1052,11 +1071,37 @@ async function getUser() {
                                 </p>
                             </div>
                         </details>
-                    </div>
+                    </div> -->
                 </div>
+
             </div>
+
         </div>
 
+
+    </div>
+    <div class="bg-[#efe8df]">
+        <div class="mx-auto bg-secondary">
+            <div class="flex">
+                <div class="flex p-4">
+                    <button
+                        class="my-auto bg-secondary text-white ml-4 px-4 font-extrabold rounded-l-lg border-r-0 border-2 border-white text-2xl py-2 cursor-pointer"
+                        @click="decrementCount">-</button>
+                    <input type="number" v-model="counter"
+                        class="w-[2rem] text-xl font-bold  text-center border-r-0 border-l-0 border-2 border-white bg-secondary text-white hover:border-white focus:outline-none"
+                        name="" id="">
+                    <button
+                        class="my-auto bg-secondary px-4 cursor-pointer rounded-r-lg text-white border-l-0 border-2 border-white py-2 mr-4 font-bold text-2xl"
+                        @click="incrementCount">+</button>
+                </div>
+                <div class="flex">
+
+                </div>
+                <button @click="openModal"
+                    class="bg-white mr-5  rounded-lg text-secondary text-md sm:text-xl  font-bold border px-3 py-1 m-5 sm:py-2 sm:px-7 transition ease-in-out w-full sm:w-fit  duration-500">BUY
+                    NOW</button>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -1068,10 +1113,10 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 :root {
-    --star-size: 30px;
+    --star-size: 20px;
     --star-color: #fff;
-    --star-background: #fc0;
-    --star-stroke-color: #000;
+    --star-background: #f1917b;
+    --star-stroke-color: #f1917b;
     /* Define the color of the stroke */
     --star-stroke-width: 1px;
     /* Define the width of the stroke */
@@ -1098,7 +1143,7 @@ input[type="number"]::-webkit-outer-spin-button {
     color: var(--star-stroke-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 1px 1px black !important;
+    text-shadow: 1px 1px #f1917b !important;
     /* text-shadow:
         0px 0px 0 var(--star-stroke-color),
         0px 0px 0 var(--star-stroke-color),
