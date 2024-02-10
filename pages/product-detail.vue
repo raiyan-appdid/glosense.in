@@ -364,7 +364,7 @@ async function getUser() {
             </div> -->
             <Accordion />
 
-            <div class="grid grid-cols-12 gap-4 my-8">
+            <!-- <div class="grid grid-cols-12 gap-4 my-8">
                 <div class="col-span-3">
                     <img src="/public/images/product/boss.jpg" alt="">
                 </div>
@@ -377,7 +377,7 @@ async function getUser() {
                 <div class="col-span-3">
                     <img src="/public/images/product/boss.jpg" alt="">
                 </div>
-            </div>
+            </div> -->
 
             <Tabs />
 
