@@ -364,6 +364,23 @@ async function getUser() {
             </div> -->
             <Accordion />
 
+            <div class="grid grid-cols-12 gap-4 my-8">
+                <div class="col-span-3">
+                    <img src="/public/images/product/boss.jpg" alt="">
+                </div>
+                <div class="col-span-3">
+                    <img src="/public/images/product/boss.jpg" alt="">
+                </div>
+                <div class="col-span-3">
+                    <img src="/public/images/product/boss.jpg" alt="">
+                </div>
+                <div class="col-span-3">
+                    <img src="/public/images/product/boss.jpg" alt="">
+                </div>
+            </div>
+
+            <Tabs />
+
 
             <!-- <div class="container mx-auto my-10 sm:my-5">
                 <div class="grid grid-cols-12 mb-9 sm:mb-0">
@@ -458,7 +475,7 @@ async function getUser() {
                 </p>
             </div> -->
 
-            <div class="container mx-auto">
+            <!-- <div class="container mx-auto">
                 <h2 class="text-center text-3xl font-extrabold text-secondary mt-10 mb-3">WHAT’S IN IT?</h2>
                 <h3 class=" text-2xl font-bold mt-4">-AMLA:</h3>
                 <p class="text-xl">Indian Gooseberry better known as Amla, contains Vitamin C, which is helpful to boost
@@ -502,7 +519,7 @@ async function getUser() {
                     visible root-level
                     hair growth, and boosts collagen production for enhanced hair elasticity.
                 </p>
-            </div>
+            </div> -->
         </div>
 
 
