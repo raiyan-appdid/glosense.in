@@ -359,6 +359,21 @@ async function getUser() {
                                 ₹200</span>
                         </div>
 
+                        <div class="grid grid-cols-12 mt-4">
+                            <div class="col-span-6">
+                                <p>Free Shipping Across India</p>
+                            </div>
+                            <div class="col-span-6">
+                                <div class="flex"> <span class="inline-block"><svg width="25" height="25"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="#eab508"
+                                                d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                                        </svg></span>{{ globalStar }}/5({{ reviewCount }}) </div>
+                            </div>
+                            <div class="col-span-12">
+                                <p>Delivery in 3-5 business days.</p>
+                            </div>
+                        </div>
                     </div>
 
 
@@ -588,7 +603,7 @@ async function getUser() {
                                 <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
                                     <div class="h-2 w-4/4 my-auto bg-primary rounded-lg"></div>
                                 </div>
-                                <span class="text-xs ml-3 mr-1">23</span>
+                                <!-- <span class="text-xs ml-3 mr-1">23</span> -->
                                 <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
@@ -601,7 +616,7 @@ async function getUser() {
                                 <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
                                     <div class="h-2 w-3/4 my-auto bg-primary rounded-lg"></div>
                                 </div>
-                                <span class="text-xs ml-3 mr-1">12</span>
+                                <!-- <span class="text-xs ml-3 mr-1">12</span> -->
                                 <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
@@ -614,7 +629,7 @@ async function getUser() {
                                 <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
                                     <div class="h-2 w-2/4 my-auto bg-primary rounded-lg"></div>
                                 </div>
-                                <span class="text-xs ml-3 mr-1">20</span>
+                                <!-- <span class="text-xs ml-3 mr-1">20</span> -->
                                 <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
@@ -627,7 +642,7 @@ async function getUser() {
                                 <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
                                     <div class="h-2 w-1/3 my-auto bg-primary rounded-lg"></div>
                                 </div>
-                                <span class="text-xs ml-3 mr-1">36</span>
+                                <!-- <span class="text-xs ml-3 mr-1">36</span> -->
                                 <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
@@ -640,7 +655,7 @@ async function getUser() {
                                 <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
                                     <div class="h-2 w-1/5 my-auto bg-primary rounded-lg"></div>
                                 </div>
-                                <span class="text-xs ml-3 mr-1">54</span>
+                                <!-- <span class="text-xs ml-3 mr-1">54</span> -->
                                 <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                         </div>
