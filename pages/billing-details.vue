@@ -64,6 +64,7 @@ function applyPromoCode() {
 
 nuxtApp.hook('page:finish', () => {
     // promocode.value = "firstjar";
+    applyPromoCode();
     verifyPromoCode();
 })
 
