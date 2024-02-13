@@ -14,7 +14,7 @@ function whatToExpectFunction() {
 
 </script>
 <template>
-    <div class="bg-primary px-1 py-4">
+    <div class="bg-[#fad5cf] px-1 py-4">
         <div class="flex justify-center">
             <p @click="whatsInItFunction"
                 :class="[{ 'p-2 bg-secondary text-white border border-secondary rounded text-lg font-bold cursor-pointer': whatInIt }, { 'p-2 text-black border border-secondary rounded text-lg font-bold mx-3 cursor-pointer': !whatInIt }]">
@@ -29,12 +29,13 @@ function whatToExpectFunction() {
         </div>
         <div class="whats-in-it" v-if="whatInIt">
             <div class="grid grid-cols-12 mt-4">
-                <div class="col-span-3 inline sm:flex justify-center">
-                    <img src="/public/images/Ingradients-04.png" class="w-full sm:w-2/6" alt="">
+                <div class="col-span-3 flex items-center justify-center">
+                    <img src="/public/images/Ingradients-04.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-bold">AMLA:</p>
-                    <p class="text-sm sm:text-xl">Indian Gooseberry better known as Amla, contains Vitamin C, which is
+                    <p class="text-sm sm:text-xl text-black">Indian Gooseberry better known as Amla, contains Vitamin C,
+                        which is
                         helpful to boost
                         collagen for
                         healthy hair and improves blood circulation to prevent dryness.</p>
@@ -42,12 +43,13 @@ function whatToExpectFunction() {
                 </div>
             </div>
             <div class="grid grid-cols-12 mt-4">
-                <div class="col-span-3 inline sm:flex justify-center">
-                    <img src="/public/images/Ingradients-07.png" class="w-full sm:w-2/6" alt="">
+                <div class="col-span-3 flex items-center justify-center">
+                    <img src="/public/images/Ingradients-07.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-bold">ORANGE:</p>
-                    <p class="text-sm sm:text-xl">A Citrus Fruit rich in vitamin E, an antioxidant that supports hair
+                    <p class="text-sm sm:text-xl text-black">A Citrus Fruit rich in vitamin E, an antioxidant that supports
+                        hair
                         follicles,
                         prevents
                         oxidative stress,
@@ -56,23 +58,25 @@ function whatToExpectFunction() {
                 </div>
             </div>
             <div class="grid grid-cols-12 mt-4">
-                <div class="col-span-3 inline sm:flex justify-center">
-                    <img src="/public/images/Ingradients-02.png" class="w-full sm:w-2/6" alt="">
+                <div class="col-span-3 flex items-center justify-center">
+                    <img src="/public/images/Ingradients-02.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-bold">POMEGRANATE:</p>
-                    <p class="text-sm sm:text-xl">Enhances hair elasticity, reduces breakage, and promotes growth for
+                    <p class="text-sm sm:text-xl text-black">Enhances hair elasticity, reduces breakage, and promotes growth
+                        for
                         healthier hair.
                     </p>
                 </div>
             </div>
             <div class="grid grid-cols-12 mt-4">
-                <div class="col-span-3 inline sm:flex justify-center">
-                    <img src="/public/images/Ingradients-03.png" class="w-full sm:w-2/6" alt="">
+                <div class="col-span-3 flex items-center justify-center">
+                    <img src="/public/images/Ingradients-03.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-bold">SEA BUCKTHORN:</p>
-                    <p class="text-sm sm:text-xl">Packed with omega fatty acids, reduces inflammation, nourishes scalp and
+                    <p class="text-sm sm:text-xl text-black">Packed with omega fatty acids, reduces inflammation, nourishes
+                        scalp and
                         follicles,
                         promotes hair growth,
                         and reduces hair loss.</p>
@@ -82,24 +86,26 @@ function whatToExpectFunction() {
 
         <div class="what-to-expect" v-else>
             <div class="grid grid-cols-12 mt-4">
-                <div class="col-span-3 inline sm:flex justify-center">
-                    <img src="/public/images/Ingradients-04.png" class="w-full sm:w-2/6" alt="">
+                <div class="col-span-3 flex items-center justify-center">
+                    <img src="/public/images/Ingradients-04.png" class="w-2/3 sm:w-2/6 " alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-bold">After 4 weeks:</p>
-                    <p class="text-sm sm:text-xl">Reduces hair fall and dandruff, minimises breakage and itchiness, while
+                    <p class="text-sm sm:text-xl text-black">Reduces hair fall and dandruff, minimises breakage and
+                        itchiness, while
                         nourishing hair
                         strands.</p>
 
                 </div>
             </div>
             <div class="grid grid-cols-12 mt-4">
-                <div class="col-span-3 inline sm:flex justify-center">
-                    <img src="/public/images/Ingradients-07.png" class="w-full sm:w-2/6" alt="">
+                <div class="col-span-3 flex items-center justify-center">
+                    <img src="/public/images/Ingradients-07.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-bold">After 8 weeks:</p>
-                    <p class="text-sm sm:text-xl">Reduces scalp inflammation and stress that leads to decreased hair fall,
+                    <p class="text-sm sm:text-xl text-black">Reduces scalp inflammation and stress that leads to decreased
+                        hair fall,
                         promoting
                         visible root-level
                         hair growth, and boosts collagen production for enhanced hair elasticity.</p>
@@ -107,12 +113,13 @@ function whatToExpectFunction() {
                 </div>
             </div>
             <div class="grid grid-cols-12 mt-4">
-                <div class="col-span-3 inline sm:flex justify-center">
-                    <img src="/public/images/Ingradients-02.png" class="w-full sm:w-2/6" alt="">
+                <div class="col-span-3 flex items-center justify-center">
+                    <img src="/public/images/Ingradients-02.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-bold">After 12 weeks:</p>
-                    <p class="text-sm sm:text-xl">Reduces scalp inflammation and stress that leads to decreased hair fall,
+                    <p class="text-sm sm:text-xl text-black">Reduces scalp inflammation and stress that leads to decreased
+                        hair fall,
                         promoting
                         visible root-level
                         hair growth, and boosts collagen production for enhanced hair elasticity.

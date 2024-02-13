@@ -10,9 +10,35 @@ onMounted(function () {
 </script>
 
 <template>
-    <div class="h-screen">
+    <div class="h-screen flex flex-col justify-center w-[100%] items-center bg-[#efe8df]">
+        <div>
+            <div>
+                <span>
+                    <svg class="w-[200px] text-center" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" stroke="#43a190" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M1.5 2.5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1h-2m-7-2v4m7-4v4m-7-2h5" />
+                            <path d="m4 9l2 1.5l3.5-4" />
+                        </g>
+                    </svg>
+                </span>
+            </div>
+
+        </div>
+        <div class="mt-10 w-full h-fit">
+            <p class="text-primary text-3xl font-bold text-center">Success!</p>
+            <p class="text-primary text-2xl mt-2 font-bold text-center">Your Product is on Its way</p>
+            <div class="flex justify-center mt-4">
+                <a href="/my-order" class="text-center bg-primary p-2 text-white text-lg rounded-lg">View your order</a>
+            </div>
+            <div class="flex justify-center mt-4">
+                <a href="/" class="text-center bg-[#ffff] p-2  text-black text-lg rounded-lg">Go back home</a>
+            </div>
+        </div>
+
+        <!-- 
         <h2 class="text-3xl text-center text-green-600 mt-52">Order Placed</h2>
-        <h2 class="text-center"><a class=" underline" href="/">Go To Home</a></h2>
+        <h2 class="text-center"><a class=" underline" href="/">Go To Home</a></h2> -->
     </div>
 </template>
 <style></style>

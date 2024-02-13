@@ -11,6 +11,7 @@ const review = ref([]);
 const reviewCount = ref(0);
 const globalStar = ref(5)
 const globalReviews = ref(5)
+const staticBuyNow = ref(false);
 
 const nuxtApp = useNuxtApp();
 onMounted(function () {
@@ -33,6 +34,19 @@ nuxtApp.hook('page:finish', () => {
 
 onMounted(() => {
     Notiflix.Loading.standard();
+
+
+    window.addEventListener('scroll', function () {
+
+        staticBuyNow.value = window.scrollY > 400;
+        // this.isScrolledToBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight;
+
+
+    });
+
+
+
+
 })
 
 async function getReviews() {
@@ -157,6 +171,10 @@ async function getUser() {
     });
 }
 
+function generateAvatarUrl(title) {
+    return `https://ui-avatars.com/api/?length=1&name=${title}`;
+}
+
 
 </script>
 
@@ -244,7 +262,7 @@ async function getUser() {
                                 <path fill="white" stroke="black" stroke-width="0.3"
                                     d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                             </svg></span> -->
-                        <span class="text-sm font-semibold ml-1"> {{ reviewCount }} reviews</span>
+                        <span class="text-sm font-semibold ml-1"> {{ globalStar }}({{ reviewCount }} reviews)</span>
 
 
 
@@ -284,12 +302,12 @@ async function getUser() {
 
 
                     <div class="mt-4">
-                        <p class=""><s>₹ 1299.00</s></p>
+                        <!-- <p class=""><s>₹ 1299.00</s></p> -->
                     </div>
                     <div class="flex">
                         <span class=" text-primary text-3xl"><span class="font-semibold">₹</span> <span
-                                class="font-extrabold">970.00</span></span>
-                        <span class="my-auto text-sm bg-secondary text-white ml-1 px-1">25% off</span>
+                                class="font-extrabold">1299.00</span></span>
+                        <!-- <span class="my-auto text-sm bg-secondary text-white ml-1 px-1">25% off</span> -->
                         <!-- <span v-if="!promocodeVerified" class="font-extrabold text-primary mt-3 text-3xl mr-9">Rs. {{ 1299
                             -
                             promocodeDiscount }}
@@ -341,7 +359,7 @@ async function getUser() {
                     </div>
 
                     <div class="">
-                        <p class="text-sm mt-4">UPI & Cards Accepted, Online approval in 2 minutes</p>
+                        <!-- <p class="text-sm mt-4">UPI & Cards Accepted, Online approval in 2 minutes</p> -->
                         <div class="border-2 border-dashed border-secondary grid grid-cols-12 p-3 mt-3">
                             <div class="col-span-6 flex"><span class="inline-block mr-2"><svg width="20" height="24"
                                         viewBox="0 0 20 24" fill="red" xmlns="http://www.w3.org/2000/svg">
@@ -353,25 +371,22 @@ async function getUser() {
                             </div>
                             <span class="col-span-6 text-secondary sm:text-lg font-semibold text-sm ">Use Code: <span
                                     class="font-extrabold">GET970</span></span>
-                            <span class="col-span-12 text-secondary mt-4 sm:text-lg font-semibold text-sm">*Add item to cart
-                                and save
-                                Extra
-                                ₹200</span>
+                            <span class="col-span-12 text-secondary mt-4 sm:text-lg font-semibold text-sm">Save ₹329</span>
                         </div>
 
                         <div class="grid grid-cols-12 mt-4">
-                            <div class="col-span-6">
+                            <div class="col-span-12">
                                 <p>Free Shipping Across India</p>
                             </div>
-                            <div class="col-span-6">
+                            <!-- <div class="col-span-6">
                                 <div class="flex"> <span class="inline-block"><svg width="25" height="25"
                                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path fill="#eab508"
                                                 d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                         </svg></span>{{ globalStar }}/5({{ reviewCount }}) </div>
-                            </div>
+                            </div> -->
                             <div class="col-span-12">
-                                <p>Delivery in 3-5 business days.</p>
+                                <p>Delivery in 3-6 business days.</p>
                             </div>
                         </div>
                     </div>
@@ -659,15 +674,15 @@ async function getUser() {
                                 <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                         </div>
-                        <div class="col-span-3 sm:col-span-3 ">
+                        <div class="col-span-12 sm:col-span-12 ">
                             <!-- <img class="w-3/4 mx-auto" src="/images/jar2.png" alt="" /> -->
                             <div class="flex flex-col justify-center items-center my-auto">
-                                <span
-                                    class="text-white bg-primary text-xs sm:text-md  sm:px-2 text-center py-1 rounded w-fit">Write
+                                <span class="text-white bg-primary px-2 sm:text-xl text-center py-1 rounded w-fit">Write
                                     a
                                     review</span>
                                 <textarea type="text" placeholder="Type something"
-                                    class="h-12 sm:w-3/4 rounded mt-4 p-2 text-sm w-full" name="" id=""></textarea>
+                                    class="h-18 rounded mt-4 p-2 text-sm border border-secondary w-full sm:w-2/3" name=""
+                                    id=""></textarea>
                             </div>
                         </div>
                     </div>
@@ -689,8 +704,8 @@ async function getUser() {
                         <div v-for="    data     in     review    " class="grid grid-cols-12 pb-4">
                             <div class="col-span-12 sm:col-span-5">
                                 <div class="flex">
-                                    <!-- <img src="https://i.pravatar.cc/40" class="rounded-full" alt=""> -->
-                                    <span class="w-10 h-10 rounded-full bg-secondary my-auto"></span>
+                                    <img :src="generateAvatarUrl(data.title)" class="w-12 rounded-full" alt="">
+                                    <!-- <span class="w-10 h-10 rounded-full bg-secondary my-auto"></span> -->
                                     <div class="ml-1">
                                         <div class="flex">
                                             <span v-for="    count     in     parseInt(data.star)    "><svg width="15"
@@ -1142,31 +1157,34 @@ async function getUser() {
     </div>
 
 
+    <transition name="fade">
+        <div class="bg-white fixed bottom-0 w-full" v-show="staticBuyNow">
+            <div class="mx-auto bg-secondary">
+                <div class="flex justify-center">
+                    <div class="flex p-4">
+                        <button
+                            class="my-auto bg-secondary text-white ml-4 px-4 font-extrabold rounded-l-lg border-r-0 border-2 border-white text-2xl py-2 cursor-pointer"
+                            @click="decrementCount">-</button>
+                        <input type="number" v-model="counter"
+                            class="w-[2rem] text-xl font-bold sm:mb-[1px] sm:mt-[1px] text-center border-r-0 border-l-0 border-2 border-white bg-secondary text-white hover:border-white focus:outline-none"
+                            name="" id="">
+                        <button
+                            class="my-auto bg-secondary px-4 cursor-pointer rounded-r-lg text-white border-l-0 border-2 border-white py-2 mr-4 font-bold text-2xl"
+                            @click="incrementCount">+</button>
+                    </div>
+                    <div class="flex">
 
-    <div class="bg-white fixed bottom-0 w-full">
-        <div class="mx-auto bg-secondary">
-            <div class="flex justify-center">
-                <div class="flex p-4">
-                    <button
-                        class="my-auto bg-secondary text-white ml-4 px-4 font-extrabold rounded-l-lg border-r-0 border-2 border-white text-2xl py-2 cursor-pointer"
-                        @click="decrementCount">-</button>
-                    <input type="number" v-model="counter"
-                        class="w-[2rem] text-xl font-bold sm:mb-[1px] sm:mt-[1px] text-center border-r-0 border-l-0 border-2 border-white bg-secondary text-white hover:border-white focus:outline-none"
-                        name="" id="">
-                    <button
-                        class="my-auto bg-secondary px-4 cursor-pointer rounded-r-lg text-white border-l-0 border-2 border-white py-2 mr-4 font-bold text-2xl"
-                        @click="incrementCount">+</button>
+                    </div>
+                    <button @click="openModal"
+                        class="bg-white mr-5  rounded-lg text-secondary text-md sm:text-xl  font-bold border px-3 py-1 m-5 sm:py-2 sm:px-7 transition ease-in-out w-full sm:w-fit  duration-500">BUY
+                        NOW</button>
                 </div>
-                <div class="flex">
-
-                </div>
-                <button @click="openModal"
-                    class="bg-white mr-5  rounded-lg text-secondary text-md sm:text-xl  font-bold border px-3 py-1 m-5 sm:py-2 sm:px-7 transition ease-in-out w-full sm:w-fit  duration-500">BUY
-                    NOW</button>
             </div>
         </div>
-    </div>
+    </transition>
 </template>
+
+
 
 <style type="scss">
 input[type="number"]::-webkit-inner-spin-button,
@@ -1174,6 +1192,7 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 
 :root {
     --star-size: 20px;
