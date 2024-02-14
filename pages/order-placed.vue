@@ -26,11 +26,13 @@ onMounted(function () {
 
         </div>
         <div class="mt-10 w-full h-fit">
-            <p class="text-primary text-3xl font-bold text-center">Success!</p>
-            <p class="text-primary text-2xl mt-2 font-bold text-center">Your Product is on Its way</p>
+            <p class="text-primary text-3xl font-bold text-center">Successful!!</p>
+            <p class="text-primary text-2xl mt-2 font-bold text-center">Thank you! Your order will be delivered in 3-6
+                business days!
+                Glo from within, Happily!</p>
             <div class="flex justify-center mt-4">
                 <a href="/my-order" class="text-center bg-primary p-2 text-white text-lg rounded-lg">View your order</a>
-            </div>
+            </div>S
             <div class="flex justify-center mt-4">
                 <a href="/" class="text-center bg-[#ffff] p-2  text-black text-lg rounded-lg">Go back home</a>
             </div>
