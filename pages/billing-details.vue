@@ -254,9 +254,11 @@ async function verifyPromoCode() {
                     </div>
                 </div>
                 <div v-if="promocodeVerified" class="my-1">
-                    <div class="inline-block"> <svg class="inline-block mr-1" width="19" height="19" viewBox="0 0 15 15"
+                    <div class="inline-block"> <svg class="inline-block mr-1" width="18" height="18" viewBox="0 0 15 15"
                             xmlns="http://www.w3.org/2000/svg">
-                            <path fill="green" stroke="white" d="M4 7.5L7 10l4-5m-3.5 9.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Z" />
+                            <path fill="green" fill-rule="evenodd"
+                                d="M0 7.5a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0m7.072 3.21l4.318-5.398l-.78-.624l-3.682 4.601L4.32 7.116l-.64.768z"
+                                clip-rule="evenodd" />
                         </svg><span class="text-xs font-semibold">PromoCode Applied
                             Successfully. You got</span> <span class="text-xs font-semibold">Rs. {{
                                 promocodeDiscount }} OFF</span></div>
