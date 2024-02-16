@@ -358,9 +358,9 @@ function generateAvatarUrl(title) {
                             NOW</button>
                     </div>
 
-                    <div class="">
+                    <div class="mx-4 sm:mx-0">
                         <!-- <p class="text-sm mt-4">UPI & Cards Accepted, Online approval in 2 minutes</p> -->
-                        <div class="border-2 border-dashed border-secondary grid grid-cols-12 p-3 mt-3">
+                        <div class="border-2 border-dashed border-secondary grid grid-cols-12 sm:w-[60%] p-3 mt-3">
                             <div class="col-span-6 flex"><span class="inline-block mr-2"><svg width="20" height="24"
                                         viewBox="0 0 20 24" fill="red" xmlns="http://www.w3.org/2000/svg">
                                         <path class="wuw-bag-icon"
@@ -399,9 +399,14 @@ function generateAvatarUrl(title) {
                 <img src="/images/product/Desktop-product-page-banner.png" alt="" />
             </div>
 
-            <div class="my-10 w-full sm:hidden block overflow-scroll">
+            <div class="my-10 w-full sm:hidden block overflow-scroll scroll-container">
                 <!-- <h2>raiyan</h2> -->
-                <img src="/images/product/Desktop-product-page-banner.png" style="max-width: 200% !important;" alt="" />
+                <div class="image-wrapper">
+                    <img src="/images/product/Desktop-product-page-banner.png" class="scrolling-image"
+                        style="max-width: 200% !important;" alt="" />
+                    <img src="/images/product/Desktop-product-page-banner.png" class="scrolling-image"
+                        style="max-width: 200% !important;" alt="" />
+                </div>
             </div>
 
             <!-- <div class="my-10 sm:hidden block">
@@ -1246,5 +1251,27 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 1;
+}
+
+.scroll-container {
+    overflow: hidden;
+}
+
+.image-wrapper {
+    display: flex;
+}
+
+.scrolling-image {
+    animation: scrollImage 10s linear infinite;
+}
+
+@keyframes scrollImage {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 </style>
