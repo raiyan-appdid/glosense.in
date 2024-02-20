@@ -128,7 +128,7 @@ async function verifyPromoCode() {
         <div class="grid grid-cols-12">
             <div class="container mx-auto p-5 col-span-12 sm:col-span-6 mt-0 sm:mt-0 order-2 sm:order-1">
                 <form id="store-billing-form" action="https://admin.glosense.in/api/v3/order/store">
-                    <p class=" font-bold text-lg mb-2">Shipping Details</p>
+                    <p class=" font-normal text-lg mb-2">Shipping Details</p>
                     <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-6">
                             <input type="hidden" v-model="promocodeid" name="promocode_id" id="">
@@ -214,8 +214,8 @@ async function verifyPromoCode() {
                     <div class="flex">
                         <div>
                             <h4 class="font-bold text-secondary text-xl">Hair You Glo</h4>
-                            <h4 class="font-semibold text-sm">For Healthy & Stronger Hair</h4>
-                            <p class="font-semibold text-sm">Qty: {{ counter }}</p>
+                            <h4 class="font-medium text-sm">For Healthy & Stronger Hair</h4>
+                            <p class="font-medium text-sm">Qty: {{ counter }}</p>
                         </div>
                         <!-- <p class="font-bold">x 1 Rs. 1299 /-</p> -->
                         <div class="font-bold text-secondary text-xl flex justify-between">
@@ -228,7 +228,7 @@ async function verifyPromoCode() {
 
                 <div class="grid grid-cols-12">
                     <div class="col-span-12">
-                        <p class="font-bold text-sm">Select a Promo Code</p>
+                        <p class="font-medium text-sm">Select a Promo Code</p>
                     </div>
                 </div>
 
@@ -259,7 +259,7 @@ async function verifyPromoCode() {
                             <path fill="green" fill-rule="evenodd"
                                 d="M0 7.5a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0m7.072 3.21l4.318-5.398l-.78-.624l-3.682 4.601L4.32 7.116l-.64.768z"
                                 clip-rule="evenodd" />
-                        </svg><span class="text-xs font-semibold">PromoCode Applied
+                        </svg><span class="text-xs font-normal">PromoCode Applied
                             Successfully. You got</span> <span class="text-xs font-semibold">Rs. {{
                                 promocodeDiscount }} OFF</span></div>
                 </div>
@@ -283,9 +283,9 @@ async function verifyPromoCode() {
                             <span v-else
                                 class="ml-3 my-auto py-1 px-2 bg-green-400 rounded-xl cursor-pointer">Applied</span> -->
                         </div>
-                        <span class="inline-block mt-1 text-sm font-semibold ml-7 w-fit">Flat 25% off. Valid with all
+                        <!-- <span class="inline-block mt-1 text-sm font-semibold ml-7 w-fit">Flat 25% off. Valid with all
                             Payment
-                            modes.</span>
+                            modes.</span> -->
                     </div>
                 </div>
 
@@ -298,13 +298,13 @@ async function verifyPromoCode() {
                     <!-- <div class="text-end font-bold">Units</div>
                     <div class="mx-auto font-bold">{{ counter }}</div> -->
                     <input type="hidden" :value="counter" name="units" form="store-billing-form" id="">
-                    <div class="font-semibold text-xl my-1">Item total</div>
-                    <div class="text-end font-semibold text-xl">₹ {{ 1299 * counter }}.00</div>
+                    <div class="font-medium text-xl my-1">Item total</div>
+                    <div class="text-end font-medium text-xl">₹ {{ 1299 * counter }}.00</div>
                     <input type="hidden" form="store-billing-form" name="sub_total" :value="1299 * counter" id="">
-                    <div class=" font-semibold text-xl my-1">Item Discount</div>
-                    <div class="text-end font-semibold text-xl text-secondary">-₹ {{ promocodeDiscount }}.00</div>
-                    <div class=" font-semibold text-xl my-1">Shipping</div>
-                    <div class="text-end font-semibold text-xl"><s>₹ 100.00</s> free</div>
+                    <div class=" font-medium text-xl my-1">Item Discount</div>
+                    <div class="text-end font-medium text-xl text-secondary">-₹ {{ promocodeDiscount }}.00</div>
+                    <div class=" font-medium text-xl my-1">Shipping</div>
+                    <div class="text-end font-medium text-xl"><s>₹ 100.00</s> free</div>
                     <input type="hidden" form="store-billing-form" :value="promocodeDiscount" name="discount" id="">
                 </div>
                 <div class="h-0.5 bg-gray-300 w-3/3 sm:w-3/3 mx-auto my-1"></div>

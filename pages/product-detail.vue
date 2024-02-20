@@ -595,7 +595,7 @@ function generateAvatarUrl(title) {
                 </div> -->
 
                 <div class="review">
-                    <h2 class="text-secondary text-center font-bold text-4xl my-10">Customer Reviews</h2>
+                    <h2 class="text-secondary text-center font-bold text-3xl my-10">Customer Reviews</h2>
 
                     <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-3 sm:col-span-3 m-auto">
@@ -914,7 +914,7 @@ function generateAvatarUrl(title) {
 
 
 
-                    <!-- <h2 class="text-secondary text-center text-3xl font-bold mt-10 mb-2">HAVE DOUBT’S? <br />
+                    <h2 class="text-secondary text-center text-3xl font-bold mt-10 mb-2">HAVE DOUBT’S? <br />
                         WE HAVE GOT ANSWERS TO THEM!!
                     </h2>
 
@@ -1151,7 +1151,7 @@ function generateAvatarUrl(title) {
                                 </p>
                             </div>
                         </details>
-                    </div> -->
+                    </div>
                 </div>
 
             </div>

@@ -2,32 +2,66 @@
 
 const whatInIt = ref(true);
 const whatToExpect = ref(false);
+const storageTip = ref(false);
+const howItWork = ref(false);
 
 
 function whatsInItFunction() {
     whatInIt.value = true;
+    whatToExpect.value = false;
+    storageTip.value = false;
+    howItWork.value = false;
 }
 
 function whatToExpectFunction() {
+    whatToExpect.value = true;
     whatInIt.value = false;
+    storageTip.value = false;
+    howItWork.value = false;
 }
-
+function storageTipFunction() {
+    whatToExpect.value = false;
+    whatInIt.value = false;
+    storageTip.value = true;
+    howItWork.value = false;
+}
+function howItWorkFunction() {
+    whatToExpect.value = false;
+    whatInIt.value = false;
+    storageTip.value = false;
+    howItWork.value = true;
+}
 </script>
 <template>
-    <div class="bg-[#fad5cf] px-1 py-4">
-        <div class="flex justify-center">
-            <p @click="whatsInItFunction"
-                :class="[{ 'p-2 bg-secondary text-white border border-secondary rounded text-lg font-bold cursor-pointer': whatInIt }, { 'p-2 text-black border border-secondary rounded text-lg font-bold mx-3 cursor-pointer': !whatInIt }]">
-                What's
-                In
-                It ?</p>
-            <p @click="whatToExpectFunction"
-                :class="[{ 'p-2 bg-secondary text-white border border-secondary rounded text-lg font-bold cursor-pointer': !whatInIt }, { 'p-2 text-black border border-secondary rounded text-lg font-bold mx-3 cursor-pointer': whatInIt }]">
-                What To Expect
-                ?
-            </p>
+    <div class="bg-[#ecd5d1] px-1 sm:py-4">
+        <div class="w-full">
+            <div class="sm:!flex py-4 md:flex overflow-scroll sm:overflow-hidden sm:justify-center"
+                style="display: -webkit-box;">
+                <p @click="whatsInItFunction"
+                    class="p-2 mx-1 border border-secondary rounded cursor-pointer text-lg font-bold sm:inline-block"
+                    style="display: -webkit-box;" :class="[{ 'bg-secondary text-white ': whatInIt }]">
+                    What's
+                    In
+                    It ?</p>
+                <p @click="whatToExpectFunction"
+                    class="p-2 mx-1 border border-secondary rounded cursor-pointer text-lg font-bold sm:inline-block"
+                    style="display: -webkit-box;" :class="[{ ' bg-secondary text-white': whatToExpect }]">
+                    What To Expect
+                    ?
+                </p>
+                <p @click="storageTipFunction"
+                    class="p-2 mx-1 border border-secondary rounded cursor-pointer text-lg font-bold sm:inline-block"
+                    style="display: -webkit-box;" :class="[{ ' bg-secondary text-white': storageTip }]">
+                    STORAGE TIP
+                </p>
+                <p @click="howItWorkFunction"
+                    class="p-2 mx-1 border border-secondary rounded cursor-pointer text-lg font-bold sm:inline-block"
+                    style="display: -webkit-box;" :class="[{ ' bg-secondary text-white': howItWork }]">
+                    HOW IT WORKS ?
+                </p>
+            </div>
         </div>
-        <div class="whats-in-it" v-if="whatInIt">
+        <div class="whats-in-it" v-show="whatInIt">
             <div class="grid grid-cols-12 mt-4">
                 <div class="col-span-3 flex items-center justify-center">
                     <img src="/public/images/Ingradients-04.png" class="w-2/3 sm:w-2/6" alt="">
@@ -84,7 +118,7 @@ function whatToExpectFunction() {
             </div>
         </div>
 
-        <div class="what-to-expect" v-else>
+        <div class="what-to-expect" v-show="whatToExpect">
             <div class="grid grid-cols-12 mt-4">
                 <div class="col-span-3 flex items-center justify-center">
                     <img src="/public/images/Ingradients-04.png" class="w-2/3 sm:w-2/6 " alt="">
@@ -126,6 +160,40 @@ function whatToExpectFunction() {
                     </p>
                 </div>
             </div>
+        </div>
+
+        <div class="what-to-expect" v-show="storageTip">
+            <p class="leading-2 text-xl text-center sm:text-2xl">For best results, utilise a dry
+                spoon when
+                dealing with the mix, and
+                be sure to seal the jars
+                tightly after usage to prevent solidification or lumps.
+            </p>
+        </div>
+        <div class="what-to-expect" v-show="howItWork">
+            <h3 class=" text-2xl font-bold ">-Effectively suppress DHT🌿:</h3>
+            <p class="text-xl">Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood
+                circulation, and
+                promote hair growth while suppressing DHT.
+            </p>
+            <h3 class=" text-2xl font-bold mt-4">-Maintains pH Level 🔗:
+            </h3>
+            <p class="text-xl">Lemon balances scalp pH, prevents dandruff, and fosters a healthy environment for hair
+                follicles where
+                Fenugreek seeds enhance hair texture, shine, resilience, and support growth.
+            </p>
+            <h3 class=" text-2xl font-bold mt-4">-Improves Blood Circulation🧘:
+            </h3>
+            <p class="text-xl">Pomegranate and Orange, with vitamin E and antioxidants, boost scalp blood circulation,
+                delivering
+                essential nutrients for healthier, thicker hair, while preventing oxidative stress and hair cell damage.
+            </p>
+            <h3 class=" text-2xl font-bold mt-4">-Supports Collagen Synthesis💫:
+            </h3>
+            <p class="text-xl">Aids in collagen synthesis, vital for maintaining hair's strength and structure, reducing
+                hair thinning
+                and breakage.
+            </p>
         </div>
 
     </div>
