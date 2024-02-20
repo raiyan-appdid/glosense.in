@@ -163,34 +163,38 @@ function howItWorkFunction() {
         </div>
 
         <div class="what-to-expect" v-show="storageTip">
-            <p class="leading-2 text-xl text-center sm:text-2xl">For best results, utilise a dry
+            <p class="text-secondary sm:text-2xl text-lg font-bold mx-2 sm:mx-4">For best results, utilise a dry
                 spoon when
                 dealing with the mix, and
                 be sure to seal the jars
                 tightly after usage to prevent solidification or lumps.
             </p>
         </div>
-        <div class="what-to-expect" v-show="howItWork">
-            <h3 class=" text-2xl font-bold ">-Effectively suppress DHT🌿:</h3>
-            <p class="text-xl">Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood
+        <div class="what-to-expect mx-8" v-show="howItWork">
+            <h3 class=" text-secondary sm:text-2xl text-lg font-bold ">-Effectively suppress DHT🌿:</h3>
+            <p class="text-sm sm:text-xl text-black">Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent
+                dryness, improve blood
                 circulation, and
                 promote hair growth while suppressing DHT.
             </p>
-            <h3 class=" text-2xl font-bold mt-4">-Maintains pH Level 🔗:
+            <h3 class=" text-secondary sm:text-2xl text-lg font-bold mt-4">-Maintains pH Level 🔗:
             </h3>
-            <p class="text-xl">Lemon balances scalp pH, prevents dandruff, and fosters a healthy environment for hair
+            <p class="text-sm sm:text-xl text-black">Lemon balances scalp pH, prevents dandruff, and fosters a healthy
+                environment for hair
                 follicles where
                 Fenugreek seeds enhance hair texture, shine, resilience, and support growth.
             </p>
-            <h3 class=" text-2xl font-bold mt-4">-Improves Blood Circulation🧘:
+            <h3 class=" text-secondary sm:text-2xl text-lg font-bold mt-4">-Improves Blood Circulation🧘:
             </h3>
-            <p class="text-xl">Pomegranate and Orange, with vitamin E and antioxidants, boost scalp blood circulation,
+            <p class="text-sm sm:text-xl text-black">Pomegranate and Orange, with vitamin E and antioxidants, boost scalp
+                blood circulation,
                 delivering
                 essential nutrients for healthier, thicker hair, while preventing oxidative stress and hair cell damage.
             </p>
-            <h3 class=" text-2xl font-bold mt-4">-Supports Collagen Synthesis💫:
+            <h3 class=" text-secondary sm:text-2xl text-lg font-bold mt-4">-Supports Collagen Synthesis💫:
             </h3>
-            <p class="text-xl">Aids in collagen synthesis, vital for maintaining hair's strength and structure, reducing
+            <p class="text-sm sm:text-xl text-black">Aids in collagen synthesis, vital for maintaining hair's strength and
+                structure, reducing
                 hair thinning
                 and breakage.
             </p>

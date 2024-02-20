@@ -63,7 +63,7 @@ body {
   }
 }
 
-@keyframes up-down-shake {
+/* @keyframes up-down-shake {
   from {
     transform: translateY(5px);
   }
@@ -71,7 +71,7 @@ body {
   to {
     transform: translateY(-5px);
   }
-}
+} */
 
 .leaves-2 {
   background-position: -180px -10px;

@@ -1347,6 +1347,13 @@ const updateDotValue = (value) => {
     </span>
   </a>
 
+  <span class="customslidedownonindex">
+    <svg width="50" height="50" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        d="M7 .5v13m3.5-3.5L7 13.5L3.5 10" />
+    </svg>
+  </span>
+
   <div class="hidden sm:block">
     <div class="fixed h-screen w-screen bg-[url('/images/bg.png')]" id="blob-group">
       <img class="w-[25rem] absolute left-0 top-0" src="/images/glob-tl.png" alt="" />
@@ -1692,6 +1699,35 @@ const updateDotValue = (value) => {
 </template>
 
 <style>
+.customslidedownonindex {
+  position: fixed !important;
+  left: 35px;
+  bottom: 90px;
+  height: 60px;
+  width: 60px;
+  /* background: #2bb741;
+  border-radius: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999999999;
+}
+
+.customslidedownonindex {
+  animation: 0.5s custom-shake infinite alternate;
+  display: inline-block;
+}
+
+@keyframes custom-shake {
+  from {
+    transform: translateY(10px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
 .svg-align {
   position: absolute;
   bottom: 30vh;
