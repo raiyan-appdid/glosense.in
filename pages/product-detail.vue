@@ -402,8 +402,8 @@ function generateAvatarUrl(title) {
             <div class="my-10 w-full sm:hidden block overflow-scroll scroll-container">
                 <!-- <h2>raiyan</h2> -->
                 <div class="image-wrapper">
-                    <img src="/images/product/Desktop-product-page-banner.png" class="scrolling-image"
-                        style="max-width: 200% !important;" alt="" />
+                    <!-- <img src="/images/product/Desktop-product-page-banner.png" class="scrolling-image"
+                        style="max-width: 200% !important;" alt="" /> -->
                     <img src="/images/product/Desktop-product-page-banner.png" class="scrolling-image"
                         style="max-width: 200% !important;" alt="" />
                 </div>
@@ -1162,6 +1162,13 @@ function generateAvatarUrl(title) {
     </div>
 
 
+    <div class="bg-white fixed bottom-0 w-full" :class="[{ 'bottom-20': staticBuyNow }]">
+        <div class="mx-auto bg-primary">
+            <div class="flex justify-center driving-text">
+                <p>lorem ipsum lorem ipsum loren ipsun</p>
+            </div>
+        </div>
+    </div>
     <transition name="fade">
         <div class="bg-white fixed bottom-0 w-full" v-show="staticBuyNow">
             <div class="mx-auto bg-secondary">
@@ -1192,6 +1199,28 @@ function generateAvatarUrl(title) {
 
 
 <style type="scss">
+.driving-text {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    white-space: nowrap;
+}
+
+.driving-text p {
+    animation: drive 5s linear infinite;
+}
+
+@keyframes drive {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -1253,7 +1282,7 @@ input[type="number"]::-webkit-outer-spin-button {
     z-index: 1;
 }
 
-.scroll-container {
+/* .scroll-container {
     overflow: hidden;
 }
 
@@ -1273,5 +1302,5 @@ input[type="number"]::-webkit-outer-spin-button {
     100% {
         transform: translateX(-100%);
     }
-}
+} */
 </style>
