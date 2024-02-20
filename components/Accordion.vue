@@ -49,7 +49,7 @@
                 </p>
             </details>
             <div class="border border-[#ecc7bf] my-2"></div>
-            <details class="w-full cursor-pointer">
+            <!-- <details class="w-full cursor-pointer">
                 <summary
                     class="w-full text-dark flex justify-between py-1  after:content-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGZpbGw9IiM0M2ExOTAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQogICAgPHBhdGggZmlsbD0iIzQzYTE5MCIgZD0iTTEwNC43MDQgMzM4Ljc1MmE2NCA2NCAwIDAgMSA5MC40OTYgMGwzMTYuOCAzMTYuOGwzMTYuOC0zMTYuOGE2NCA2NCAwIDAgMSA5MC40OTYgOTAuNDk2TDU1Ny4yNDggNzkxLjI5NmE2NCA2NCAwIDAgMS05MC40OTYgMEwxMDQuNzA0IDQyOS4yNDhhNjQgNjQgMCAwIDEgMC05MC40OTYiLz4NCjwvc3ZnPg==')] after:text-secondary">
                     <span class="text-secondary font-bold text-xl">HOW IT WORKS:</span>
@@ -85,7 +85,7 @@
 
                 </p>
             </details>
-            <div class="border border-[#ecc7bf] my-2"></div>
+            <div class="border border-[#ecc7bf] my-2"></div> -->
 
 
         </div>

@@ -1162,13 +1162,13 @@ function generateAvatarUrl(title) {
     </div>
 
 
-    <div class="bg-white fixed bottom-0 w-full" :class="[{ 'bottom-20': staticBuyNow }]">
+    <!-- <div class="bg-white fixed bottom-0 w-full" :class="[{ 'bottom-20': staticBuyNow }]">
         <div class="mx-auto bg-primary">
             <div class="flex justify-center driving-text">
                 <p>lorem ipsum lorem ipsum loren ipsun</p>
             </div>
         </div>
-    </div>
+    </div> -->
     <transition name="fade">
         <div class="bg-white fixed bottom-0 w-full" v-show="staticBuyNow">
             <div class="mx-auto bg-secondary">
