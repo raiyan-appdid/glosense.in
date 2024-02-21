@@ -8,13 +8,16 @@
                     <span class="text-secondary font-bold text-xl">HELPS IN:</span>
                 </summary>
                 <p class="">
-                <p class=" text-lg  font-normal text-black sm:text-2xl mb-2">-Maintaining a healthy scalp with improved
+                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Maintaining a healthy scalp with
+                    improved
                     blood
                     circulation.</p>
-                <p class=" text-lg  font-normal text-black sm:text-2xl mb-2">-Encouraging better hair growth and helps
+                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Encouraging better hair growth and
+                    helps
                     prevent dandruff.</p>
-                <p class=" text-lg  font-normal text-black sm:text-2xl mb-2">-Cultivate Optimal Hair Follicle Health.</p>
-                <p class=" text-lg  font-normal text-black sm:text-2xl mb-2">-Reducing hair loss, and strengthening
+                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Cultivate Optimal Hair Follicle
+                    Health.</p>
+                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Reducing hair loss, and strengthening
                     hair
                     strands.</p>
 
@@ -27,9 +30,10 @@
                     <span class="text-secondary font-bold text-xl">HOW TO USE:</span>
                 </summary>
                 <p class="">
-                <p class=" text-lg  font-normal text-black sm:text-2xl mb-2">-Blend ½ tablespoon of Hair-you-glo into your
+                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Add one scoop of Hair-you-glo
+                    into your
                     water.</p>
-                <p class=" text-lg  font-normal text-black sm:text-2xl mb-2">-Ensure it's well-mixed,have a sip &
+                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Ensure it's well-mixed, have a sip &
                     revel in
                     the moment 🤙</p>
 
@@ -42,7 +46,8 @@
                     <span class="text-secondary font-bold text-xl">WHEN TO USE:</span>
                 </summary>
                 <p class="">
-                <p class=" text-lg  font-normal text-black sm:text-2xl mb-2">You can consume it any time of the day, but
+                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">You can consume it any time of the
+                    day, but
                     for better experience we
                     suggest consuming it in the
                     morning.</p>

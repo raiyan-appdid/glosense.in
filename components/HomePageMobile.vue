@@ -37,7 +37,7 @@ onMounted(() => {
         opacity: 0,
         duration: 3,
         rotate: 360,
-    })
+    }, "<")
     tlHeroResponsive.from('.elegance-text-responsive', {
         duration: 7,
         opacity: 0,
@@ -45,7 +45,7 @@ onMounted(() => {
     tlHeroResponsive.to('.elegance-text-responsive', {
         duration: 7,
         opacity: 0,
-    })
+    }, "-=1")
 
     tlHeroResponsive.to('.jar-without-lid-responsive', {
         y: 130,
@@ -173,7 +173,7 @@ onMounted(() => {
         duration: 3,
         y: 130,
         opacity: 1,
-    }, "+=1")
+    }, "<")
 
     tlHeroResponsive.to('#jar-image-responsive', {
         opacity: 1,
@@ -206,7 +206,7 @@ onMounted(() => {
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 3,
         rotation: 720,
-    }, "+=1")
+    }, "<")
 
     tlHeroResponsive.from('.vitamin-custom-responsive', {
         x: -500,
@@ -271,10 +271,10 @@ onMounted(() => {
     //     opacity: 0,
     // }, "<")
 
-    tlHeroResponsive.from('#jar-image-responsive', {
-        duration: 4,
-        rotation: 1800,
-    }, "+=5")
+    // tlHeroResponsive.from('#jar-image-responsive', {
+    //     duration: 4,
+    //     rotation: 1800,
+    // }, "+=1")
 
     // tlHeroResponsive.to('.vitamin-custom-3-responsive', {
     //     x: 1000,
@@ -305,7 +305,7 @@ onMounted(() => {
 
     tlHeroResponsive.from('#jar-image-responsive', {
         duration: 6,
-        rotation: 2160,
+        rotation: 1800,
     }, "+=5")
 
     tlHeroResponsive.to('.vitamin-custom-4-responsive', {
@@ -375,7 +375,7 @@ onMounted(() => {
     tlHeroResponsive.to('#jar-image-responsive', {
         y: -230,
         opacity: 1,
-        duration: 3,
+        duration: 1,
     }), "+=1"
 
 
@@ -390,100 +390,100 @@ onMounted(() => {
     //     // duration: 2,
     // }, "<")
 
-    const tlShowcase1_responsive = gsap.timeline({
-        defaults: {
-            duration: 1,
-            ease: "linear",
-        },
-        scrollTrigger: {
-            trigger: "#showcase-section-1-responsive",
-            start: "top 60",
-            end: "10000",
-            // end: "1000",
-            scrub: 1,
-            pin: true,
-            // markers: true,
-        },
-    });
+    // const tlShowcase1_responsive = gsap.timeline({
+    //     defaults: {
+    //         duration: 1,
+    //         ease: "linear",
+    //     },
+    //     scrollTrigger: {
+    //         trigger: "#showcase-section-1-responsive",
+    //         start: "top 60",
+    //         end: "10000",
+    //         // end: "1000",
+    //         scrub: 1,
+    //         pin: true,
+    //         // markers: true,
+    //     },
+    // });
 
 
 
 
 
-    tlShowcase1_responsive.from('.believe-text-responsive', {
-        opacity: 0,
-        duration: 2,
-    })
-    tlShowcase1_responsive.to('.believe-text-responsive', {
-        opacity: 1,
-        duration: 2,
-    })
+    // tlShowcase1_responsive.from('.believe-text-responsive', {
+    //     opacity: 0,
+    //     duration: 2,
+    // })
+    // tlShowcase1_responsive.to('.believe-text-responsive', {
+    //     opacity: 1,
+    //     duration: 2,
+    // })
 
 
-    tlShowcase1_responsive.to(
-        "#showcase-slider",
-        {
-            duration: 5,
-            "--fill-till": "+=33",
-        },
-        "+=1"
-    );
-    tlShowcase1_responsive.to(
-        "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(3)",
-        {
-            duration: 5,
-            clipPath: "inset(0 0 0 100%)",
-        },
-        "+=1"
-    );
-    tlShowcase1_responsive.to(
-        "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(3) .tear",
-        {
-            duration: 5,
+    // tlShowcase1_responsive.to(
+    //     "#showcase-slider",
+    //     {
+    //         duration: 5,
+    //         "--fill-till": "+=33",
+    //     },
+    //     "+=1"
+    // );
+    // tlShowcase1_responsive.to(
+    //     "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(3)",
+    //     {
+    //         duration: 5,
+    //         clipPath: "inset(0 0 0 100%)",
+    //     },
+    //     "+=1"
+    // );
+    // tlShowcase1_responsive.to(
+    //     "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(3) .tear",
+    //     {
+    //         duration: 5,
 
-            className: "tear left-0",
-            transform: "translate(100%, 0)",
-            onComplete: () => { },
-        },
-        "<"
-    );
+    //         className: "tear left-0",
+    //         transform: "translate(100%, 0)",
+    //         onComplete: () => { },
+    //     },
+    //     "<"
+    // );
 
-    tlShowcase1_responsive.to(
-        "#showcase-slider",
-        {
-            duration: 5,
-            "--fill-till": "+=34",
-        },
-    );
-    tlShowcase1_responsive.to(
-        "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(2)",
-        {
-            duration: 5,
-            clipPath: "inset(0 0 0 100%)",
-        },
-        "<"
-    );
+    // tlShowcase1_responsive.to(
+    //     "#showcase-slider",
+    //     {
+    //         duration: 5,
+    //         "--fill-till": "+=34",
+    //     },
+    // );
+    // tlShowcase1_responsive.to(
+    //     "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(2)",
+    //     {
+    //         duration: 5,
+    //         clipPath: "inset(0 0 0 100%)",
+    //     },
+    //     "<"
+    // );
 
-    tlShowcase1_responsive.to(
-        "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(2) .tear",
-        {
-            duration: 5,
-            className: "tear left-0",
-            transform: "translate(100%, 0)",
-        },
-        "<"
-    );
+    // tlShowcase1_responsive.to(
+    //     "#showcase-section-1-responsive #showcase-images-responsive div:nth-child(2) .tear",
+    //     {
+    //         duration: 5,
+    //         className: "tear left-0",
+    //         transform: "translate(100%, 0)",
+    //     },
+    //     "<"
+    // );
 
-    tlShowcase1_responsive.to(
-        "#showcase-slider",
-        {
-            "--fill-till": "+=34",
-        },
-    );
-    tlShowcase1_responsive.to('.believe-text-responsive', {
-        opacity: 0,
-        duration: 2,
-    })
+    // tlShowcase1_responsive.to(
+    //     "#showcase-slider",
+    //     {
+    //         "--fill-till": "+=34",
+    //     },
+    // );
+    // tlShowcase1_responsive.to('.believe-text-responsive', {
+    //     opacity: 0,
+    //     duration: 2,
+    // })
 
 })
 
@@ -659,6 +659,10 @@ onMounted(() => {
                     <a href="/product-detail">Know more</a>
                 </p>
             </div>
+
+        </div>
+        <div class="container mx-auto mb-10">
+            <img class="px-10 " src="/images/mobile timeline@2x.png" alt="" />
         </div>
 
 
@@ -686,9 +690,7 @@ onMounted(() => {
             </div>
         </div> -->
 
-        <div class="container mx-auto mb-10">
-            <img class="px-10 " src="/images/mobile timeline@2x.png" alt="" />
-        </div>
+
 
 
 

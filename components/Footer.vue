@@ -1,6 +1,7 @@
 <template>
-    <footer class="footer-1 bg-gray-100 py-8 sm:py-12 absolute w-full">
-        <div class="container mx-auto px-4">
+    <footer class="footer-1 bg-gray-100 py-8 sm:py-12 absolute w-full" style="
+    box-shadow: -7px 1px 13px 0px;">
+        <div class=" container mx-auto px-4">
             <p class="text-center font-bold  items-center justify-center text-2xl hidden sm:flex sm:mb-4 mb-0">Made In India
                 <span class="inline-block my-auto ml-2"><svg width="32" height="32" viewBox="0 0 64 64"
                         xmlns="http://www.w3.org/2000/svg">
@@ -168,7 +169,8 @@
                                     d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165h29.825" />
                             </svg>
                         </a>
-                        <a target="_blank" href="https://www.instagram.com/glosense.in/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
+                        <a target="_blank"
+                            href="https://www.instagram.com/glosense.in/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
                                 <g fill="none">
                                     <rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60" />

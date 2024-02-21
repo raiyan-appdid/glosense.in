@@ -128,7 +128,7 @@ async function verifyPromoCode() {
         <div class="grid grid-cols-12">
             <div class="container mx-auto p-5 col-span-12 sm:col-span-6 mt-0 sm:mt-0 order-2 sm:order-1">
                 <form id="store-billing-form" action="https://admin.glosense.in/api/v3/order/store">
-                    <p class=" font-normal text-lg mb-2">Shipping Details</p>
+                    <p class=" font-bold text-lg mb-4">Shipping Details</p>
                     <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-6">
                             <input type="hidden" v-model="promocodeid" name="promocode_id" id="">
@@ -146,7 +146,7 @@ async function verifyPromoCode() {
                         <div class="col-span-12">
                             <!-- <label for="email" class="block mb-2 text-md  font-bold text-black ">Email <span
                                     class="text-red-500">*</span></label> -->
-                            <input name="email" required id="email" type="email" v-model="email"
+                            <input name="email" required id="email" type="email" v-model="email" placeholder="Email"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
 
                         </div>
@@ -176,9 +176,9 @@ async function verifyPromoCode() {
                             <input name="pincode" required id="pincode" v-model="pincode" placeholder="Pincode"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
-                        <div class="hidden">
-                            <label for="country" class="block mb-2 text-md  font-bold text-black ">Country <span
-                                    class="text-red-500">*</span></label>
+                        <div class="col-span-6">
+                            <!-- <label for="country" class="block mb-2 text-md  font-bold text-black ">Country <span
+                                    class="text-red-500">*</span></label> -->
                             <input name="country" value="India" id="country"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
@@ -192,7 +192,7 @@ async function verifyPromoCode() {
                     </div>
 
                     <div class=" flex-col flex">
-                        <div class=" my-4">
+                        <div class=" my-4 text-center">
                             <input form="store-billing-form" type="checkbox" class="" name="tnc" id="tnc">
                             <label for="tnc" class="ml-2">Accepting <a class=" text-secondary"
                                     href="/terms-and-conditions">Terms and
@@ -218,10 +218,10 @@ async function verifyPromoCode() {
                             <p class="font-medium text-sm">Qty: {{ counter }}</p>
                         </div>
                         <!-- <p class="font-bold">x 1 Rs. 1299 /-</p> -->
+                        <!-- <p>Discoun</p> -->
                         <div class="font-bold text-secondary text-xl flex justify-between">
                             <p>₹ {{ 1299 - promocodeDiscount }}.00</p>
                         </div>
-                        <!-- <p>Discoun</p> -->
                     </div>
                 </div>
                 <div class="h-0.5 bg-gray-300 w-3/3 sm:w-3/3 mx-auto my-2"></div>
@@ -298,13 +298,13 @@ async function verifyPromoCode() {
                     <!-- <div class="text-end font-bold">Units</div>
                     <div class="mx-auto font-bold">{{ counter }}</div> -->
                     <input type="hidden" :value="counter" name="units" form="store-billing-form" id="">
-                    <div class="font-medium text-xl my-1">Item total</div>
-                    <div class="text-end font-medium text-xl">₹ {{ 1299 * counter }}.00</div>
+                    <div class="font-medium text-lg my-0">Item total</div>
+                    <div class="text-end font-medium text-lg">₹ {{ 1299 * counter }}.00</div>
                     <input type="hidden" form="store-billing-form" name="sub_total" :value="1299 * counter" id="">
-                    <div class=" font-medium text-xl my-1">Item Discount</div>
-                    <div class="text-end font-medium text-xl text-secondary">-₹ {{ promocodeDiscount }}.00</div>
-                    <div class=" font-medium text-xl my-1">Shipping</div>
-                    <div class="text-end font-medium text-xl"><s>₹ 100.00</s> free</div>
+                    <div class=" font-medium text-lg my-0">Item Discount</div>
+                    <div class="text-end font-medium text-lg text-secondary">-₹ {{ promocodeDiscount }}.00</div>
+                    <div class=" font-medium text-lg my-0">Shipping</div>
+                    <div class="text-end font-medium text-lg"><s>₹ 100.00</s> free</div>
                     <input type="hidden" form="store-billing-form" :value="promocodeDiscount" name="discount" id="">
                 </div>
                 <div class="h-0.5 bg-gray-300 w-3/3 sm:w-3/3 mx-auto my-1"></div>

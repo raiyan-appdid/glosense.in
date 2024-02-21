@@ -33,7 +33,7 @@ function howItWorkFunction() {
 }
 </script>
 <template>
-    <div class="bg-[#ecd5d1] px-1 sm:py-4">
+    <div class="bg-[#f9d5cf] px-1 sm:py-4">
         <div class="w-full">
             <div class="sm:!flex py-4 md:flex overflow-scroll sm:overflow-hidden sm:justify-center"
                 style="display: -webkit-box;">
@@ -61,14 +61,16 @@ function howItWorkFunction() {
                 </p>
             </div>
         </div>
-        <div class="whats-in-it" v-show="whatInIt">
-            <div class="grid grid-cols-12 mt-4">
+        <div class="whats-in-it py-4" v-show="whatInIt">
+            <div class="grid grid-cols-12">
                 <div class="col-span-3 flex items-center justify-center">
                     <img src="/public/images/Ingradients-04.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
-                    <p class="text-secondary sm:text-2xl text-lg font-bold">AMLA:</p>
-                    <p class="text-sm sm:text-xl text-black">Indian Gooseberry better known as Amla, contains Vitamin C,
+                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">AMLA:</p>
+                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">Indian Gooseberry better known as Amla,
+                        contains
+                        Vitamin C,
                         which is
                         helpful to boost
                         collagen for
@@ -81,8 +83,9 @@ function howItWorkFunction() {
                     <img src="/public/images/Ingradients-07.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
-                    <p class="text-secondary sm:text-2xl text-lg font-bold">ORANGE:</p>
-                    <p class="text-sm sm:text-xl text-black">A Citrus Fruit rich in vitamin E, an antioxidant that supports
+                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">ORANGE:</p>
+                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">A Citrus Fruit rich in vitamin E, an
+                        antioxidant that supports
                         hair
                         follicles,
                         prevents
@@ -96,8 +99,9 @@ function howItWorkFunction() {
                     <img src="/public/images/Ingradients-02.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
-                    <p class="text-secondary sm:text-2xl text-lg font-bold">POMEGRANATE:</p>
-                    <p class="text-sm sm:text-xl text-black">Enhances hair elasticity, reduces breakage, and promotes growth
+                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">POMEGRANATE:</p>
+                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">Enhances hair elasticity, reduces
+                        breakage, and promotes growth
                         for
                         healthier hair.
                     </p>
@@ -108,8 +112,9 @@ function howItWorkFunction() {
                     <img src="/public/images/Ingradients-03.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
-                    <p class="text-secondary sm:text-2xl text-lg font-bold">SEA BUCKTHORN:</p>
-                    <p class="text-sm sm:text-xl text-black">Packed with omega fatty acids, reduces inflammation, nourishes
+                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">SEA BUCKTHORN:</p>
+                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">Packed with omega fatty acids, reduces
+                        inflammation, nourishes
                         scalp and
                         follicles,
                         promotes hair growth,
@@ -118,14 +123,15 @@ function howItWorkFunction() {
             </div>
         </div>
 
-        <div class="what-to-expect" v-show="whatToExpect">
-            <div class="grid grid-cols-12 mt-4">
+        <div class="what-to-expect py-4" v-show="whatToExpect">
+            <div class="grid grid-cols-12">
                 <div class="col-span-3 flex items-center justify-center">
                     <img src="/public/images/Ingradients-04.png" class="w-2/3 sm:w-2/6 " alt="">
                 </div>
                 <div class="col-span-9">
-                    <p class="text-secondary sm:text-2xl text-lg font-bold">After 4 weeks:</p>
-                    <p class="text-sm sm:text-xl text-black">Reduces hair fall and dandruff, minimises breakage and
+                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">After 4 weeks:</p>
+                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">Reduces hair fall and dandruff,
+                        minimises breakage and
                         itchiness, while
                         nourishing hair
                         strands.</p>
@@ -137,8 +143,9 @@ function howItWorkFunction() {
                     <img src="/public/images/Ingradients-07.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
-                    <p class="text-secondary sm:text-2xl text-lg font-bold">After 8 weeks:</p>
-                    <p class="text-sm sm:text-xl text-black">Reduces scalp inflammation and stress that leads to decreased
+                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">After 8 weeks:</p>
+                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">Reduces scalp inflammation and stress
+                        that leads to decreased
                         hair fall,
                         promoting
                         visible root-level
@@ -151,8 +158,9 @@ function howItWorkFunction() {
                     <img src="/public/images/Ingradients-02.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
-                    <p class="text-secondary sm:text-2xl text-lg font-bold">After 12 weeks:</p>
-                    <p class="text-sm sm:text-xl text-black">Reduces scalp inflammation and stress that leads to decreased
+                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">After 12 weeks:</p>
+                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">Reduces scalp inflammation and stress
+                        that leads to decreased
                         hair fall,
                         promoting
                         visible root-level
@@ -162,38 +170,42 @@ function howItWorkFunction() {
             </div>
         </div>
 
-        <div class="what-to-expect" v-show="storageTip">
-            <p class="text-secondary sm:text-2xl text-lg font-bold mx-2 sm:mx-4">For best results, utilise a dry
+        <div class="what-to-expect py-4" v-show="storageTip">
+            <p class="text-black sm:text-2xl text-lg font-extrabold mx-2 sm:mx-4">For best results, utilise a dry
                 spoon when
                 dealing with the mix, and
                 be sure to seal the jars
                 tightly after usage to prevent solidification or lumps.
             </p>
         </div>
-        <div class="what-to-expect mx-8" v-show="howItWork">
-            <h3 class=" text-secondary sm:text-2xl text-lg font-bold ">-Effectively suppress DHT🌿:</h3>
-            <p class="text-sm sm:text-xl text-black">Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent
+        <div class="what-to-expect mx-8 py-4" v-show="howItWork">
+            <h3 class=" text-secondary sm:text-2xl text-lg font-extrabold ">-Effectively suppress DHT🌿:</h3>
+            <p class="text-md leading-5 sm:text-xl text-black font-semibold">Carrots and Amla, rich in Vitamin C, hydrate
+                the scalp, prevent
                 dryness, improve blood
                 circulation, and
                 promote hair growth while suppressing DHT.
             </p>
-            <h3 class=" text-secondary sm:text-2xl text-lg font-bold mt-4">-Maintains pH Level 🔗:
+            <h3 class=" text-secondary sm:text-2xl text-lg font-extrabold mt-4">-Maintains pH Level 🔗:
             </h3>
-            <p class="text-sm sm:text-xl text-black">Lemon balances scalp pH, prevents dandruff, and fosters a healthy
+            <p class="text-md leading-5 sm:text-xl text-black font-semibold">Lemon balances scalp pH, prevents dandruff, and
+                fosters a healthy
                 environment for hair
                 follicles where
                 Fenugreek seeds enhance hair texture, shine, resilience, and support growth.
             </p>
-            <h3 class=" text-secondary sm:text-2xl text-lg font-bold mt-4">-Improves Blood Circulation🧘:
+            <h3 class=" text-secondary sm:text-2xl text-lg font-extrabold mt-4">-Improves Blood Circulation🧘:
             </h3>
-            <p class="text-sm sm:text-xl text-black">Pomegranate and Orange, with vitamin E and antioxidants, boost scalp
+            <p class="text-md leading-5 sm:text-xl text-black font-semibold">Pomegranate and Orange, with vitamin E and
+                antioxidants, boost scalp
                 blood circulation,
                 delivering
                 essential nutrients for healthier, thicker hair, while preventing oxidative stress and hair cell damage.
             </p>
-            <h3 class=" text-secondary sm:text-2xl text-lg font-bold mt-4">-Supports Collagen Synthesis💫:
+            <h3 class=" text-secondary sm:text-2xl text-lg font-extrabold mt-4">-Supports Collagen Synthesis💫:
             </h3>
-            <p class="text-sm sm:text-xl text-black">Aids in collagen synthesis, vital for maintaining hair's strength and
+            <p class="text-md leading-5 sm:text-xl text-black font-semibold">Aids in collagen synthesis, vital for
+                maintaining hair's strength and
                 structure, reducing
                 hair thinning
                 and breakage.
