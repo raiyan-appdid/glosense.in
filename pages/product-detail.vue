@@ -636,8 +636,7 @@ function generateAvatarUrl(title) {
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                     </svg></span>
                                 <div class="slider-1 h-2 w-full bg-gray-200 rounded-xl my-auto">
-                                    <div
-                                        :class="'h-2 w-[' + Math.floor(((fiveStar / reviewCount) * 100)) + '%] my-auto bg-primary rounded-lg'">
+                                    <div :class="'h-2 w-[36%] my-auto bg-primary rounded-lg'">
                                     </div>
                                 </div>
                                 <span class=" text-xs ml-3 mr-1">{{ fiveStar }}</span>
@@ -651,8 +650,7 @@ function generateAvatarUrl(title) {
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                     </svg></span>
                                 <div class="slider-1 h-2 w-full bg-gray-200 rounded-xl my-auto">
-                                    <div
-                                        :class="'h-2 w-[' + Math.floor(((fourStar / reviewCount) * 100)) + '%] my-auto bg-primary rounded-lg'">
+                                    <div :class="'h-2 w-[57%] my-auto bg-primary rounded-lg'">
                                     </div>
                                 </div>
                                 <span class="text-xs ml-3 mr-1">{{ fourStar }}</span>
@@ -666,8 +664,7 @@ function generateAvatarUrl(title) {
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                     </svg></span>
                                 <div class="slider-1 h-2 w-full bg-gray-200 rounded-xl my-auto">
-                                    <div
-                                        :class="'h-2 w-[' + Math.floor(((threeStar / reviewCount) * 100)) + '%] my-auto bg-primary rounded-lg'">
+                                    <div :class="'h-2 w-[17%] my-auto bg-primary rounded-lg'">
                                     </div>
                                 </div>
                                 <span class="text-xs ml-3 mr-1">{{ threeStar }}</span>
@@ -681,8 +678,7 @@ function generateAvatarUrl(title) {
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                     </svg></span>
                                 <div class="slider-1 h-2 w-full bg-gray-200 rounded-xl my-auto">
-                                    <div
-                                        :class="'h-2 w-[' + Math.floor(((twoStar / reviewCount) * 100)) + '%] my-auto bg-primary rounded-lg'">
+                                    <div :class="'h-2 w-[1%] my-auto bg-primary rounded-lg'">
                                     </div>
                                 </div>
                                 <span class="text-xs ml-3 mr-1">{{ twoStar }}</span>
@@ -696,8 +692,7 @@ function generateAvatarUrl(title) {
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                     </svg></span>
                                 <div class="slider-1 h-2 w-full bg-gray-200 rounded-xl my-auto">
-                                    <div
-                                        :class="'h-2 w-[' + Math.floor(((oneStar / reviewCount) * 100)) + '%] my-auto bg-primary rounded-lg'">
+                                    <div :class="'h-2 w-[0%] my-auto bg-primary rounded-lg'">
                                     </div>
                                 </div>
                                 <span class="text-xs ml-3 mr-1">{{ oneStar }}</span>
