@@ -12,6 +12,11 @@ const reviewCount = ref(0);
 const globalStar = ref(5)
 const globalReviews = ref(5)
 const staticBuyNow = ref(false);
+const oneStar = ref();
+const twoStar = ref();
+const threeStar = ref();
+const fourStar = ref();
+const fiveStar = ref();
 
 const nuxtApp = useNuxtApp();
 onMounted(function () {
@@ -57,7 +62,14 @@ async function getReviews() {
         },
         onResponse({ request, response, options }) {
             if (response._data.success) {
+                console.log('---------------res-------------');
+                console.log(response);
                 console.log(response._data.data.length);
+                oneStar.value = response._data.oneStar;
+                twoStar.value = response._data.twoStar;
+                threeStar.value = response._data.threeStar;
+                fourStar.value = response._data.fourStar;
+                fiveStar.value = response._data.fiveStar;
                 globalStar.value = response._data.data[0]['global_star'];
                 globalReviews.value = response._data.data[0]['global_reviews'];
                 console.log(globalStar.value);
@@ -243,7 +255,7 @@ function generateAvatarUrl(title) {
                 <div class="col-span-12 sm:col-span-7">
                     <p class="font-bold sm:text-lg text-xs my-3">YOUR GO-TO SOLUTION FOR HEALTHY & STRONGER HAIR
                     </p>
-                    <h2 class="font-extrabold text-secondary sm:text-4xl text-xl  ">HAIR-YOU-GLO</h2>
+                    <h2 class="font-extrabold text-secondary sm:text-4xl text-2xl  ">HAIR-YOU-GLO</h2>
                     <!-- <h2 class="font-semibold text-black text-xl">FOR HEALTHY & STRONG HAIR</h2> -->
 
                     <div class="flex my-0">
@@ -305,7 +317,7 @@ function generateAvatarUrl(title) {
                         <!-- <p class=""><s>₹ 1299.00</s></p> -->
                     </div>
                     <div class="flex">
-                        <span class=" text-primary text-3xl"><span class="font-semibold">₹</span> <span
+                        <span class=" text-primary text-2xl"><span class="font-semibold">₹</span> <span
                                 class="font-extrabold">1299.00</span></span>
                         <!-- <span class="my-auto text-sm bg-secondary text-white ml-1 px-1">25% off</span> -->
                         <!-- <span v-if="!promocodeVerified" class="font-extrabold text-primary mt-3 text-3xl mr-9">Rs. {{ 1299
@@ -379,7 +391,7 @@ function generateAvatarUrl(title) {
 
                         <div class="grid grid-cols-12 mt-4">
                             <div class="col-span-12">
-                                <p>Free Shipping Across India Delivery in 3-6 business days.</p>
+                                <p>Free Shipping Across India. Delivery in 3-6 business days.</p>
                             </div>
                             <!-- <div class="col-span-6">
                                 <div class="flex"> <span class="inline-block"><svg width="25" height="25"
@@ -623,10 +635,12 @@ function generateAvatarUrl(title) {
                                         <path fill="black"
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                     </svg></span>
-                                <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
-                                    <div class="h-2 w-4/4 my-auto bg-primary rounded-lg"></div>
+                                <div class="slider-1 h-2 w-full bg-gray-200 rounded-xl my-auto">
+                                    <div
+                                        :class="'h-2 w-[' + Math.floor(((fiveStar / reviewCount) * 100)) + '%] my-auto bg-primary rounded-lg'">
+                                    </div>
                                 </div>
-                                <!-- <span class="text-xs ml-3 mr-1">23</span> -->
+                                <span class=" text-xs ml-3 mr-1">{{ fiveStar }}</span>
                                 <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
@@ -636,10 +650,12 @@ function generateAvatarUrl(title) {
                                         <path fill="black"
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                     </svg></span>
-                                <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
-                                    <div class="h-2 w-3/4 my-auto bg-primary rounded-lg"></div>
+                                <div class="slider-1 h-2 w-full bg-gray-200 rounded-xl my-auto">
+                                    <div
+                                        :class="'h-2 w-[' + Math.floor(((fourStar / reviewCount) * 100)) + '%] my-auto bg-primary rounded-lg'">
+                                    </div>
                                 </div>
-                                <!-- <span class="text-xs ml-3 mr-1">12</span> -->
+                                <span class="text-xs ml-3 mr-1">{{ fourStar }}</span>
                                 <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
@@ -649,10 +665,12 @@ function generateAvatarUrl(title) {
                                         <path fill="black"
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                     </svg></span>
-                                <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
-                                    <div class="h-2 w-2/4 my-auto bg-primary rounded-lg"></div>
+                                <div class="slider-1 h-2 w-full bg-gray-200 rounded-xl my-auto">
+                                    <div
+                                        :class="'h-2 w-[' + Math.floor(((threeStar / reviewCount) * 100)) + '%] my-auto bg-primary rounded-lg'">
+                                    </div>
                                 </div>
-                                <!-- <span class="text-xs ml-3 mr-1">20</span> -->
+                                <span class="text-xs ml-3 mr-1">{{ threeStar }}</span>
                                 <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
@@ -662,10 +680,12 @@ function generateAvatarUrl(title) {
                                         <path fill="black"
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                     </svg></span>
-                                <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
-                                    <div class="h-2 w-1/3 my-auto bg-primary rounded-lg"></div>
+                                <div class="slider-1 h-2 w-full bg-gray-200 rounded-xl my-auto">
+                                    <div
+                                        :class="'h-2 w-[' + Math.floor(((twoStar / reviewCount) * 100)) + '%] my-auto bg-primary rounded-lg'">
+                                    </div>
                                 </div>
-                                <!-- <span class="text-xs ml-3 mr-1">36</span> -->
+                                <span class="text-xs ml-3 mr-1">{{ twoStar }}</span>
                                 <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                             <div class="stars-slider w-full flex items-center">
@@ -675,10 +695,12 @@ function generateAvatarUrl(title) {
                                         <path fill="black"
                                             d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                     </svg></span>
-                                <div class="slider-1 h-2 w-full bg-white rounded-xl my-auto">
-                                    <div class="h-2 w-1/5 my-auto bg-primary rounded-lg"></div>
+                                <div class="slider-1 h-2 w-full bg-gray-200 rounded-xl my-auto">
+                                    <div
+                                        :class="'h-2 w-[' + Math.floor(((oneStar / reviewCount) * 100)) + '%] my-auto bg-primary rounded-lg'">
+                                    </div>
                                 </div>
-                                <!-- <span class="text-xs ml-3 mr-1">54</span> -->
+                                <span class="text-xs ml-3 mr-1">{{ oneStar }}</span>
                                 <!-- <span class="text-xs font-bold">Vote</span> -->
                             </div>
                         </div>
@@ -709,20 +731,23 @@ function generateAvatarUrl(title) {
                                 reviewCount }}</span>
                         </h5>
                         <hr class="bg-black my-5" />
-                        <div v-for="    data     in     review    " class="grid grid-cols-12 pb-4">
+                        <div v-for="       data        in        review       " class="grid grid-cols-12 pb-4">
                             <div class="col-span-12 sm:col-span-5">
                                 <div class="flex">
                                     <img :src="generateAvatarUrl(data.title)" class="w-12 rounded-full" alt="">
                                     <!-- <span class="w-10 h-10 rounded-full bg-secondary my-auto"></span> -->
                                     <div class="ml-1">
                                         <div class="flex">
-                                            <span v-for="    count     in     parseInt(data.star)    "><svg width="15"
-                                                    height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <span v-for="       count        in        parseInt(data.star)       "><svg
+                                                    width="15" height="15" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
                                                     <path fill="orange"
                                                         d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                                 </svg></span>
-                                            <span v-for="    count     in     (5 - parseInt(data.star))    "><svg width="15"
-                                                    height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <span
+                                                v-for="       count        in        (5 - parseInt(data.star))       "><svg
+                                                    width="15" height="15" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
                                                     <path fill="white"
                                                         d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
                                                 </svg></span>
@@ -918,8 +943,11 @@ function generateAvatarUrl(title) {
                     </div>
 
 
-                    <h2 class="text-secondary text-center font-bold text-2xl mt-6 mb-3">HAVE DOUBT’S? <br />
-                        WE HAVE GOT ANSWERS TO THEM!!</h2>
+                    <h2 id="faq-redirect" class="text-secondary text-center font-bold text-2xl mt-6 mb-3">HAVE
+                        DOUBT’S?
+                        <br />
+                        WE HAVE GOT ANSWERS TO THEM!!
+                    </h2>
 
                     <div class="container mx-auto">
                         <details class=" rounded-lg mb-3">
@@ -929,14 +957,18 @@ function generateAvatarUrl(title) {
                                 will it work?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
-                                <p>Yes, Hair-You-Glo is crafted in such a way that will help those who are experiencing
+                                <p>Yes, Hair-You-Glo is crafted in such a way that will help those who are
+                                    experiencing
                                     hair
-                                    fall/hair loss.Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness,
+                                    fall/hair loss.Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent
+                                    dryness,
                                     improve
                                     blood circulation, and promote hair growth while suppressing DHT.<br />
-                                    Gotu Kola Leaf Extract & Fenugreek Seed Extract aids in collagen synthesis, vital for
+                                    Gotu Kola Leaf Extract & Fenugreek Seed Extract aids in collagen synthesis,
+                                    vital for
                                     maintaining hair's strength and structure, reducing hair thinning and breakage.
-                                    Sea Buckthorn Extract is a powerhouse of omega fatty acids that nourish hair follicles,
+                                    Sea Buckthorn Extract is a powerhouse of omega fatty acids that nourish hair
+                                    follicles,
                                     promoting healthy hair growth and reducing hair loss.</p>
                             </div>
                         </details>
@@ -948,13 +980,16 @@ function generateAvatarUrl(title) {
                             <div class="mt-1 leading-6 text-black">
                                 <p>Dandruff is often caused by dry skin or skin conditions. Since the hair follicle
                                     forms from the
-                                    surface of your skin, skin health is equally important when it comes to healthier
+                                    surface of your skin, skin health is equally important when it comes to
+                                    healthier
                                     hair.<br />
-                                    Hair-You-Glo combats this by including ingredients high in antioxidants such as Amla
+                                    Hair-You-Glo combats this by including ingredients high in antioxidants such as
+                                    Amla
                                     which keeps
                                     the skin hydrated.Cinnamon Bark Extract & Gotu Kola Leaf Extract which contains
                                     antimicrobial
-                                    properties that maintain a healthy scalp environment, reducing the risk of dandruff and
+                                    properties that maintain a healthy scalp environment, reducing the risk of
+                                    dandruff and
                                     infections</p>
                             </div>
                         </details>
@@ -965,15 +1000,20 @@ function generateAvatarUrl(title) {
                             </summary>
                             <div class="mt-1 leading-6 text-black">
                                 <p>This may be different for each individual. If this superblend helps you with your
-                                    hair fall and you’re looking to discontinue usage of this product while maintaining your
+                                    hair fall and you’re looking to discontinue usage of this product while
+                                    maintaining your
                                     hair
-                                    health, we would recommend slowly decreasing the dose of Hair-You-Glo after experiencing
+                                    health, we would recommend slowly decreasing the dose of Hair-You-Glo after
+                                    experiencing
                                     visible
                                     positive changes.<br />
-                                    If you are maintaining a healthy diet, lifestyle, managing stress effectively, and still
-                                    experiencing hair fall after discontinuing this product, you might be experiencing a
+                                    If you are maintaining a healthy diet, lifestyle, managing stress effectively,
+                                    and still
+                                    experiencing hair fall after discontinuing this product, you might be
+                                    experiencing a
                                     chronic,
-                                    auto-immune, or hormone-related condition, and as a result, experiencing hair fall as a
+                                    auto-immune, or hormone-related condition, and as a result, experiencing hair
+                                    fall as a
                                     symptom.
                                     Hair-You-Glo is a safe product for long-term use and while some only need it
                                     temporarily, it is
@@ -1007,7 +1047,8 @@ function generateAvatarUrl(title) {
                             </summary>
                             <div class="mt-1 leading-6 text-black">
                                 <p>Our parcels are packed carefully for every order, however shipping can increase a
-                                    slight chance that some might get damaged.Please read our return/refund policy,take an
+                                    slight chance that some might get damaged.Please read our return/refund
+                                    policy,take an
                                     unboxing
                                     video, and write to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a>
                                     for
@@ -1021,11 +1062,14 @@ function generateAvatarUrl(title) {
                             </summary>
                             <div class="mt-1 leading-6 text-black">
                                 <p>We undergo a strict quality control procedure for every order before being
-                                    dispatched. However, if the items are different from what you ordered or if some items
+                                    dispatched. However, if the items are different from what you ordered or if some
+                                    items
                                     are
-                                    missing, please read our return/refund policy, take an unboxing video, and write to us
+                                    missing, please read our return/refund policy, take an unboxing video, and write
+                                    to us
                                     at
-                                    <a href="mailto:connect@glosense.in">connect@glosense.in</a> for further assistance.
+                                    <a href="mailto:connect@glosense.in">connect@glosense.in</a> for further
+                                    assistance.
                                 </p>
                             </div>
                         </details>
@@ -1036,10 +1080,13 @@ function generateAvatarUrl(title) {
                                 delivery?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
-                                <p>You will be sent an order confirmation email along with your tracking details once
-                                    dispatched. However, if you have any concerns over your order status, please feel free
+                                <p>You will be sent an order confirmation email along with your tracking details
+                                    once
+                                    dispatched. However, if you have any concerns over your order status, please
+                                    feel free
                                     to reach
-                                    out to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a> and our
+                                    out to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a> and
+                                    our
                                     customer
                                     support team will be happy to help you!
                                 </p>
@@ -1065,7 +1112,8 @@ function generateAvatarUrl(title) {
                                 When will my order be dispatched?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
-                                <p>Your order will be dispatched 24 to 48 hours after placing your order post which you
+                                <p>Your order will be dispatched 24 to 48 hours after placing your order post which
+                                    you
                                     will receive an email with your tracking details.
                                 </p>
                             </div>
@@ -1076,7 +1124,8 @@ function generateAvatarUrl(title) {
                                 How long will the shipping take?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
-                                <p>You can expect a standard shipping time of 2 to 8 business days as mentioned during
+                                <p>You can expect a standard shipping time of 2 to 8 business days as mentioned
+                                    during
                                     checkout!
                                 </p>
                             </div>
@@ -1088,7 +1137,8 @@ function generateAvatarUrl(title) {
                             </summary>
                             <div class="mt-1 leading-6 text-black">
                                 <p>It is important to keep in mind that as a company in the food industry, we have
-                                    strict return/refund policies. So please go through our return/refund policy here. If
+                                    strict return/refund policies. So please go through our return/refund policy
+                                    here. If
                                     you feel
                                     like you need more assistance, please feel free to drop in an email to <a
                                         href="mailto:connect@glosense.in">connect@glosense.in</a> :)
@@ -1111,10 +1161,13 @@ function generateAvatarUrl(title) {
                                 Are there any side effects associated with Glosense Lifecare Pvt Ltd?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
-                                <p>At Glosense Lifecare Pvt Ltd, we care about your well-being. Our Glosense Lifecare Pvt
+                                <p>At Glosense Lifecare Pvt Ltd, we care about your well-being. Our Glosense
+                                    Lifecare Pvt
                                     Ltd is plant-based and designed
-                                    for a healthy lifestyle.But incarse if you ever experience discomfort, contact us at
-                                    <a href="mailto:connect@glosense.in">connect@glosense.in</a>. We're here to help.
+                                    for a healthy lifestyle.But incarse if you ever experience discomfort, contact
+                                    us at
+                                    <a href="mailto:connect@glosense.in">connect@glosense.in</a>. We're here to
+                                    help.
                                 </p>
                             </div>
                         </details>
@@ -1135,9 +1188,11 @@ function generateAvatarUrl(title) {
                             </summary>
                             <div class="mt-1 leading-6 text-black">
                                 <p>The journey to experiencing the benefits of Hair-you-glo can be unique for each
-                                    person. We encourage you to use our product consistently to discover the results that
+                                    person. We encourage you to use our product consistently to discover the results
+                                    that
                                     align with
-                                    your personal wellness goals.One can see results within 8-10 weeks of regular use.
+                                    your personal wellness goals.One can see results within 8-10 weeks of regular
+                                    use.
                                 </p>
                             </div>
                         </details>
@@ -1147,7 +1202,8 @@ function generateAvatarUrl(title) {
                                 Is Glosense safe to use?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
-                                <p>As our product is all plant based with 100% natural ingredients used,we can conclude
+                                <p>As our product is all plant based with 100% natural ingredients used,we can
+                                    conclude
                                     that all products of Glosense Lifecare Pvt Ltd are safe to use:)
                                 </p>
                             </div>
@@ -1158,14 +1214,19 @@ function generateAvatarUrl(title) {
                                 What is Glosense Lifecare Pvt Ltd, and how does it work?
                             </summary>
                             <div class="mt-1 leading-6 text-black">
-                                <p>At Glosense Lifecare Pvt Ltd we are a nutraceutical brand, we're all about enhancing your
+                                <p>At Glosense Lifecare Pvt Ltd we are a nutraceutical brand, we're all about
+                                    enhancing your
                                     well-being
-                                    through nature's gifts. Our plant-based superblends offer a holistic approach to health,
-                                    elevating your hair, skin, gut, and stress management.We encourage you to explore the
+                                    through nature's gifts. Our plant-based superblends offer a holistic approach to
+                                    health,
+                                    elevating your hair, skin, gut, and stress management.We encourage you to
+                                    explore the
                                     world of
-                                    plant-based superblends and discover how they can transform your life.Embrace the power
+                                    plant-based superblends and discover how they can transform your life.Embrace
+                                    the power
                                     of
-                                    plant-based superblends, and experience the incredible transformation they can bring to
+                                    plant-based superblends, and experience the incredible transformation they can
+                                    bring to
                                     your
                                     life.
                                 </p>
@@ -1220,6 +1281,22 @@ function generateAvatarUrl(title) {
 
 
 <style type="scss">
+.fade-enter-active {
+    transition: opacity 0.5s;
+}
+
+.fade-leave-active {
+    transition: 0.5s;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-leave-active {
+    opacity: 0;
+}
+
 .driving-text {
     /* position: absolute;
     top: 50%;

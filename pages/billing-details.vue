@@ -206,22 +206,20 @@ async function verifyPromoCode() {
                 </form>
             </div>
             <div
-                class="col-span-12 sm:ml-6 sm:col-span-6 m-auto mt-4 order-1 sm:order-2 border border-white sm:rounded-3xl p-3 bg-[#ffe6e2]">
-                <div class="flex items-center ">
-                    <div class="w-1/4 mr-0">
-                        <img src="/images/product/product-details-4.png" alt="">
+                class="col-span-12 w-full sm:ml-6 sm:col-span-6 m-auto mt-4 order-1 sm:order-2 border border-white sm:rounded-3xl p-3 bg-[#ffe6e2]">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-3">
+                        <img src="/images/product/product-details-4.png" class="" alt="">
                     </div>
-                    <div class="flex">
-                        <div>
+                    <div class="col-span-6 flex">
+                        <div class="flex justify-center flex-col">
                             <h4 class="font-bold text-secondary text-xl">Hair You Glo</h4>
                             <h4 class="font-medium text-sm">For Healthy & Stronger Hair</h4>
                             <p class="font-medium text-sm">Qty: {{ counter }}</p>
                         </div>
-                        <!-- <p class="font-bold">x 1 Rs. 1299 /-</p> -->
-                        <!-- <p>Discoun</p> -->
-                        <div class="font-bold text-secondary text-xl flex justify-between">
-                            <p>₹ {{ 1299 - promocodeDiscount }}.00</p>
-                        </div>
+                    </div>
+                    <div class="font-bold col-span-3 text-secondary text-xl my-auto">
+                        <p class="w-full text-end">₹ {{ 1299 - promocodeDiscount }}.00</p>
                     </div>
                 </div>
                 <div class="h-0.5 bg-gray-300 w-3/3 sm:w-3/3 mx-auto my-2"></div>

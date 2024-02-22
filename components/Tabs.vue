@@ -11,6 +11,8 @@ function whatsInItFunction() {
     whatToExpect.value = false;
     storageTip.value = false;
     howItWork.value = false;
+    const val = document.getElementById('tab-scroll-container');
+    val.scrollTo(0, window.scrollY);
 }
 
 function whatToExpectFunction() {
@@ -18,25 +20,31 @@ function whatToExpectFunction() {
     whatInIt.value = false;
     storageTip.value = false;
     howItWork.value = false;
+    const val = document.getElementById('tab-scroll-container');
+    val.scrollTo(120, window.scrollY);
 }
 function storageTipFunction() {
     whatToExpect.value = false;
     whatInIt.value = false;
     storageTip.value = true;
     howItWork.value = false;
+    const val = document.getElementById('tab-scroll-container');
+    val.scrollTo(240, window.scrollY);
 }
 function howItWorkFunction() {
     whatToExpect.value = false;
     whatInIt.value = false;
     storageTip.value = false;
     howItWork.value = true;
+    const val = document.getElementById('tab-scroll-container');
+    val.scrollTo(360, window.scrollY);
 }
 </script>
 <template>
     <div class="bg-[#f9d5cf] px-1 sm:py-4">
         <div class="w-full">
             <div class="sm:!flex py-4 md:flex overflow-scroll sm:overflow-hidden sm:justify-center"
-                style="display: -webkit-box;">
+                id="tab-scroll-container" style="display: -webkit-box;">
                 <p @click="whatsInItFunction"
                     class="p-2 mx-1 border border-secondary rounded cursor-pointer text-lg font-bold sm:inline-block"
                     style="display: -webkit-box;" :class="[{ 'bg-secondary text-white ': whatInIt }]">

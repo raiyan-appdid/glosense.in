@@ -1348,10 +1348,11 @@ const updateDotValue = (value) => {
   </a>
 
   <span class="customslidedownonindex">
-    <svg width="50" height="50" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-        d="M7 .5v13m3.5-3.5L7 13.5L3.5 10" />
-    </svg>
+    <div class="scroll-down">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </span>
 
   <div class="hidden sm:block">
@@ -1701,8 +1702,8 @@ const updateDotValue = (value) => {
 <style>
 .customslidedownonindex {
   position: fixed !important;
-  left: 35px;
-  bottom: 90px;
+  right: 35px;
+  bottom: 190px;
   height: 60px;
   width: 60px;
   /* background: #2bb741;
@@ -1713,18 +1714,45 @@ const updateDotValue = (value) => {
   z-index: 999999999999;
 }
 
-.customslidedownonindex {
-  animation: 0.5s custom-shake infinite alternate;
-  display: inline-block;
+.scroll-down {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes custom-shake {
-  from {
-    transform: translateY(10px);
+.scroll-down span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.scroll-down span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+.scroll-down span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
   }
 
-  to {
-    transform: translateY(-10px);
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
   }
 }
 
