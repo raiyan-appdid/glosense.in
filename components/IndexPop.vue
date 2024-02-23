@@ -81,21 +81,28 @@ async function storeEmail() {
                     <span class="sr-only">Close modal</span>
                 </button>
                 <div class="grid grid-cols-12">
-                    <div class="sm:col-span-6 col-span-12">
-                        <img :src="dynamicImage" alt="">
+                    <div class="sm:col-span-6 col-span-12 order-1 sm:order-2 sm:bg-primary">
+                        <div class="flex items-center h-full">
+                            <img :src="dynamicImage" class="my-auto" alt="">
+                        </div>
                     </div>
-                    <div class="sm:col-span-6 col-span-12 p-4">
+                    <div class="sm:col-span-6 col-span-12 sm:py-10  px-4 sm:order-2">
                         <div class="flex flex-col justify-evenly h-full">
-                            <p class="text-center">YOUR SUPER</p>
-                            <p class="text-center">ENTER TO WIN</p>
-                            <p class="text-center text-3xl">FREE</p>
-                            <p class="text-center">1 - Month Supply of Your Super New Winner Every Day</p>
-                            <div class="">
+                            <p class="text-center my-4">YOUR ANTI-HAIRFALL SOLUTION</p>
+                            <p class="text-center text-primary text-3xl">FREE</p>
+                            <p class="text-center text-secondary font-semibold leading-4 my-3">E- guide to <br /> Fix Your
+                                Hair
+                                Fall!</p>
+                            <p class="text-center text-sm">A Eguide packed with insider secrets & exclusive control over
+                                your
+                                hairfall.</p>
+                            <div class="mt-4">
                                 <input type="email" placeholder="Enter your email" v-model="email"
-                                    class="block w-full p-2 mt-3 sm:mt-0 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
+                                    class="block w-full p-2 sm:mt-0 text-sm mb-4 text-gray-900 border rounded border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
                                     required>
                                 <button @click="storeEmail()"
-                                    class="bg-secondary rounded-md w-full mt-2 p-1 text-white">Continue</button>
+                                    class="bg-primary font-semibold rounded-xl w-full mt-2 p-1 text-white">Send
+                                    me Now!</button>
                             </div>
                         </div>
                     </div>

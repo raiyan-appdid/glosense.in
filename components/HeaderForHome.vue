@@ -149,8 +149,10 @@ onUnmounted(() => {
               Register
             </a> -->
             <p class="flex ml-10 items-center" v-show="!loggedIn">
-              {{ store.name }}
-              <LogOut :loggedIn="loggedIn" />
+            <div class="">
+              <p class="text-white bg-secondary p-3 rounded-lg block">{{ store.name }}</p>
+            </div>
+            <LogOut :loggedIn="loggedIn" />
             </p>
           </div>
           <li @click="closeSideBar">

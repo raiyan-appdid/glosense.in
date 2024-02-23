@@ -153,9 +153,11 @@ onUnmounted(() => {
               class="flex ml-2 bg-[#e3694f] w-fit items-center p-2 text-bold rounded-lg text-neutral-50 hover:bg-[#e3694f] group">
               Register
             </a> -->
-            <p class="flex ml-10 items-center" v-show="!loggedIn">
-              {{ store.name }}
-              <LogOut :loggedIn="loggedIn" />
+            <p class="flex ml-2 items-center" v-show="!loggedIn">
+            <div class="">
+              <p class="text-white bg-secondary p-3 rounded-lg block">{{ store.name }}</p>
+            </div>
+            <LogOut :loggedIn="loggedIn" />
             </p>
           </div>
 
