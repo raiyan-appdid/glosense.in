@@ -1292,7 +1292,7 @@ const updateDotValue = (value) => {
 </script>
 <template>
   <HeaderForHome />
-  <IndexPop />
+  <!-- <IndexPop /> -->
 
   <div id="NotiflixLoadingWrap"
     class="notiflix-loading nx-with-animation w-screen h-screen absolute backdrop-blur-xl bg-primary" style="
