@@ -17,8 +17,10 @@ const twoStar = ref();
 const threeStar = ref();
 const fourStar = ref();
 const fiveStar = ref();
-
+const nextPageUrl = ref();
+const prevPageUrl = ref();
 const nuxtApp = useNuxtApp();
+const currentPage = ref(1);
 onMounted(function () {
     console.log(nuxtApp.$fb)
     nuxtApp.$fb.enable()
@@ -54,31 +56,66 @@ onMounted(() => {
 
 })
 
-async function getReviews() {
-    await useFetch(`${apiUrl}/reviews`, {
-        method: "GET",
-        headers: {
-            accept: "application/json"
-        },
-        onResponse({ request, response, options }) {
-            if (response._data.success) {
-                console.log('---------------res-------------');
-                console.log(response);
-                console.log(response._data.data.length);
-                oneStar.value = response._data.oneStar;
-                twoStar.value = response._data.twoStar;
-                threeStar.value = response._data.threeStar;
-                fourStar.value = response._data.fourStar;
-                fiveStar.value = response._data.fiveStar;
-                globalStar.value = response._data.data[0]['global_star'];
-                globalReviews.value = response._data.data[0]['global_reviews'];
-                console.log(globalStar.value);
-                review.value = response._data.data;
-                reviewCount.value = response._data.data.length;
-            }
-        },
-    })
+async function getReviews(url = null) {
 
+    if (url) {
+        await useFetch(url, {
+            method: "GET",
+            headers: {
+                accept: "application/json"
+            },
+            onResponse({ request, response, options }) {
+                if (response._data.success) {
+                    console.log('---------------res-------------');
+                    console.log(response);
+                    console.log(response._data.data.data.length);
+                    oneStar.value = response._data.oneStar;
+                    twoStar.value = response._data.twoStar;
+                    threeStar.value = response._data.threeStar;
+                    fourStar.value = response._data.fourStar;
+                    fiveStar.value = response._data.fiveStar;
+                    globalStar.value = response._data.data.data[0]['global_star'];
+                    globalReviews.value = response._data.data.data[0]['global_reviews'];
+                    console.log(globalStar.value);
+                    review.value = response._data.data.data;
+                    nextPageUrl.value = response._data.data.next_page_url
+                    currentPage.value = response._data.data.current_page
+                    prevPageUrl.value = response._data.data.prev_page_url
+                    reviewCount.value = response._data.reviewCount;
+                }
+            },
+        })
+    } else {
+        await useFetch(`${apiUrl}/reviews`, {
+            method: "GET",
+            headers: {
+                accept: "application/json"
+            },
+            onResponse({ request, response, options }) {
+                if (response._data.success) {
+                    console.log('---------------res-------------');
+                    console.log(response);
+                    console.log(response._data.data.data.length);
+                    oneStar.value = response._data.oneStar;
+                    twoStar.value = response._data.twoStar;
+                    threeStar.value = response._data.threeStar;
+                    fourStar.value = response._data.fourStar;
+                    fiveStar.value = response._data.fiveStar;
+                    globalStar.value = response._data.data.data[0]['global_star'];
+                    globalReviews.value = response._data.data.data[0]['global_reviews'];
+                    console.log(globalStar.value);
+                    review.value = response._data.data.data;
+                    nextPageUrl.value = response._data.data.next_page_url
+                    prevPageUrl.value = response._data.data.prev_page_url
+                    reviewCount.value = response._data.reviewCount;
+                }
+            },
+        })
+    }
+
+
+
+    console.log(reviewCount.value);
     console.log(review.value);
 
 }
@@ -224,7 +261,7 @@ function generateAvatarUrl(title) {
 
     <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267">
         <span class="wa-whatsapp">
-            <svg width="63.51" height="64" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
+            <svg width="55" height="55" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
                         <stop offset="0%" stop-color="#1FAF38" />
@@ -419,7 +456,9 @@ function generateAvatarUrl(title) {
                 <div class="image-wrapper">
                     <!-- <img src="/images/product/Desktop-product-page-banner.png" class="scrolling-image"
                         style="max-width: 200% !important;" alt="" /> -->
-                    <img src="/images/product/Desktop-product-page-banner.png" class="scrolling-image"
+                    <img src="/images/product/product-mobile-banner.png" class="scrolling-image"
+                        style="max-width: 200% !important;" alt="" />
+                    <img src="/images/product/product-mobile-banner.png" class="scrolling-image"
                         style="max-width: 200% !important;" alt="" />
                 </div>
             </div>
@@ -717,6 +756,8 @@ function generateAvatarUrl(title) {
 
 
                     <div class="container mx-auto mt-10">
+
+
                         <!-- <div v-for="data in review">
                             {{ data.title }}
                             {{ data.description }}
@@ -757,6 +798,19 @@ function generateAvatarUrl(title) {
                             </div>
 
                         </div>
+                        <div class="pagination flex overflow-x-auto p-2 justify-center">
+                            <button @click="getReviews(prevPageUrl)" :class="{ 'bg-secondary': prevPageUrl == null }"
+                                :disabled="prevPageUrl == null"
+                                class="bg-primary cursor-pointer inline-block py-2 px-3 m-1 text-white rounded" href="#">
+                                &laquo; Prev</button>
+                            <p class="bg-primary cursor-pointer inline-block py-2 px-3 m-1 text-white rounded" href="#">
+                                {{ currentPage }}</p>
+                            <button @click="getReviews(nextPageUrl)" :class="{ 'bg-secondary': nextPageUrl == null }"
+                                :disabled="nextPageUrl == null"
+                                class="bg-primary cursor-pointer inline-block py-2 px-3 m-1 text-white rounded" href="#">
+                                Next &raquo;</button>
+                        </div>
+
                         <!-- <div class="grid grid-cols-12 border-dashed border-t-2 py-4 border-secondary">
                             <div class="col-span-12 sm:col-span-5">
                                 <div class="flex">
@@ -946,7 +1000,7 @@ function generateAvatarUrl(title) {
 
                     <div class="container mx-auto">
                         <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer ">
                                 Will my hair fall reduce by using
                                 Hair-You-Glo? How
                                 will it work?
@@ -1239,15 +1293,19 @@ function generateAvatarUrl(title) {
     </div>
 
 
-    <!-- <div class="bg-white fixed bottom-0 w-full" :class="[{ 'bottom-20': staticBuyNow }]">
+    <div class="bg-white fixed bottom-0 w-full" :class="[{ 'bottom-20': staticBuyNow }]">
         <div class="mx-auto bg-primary">
             <div class="flex justify-center driving-text">
-                <p>lorem ipsum lorem ipsum loren ipsun</p>
+                <p class="text-white font-semibold p-2 w-full">GET 25% FLAT OFF 🌱</p>
+                <p class="text-white font-semibold p-2 w-full">GET 25% FLAT OFF 🌱</p>
+                <p class="text-white font-semibold p-2 w-full">GET 25% FLAT OFF 🌱</p>
+                <p class="text-white font-semibold p-2 w-full">GET 25% FLAT OFF 🌱</p>
+                <p class="text-white font-semibold p-2 w-full">GET 25% FLAT OFF 🌱</p>
             </div>
         </div>
-    </div> -->
+    </div>
     <transition name="fade">
-        <div class="bg-white fixed bottom-0 w-full" v-show="staticBuyNow">
+        <div class="bg-white fixed bottom-0 w-full" :class="{ 'fade-in-image': staticBuyNow }" v-show="staticBuyNow">
             <div class="mx-auto bg-secondary">
                 <div class="flex justify-center">
                     <div class="flex p-4">
@@ -1280,17 +1338,27 @@ function generateAvatarUrl(title) {
     transition: opacity 0.5s;
 }
 
+.fade-enter-to {
+    transition: opacity 0.5s;
+}
+
 .fade-leave-active {
     transition: 0.5s;
 }
 
-.fade-enter {
-    opacity: 0;
+.fade-enter-to {
+    transition: 0.5s;
+    opacity: 1;
 }
 
 .fade-leave-active {
     opacity: 0;
 }
+
+.fade-in-image {
+    animation: fadeIn 1s;
+}
+
 
 .driving-text {
     /* position: absolute;
@@ -1301,7 +1369,7 @@ function generateAvatarUrl(title) {
 }
 
 .driving-text p {
-    animation: drive 5s linear infinite;
+    animation: drive 10s linear infinite;
 }
 
 @keyframes drive {
@@ -1375,7 +1443,7 @@ input[type="number"]::-webkit-outer-spin-button {
     z-index: 1;
 }
 
-/* .scroll-container {
+.scroll-container {
     overflow: hidden;
 }
 
@@ -1395,5 +1463,5 @@ input[type="number"]::-webkit-outer-spin-button {
     100% {
         transform: translateX(-100%);
     }
-} */
+}
 </style>

@@ -1326,7 +1326,7 @@ const updateDotValue = (value) => {
   </div>
   <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267">
     <span class="wa-whatsapp">
-      <svg width="63.51" height="64" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
+      <svg width="55" height="55" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
             <stop offset="0%" stop-color="#1FAF38" />
@@ -1352,6 +1352,7 @@ const updateDotValue = (value) => {
       <span></span>
       <span></span>
       <span></span>
+      <p class="scroll-down-text text-sm">Scroll Down</p>
     </div>
   </span>
 
@@ -1733,11 +1734,19 @@ const updateDotValue = (value) => {
   display: block;
   width: 20px;
   height: 20px;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  border-bottom: 4px solid #ef8f7b;
+  border-right: 4px solid #ef8f7b;
   transform: rotate(45deg);
   margin: -10px;
   animation: animate 2s infinite;
+}
+
+.scroll-down-text {
+  position: absolute;
+  width: 88px;
+  bottom: -68px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes animate {

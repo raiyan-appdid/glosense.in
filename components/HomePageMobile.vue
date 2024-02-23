@@ -509,7 +509,7 @@ onMounted(() => {
             <img class="absolute w-20 opacity-[0.5] right-0 top-[10%]" src="/images/Asset-24-4x.png" alt="" />
             <img class="absolute w-20 opacity-[0.5] right-[1%] top-[50%]" src="/images/Asset-22-4x.png" alt="" />
 
-            <h2 class="px-10 text-xl home-text-responsive text-center mt-3">Unlock the essense of self-care through the
+            <h2 class="px-10 text-xl home-text-responsive text-center mt-10">Unlock the essense of self-care through the
                 magic
                 of
                 superfoods.
