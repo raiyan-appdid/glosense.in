@@ -20,9 +20,10 @@ body {
 }
 
 .wa-whatsapp {
+  z-index: 0 !important;
   position: fixed !important;
-  right: 35px;
-  bottom: 90px;
+  right: 25px;
+  bottom: 120px;
   height: 60px;
   width: 60px;
   /* background: #2bb741; */

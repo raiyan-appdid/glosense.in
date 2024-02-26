@@ -46,8 +46,8 @@ async function handleSubmit() {
     <!-- Main modal -->
     <LoginModal />
     <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267">
-        <span class="wa-whatsapp">
-            <svg width="55" height="55" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
+        <span class="wa-whatsapp" style="z-index: 0">
+            <svg width="45" height="45" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
                         <stop offset="0%" stop-color="#1FAF38" />

@@ -220,7 +220,7 @@
                 </div>
             </div>
 
-            <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-gray-700  border-t">
+            <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:mb-20 sm:pt-12 border-gray-700  border-t">
                 <div class="px-4 sm:w-10/12 w-12/12 md:mt-0">
                     <p class="text-sm text-justify">
                         <strong class="font-bold">Disclaimer :</strong>

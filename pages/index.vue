@@ -1327,7 +1327,7 @@ const updateDotValue = (value) => {
   </div>
   <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267">
     <span class="wa-whatsapp">
-      <svg width="55" height="55" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
+      <svg width="45" height="45" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
             <stop offset="0%" stop-color="#1FAF38" />
@@ -1353,7 +1353,7 @@ const updateDotValue = (value) => {
       <span></span>
       <span></span>
       <span></span>
-      <p class="scroll-down-text text-sm">Scroll Down</p>
+      <p class="scroll-down-text text-xs text-center">Scroll Down</p>
     </div>
   </span>
 
@@ -1404,10 +1404,10 @@ const updateDotValue = (value) => {
           <h4 class="home-text-responsive mt-8 bg-white text-primary cursor-pointer outline px-2 py-6 z-20 rounded-full">
             <a href="/product-detail" class="text-2xl">Shop Now</a>
           </h4>
-          <h2 class="absolute flex justify-center bottom-28 items-center flex-col home-text-responsive">
+          <!-- <h2 class="absolute flex justify-center bottom-28 items-center flex-col home-text-responsive">
             <img src="/images/gif/glosense-animation.gif" class="w-1/2 text-center mx-auto" alt="" />
             <p class="text-sm inline-block text-center">Scroll Down</p>
-          </h2>
+          </h2> -->
         </div>
       </div>
 
@@ -1705,9 +1705,9 @@ const updateDotValue = (value) => {
 .customslidedownonindex {
   position: fixed !important;
   right: 35px;
-  bottom: 190px;
-  height: 60px;
-  width: 60px;
+  bottom: 240px;
+  height: 50px;
+  width: 50px;
   /* background: #2bb741;
   border-radius: 50%; */
   display: flex;

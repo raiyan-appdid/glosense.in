@@ -260,8 +260,8 @@ function generateAvatarUrl(title) {
     </div>
 
     <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267">
-        <span class="wa-whatsapp">
-            <svg width="55" height="55" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
+        <span class="wa-whatsapp" style="z-index: 0">
+            <svg width="45" height="45" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
                         <stop offset="0%" stop-color="#1FAF38" />
@@ -1293,19 +1293,29 @@ function generateAvatarUrl(title) {
     </div>
 
 
-    <div class="bg-white fixed bottom-0 w-full" :class="[{ 'bottom-20': staticBuyNow }]">
+    <div class="bg-white z-10 fixed bottom-0 w-full" :class="[{ 'bottom-20': staticBuyNow }]" v-show="staticBuyNow">
         <div class="mx-auto bg-primary">
             <div class="flex justify-center driving-text">
-                <p class="text-white font-semibold p-2 w-full">GET 25% FLAT OFF 🌱</p>
-                <p class="text-white font-semibold p-2 w-full">GET 25% FLAT OFF 🌱</p>
-                <p class="text-white font-semibold p-2 w-full">GET 25% FLAT OFF 🌱</p>
-                <p class="text-white font-semibold p-2 w-full">GET 25% FLAT OFF 🌱</p>
-                <p class="text-white font-semibold p-2 w-full">GET 25% FLAT OFF 🌱</p>
+                <p class="text-white font-semibold pb-2 pt-0 w-full">
+                    <HeadingText />
+                </p>
+                <p class="text-white font-semibold pb-2 pt-0 w-full">
+                    <HeadingText />
+                </p>
+                <p class="text-white font-semibold pb-2 pt-0 w-full">
+                    <HeadingText />
+                </p>
+                <p class="text-white font-semibold pb-2 pt-0 w-full">
+                    <HeadingText />
+                </p>
+                <p class="text-white font-semibold pb-2 pt-0 w-full">
+                    <HeadingText />
+                </p>
             </div>
         </div>
     </div>
     <transition name="fade">
-        <div class="bg-white fixed bottom-0 w-full" :class="{ 'fade-in-image': staticBuyNow }" v-show="staticBuyNow">
+        <div class="bg-white z-10 fixed bottom-0 w-full" :class="{ 'fade-in-image': staticBuyNow }" v-show="staticBuyNow">
             <div class="mx-auto bg-secondary">
                 <div class="flex justify-center">
                     <div class="flex p-4">
@@ -1374,11 +1384,11 @@ function generateAvatarUrl(title) {
 
 @keyframes drive {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(100%);
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
 }
 
