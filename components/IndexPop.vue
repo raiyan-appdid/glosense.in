@@ -103,7 +103,11 @@ async function storeEmail() {
                                 <button @click="storeEmail()"
                                     class="bg-primary font-semibold rounded-xl w-full mt-2 p-1 text-white">Send
                                     me Now!</button>
+
+
                             </div>
+                            <a href="https://admin.glosense.in/site/assets/pdf/E-book-Hair-Fall-final.pdf"
+                                class="text-center"> <button download="E-book-Hair-Fall">Download Now</button></a>
                         </div>
                     </div>
                 </div>
