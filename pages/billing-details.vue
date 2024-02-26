@@ -431,7 +431,7 @@ async function verifyPromoCode() {
                             <!-- <input name="country" value="India" id="country"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"> -->
 
-                            <select id="countries"
+                            <select id="countries" name="country"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                                 <option v-for="data in countryArray" :selected="data == 'India'" :value="data">{{ data
                                 }}</option>
