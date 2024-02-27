@@ -397,7 +397,7 @@ function generateAvatarUrl(title) {
                             class="my-auto bg-white text-secondary ml-4 px-4 font-extrabold rounded-l-lg border-r-0 border-2 border-secondary text-2xl py-2 cursor-pointer"
                             @click="decrementCount">-</button>
                         <input type="number" v-model="counter"
-                            class="w-[2rem] text-xl font-bold text-center border-r-0 border-l-0 border-2 border-secondary bg-white text-secondary hover:border-secondary focus:outline-none"
+                            class="w-[2rem] text-xl font-bold text-center border-r-0 rounded-none border-l-0 border-2 border-secondary bg-white text-secondary hover:border-secondary focus:outline-none"
                             name="" id="">
                         <button
                             class="my-auto bg-white px-4 cursor-pointer rounded-r-lg text-secondary border-l-0 border-2 border-secondary py-2 mr-4 font-bold text-2xl"
@@ -1323,7 +1323,7 @@ function generateAvatarUrl(title) {
                             class="my-auto bg-secondary text-white ml-4 px-4 font-extrabold rounded-l-lg border-r-0 border-2 border-white text-2xl py-2 cursor-pointer"
                             @click="decrementCount">-</button>
                         <input type="number" v-model="counter"
-                            class="w-[2rem] text-xl font-bold sm:mb-[1px] sm:mt-[1px] text-center border-r-0 border-l-0 border-2 border-white bg-secondary text-white hover:border-white focus:outline-none"
+                            class="w-[2rem] text-xl font-bold sm:mb-[1px] sm:mt-[1px] text-center rounded-none border-r-0 border-l-0 border-2 border-white bg-secondary text-white hover:border-white focus:outline-none"
                             name="" id="">
                         <button
                             class="my-auto bg-secondary px-4 cursor-pointer rounded-r-lg text-white border-l-0 border-2 border-white py-2 mr-4 font-bold text-2xl"
