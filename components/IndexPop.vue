@@ -90,7 +90,7 @@ async function storeEmail() {
                 <div class="grid grid-cols-12">
                     <div class="sm:col-span-6 col-span-12 order-1 sm:order-2 sm:bg-primary">
                         <div class="flex items-center h-full justify-center">
-                            <img :src="dynamicImage" class="my-auto w-[80%] sm:w-auto mb-4" alt="">
+                            <img :src="dynamicImage" class="sm:my-auto w-[80%] sm:w-auto mb-4" alt="">
                         </div>
                     </div>
                     <div class="sm:col-span-6 col-span-12 sm:py-10  px-4 sm:order-2">
@@ -107,7 +107,7 @@ async function storeEmail() {
                             <div class="mt-4 text-center">
                                 <div class="w-full text-center flex justify-center">
                                     <input type="email" placeholder="Enter your email" v-model="email"
-                                        class="block w-[60%] p-2 sm:mt-0 text-sm mb-4 text-gray-900 border rounded border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
+                                        class="block w-[60%] sm:w-auto p-2 sm:mt-0 text-sm mb-4 text-gray-900 border rounded border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
                                         required>
                                 </div>
                                 <button @click="storeEmail()"
