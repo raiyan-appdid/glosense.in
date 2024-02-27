@@ -527,10 +527,10 @@ onMounted(() => {
                     <a href="">Shop Now</a>
                 </p>
             </div> -->
-            <h2 class="px-10 absolute bottom-10 flex justify-center flex-col home-text-responsive mt-3">
+            <!-- <h2 class="px-10 absolute bottom-10 flex justify-center flex-col home-text-responsive mt-3">
                 <img src="/images/gif/glosense-animation.gif" class="w-1/2 text-center mx-auto" alt="">
                 <p class="text-sm inline-block text-center">Scroll Down</p>
-            </h2>
+            </h2> -->
             <div class="jar absolute flex flex-col justify-center items-center">
                 <h1
                     class="text-2xl font-bold flex justify-center items-center w-screen text-center text-primary opacity-0 prevent-damage-1 absolute -top-[45px]  bg-transparent ">

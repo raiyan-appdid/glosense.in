@@ -1292,7 +1292,7 @@ const updateDotValue = (value) => {
 </script>
 <template>
   <HeaderForHome />
-  <!-- <IndexPop /> -->
+  <IndexPop />
 
   <div id="NotiflixLoadingWrap"
     class="notiflix-loading nx-with-animation w-screen h-screen absolute backdrop-blur-xl bg-primary" style="
@@ -1325,8 +1325,8 @@ const updateDotValue = (value) => {
       </svg>
     </div>
   </div>
-  <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267">
-    <span class="wa-whatsapp">
+  <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267" class="!z-40">
+    <span class="wa-whatsapp !z-40">
       <svg width="45" height="45" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
@@ -1348,7 +1348,7 @@ const updateDotValue = (value) => {
     </span>
   </a>
 
-  <span class="customslidedownonindex">
+  <span class="customslidedownonindex !z-40">
     <div class="scroll-down">
       <span></span>
       <span></span>
