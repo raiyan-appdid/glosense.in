@@ -253,6 +253,7 @@ function generateAvatarUrl(title) {
             </svg></div>
     </div>
     <HeaderCommon />
+    <IndexPop />
 
     <!-- Main modal -->
     <LoginModal />
