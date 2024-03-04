@@ -341,16 +341,17 @@ async function login() {
 
                             <div v-show="otpSent">
                                 <div class="otp-container mt-10">
-                                    <input type="text" @keyup="verifyOtp" class="otp-input" pattern="\d" maxlength="1">
-                                    <input type="text" @keyup="verifyOtp" class="otp-input" pattern="\d" maxlength="1"
+                                    <input type="number" @keyup="verifyOtp" class="otp-input" pattern="\d"
+                                        maxlength="1">
+                                    <input type="number" @keyup="verifyOtp" class="otp-input" pattern="\d" maxlength="1"
                                         disabled>
-                                    <input type="text" @keyup="verifyOtp" class="otp-input" pattern="\d" maxlength="1"
+                                    <input type="number" @keyup="verifyOtp" class="otp-input" pattern="\d" maxlength="1"
                                         disabled>
-                                    <input type="text" @keyup="verifyOtp" class="otp-input" pattern="\d" maxlength="1"
+                                    <input type="number" @keyup="verifyOtp" class="otp-input" pattern="\d" maxlength="1"
                                         disabled>
-                                    <input type="text" @keyup="verifyOtp" class="otp-input" pattern="\d" maxlength="1"
+                                    <input type="number" @keyup="verifyOtp" class="otp-input" pattern="\d" maxlength="1"
                                         disabled>
-                                    <input type="text" @keyup="verifyOtp" class="otp-input" pattern="\d" maxlength="1"
+                                    <input type="number" @keyup="verifyOtp" class="otp-input" pattern="\d" maxlength="1"
                                         disabled>
                                 </div>
 
