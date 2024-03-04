@@ -46,7 +46,7 @@ async function handleSubmit() {
     <!-- Main modal -->
     <LoginModal />
     <a target="_blank"
-        href="https://api.whatsapp.com/send?phone=919967116267&text=I want to know more about Hair You GLo!">
+        href="https://api.whatsapp.com/send?phone=919967116267&text=I want to know more about Hair You Glo!">
         <span class="wa-whatsapp" style="z-index: 0">
             <svg width="45" height="45" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
                 <defs>
