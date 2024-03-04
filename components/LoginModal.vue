@@ -10,10 +10,20 @@ const otpSent = ref(false);
 const password = ref("");
 const region = ref('India');
 const token = useCookie('token');
+const showGoogleLogin = ref(true);
 
 import { useUserStore } from '@/stores/user'
 const store = useUserStore();
 const { getUser } = store;
+
+onMounted(() => {
+    const userAgent = window.navigator.userAgent;
+    console.log("User Agent:", userAgent);
+    if (userAgent.includes("Instagram")) {
+        showGoogleLogin.value = false;
+        // alert("For the best experience, please open this website in Chrome or another standard browser.");
+    }
+})
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
@@ -252,9 +262,11 @@ async function login() {
                     </h3>
                     <h3 class=" text-xl font-medium text-gray-900 text-center" v-if="!otpSent">Welcome To Glosense !
                     </h3>
-                    <h6 class="mb-4 text-md font-medium text-gray-900  text-center" v-if="!otpSent">Enter your mobile number
+                    <h6 class="mb-4 text-md font-medium text-gray-900  text-center" v-if="!otpSent">Enter your mobile
+                        number
                         and we will send you an OTP for verification.</h6>
-                    <h6 class="mb-4 text-md font-medium text-gray-900  text-center" v-if="otpSent">Verify your phone number
+                    <h6 class="mb-4 text-md font-medium text-gray-900  text-center" v-if="otpSent">Verify your phone
+                        number
                         using the OTP
                         sent to the number <span class="text-primary">{{ phone }}</span></h6>
                     <form class="space-y-6" @submit.prevent="login">
@@ -318,11 +330,11 @@ async function login() {
                                     required>
                             </div>
 
-                            <p class="my-2 text-center" v-if="!otpSent">- or-</p>
-                            <div class="relative text-end my-4 flex justify-center" v-if="!otpSent">
-
-
-                                <GoogleLoginButton />
+                            <div v-if="showGoogleLogin">
+                                <p class="my-2 text-center" v-if="!otpSent">- or-</p>
+                                <div class="relative text-end my-4 flex justify-center" v-if="!otpSent">
+                                    <GoogleLoginButton />
+                                </div>
                             </div>
 
 
@@ -349,7 +361,8 @@ async function login() {
                             </div>
 
                             <h3 v-show="otpSent" class="mb-10 text-center mt-5">Didn’t receive an OTP? <span
-                                    @click="sendOtp" class="text-primary font-bold text-xl cursor-pointer underline">Resend
+                                    @click="sendOtp"
+                                    class="text-primary font-bold text-xl cursor-pointer underline">Resend
                                     OTP</span></h3>
 
 
@@ -379,19 +392,22 @@ async function login() {
                                     class="submit-button-circle bg-secondary w-20 h-20 cursor-pointer rounded-full flex justify-center items-center"
                                     style="border: 10px solid white;">
                                     <span>
-                                        <svg width="30" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="30" height="30" viewBox="0 0 15 15"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path fill="white"
                                                 d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414" />
                                         </svg>
                                     </span>
                                 </div>
                             </div>
-                            <div v-else class="absolute mt-[-10px] w-full flex justify-center" style="margin-left: -30px;">
+                            <div v-else class="absolute mt-[-10px] w-full flex justify-center"
+                                style="margin-left: -30px;">
                                 <div @click="login"
                                     class="submit-button-circle bg-secondary cursor-pointer w-20 h-20 rounded-full flex justify-center items-center"
                                     style="border: 10px solid white;">
                                     <span>
-                                        <svg width="30" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="30" height="30" viewBox="0 0 15 15"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path fill="white"
                                                 d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414" />
                                         </svg>
@@ -430,6 +446,7 @@ async function login() {
         </div>
     </div>
 </template>
+
 <style>
 .otp-container,
 .email-otp-container {

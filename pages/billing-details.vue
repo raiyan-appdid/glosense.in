@@ -370,6 +370,7 @@ async function verifyPromoCode() {
     })
 }
 </script>
+
 <template>
     <HeaderCommon />
     <div class="product-details sm:px-3 md:px-8  mt-20 sm:mt-32 pb-20 bg-white">
@@ -434,7 +435,7 @@ async function verifyPromoCode() {
                             <select id="countries" name="country"
                                 class="bg-gray-50 border border-gray-300 text-black text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                                 <option v-for="data in countryArray" :selected="data == 'India'" :value="data">{{ data
-                                }}</option>
+                                    }}</option>
                             </select>
                         </div>
 
@@ -489,7 +490,8 @@ async function verifyPromoCode() {
                     <div class="col-span-8">
                         <!-- <label for="promocode" class="block mb-2 text-md font-bold text-black ">Promo Code
                         </label> -->
-                        <input @input="verifyPromoCode" name="promocode" id="promocode" type="search" v-model="promocode"
+                        <input @input="verifyPromoCode" name="promocode" id="promocode" type="search"
+                            v-model="promocode"
                             class="bg-gray-50 uppercase w-full border border-gray-300 text-black text-md font-semibold  rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
                     </div>
                     <div class="my-auto col-span-4 ">
@@ -564,7 +566,7 @@ async function verifyPromoCode() {
                 <div class="grid grid-cols-2">
                     <div class=" text-xl font-bold text-secondary">Order total</div>
                     <div class="text-end text-xl text-secondary font-extrabold">₹ {{ 1299 * counter - promocodeDiscount
-                    }}.00
+                        }}.00
                     </div>
                     <input type="hidden" form="store-billing-form" :value="(1299 * counter - promocodeDiscount)"
                         name="total" id="">
@@ -589,3 +591,24 @@ async function verifyPromoCode() {
 
     </div>
 </template>
+
+
+<style>
+input[type="search"]::-webkit-search-cancel-button {
+
+    /* Remove default */
+    -webkit-appearance: none;
+
+    /* Now your own custom styles */
+    height: 14px;
+    width: 14px;
+    display: block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
+    /* setup all the background tweaks for our custom icon */
+    background-repeat: no-repeat;
+
+    /* icon size */
+    background-size: 14px;
+
+}
+</style>

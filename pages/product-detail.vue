@@ -133,10 +133,24 @@ function openModal() {
         modal.classList.remove('hidden');
     }
     else {
+        storeAnalytics();
         getUser();
         gateWayIntegration();
         //cc avenue gateway.....
     }
+}
+
+async function storeAnalytics() {
+    await useFetch(`${apiUrl}/store-analytics`, {
+        method: "POST",
+        headers: {
+            accept: "application/json",
+            Authorization: "Bearer " + token.value,
+        },
+        onResponse({ request, response, options }) {
+            console.log(response);
+        },
+    })
 }
 
 function gateWayIntegration(name = null) {
@@ -230,13 +244,14 @@ function generateAvatarUrl(title) {
 <template>
     <div id="NotiflixLoadingWrap"
         class="notiflix-loading top-0 nx-with-animation w-screen h-screen absolute backdrop-blur-xl bg-primary"
-        style="z-index: 4000; background: #efe8df; animation-duration: 400ms; font-family: Quicksand, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif; display: flex; flex-flow: column wrap; align-items: center; justify-content: center;">
+        style="z-index: 4000; background: #efe8df; animation-duration: 400ms; display: flex; flex-flow: column wrap; align-items: center; justify-content: center;">
         <div style="width:80px; height:80px;" class="notiflix-loading-icon z-50"><svg xmlns="http://www.w3.org/2000/svg"
                 stroke="#32c682" width="80px" height="80px" viewBox="0 0 44 44">
                 <g fill="none" fill-rule="evenodd" stroke-width="2">
                     <circle cx="22" cy="22" r="1">
-                        <animate attributeName="r" begin="0s" calcMode="spline" dur="1.8s" keySplines="0.165, 0.84, 0.44, 1"
-                            keyTimes="0; 1" repeatCount="indefinite" values="1; 20"></animate>
+                        <animate attributeName="r" begin="0s" calcMode="spline" dur="1.8s"
+                            keySplines="0.165, 0.84, 0.44, 1" keyTimes="0; 1" repeatCount="indefinite" values="1; 20">
+                        </animate>
                         <animate attributeName="stroke-opacity" begin="0s" calcMode="spline" dur="1.8s"
                             keySplines="0.3, 0.61, 0.355, 1" keyTimes="0; 1" repeatCount="indefinite" values="1; 0">
                         </animate>
@@ -423,7 +438,8 @@ function generateAvatarUrl(title) {
                                     it for <span class="font-extrabold text-primary">₹970</span> (Save ₹329)</span>
                             </div>
                             <!-- <span class="col-span-6 text-secondary sm:text-lg font-semibold text-lg">Save ₹329</span> -->
-                            <span class="col-span-12 text-secondary sm:text-lg font-semibold text-lg text-center">Use Code:
+                            <span class="col-span-12 text-secondary sm:text-lg font-semibold text-lg text-center">Use
+                                Code:
                                 <span class="font-semibold text-lg">GET970</span></span>
                         </div>
 
@@ -746,8 +762,8 @@ function generateAvatarUrl(title) {
                                     a
                                     review</span>
                                 <textarea type="text" placeholder="Type Here"
-                                    class="h-18 rounded mt-4 p-2 text-sm border border-secondary w-full sm:w-2/3" name=""
-                                    id=""></textarea>
+                                    class="h-18 rounded mt-4 p-2 text-sm border border-secondary w-full sm:w-2/3"
+                                    name="" id=""></textarea>
                             </div>
                         </div>
                     </div>
@@ -765,7 +781,7 @@ function generateAvatarUrl(title) {
                         </div> -->
                         <h5 class="font-bold">All Reviews
                             <span class=" text-md font-medium mr-2 px-2 py-0.5 rounded bg-secondary text-white">{{
-                                reviewCount }}</span>
+                            reviewCount }}</span>
                         </h5>
                         <hr class="bg-black my-5" />
                         <div v-for="       data        in        review       " class="grid grid-cols-12 pb-4">
@@ -802,13 +818,15 @@ function generateAvatarUrl(title) {
                         <div class="pagination flex overflow-x-auto p-2 justify-center">
                             <button @click="getReviews(prevPageUrl)" :class="{ 'bg-secondary': prevPageUrl == null }"
                                 :disabled="prevPageUrl == null"
-                                class="bg-primary cursor-pointer inline-block py-2 px-3 m-1 text-white rounded" href="#">
+                                class="bg-primary cursor-pointer inline-block py-2 px-3 m-1 text-white rounded"
+                                href="#">
                                 &laquo; Prev</button>
                             <p class="bg-primary cursor-pointer inline-block py-2 px-3 m-1 text-white rounded" href="#">
                                 {{ currentPage }}</p>
                             <button @click="getReviews(nextPageUrl)" :class="{ 'bg-secondary': nextPageUrl == null }"
                                 :disabled="nextPageUrl == null"
-                                class="bg-primary cursor-pointer inline-block py-2 px-3 m-1 text-white rounded" href="#">
+                                class="bg-primary cursor-pointer inline-block py-2 px-3 m-1 text-white rounded"
+                                href="#">
                                 Next &raquo;</button>
                         </div>
 
@@ -1100,7 +1118,8 @@ function generateAvatarUrl(title) {
                                     slight chance that some might get damaged.Please read our return/refund
                                     policy,take an
                                     unboxing
-                                    video, and write to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a>
+                                    video, and write to us at <a
+                                        href="mailto:connect@glosense.in">connect@glosense.in</a>
                                     for
                                     further assistance.</p>
                             </div>
@@ -1316,7 +1335,8 @@ function generateAvatarUrl(title) {
         </div>
     </div>
     <transition name="fade">
-        <div class="bg-white z-10 fixed bottom-0 w-full" :class="{ 'fade-in-image': staticBuyNow }" v-show="staticBuyNow">
+        <div class="bg-white z-10 fixed bottom-0 w-full" :class="{ 'fade-in-image': staticBuyNow }"
+            v-show="staticBuyNow">
             <div class="mx-auto bg-secondary">
                 <div class="flex justify-center">
                     <div class="flex p-4">

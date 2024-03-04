@@ -146,7 +146,8 @@ onMounted(() => {
                 <div class="grid grid-cols-12">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">Helps in: </h2>
-                        <p class="leading-8 text-2xl">-Maintaining a healthy scalp with improved blood circulation.<br />
+                        <p class="leading-8 text-2xl">-Maintaining a healthy scalp with improved blood
+                            circulation.<br />
                             -Encouraging better hair growth and helps prevent dandruff.<br />
                             -Cultivate Optimal Hair Follicle Health.<br />
                             -Reducing hair loss, and strengthening hair strands.
@@ -176,7 +177,8 @@ onMounted(() => {
                 <div class="grid grid-cols-12">
                     <div class="sm:col-span-7 col-span-12 order-2 sm:order-1 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">WHEN TO USE:</h2>
-                        <p class="leading-8 text-2xl">You can consume it any time of the day, but for better experience we
+                        <p class="leading-8 text-2xl">You can consume it any time of the day, but for better experience
+                            we
                             suggest consuming it in the
                             morning.</p>
                     </div>
@@ -191,7 +193,8 @@ onMounted(() => {
                     </div>
                     <div class="sm:col-span-7 col-span-12 sm:my-auto">
                         <h2 class="font-extrabold text-3xl tracking-widest">STORAGE TIP:</h2>
-                        <p class="leading-8 text-2xl">For best results, utilise a dry spoon when dealing with the mix, and
+                        <p class="leading-8 text-2xl">For best results, utilise a dry spoon when dealing with the mix,
+                            and
                             be sure to seal the jars
                             tightly after usage to prevent solidification or lumps.
                         </p>
@@ -202,25 +205,30 @@ onMounted(() => {
             <div class="container mx-auto py-5">
                 <h2 class="text-center text-4xl font-extrabold text-secondary mt-14 mb-10">HOW IT WORKS:</h2>
                 <h3 class=" text-2xl font-bold ">-Effectively suppress DHT🌿:</h3>
-                <p class="text-xl">Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve blood
+                <p class="text-xl">Carrots and Amla, rich in Vitamin C, hydrate the scalp, prevent dryness, improve
+                    blood
                     circulation, and
                     promote hair growth while suppressing DHT.
                 </p>
                 <h3 class=" text-2xl font-bold mt-4">-Maintains pH Level 🔗:
                 </h3>
-                <p class="text-xl">Lemon balances scalp pH, prevents dandruff, and fosters a healthy environment for hair
+                <p class="text-xl">Lemon balances scalp pH, prevents dandruff, and fosters a healthy environment for
+                    hair
                     follicles where
                     Fenugreek seeds enhance hair texture, shine, resilience, and support growth.
                 </p>
                 <h3 class=" text-2xl font-bold mt-4">-Improves Blood Circulation🧘:
                 </h3>
-                <p class="text-xl">Pomegranate and Orange, with vitamin E and antioxidants, boost scalp blood circulation,
+                <p class="text-xl">Pomegranate and Orange, with vitamin E and antioxidants, boost scalp blood
+                    circulation,
                     delivering
-                    essential nutrients for healthier, thicker hair, while preventing oxidative stress and hair cell damage.
+                    essential nutrients for healthier, thicker hair, while preventing oxidative stress and hair cell
+                    damage.
                 </p>
                 <h3 class=" text-2xl font-bold mt-4">-Supports Collagen Synthesis💫:
                 </h3>
-                <p class="text-xl">Aids in collagen synthesis, vital for maintaining hair's strength and structure, reducing
+                <p class="text-xl">Aids in collagen synthesis, vital for maintaining hair's strength and structure,
+                    reducing
                     hair thinning
                     and breakage.
                 </p>
@@ -235,7 +243,8 @@ onMounted(() => {
                 </p>
                 <h3 class=" text-2xl font-bold mt-4">-ORANGE
                 </h3>
-                <p class="text-xl">A Citrus Fruit rich in vitamin E, an antioxidant that supports hair follicles, prevents
+                <p class="text-xl">A Citrus Fruit rich in vitamin E, an antioxidant that supports hair follicles,
+                    prevents
                     oxidative stress,
                     and boosts hair health.
                 </p>
@@ -254,12 +263,14 @@ onMounted(() => {
                 <h2 class="text-center text-4xl font-extrabold text-secondary mt-20 mb-10">WHAT TO EXPECT:
                 </h2>
                 <h3 class=" text-2xl font-bold mt-4">-After 4 weeks:</h3>
-                <p class="text-xl">Reduces hair fall and dandruff, minimises breakage and itchiness, while nourishing hair
+                <p class="text-xl">Reduces hair fall and dandruff, minimises breakage and itchiness, while nourishing
+                    hair
                     strands.
                 </p>
                 <h3 class=" text-2xl font-bold mt-4">-After 8 weeks:
                 </h3>
-                <p class="text-xl">Promotes healthy blood circulation, provides hydration to prevent dryness, and encourages
+                <p class="text-xl">Promotes healthy blood circulation, provides hydration to prevent dryness, and
+                    encourages
                     the scalp to
                     maintain optimal oil and moisture levels.
 
@@ -607,31 +618,36 @@ onMounted(() => {
 
                     <h2 class="text-secondary text-center text-2xl font-bold my-10">FAQ's</h2>
                     <div class="container mx-auto">
-                        <p class="leading-10">◆ <span class="font-bold"> Why does one of my mixes look a little different in
+                        <p class="leading-10">◆ <span class="font-bold"> Why does one of my mixes look a little
+                                different in
                                 colour from
                                 my
                                 previous order?</span><br />
                             ◆ <span class="font-bold"> Can I mix two mixes together?</span><br />
                             ◆ <span class="font-bold"> What is the best time to take consume?</span><br />
-                            ◆ <span class="font-bold"> Can I consume products while pregnant or breastfeeding?</span><br />
+                            ◆ <span class="font-bold"> Can I consume products while pregnant or
+                                breastfeeding?</span><br />
                             ◆ <span class="font-bold"> What do I do if my package has been damaged?</span><br />
                             ◆ <span class="font-bold"> What do I do if some items in my order are missing?</span><br />
                             ◆ <span class="font-bold"> Who should I contact for queries/concerns related to products or
                                 delivery?</span><br />
-                            ◆ <span class="font-bold"> What to do if my payment has gone through but I haven’t received an
+                            ◆ <span class="font-bold"> What to do if my payment has gone through but I haven’t received
+                                an
                                 order
                                 confirmation email?</span><br />
                             ◆ <span class="font-bold"> When will my order be dispatched?</span><br />
                             ◆ <span class="font-bold"> How long will the shipping take?</span><br />
                             ◆ <span class="font-bold"> What is the refund and return policy at ?</span><br />
-                            ◆ <span class="font-bold"> Is Glosense Lifecare Pvt Ltd vegan/vegetarian-friendly?</span><br />
+                            ◆ <span class="font-bold"> Is Glosense Lifecare Pvt Ltd
+                                vegan/vegetarian-friendly?</span><br />
                             ◆ <span class="font-bold"> Are there any side effects associated with Glosense Lifecare Pvt
                                 Ltd?</span><br />
                             ◆ <span class="font-bold"> Can Glosense Lifecare Pvt Ltd be used by both men and
                                 women?</span><br />
                             ◆ <span class="font-bold"> When can I expect to see results?</span><br />
                             ◆ <span class="font-bold"> Is Glosense Lifecare Pvt Ltd safe to use?</span><br />
-                            ◆ <span class="font-bold"> What is Glosense Lifecare Pvt Ltd, and how does it work?</span><br />
+                            ◆ <span class="font-bold"> What is Glosense Lifecare Pvt Ltd, and how does it
+                                work?</span><br />
 
                         </p>
                     </div>

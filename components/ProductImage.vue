@@ -39,5 +39,13 @@ function changeImage(myImage) {
             @mouseover="changeImage('/images/product/Product-02.jpg')">
             <img src="/images/product/Product-02.jpg" alt="" />
         </div>
+        <div class=" hover:p-0 hover:outline-dashed outline-primary rounded-xl  w-16 ml-1 cursor-pointer"
+            @mouseover="changeImage('/images/product/Product-08.jpg')">
+            <img src="/images/product/Product-08.jpg" alt="" />
+        </div>
+        <div class=" hover:p-0 hover:outline-dashed outline-primary rounded-xl  w-16 ml-1 cursor-pointer"
+            @mouseover="changeImage('/images/product/Product-09.jpg')">
+            <img src="/images/product/Product-09.jpg" alt="" />
+        </div>
     </div>
 </template>
