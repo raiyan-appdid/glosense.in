@@ -9,7 +9,8 @@ onMounted(function () {
 
 <template>
     <HeaderCommon />
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267">
+    <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=919967116267&text=I want to know more about Hair You GLo!">
         <span class="wa-whatsapp" style="z-index: 0">
             <svg width="45" height="45" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -52,11 +53,13 @@ onMounted(function () {
                         </h2>
                         <p class="text-xl leading-7">In recent years, the term "plant-based" has taken the health and
                             wellness
-                            world by storm. From plant-based diets to supplements, this trend has gained immense popularity
+                            world by storm. From plant-based diets to supplements, this trend has gained immense
+                            popularity
                             for
                             all the right reasons......
                         </p>
-                        <p class="underline text-primary text-xl mt-8"><a href="/blogs/what-is-plant-based-supplements">Read
+                        <p class="underline text-primary text-xl mt-8"><a
+                                href="/blogs/what-is-plant-based-supplements">Read
                                 More</a>
                         </p>
                     </a>
@@ -71,13 +74,15 @@ onMounted(function () {
                 <div>
                     <a href="/blogs/unlocking-the-power-of-vitamin-c">
 
-                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Unlocking the Power of Vitamin
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Unlocking the Power of
+                            Vitamin
                             C: A
                             Key to Healthy Hair
                         </h2>
                         <p class="text-xl leading-7">In the pursuit of healthy, vibrant hair, we often turn to various
                             products
-                            and treatments. However, the key to achieving luscious locks might be simpler than you think. At
+                            and treatments. However, the key to achieving luscious locks might be simpler than you
+                            think. At
                             Glosense Lifecare Pvt Ltd, we understand the importance of nourishing your hair from within,
                             and
                             that's why we're diving deep into the wonders of Vitamin C in this blog....</p>
@@ -96,16 +101,20 @@ onMounted(function () {
                 </div>
                 <div>
                     <a href="/blogs/can-superfoods-help-with-my-hair-fall">
-                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">UNREVEALING THE MYSTERY OF HAIR
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">UNREVEALING THE MYSTERY OF
+                            HAIR
                             FALL & HAIR THINNING!!
                         </h2>
                         <p class="text-xl leading-7">In the hustle and bustle of daily life, it's not uncommon to notice
                             changes
-                            in our hair health. The mirror reflects hair that's not as voluminous as it used to be, or we
+                            in our hair health. The mirror reflects hair that's not as voluminous as it used to be, or
+                            we
                             find a
-                            little more hair than usual on our brushes and in the shower drain. Hair thinning and fall can
+                            little more hair than usual on our brushes and in the shower drain. Hair thinning and fall
+                            can
                             be
-                            distressing, but they are often symptoms of underlying issues that may have gone unattended for
+                            distressing, but they are often symptoms of underlying issues that may have gone unattended
+                            for
                             too
                             long...</p>
                         <p class="underline text-primary text-xl mt-8"><a
@@ -129,8 +138,10 @@ onMounted(function () {
                         <p class="text-xl leading-7">Hey there, lovely souls! 😊
                             Welcome to our wellness journey. At Glosense Lifecare Pvt Ltd, we're all about celebrating
                             wellness in its full,
-                            beautiful spectrum. It's not just about looking good; it's about feeling fantastic inside and
-                            out. So, join us on this adventure as we uncover the secret to discovering wellness from within
+                            beautiful spectrum. It's not just about looking good; it's about feeling fantastic inside
+                            and
+                            out. So, join us on this adventure as we uncover the secret to discovering wellness from
+                            within
                             and embracing a life that truly shines....
                         </p>
                         <p class="underline text-primary text-xl mt-8"><a
@@ -153,8 +164,10 @@ onMounted(function () {
                         <p class="text-xl leading-7">Hey there, lovely souls! 😊
                             Welcome to our wellness journey. At Glosense Lifecare Pvt Ltd, we're all about celebrating
                             wellness in its full,
-                            beautiful spectrum. It's not just about looking good; it's about feeling fantastic inside and
-                            out. So, join us on this adventure as we uncover the secret to discovering wellness from within
+                            beautiful spectrum. It's not just about looking good; it's about feeling fantastic inside
+                            and
+                            out. So, join us on this adventure as we uncover the secret to discovering wellness from
+                            within
                             and embracing a life that truly shines....
                         </p>
                         <p class="underline text-primary text-xl mt-8"><a href="/blogs/plant-based-super-blends">Read
@@ -173,8 +186,10 @@ onMounted(function () {
                     <a href="/blogs/exactly-what-you-need">
                         <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Exactly what you need
                         </h2>
-                        <p class="text-xl leading-7">In the hustle and bustle of modern life, it's easy to get swept away by
-                            the latest trends and technology. We're bombarded with messages about products and services that
+                        <p class="text-xl leading-7">In the hustle and bustle of modern life, it's easy to get swept
+                            away by
+                            the latest trends and technology. We're bombarded with messages about products and services
+                            that
                             promise to change our lives, but do we really need them all? Let's embark on a journey to
                             explore what we truly need in our lives....
                         </p>
@@ -195,11 +210,14 @@ onMounted(function () {
                         <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Things no one tells about
                             hormonal hair loss:-
                         </h2>
-                        <p class="text-xl leading-7">Alright, let's get real about something most of us don't like to talk
+                        <p class="text-xl leading-7">Alright, let's get real about something most of us don't like to
+                            talk
                             about:
-                            hormonal hair loss. It's like this big secret in the world of haircare, and it's time we shed
+                            hormonal hair loss. It's like this big secret in the world of haircare, and it's time we
+                            shed
                             some light on
-                            it. In this blog, we're going to uncover the mysteries around hormonal hair loss and give you
+                            it. In this blog, we're going to uncover the mysteries around hormonal hair loss and give
+                            you
                             the inside
                             scoop on what's really going on with your locks....
                         </p>
@@ -221,11 +239,14 @@ onMounted(function () {
                         <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Can superfoods help with my
                             hair fall?
                         </h2>
-                        <p class="text-xl leading-7">In a world of quick fixes, we often overlook the power of what we eat.
+                        <p class="text-xl leading-7">In a world of quick fixes, we often overlook the power of what we
+                            eat.
                             You've
-                            heard the buzzword "superfoods," but what makes them so super? These nutrient-packed ingredients
+                            heard the buzzword "superfoods," but what makes them so super? These nutrient-packed
+                            ingredients
                             are
-                            nature's treasures, brimming with goodness that transcends mere sustenance. While many revel in
+                            nature's treasures, brimming with goodness that transcends mere sustenance. While many revel
+                            in
                             their
                             potential to enhance our overall health....
                         </p>
@@ -244,10 +265,12 @@ onMounted(function () {
                 </div>
                 <div>
                     <a href="/blogs/this-is-how-your-state-of-mind-is-affecting-your-hair">
-                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">This is how your state of mind
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">This is how your state of
+                            mind
                             is affecting your hair!!
                         </h2>
-                        <p class="text-xl leading-7">In today's fast-paced world, the daily grind can often leave us feeling
+                        <p class="text-xl leading-7">In today's fast-paced world, the daily grind can often leave us
+                            feeling
                             overwhelmed and stressed. Those lingering concerns, even the seemingly minor ones, can
                             significantly impact our overall well-being, including the health of our hair....
                         </p>
@@ -266,11 +289,14 @@ onMounted(function () {
                 </div>
                 <div>
                     <a href="/blogs/daily-facing-huge-hair-fall">
-                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Daily facing huge hair fall: Is
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">Daily facing huge hair
+                            fall: Is
                             that normal?
                         </h2>
-                        <p class="text-xl leading-7">To all the lovely readers who've clicked onto this page,If you've ever
-                            had a moment of concern in the morning when you spot those extra hairs on your pillow or tangled
+                        <p class="text-xl leading-7">To all the lovely readers who've clicked onto this page,If you've
+                            ever
+                            had a moment of concern in the morning when you spot those extra hairs on your pillow or
+                            tangled
                             in your comb, this blog is for you. We're....
                         </p>
                         <p class="underline text-primary text-xl mt-8"><a href="/blogs/daily-facing-huge-hair-fall">Read

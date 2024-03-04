@@ -23,7 +23,8 @@ onMounted(function () {
     <img class="absolute opacity-50 md:w-[8rem] w-[4rem] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png"
         alt="" />
     <img class="absolute opacity-50 md:w-auto right-0 top-[10rem]" src="/images/rl-small.png" alt="" /> -->
-  <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267">
+  <a target="_blank"
+    href="https://api.whatsapp.com/send?phone=919967116267&text=I want to know more about Hair You GLo!">
     <span class="wa-whatsapp" style="z-index: 0">
       <svg width="45" height="45" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
         <defs>

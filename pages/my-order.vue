@@ -103,7 +103,8 @@ onMounted(() => {
 
     <!-- Main modal -->
     <LoginModal />
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267">
+    <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=919967116267&text=I want to know more about Hair You GLo!">
         <span class="wa-whatsapp" style="z-index: 0">
             <svg width="45" height="45" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -135,7 +136,8 @@ onMounted(() => {
             <div
                 class="mt-10 flex flex-col xl:flex-row jusitfy-center items-stretch w-full xl:space-x-8 space-y-4 md:space-y-6 xl:space-y-0">
                 <div class="flex flex-col justify-start items-start w-full space-y-4 md:space-y-6 xl:space-y-8">
-                    <div class="flex flex-col justify-start items-start  bg-gray-50 px-4 py-4 md:py-6 md:p-6 xl:p-8 w-full">
+                    <div
+                        class="flex flex-col justify-start items-start  bg-gray-50 px-4 py-4 md:py-6 md:p-6 xl:p-8 w-full">
                         <p class="text-lg md:text-xl  font-semibold leading-6 xl:leading-5 text-gray-800">
                             Customer’s Cart</p>
                         <div
@@ -150,7 +152,8 @@ onMounted(() => {
                                     <h3 class="text-xl  xl:text-2xl font-semibold leading-6 text-gray-800">
                                         Hair You GLo</h3>
                                     <div class="flex justify-start items-start flex-col space-y-2">
-                                        <p class="text-sm  leading-none text-gray-800"> For Healthy and Stronger Hair </p>
+                                        <p class="text-sm  leading-none text-gray-800"> For Healthy and Stronger Hair
+                                        </p>
                                         <p class="text-sm  leading-none text-gray-800">Jar-120g (30 servings)</p>
                                     </div>
                                 </div>
@@ -213,7 +216,8 @@ onMounted(() => {
                                 class="flex justify-center md:justify-start xl:flex-col flex-col md:space-x-6 lg:space-x-8 xl:space-x-0 space-y-4 xl:space-y-12 md:space-y-0 md:flex-row items-center md:items-start">
                                 <div
                                     class="flex justify-center md:justify-start items-center md:items-start flex-col space-y-4 xl:mt-8">
-                                    <p class="text-base  font-semibold leading-4 text-center md:text-left text-gray-800">
+                                    <p
+                                        class="text-base  font-semibold leading-4 text-center md:text-left text-gray-800">
                                         Billing & Shipping Address</p>
                                     <p
                                         class="w-48 lg:w-full  xl:w-48 text-center md:text-left text-sm leading-5 text-gray-600">
@@ -303,8 +307,8 @@ onMounted(() => {
     <!-- <button v-if="loading">raiyan</button>
     <button v-else="loading">memon</button> -->
 </template>
-  
-  
+
+
 <style type="scss">
 .rating {
     display: flex;

@@ -1290,6 +1290,7 @@ const updateDotValue = (value) => {
   document.getElementById("slide-dot").textContent = value;
 };
 </script>
+
 <template>
   <HeaderForHome />
   <IndexPop />
@@ -1325,7 +1326,8 @@ const updateDotValue = (value) => {
       </svg>
     </div>
   </div>
-  <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267" class="!z-40">
+  <a target="_blank"
+    href="https://api.whatsapp.com/send?phone=919967116267&text=I want to know more about Hair You GLo!" class="!z-40">
     <span class="wa-whatsapp !z-40">
       <svg width="45" height="45" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -1366,8 +1368,8 @@ const updateDotValue = (value) => {
     <div
       class="landing__main w-full text-center min-h-screen pt-15 bg-no-repeat bg-cover bg-top overflow-hidden relative">
       <div>
-        <a href="/"><img id="logo-image" src="/images/logo.png" class="w-3/12 inset-x-0 my-0 mx-auto top-[25%] fixed z-20"
-            alt="" /></a>
+        <a href="/"><img id="logo-image" src="/images/logo.png"
+            class="w-3/12 inset-x-0 my-0 mx-auto top-[25%] fixed z-20" alt="" /></a>
       </div>
       <!-- <div>
         <img id="jar-image" src="/images/jar.png" class="w-[250px] inset-0 m-auto fixed z-[11] translate-y-[-50rem]"
@@ -1401,7 +1403,8 @@ const updateDotValue = (value) => {
           <h4 class="mt-5 text-1xl bg-[#ef8f7b] text-neutral-50 py-1 px-4 rounded-3xl">
             <a href="/about">Know more</a>
           </h4>
-          <h4 class="home-text-responsive mt-8 bg-white text-primary cursor-pointer outline px-2 py-6 z-20 rounded-full">
+          <h4
+            class="home-text-responsive mt-8 bg-white text-primary cursor-pointer outline px-2 py-6 z-20 rounded-full">
             <a href="/product-detail" class="text-2xl">Shop Now</a>
           </h4>
           <!-- <h2 class="absolute flex justify-center bottom-28 items-center flex-col home-text-responsive">
@@ -1415,14 +1418,17 @@ const updateDotValue = (value) => {
         <div id="hero-section-1"
           class="hero__section bg-[url('/images/bg.png') w-screen h-screen absolute min-h-screen bg-no-repeat bg-cover bg-top overflow-hidden">
           <div id="leaves-group-1">
-            <img class="absolute w-[18rem] opacity-[0.5] bottom-[-8rem] left-[5rem]" src="/images/leave-bl.png" alt="" />
-            <img class="absolute w-[10rem] opacity-[0.5] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png" alt="" />
+            <img class="absolute w-[18rem] opacity-[0.5] bottom-[-8rem] left-[5rem]" src="/images/leave-bl.png"
+              alt="" />
+            <img class="absolute w-[10rem] opacity-[0.5] inset-[35%] left-[-2rem]" src="/images/Asset-15-4x.png"
+              alt="" />
             <img class="absolute w-[12rem] opacity-[0.5] left-[30%] top-[10%]" src="/images/Asset-25-4x.png" alt="" />
             <img class="absolute w-[8rem] opacity-[0.5] right-[40%] top-[10%]" src="/images/Asset-24-4x.png" alt="" />
             <img class="absolute w-[18rem] opacity-[0.5] bottom-[-10rem] left-[15rem]" src="/images/Asset-13-4x.png"
               alt="" />
             <img class="absolute w-[6rem] opacity-[0.5] right-[20%] top-[20%]" src="/images/Asset-22-4x.png" alt="" />
-            <img class="absolute w-[40rem] opacity-[0.5] right-[5rem] top-[-5rem]" src="/images/Asset-23-4x.png" alt="" />
+            <img class="absolute w-[40rem] opacity-[0.5] right-[5rem] top-[-5rem]" src="/images/Asset-23-4x.png"
+              alt="" />
             <img class="absolute w-[15rem] opacity-[0.5] right-[-5rem] bottom-[0rem]" src="/images/Asset-16-4x.png"
               alt="" />
             <img class="absolute w-[8rem] opacity-[0.5] right-[25rem] bottom-[10rem]" src="/images/Asset-24-4x.png"
@@ -1591,7 +1597,8 @@ const updateDotValue = (value) => {
             </h1>
           </div> -->
           <div class="absolute h-screen top-[140px] flex items-center justify-center w-screen">
-            <h1 class="text-[5rem] font-extrabold calcium-custom-4 text-emerald-800 bg-transparent inset-x-0 tt-2" style="
+            <h1 class="text-[5rem] font-extrabold calcium-custom-4 text-emerald-800 bg-transparent inset-x-0 tt-2"
+              style="
                 text-shadow: -1px -1px 0 #rgb(6 95 70), 1px -1px 0 #rgb(6 95 70),
                   -1px 1px 0 #rgb(6 95 70), 1px 1px 0 #rgb(6 95 70);
               ">

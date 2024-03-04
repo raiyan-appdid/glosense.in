@@ -275,7 +275,8 @@ function generateAvatarUrl(title) {
     <div class="conteiner">
     </div>
 
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=919967116267">
+    <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=919967116267&text=I want to know more about Hair You GLo!">
         <span class="wa-whatsapp" style="z-index: 0">
             <svg width="45" height="45" viewBox="0 0 256 258" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -306,7 +307,8 @@ function generateAvatarUrl(title) {
                     <ProductImage />
                 </div>
                 <div class="col-span-12 sm:col-span-7">
-                    <p class="font-bold sm:text-lg text-xs my-3">YOUR GO-TO SOLUTION FOR HEALTHY & STRONGER HAIR
+                    <p class="font-bold sm:text-lg text-xs my-3">YOUR ANTI-HAIR FALL SOLUTION FOR HEALTHY & STRONGER
+                        HAIR
                     </p>
                     <h2 class="font-extrabold text-secondary sm:text-4xl text-2xl  ">HAIR-YOU-GLO</h2>
                     <!-- <h2 class="font-semibold text-black text-xl">FOR HEALTHY & STRONG HAIR</h2> -->
