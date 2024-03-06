@@ -142,7 +142,7 @@ function howItWorkFunction() {
                             <img src="/public/images/Ingradients-04.png" class="w-2/3 sm:w-2/6 " alt="">
                         </div> -->
                     <!-- <div class="col-span-9"> -->
-                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">After 4 weeks:</p>
+                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">- After 4 weeks:</p>
                     <p class="text-md leading-5 sm:text-xl text-black font-semibold">Reduces hair fall and dandruff,
                         minimises breakage and
                         itchiness, while
@@ -156,7 +156,7 @@ function howItWorkFunction() {
                             <img src="/public/images/Ingradients-07.png" class="w-2/3 sm:w-2/6" alt="">
                         </div>
                         <div class="col-span-9"> -->
-                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">After 8 weeks:</p>
+                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">- After 8 weeks:</p>
                     <p class="text-md leading-5 sm:text-xl text-black font-semibold">Reduces scalp inflammation and
                         stress
                         that leads to decreased
@@ -172,7 +172,7 @@ function howItWorkFunction() {
                             <img src="/public/images/Ingradients-02.png" class="w-2/3 sm:w-2/6" alt="">
                         </div>
                         <div class="col-span-9"> -->
-                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">After 12 weeks:</p>
+                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">- After 12 weeks:</p>
                     <p class="text-md leading-5 sm:text-xl text-black font-semibold">Reduces scalp inflammation and
                         stress
                         that leads to decreased
