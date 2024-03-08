@@ -27,7 +27,7 @@ onMounted(function () {
         </div>
         <div class="mt-10 w-full h-fit">
             <p class="text-primary text-3xl mb-5 font-bold text-center">Successful!!</p>
-            <p class="text-primary text-2xl mt-2 font-bold text-center">Thank you! Your order will be delivered in 3-6
+            <p class="text-primary text-xl mt-6 font-bold text-center">Thank you! Your order will be delivered in 3-6
                 business days!
                 Glo from within, Happily!</p>
             <div class="flex justify-center mt-4">
