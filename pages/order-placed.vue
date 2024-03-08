@@ -14,7 +14,7 @@ onMounted(function () {
         <div>
             <div>
                 <span>
-                    <svg class="w-[200px] text-center" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="w-[170px] text-center" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                         <g fill="none" stroke="#43a190" stroke-linecap="round" stroke-linejoin="round">
                             <path
                                 d="M1.5 2.5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1h-2m-7-2v4m7-4v4m-7-2h5" />
@@ -26,7 +26,7 @@ onMounted(function () {
 
         </div>
         <div class="mt-10 w-full h-fit">
-            <p class="text-primary text-3xl font-bold text-center">Successful!!</p>
+            <p class="text-primary text-3xl mb-5 font-bold text-center">Successful!!</p>
             <p class="text-primary text-2xl mt-2 font-bold text-center">Thank you! Your order will be delivered in 3-6
                 business days!
                 Glo from within, Happily!</p>
