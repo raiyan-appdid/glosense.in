@@ -21,6 +21,7 @@ const user_id = ref('');
 const promocode = ref('');
 const promocodeVerified = ref(false);
 const promocodeDiscount = ref(0);
+const promocodeOfferProduct = ref(0);
 const total_price = ref(1);
 const promocodeid = ref("");
 const countryArray = ref(['Afghanistan',
@@ -361,9 +362,13 @@ async function verifyPromoCode() {
             promocodeVerified.value = verified;
             if (verified) {
                 promocodeDiscount.value = response._data.data.discount;
+                promocodeOfferProduct.value = response._data.data.offer_product;
+                counter.value = parseInt(counter.value) + parseInt(promocodeOfferProduct.value)
                 promocodeid.value = response._data.data.id;
             } else {
+                counter.value = route.query.count;
                 promocodeDiscount.value = 0;
+                promocodeOfferProduct.value = 0;
                 promocodeid.value = "";
             }
         },
@@ -475,7 +480,7 @@ async function verifyPromoCode() {
                         </div>
                     </div>
                     <div class="font-bold col-span-3 text-secondary text-xl my-auto">
-                        <p class="w-full text-end">₹ {{ 1299 - promocodeDiscount }}.00</p>
+                        <p class="w-full text-end">₹ {{ 1299 }}.00</p>
                     </div>
                 </div>
                 <div class="h-0.5 bg-gray-300 w-3/3 sm:w-3/3 mx-auto my-2"></div>
