@@ -76,7 +76,8 @@ function howItWorkFunction() {
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-extrabold">AMLA:</p>
-                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">Indian Gooseberry better known as Amla,
+                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">Indian Gooseberry better known as
+                        Amla,
                         contains
                         Vitamin C,
                         which is
@@ -92,7 +93,8 @@ function howItWorkFunction() {
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-extrabold">ORANGE:</p>
-                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">A Citrus Fruit rich in vitamin E, an
+                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">A Citrus Fruit rich in vitamin E,
+                        an
                         antioxidant that supports
                         hair
                         follicles,
@@ -117,11 +119,12 @@ function howItWorkFunction() {
             </div>
             <div class="grid grid-cols-12 mt-4">
                 <div class="col-span-3 flex items-center justify-center">
-                    <img src="/public/images/Ingradients-03.png" class="w-2/3 sm:w-2/6" alt="">
+                    <img src="/public/images/Ingradients-09.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-extrabold">SEA BUCKTHORN:</p>
-                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">Packed with omega fatty acids, reduces
+                    <p class="text-md leading-5 sm:text-xl text-black font-semibold">Packed with omega fatty acids,
+                        reduces
                         inflammation, nourishes
                         scalp and
                         follicles,
@@ -199,7 +202,8 @@ function howItWorkFunction() {
         </div>
         <div class="what-to-expect mx-8 py-4" v-show="howItWork">
             <h3 class=" text-secondary sm:text-2xl text-lg font-extrabold ">-Effectively suppress DHT🌿:</h3>
-            <p class="text-md leading-5 sm:text-xl text-black font-semibold">Carrots and Amla, rich in Vitamin C, hydrate
+            <p class="text-md leading-5 sm:text-xl text-black font-semibold">Carrots and Amla, rich in Vitamin C,
+                hydrate
                 the scalp, prevent
                 dryness, improve blood
                 circulation, and
@@ -207,7 +211,8 @@ function howItWorkFunction() {
             </p>
             <h3 class=" text-secondary sm:text-2xl text-lg font-extrabold mt-4">-Maintains pH Level 🔗:
             </h3>
-            <p class="text-md leading-5 sm:text-xl text-black font-semibold">Lemon balances scalp pH, prevents dandruff, and
+            <p class="text-md leading-5 sm:text-xl text-black font-semibold">Lemon balances scalp pH, prevents dandruff,
+                and
                 fosters a healthy
                 environment for hair
                 follicles where
