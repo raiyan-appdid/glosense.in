@@ -307,10 +307,10 @@ function generateAvatarUrl(title) {
                     <ProductImage />
                 </div>
                 <div class="col-span-12 sm:col-span-7">
+                    <h2 class="font-extrabold text-secondary sm:text-4xl text-2xl  ">HAIR-YOU-GLO</h2>
                     <p class="font-bold sm:text-lg text-xs my-3">YOUR ANTI-HAIR FALL SOLUTION FOR HEALTHY & STRONGER
                         HAIR
                     </p>
-                    <h2 class="font-extrabold text-secondary sm:text-4xl text-2xl  ">HAIR-YOU-GLO</h2>
                     <!-- <h2 class="font-semibold text-black text-xl">FOR HEALTHY & STRONG HAIR</h2> -->
 
                     <div class="flex my-0">

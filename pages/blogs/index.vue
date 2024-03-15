@@ -1,5 +1,28 @@
 <script setup>
 const nuxtApp = useNuxtApp();
+const config = useRuntimeConfig();
+const apiUrl = config.public.baseUrl;
+const blogs = ref([]);
+
+async function allBlogs() {
+    await useFetch(`${apiUrl}/all-blogs`, {
+        method: "GET",
+        headers: {
+            accept: "application/json"
+        },
+        onResponse({ request, response, options }) {
+            console.log(response._data);
+            if (response._data.success) {
+                blogs.value = response._data.data;
+            }
+        },
+    })
+}
+
+allBlogs();
+nuxtApp.hook("page:finish", () => {
+});
+
 onMounted(function () {
     console.log(nuxtApp.$fb)
     nuxtApp.$fb.enable()
@@ -40,6 +63,26 @@ onMounted(function () {
 
 
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 px-3 sm:px-10">
+
+            <div class="sm:p-10" v-for="blog in blogs">
+                <div>
+                    <a :href="'/blogs/' + blog.slug">
+                        <img :src="blog.image" class="w-full" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a :href="'/blogs/' + blog.slug">
+                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">{{ blog.title }}
+                        </h2>
+                        <p class="text-xl leading-7" v-html="blog.short_description">
+                        </p>
+                        <p class="underline text-primary text-xl mt-8"><a :href="'/blogs/' + blog.slug">Read
+                                More</a>
+                        </p>
+                    </a>
+                </div>
+            </div>
+
             <div class="sm:p-10">
                 <div>
                     <a href="/blogs/what-is-plant-based-supplements">

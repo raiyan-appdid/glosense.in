@@ -36,7 +36,7 @@ function openModal() {
   // else {
   // getUser();
   // gateWayIntegration();
-  //cc avenue gateway.....
+  // cc avenue gateway.....
   // }
 }
 
