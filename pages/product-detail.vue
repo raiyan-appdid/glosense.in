@@ -678,9 +678,9 @@ function generateAvatarUrl(title) {
         <div class="product-review">
             <div class="container mx-auto">
 
-                <div class="slider">
+                <!-- <div class="slider">
                     <img src="https://via.placeholder.com/1200x300" class="w-screen" alt="">
-                </div>
+                </div> -->
 
                 <div class="review">
                     <h2 class="text-secondary text-center font-bold text-2xl mt-10 mb-4">Customer Reviews</h2>
