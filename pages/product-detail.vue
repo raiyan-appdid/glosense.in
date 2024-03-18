@@ -19,6 +19,8 @@ const fourStar = ref();
 const fiveStar = ref();
 const nextPageUrl = ref();
 const prevPageUrl = ref();
+const text_1 = ref();
+const text_2 = ref();
 const nuxtApp = useNuxtApp();
 const currentPage = ref(1);
 onMounted(function () {
@@ -37,11 +39,11 @@ function incrementCount() {
 nuxtApp.hook('page:finish', () => {
     Notiflix.Loading.remove();
     getReviews();
+    getProductText()
 })
 
 onMounted(() => {
     Notiflix.Loading.standard();
-
 
     window.addEventListener('scroll', function () {
 
@@ -195,6 +197,19 @@ async function verifyPromoCode() {
     console.log(promocodeDiscount.value);
 }
 
+async function getProductText() {
+    await useFetch(`${apiUrl}/product/text-get`, {
+        method: "GET",
+        headers: {
+            accept: "application/json"
+        },
+        onResponse({ request, response, options }) {
+            text_1.value = response._data.data.text_1;
+            text_2.value = response._data.data.text_2;
+        },
+    })
+}
+
 
 const config = useRuntimeConfig();
 const apiUrl = config.public.baseUrl;
@@ -307,7 +322,7 @@ function generateAvatarUrl(title) {
                     <ProductImage />
                 </div>
                 <div class="col-span-12 sm:col-span-7">
-                    <h2 class="font-extrabold text-secondary sm:text-4xl text-2xl  ">HAIR-YOU-GLO</h2>
+                    <h2 class="font-extrabold text-secondary sm:text-4xl text-2xl  ">{{ text_1 }}</h2>
                     <p class="font-bold sm:text-lg text-xs my-3">YOUR ANTI-HAIR FALL SOLUTION FOR HEALTHY & STRONGER
                         HAIR
                     </p>
@@ -663,9 +678,9 @@ function generateAvatarUrl(title) {
         <div class="product-review">
             <div class="container mx-auto">
 
-                <!-- <div class="slider">
+                <div class="slider">
                     <img src="https://via.placeholder.com/1200x300" class="w-screen" alt="">
-                </div> -->
+                </div>
 
                 <div class="review">
                     <h2 class="text-secondary text-center font-bold text-2xl mt-10 mb-4">Customer Reviews</h2>
@@ -783,7 +798,7 @@ function generateAvatarUrl(title) {
                         </div> -->
                         <h5 class="font-bold">All Reviews
                             <span class=" text-md font-medium mr-2 px-2 py-0.5 rounded bg-secondary text-white">{{
-                            reviewCount }}</span>
+                        reviewCount }}</span>
                         </h5>
                         <hr class="bg-black my-5" />
                         <div v-for="       data        in        review       " class="grid grid-cols-12 pb-4">
