@@ -19,8 +19,8 @@ async function allBlogs() {
     })
 }
 
-allBlogs();
 nuxtApp.hook("page:finish", () => {
+    allBlogs();
 });
 
 onMounted(function () {
@@ -83,7 +83,7 @@ onMounted(function () {
                 </div>
             </div>
 
-            <div class="sm:p-10">
+            <!-- <div class="sm:p-10">
                 <div>
                     <a href="/blogs/what-is-plant-based-supplements">
                         <img src="/images/plant-based.jpg" class="w-full" alt="">
@@ -347,7 +347,7 @@ onMounted(function () {
                         </p>
                     </a>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="sm:p-10 mt-8 sm:mt-0">
                 <div>
                     <img src="/images/blog-1.png" alt="">
