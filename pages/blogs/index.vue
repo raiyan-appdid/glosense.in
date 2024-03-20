@@ -18,6 +18,20 @@ async function allBlogs() {
         },
     })
 }
+async function clickOnBlog(slug) {
+    await useFetch(`${apiUrl}/click-on-blog`, {
+        method: "POST",
+        body: {
+            slug: slug
+        },
+        headers: {
+            accept: "application/json"
+        },
+        onResponse({ request, response, options }) {
+
+        },
+    })
+}
 
 nuxtApp.hook("page:finish", () => {
     allBlogs();
@@ -66,12 +80,12 @@ onMounted(function () {
 
             <div class="sm:p-10" v-for="blog in blogs">
                 <div>
-                    <a :href="'/blogs/' + blog.slug">
+                    <a @click="clickOnBlog(blog.slug)" :href="'/blogs/' + blog.slug">
                         <img :src="blog.image" class="w-full" alt="">
                     </a>
                 </div>
                 <div>
-                    <a :href="'/blogs/' + blog.slug">
+                    <a @click="clickOnBlog(blog.slug)" :href="'/blogs/' + blog.slug">
                         <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">{{ blog.title }}
                         </h2>
                         <p class="text-xl leading-7" v-html="blog.short_description">
