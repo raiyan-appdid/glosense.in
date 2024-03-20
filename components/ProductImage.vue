@@ -40,7 +40,7 @@ function changeImage(myImage) {
     <div class="flex items-center justify-center sm:px-4">
         <img :src="image" class="sm:w-3/4" alt="" />
     </div>
-    <div class="flex items-center justify-center sm:px-4">
+    <div class="flex items-center justify-center sm:px-4 mt-3">
 
 
         <div v-for="image in productImage"
