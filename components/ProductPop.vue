@@ -76,30 +76,30 @@ async function storeEmail() {
     <!-- Main modal -->
     <div id="index-pop-modal" tabindex="-1" aria-hidden="true"
         class="fixed top-0 left-0 hidden flex items-center h-screen backdrop-blur-sm bg-black/30 justify-center right-0 z-50 show-modal mx-auto w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 = max-h-full">
-        <div class="relative w-full max-w-xl max-h-full">
+        <div class="relative w-full max-w-xl max-h-full p-10">
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow">
-                <button type="button" @click="closeModal"
-                    class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center"
+            <div class="relative bg-tranparent border-0">
+                <span @click="closeModal"
+                    class="absolute top-3 right-2.5 cursor-pointer bg-transparent text-black rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center"
                     data-modal-hide="index-pop-modal">
-                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-fit h-5" viewBox="0 0 16 16">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            clip-rule="evenodd" />
+                        <path fill="currentColor"
+                            d="M11.854 4.854a.5.5 0 0 0-.707-.707L8 7.293L4.854 4.147a.5.5 0 1 0-.707.707L7.293 8l-3.146 3.146a.5.5 0 0 0 .707.708L8 8.707l3.147 3.147a.5.5 0 0 0 .707-.708L8.708 8z" />
                     </svg>
                     <span class="sr-only">Close modal</span>
-                </button>
-                <div class="grid grid-cols-12">
-                    <div class="sm:col-span-6 col-span-12 order-1 sm:order-2 sm:bg-primary">
-                        <div class="flex items-center h-full justify-center">
-                            <img :src="dynamicImage" class="sm:my-auto w-[80%] sm:w-auto mb-4" alt="">
-                        </div>
+                </span>
+                <div class="">
+                    <div class="flex items-center h-full justify-center">
+                        <img :src="dynamicImage" class="" alt="">
                     </div>
-                    <div class="sm:col-span-6 col-span-12 sm:py-10  px-4 sm:order-2">
+                    <!-- <div class="sm:col-span-6 col-span-12 sm:py-10  px-4 sm:order-2">
                         <div class="flex flex-col justify-evenly h-full">
                             <p class="text-center text-xl mt-10 mb-6">{{ productPopText }}</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
