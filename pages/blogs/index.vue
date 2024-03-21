@@ -90,7 +90,8 @@ onMounted(function () {
                         </h2>
                         <p class="text-xl leading-7" v-html="blog.short_description">
                         </p>
-                        <p class="underline text-primary text-xl mt-8"><a :href="'/blogs/' + blog.slug">Read
+                        <p class="underline text-primary text-xl mt-8 mb-8 sm:mb-0"><a
+                                :href="'/blogs/' + blog.slug">Read
                                 More</a>
                         </p>
                     </a>
