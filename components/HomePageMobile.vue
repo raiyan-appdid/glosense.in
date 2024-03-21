@@ -518,7 +518,8 @@ onMounted(() => {
                     href="/about">Know
                     more</a>
             </h4>
-            <h4 class="home-text-responsive mt-8 bg-white text-primary cursor-pointer outline px-2 py-6 z-20 rounded-full">
+            <h4
+                class="home-text-responsive mt-8 bg-white text-primary cursor-pointer outline px-2 py-6 z-20 rounded-full">
                 <a href="/product-detail" class="text-2xl">Shop Now</a>
             </h4>
             <!-- <div class="absolute flex flex-col justify-center w-screen h-screen">
@@ -653,7 +654,7 @@ onMounted(() => {
 
             </div>
             <div class="absolute w-screen flex items-center justify-center" id="slider-image-responsive">
-                <img width="w-screen" class=" text-center" src="/images/Mobile-home-screen-banner.jpg" alt="">
+                <img width="w-screen" class=" text-center" src="/images/website banner-03.jpg" alt="">
                 <p
                     class=" text-xs bg-[#ef8f7b] text-neutral-50 bottom-12 mx-auto text-center py-1 px-4 absolute rounded-3xl">
                     <a href="/product-detail">Know more</a>
@@ -703,17 +704,21 @@ onMounted(() => {
 
                     </div>
                     <p class="text-secondary text-justify font-bold">Hair-You-Glo revitalises your hair health and
-                        restores lost confidence related to hair concerns. Your hair is a vital part of your presentation
+                        restores lost confidence related to hair concerns. Your hair is a vital part of your
+                        presentation
                         and personality, and Hair-You-Glo ensures you radiate self-assurance in every interaction.
-                        Introducing our expertly crafted hair health betterment product, carefully with a blend of nature's
+                        Introducing our expertly crafted hair health betterment product, carefully with a blend of
+                        nature's
                         finest ingredients such as Sea buckthorn extract, Carrot, Amla, Lemon, Orange, Tomato fruit,
                         Pomegranate extract, Grape seed, Fenugreek seeds extract and more.
                     </p>
                     <br />
                     <p class="text-secondary text-justify font-bold">Hair-You-Glo is a product formulated in such a
-                        way that helps you improve your hair health by containing much required nutrients & vitamins in it.
+                        way that helps you improve your hair health by containing much required nutrients & vitamins in
+                        it.
                         Experience the power of nature in every element of Hair-You-Glo. Elevate your hair health with a
-                        blend of carefully selected natural ingredients. Make Hair-You-Glo your daily partner in nurturing
+                        blend of carefully selected natural ingredients. Make Hair-You-Glo your daily partner in
+                        nurturing
                         your hair's vitality. Unlock the secret to radiant, confident hair.
                     </p>
                 </div>
