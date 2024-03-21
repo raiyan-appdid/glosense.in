@@ -96,7 +96,7 @@ onMounted(function () {
       <div class="founder-details container mx-auto">
         <div class="grid grid-cols-12 gap-5 mt-10">
           <div class="col-span-12 lg:col-span-6 mx-auto">
-            <img src="/images/aboutus/founder-image_600.png" class="w-3/4 mx-auto" alt="" />
+            <img src="/images/aboutus/founder-image-2.jpg" class="w-3/4 mx-auto" alt="" />
           </div>
           <div class="col-span-12 lg:col-span-6 mx-3">
             <h2 class="font-bold text-2xl text-secondary leading-normal px-5">
