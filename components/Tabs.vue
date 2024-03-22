@@ -41,7 +41,7 @@ function howItWorkFunction() {
 }
 </script>
 <template>
-    <div class="bg-[#f9d5cf] px-1 sm:py-4">
+    <div class="bg-[#eafdf3] px-1 sm:py-4">
         <div class="w-full">
             <div class="sm:!flex py-4 md:flex overflow-scroll sm:overflow-hidden sm:justify-center"
                 id="tab-scroll-container" style="display: -webkit-box;">
@@ -72,7 +72,7 @@ function howItWorkFunction() {
         <div class="whats-in-it py-4" v-show="whatInIt">
             <div class="grid grid-cols-12">
                 <div class="col-span-3 flex items-center justify-center">
-                    <img src="/public/images/Ingradients-04.png" class="w-2/3 sm:w-2/6" alt="">
+                    <img src="/public/images/Ingradients-photos-04.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-extrabold">AMLA:</p>
@@ -89,7 +89,7 @@ function howItWorkFunction() {
             </div>
             <div class="grid grid-cols-12 mt-4">
                 <div class="col-span-3 flex items-center justify-center">
-                    <img src="/public/images/Ingradients-07.png" class="w-2/3 sm:w-2/6" alt="">
+                    <img src="/public/images/Ingradients-photos-01.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-extrabold">ORANGE:</p>
@@ -106,7 +106,7 @@ function howItWorkFunction() {
             </div>
             <div class="grid grid-cols-12 mt-4">
                 <div class="col-span-3 flex items-center justify-center">
-                    <img src="/public/images/Ingradients-02.png" class="w-2/3 sm:w-2/6" alt="">
+                    <img src="/public/images/Ingradients-photos-07.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-extrabold">POMEGRANATE:</p>
@@ -119,7 +119,7 @@ function howItWorkFunction() {
             </div>
             <div class="grid grid-cols-12 mt-4">
                 <div class="col-span-3 flex items-center justify-center">
-                    <img src="/public/images/Ingradients-09.png" class="w-2/3 sm:w-2/6" alt="">
+                    <img src="/public/images/Ingradients-photos-10.png" class="w-2/3 sm:w-2/6" alt="">
                 </div>
                 <div class="col-span-9">
                     <p class="text-secondary sm:text-2xl text-lg font-extrabold">SEA BUCKTHORN:</p>
