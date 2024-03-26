@@ -7,21 +7,35 @@
                     class="w-full text-dark flex justify-between py-1  after:content-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGZpbGw9IiM0M2ExOTAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQogICAgPHBhdGggZmlsbD0iIzQzYTE5MCIgZD0iTTEwNC43MDQgMzM4Ljc1MmE2NCA2NCAwIDAgMSA5MC40OTYgMGwzMTYuOCAzMTYuOGwzMTYuOC0zMTYuOGE2NCA2NCAwIDAgMSA5MC40OTYgOTAuNDk2TDU1Ny4yNDggNzkxLjI5NmE2NCA2NCAwIDAgMS05MC40OTYgMEwxMDQuNzA0IDQyOS4yNDhhNjQgNjQgMCAwIDEgMC05MC40OTYiLz4NCjwvc3ZnPg==')] after:text-secondary">
                     <span class="text-secondary font-bold text-xl">HELPS IN:</span>
                 </summary>
-                <p class="">
-                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Maintaining a healthy scalp with
-                    improved
-                    blood
-                    circulation.</p>
-                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Encouraging better hair growth and
-                    helps
-                    prevent dandruff.</p>
-                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Cultivate Optimal Hair Follicle
-                    Health.</p>
-                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Reducing hair loss, and strengthening
-                    hair
-                    strands.</p>
-
-                </p>
+                <div class="flex gap-4 p-6">
+                    <img class="w-12" src="/public/images/what-1.png" alt="">
+                    <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Maintaining a healthy scalp
+                        with
+                        improved
+                        blood
+                        circulation.</p>
+                </div>
+                <div class="flex gap-4 p-6 pt-0">
+                    <img class="w-12" src="/public/images/what-2.png" alt="">
+                    <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Encouraging better hair
+                        growth
+                        and
+                        helps
+                        prevent dandruff.</p>
+                </div>
+                <div class="flex gap-4 p-6 pt-0">
+                    <img class="w-12" src="/public/images/what-3.png" alt="">
+                    <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Cultivate Optimal Hair
+                        Follicle
+                        Health.</p>
+                </div>
+                <div class="flex gap-4 p-6 pt-0">
+                    <img class="w-12" src="/public/images/what-4.png" alt="">
+                    <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Reducing hair loss, and
+                        strengthening
+                        hair
+                        strands.</p>
+                </div>
             </details>
             <div class="border border-[#ecc7bf] my-2"></div>
             <details class="w-full cursor-pointer accordian">
@@ -33,7 +47,8 @@
                 <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Add one scoop of Hair-you-glo
                     into your
                     water.</p>
-                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Ensure it's well-mixed, have a sip &
+                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Ensure it's well-mixed, have a
+                    sip &
                     revel in
                     the moment 🤙</p>
 
