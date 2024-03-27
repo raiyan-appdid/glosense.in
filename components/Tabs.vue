@@ -57,16 +57,16 @@ function howItWorkFunction() {
                     What To Expect
                     ?
                 </p>
-                <p @click="storageTipFunction"
+                <!-- <p @click="storageTipFunction"
                     class="p-2 mx-1 border border-secondary rounded cursor-pointer text-lg font-bold sm:inline-block"
                     style="display: -webkit-box;" :class="[{ ' bg-secondary text-white': storageTip }]">
                     STORAGE TIP
-                </p>
-                <p @click="howItWorkFunction"
+                </p> -->
+                <!-- <p @click="howItWorkFunction"
                     class="p-2 mx-1 border border-secondary rounded cursor-pointer text-lg font-bold sm:inline-block"
                     style="display: -webkit-box;" :class="[{ ' bg-secondary text-white': howItWork }]">
                     HOW IT WORKS ?
-                </p>
+                </p> -->
             </div>
         </div>
         <div class="whats-in-it py-4" v-show="whatInIt">
