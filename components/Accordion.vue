@@ -82,13 +82,13 @@
             <div class="border border-[#ecc7bf] my-2"></div>
 
             <div class="video-container mt-7 mb-8">
-                <video controls loop muted class="rounded-xl w-36"
+                <video loop muted class="rounded-xl w-36"
                     src="/public/images/Testimonial-1.mp4"></video>
-                <video controls loop muted class="rounded-xl w-36"
+                <video loop muted class="rounded-xl w-36"
                     src="/public/images/Testimonial-2.mp4"></video>
-                <video controls loop muted class="rounded-xl w-36"
+                <video loop muted class="rounded-xl w-36"
                     src="/public/images/Testimonial-3.mp4"></video>
-                <video controls loop muted class="rounded-xl w-36"
+                <video loop muted class="rounded-xl w-36"
                     src="/public/images/Testimonial-4.mp4"></video>
             </div>
 
