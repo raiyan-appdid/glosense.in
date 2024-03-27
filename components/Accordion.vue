@@ -38,7 +38,7 @@
                 </div>
             </details>
             <div class="border border-[#ecc7bf] my-2"></div>
-            <details class="w-full cursor-pointer accordian" open>
+            <details class="w-full cursor-pointer accordian">
                 <summary
                     class="w-full text-dark flex justify-between py-1  after:content-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGZpbGw9IiM0M2ExOTAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQogICAgPHBhdGggZmlsbD0iIzQzYTE5MCIgZD0iTTEwNC43MDQgMzM4Ljc1MmE2NCA2NCAwIDAgMSA5MC40OTYgMGwzMTYuOCAzMTYuOGwzMTYuOC0zMTYuOGE2NCA2NCAwIDAgMSA5MC40OTYgOTAuNDk2TDU1Ny4yNDggNzkxLjI5NmE2NCA2NCAwIDAgMS05MC40OTYgMEwxMDQuNzA0IDQyOS4yNDhhNjQgNjQgMCAwIDEgMC05MC40OTYiLz4NCjwvc3ZnPg==')] after:text-secondary">
                     <span class="text-secondary font-bold text-xl">HOW TO USE:</span>
@@ -82,10 +82,14 @@
             <div class="border border-[#ecc7bf] my-2"></div>
 
             <div class="video-container mt-7 mb-8">
-                <video autoplay loop muted class="rounded-xl w-36" src="/public/images/Testimonial-1.mp4"></video>
-                <video autoplay loop muted class="rounded-xl w-36" src="/public/images/Testimonial-2.mp4"></video>
-                <video autoplay loop muted class="rounded-xl w-36" src="/public/images/Testimonial-3.mp4"></video>
-                <video autoplay loop muted class="rounded-xl w-36" src="/public/images/Testimonial-4.mp4"></video>
+                <video controls loop muted class="rounded-xl w-36"
+                    src="/public/images/Testimonial-1.mp4"></video>
+                <video controls loop muted class="rounded-xl w-36"
+                    src="/public/images/Testimonial-2.mp4"></video>
+                <video controls loop muted class="rounded-xl w-36"
+                    src="/public/images/Testimonial-3.mp4"></video>
+                <video controls loop muted class="rounded-xl w-36"
+                    src="/public/images/Testimonial-4.mp4"></video>
             </div>
 
             <!-- <details class="w-full cursor-pointer accordian">
