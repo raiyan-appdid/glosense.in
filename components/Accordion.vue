@@ -38,37 +38,66 @@
                 </div>
             </details>
             <div class="border border-[#ecc7bf] my-2"></div>
-            <details class="w-full cursor-pointer accordian">
+            <details class="w-full cursor-pointer accordian" open>
                 <summary
                     class="w-full text-dark flex justify-between py-1  after:content-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGZpbGw9IiM0M2ExOTAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQogICAgPHBhdGggZmlsbD0iIzQzYTE5MCIgZD0iTTEwNC43MDQgMzM4Ljc1MmE2NCA2NCAwIDAgMSA5MC40OTYgMGwzMTYuOCAzMTYuOGwzMTYuOC0zMTYuOGE2NCA2NCAwIDAgMSA5MC40OTYgOTAuNDk2TDU1Ny4yNDggNzkxLjI5NmE2NCA2NCAwIDAgMS05MC40OTYgMEwxMDQuNzA0IDQyOS4yNDhhNjQgNjQgMCAwIDEgMC05MC40OTYiLz4NCjwvc3ZnPg==')] after:text-secondary">
                     <span class="text-secondary font-bold text-xl">HOW TO USE:</span>
                 </summary>
-                <p class="">
-                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Add one scoop of Hair-you-glo
-                    into your
-                    water.</p>
-                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">-Ensure it's well-mixed, have a
-                    sip &
-                    revel in
-                    the moment 🤙</p>
 
-                </p>
+                <div class="grid grid-cols-3 mt-1 gap-5">
+                    <div>
+                        <img class="" src="/public/images/when-1.png" alt="">
+                        <div>
+                            <p class="bg-primary mt-2 p-1 text-white text-center leading-5">Add 1 scoop into a glass</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="" src="/public/images/when-2.png" alt="">
+                        <div>
+                            <p class="bg-primary mt-2 p-1 text-white text-center leading-5">Add some water</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="" src="/public/images/when-3.png" alt="">
+                        <div>
+                            <p class="bg-primary mt-2 py-3 md:py-1 md:p-1 text-white text-center leading-5">Mix it well
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <p class="font-extrabold text-md">WHEN TO USE:</p>
+                    <p class="font-semibold leading-5">You can consume it any time of the
+                        day, but
+                        for better experience we
+                        suggest consuming it in the
+                        morning.</p>
+                </div>
+                <div class="mt-2">
+                    <p class="font-extrabold text-md">STORAGE TIP</p>
+                    <p class="font-semibold leading-5">For best results, utilise a dry spoon when dealing with the mix,
+                        and be sure to seal the jars tightly after usage to prevent solidification or lumps.</p>
+                </div>
             </details>
             <div class="border border-[#ecc7bf] my-2"></div>
-            <details class="w-full cursor-pointer accordian">
+
+            <div class="video-container mt-7 mb-8">
+                <video autoplay loop muted class="rounded-xl w-36" src="/public/images/Testimonial-1.mp4"></video>
+                <video autoplay loop muted class="rounded-xl w-36" src="/public/images/Testimonial-2.mp4"></video>
+                <video autoplay loop muted class="rounded-xl w-36" src="/public/images/Testimonial-3.mp4"></video>
+                <video autoplay loop muted class="rounded-xl w-36" src="/public/images/Testimonial-4.mp4"></video>
+            </div>
+
+            <!-- <details class="w-full cursor-pointer accordian">
                 <summary
                     class="w-full text-dark flex justify-between py-1  after:content-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGZpbGw9IiM0M2ExOTAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQogICAgPHBhdGggZmlsbD0iIzQzYTE5MCIgZD0iTTEwNC43MDQgMzM4Ljc1MmE2NCA2NCAwIDAgMSA5MC40OTYgMGwzMTYuOCAzMTYuOGwzMTYuOC0zMTYuOGE2NCA2NCAwIDAgMSA5MC40OTYgOTAuNDk2TDU1Ny4yNDggNzkxLjI5NmE2NCA2NCAwIDAgMS05MC40OTYgMEwxMDQuNzA0IDQyOS4yNDhhNjQgNjQgMCAwIDEgMC05MC40OTYiLz4NCjwvc3ZnPg==')] after:text-secondary">
                     <span class="text-secondary font-bold text-xl">WHEN TO USE:</span>
                 </summary>
                 <p class="">
-                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2">You can consume it any time of the
-                    day, but
-                    for better experience we
-                    suggest consuming it in the
-                    morning.</p>
+                <p class=" text-lg leading-5 font-normal text-black sm:text-2xl mb-2"></p>
                 </p>
             </details>
-            <div class="border border-[#ecc7bf] my-2"></div>
+            <div class="border border-[#ecc7bf] my-2"></div> -->
             <!-- <details class="w-full cursor-pointer">
                 <summary
                     class="w-full text-dark flex justify-between py-1  after:content-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGZpbGw9IiM0M2ExOTAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQogICAgPHBhdGggZmlsbD0iIzQzYTE5MCIgZD0iTTEwNC43MDQgMzM4Ljc1MmE2NCA2NCAwIDAgMSA5MC40OTYgMGwzMTYuOCAzMTYuOGwzMTYuOC0zMTYuOGE2NCA2NCAwIDAgMSA5MC40OTYgOTAuNDk2TDU1Ny4yNDggNzkxLjI5NmE2NCA2NCAwIDAgMS05MC40OTYgMEwxMDQuNzA0IDQyOS4yNDhhNjQgNjQgMCAwIDEgMC05MC40OTYiLz4NCjwvc3ZnPg==')] after:text-secondary">
@@ -112,6 +141,20 @@
     </div>
 </template>
 <style>
+.video-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    /* Adjust the gap as needed */
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.video-container video {
+    flex: 0 0 auto;
+}
+
+
 .accordian details[open] summary {
     /* background: blue; */
     /* color: white */
