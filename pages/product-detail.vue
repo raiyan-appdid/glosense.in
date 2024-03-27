@@ -388,9 +388,9 @@ function generateAvatarUrl(title) {
                     <div class="flex">
                         <div>
                             <p class=""><span class="font-semibold text-primary text-2xl">₹</span> <span
-                                    class="font-extrabold text-primary text-2xl">896.00</span><span
-                                    class="text-2xl ml-2"><s>₹1200</s></span><span
-                                    class="my-auto p-1 ml-2 bg-secondary text-white rounded-lg">₹403
+                                    class="font-extrabold text-primary text-2xl">896.00</span><br /><span
+                                    class="text-xl"><s>₹1299</s></span><span
+                                    class="my-auto p-1 ml-2 bg-secondary text-white rounded-lg">31%
                                     off</span>
                             </p>
 
