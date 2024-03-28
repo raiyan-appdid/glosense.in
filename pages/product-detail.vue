@@ -23,6 +23,7 @@ const text_1 = ref();
 const text_2 = ref();
 const nuxtApp = useNuxtApp();
 const currentPage = ref(1);
+const viewMoreFaq = ref(false);
 onMounted(function () {
     console.log(nuxtApp.$fb)
     nuxtApp.$fb.enable()
@@ -34,6 +35,14 @@ const counter = useCounter()
 
 function incrementCount() {
     counter.value++;
+}
+
+function toggleFaq(action = "show"){
+    if(action == 'show'){
+        viewMoreFaq.value = true;
+        return;
+    }
+    viewMoreFaq.value = false;
 }
 
 nuxtApp.hook('page:finish', () => {
@@ -1159,209 +1168,221 @@ function generateAvatarUrl(title) {
                                     consuming it in the morning as your first drink.</p>
                             </div>
                         </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                Can I consume products while pregnant or breastfeeding?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>No,we don’t recommend & suggest consuming our products while being pregnant or
-                                    breastfeeding.</p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                What do I do if my package has been damaged?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>Our parcels are packed carefully for every order, however shipping can increase a
-                                    slight chance that some might get damaged.Please read our return/refund
-                                    policy,take an
-                                    unboxing
-                                    video, and write to us at <a
-                                        href="mailto:connect@glosense.in">connect@glosense.in</a>
-                                    for
-                                    further assistance.</p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                What do I do if some items in my order are missing?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>We undergo a strict quality control procedure for every order before being
-                                    dispatched. However, if the items are different from what you ordered or if some
-                                    items
-                                    are
-                                    missing, please read our return/refund policy, take an unboxing video, and write
-                                    to us
-                                    at
-                                    <a href="mailto:connect@glosense.in">connect@glosense.in</a> for further
-                                    assistance.
-                                </p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                Who should I contact for queries/concerns related to products or
-                                delivery?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>You will be sent an order confirmation email along with your tracking details
-                                    once
-                                    dispatched. However, if you have any concerns over your order status, please
-                                    feel free
-                                    to reach
-                                    out to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a> and
-                                    our
-                                    customer
-                                    support team will be happy to help you!
-                                </p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                What to do if my payment has gone through but I haven’t received
-                                an order confirmation email?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>In case your payment has gone through, please check your spam folder for an order
-                                    confirmation email. If you do not find the email, please reach out to us at <a
-                                        href="mailto:connect@glosense.in">connect@glosense.in</a>
-                                    and our customer support team will be happy to help you!
-                                </p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                When will my order be dispatched?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>Your order will be dispatched 24 to 48 hours after placing your order post which
-                                    you
-                                    will receive an email with your tracking details.
-                                </p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                How long will the shipping take?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>You can expect a standard shipping time of 2 to 8 business days as mentioned
-                                    during
-                                    checkout!
-                                </p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                What is the refund and return policy?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>It is important to keep in mind that as a company in the food industry, we have
-                                    strict return/refund policies. So please go through our return/refund policy
-                                    here. If
-                                    you feel
-                                    like you need more assistance, please feel free to drop in an email to <a
-                                        href="mailto:connect@glosense.in">connect@glosense.in</a> :)
-                                </p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                Is Glosense Lifecare Pvt Ltd vegan/vegetarian-friendly?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>As our product is 100% plant based it is safe to say it is vegetarian friendly.
-                                </p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                Are there any side effects associated with Glosense Lifecare Pvt Ltd?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>At Glosense Lifecare Pvt Ltd, we care about your well-being. Our Glosense
-                                    Lifecare Pvt
-                                    Ltd is plant-based and designed
-                                    for a healthy lifestyle.But incarse if you ever experience discomfort, contact
-                                    us at
-                                    <a href="mailto:connect@glosense.in">connect@glosense.in</a>. We're here to
-                                    help.
-                                </p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                Can Glosense be used by both men and women?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>Yes, Our product is crafted in such a way which is useful for both men & women.
-                                </p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                When can I expect to see results?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>The journey to experiencing the benefits of Hair-you-glo can be unique for each
-                                    person. We encourage you to use our product consistently to discover the results
-                                    that
-                                    align with
-                                    your personal wellness goals.One can see results within 8-10 weeks of regular
-                                    use.
-                                </p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                Is Glosense safe to use?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>As our product is all plant based with 100% natural ingredients used,we can
-                                    conclude
-                                    that all products of Glosense Lifecare Pvt Ltd are safe to use:)
-                                </p>
-                            </div>
-                        </details>
-                        <hr class="bg-black my-3" />
-                        <details class=" rounded-lg mb-3">
-                            <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
-                                What is Glosense Lifecare Pvt Ltd, and how does it work?
-                            </summary>
-                            <div class="mt-1 leading-6 text-black">
-                                <p>At Glosense Lifecare Pvt Ltd we are a nutraceutical brand, we're all about
-                                    enhancing your
-                                    well-being
-                                    through nature's gifts. Our plant-based superblends offer a holistic approach to
-                                    health,
-                                    elevating your hair, skin, gut, and stress management.We encourage you to
-                                    explore the
-                                    world of
-                                    plant-based superblends and discover how they can transform your life.Embrace
-                                    the power
-                                    of
-                                    plant-based superblends, and experience the incredible transformation they can
-                                    bring to
-                                    your
-                                    life.
-                                </p>
-                            </div>
-                        </details>
+
+                        <div v-show="!viewMoreFaq" @click="toggleFaq()" class="flex bg-primary w-fit p-2 text-white cursor-pointer">
+                            <p class="my-auto">View More</p>
+                            <span class="inline-block my-auto"><svg class="my-auto" xmlns="http://www.w3.org/2000/svg"
+                                    width="25" height="25" viewBox="0 0 48 48">
+                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4" d="M36 18L24 30L12 18" />
+                                </svg></span>
+                        </div>
+
+                        <div v-show="viewMoreFaq">
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    Can I consume products while pregnant or breastfeeding?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>No,we don’t recommend & suggest consuming our products while being pregnant or
+                                        breastfeeding.</p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    What do I do if my package has been damaged?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>Our parcels are packed carefully for every order, however shipping can increase a
+                                        slight chance that some might get damaged.Please read our return/refund
+                                        policy,take an
+                                        unboxing
+                                        video, and write to us at <a
+                                            href="mailto:connect@glosense.in">connect@glosense.in</a>
+                                        for
+                                        further assistance.</p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    What do I do if some items in my order are missing?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>We undergo a strict quality control procedure for every order before being
+                                        dispatched. However, if the items are different from what you ordered or if some
+                                        items
+                                        are
+                                        missing, please read our return/refund policy, take an unboxing video, and write
+                                        to us
+                                        at
+                                        <a href="mailto:connect@glosense.in">connect@glosense.in</a> for further
+                                        assistance.
+                                    </p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    Who should I contact for queries/concerns related to products or
+                                    delivery?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>You will be sent an order confirmation email along with your tracking details
+                                        once
+                                        dispatched. However, if you have any concerns over your order status, please
+                                        feel free
+                                        to reach
+                                        out to us at <a href="mailto:connect@glosense.in">connect@glosense.in</a> and
+                                        our
+                                        customer
+                                        support team will be happy to help you!
+                                    </p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    What to do if my payment has gone through but I haven’t received
+                                    an order confirmation email?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>In case your payment has gone through, please check your spam folder for an order
+                                        confirmation email. If you do not find the email, please reach out to us at <a
+                                            href="mailto:connect@glosense.in">connect@glosense.in</a>
+                                        and our customer support team will be happy to help you!
+                                    </p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    When will my order be dispatched?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>Your order will be dispatched 24 to 48 hours after placing your order post which
+                                        you
+                                        will receive an email with your tracking details.
+                                    </p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    How long will the shipping take?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>You can expect a standard shipping time of 2 to 8 business days as mentioned
+                                        during
+                                        checkout!
+                                    </p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    What is the refund and return policy?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>It is important to keep in mind that as a company in the food industry, we have
+                                        strict return/refund policies. So please go through our return/refund policy
+                                        here. If
+                                        you feel
+                                        like you need more assistance, please feel free to drop in an email to <a
+                                            href="mailto:connect@glosense.in">connect@glosense.in</a> :)
+                                    </p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    Is Glosense Lifecare Pvt Ltd vegan/vegetarian-friendly?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>As our product is 100% plant based it is safe to say it is vegetarian friendly.
+                                    </p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    Are there any side effects associated with Glosense Lifecare Pvt Ltd?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>At Glosense Lifecare Pvt Ltd, we care about your well-being. Our Glosense
+                                        Lifecare Pvt
+                                        Ltd is plant-based and designed
+                                        for a healthy lifestyle.But incarse if you ever experience discomfort, contact
+                                        us at
+                                        <a href="mailto:connect@glosense.in">connect@glosense.in</a>. We're here to
+                                        help.
+                                    </p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    Can Glosense be used by both men and women?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>Yes, Our product is crafted in such a way which is useful for both men & women.
+                                    </p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    When can I expect to see results?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>The journey to experiencing the benefits of Hair-you-glo can be unique for each
+                                        person. We encourage you to use our product consistently to discover the results
+                                        that
+                                        align with
+                                        your personal wellness goals.One can see results within 8-10 weeks of regular
+                                        use.
+                                    </p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    Is Glosense safe to use?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>As our product is all plant based with 100% natural ingredients used,we can
+                                        conclude
+                                        that all products of Glosense Lifecare Pvt Ltd are safe to use:)
+                                    </p>
+                                </div>
+                            </details>
+                            <hr class="bg-black my-3" />
+                            <details class=" rounded-lg mb-3">
+                                <summary class="font-semibold text-lg leading-6 text-black cursor-pointer">
+                                    What is Glosense Lifecare Pvt Ltd, and how does it work?
+                                </summary>
+                                <div class="mt-1 leading-6 text-black">
+                                    <p>At Glosense Lifecare Pvt Ltd we are a nutraceutical brand, we're all about
+                                        enhancing your
+                                        well-being
+                                        through nature's gifts. Our plant-based superblends offer a holistic approach to
+                                        health,
+                                        elevating your hair, skin, gut, and stress management.We encourage you to
+                                        explore the
+                                        world of
+                                        plant-based superblends and discover how they can transform your life.Embrace
+                                        the power
+                                        of
+                                        plant-based superblends, and experience the incredible transformation they can
+                                        bring to
+                                        your
+                                        life.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
                         <hr class="bg-black my-3" />
                     </div>
                 </div>
