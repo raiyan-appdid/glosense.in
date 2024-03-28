@@ -401,6 +401,7 @@ function generateAvatarUrl(title) {
                             </p>
 
                             <p class="text-gray-500 text-sm mt-2 sm:mt-0">Jar-120g (30 servings)</p>
+                            <p>Inclusive of all taxes.</p>
                         </div>
 
                         <div class="border-2 border-dashed border-secondary grid grid-cols-12 sm:w-[60%] p-1 ml-3">
@@ -468,7 +469,6 @@ function generateAvatarUrl(title) {
                         <div class="grid grid-cols-12 mt-4">
                             <div class="col-span-12">
                                 <p>Free Shipping Across India. Delivery in 3-6 business days.</p>
-                                <p>Inclusive of all taxes.</p>
                             </div>
                             <!-- <div class="col-span-6">
                                 <div class="flex"> <span class="inline-block"><svg width="25" height="25"
