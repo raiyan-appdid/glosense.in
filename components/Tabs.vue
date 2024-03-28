@@ -43,8 +43,8 @@ function howItWorkFunction() {
 <template>
     <div class="bg-[#eafdf3] px-1 sm:py-4">
         <div class="w-full">
-            <div class="sm:!flex py-4 md:flex overflow-scroll sm:overflow-hidden sm:justify-center"
-                id="tab-scroll-container" style="display: -webkit-box;">
+            <div class="!flex py-4 md:flex overflow-scroll sm:overflow-hidden justify-center" id="tab-scroll-container"
+                style="display: -webkit-box;">
                 <p @click="whatsInItFunction"
                     class="p-2 mx-1 border border-secondary rounded cursor-pointer text-lg font-bold sm:inline-block"
                     style="display: -webkit-box;" :class="[{ 'bg-secondary text-white ': whatInIt }]">
@@ -136,29 +136,21 @@ function howItWorkFunction() {
 
         <div class="what-to-expect py-4" v-show="whatToExpect">
             <div class="grid grid-cols-12">
-                <div class="col-span-3">
-                    <!-- <img src="/public/images/pass-through-line.png" class="w-24 h-30" alt=""> -->
-                </div>
-                <div class="col-span-9">
-                    <!-- <div class="grid grid-cols-12"> -->
-                    <!-- <div class="col-span-3 flex items-center justify-center">
-                            <img src="/public/images/Ingradients-04.png" class="w-2/3 sm:w-2/6 " alt="">
-                        </div> -->
-                    <!-- <div class="col-span-9"> -->
-                    <p class="text-secondary sm:text-2xl text-lg font-extrabold">- After 4 weeks:</p>
+                <!-- <div class="col-span-3">
+                </div> -->
+                <div class="col-span-12">
+
+                    <img class="block md:hidden px-5" src="/images/mobile timeline@2x.png" alt="" />
+                    <img class="hidden md:block px-10" src="/images/timeline@2x.png" alt="" />
+
+
+                    <!-- <p class="text-secondary sm:text-2xl text-lg font-extrabold">- After 4 weeks:</p>
                     <p class="text-md leading-5 sm:text-xl text-black font-semibold">Reduces hair fall and dandruff,
                         minimises breakage and
                         itchiness, while
                         nourishing hair
                         strands.</p>
 
-                    <!-- </div> -->
-                    <!-- </div> -->
-                    <!-- <div class="grid grid-cols-12 mt-4"> -->
-                    <!-- <div class="col-span-3 flex items-center justify-center">
-                            <img src="/public/images/Ingradients-07.png" class="w-2/3 sm:w-2/6" alt="">
-                        </div>
-                        <div class="col-span-9"> -->
                     <p class="text-secondary sm:text-2xl text-lg font-extrabold">- After 8 weeks:</p>
                     <p class="text-md leading-5 sm:text-xl text-black font-semibold">Reduces scalp inflammation and
                         stress
@@ -167,14 +159,6 @@ function howItWorkFunction() {
                         promoting
                         visible root-level
                         hair growth, and boosts collagen production for enhanced hair elasticity.</p>
-
-                    <!-- </div> -->
-                    <!-- </div> -->
-                    <!-- <div class="grid grid-cols-12 mt-4">
-                        <div class="col-span-3 flex items-center justify-center">
-                            <img src="/public/images/Ingradients-02.png" class="w-2/3 sm:w-2/6" alt="">
-                        </div>
-                        <div class="col-span-9"> -->
                     <p class="text-secondary sm:text-2xl text-lg font-extrabold">- After 12 weeks:</p>
                     <p class="text-md leading-5 sm:text-xl text-black font-semibold">Reduces scalp inflammation and
                         stress
@@ -183,7 +167,7 @@ function howItWorkFunction() {
                         promoting
                         visible root-level
                         hair growth, and boosts collagen production for enhanced hair elasticity.
-                    </p>
+                    </p> -->
                     <!-- </div>
                     </div> -->
                 </div>

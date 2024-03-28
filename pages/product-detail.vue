@@ -37,8 +37,8 @@ function incrementCount() {
     counter.value++;
 }
 
-function toggleFaq(action = "show"){
-    if(action == 'show'){
+function toggleFaq(action = "show") {
+    if (action == 'show') {
         viewMoreFaq.value = true;
         return;
     }
@@ -396,13 +396,13 @@ function generateAvatarUrl(title) {
                     </div>
                     <div class="flex">
                         <div>
-                            <p class="block sm:hidden"><span class="font-semibold text-primary text-2xl">₹</span> <span
+                            <!-- <p class="block sm:hidden"><span class="font-semibold text-primary text-2xl">₹</span> <span
                                     class="font-extrabold text-primary text-2xl">896.00</span><br /><span
                                     class="text-xl text-gray-500"><s>₹1299</s></span><span
                                     class="my-auto p-1 ml-2 bg-secondary text-white rounded-lg">31%
                                     off</span>
-                            </p>
-                            <p class="hidden sm:block"><span class="font-semibold text-primary text-2xl">₹</span> <span
+                            </p> -->
+                            <p class=""><span class="font-semibold text-primary text-2xl">₹</span> <span
                                     class="font-extrabold text-primary text-2xl">896.00</span> <span
                                     class="text-xl text-gray-500"><s>₹1299</s></span><span
                                     class="my-auto p-1 ml-2 bg-secondary text-white rounded-lg">31%
@@ -413,15 +413,19 @@ function generateAvatarUrl(title) {
                             <p>Inclusive of all taxes.</p>
                         </div>
 
-                        <div class="border-2 border-dashed border-secondary grid grid-cols-12 sm:w-[60%] p-1 ml-3">
-                            <div class="col-span-12 flex justify-center">
-                                <span class="my-auto text-secondary sm:text-lg text-center font-semibold text-sm">Get
-                                    it for <span class="font-extrabold text-primary">₹896</span> (Save ₹403)</span>
+                        <!-- <div class="w-auto sm:w-full">
+                            <div class="border-2 border-dashed border-secondary grid grid-cols-12 sm:w-[60%] p-1 ml-3">
+                                <div class="col-span-12 flex justify-center">
+                                    <span
+                                        class="my-auto text-secondary sm:text-lg text-center font-semibold text-sm">Get
+                                        it for <span class="font-extrabold text-primary">₹896</span> (Save ₹403)</span>
+                                </div>
+                                <span
+                                    class="col-span-12 text-secondary sm:text-lg font-semibold text-sm text-center">Use
+                                    Code:
+                                    <span class="font-semibold text-md">HOLI31</span></span>
                             </div>
-                            <span class="col-span-12 text-secondary sm:text-lg font-semibold text-sm text-center">Use
-                                Code:
-                                <span class="font-semibold text-md">HOLI31</span></span>
-                        </div>
+                        </div> -->
 
 
                         <!-- <span class="my-auto text-sm bg-secondary text-white ml-1 px-1">25% off</span> -->
@@ -1169,7 +1173,8 @@ function generateAvatarUrl(title) {
                             </div>
                         </details>
 
-                        <div v-show="!viewMoreFaq" @click="toggleFaq()" class="flex bg-primary w-fit p-2 text-white cursor-pointer">
+                        <div v-show="!viewMoreFaq" @click="toggleFaq()"
+                            class="flex bg-primary w-fit p-2 text-white cursor-pointer">
                             <p class="my-auto">View More</p>
                             <span class="inline-block my-auto"><svg class="my-auto" xmlns="http://www.w3.org/2000/svg"
                                     width="25" height="25" viewBox="0 0 48 48">

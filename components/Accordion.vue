@@ -48,19 +48,21 @@
                     <div>
                         <img class="" src="/public/images/when-1.png" alt="">
                         <div>
-                            <p class="bg-primary mt-2 p-1 text-white text-center leading-5">Add 1 scoop into a glass</p>
+                            <p class="bg-primary mt-2 p-1 text-white text-center leading-5 font-bold">Add 1 scoop into a
+                                glass</p>
                         </div>
                     </div>
                     <div>
                         <img class="" src="/public/images/when-2.png" alt="">
                         <div>
-                            <p class="bg-primary mt-2 p-1 text-white text-center leading-5">Add some water</p>
+                            <p class="bg-primary mt-2 p-1 text-white text-center leading-5 font-bold">Add some water</p>
                         </div>
                     </div>
                     <div>
                         <img class="" src="/public/images/when-3.png" alt="">
                         <div>
-                            <p class="bg-primary mt-2 py-3 md:py-1 md:p-1 text-white text-center leading-5">Mix it well
+                            <p class="bg-primary mt-2 py-3 md:py-1 md:p-1 text-white text-center leading-5 font-bold">
+                                Mix it well
                             </p>
                         </div>
                     </div>
