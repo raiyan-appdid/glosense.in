@@ -43,7 +43,7 @@ function howItWorkFunction() {
 <template>
     <div class="bg-[#eafdf3] px-1 sm:py-4">
         <div class="w-full">
-            <div class="!flex py-4 md:flex overflow-scroll sm:overflow-hidden justify-center" id="tab-scroll-container"
+            <div class="flex py-4 md:!flex overflow-scroll sm:overflow-hidden justify-center" id="tab-scroll-container"
                 style="display: -webkit-box;">
                 <p @click="whatsInItFunction"
                     class="p-2 mx-1 border border-secondary rounded cursor-pointer text-lg font-bold sm:inline-block"
@@ -62,11 +62,11 @@ function howItWorkFunction() {
                     style="display: -webkit-box;" :class="[{ ' bg-secondary text-white': storageTip }]">
                     STORAGE TIP
                 </p> -->
-                <!-- <p @click="howItWorkFunction"
+                <p @click="howItWorkFunction"
                     class="p-2 mx-1 border border-secondary rounded cursor-pointer text-lg font-bold sm:inline-block"
                     style="display: -webkit-box;" :class="[{ ' bg-secondary text-white': howItWork }]">
                     HOW IT WORKS ?
-                </p> -->
+                </p>
             </div>
         </div>
         <div class="whats-in-it py-4" v-show="whatInIt">

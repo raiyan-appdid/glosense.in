@@ -73,26 +73,26 @@ onMounted(function () {
     </div>
 
     <div class="Blog mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
-        <h2 class="py-10 text-secondary text-4xl font-bold text-center">Blogs</h2>
+        <!-- <h2 class="py-10 text-secondary text-4xl font-bold text-center">Blogs</h2> -->
+        <h2 class="py-3 text-secondary text-4xl font-bold text-center"></h2>
 
 
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 px-3 sm:px-10">
-
             <div class="sm:p-10" v-for="blog in blogs">
+                <h2 class="text-lg sm:text-3xl text-secondary font-extrabold mt-3 mb-2 sm:my-8">{{ blog.title }}
+                </h2>
                 <div>
                     <a @click="clickOnBlog(blog.slug)" :href="'/blogs/' + blog.slug">
-                        <img :src="blog.image" class="w-full" alt="">
+                        <img :src="blog.image" class="w-full blog-image" alt="">
                     </a>
                 </div>
                 <div>
                     <a @click="clickOnBlog(blog.slug)" :href="'/blogs/' + blog.slug">
-                        <h2 class="text-2xl sm:text-3xl text-primary font-bold my-3 sm:my-8">{{ blog.title }}
-                        </h2>
-                        <p class="text-xl leading-7" v-html="blog.short_description">
+                        <p class="text-lg leading-5 mt-4" v-html="blog.short_description">
                         </p>
-                        <p class="underline text-primary text-xl mt-8 mb-8 sm:mb-0"><a
+                        <p class="text-white text-sm w-fit px-1 mb-8 mt-1 bg-primary sm:mb-0"><a
                                 :href="'/blogs/' + blog.slug">Read
-                                More</a>
+                                More>></a>
                         </p>
                     </a>
                 </div>
@@ -384,3 +384,11 @@ onMounted(function () {
 
     </div>
 </template>
+<style>
+.blog-image {
+    object-fit: cover;
+    height: 170px;
+    border-radius: 15px;
+    object-position: center;
+}
+</style>

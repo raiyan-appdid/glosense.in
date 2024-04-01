@@ -84,13 +84,13 @@
             <div class="border border-[#ecc7bf] my-2"></div>
 
             <div class="video-container justify-start md:justify-center mt-7 mb-8">
-                <video controls muted autoplay loop class="rounded-xl w-36 md:w-60"
+                <video controls muted loop poster="/public/images/thumbnail-2.jpg" class="rounded-xl w-36 md:w-60"
                     src="/public/images/Testimonial-1.mp4"></video>
-                <video controls muted autoplay loop class="rounded-xl w-36 md:w-60"
+                <video controls muted loop poster="/public/images/thumbnail-1.jpg" class="rounded-xl w-36 md:w-60"
                     src="/public/images/Testimonial-2.mp4"></video>
-                <video controls muted autoplay loop class="rounded-xl w-36 md:w-60"
+                <video controls muted loop poster="/public/images/thumbnail-3.jpg" class="rounded-xl w-36 md:w-60"
                     src="/public/images/Testimonial-3.mp4"></video>
-                <video controls muted autoplay loop class="rounded-xl w-36 md:w-60"
+                <video controls muted loop poster="/public/images/thumbnail-4.jpg" class="rounded-xl w-36 md:w-60"
                     src="/public/images/Testimonial-4.mp4"></video>
             </div>
 
