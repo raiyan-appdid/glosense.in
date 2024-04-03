@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       baseUrl: "https://admin.glosense.in/api/v1",
+      gtagId: "G-697HG0FS5T",
     },
     axios: {
       proxy: true,
