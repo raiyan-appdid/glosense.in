@@ -332,7 +332,7 @@ function generateAvatarUrl(title) {
                 </div>
                 <div class="col-span-12 sm:col-span-7">
                     <h2 class="font-extrabold text-secondary sm:text-4xl text-3xl  my-3">{{ text_1 }}</h2>
-                    <p class="font-bold sm:text-lg text-sm mb-2">{{ text_2 }}
+                    <p class="sm:text-lg text-sm mb-2">{{ text_2 }}
                     </p>
                     <!-- <h2 class="font-semibold text-black text-xl">FOR HEALTHY & STRONG HAIR</h2> -->
 

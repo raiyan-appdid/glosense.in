@@ -308,7 +308,7 @@ definePageMeta({
 const nuxtApp = useNuxtApp();
 
 function applyPromoCode() {
-    promocode.value = "HOLI31";
+    promocode.value = "GET970";
     verifyPromoCode();
 }
 
@@ -533,7 +533,7 @@ async function verifyPromoCode() {
                                 style="scale: 1.5; accent-color: #46a291;" name="" id="" />
                             <span
                                 class="p-0.5 text-secondary text-sm border border-3 border-secondary cursor-pointer border-dashed">
-                                HOLI31
+                                GET970
                             </span>
                             <span class="py-0.5 px-2 text-primary text-sm font-semibold inline-block w-fit">Save Rs. 403
                                 /-</span>
