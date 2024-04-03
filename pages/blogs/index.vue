@@ -72,7 +72,7 @@ onMounted(function () {
     <div class="conteiner">
     </div>
 
-    <div class="Blog mt-20 sm:mt-24 pb-20 bg-[#efe8df]">
+    <div class="Blog mt-20 sm:mt-24 pb-20">
         <!-- <h2 class="py-10 text-secondary text-4xl font-bold text-center">Blogs</h2> -->
         <h2 class="py-3 text-secondary text-4xl font-bold text-center"></h2>
 
