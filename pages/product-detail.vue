@@ -407,7 +407,7 @@ function generateAvatarUrl(title) {
                                 <span class="font-semibold text-primary text-2xl">₹</span> <span
                                     class="font-extrabold text-primary text-2xl">970.00</span> <span
                                     class="text-xl text-gray-500"><s>₹1299</s></span><span
-                                    class="my-auto p-1 ml-2 bg-secondary text-white rounded-lg">30%
+                                    class="my-auto p-1 ml-2 bg-secondary text-white rounded-lg">25%
                                     off</span>
                             </p>
 
