@@ -535,7 +535,7 @@ async function verifyPromoCode() {
                                 class="p-0.5 text-secondary text-sm border border-3 border-secondary cursor-pointer border-dashed">
                                 GET970
                             </span>
-                            <span class="py-0.5 px-2 text-primary text-sm font-semibold inline-block w-fit">Save Rs. 403
+                            <span class="py-0.5 px-2 text-primary text-sm font-semibold inline-block w-fit">Save Rs. 329
                                 /-</span>
 
                             <!-- <span v-if="!promocodeVerified" @click="applyPromoCode"
