@@ -308,7 +308,7 @@ definePageMeta({
 const nuxtApp = useNuxtApp();
 
 function applyPromoCode() {
-    promocode.value = "GET970";
+    promocode.value = "EXTRAGLO";
     verifyPromoCode();
 }
 
@@ -520,7 +520,7 @@ async function verifyPromoCode() {
                                 d="M0 7.5a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0m7.072 3.21l4.318-5.398l-.78-.624l-3.682 4.601L4.32 7.116l-.64.768z"
                                 clip-rule="evenodd" />
                         </svg><span class="text-xs font-normal">PromoCode Applied
-                            Successfully. You got</span> <span class="text-xs font-semibold">Rs. {{
+                            Successfully. You got Total</span> <span class="text-xs font-semibold">Rs. {{
                                 promocodeDiscount }} OFF</span></div>
                 </div>
 
@@ -533,9 +533,10 @@ async function verifyPromoCode() {
                                 style="scale: 1.5; accent-color: #46a291;" name="" id="" />
                             <span
                                 class="p-0.5 text-secondary text-sm border border-3 border-secondary cursor-pointer border-dashed">
-                                GET970
+                                EXTRAGLO
                             </span>
-                            <span class="py-0.5 px-2 text-primary text-sm font-semibold inline-block w-fit">Save Rs. 329
+                            <span class="py-0.5 px-2 text-primary text-sm font-semibold inline-block w-fit">Save extra
+                                Rs. 74
                                 /-</span>
 
                             <!-- <span v-if="!promocodeVerified" @click="applyPromoCode"
@@ -562,7 +563,10 @@ async function verifyPromoCode() {
                     <div class="text-end font-medium text-lg">₹ {{ 1299 * counter }}.00</div>
                     <input type="hidden" form="store-billing-form" name="sub_total" :value="1299 * counter" id="">
                     <div class=" font-medium text-lg my-0">Item Discount</div>
-                    <div class="text-end font-medium text-lg text-secondary">-₹ {{ promocodeDiscount }}.00</div>
+                    <div class="text-end font-medium text-lg text-secondary">-₹ 329.00</div>
+                    <!-- <div class="text-end font-medium text-lg text-secondary">-₹ {{ promocodeDiscount }}.00</div> -->
+                    <div class=" font-medium text-lg my-0">Extra Discount</div>
+                    <div class="text-end font-medium text-lg text-secondary">-₹ 74.00</div>
                     <div class=" font-medium text-lg my-0">Shipping</div>
                     <div class="text-end font-medium text-lg"><s>₹ 100.00</s> free</div>
                     <input type="hidden" form="store-billing-form" :value="promocodeDiscount" name="discount" id="">

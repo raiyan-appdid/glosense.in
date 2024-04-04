@@ -65,7 +65,7 @@ function howItWorkFunction() {
                 <p @click="howItWorkFunction"
                     class="p-2 mx-1 border border-secondary rounded cursor-pointer text-lg font-bold sm:inline-block"
                     style="display: -webkit-box;" :class="[{ ' bg-secondary text-white': howItWork }]">
-                    HOW IT WORKS ?
+                    How It Works ?
                 </p>
             </div>
         </div>
