@@ -601,7 +601,7 @@ async function verifyPromoCode(mycode) {
                                 </span>
                                 <span class="py-0.5 px-2 text-primary text-sm font-semibold inline-block w-fit">Save
                                     extra
-                                    Rs. 329
+                                    Rs. 402
                                     /-</span>
 
                                 <!-- <span v-if="!promocodeVerified" @click="applyPromoCode"
