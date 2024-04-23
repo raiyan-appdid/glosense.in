@@ -139,16 +139,15 @@ function decrementCount() {
 
 function openModal() {
     const token = useCookie('token');
-    if (!token.value) {
-        let modal = document.getElementById('authentication-modal')
-        modal.classList.remove('hidden');
-    }
-    else {
-        storeAnalytics();
-        getUser();
-        gateWayIntegration();
-        //cc avenue gateway.....
-    }
+    // if (!token.value) {
+    //     let modal = document.getElementById('authentication-modal')
+    //     modal.classList.remove('hidden');
+    // }
+    // else {
+    storeAnalytics();
+    getUser();
+    gateWayIntegration();
+    // }
 }
 
 async function storeAnalytics() {
@@ -292,7 +291,7 @@ function generateAvatarUrl(title) {
             </svg></div>
     </div>
     <HeaderCommon />
-    <!-- <ProductPop /> -->
+    <ProductPop />
 
     <!-- Main modal -->
     <LoginModal />

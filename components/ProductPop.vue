@@ -19,7 +19,7 @@ nuxtApp.hook("page:finish", () => {
     // if (emailGiven.value == undefined) {
     setTimeout(() => {
         getDynamicImage()
-    }, 5000);
+    }, 1000);
     // }
 });
 
@@ -93,7 +93,9 @@ async function storeEmail() {
                 </span>
                 <div class="">
                     <div class="flex items-center h-full justify-center">
-                        <img :src="dynamicImage" class="" alt="">
+                        <a href="/billing-details?my_promo=glosix&count=1">
+                            <img :src="dynamicImage" class="" alt="">
+                        </a>
                     </div>
                     <!-- <div class="sm:col-span-6 col-span-12 sm:py-10  px-4 sm:order-2">
                         <div class="flex flex-col justify-evenly h-full">
