@@ -532,7 +532,8 @@ async function verifyPromoCode(mycode) {
                         </div>
                         <div class="text-center" v-else>
                             <button type="button" @click="openModal"
-                                class="text-white bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-2xl  sm:w-auto px-8 py-2 text-center">LogIn</button>
+                                class="text-white bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-2xl  sm:w-auto px-8 py-2 text-center">LogIn
+                                to Proceed</button>
                         </div>
                         <p class="text-primary font-semibold text-center mt-4">Amazon Review</p>
                         <img src="/images/review.png" class="sm:w-3/4 text-center shadow-md rounded-lg m-auto" alt="">
