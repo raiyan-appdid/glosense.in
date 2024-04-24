@@ -284,6 +284,7 @@ onMounted(() => {
     }
 })
 if (token.value) {
+    const showInput = ref(true);
     const { data } = await useFetch(`${apiUrl}/user-detail`, {
         headers: {
             accept: "application/json",
@@ -294,6 +295,8 @@ if (token.value) {
     email.value = data.value.data.email;
     name.value = data.value.data.first_name;
     number.value = data.value.data.phone;
+} else {
+    const showInput = ref(false);
 }
 
 function openModal() {
@@ -443,7 +446,7 @@ async function verifyPromoCode(mycode) {
         <!-- <h2 class="text-secondary text-2xl font-bold text-center py-10">Billing Page</h2> -->
         <div class="grid grid-cols-12">
             <div class="container mx-auto p-5 col-span-12 sm:col-span-6 mt-0 sm:mt-0 order-2 sm:order-1">
-                <form id="store-billing-form" action="https://admin.glosense.in/api/v3/order/store">
+                <form v-show="token" id="store-billing-form" action="https://admin.glosense.in/api/v3/order/store">
                     <p class=" font-bold text-lg mb-4">Shipping Details</p>
                     <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-6">
@@ -526,19 +529,20 @@ async function verifyPromoCode(mycode) {
                                     href="/terms-and-conditions">Terms and
                                     Conditions</a> *</label>
                         </div>
-                        <div class="text-center" v-if="token">
+                        <div class="text-center" v-show="token">
                             <button type="submit" form="store-billing-form"
                                 class="text-white bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-2xl  sm:w-auto px-8 py-2 text-center">Checkout</button>
                         </div>
-                        <div class="text-center" v-else>
-                            <button type="button" @click="openModal"
-                                class="text-white bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-2xl  sm:w-auto px-8 py-2 text-center">LogIn
-                                to Proceed</button>
-                        </div>
-                        <p class="text-primary font-semibold text-center mt-4">Amazon Review</p>
-                        <img src="/images/review.png" class="sm:w-3/4 text-center shadow-md rounded-lg m-auto" alt="">
+
                     </div>
                 </form>
+                <div class="text-center" v-show="!token">
+                    <button type="button" @click="openModal"
+                        class="text-white bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-2xl  sm:w-auto px-8 py-2 text-center">LogIn
+                        to Proceed</button>
+                </div>
+                <p class="text-primary font-semibold text-center mt-4">Amazon Review</p>
+                <img src="/images/review.png" class="sm:w-3/4 text-center shadow-md rounded-lg m-auto" alt="">
             </div>
             <div class="col-span-12 w-full sm:ml-6 sm:col-span-6 m-auto mt-4 order-1 sm:order-2">
                 <p class=" font-bold text-lg sm:mb-4">Order Details</p>
@@ -596,7 +600,7 @@ async function verifyPromoCode(mycode) {
                                     clip-rule="evenodd" />
                             </svg><span class="text-xs font-normal">PromoCode Applied
                                 Successfully. You got Total</span> <span class="text-xs font-semibold">Rs. {{
-                                promocodeDiscount }} OFF</span></div>
+                    promocodeDiscount }} OFF</span></div>
                     </div>
 
 
@@ -675,7 +679,7 @@ async function verifyPromoCode(mycode) {
                     <div class="grid grid-cols-2">
                         <div class=" text-xl font-bold text-secondary">Order total</div>
                         <div class="text-end text-xl text-secondary font-extrabold">₹ {{ 1299 * counter -
-                                promocodeDiscount
+                    promocodeDiscount
                             }}.00
                         </div>
                         <input type="hidden" form="store-billing-form" :value="(1299 * counter - promocodeDiscount)"
