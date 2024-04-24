@@ -328,11 +328,12 @@ function applyPromoCode2() {
 nuxtApp.hook('page:finish', () => {
     // promocode.value = "firstjar";
 
+    var promoText = 'promocode1';
     if (route.query.my_promo == "glosix") {
-        const promoText = "promocode2";
+        var promoText = "promocode2";
         applyPromoCode2();
     } else {
-        const promoText = "promocode1";
+        var promoText = "promocode1";
         applyPromoCode();
     }
 
@@ -407,7 +408,38 @@ async function verifyPromoCode(mycode) {
 
 <template>
     <HeaderCommon />
-    <div class="product-details sm:px-3 md:px-8  mt-20 sm:mt-32 pb-20 bg-white">
+    <div style="position: fixed" class="bg-primary w-full mt-[-44px] sm:mt-[-10px] grid grid-cols-3 py-1 z-10">
+        <div class="flex justify-center items-center">
+            <div class="mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                    <path fill="currentColor"
+                        d="M29.755 21.345A1 1 0 0 0 29 21h-2v-2c0-1.102-.897-2-2-2h-4c-1.103 0-2 .898-2 2v2h-2a1.001 1.001 0 0 0-.99 1.142l1 7A1 1 0 0 0 18 30h10a1 1 0 0 0 .99-.858l1-7a1.001 1.001 0 0 0-.235-.797M21 19h4v2h-4zm6.133 9h-8.266l-.714-5h9.694zM10 20h2v10h-2z" />
+                    <path fill="currentColor"
+                        d="m16.78 17.875l-1.906-2.384l-1.442-3.605A2.986 2.986 0 0 0 10.646 10H5c-1.654 0-3 1.346-3 3v7c0 1.103.897 2 2 2h1v8h2V20H4v-7a1 1 0 0 1 1-1h5.646c.411 0 .776.247.928.629l1.645 3.996l2 2.5zM4 5c0-2.206 1.794-4 4-4s4 1.794 4 4s-1.794 4-4 4s-4-1.794-4-4m2 0c0 1.103.897 2 2 2s2-.897 2-2s-.897-2-2-2s-2 .897-2 2" />
+                </svg>
+            </div>
+            <div class="text-xs leading-tight font-bold w-fit">1000+ GLOing Customers</div>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                    <path fill="currentColor"
+                        d="M29.121 16.879A2.98 2.98 0 0 0 27.01 16H27a2.977 2.977 0 0 0-2.121.879l-4.901 4.901A2.994 2.994 0 0 0 17 19h-7a5.006 5.006 0 0 0-5 5v.667l-3 3.996l1.6 1.2l3.4-4.53V24a3.003 3.003 0 0 1 3-3h7a1 1 0 0 1 0 2h-4v2h4.929a3.972 3.972 0 0 0 2.828-1.172l5.536-5.535A.993.993 0 0 1 27 18h.003a1 1 0 0 1 .704 1.707l-7.414 7.414a2.98 2.98 0 0 1-2.122.879H11v2h7.171a4.966 4.966 0 0 0 3.536-1.465l7.414-7.414a2.999 2.999 0 0 0 0-4.242zm-7.535-8.293L18 12V2h-2v10l-3.586-3.414L11 10l6 6l6-6l-1.414-1.414z" />
+                </svg>
+            </div>
+            <div class="text-xs leading-tight font-bold w-fit">Exact Nutrition what your hair needs!</div>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M2 3V2a1 1 0 0 0-1 1h1Zm11 0h1a1 1 0 0 0-1-1v1Zm0 6V8a1 1 0 0 0-1 1h1ZM2 4h11V2H2v2Zm10-1v16h2V3h-2ZM3 17V3H1v14h2Zm10-7h5V8h-5v2Zm8 3v4h2v-4h-2Zm-7 6V9h-2v10h2Zm4.707.707a1 1 0 0 1-1.414 0l-1.414 1.414a3 3 0 0 0 4.242 0l-1.414-1.414Zm-1.414-1.414a1 1 0 0 1 1.414 0l1.414-1.414a3 3 0 0 0-4.242 0l1.414 1.414ZM6.707 19.707a1 1 0 0 1-1.414 0l-1.414 1.414a3 3 0 0 0 4.242 0l-1.414-1.414Zm-1.414-1.414a1 1 0 0 1 1.414 0l1.414-1.414a3 3 0 0 0-4.242 0l1.414 1.414Zm13.414 0c.196.195.293.45.293.707h2c0-.766-.293-1.536-.879-2.121l-1.414 1.414ZM19 19a.994.994 0 0 1-.293.707l1.414 1.414A2.994 2.994 0 0 0 21 19h-2Zm-3-1h-3v2h3v-2Zm1.293 1.707A.994.994 0 0 1 17 19h-2c0 .766.293 1.536.879 2.121l1.414-1.414ZM17 19a.99.99 0 0 1 .293-.707l-1.414-1.414A2.994 2.994 0 0 0 15 19h2Zm-11.707.707A.994.994 0 0 1 5 19H3c0 .766.293 1.536.879 2.121l1.414-1.414ZM5 19a.99.99 0 0 1 .293-.707l-1.414-1.414A2.994 2.994 0 0 0 3 19h2Zm8-1H8v2h5v-2Zm-6.293.293c.196.195.293.45.293.707h2c0-.766-.293-1.536-.879-2.121l-1.414 1.414ZM7 19a.994.994 0 0 1-.293.707l1.414 1.414A2.994 2.994 0 0 0 9 19H7Zm14-2a1 1 0 0 1-1 1v2a3 3 0 0 0 3-3h-2Zm-3-7a3 3 0 0 1 3 3h2a5 5 0 0 0-5-5v2ZM1 17a3 3 0 0 0 3 3v-2a1 1 0 0 1-1-1H1Z" />
+                </svg>
+            </div>
+            <div class="text-xs leading-tight font-bold w-fit">Pan India Delivery</div>
+        </div>
+    </div>
+    <div class="product-details sm:px-3 md:px-8  mt-36 sm:mt-32 pb-20 bg-white">
         <!-- <h2 class="text-secondary text-2xl font-bold text-center py-10">Billing Page</h2> -->
         <div class="grid grid-cols-12">
             <div class="container mx-auto p-5 col-span-12 sm:col-span-6 mt-0 sm:mt-0 order-2 sm:order-1">
@@ -508,7 +540,7 @@ async function verifyPromoCode(mycode) {
                 </form>
             </div>
             <div class="col-span-12 w-full sm:ml-6 sm:col-span-6 m-auto mt-4 order-1 sm:order-2">
-                <p class=" font-bold text-lg mb-4">Order Details</p>
+                <p class=" font-bold text-lg sm:mb-4">Order Details</p>
                 <div class=" bg-[#ffe6e2] p-3 border border-white sm:rounded-3xl">
                     <div class="grid grid-cols-12">
                         <div class="col-span-3">
