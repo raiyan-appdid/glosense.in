@@ -19,7 +19,7 @@ nuxtApp.hook("page:finish", () => {
     // if (emailGiven.value == undefined) {
     setTimeout(() => {
         getDynamicImage()
-    }, 1000);
+    }, 8000);
     // }
 });
 
