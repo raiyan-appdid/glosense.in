@@ -629,7 +629,7 @@ async function verifyPromoCode(mycode) {
                             modes.</span> -->
                         </div>
                     </div>
-                    <div class="flex">
+                    <!-- <div class="flex">
                         <div class="flex flex-col justify-center">
                             <div class="mt-3 ml-1">
                                 <input type="radio" @click="applyPromoCode2" v-bind:checked="promocodeVerified2"
@@ -642,17 +642,9 @@ async function verifyPromoCode(mycode) {
                                     extra
                                     Rs. 403
                                     /-</span>
-
-                                <!-- <span v-if="!promocodeVerified" @click="applyPromoCode"
-                                class="ml-3 my-auto py-1 px-2 bg-green-400 rounded-xl cursor-pointer">Apply</span>
-                            <span v-else
-                                class="ml-3 my-auto py-1 px-2 bg-green-400 rounded-xl cursor-pointer">Applied</span> -->
                             </div>
-                            <!-- <span class="inline-block mt-1 text-sm font-semibold ml-7 w-fit">Flat 25% off. Valid with all
-                            Payment
-                            modes.</span> -->
                         </div>
-                    </div>
+                    </div> -->
 
 
 
