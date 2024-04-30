@@ -545,7 +545,7 @@ async function verifyPromoCode(mycode) {
                 <img src="/images/review.png" class="sm:w-3/4 text-center shadow-md rounded-lg m-auto" alt="">
             </div>
             <div class="col-span-12 w-full sm:ml-6 sm:col-span-6 m-auto mt-4 order-1 sm:order-2">
-                <p class=" font-bold text-lg sm:mb-4">Order Details</p>
+                <p class=" font-bold text-lg sm:mb-4">Order Deta</p>
                 <div class=" bg-[#ffe6e2] p-3 border border-white sm:rounded-3xl">
                     <div class="grid grid-cols-12">
                         <div class="col-span-3">
@@ -568,7 +568,7 @@ async function verifyPromoCode(mycode) {
                         <div class="col-span-12">
                             <p class="font-medium text-sm">Select a Promo Code</p>
                         </div>
-                        
+
                     </div>
 
                     <div class="grid grid-cols-12 gap-4 mt-3">
