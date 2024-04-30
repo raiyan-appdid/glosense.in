@@ -568,6 +568,7 @@ async function verifyPromoCode(mycode) {
                         <div class="col-span-12">
                             <p class="font-medium text-sm">Select a Promo Code</p>
                         </div>
+                        
                     </div>
 
                     <div class="grid grid-cols-12 gap-4 mt-3">
